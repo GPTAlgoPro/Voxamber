@@ -1,0 +1,20 @@
+{
+  "api" : "QwenEngine.generateJSON",
+  "attemptCount" : 1,
+  "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+  "errorType" : "QwenNative.QwenError",
+  "exported" : false,
+  "failureStage" : "generation_and_formal_json_validation",
+  "firstTokenSeconds" : 0.94729508299999998,
+  "fixedPrompt" : "一条弯曲尾巴的蓝色小鲸鱼，流线型椭圆身体，左右鳍和分叉尾鳍，两个可见眼睛；尾鳍或侧鳍至少用一个extrusion自由轮廓。是独立海洋动物造型，不要平台。",
+  "id" : "whale",
+  "jsonObjectAccepted" : false,
+  "nativeDecode" : "SceneSpec.decodeModelResponse",
+  "progressCallbacks" : 111,
+  "rendered" : false,
+  "sceneAccepted" : false,
+  "status" : "rejected_or_failed",
+  "timeout180Seconds" : false,
+  "totalSeconds" : 12.30779504776001,
+  "truncationStatus" : "not observable: formal API rejects incomplete/malformed/overlength output without returning the token buffer; no retry or substituted API was used"
+}

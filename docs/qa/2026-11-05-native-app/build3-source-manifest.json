@@ -1,0 +1,25 @@
+{
+  "recordedAt": "2026-11-05T11:49:06.460733+00:00",
+  "version": "0.1.0",
+  "build": "3",
+  "baseCommit": "182fdd72940d9c9906a8c5ff712120301826d822",
+  "scope": "Frozen production/DEBUG-guarded App Swift sources, downloader, declarative project settings and model pins used for final archive. No script/runtime/weights in App.",
+  "sourceFiles": {
+    "Apple/ModelDownloader/Downloader.swift": "46d7b96a5d8d76fe6a67ce2f6239f68fb2a4420417ea583750e95383e0ff8cd0",
+    "Apple/ThreeLiveStudio/App/StudioModel.swift": "279f3d103dfffc5eee9a9f4c33a969cf8a8f323d3b11f78d7218907903e568a0",
+    "Apple/ThreeLiveStudio/App/ThreeLiveStudioApp.swift": "4cd3cceaf82f2ed909706ac7f12fab83764d5f4abcbc159513ddcc7bb8c2e68a",
+    "Apple/ThreeLiveStudio/Creation/CreationWorkspace.swift": "0b5f3cbdb9b1c1a03c193845690ff0ece78f03b87fea90a0e8d32f08588b4b5f",
+    "Apple/ThreeLiveStudio/Creation/SceneParameters.swift": "b0294035346b3a7e0327a202f80487b22e72eb6408b7d7a18a4f5e9f50ea6074",
+    "Apple/ThreeLiveStudio/Design/StudioStyle.swift": "3dbe306c31ec4ef6ed0457f68b1de0802dd716bf18959c94f29ab1f4b03a2a26",
+    "Apple/ThreeLiveStudio/Diagnostics/DeviceAcceptanceProbe.swift": "ef46203efc136a182dc6dbb4e2bd903dec6f874d2b71c4340cc1df3cadc98c56",
+    "Apple/ThreeLiveStudio/Library/ProjectLibrary.swift": "b15162bbc39729ef8e3186fd72ccb0f282730820373f7356a1431529fa444a8e",
+    "Apple/ThreeLiveStudio/Models/AppleHostedModelSource.swift": "22289d4f33f9048e426cc8f33e96d86efb5d77291fee07eee5648ecc850236b2",
+    "Apple/ThreeLiveStudio/Models/ModelLibrary.swift": "65c7da18f0fa25bab64e9bb7fc970298e6267bc28d3e61b7c1f570320b0959ee",
+    "Apple/ThreeLiveStudio/Models/ModelManager.swift": "5e6f32f214ee0fbe78245b50dbb6c2ba5d504d13d57e4f4062ed5e7b305b986a",
+    "Apple/ThreeLiveStudio/Models/VerifiedModelStore.swift": "62497d9da85ff014ebe5fe7b5d315b7367def45552caf65ebc2593392d16a44d",
+    "Apple/ThreeLiveStudio/Preview/ModelViewport.swift": "3a241f71e0fa1921edee710c931d4e9b205070ba2019cb7b2bad41be67fe1463",
+    "Apple/ThreeLiveStudio/Resources/LanguageModel.json": "be9d82a513eaeb8381a3be1967f8f7d25931db8aa7b3ca9f21aa2881d7fd4604",
+    "Apple/ThreeLiveStudio/Storage/ProjectStore.swift": "5eb69fc4b51dfaa9520ee54e0e9d5081337be2f1c88013280b13e7cf09a58054",
+    "Apple/project.yml": "c448d72e23196745754bae8f2460aaeb318c6374c8e87c5c2ce51d780900f2ab"
+  }
+}

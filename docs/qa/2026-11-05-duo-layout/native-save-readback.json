@@ -1,0 +1,20 @@
+[
+  {
+    "name": "\u661f\u9645\u5c0f\u673a\u5668\u4eba",
+    "nodeCount": 12,
+    "glbMatch": true,
+    "usdzMatch": true,
+    "glbSHA256": "88d908421441f0ee2cfa4efdc9dce4fdea119a524decab864beb014c094902c3",
+    "usdzSHA256": "21f10e1b01ad832610e42082e24789d8b177bf001f1a9fb8ff355ae4186a0373",
+    "savedRevision": "76100EA2-195B-4761-8152-C33872F45EDA"
+  },
+  {
+    "name": "\u661f\u9645\u5c0f\u673a\u5668\u4eba",
+    "nodeCount": 12,
+    "glbMatch": true,
+    "usdzMatch": true,
+    "glbSHA256": "88d908421441f0ee2cfa4efdc9dce4fdea119a524decab864beb014c094902c3",
+    "usdzSHA256": "21f10e1b01ad832610e42082e24789d8b177bf001f1a9fb8ff355ae4186a0373",
+    "savedRevision": "BDFFAF01-5C7F-4F80-B885-3D86365B2CBC"
+  }
+]

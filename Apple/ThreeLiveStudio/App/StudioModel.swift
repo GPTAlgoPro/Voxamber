@@ -14,7 +14,12 @@ final class StudioModel {
     var prompt = ""
     var assets: ProjectAssets?
     var projects: [CreationProject] = []
-    var busy = false
+    private var operationBusy = false
+    private(set) var isCleaningUp = false
+    var busy: Bool {
+        get { operationBusy || isCleaningUp }
+        set { operationBusy = newValue }
+    }
     var stage = ""
     var elapsed: TimeInterval = 0
     var errorMessage: String?
@@ -22,12 +27,25 @@ final class StudioModel {
     var showParameters = false
     private(set) var stopReason: GenerationStopReason?
     private(set) var lastStopLatency: Double?
-    let models = ModelManager()
-    @ObservationIgnored let store = ProjectStore()
+    let models: ModelManager
+    @ObservationIgnored let store: ProjectStore
+    @ObservationIgnored private let backgroundTasks: BackgroundTaskClient
     @ObservationIgnored private var work: Task<Void, Never>?
+    @ObservationIgnored private var operationID: UUID?
     @ObservationIgnored private var timer: Task<Void, Never>?
     @ObservationIgnored private var draftTask: Task<Void, Never>?
     @ObservationIgnored private var stopRequestedAt: ContinuousClock.Instant?
+    @ObservationIgnored private var cleanupTask: Task<Void, Never>?
+    @ObservationIgnored private var cleanupID: UUID?
+    @ObservationIgnored private var cleanupOperation: Task<Void, Never>?
+    @ObservationIgnored private var backgroundLease: BackgroundTaskLease?
+
+    init(models: ModelManager = ModelManager(), store: ProjectStore = ProjectStore(),
+         backgroundTasks: BackgroundTaskClient = .system) {
+        self.models = models
+        self.store = store
+        self.backgroundTasks = backgroundTasks
+    }
 
     static var blankScene: SceneSpec {
         SceneSpec(name: StudioCopy.text("自由造型", "Untitled creation"), nodes: [SceneNode(id: "form", primitive: .sphere,
@@ -41,10 +59,12 @@ final class StudioModel {
         #if DEVICE_QA
         if ProcessInfo.processInfo.arguments.contains("--qa-inference") {
             UIApplication.shared.isIdleTimerDisabled = true
+            let id = UUID()
+            operationID = id
             let task = Task { await DeviceAcceptanceProbe.run(studio: self) }
             work = task
             await withTaskCancellationHandler { await task.value } onCancel: { task.cancel() }
-            finishOperation()
+            finishOperation(id: id)
             await models.checkInstallation()
             return
         }
@@ -75,6 +95,8 @@ final class StudioModel {
         guard !busy else { return }
         if usingAI && !models.installed { tab = .models; return }
         busy = true; errorMessage = nil; notice = nil; elapsed = 0; stopReason = nil; lastStopLatency = nil; stopRequestedAt = nil
+        let id = UUID()
+        operationID = id
         let start = Date()
         let initialScene = sceneSpec ?? .chair
         let request = prompt.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -86,7 +108,7 @@ final class StudioModel {
             }
         }
         work = Task {
-            defer { finishOperation(); timer?.cancel(); timer = nil }
+            defer { finishOperation(id: id) }
             do {
                 draftTask?.cancel()
                 try await store.saveDraft(spec: initialScene, prompt: request)
@@ -137,7 +159,7 @@ final class StudioModel {
                 notice = "已保存到作品库"
                 stage = "已完成"
             } catch is CancellationError {
-                stage = "已取消"
+                stage = isCleaningUp ? "正在停止" : "已取消"
                 switch stopReason {
                 case .background: notice = "离开 App 后已停止生成，之前的作品已保留。"
                 case .memoryPressure: notice = "设备内存紧张，本次生成已停止，之前的作品已保留。"
@@ -156,9 +178,23 @@ final class StudioModel {
         stage = "正在停止"
     }
 
-    private func finishOperation() {
-        busy = false
+    private func finishOperation(id: UUID) {
+        guard operationID == id else { return }
         work = nil
+        operationID = nil
+        operationBusy = false
+        guard !isCleaningUp else { return }
+        stopTimer()
+        recordStopLatency()
+    }
+
+    private func stopTimer() {
+        timer?.cancel()
+        timer = nil
+    }
+
+    private func recordStopLatency() {
+        guard !busy else { return }
         guard let requested = stopRequestedAt else { return }
         let duration = requested.duration(to: .now).components
         let seconds = Double(duration.seconds) + Double(duration.attoseconds) / 1e18
@@ -175,12 +211,7 @@ final class StudioModel {
     }
 
     func handleMemoryPressure() {
-        let pending = work
-        cancel(reason: .memoryPressure)
-        Task {
-            await pending?.value
-            await models.unload()
-        }
+        requestCleanup(reason: .memoryPressure, needsBackgroundLease: false)
     }
 
     func open(_ project: CreationProject) async {
@@ -212,17 +243,51 @@ final class StudioModel {
     }
 
     func enterBackground() {
-        let pending = work
-        cancel(reason: .background); draftTask?.cancel()
+        requestCleanup(reason: .background, needsBackgroundLease: true)
+        draftTask?.cancel()
         let value = sceneSpec ?? Self.blankScene, text = prompt
         Task { try? await store.saveDraft(spec: value, prompt: text) }
-        let lease = pending == nil ? UIBackgroundTaskIdentifier.invalid :
-            UIApplication.shared.beginBackgroundTask(withName: "Stop on-device generation") { pending?.cancel() }
-        Task {
+    }
+
+    private func requestCleanup(reason: GenerationStopReason, needsBackgroundLease: Bool) {
+        if let id = cleanupID {
+            if needsBackgroundLease { acquireBackgroundLease(for: id) }
+            return
+        }
+        // Close admission synchronously, before cancelling or awaiting work.
+        // finishOperation may clear its own task, but cannot reopen this gate.
+        isCleaningUp = true
+        let id = UUID()
+        cleanupID = id
+        let pending = work
+        cleanupOperation = pending
+        cancel(reason: reason)
+        if needsBackgroundLease { acquireBackgroundLease(for: id) }
+        cleanupTask = Task {
             await pending?.value
             await models.unload()
-            if lease != .invalid { UIApplication.shared.endBackgroundTask(lease) }
+            finishCleanup(id: id)
         }
+    }
+
+    private func acquireBackgroundLease(for id: UUID) {
+        guard cleanupID == id, backgroundLease == nil else { return }
+        let pending = cleanupOperation
+        backgroundLease = BackgroundTaskLease(client: backgroundTasks) { pending?.cancel() }
+    }
+
+    private func finishCleanup(id: UUID) {
+        guard cleanupID == id else { return }
+        backgroundLease?.end()
+        backgroundLease = nil
+        cleanupOperation = nil
+        cleanupTask = nil
+        cleanupID = nil
+        isCleaningUp = false
+        if stage == "正在停止", stopReason != nil { stage = "已取消" }
+        guard work == nil else { return }
+        stopTimer()
+        recordStopLatency()
     }
 
     private func saveMeasurement(_ timings: [String: Double], ai: Bool, project: CreationProject) async {
@@ -236,6 +301,49 @@ final class StudioModel {
             let encoder = JSONEncoder(); encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
             try encoder.encode(record).write(to: url.appending(path: project.revision.uuidString + ".json"), options: .atomic)
         } catch { /* Measurements must never invalidate an already-published user project. */ }
+    }
+}
+
+/// Platform effects are injected so lifecycle tests drive the production
+/// admission/cleanup path without requiring an expiring UIKit assertion.
+@MainActor
+struct BackgroundTaskClient {
+    var begin: (@escaping @MainActor @Sendable () -> Void) -> UIBackgroundTaskIdentifier
+    var end: (UIBackgroundTaskIdentifier) -> Void
+
+    static var system: Self {
+        Self(begin: { expiration in
+            UIApplication.shared.beginBackgroundTask(withName: "Stop on-device generation", expirationHandler: expiration)
+        }, end: { UIApplication.shared.endBackgroundTask($0) })
+    }
+}
+
+@MainActor
+final class BackgroundTaskLease {
+    private let client: BackgroundTaskClient
+    private var identifier = UIBackgroundTaskIdentifier.invalid
+    private var hasEnded = false
+
+    init(client: BackgroundTaskClient, onExpiration: @escaping @MainActor @Sendable () -> Void) {
+        self.client = client
+        let identifier = client.begin { [weak self] in
+            onExpiration()
+            self?.end()
+        }
+        self.identifier = identifier
+        // An unavailable assertion may expire during begin itself.
+        if hasEnded, identifier != .invalid {
+            client.end(identifier)
+            self.identifier = .invalid
+        }
+    }
+
+    func end() {
+        guard !hasEnded else { return }
+        hasEnded = true
+        let identifier = self.identifier
+        self.identifier = .invalid
+        if identifier != .invalid { client.end(identifier) }
     }
 }
 

@@ -1,0 +1,82 @@
+[
+  {
+    "busy": false,
+    "creativeStateSHA256": "f26a703d36564db149fce052ffe99bacb6417548cea89c5af1aaf215b724ecbc",
+    "editorExpanded": false,
+    "height": 128,
+    "horizontalSizeClass": "compact",
+    "pid": 92196,
+    "reason": "geometry",
+    "scenePhase": "inactive",
+    "selectedTab": "create",
+    "time": 1793878928.064416,
+    "width": 163.33333333333331
+  },
+  {
+    "busy": false,
+    "creativeStateSHA256": "f26a703d36564db149fce052ffe99bacb6417548cea89c5af1aaf215b724ecbc",
+    "editorExpanded": false,
+    "height": 128,
+    "horizontalSizeClass": "compact",
+    "pid": 92196,
+    "reason": "appear",
+    "scenePhase": "inactive",
+    "selectedTab": "create",
+    "time": 1793878928.068332,
+    "width": 163.33333333333331
+  },
+  {
+    "busy": false,
+    "creativeStateSHA256": "f26a703d36564db149fce052ffe99bacb6417548cea89c5af1aaf215b724ecbc",
+    "editorExpanded": false,
+    "height": 562,
+    "horizontalSizeClass": "compact",
+    "pid": 92196,
+    "reason": "geometry",
+    "scenePhase": "inactive",
+    "selectedTab": "create",
+    "time": 1793878928.110276,
+    "width": 382
+  },
+  {
+    "busy": false,
+    "creativeStateSHA256": "8a1280c39b71689fae080155a6e5d56fa84ec83a608e19436ba504ea566ada0e",
+    "editorExpanded": false,
+    "height": 562,
+    "horizontalSizeClass": "compact",
+    "pid": 92196,
+    "reason": "prompt",
+    "scenePhase": "inactive",
+    "selectedTab": "create",
+    "time": 1793878928.158071,
+    "width": 382
+  },
+  {
+    "busy": false,
+    "creativeStateSHA256": "8a1280c39b71689fae080155a6e5d56fa84ec83a608e19436ba504ea566ada0e",
+    "editorExpanded": false,
+    "height": 562,
+    "horizontalSizeClass": "compact",
+    "pid": 92196,
+    "reason": "scenePhase",
+    "scenePhase": "active",
+    "selectedTab": "create",
+    "time": 1793878928.174614,
+    "width": 382
+  },
+  {
+    "busy": false,
+    "creativeStateSHA256": "8a1280c39b71689fae080155a6e5d56fa84ec83a608e19436ba504ea566ada0e",
+    "editorExpanded": false,
+    "height": 562,
+    "hingeAngleDegrees": 0,
+    "hingeState": "closed",
+    "horizontalSizeClass": "compact",
+    "pid": 92196,
+    "reason": "hinge",
+    "scenePhase": "active",
+    "selectedTab": "create",
+    "time": 1793878928.208782,
+    "width": 382
+  }
+]

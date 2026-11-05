@@ -1,0 +1,20 @@
+{
+  "api" : "QwenEngine.generateJSON",
+  "attemptCount" : 1,
+  "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+  "errorType" : "QwenNative.QwenError",
+  "exported" : false,
+  "failureStage" : "generation_and_formal_json_validation",
+  "firstTokenSeconds" : 1.0480424580000001,
+  "fixedPrompt" : "带后掠机翼的未来飞行器，银色流线机身、左右对称不规则机翼、两个推进器，机翼至少一个用extrusion自由轮廓，机身可用lathe。做一个整体，不要平台。",
+  "id" : "aircraft",
+  "jsonObjectAccepted" : false,
+  "nativeDecode" : "SceneSpec.decodeModelResponse",
+  "progressCallbacks" : 280,
+  "rendered" : false,
+  "sceneAccepted" : false,
+  "status" : "rejected_or_failed",
+  "timeout180Seconds" : false,
+  "totalSeconds" : 30.300879955291748,
+  "truncationStatus" : "not observable: formal API rejects incomplete/malformed/overlength output without returning the token buffer; no retry or substituted API was used"
+}

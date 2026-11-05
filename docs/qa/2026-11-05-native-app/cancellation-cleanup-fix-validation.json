@@ -1,0 +1,135 @@
+{
+  "checkedAt": "2026-11-05T11:31:16.471082+00:00",
+  "sourceFrozen": true,
+  "sourceFiles": {
+    "Apple/ThreeLiveStudio/App/StudioModel.swift": "279f3d103dfffc5eee9a9f4c33a969cf8a8f323d3b11f78d7218907903e568a0",
+    "Apple/ThreeLiveStudio/Models/ModelManager.swift": "5e6f32f214ee0fbe78245b50dbb6c2ba5d504d13d57e4f4062ed5e7b305b986a",
+    "Apple/ThreeLiveStudioTests/StudioCancellationTests.swift": "ae91b7794bf17be46ce6f26497fe116c33dfa6420af2c1bc406fbba33d50d069"
+  },
+  "changes": [
+    "Studio busy remains true until its owned generation and any background/memory cleanup have both settled.",
+    "One identified cleanup task merges repeated events and awaits the captured operation before unloading.",
+    "A memory cleanup gains its single background lease if the app backgrounds while cleanup is pending.",
+    "Expired and normally completed background assertions use the same idempotent end operation, including synchronous expiration during begin.",
+    "Stop-latency publication waits for cleanup; old operation completion is guarded by operation identity.",
+    "ModelManager marks loaded=false and unloading busy before suspension; concurrent unload callers join a task that finalizes state before returning.",
+    "Existing DEVICE_QA admission guard and mutable busy API are preserved."
+  ],
+  "simulator": {
+    "name": "iPhone Duo",
+    "id": "6A79977F-9106-43E7-8C35-27CEC16FA8E6",
+    "runtime": "iOS 27.1",
+    "configuration": "Debug",
+    "sessionDefaultsExplicitlyCheckedBeforeBuild": true
+  },
+  "sdkBuild": {
+    "tool": "XcodeBuildMCP build_sim",
+    "succeeded": true,
+    "seconds": 10.8
+  },
+  "tests": {
+    "tool": "XcodeBuildMCP test_sim",
+    "passed": 24,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 24.6,
+    "suites": {
+      "StudioCancellationTests": 6,
+      "ProjectStoreTests": 9,
+      "VerifiedModelStoreTests": 9
+    },
+    "resultBundle": "/Users/kaisun/Library/Developer/XcodeBuildMCP/workspaces/Three-Live-a778a850dbab/result-bundles/test_sim_2026-11-05T11-29-55-639Z_pid52440_6896601e.xcresult",
+    "testProducts": "/Users/kaisun/Library/Developer/XcodeBuildMCP/workspaces/Three-Live-a778a850dbab/test-products/test_sim_2026-11-05T11-29-55-639Z_pid52440_193e1ff9.xctestproducts",
+    "productionPathCoverage": [
+      "Actual StudioModel admission and cleanup while injected model-unload effect is held by a gate.",
+      "Real ProjectStore and native export preserve an existing revision, reject retry during cleanup, and allow a new saved revision afterward.",
+      "Repeated memory/background events coalesce; background after memory cleanup acquires one assertion.",
+      "Expiration ends immediately; later completion and repeated end calls do not end twice.",
+      "Synchronous expiration during begin remains balanced.",
+      "Actual ModelManager unload coalescing and prepare rejection during unloading; each caller returns only after unload state finalization."
+    ]
+  },
+  "warnings": [
+    {
+      "file": "Apple/ThreeLiveStudio/Creation/CreationWorkspace.swift",
+      "line": 159,
+      "message": "Existing Text concatenation deprecated in iOS 26; file outside this change."
+    }
+  ],
+  "diffWhitespaceCheckExitCode": 0,
+  "deviceAcceptance": {
+    "phoneOperated": false,
+    "realStopLatencyVerified": false,
+    "over100SecondsRootCauseProven": false
+  },
+  "notPerformed": [
+    "Engine/Core/other UI/project-setting changes",
+    "Version bump",
+    "Archive/export/upload",
+    "Commit/push/main release"
+  ],
+  "followupObservedAt": "2026-11-05T11:42:16.318741+00:00",
+  "sourceFilesAtFinalFreeze": {
+    "Apple/ThreeLiveStudio/App/StudioModel.swift": "279f3d103dfffc5eee9a9f4c33a969cf8a8f323d3b11f78d7218907903e568a0",
+    "Apple/ThreeLiveStudio/Models/ModelManager.swift": "5e6f32f214ee0fbe78245b50dbb6c2ba5d504d13d57e4f4062ed5e7b305b986a",
+    "Apple/ThreeLiveStudioTests/StudioCancellationTests.swift": "043fc13594b6b6fa511bbec0c94fba18a40d606b5f943374d89e7003eee9b17b"
+  },
+  "unloadJoinerFollowup": {
+    "productionFixAlreadyIncludedBeforePrior24Tests": true,
+    "stateFinalizedInOwnedUnloadTaskBeforeTaskCompletion": true,
+    "finalizationSource": "Apple/ThreeLiveStudio/Models/ModelManager.swift:102",
+    "newRegressionTest": "testEveryUnloadCallerObservesFinalStateAtItsOwnReturn",
+    "callerCount": 8,
+    "joinerCount": 7,
+    "capturedAtEachCallerReturnBeforeAwaitingOwner": true,
+    "allReturnedNotUnloadingAndNotBusy": true,
+    "currentIssueReproduced": false,
+    "focusedTestResult": {
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0,
+      "seconds": 16.7,
+      "resultBundle": "/Users/kaisun/Library/Developer/XcodeBuildMCP/workspaces/Three-Live-a778a850dbab/result-bundles/test_sim_2026-11-05T11-40-41-728Z_pid52440_a470206d.xcresult"
+    },
+    "productionAppSourceChangedInFollowup": false,
+    "onlyOneTestAddedInFollowup": true
+  },
+  "remainingStopLatencyReview": {
+    "stopOver100SecondsReproduced": false,
+    "latencyBoundProvenOnPhone": false,
+    "cancellationPropagationReviewed": [
+      "StudioModel.cancel cancels the captured owned operation.",
+      "QwenEngine.generateJSONDirect forwards cancellation to its owned task and producer, and awaits producer settlement.",
+      "PrefillParameters.forEachChunk checks cancellation before each chunk.",
+      "Geometry/export own detached tasks receive cancellation through scoped handlers; geometry budget is 20000 vertices and 80000 indices."
+    ],
+    "unboundedNativeWaitBoundaries": [
+      {
+        "source": "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift:65",
+        "operation": "Model container/tokenizer loading; checks cancellation after load returns."
+      },
+      {
+        "source": "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift:115",
+        "operation": "Input/tokenizer preparation; checks cancellation after preparation."
+      },
+      {
+        "source": "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift:164",
+        "operation": "Await actual producer settlement before releasing model state."
+      },
+      {
+        "source": "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift:166",
+        "operation": "Synchronous native stream/GPU fence."
+      },
+      {
+        "source": "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift:193",
+        "operation": "Synchronous GPU fence during unload."
+      }
+    ],
+    "conclusion": "The fixes close the reproduced lifecycle/lease races and the reviewed joiner boundary. They do not establish a maximum cancellation duration for native loading or GPU work, and no additional source-plus-reproduction evidence identifies the reported over-100-second cause. Do not mark work idle while native resources remain in flight."
+  },
+  "simulatorCoordination": {
+    "unitHostInterferedWithConcurrentDuoProbe": true,
+    "allBuildTestSimulatorOperationsStoppedAfterFocusedRun": true,
+    "rootNotifiedForProbeRelaunch": true
+  }
+}

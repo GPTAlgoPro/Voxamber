@@ -6,10 +6,15 @@ import QwenNative
 final class ModelManager {
     nonisolated static let modelName = "千问 Qwen3.5 · 4B INT4"
     nonisolated static let modelID = "qwen3.5-4b-mlx-int4"
-    let engine = QwenEngine()
+    let engine: QwenEngine
     private(set) var installed = false
     private(set) var loaded = false
-    private(set) var busy = false
+    private var operationBusy = false
+    private(set) var isUnloading = false
+    private(set) var busy: Bool {
+        get { operationBusy || isUnloading }
+        set { operationBusy = newValue }
+    }
     private(set) var progress: Double = 0
     private(set) var status = "尚未安装"
     var errorMessage: String?
@@ -17,6 +22,14 @@ final class ModelManager {
     @ObservationIgnored private let appleSource = AppleHostedModelSource()
     @ObservationIgnored private var operation: Task<Void, Never>?
     @ObservationIgnored private var directory: URL?
+    @ObservationIgnored private var unloadTask: Task<Void, Never>?
+    @ObservationIgnored private let unloadRuntime: @Sendable () async -> Void
+
+    init(unloadRuntime: (@Sendable () async -> Void)? = nil) {
+        let engine = QwenEngine()
+        self.engine = engine
+        self.unloadRuntime = unloadRuntime ?? { await engine.unload() }
+    }
 
     var eligible: Bool {
         #if targetEnvironment(simulator)
@@ -82,8 +95,19 @@ final class ModelManager {
     }
 
     func unload() async {
-        await engine.unload(); loaded = false
-        if installed { status = "已就绪 · 可离线使用" }
+        if let unloadTask { await unloadTask.value; return }
+        // A prepare must never mistake a model being released for a hot model.
+        loaded = false
+        isUnloading = true
+        let task = Task {
+            await unloadRuntime()
+            // Every joining caller observes final state before this task ends.
+            unloadTask = nil
+            isUnloading = false
+            if installed { status = "已就绪 · 可离线使用" }
+        }
+        unloadTask = task
+        await task.value
     }
 
     func remove() async {

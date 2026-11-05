@@ -1,0 +1,99 @@
+{
+  "observedAt": "2026-11-05T11:17:52.638389+00:00",
+  "mode": "one-time authoritative GET-only recheck",
+  "appID": "6831042755",
+  "bundleID": "com.kaisun.voxamber",
+  "version": "0.1.0",
+  "build": "2",
+  "buildID": "165057ba-889c-4ad8-839f-0980744742d1",
+  "processingState": "VALID",
+  "expired": false,
+  "usesNonExemptEncryption": false,
+  "internalBeta": {
+    "autoNotifyEnabled": true,
+    "internalBuildState": "IN_BETA_TESTING",
+    "externalBuildState": "READY_FOR_BETA_SUBMISSION"
+  },
+  "group": {
+    "id": "7d4c4aba-14b9-423e-b1ae-d50ce983d527",
+    "isInternal": true,
+    "testerCount": 1,
+    "uniqueSelfVerifiedInMemory": true,
+    "groupToBuildIDs": [
+      "165057ba-889c-4ad8-839f-0980744742d1"
+    ],
+    "buildToGroupIDs": [
+      "7d4c4aba-14b9-423e-b1ae-d50ce983d527"
+    ],
+    "associationVerified": true,
+    "publicLinkEnabled": false
+  },
+  "tester": {
+    "reportedState": "INVITED",
+    "invitationIssued": true,
+    "invitationAcceptedStateVerified": false,
+    "installedStateReported": false,
+    "exactBuild2InstallationVerified": false,
+    "exactBuildInstallationEvidenceAvailableFromRequestedEndpoint": false
+  },
+  "appleHostedPack": {
+    "assetPackID": "Voxamber-Qwen35-4B-INT4",
+    "assetRecordID": "659bb03a-5104-4bfe-87a2-4029c4c3432f",
+    "versionID": "2afe746b-6efc-4c4d-b35c-dbb6cb653464",
+    "version": "1",
+    "state": "COMPLETE",
+    "platforms": [
+      "IOS"
+    ],
+    "belongsToTargetApp": true,
+    "versionBelongsToExpectedPack": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "files": [
+      {
+        "id": "84ed6c0f-895d-4cf4-96bc-ae3827588a01",
+        "assetType": "ASSET",
+        "bytes": 2786862971,
+        "deliveryState": "COMPLETE",
+        "serverFileChecksum": {
+          "hash": "95491370ca4502ea42e9a80518a747d8",
+          "algorithm": "MD5"
+        },
+        "matchesPriorApprovedReceipt": true
+      },
+      {
+        "id": "99dc42fa-fd73-4c4d-86d1-35abd944be6f",
+        "assetType": "MANIFEST",
+        "bytes": 1308,
+        "deliveryState": "COMPLETE",
+        "serverFileChecksum": {
+          "hash": "10a99be7087b4ebb6118766818ad4c6b",
+          "algorithm": "MD5"
+        },
+        "matchesPriorApprovedReceipt": true
+      }
+    ],
+    "metadataAndChecksumsVerified": true,
+    "actualDeviceColdDownloadVerified": false
+  },
+  "delta": {
+    "priorObservedAt": "2026-11-05T11:01:04.670385+00:00",
+    "priorTesterState": "INVITED",
+    "currentTesterState": "INVITED",
+    "testerStateChanged": false,
+    "processingStateChanged": false,
+    "internalBuildStateChanged": false,
+    "groupAssociationChanged": false,
+    "packStateChanged": false
+  },
+  "mutationsPerformed": false,
+  "invitationResent": false,
+  "notificationSent": false,
+  "reuploaded": false,
+  "metadataModified": false,
+  "deviceUnavailable": true,
+  "realColdDownloadOrButtonTestsPerformed": false,
+  "remainingExternalCondition": "The tester accepts the existing Apple invitation in TestFlight.",
+  "continuousPollingNeeded": false,
+  "result": "PASS"
+}

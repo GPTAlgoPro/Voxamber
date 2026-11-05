@@ -1,0 +1,23 @@
+{
+  "observedAt": "2026-11-05T11:56:45.362766+00:00",
+  "version": "0.1.0",
+  "build": "3",
+  "sourceCodeCommit": "7939d3d",
+  "ipaBytes": 24480998,
+  "ipaSHA256": "b74fb81e63182e8912329a3187820e761918baaf85ee9dd0bd6ed6e9ecf3cf3c",
+  "finalArchive": "Apple/.build/Archives/Voxamber-0.1.0-3.xcarchive",
+  "altoolValidation": {
+    "processExitCode": 0,
+    "successTextVerified": true
+  },
+  "altoolUpload": {
+    "processExitCode": 0,
+    "successTextVerified": true,
+    "nonFatalDiagnostic": "Uploader reported its optional resume-state file missing; process still exited 0 with UPLOAD SUCCEEDED and No errors uploading. Server processing is verified separately."
+  },
+  "modelPack": "Voxamber-Qwen35-4B-INT4",
+  "modelPackVersion": "1",
+  "modelManifestUnchangedFromBuild2": true,
+  "diagnosticBeforeDuoArchiveNotUploaded": true,
+  "appStorePublicReviewOrReleasePerformed": false
+}

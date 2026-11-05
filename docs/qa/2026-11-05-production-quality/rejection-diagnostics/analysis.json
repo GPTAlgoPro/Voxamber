@@ -1,0 +1,86 @@
+{
+  "apiConfiguration": {
+    "method": "generateJSONDirect",
+    "maxTokens": 3072,
+    "prefillStepSize": 128,
+    "maxKVSize": 8192,
+    "temperature": 0,
+    "thinking": false
+  },
+  "sourceEvidence": {
+    "mlxSwiftLMVersion": "3.32.3",
+    "evaluateSwiftSHA256": "96a7ba17c8ca4e08488d9fbd17ffd0fd6ed84d1e55df74d58b5f465c6135331d",
+    "sourcePath": "Apple/Packages/QwenNative/.build/checkouts/mlx-swift-lm/Libraries/MLXLMCommon/Evaluate.swift",
+    "terminationLogic": "TokenIterator.next returns nil when tokenCount>=maxTokens. generateLoopTask chooses .length when maxTokens was reached without earlier stop/cancellation; EOS/unknown are not counted as an emitted ordinary token. Producer synchronizes then finishes; Direct awaits it and emits raw_stream_finished/direct_finished.",
+    "inferenceLimit": "Actual stopReason is not exposed by stage strings. A3072 count plus normal direct completion and EOF is reported as reached configured output limit, not an unrelated SDK/Metal fault. For1217 output, EOS vs unknown token is not distinguished."
+  },
+  "diagnosticIsNotAcceptanceRetry": true,
+  "originalResponseIdentityNotVerifiable": true,
+  "cases": [
+    {
+      "id": "chair",
+      "rawByteCount": 8352,
+      "rawSHA256": "15f418d9e54a960b4528095249ebe9140b4d8adb0b96fbc4f3e4d4e92a8d948f",
+      "noThinkMarkers": true,
+      "comparisonToScenePlan": "not accepted: JSON syntax fails before ScenePlan is constructed",
+      "secondaryParser": {
+        "name": "Python standard json (development-only)",
+        "message": "Expecting value",
+        "characterOffset": 8344,
+        "line": 1,
+        "column": 8345,
+        "context": "\"backrest_left_bottom\",\"primitive\":\"box\",\"dimensions\":{\"width\":0.02,\"height\":0.02,\"depth\":"
+      },
+      "classification": "configured_output_token_limit_reached_mid_JSON",
+      "completeNodeObjectsInUnmodifiedPrefix": 43,
+      "idDeclarationsInPrefix": 44,
+      "scenePlanMaximumNodes": 32,
+      "alreadyExceedsSceneNodeBudget": true,
+      "terminalContext": ":0.02,\"depth\":0.45},\"color\":\"#8B4513\",\"attach\":{\"parent\":\"seat_right\",\"face\":\"top\",\"xOffset\":0,\"yOffset\":0.02,\"zOffset\":0}},{\"id\":\"backrest_left_bottom\",\"primitive\":\"box\",\"dimensions\":{\"width\":0.02,\"height\":0.02,\"depth\":",
+      "finding": "3072 generated tokens; EOF while giving dimensions.depth of the next node. Complete prefix already contains43 nodes, beyond32, so lifting token cap alone would not satisfy the current contract."
+    },
+    {
+      "id": "whale",
+      "rawByteCount": 2860,
+      "rawSHA256": "e9af516e0391e64f0a0d038e9cb3d348ea90602919959b1519655671c2f99869",
+      "noThinkMarkers": true,
+      "comparisonToScenePlan": "not accepted: JSON syntax fails before ScenePlan is constructed",
+      "secondaryParser": {
+        "name": "Python standard json (development-only)",
+        "message": "Expecting ',' delimiter",
+        "characterOffset": 303,
+        "line": 1,
+        "column": 304,
+        "context": ".48,1.35],[0.4,1.5],[0.3,1.55],[0.2,1.55],[0.1,1.5],[0.05,1.45],[0.02,1.4],[0.0,1.35]]},{\"id\":\"head\",\"primitive\":\"box\",\"dimensions\":{\"width\":0.35,\"height\":0.6,\"depth\":0.35},\"color\""
+      },
+      "classification": "returned_array_syntax_error_below_token_limit",
+      "firstMalformedProfileExcerpt": "\"profile\":[[0.2,0],\"[0.25,0.35],[0.35,0.65],[0.45,0.95],[0.5,1.15],[0.48,1.35],[0.4,1.5],[0.3,1",
+      "lastCharacters": ":{\"parent\":\"body\",\"face\":\"right\",\"xOffset\":0.15,\"yOffset\":0.05,\"zOffset\":0.0}}]}",
+      "finding": "Second profile point starts with an extra quote, turning numeric profile content into malformed string/array syntax. Producer ended after1217 tokens, not at3072; returned text ends with]}."
+    },
+    {
+      "id": "aircraft",
+      "rawByteCount": 5005,
+      "rawSHA256": "74ac6945019bcf61be6de9dfd3ea28b5c8df52cab2db77a87ab32de78e6a3bb3",
+      "noThinkMarkers": true,
+      "comparisonToScenePlan": "not accepted: JSON syntax fails before ScenePlan is constructed",
+      "secondaryParser": {
+        "name": "Python standard json (development-only)",
+        "message": "Expecting value",
+        "characterOffset": 4991,
+        "line": 235,
+        "column": 10,
+        "context": " [22.6, 3.13],\n        [22.7, 3.14],\n        [22.8, 3.15],\n        [22.9, 3.16],\n        ["
+      },
+      "classification": "configured_output_token_limit_reached_mid_profile",
+      "completePointPairsInPartialFirstProfile": 221,
+      "nativeMaximumProfilePoints": 64,
+      "alreadyExceedsProfileBudget": true,
+      "declaredFuselageHeight": 4.5,
+      "nativeMaximumPartDimension": 2.5,
+      "alreadyExceedsPartDimensionBudget": true,
+      "terminalContext": "[22.0, 3.07],\n        [22.1, 3.08],\n        [22.2, 3.09],\n        [22.3, 3.1],\n        [22.4, 3.11],\n        [22.5, 3.12],\n        [22.6, 3.13],\n        [22.7, 3.14],\n        [22.8, 3.15],\n        [22.9, 3.16],\n        [",
+      "finding": "3072 generated tokens; EOF at a newly opened profile point. First lathe has221 completed point pairs andheight4.5, already outside profile<=64 anddimension<=2.5."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "api" : "QwenEngine.generateJSON",
+  "attemptCount" : 1,
+  "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+  "errorType" : "QwenNative.QwenError",
+  "exported" : false,
+  "failureStage" : "generation_and_formal_json_validation",
+  "firstTokenSeconds" : 3.0866599579999998,
+  "fixedPrompt" : "一把简洁的棕色木椅，必须包含坐面、靠背和四条腿，地面Y=0，坐面高度约0.45米，不要增加底部平台。",
+  "id" : "chair",
+  "jsonObjectAccepted" : false,
+  "nativeDecode" : "SceneSpec.decodeModelResponse",
+  "progressCallbacks" : 281,
+  "rendered" : false,
+  "sceneAccepted" : false,
+  "status" : "rejected_or_failed",
+  "timeout180Seconds" : false,
+  "totalSeconds" : 32.567543983459473,
+  "truncationStatus" : "not observable: formal API rejects incomplete/malformed/overlength output without returning the token buffer; no retry or substituted API was used"
+}

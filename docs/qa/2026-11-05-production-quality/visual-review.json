@@ -1,0 +1,181 @@
+{
+  "reviewedAtUTC": "2026-11-05T11:41:46.243765+00:00",
+  "reviewMethod": "逐一使用view_image查看6张原始900px PNG（前视/3-4视），再核对同一次正式调用的response/canonical scene/mesh bounds；没有图像后处理、预设替代或再抽样。",
+  "overallDisposition": "general_free_modeling_not_accepted",
+  "summary": {
+    "creationRequests": 5,
+    "creationRequestsExported": 2,
+    "creationRequestsRejectedByFormalAPI": 3,
+    "colorEditRequests": 1,
+    "colorEditPreservationPassed": 1,
+    "successfulFreeformSubjectAssets": 0
+  },
+  "caseReviews": [
+    {
+      "id": "chair",
+      "disposition": "rejected_before_visual_review",
+      "jsonObjectAccepted": false,
+      "viewsReviewed": [],
+      "finding": "正式generateJSON没有返回通过完整JSON门禁的响应，因此未进入SceneSpec/几何/导出，不存在可审阅模型。没有用预设、历史图片或其他API补结果。",
+      "truncationEvidence": "无法区分截断、语法错误、非对象或16KB上限；当前正式API不暴露被拒绝的token缓冲或stopReason。不得将其单独写成已证实的token截断。"
+    },
+    {
+      "id": "whale",
+      "disposition": "rejected_before_visual_review",
+      "jsonObjectAccepted": false,
+      "viewsReviewed": [],
+      "finding": "正式generateJSON没有返回通过完整JSON门禁的响应，因此未进入SceneSpec/几何/导出，不存在可审阅模型。没有用预设、历史图片或其他API补结果。",
+      "truncationEvidence": "无法区分截断、语法错误、非对象或16KB上限；当前正式API不暴露被拒绝的token缓冲或stopReason。不得将其单独写成已证实的token截断。"
+    },
+    {
+      "id": "aircraft",
+      "disposition": "rejected_before_visual_review",
+      "jsonObjectAccepted": false,
+      "viewsReviewed": [],
+      "finding": "正式generateJSON没有返回通过完整JSON门禁的响应，因此未进入SceneSpec/几何/导出，不存在可审阅模型。没有用预设、历史图片或其他API补结果。",
+      "truncationEvidence": "无法区分截断、语法错误、非对象或16KB上限；当前正式API不暴露被拒绝的token缓冲或stopReason。不得将其单独写成已证实的token截断。"
+    },
+    {
+      "id": "robot",
+      "disposition": "recognizable_basic_assembly_with_quality_limits",
+      "viewsReviewed": [
+        {
+          "path": "robot/front.png",
+          "sha256": "f8413de8b540270fc9afbc8389bb2024d12b54b5b5076c227265cce7a9fc667c",
+          "reviewedWith": "view_image"
+        },
+        {
+          "path": "robot/three-quarter.png",
+          "sha256": "fdfb4d32be41ac71a9d3859d47c2ef316d9bf4a7b93f5e040ca121b604f2c51f",
+          "reviewedWith": "view_image"
+        }
+      ],
+      "positiveFindings": [
+        "能辨认为简单站立玩具机器人，立方头、躯干、左右手臂/腿和两个黄色球形眼睛均存在。",
+        "正视图两眼分开并露在同一前脸；斜视图没有眼睛在背面的错误。",
+        "整体底部Y=0，9个mesh形成一个近邻AABB组；但该指标仅辅助，不是表面/结构质量证明。"
+      ],
+      "visualLimitations": [
+        "双臂是笔直圆柱且明显上移，上端高于头顶，轮廓更像竖杆或天线，没有自然肩臂层次；用户未指定姿势，因此记为目视质量局限而非伪造一个硬约束。",
+        "9部件全部为box/cylinder/sphere，形体非常简化，不能据此认定任意题材或自由曲面生成已达标。"
+      ],
+      "measurements": {
+        "armTopYMetres": 0.847,
+        "headTopYMetres": 0.814,
+        "floorMinimumYMetres": 0,
+        "eyeCenterXMetres": [
+          -0.045,
+          0.045
+        ],
+        "eyeCenterZMetres": [
+          0.072,
+          0.072
+        ]
+      },
+      "instructionAssessment": "基本组成/蓝色声明/黄色双眼有证据，姿态与艺术造型质量仍有限；不授予通用建模质量总PASS。"
+    },
+    {
+      "id": "lamp",
+      "disposition": "recognizable_but_explicit_shape_and_size_requirements_violated",
+      "viewsReviewed": [
+        {
+          "path": "lamp/front.png",
+          "sha256": "04c15d70cf2bbdf7678bb7a45bc1f022c5fb9802f85010975d361d18f345869a",
+          "reviewedWith": "view_image"
+        },
+        {
+          "path": "lamp/three-quarter.png",
+          "sha256": "e44212cb38b3ab621e3a3b4ead6ee53e8a6498dc21110715e27d551bf7b7878d",
+          "reviewedWith": "view_image"
+        }
+      ],
+      "positiveFindings": [
+        "正视与斜视可辨认为带支杆和红色锥形罩的简易台灯。",
+        "部件没有明显悬空断裂，整体底部Y=0；真实USDZ可由Apple SceneKit导入。"
+      ],
+      "hardInstructionFailures": [
+        {
+          "requirement": "灰色圆柱底座",
+          "observed": "模型response与canonical scene均把base写为primitive=box；两张图中也是方块底座。不是导出器把圆柱转成了方块。"
+        },
+        {
+          "requirement": "整体高约0.8米",
+          "observedMetres": 1.093999981880188,
+          "differenceMetres": 0.29399998188018794,
+          "relativeDifferencePercent": 36.7499977350235
+        }
+      ],
+      "visualLimitations": [
+        "灯罩偏尖长，造型粗简；完整PNG和数值均保留，不把格式正确当造型服从。"
+      ],
+      "materialAssessment": "canonical颜色声明为灰#808080与红#FF0000；本次固定HDR灯光下灰材质高光偏白，不把离屏像素色差当作已证实的手机材质错误。"
+    },
+    {
+      "id": "color_only_edit",
+      "disposition": "pass_for_this_fixed_color_only_edit",
+      "viewsReviewed": [
+        {
+          "path": "color_only_edit/front.png",
+          "sha256": "7aabb04aa73c79bc22e764caf1b72b388fd3016450ed4bee1eaae83677351732",
+          "reviewedWith": "view_image"
+        },
+        {
+          "path": "color_only_edit/three-quarter.png",
+          "sha256": "e60a2a7b498da2d792af7cb3106c674daa266731bfa9e838be391e18a2a59eeb",
+          "reviewedWith": "view_image"
+        }
+      ],
+      "sourceCase": "robot",
+      "positiveFindings": [
+        "与原robot前/斜视图对照，轮廓与姿态保持，腰部和双眼等部件颜色确实改变。",
+        "全部9部件color=#22B8A8；id集合、名称、位置、尺寸、旋转、其他属性及CPU几何缓冲逐项完全相同。",
+        "实际导出GLB的BIN chunk逐字节相同，不仅仅是scene参数表面相同。"
+      ],
+      "preservation": {
+        "allColorsExactlyRequested": true,
+        "allRequestedPreservationChecksPass": true,
+        "geometryBuffersExactlyEqual": true,
+        "maxPositionDeltaMetres": 0,
+        "maxSizeDeltaMetres": 0,
+        "nameExactlyEqual": true,
+        "nodeIDsExactlyEqual": true,
+        "otherPropertiesExactlyEqual": true,
+        "positionsExactlyEqual": true,
+        "rotationsExactlyEqual": true,
+        "sizesExactlyEqual": true,
+        "exportedGLBBINChunkExactlyEqual": true,
+        "sourceGLBBINSHA256": "dc5dce3e70b7c84d545e7793d8be8056439fd40316579d67f297955a5ca416d0",
+        "editedGLBBINSHA256": "dc5dce3e70b7c84d545e7793d8be8056439fd40316579d67f297955a5ca416d0"
+      },
+      "limits": "只覆盖这一例由box/cylinder/sphere组成的9部件输入；profile/vertices/triangles均为空，未覆盖自由曲面或任意编辑保真。"
+    }
+  ],
+  "limitations": [
+    "这是Mac使用build2同源码/同权重的真实生成，不是iPhone输出位级重放，不能推定手机相同prompt一定得到相同轨迹。",
+    "离屏Apple SceneKit读取真实USDZ；不是App UI截图或手机RealityKit材质性能验收。",
+    "所有请求固定且每项只调用一次；不构成全题材成功率估计。",
+    "格式验证与模型质量分开判断。AABB近邻也不等于语义正确、真实表面接触或艺术品质。"
+  ],
+  "nextVersionPriorities": [
+    {
+      "priority": "P0",
+      "item": "提高完整且可解析的正式生成产出；本轮基础椅子与两个自由题材均在正式JSON门禁前失败。保留门禁，不保存伪模型。"
+    },
+    {
+      "priority": "P1",
+      "item": "对用户明确要求的部件形状和整体尺寸建立可检查的意图约束；台灯的圆柱底座和约0.8m高度没有被遵守。"
+    },
+    {
+      "priority": "P1",
+      "item": "改善结构/姿态规划与自由轮廓能力，不把玩具基元组合或一个AABB连通组当通用自由建模完成。"
+    },
+    {
+      "priority": "P2",
+      "item": "保留本轮只改色的严格geometry/BIN不变检查作为回归，并补充自由曲面编辑覆盖。"
+    },
+    {
+      "priority": "P2",
+      "item": "后续可补正式API的隐私安全终止原因/输出预算诊断；当前不能从invalidJSON区分截断与其他拒绝原因。"
+    }
+  ]
+}
