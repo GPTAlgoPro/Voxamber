@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "initialGLB": {
+    "loaded": true,
+    "error": null,
+    "materials": 17
+  },
+  "browserWorkerRecompile": {
+    "success": true,
+    "elapsed_ms": 106.80000001192093,
+    "materials": 17,
+    "source_bytes": 1037397
+  },
+  "engine": "Google Three-Live v1.2.3 Web Worker; separate from native Rust compiler"
+}

@@ -1,0 +1,140 @@
+{
+  "formatVersion": 1,
+  "defaultModelID": "qwen3.5-4b-mlx-int4",
+  "models": [
+    {
+      "id": "qwen3.5-4b-mlx-int4",
+      "name": "Qwen3.5 4B · INT4",
+      "publisher": "Qwen / MLX Community",
+      "license": "Apache-2.0 (Qwen original weights)",
+      "repository": "mlx-community/Qwen3.5-4B-4bit",
+      "revision": "0e7ffd5c629ef7719d4cbc04069232580bfa9d9c",
+      "contextTokens": 8192,
+      "minimumDeviceRAMBytes": 12000000000,
+      "runtime": "mlx-swift",
+      "files": [
+        {
+          "role": "configuration",
+          "required": true,
+          "filename": "chat_template.jinja",
+          "bytes": 7756,
+          "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+          "url": "https://huggingface.co/mlx-community/Qwen3.5-4B-4bit/resolve/0e7ffd5c629ef7719d4cbc04069232580bfa9d9c/chat_template.jinja",
+          "mirrorURL": "https://modelscope.cn/models/mlx-community/Qwen3.5-4B-4bit/resolve/ab9c7a42fd31095a40634b3362317779dee9e7fa/chat_template.jinja"
+        },
+        {
+          "role": "configuration",
+          "required": true,
+          "filename": "config.json",
+          "bytes": 3366,
+          "sha256": "f3efc81b2ea8d96a45301037d3ccccbcccdef44a961845c87f286aaddbc6eaaa",
+          "url": "https://huggingface.co/mlx-community/Qwen3.5-4B-4bit/resolve/0e7ffd5c629ef7719d4cbc04069232580bfa9d9c/config.json",
+          "mirrorURL": "https://modelscope.cn/models/mlx-community/Qwen3.5-4B-4bit/resolve/ab9c7a42fd31095a40634b3362317779dee9e7fa/config.json"
+        },
+        {
+          "role": "weights",
+          "required": true,
+          "filename": "model.safetensors",
+          "bytes": 3034300695,
+          "sha256": "5fb9acd0246866381cf8c5c354c6db1019f6498eec4ccb4f5edcc71ffeacb2db",
+          "url": "https://huggingface.co/mlx-community/Qwen3.5-4B-4bit/resolve/0e7ffd5c629ef7719d4cbc04069232580bfa9d9c/model.safetensors",
+          "mirrorURL": "https://modelscope.cn/models/mlx-community/Qwen3.5-4B-4bit/resolve/ab9c7a42fd31095a40634b3362317779dee9e7fa/model.safetensors"
+        },
+        {
+          "role": "configuration",
+          "required": true,
+          "filename": "model.safetensors.index.json",
+          "bytes": 101944,
+          "sha256": "52e534c41f7b97708329c85f762e5882bf48bd5955a422c6ae74eba321e6048a",
+          "url": "https://huggingface.co/mlx-community/Qwen3.5-4B-4bit/resolve/0e7ffd5c629ef7719d4cbc04069232580bfa9d9c/model.safetensors.index.json",
+          "mirrorURL": "https://modelscope.cn/models/mlx-community/Qwen3.5-4B-4bit/resolve/ab9c7a42fd31095a40634b3362317779dee9e7fa/model.safetensors.index.json"
+        },
+        {
+          "role": "configuration",
+          "required": true,
+          "filename": "preprocessor_config.json",
+          "bytes": 390,
+          "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+          "url": "https://huggingface.co/mlx-community/Qwen3.5-4B-4bit/resolve/0e7ffd5c629ef7719d4cbc04069232580bfa9d9c/preprocessor_config.json",
+          "mirrorURL": "https://modelscope.cn/models/mlx-community/Qwen3.5-4B-4bit/resolve/ab9c7a42fd31095a40634b3362317779dee9e7fa/preprocessor_config.json"
+        },
+        {
+          "role": "configuration",
+          "required": true,
+          "filename": "processor_config.json",
+          "bytes": 1300,
+          "sha256": "14932921ca485d458a04dafd8069fbb0a4505622a48208d19ed247115801385b",
+          "url": "https://huggingface.co/mlx-community/Qwen3.5-4B-4bit/resolve/0e7ffd5c629ef7719d4cbc04069232580bfa9d9c/processor_config.json",
+          "mirrorURL": "https://modelscope.cn/models/mlx-community/Qwen3.5-4B-4bit/resolve/ab9c7a42fd31095a40634b3362317779dee9e7fa/processor_config.json"
+        },
+        {
+          "role": "configuration",
+          "required": true,
+          "filename": "tokenizer.json",
+          "bytes": 19989343,
+          "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+          "url": "https://huggingface.co/mlx-community/Qwen3.5-4B-4bit/resolve/0e7ffd5c629ef7719d4cbc04069232580bfa9d9c/tokenizer.json",
+          "mirrorURL": "https://modelscope.cn/models/mlx-community/Qwen3.5-4B-4bit/resolve/ab9c7a42fd31095a40634b3362317779dee9e7fa/tokenizer.json"
+        },
+        {
+          "role": "configuration",
+          "required": true,
+          "filename": "tokenizer_config.json",
+          "bytes": 1139,
+          "sha256": "e98f1901ac6f0adff67b1d540bfa0c36ac1a0cf59eb72ed78146ef89aafa1182",
+          "url": "https://huggingface.co/mlx-community/Qwen3.5-4B-4bit/resolve/0e7ffd5c629ef7719d4cbc04069232580bfa9d9c/tokenizer_config.json",
+          "mirrorURL": "https://modelscope.cn/models/mlx-community/Qwen3.5-4B-4bit/resolve/ab9c7a42fd31095a40634b3362317779dee9e7fa/tokenizer_config.json"
+        },
+        {
+          "role": "configuration",
+          "required": true,
+          "filename": "video_preprocessor_config.json",
+          "bytes": 385,
+          "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+          "url": "https://huggingface.co/mlx-community/Qwen3.5-4B-4bit/resolve/0e7ffd5c629ef7719d4cbc04069232580bfa9d9c/video_preprocessor_config.json",
+          "mirrorURL": "https://modelscope.cn/models/mlx-community/Qwen3.5-4B-4bit/resolve/ab9c7a42fd31095a40634b3362317779dee9e7fa/video_preprocessor_config.json"
+        },
+        {
+          "role": "configuration",
+          "required": true,
+          "filename": "vocab.json",
+          "bytes": 6722759,
+          "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003",
+          "url": "https://huggingface.co/mlx-community/Qwen3.5-4B-4bit/resolve/0e7ffd5c629ef7719d4cbc04069232580bfa9d9c/vocab.json",
+          "mirrorURL": "https://modelscope.cn/models/mlx-community/Qwen3.5-4B-4bit/resolve/ab9c7a42fd31095a40634b3362317779dee9e7fa/vocab.json"
+        }
+      ],
+      "modelScopeRevision": "ab9c7a42fd31095a40634b3362317779dee9e7fa"
+    },
+    {
+      "id": "minicpm-v-4.7-1b-q4km",
+      "name": "MiniCPM-V 4.7 1B",
+      "publisher": "OpenBMB / 面壁智能",
+      "license": "Apache-2.0",
+      "repository": "tc-mb/MiniCPM-V-Apps-gguf",
+      "revision": "2a3a3ddfbfc3d8e98c1070680b2fa98df88c3452",
+      "contextTokens": 4096,
+      "minimumDeviceRAMBytes": 8000000000,
+      "files": [
+        {
+          "role": "languageModel",
+          "required": true,
+          "filename": "MiniCPM-V-4_7-1B-Q4_K_M.gguf",
+          "bytes": 672003584,
+          "sha256": "bdc2c0da2320129a4fd91b0d464c63f8047b511a7ef7f7e1d143b433c7165cd5",
+          "url": "https://huggingface.co/tc-mb/MiniCPM-V-Apps-gguf/resolve/2a3a3ddfbfc3d8e98c1070680b2fa98df88c3452/MiniCPM-V-4.7-1B/MiniCPM-V-4_7-1B-Q4_K_M.gguf",
+          "mirrorURL": "https://modelscope.cn/models/zerg13/MiniCPM-V-Apps-gguf/resolve/e9b27a404bda479bdc9c89ef4c33fb9b3d78efbe/MiniCPM-V-4.7-1B/MiniCPM-V-4_7-1B-Q4_K_M.gguf"
+        },
+        {
+          "role": "visionProjector",
+          "required": false,
+          "filename": "mmproj-model-f16.gguf",
+          "bytes": 1108746816,
+          "sha256": "febb329c29ec9f1643c9d690ca74d35f486b83fa48c2f54c108b135729f635fd",
+          "url": "https://huggingface.co/tc-mb/MiniCPM-V-Apps-gguf/resolve/2a3a3ddfbfc3d8e98c1070680b2fa98df88c3452/MiniCPM-V-4.7-1B/mmproj-model-f16.gguf",
+          "mirrorURL": "https://modelscope.cn/models/zerg13/MiniCPM-V-Apps-gguf/resolve/f264467e48db2bbb5fbec36b1b63ab8f89a8b5e5/MiniCPM-V-4.7-1B/mmproj-model-f16.gguf"
+        }
+      ]
+    }
+  ]
+}

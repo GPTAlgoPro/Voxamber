@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-05",
+  "brand": "维珀 / Voxamber",
+  "tool": "image_gen.imagegen (built-in)",
+  "skill": "imagegen",
+  "promptFile": "icon-generation-prompt.txt",
+  "output": "Apple/ThreeLiveStudio/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+  "generatedPixelDimensions": [1254, 1254],
+  "finalPixelDimensions": [1024, 1024],
+  "opaque": true,
+  "resizedWith": "macOS sips",
+  "visualInspection": "Single continuous optical glass ribbon morphs from a cube into a faceted polyhedron; cyan, violet, jade and platinum highlights on opaque full-bleed midnight blue. General 3D sculptural geometry, no architecture, roof, text, enclosing border, or prerounded canvas corners."
+}

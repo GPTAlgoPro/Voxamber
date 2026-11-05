@@ -1,0 +1,134 @@
+{
+  "name": "蓝色立方体机器人",
+  "nodes": [
+    {
+      "id": "base",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.4,
+        "height": 0.3,
+        "depth": 0.2
+      },
+      "color": "#333333"
+    },
+    {
+      "id": "head",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.25,
+        "height": 0.25,
+        "depth": 0.25
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "base",
+        "face": "top",
+        "xOffset": 0,
+        "yOffset": 0.12,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "arm_l",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.05,
+        "height": 0.35,
+        "depth": 0.05
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "head",
+        "face": "front",
+        "xOffset": -0.12,
+        "yOffset": 0,
+        "zOffset": 0.1
+      }
+    },
+    {
+      "id": "arm_r",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.05,
+        "height": 0.35,
+        "depth": 0.05
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "head",
+        "face": "front",
+        "xOffset": 0.12,
+        "yOffset": 0,
+        "zOffset": 0.1
+      }
+    },
+    {
+      "id": "leg_l",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.3,
+        "depth": 0.06
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "base",
+        "face": "bottom",
+        "xOffset": -0.15,
+        "yOffset": 0,
+        "zOffset": 0.05
+      }
+    },
+    {
+      "id": "leg_r",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.3,
+        "depth": 0.06
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "base",
+        "face": "bottom",
+        "xOffset": 0.15,
+        "yOffset": 0,
+        "zOffset": 0.05
+      }
+    },
+    {
+      "id": "eye_l",
+      "primitive": "sphere",
+      "dimensions": {
+        "width": 0.04,
+        "height": 0.04,
+        "depth": 0.04
+      },
+      "color": "#FFD700",
+      "attach": {
+        "parent": "head",
+        "face": "front",
+        "xOffset": -0.06,
+        "yOffset": 0,
+        "zOffset": 0.02
+      }
+    },
+    {
+      "id": "eye_r",
+      "primitive": "sphere",
+      "dimensions": {
+        "width": 0.04,
+        "height": 0.04,
+        "depth": 0.04
+      },
+      "color": "#FFD700",
+      "attach": {
+        "parent": "head",
+        "face": "front",
+        "xOffset": 0.06,
+        "yOffset": 0,
+        "zOffset": 0.02
+      }
+    }
+  ]
+}

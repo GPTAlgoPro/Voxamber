@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06642796E9722D1435EB8A1C /* MLX-Swift-LM.txt in Resources */ = {isa = PBXBuildFile; fileRef = DCDAA8EC28B0663BE162BF87 /* MLX-Swift-LM.txt */; };
+		0D0F8F0CB1D09818DB8874C8 /* CreationWorkspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE1E7CBBA34FB74E1C50541 /* CreationWorkspace.swift */; };
+		1B60E779EEBB540AE66D716C /* ProjectStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04C8B33AF3D96C0D4535C00 /* ProjectStoreTests.swift */; };
+		211C5006D7CFB79182E6D414 /* MLX-Swift.txt in Resources */ = {isa = PBXBuildFile; fileRef = EFD1803395CA85AB24FAC799 /* MLX-Swift.txt */; };
+		2746C44FB805A29ED90622F0 /* ProjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280D56379EA5205075F096F /* ProjectStore.swift */; };
+		2CBF57C9284B47815132E2A2 /* ModelViewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B69F79EBFC5147A7BF5DAF /* ModelViewport.swift */; };
+		2D41AA772C76BACC9E3F3392 /* OnDeviceInferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF508025F5FC777A4603B5 /* OnDeviceInferenceTests.swift */; };
+		3FB858C1D08847D663B1537C /* ProjectLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34368402DAEA02742BB382C /* ProjectLibrary.swift */; };
+		5067306AFCE364EAD77E0F66 /* Qwen-Model.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54CE96C85AFCA7B2690EF271 /* Qwen-Model.txt */; };
+		594462793CB30CCC44DADE8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70B6E574C3FDD00A59F91E55 /* Assets.xcassets */; };
+		5E58539DF5B1BF2E88CA4DAA /* StudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D63FB8B9B5D0D5DC25D94 /* StudioModel.swift */; };
+		5F854FF5F1D21529FA212213 /* SceneParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D195F6009493FA872C580EA /* SceneParameters.swift */; };
+		64DEB54A599505F19683FCD0 /* CreationJourneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01A6C0FE9282C7BEFC3EF2A /* CreationJourneyTests.swift */; };
+		65EEF26D5C36D93A91F3DE0B /* ModelLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4BBC0DC51B93B06AE03D6 /* ModelLibrary.swift */; };
+		7A7CA8A9D0FABB865CE882A2 /* VerifiedModelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582011CB7CCE0BA1CAB7C70 /* VerifiedModelStore.swift */; };
+		81025439F11E499D01F19501 /* StudioStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68390729A630CD89992EA17 /* StudioStyle.swift */; };
+		8C0C7091D4FE41D5DC749778 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 975B09C8D199A3944E174C24 /* PrivacyInfo.xcprivacy */; };
+		94E62342437321B659976D08 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C871680D9158E22213C02D9F /* ModelManager.swift */; };
+		A390520CABCACFD8DA094AE2 /* ThreeLiveNative in Frameworks */ = {isa = PBXBuildFile; productRef = 89274F890EAFAF9F9FE95136 /* ThreeLiveNative */; };
+		A437FC6A5A769E7879A90452 /* CreationCore in Frameworks */ = {isa = PBXBuildFile; productRef = F902F70628D1416BE2E9119D /* CreationCore */; };
+		A4C6B1067A39FCD9C5D0DAD0 /* QwenNative in Frameworks */ = {isa = PBXBuildFile; productRef = 9C74310C7B87863D0601DF9A /* QwenNative */; };
+		B13EE6CD109051E3229E21D6 /* Swift-Transformers.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDC64293A8C8A2D9F957F27B /* Swift-Transformers.txt */; };
+		CB4B92B1D96C5E2C6E84A460 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 415912223D05F8300A862C2F /* InfoPlist.strings */; };
+		CE1927D0FECD6406261835DE /* ThreeLiveStudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D8F9C3D35EA6D90EB4F36B /* ThreeLiveStudioApp.swift */; };
+		CE4BED8D13AE522EFDBB6349 /* LanguageModel.json in Resources */ = {isa = PBXBuildFile; fileRef = 901D7D08CA2F20683A8A2FFB /* LanguageModel.json */; };
+		F9F2C66F5F46F1B3E1E36B18 /* VerifiedModelStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A9A18EB6AE211BFC62B0F /* VerifiedModelStoreTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1A4EDDEF90E49B33170A662 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 779BBD25C28B658BE540B8D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E768C906EF941D87D1D5B5A3;
+			remoteInfo = ThreeLiveStudio;
+		};
+		D6B773F8B0847208AD3DEF75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 779BBD25C28B658BE540B8D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E768C906EF941D87D1D5B5A3;
+			remoteInfo = ThreeLiveStudio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16DCFEE2C9F656B7E5212DB7 /* CreationCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CreationCore; path = Packages/CreationCore; sourceTree = SOURCE_ROOT; };
+		2280D56379EA5205075F096F /* ProjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStore.swift; sourceTree = "<group>"; };
+		2446471427102B8E94EF51A2 /* ThreeLiveNative */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ThreeLiveNative; path = Packages/ThreeLiveNative; sourceTree = SOURCE_ROOT; };
+		3B930A8796D87852112F0CD7 /* ThreeLiveStudio.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ThreeLiveStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		424D60B49063FF2F7F5CB3CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		48EF508025F5FC777A4603B5 /* OnDeviceInferenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDeviceInferenceTests.swift; sourceTree = "<group>"; };
+		4D195F6009493FA872C580EA /* SceneParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneParameters.swift; sourceTree = "<group>"; };
+		4D8D198FFAF4F324434D941E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		503BB8675A553EB2AA32D2B7 /* QwenNative */ = {isa = PBXFileReference; lastKnownFileType = folder; name = QwenNative; path = Packages/QwenNative; sourceTree = SOURCE_ROOT; };
+		54CE96C85AFCA7B2690EF271 /* Qwen-Model.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Qwen-Model.txt"; sourceTree = "<group>"; };
+		557F2F9B24A98C6684073F84 /* ThreeLiveStudioTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ThreeLiveStudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A97004E3096CE718ABE9059 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		70B6E574C3FDD00A59F91E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CE1E7CBBA34FB74E1C50541 /* CreationWorkspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationWorkspace.swift; sourceTree = "<group>"; };
+		901D7D08CA2F20683A8A2FFB /* LanguageModel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LanguageModel.json; sourceTree = "<group>"; };
+		975B09C8D199A3944E174C24 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		9F596AD3B0F0A9AF33029D37 /* ThreeLiveStudioUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ThreeLiveStudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A63D63FB8B9B5D0D5DC25D94 /* StudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioModel.swift; sourceTree = "<group>"; };
+		A68390729A630CD89992EA17 /* StudioStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioStyle.swift; sourceTree = "<group>"; };
+		B1F4BBC0DC51B93B06AE03D6 /* ModelLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLibrary.swift; sourceTree = "<group>"; };
+		B32A9A18EB6AE211BFC62B0F /* VerifiedModelStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedModelStoreTests.swift; sourceTree = "<group>"; };
+		C04C8B33AF3D96C0D4535C00 /* ProjectStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStoreTests.swift; sourceTree = "<group>"; };
+		C2B69F79EBFC5147A7BF5DAF /* ModelViewport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewport.swift; sourceTree = "<group>"; };
+		C34368402DAEA02742BB382C /* ProjectLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectLibrary.swift; sourceTree = "<group>"; };
+		C582011CB7CCE0BA1CAB7C70 /* VerifiedModelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedModelStore.swift; sourceTree = "<group>"; };
+		C871680D9158E22213C02D9F /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		D01A6C0FE9282C7BEFC3EF2A /* CreationJourneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationJourneyTests.swift; sourceTree = "<group>"; };
+		D8D8F9C3D35EA6D90EB4F36B /* ThreeLiveStudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeLiveStudioApp.swift; sourceTree = "<group>"; };
+		DCDAA8EC28B0663BE162BF87 /* MLX-Swift-LM.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MLX-Swift-LM.txt"; sourceTree = "<group>"; };
+		DDC64293A8C8A2D9F957F27B /* Swift-Transformers.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Swift-Transformers.txt"; sourceTree = "<group>"; };
+		EFD1803395CA85AB24FAC799 /* MLX-Swift.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MLX-Swift.txt"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E9B18E7B93691B7F098462B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A437FC6A5A769E7879A90452 /* CreationCore in Frameworks */,
+				A4C6B1067A39FCD9C5D0DAD0 /* QwenNative in Frameworks */,
+				A390520CABCACFD8DA094AE2 /* ThreeLiveNative in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A140EF6FFA7D6B6B1A5F387 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B930A8796D87852112F0CD7 /* ThreeLiveStudio.app */,
+				557F2F9B24A98C6684073F84 /* ThreeLiveStudioTests.xctest */,
+				9F596AD3B0F0A9AF33029D37 /* ThreeLiveStudioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BB672E43A2232C4BBE9C922 /* ThreeLiveStudioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D01A6C0FE9282C7BEFC3EF2A /* CreationJourneyTests.swift */,
+			);
+			path = ThreeLiveStudioUITests;
+			sourceTree = "<group>";
+		};
+		15BD1B51CBE5B541B022E2D7 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				16DCFEE2C9F656B7E5212DB7 /* CreationCore */,
+				503BB8675A553EB2AA32D2B7 /* QwenNative */,
+				2446471427102B8E94EF51A2 /* ThreeLiveNative */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		3B245035FA8C2844E5AE75AB /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				DCDAA8EC28B0663BE162BF87 /* MLX-Swift-LM.txt */,
+				EFD1803395CA85AB24FAC799 /* MLX-Swift.txt */,
+				54CE96C85AFCA7B2690EF271 /* Qwen-Model.txt */,
+				DDC64293A8C8A2D9F957F27B /* Swift-Transformers.txt */,
+			);
+			path = Licenses;
+			sourceTree = "<group>";
+		};
+		4A73CE926A3B84AA2CE98237 /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				8CE1E7CBBA34FB74E1C50541 /* CreationWorkspace.swift */,
+				4D195F6009493FA872C580EA /* SceneParameters.swift */,
+			);
+			path = Creation;
+			sourceTree = "<group>";
+		};
+		4DE293DED73EC47DAAADFF76 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A63D63FB8B9B5D0D5DC25D94 /* StudioModel.swift */,
+				D8D8F9C3D35EA6D90EB4F36B /* ThreeLiveStudioApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5F7EE3AFE8F3E442B94A467A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				70B6E574C3FDD00A59F91E55 /* Assets.xcassets */,
+				4D8D198FFAF4F324434D941E /* Info.plist */,
+				901D7D08CA2F20683A8A2FFB /* LanguageModel.json */,
+				975B09C8D199A3944E174C24 /* PrivacyInfo.xcprivacy */,
+				415912223D05F8300A862C2F /* InfoPlist.strings */,
+				3B245035FA8C2844E5AE75AB /* Licenses */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		65D96186D292E2F5006CC7C8 /* ThreeLiveStudio */ = {
+			isa = PBXGroup;
+			children = (
+				4DE293DED73EC47DAAADFF76 /* App */,
+				4A73CE926A3B84AA2CE98237 /* Creation */,
+				6D6B8339709A9778EE4699DD /* Design */,
+				C4DDA5DB1BA0DC20A664B9E3 /* Library */,
+				C4A3D81CED9AC9DD07C10BEF /* Models */,
+				CF49B5561EBFDE2C61BD51A0 /* Preview */,
+				5F7EE3AFE8F3E442B94A467A /* Resources */,
+				A77E792544021DB506BBD882 /* Storage */,
+			);
+			path = ThreeLiveStudio;
+			sourceTree = "<group>";
+		};
+		6D6B8339709A9778EE4699DD /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				A68390729A630CD89992EA17 /* StudioStyle.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		A77E792544021DB506BBD882 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				2280D56379EA5205075F096F /* ProjectStore.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		AFFAF7CDFBFF254130BCE732 = {
+			isa = PBXGroup;
+			children = (
+				15BD1B51CBE5B541B022E2D7 /* Packages */,
+				65D96186D292E2F5006CC7C8 /* ThreeLiveStudio */,
+				CB65A2360EA0967D9C29F169 /* ThreeLiveStudioTests */,
+				0BB672E43A2232C4BBE9C922 /* ThreeLiveStudioUITests */,
+				0A140EF6FFA7D6B6B1A5F387 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4A3D81CED9AC9DD07C10BEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1F4BBC0DC51B93B06AE03D6 /* ModelLibrary.swift */,
+				C871680D9158E22213C02D9F /* ModelManager.swift */,
+				C582011CB7CCE0BA1CAB7C70 /* VerifiedModelStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C4DDA5DB1BA0DC20A664B9E3 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C34368402DAEA02742BB382C /* ProjectLibrary.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		CB65A2360EA0967D9C29F169 /* ThreeLiveStudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				48EF508025F5FC777A4603B5 /* OnDeviceInferenceTests.swift */,
+				C04C8B33AF3D96C0D4535C00 /* ProjectStoreTests.swift */,
+				B32A9A18EB6AE211BFC62B0F /* VerifiedModelStoreTests.swift */,
+			);
+			path = ThreeLiveStudioTests;
+			sourceTree = "<group>";
+		};
+		CF49B5561EBFDE2C61BD51A0 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				C2B69F79EBFC5147A7BF5DAF /* ModelViewport.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9701FFCB1DAB734F899ED31 /* ThreeLiveStudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960CBCB5D76F6B521C6F0070 /* Build configuration list for PBXNativeTarget "ThreeLiveStudioTests" */;
+			buildPhases = (
+				B99D211235ED51331FC39846 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33289E235C799BCA17A428DD /* PBXTargetDependency */,
+			);
+			name = ThreeLiveStudioTests;
+			packageProductDependencies = (
+			);
+			productName = ThreeLiveStudioTests;
+			productReference = 557F2F9B24A98C6684073F84 /* ThreeLiveStudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E768C906EF941D87D1D5B5A3 /* ThreeLiveStudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE5C248E5351849813D82637 /* Build configuration list for PBXNativeTarget "ThreeLiveStudio" */;
+			buildPhases = (
+				06FBC5E5D76359DF03F91209 /* Sources */,
+				3C66241DDD817738312A18C6 /* Resources */,
+				9E9B18E7B93691B7F098462B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThreeLiveStudio;
+			packageProductDependencies = (
+				F902F70628D1416BE2E9119D /* CreationCore */,
+				9C74310C7B87863D0601DF9A /* QwenNative */,
+				89274F890EAFAF9F9FE95136 /* ThreeLiveNative */,
+			);
+			productName = ThreeLiveStudio;
+			productReference = 3B930A8796D87852112F0CD7 /* ThreeLiveStudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED13F54A1098801BC8ECDF75 /* ThreeLiveStudioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D0FD547748F37452C5D5965 /* Build configuration list for PBXNativeTarget "ThreeLiveStudioUITests" */;
+			buildPhases = (
+				138C2518BD4FAD5555D01F39 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				645AFFB978BBC3CD05C4E6F9 /* PBXTargetDependency */,
+			);
+			name = ThreeLiveStudioUITests;
+			packageProductDependencies = (
+			);
+			productName = ThreeLiveStudioUITests;
+			productReference = 9F596AD3B0F0A9AF33029D37 /* ThreeLiveStudioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		779BBD25C28B658BE540B8D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					C9701FFCB1DAB734F899ED31 = {
+						DevelopmentTeam = M97RTV2PQG;
+						ProvisioningStyle = Automatic;
+					};
+					E768C906EF941D87D1D5B5A3 = {
+						DevelopmentTeam = M97RTV2PQG;
+						ProvisioningStyle = Automatic;
+					};
+					ED13F54A1098801BC8ECDF75 = {
+						DevelopmentTeam = M97RTV2PQG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E768C906EF941D87D1D5B5A3;
+					};
+				};
+			};
+			buildConfigurationList = D6C0E9A2CA53A2A9D95A9E6F /* Build configuration list for PBXProject "ThreeLiveStudio" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				"zh-Hans",
+			);
+			mainGroup = AFFAF7CDFBFF254130BCE732;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				845B85A6AF7B4B2BE751BC57 /* XCLocalSwiftPackageReference "Packages/CreationCore" */,
+				9059AE68BD9A716FA3922C43 /* XCLocalSwiftPackageReference "Packages/QwenNative" */,
+				F48D28FA0A70C5DAE285EC38 /* XCLocalSwiftPackageReference "Packages/ThreeLiveNative" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0A140EF6FFA7D6B6B1A5F387 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E768C906EF941D87D1D5B5A3 /* ThreeLiveStudio */,
+				C9701FFCB1DAB734F899ED31 /* ThreeLiveStudioTests */,
+				ED13F54A1098801BC8ECDF75 /* ThreeLiveStudioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C66241DDD817738312A18C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				594462793CB30CCC44DADE8F /* Assets.xcassets in Resources */,
+				CB4B92B1D96C5E2C6E84A460 /* InfoPlist.strings in Resources */,
+				CE4BED8D13AE522EFDBB6349 /* LanguageModel.json in Resources */,
+				06642796E9722D1435EB8A1C /* MLX-Swift-LM.txt in Resources */,
+				211C5006D7CFB79182E6D414 /* MLX-Swift.txt in Resources */,
+				8C0C7091D4FE41D5DC749778 /* PrivacyInfo.xcprivacy in Resources */,
+				5067306AFCE364EAD77E0F66 /* Qwen-Model.txt in Resources */,
+				B13EE6CD109051E3229E21D6 /* Swift-Transformers.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06FBC5E5D76359DF03F91209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D0F8F0CB1D09818DB8874C8 /* CreationWorkspace.swift in Sources */,
+				65EEF26D5C36D93A91F3DE0B /* ModelLibrary.swift in Sources */,
+				94E62342437321B659976D08 /* ModelManager.swift in Sources */,
+				2CBF57C9284B47815132E2A2 /* ModelViewport.swift in Sources */,
+				3FB858C1D08847D663B1537C /* ProjectLibrary.swift in Sources */,
+				2746C44FB805A29ED90622F0 /* ProjectStore.swift in Sources */,
+				5F854FF5F1D21529FA212213 /* SceneParameters.swift in Sources */,
+				5E58539DF5B1BF2E88CA4DAA /* StudioModel.swift in Sources */,
+				81025439F11E499D01F19501 /* StudioStyle.swift in Sources */,
+				CE1927D0FECD6406261835DE /* ThreeLiveStudioApp.swift in Sources */,
+				7A7CA8A9D0FABB865CE882A2 /* VerifiedModelStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138C2518BD4FAD5555D01F39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64DEB54A599505F19683FCD0 /* CreationJourneyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B99D211235ED51331FC39846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D41AA772C76BACC9E3F3392 /* OnDeviceInferenceTests.swift in Sources */,
+				1B60E779EEBB540AE66D716C /* ProjectStoreTests.swift in Sources */,
+				F9F2C66F5F46F1B3E1E36B18 /* VerifiedModelStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33289E235C799BCA17A428DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E768C906EF941D87D1D5B5A3 /* ThreeLiveStudio */;
+			targetProxy = D6B773F8B0847208AD3DEF75 /* PBXContainerItemProxy */;
+		};
+		645AFFB978BBC3CD05C4E6F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E768C906EF941D87D1D5B5A3 /* ThreeLiveStudio */;
+			targetProxy = B1A4EDDEF90E49B33170A662 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		415912223D05F8300A862C2F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				424D60B49063FF2F7F5CB3CC /* en */,
+				6A97004E3096CE718ABE9059 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B5C0058767FBCED495BC6F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaisun.ThreeLiveStudioTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeLiveStudio.app/ThreeLiveStudio";
+			};
+			name = Release;
+		};
+		355CBBBF418501787DD83F7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaisun.ThreeLiveStudioTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeLiveStudio.app/ThreeLiveStudio";
+			};
+			name = Debug;
+		};
+		5BF8A8E05CFB2CC2F88B5EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ThreeLiveStudio/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaisun.voxamber;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A9533540C386CA67C923412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ThreeLiveStudio/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaisun.voxamber;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9A6DD65DAC87F662ACD1864E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaisun.ThreeLiveStudioUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThreeLiveStudio;
+			};
+			name = Release;
+		};
+		9FCD6458E90D3CCAF477BE06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = M97RTV2PQG;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		B869A42B3D19A0F40D559F29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaisun.ThreeLiveStudioUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThreeLiveStudio;
+			};
+			name = Debug;
+		};
+		F07CE95E0C0E9A102A3465AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = M97RTV2PQG;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D0FD547748F37452C5D5965 /* Build configuration list for PBXNativeTarget "ThreeLiveStudioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B869A42B3D19A0F40D559F29 /* Debug */,
+				9A6DD65DAC87F662ACD1864E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		960CBCB5D76F6B521C6F0070 /* Build configuration list for PBXNativeTarget "ThreeLiveStudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				355CBBBF418501787DD83F7F /* Debug */,
+				2B5C0058767FBCED495BC6F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D6C0E9A2CA53A2A9D95A9E6F /* Build configuration list for PBXProject "ThreeLiveStudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCD6458E90D3CCAF477BE06 /* Debug */,
+				F07CE95E0C0E9A102A3465AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FE5C248E5351849813D82637 /* Build configuration list for PBXNativeTarget "ThreeLiveStudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF8A8E05CFB2CC2F88B5EAA /* Debug */,
+				8A9533540C386CA67C923412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		845B85A6AF7B4B2BE751BC57 /* XCLocalSwiftPackageReference "Packages/CreationCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/CreationCore;
+		};
+		9059AE68BD9A716FA3922C43 /* XCLocalSwiftPackageReference "Packages/QwenNative" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/QwenNative;
+		};
+		F48D28FA0A70C5DAE285EC38 /* XCLocalSwiftPackageReference "Packages/ThreeLiveNative" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/ThreeLiveNative;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		89274F890EAFAF9F9FE95136 /* ThreeLiveNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ThreeLiveNative;
+		};
+		9C74310C7B87863D0601DF9A /* QwenNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = QwenNative;
+		};
+		F902F70628D1416BE2E9119D /* CreationCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CreationCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 779BBD25C28B658BE540B8D3 /* Project object */;
+}

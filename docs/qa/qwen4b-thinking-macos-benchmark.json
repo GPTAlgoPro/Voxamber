@@ -1,0 +1,74 @@
+{
+  "cases" : [
+
+  ],
+  "date" : "2026-11-05T08:08:25Z",
+  "device" : "kaisun.local",
+  "loadSeconds" : 1.258499542,
+  "mlxActiveBytesAfterLoad" : 2367679904,
+  "mlxActiveBytesAfterUnload" : 427430376,
+  "mlxActiveBytesBeforeUnload" : 2367680560,
+  "mlxPeakBytes" : 3523014184,
+  "modelDirectory" : "Apple\/.build\/Models\/qwen3.5-4b-mlx-int4",
+  "physicalMemoryBytes" : 51539607552,
+  "runtime" : "MLX Swift \/ Metal",
+  "sceneCases" : [
+    {
+      "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+      "id" : "chair",
+      "prompt" : "一把简洁的棕色木椅，必须包含坐面、靠背和四条腿，地面Y=0，坐面高度约0.45米，不要增加底部平台。",
+      "seconds" : 37.556859375000002,
+      "validSchema" : false
+    },
+    {
+      "boundsMaximum" : [
+        0.20000000298023224,
+        1.1000000238418579,
+        0.5
+      ],
+      "boundsMinimum" : [
+        -0.20000000298023224,
+        0,
+        -0.17500001192092896
+      ],
+      "finiteGeometry" : true,
+      "firstTokenSeconds" : 25.402219666000001,
+      "id" : "robot",
+      "initialOutput" : "{\n  \"name\": \"蓝色玩具机器人\",\n  \"nodes\": [\n    {\n      \"id\": \"head\",\n      \"primitive\": \"box\",\n      \"position\": [0, 0.95, 0.15],\n      \"size\": [0.3, 0.3, 0.3],\n      \"rotation\": [0, 0, 0],\n      \"color\": \"#1E90FF\",\n      \"metallic\": 0.2,\n      \"roughness\": 0.5\n    },\n    {\n      \"id\": \"torso\",\n      \"primitive\": \"box\",\n      \"position\": [0, 0.5, 0.2],\n      \"size\": [0.4, 0.4, 0.6],\n      \"rotation\": [0, 0, 0],\n      \"color\": \"#1E90FF\",\n      \"metallic\": 0.2,\n      \"roughness\": 0.5\n    },\n    {\n      \"id\": \"leg_left\",\n      \"primitive\": \"box\",\n      \"position\": [-0.1, 0.25, -0.1],\n      \"size\": [0.15, 0.5, 0.15],\n      \"rotation\": [0, 0, 0],\n      \"color\": \"#1E90FF\",\n      \"metallic\": 0.2,\n      \"roughness\": 0.5\n    },\n    {\n      \"id\": \"leg_right\",\n      \"primitive\": \"box\",\n      \"position\": [0.1, 0.25, 0.1],\n      \"size\": [0.15, 0.5, 0.15],\n      \"rotation\": [0, 0, 0],\n      \"color\": \"#1E90FF\",\n      \"metallic\": 0.2,\n      \"roughness\": 0.5\n    },\n    {\n      \"id\": \"arm_left\",\n      \"primitive\": \"box\",\n      \"position\": [-0.1, 0.7, -0.1],\n      \"size\": [0.15, 0.6, 0.15],\n      \"rotation\": [0, 0, 0],\n      \"color\": \"#1E90FF\",\n      \"metallic\": 0.2,\n      \"roughness\": 0.5\n    },\n    {\n      \"id\": \"arm_right\",\n      \"primitive\": \"box\",\n      \"position\": [0.1, 0.7, 0.1],\n      \"size\": [0.15, 0.6, 0.15],\n      \"rotation\": [0, 0, 0],\n      \"color\": \"#1E90FF\",\n      \"metallic\": 0.2,\n      \"roughness\": 0.5\n    },\n    {\n      \"id\": \"eye_left\",\n      \"primitive\": \"sphere\",\n      \"position\": [-0.15, 0.95, 0.3],\n      \"size\": [0.05, 0.05, 0.05],\n      \"rotation\": [0, 0, 0],\n      \"color\": \"#FFD700\",\n      \"metallic\": 0.6,\n      \"roughness\": 0.3\n    },\n    {\n      \"id\": \"eye_right\",\n      \"primitive\": \"sphere\",\n      \"position\": [0.15, 0.95, 0.3],\n      \"size\": [0.05, 0.05, 0.05],\n      \"rotation\": [0, 0, 0],\n      \"color\": \"#FFD700\",\n      \"metallic\": 0.6,\n      \"roughness\": 0.3\n    }\n  ]\n}",
+      "initialSeconds" : 36.715268999999999,
+      "initialSpatialIssues" : [
+
+      ],
+      "meshCount" : 8,
+      "nodeCount" : 8,
+      "output" : "{\n  \"name\": \"蓝色玩具机器人\",\n  \"nodes\": [\n    {\n      \"id\": \"head\",\n      \"primitive\": \"box\",\n      \"position\": [0, 0.95, 0.15],\n      \"size\": [0.3, 0.3, 0.3],\n      \"rotation\": [0, 0, 0],\n      \"color\": \"#1E90FF\",\n      \"metallic\": 0.2,\n      \"roughness\": 0.5\n    },\n    {\n      \"id\": \"torso\",\n      \"primitive\": \"box\",\n      \"position\": [0, 0.5, 0.2],\n      \"size\": [0.4, 0.4, 0.6],\n      \"rotation\": [0, 0, 0],\n      \"color\": \"#1E90FF\",\n      \"metallic\": 0.2,\n      \"roughness\": 0.5\n    },\n    {\n      \"id\": \"leg_left\",\n      \"primitive\": \"box\",\n      \"position\": [-0.1, 0.25, -0.1],\n      \"size\": [0.15, 0.5, 0.15],\n      \"rotation\": [0, 0, 0],\n      \"color\": \"#1E90FF\",\n      \"metallic\": 0.2,\n      \"roughness\": 0.5\n    },\n    {\n      \"id\": \"leg_right\",\n      \"primitive\": \"box\",\n      \"position\": [0.1, 0.25, 0.1],\n      \"size\": [0.15, 0.5, 0.15],\n      \"rotation\": [0, 0, 0],\n      \"color\": \"#1E90FF\",\n      \"metallic\": 0.2,\n      \"roughness\": 0.5\n    },\n    {\n      \"id\": \"arm_left\",\n      \"primitive\": \"box\",\n      \"position\": [-0.1, 0.7, -0.1],\n      \"size\": [0.15, 0.6, 0.15],\n      \"rotation\": [0, 0, 0],\n      \"color\": \"#1E90FF\",\n      \"metallic\": 0.2,\n      \"roughness\": 0.5\n    },\n    {\n      \"id\": \"arm_right\",\n      \"primitive\": \"box\",\n      \"position\": [0.1, 0.7, 0.1],\n      \"size\": [0.15, 0.6, 0.15],\n      \"rotation\": [0, 0, 0],\n      \"color\": \"#1E90FF\",\n      \"metallic\": 0.2,\n      \"roughness\": 0.5\n    },\n    {\n      \"id\": \"eye_left\",\n      \"primitive\": \"sphere\",\n      \"position\": [-0.15, 0.95, 0.3],\n      \"size\": [0.05, 0.05, 0.05],\n      \"rotation\": [0, 0, 0],\n      \"color\": \"#FFD700\",\n      \"metallic\": 0.6,\n      \"roughness\": 0.3\n    },\n    {\n      \"id\": \"eye_right\",\n      \"primitive\": \"sphere\",\n      \"position\": [0.15, 0.95, 0.3],\n      \"size\": [0.05, 0.05, 0.05],\n      \"rotation\": [0, 0, 0],\n      \"color\": \"#FFD700\",\n      \"metallic\": 0.6,\n      \"roughness\": 0.3\n    }\n  ]\n}",
+      "passesHeuristicChecks" : true,
+      "prompt" : "做一个站立的蓝色玩具机器人，包含立方体头、躯干、左右两条手臂和两条腿，以及两个球形黄色眼睛，底部在Y=0。",
+      "remainingSpatialIssues" : [
+
+      ],
+      "repairAttempted" : false,
+      "repairSeconds" : 0,
+      "seconds" : 36.718473832999997,
+      "semanticChecks" : {
+        "atLeastEightParts" : true,
+        "blueMaterial" : true,
+        "connectedParts" : true,
+        "eyesOnSameFrontFace" : true,
+        "groundContact" : true,
+        "twoSphericalEyes" : true,
+        "yellowEyes" : true
+      },
+      "triangleCount" : 1512,
+      "validSchema" : true,
+      "vertexCount" : 868
+    },
+    {
+      "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+      "id" : "lamp",
+      "prompt" : "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地Y=0，整体高约0.8米。",
+      "seconds" : 37.741932708,
+      "validSchema" : false
+    }
+  ]
+}

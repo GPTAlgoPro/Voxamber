@@ -1,0 +1,40 @@
+{
+  "checkedAtUTC": "2026-11-05T07:51:35.991554+00:00",
+  "method": "Current official HF API enumeration (author=Qwen, search=Qwen3.8, limit=1000) plus QwenLM/Qwen3.8 README, official HF/ModelScope collections and MLX Swift registry",
+  "officialModelAPI": "https://huggingface.co/api/models?author=Qwen&search=Qwen3.8&full=true&limit=1000",
+  "officialRepository": "https://github.com/QwenLM/Qwen3.8",
+  "officialCollectionHF": "https://huggingface.co/collections/Qwen/qwen38",
+  "officialCollectionModelScope": "https://modelscope.cn/collections/Qwen/Qwen38",
+  "officialModels": [
+    {
+      "id": "Qwen/Qwen3.8-27B",
+      "lastModified": "2026-08-14T15:00:01.000Z"
+    },
+    {
+      "id": "Qwen/Qwen3.8-Flash-Next",
+      "lastModified": "2026-08-27T05:03:36.000Z"
+    },
+    {
+      "id": "Qwen/Qwen3.8-2.4T-A95B",
+      "lastModified": "2026-08-12T10:24:04.000Z"
+    },
+    {
+      "id": "Qwen/Qwen3.8-27B-FP8",
+      "lastModified": "2026-08-14T14:44:41.000Z"
+    },
+    {
+      "id": "Qwen/Qwen3.8-Flash-Next-FP8",
+      "lastModified": "2026-08-31T08:19:15.000Z"
+    },
+    {
+      "id": "Qwen/Qwen3.8-2.4T-A95B-FP8",
+      "lastModified": "2026-08-12T10:23:42.000Z"
+    }
+  ],
+  "officialParameterCounts": {
+    "Qwen3.8-27B": 27781427952,
+    "Qwen3.8-Flash-Next": 179999981459,
+    "Qwen3.8-2.4T-A95B": 2446182725504
+  },
+  "conclusion": "No officially released Qwen3.8 model <=8B found. Qwen3.5-4B is the latest official 4B general base found that fits the explicit total-parameter cap. Community 3.8-named distill students are separate derivatives, not official small Qwen3.8 base releases."
+}

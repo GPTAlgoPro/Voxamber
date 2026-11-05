@@ -1,0 +1,49 @@
+{
+  "time": "2026-11-05T07:37:10+00:00",
+  "method": "App Store Connect API with externally-held ES256 key; read-only",
+  "browserSessionAvailable": false,
+  "targetBundleId": "com.kaisun.threelivestudio",
+  "team": "M97RTV2PQG",
+  "apps": [
+    {
+      "id": "6811343580",
+      "name": "摹界",
+      "bundleId": "com.snap3d.app",
+      "primaryLocale": "zh-Hans"
+    },
+    {
+      "id": "6819012114",
+      "name": "律动 · 本地音乐创作",
+      "bundleId": "studio.lilt.music",
+      "primaryLocale": "zh-Hans"
+    },
+    {
+      "id": "6822177443",
+      "name": "回声搭档 星冠之旅",
+      "bundleId": "com.kaisun.EchoCompanion",
+      "primaryLocale": "zh-Hans"
+    },
+    {
+      "id": "6756060734",
+      "name": "隽婉雅韵",
+      "bundleId": "sunkai.com.Piano",
+      "primaryLocale": "zh-Hans"
+    },
+    {
+      "id": "6818872942",
+      "name": "栖律",
+      "bundleId": "com.gptalgopro.memora",
+      "primaryLocale": "zh-Hans"
+    },
+    {
+      "id": "562853138",
+      "name": "应用猎手",
+      "bundleId": "com.visgenius.apphunter",
+      "primaryLocale": "zh-Hans"
+    }
+  ],
+  "targetAppExists": false,
+  "appsReadPermissionVerified": true,
+  "targetBundleIds": [],
+  "bundleIdReadPermissionVerified": true
+}

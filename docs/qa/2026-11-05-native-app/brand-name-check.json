@@ -1,0 +1,26 @@
+[
+  {
+    "query": "檐铸",
+    "time": "2026-11-05T07:33:19+00:00",
+    "storefront": "cn",
+    "exactMatches": []
+  },
+  {
+    "query": "檐铸",
+    "time": "2026-11-05T07:33:20+00:00",
+    "storefront": "us",
+    "exactMatches": []
+  },
+  {
+    "query": "EaveFoundry",
+    "time": "2026-11-05T07:33:21+00:00",
+    "storefront": "cn",
+    "exactMatches": []
+  },
+  {
+    "query": "EaveFoundry",
+    "time": "2026-11-05T07:33:22+00:00",
+    "storefront": "us",
+    "exactMatches": []
+  }
+]

@@ -1,0 +1,123 @@
+{
+  "observedAt": "2026-11-05T16:28:55.139538+08:00",
+  "implementation": "Native Swift geometry and GLB/USDZ serialization; no scripting runtime",
+  "creationCoreTestsPassed": 39,
+  "nativeExportTestsPassed": 5,
+  "scope": "Known data-only arbitrary geometry fixtures. Proves geometry/export/import correctness on macOS, not arbitrary LLM topic quality, real iPhone performance, or AR placement.",
+  "models": [
+    {
+      "primitive": "mesh",
+      "glb": {
+        "sha256": "1b0c89ea7f3d4d653880ca48cbf9db09f98eddc3c992e9d20bee461f1fb19349",
+        "bytes": 1396,
+        "khronosErrors": 0,
+        "khronosWarnings": 0
+      },
+      "usdz": {
+        "sha256": "c3ba87d81da0abd58b0086aa1fcfd65b8ec6f893005d653dd730c52b96ba63d3",
+        "bytes": 1660,
+        "appleStrictARKitValidation": "Success",
+        "zipCRCVerified": true
+      },
+      "macRealityKit": {
+        "success": true,
+        "vertices": 12,
+        "triangles": 4,
+        "boundsMetres": {
+          "extents": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max": [
+            0.25,
+            0.5,
+            0.25
+          ],
+          "min": [
+            -0.25,
+            0,
+            -0.25
+          ]
+        },
+        "loadAndReadbackSeconds": 0.318477988243103
+      }
+    },
+    {
+      "primitive": "lathe",
+      "glb": {
+        "sha256": "2cf25028a0f1df1377aba941af6f5adb826560fd337bfa9579982c4a32ac6ddb",
+        "bytes": 27956,
+        "khronosErrors": 0,
+        "khronosWarnings": 0
+      },
+      "usdz": {
+        "sha256": "689252701409200e62e3350aee966aa5fceed6c794bd2f832de3224ba52f0c9f",
+        "bytes": 60677,
+        "appleStrictARKitValidation": "Success",
+        "zipCRCVerified": true
+      },
+      "macRealityKit": {
+        "success": true,
+        "vertices": 594,
+        "triangles": 320,
+        "boundsMetres": {
+          "extents": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max": [
+            0.25,
+            0.5,
+            0.25
+          ],
+          "min": [
+            -0.25,
+            0,
+            -0.25
+          ]
+        },
+        "loadAndReadbackSeconds": 0.2087169885635376
+      }
+    },
+    {
+      "primitive": "extrusion",
+      "glb": {
+        "sha256": "4c415ead7bc8c42108268b2bc1ea1068f5024d02fb4aa8d8e8d7dd05b17e9305",
+        "bytes": 2744,
+        "khronosErrors": 0,
+        "khronosWarnings": 0
+      },
+      "usdz": {
+        "sha256": "4804dfcf3e131898b371c8531f770ea20f719d51600f73490bb01cf5cd145638",
+        "bytes": 3037,
+        "appleStrictARKitValidation": "Success",
+        "zipCRCVerified": true
+      },
+      "macRealityKit": {
+        "success": true,
+        "vertices": 36,
+        "triangles": 20,
+        "boundsMetres": {
+          "extents": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max": [
+            0.25,
+            0.5,
+            0.25
+          ],
+          "min": [
+            -0.25,
+            0,
+            -0.25
+          ]
+        },
+        "loadAndReadbackSeconds": 0.20672500133514404
+      }
+    }
+  ]
+}

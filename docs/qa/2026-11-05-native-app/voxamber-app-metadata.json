@@ -1,0 +1,44 @@
+{
+  "time": "2026-11-05T08:02:48+00:00",
+  "appId": "6831042755",
+  "bundleId": "com.kaisun.voxamber",
+  "submittedForAppStoreReview": false,
+  "operations": [
+    {
+      "operation": "setLocalizedName",
+      "locale": "zh-Hans",
+      "name": "维珀"
+    },
+    {
+      "operation": "addLocalizedName",
+      "locale": "en-US",
+      "name": "Voxamber"
+    },
+    {
+      "operation": "setPrimaryCategory",
+      "id": "PRODUCTIVITY"
+    }
+  ],
+  "appInfoId": "f8fed99d-159e-44d8-8c86-56bd491234d7",
+  "localizations": [
+    {
+      "id": "1d031e80-0995-4bcd-9dc6-6bbf4f6ccd25",
+      "locale": "en-US",
+      "name": "Voxamber"
+    },
+    {
+      "id": "fe6a6de3-82ae-49ce-a237-66603a58451c",
+      "locale": "zh-Hans",
+      "name": "维珀"
+    }
+  ],
+  "primaryCategory": {
+    "type": "appCategories",
+    "id": "PRODUCTIVITY"
+  },
+  "appState": {
+    "appStoreState": "PREPARE_FOR_SUBMISSION"
+  },
+  "verified": true,
+  "verifiedAt": "2026-11-05T08:03:37+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "time": "2026-11-05T07:43:37+00:00",
+  "requestedCategory": "PRODUCTIVITY",
+  "category": {
+    "id": "PRODUCTIVITY",
+    "platforms": [
+      "IOS",
+      "MAC_OS",
+      "TV_OS",
+      "VISION_OS"
+    ]
+  },
+  "verified": true
+}

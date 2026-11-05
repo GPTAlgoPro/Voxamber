@@ -1,0 +1,7 @@
+{
+  "status": "research-only-not-shipped",
+  "reason": "App uses pure Swift mesh serialization; no Rust, Boa or JavaScript runtime",
+  "source_commit": "c0ff24b628795286a175f1a71611673df5dbc05d",
+  "source_archive_sha256": "b6872cb3672d35e6c133074b99fc9aaf86004bb6855d96a7bcc95d52103cf055",
+  "patch": "0001-usdz-material-schema-and-flat-subdivision.patch"
+}

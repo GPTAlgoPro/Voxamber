@@ -1,0 +1,15 @@
+{
+  "time": "2026-11-05T07:39:44+00:00",
+  "targetBundleId": "com.kaisun.threelivestudio",
+  "requestedName": "EaveFoundry",
+  "team": "M97RTV2PQG",
+  "created": true,
+  "bundleId": {
+    "id": "5455X22PJP",
+    "name": "EaveFoundry",
+    "identifier": "com.kaisun.threelivestudio",
+    "platform": "UNIVERSAL",
+    "seedId": "M97RTV2PQG"
+  },
+  "verified": true
+}

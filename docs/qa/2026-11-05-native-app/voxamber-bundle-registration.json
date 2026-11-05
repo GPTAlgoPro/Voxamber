@@ -1,0 +1,15 @@
+{
+  "time": "2026-11-05T07:56:24+00:00",
+  "targetBundleId": "com.kaisun.voxamber",
+  "requestedName": "Voxamber",
+  "team": "M97RTV2PQG",
+  "created": true,
+  "bundleId": {
+    "id": "TK9NCA3M7W",
+    "name": "Voxamber",
+    "identifier": "com.kaisun.voxamber",
+    "platform": "UNIVERSAL",
+    "seedId": "M97RTV2PQG"
+  },
+  "verified": true
+}

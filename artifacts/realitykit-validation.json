@@ -1,0 +1,219 @@
+{
+  "boundsMetres" : {
+    "extents" : [
+      1.0080000162124634,
+      0.42215999960899353,
+      0.81936001777648926
+    ],
+    "max" : [
+      0.50400000810623169,
+      0.42215999960899353,
+      0.43439999222755432
+    ],
+    "min" : [
+      -0.50400000810623169,
+      0,
+      -0.38495999574661255
+    ]
+  },
+  "engine" : "Apple RealityKit Entity(contentsOf:)",
+  "entities" : 19,
+  "input" : "\/Users\/kaisun\/Three-Live\/artifacts\/palace.usdz",
+  "invalidValues" : 0,
+  "loadAndReadbackSeconds" : 0.23838198184967041,
+  "modelEntities" : 17,
+  "models" : [
+    {
+      "materials" : 1,
+      "materialTypes" : [
+        "PhysicallyBasedMaterial"
+      ],
+      "name" : "courtyard_basalt",
+      "normals" : 24,
+      "parts" : 1,
+      "triangles" : 12,
+      "vertices" : 24
+    },
+    {
+      "materials" : 1,
+      "materialTypes" : [
+        "PhysicallyBasedMaterial"
+      ],
+      "name" : "paving_sandstone",
+      "normals" : 960,
+      "parts" : 1,
+      "triangles" : 480,
+      "vertices" : 960
+    },
+    {
+      "materials" : 1,
+      "materialTypes" : [
+        "PhysicallyBasedMaterial"
+      ],
+      "name" : "terrace_warm_marble",
+      "normals" : 1152,
+      "parts" : 1,
+      "triangles" : 576,
+      "vertices" : 1152
+    },
+    {
+      "materials" : 1,
+      "materialTypes" : [
+        "PhysicallyBasedMaterial"
+      ],
+      "name" : "rail_carved_marble",
+      "normals" : 3232,
+      "parts" : 1,
+      "triangles" : 2256,
+      "vertices" : 3232
+    },
+    {
+      "materials" : 1,
+      "materialTypes" : [
+        "PhysicallyBasedMaterial"
+      ],
+      "name" : "plinth_shadow",
+      "normals" : 592,
+      "parts" : 1,
+      "triangles" : 516,
+      "vertices" : 592
+    },
+    {
+      "materials" : 1,
+      "materialTypes" : [
+        "PhysicallyBasedMaterial"
+      ],
+      "name" : "cinnabar_columns",
+      "normals" : 1256,
+      "parts" : 1,
+      "triangles" : 928,
+      "vertices" : 1256
+    },
+    {
+      "materials" : 1,
+      "materialTypes" : [
+        "PhysicallyBasedMaterial"
+      ],
+      "name" : "vermilion_joinery",
+      "normals" : 1584,
+      "parts" : 1,
+      "triangles" : 792,
+      "vertices" : 1584
+    },
+    {
+      "materials" : 1,
+      "materialTypes" : [
+        "PhysicallyBasedMaterial"
+      ],
+      "name" : "shadowed_rosewood",
+      "normals" : 176,
+      "parts" : 1,
+      "triangles" : 104,
+      "vertices" : 176
+    },
+    {
+      "materials" : 1,
+      "materialTypes" : [
+        "PhysicallyBasedMaterial"
+      ],
+      "name" : "lattice_goldwood",
+      "normals" : 5608,
+      "parts" : 1,
+      "triangles" : 3504,
+      "vertices" : 5608
+    },
+    {
+      "materials" : 1,
+      "materialTypes" : [
+        "PhysicallyBasedMaterial"
+      ],
+      "name" : "bracket_jade",
+      "normals" : 1392,
+      "parts" : 1,
+      "triangles" : 696,
+      "vertices" : 1392
+    },
+    {
+      "materials" : 1,
+      "materialTypes" : [
+        "PhysicallyBasedMaterial"
+      ],
+      "name" : "bracket_lapis",
+      "normals" : 1104,
+      "parts" : 1,
+      "triangles" : 552,
+      "vertices" : 1104
+    },
+    {
+      "materials" : 1,
+      "materialTypes" : [
+        "PhysicallyBasedMaterial"
+      ],
+      "name" : "painted_cream",
+      "normals" : 528,
+      "parts" : 1,
+      "triangles" : 264,
+      "vertices" : 528
+    },
+    {
+      "materials" : 1,
+      "materialTypes" : [
+        "PhysicallyBasedMaterial"
+      ],
+      "name" : "roof_honey_glaze",
+      "normals" : 1456,
+      "parts" : 1,
+      "triangles" : 840,
+      "vertices" : 1456
+    },
+    {
+      "materials" : 1,
+      "materialTypes" : [
+        "PhysicallyBasedMaterial"
+      ],
+      "name" : "roof_tile_light",
+      "normals" : 1944,
+      "parts" : 1,
+      "triangles" : 3240,
+      "vertices" : 1944
+    },
+    {
+      "materials" : 1,
+      "materialTypes" : [
+        "PhysicallyBasedMaterial"
+      ],
+      "name" : "roof_tile_shadow",
+      "normals" : 2264,
+      "parts" : 1,
+      "triangles" : 3888,
+      "vertices" : 2264
+    },
+    {
+      "materials" : 1,
+      "materialTypes" : [
+        "PhysicallyBasedMaterial"
+      ],
+      "name" : "ridge_imperial_gold",
+      "normals" : 2556,
+      "parts" : 1,
+      "triangles" : 3264,
+      "vertices" : 2556
+    },
+    {
+      "materials" : 1,
+      "materialTypes" : [
+        "PhysicallyBasedMaterial"
+      ],
+      "name" : "lantern_silk",
+      "normals" : 136,
+      "parts" : 1,
+      "triangles" : 128,
+      "vertices" : 136
+    }
+  ],
+  "platform" : "Version 27.2 (Build 26B123)",
+  "scope" : "Native macOS import, mesh\/material readback and finite bounds; no rendered UI or physical iPhone AR test",
+  "success" : true,
+  "triangles" : 22040,
+  "vertices" : 25964
+}
