@@ -72,6 +72,6 @@ python3 scripts/serve.py
 
 ## iOS 27.3 跟踪与 2026 年 12 月研发
 
-已设定当前对话的每小时发布跟踪；首次确认 iOS 27.3 正式版后提醒更新，并准备本项目的 Xcode 工程。完整安排见 [发布跟踪计划](docs/tracking/ios-27.3-monitoring-plan.md) 和 [iPhone 离线 Xcode 工程设计](docs/plans/2026-12-iphone-offline-xcode-design.md)，实际里程碑保存在 [跟踪状态](docs/tracking/ios-27.3-watch.json)。
+当前对话继续跟踪 iOS 27.3 正式版及维珀兼容性，沿用任务现有的每日 00:00 调度；首次确认正式版后提醒更新，并评估现有工程，不重建已存在的 Xcode 项目。完整安排见 [发布跟踪计划](docs/tracking/ios-27.3-monitoring-plan.md)，实际里程碑保存在 [跟踪状态](docs/tracking/ios-27.3-watch.json)。[早期 12 月设计](docs/plans/2026-12-iphone-offline-xcode-design.md) 已标为历史，以当前原生通用建模方案为准。
 
-Apple 已公告首批中国区 Apple 智能功能计划随 12 月的 iOS 27.3 推出；第三方 Foundation Models 的中国区资格及具体 iPhone 本地模型可用性仍须独立验证。12 月先推进工程和确定性几何，模型集成以实际可用为门槛。本机跟踪需要 Mac 开机并保持桌面 App 运行。
+Apple 已公告首批中国区 Apple 智能功能计划随 12 月的 iOS 27.3 推出；第三方 Foundation Models 的中国区资格及具体 iPhone 本地模型可用性仍须独立验证。现有原生 MLX / Metal 研发照常推进；Apple 本地模型作为可选候选评估，12 月跟进阶段复盘。本机跟踪需要 Mac 开机并保持桌面 App 运行。
