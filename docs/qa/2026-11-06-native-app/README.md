@@ -17,4 +17,11 @@
 - [同一句扶手椅描述的实际模型检查](../2026-11-06-json-completion/current-preset-fixture/results.json)：Mac 上单次调用真实千问，完整示例上下文，666 输出 token，8 节点，原生几何和 GLB/USDZ 导出通过。模型保留示例结构；不是新题材创作质量或 iPhone 性能证明。
 - [内存权限真机对照](../2026-11-06-memory-pressure/phone-entitlement-ab.json)与 [App 5 真实 AI 保存记录](../2026-11-06-phone4-install/phone5-ai-publish-readback.json)分别记录权限效果和一次真实 AI 修订保存，不把手动参数生成算作 AI。
 
-App 6 的真机复现、当前 AI 修订预览与缩略图、分发签名、Apple 处理和 TestFlight 可用性需要各自的独立记录。未完成的项目不由上述自动检查代替。通用复杂题材的结构、细节和生成成功率仍未达到全面验收。
+## 安装与内部测试交付
+
+- [手机安装](phone6-install.json)：正常开发签名 Release 6 已覆盖安装并启动；安装前后唯一草稿 SHA 相同，12 条模型文件元数据相同，已删除作品未恢复。这不是 TestFlight 安装证明。
+- [分发包检查](distribution6-audit.json)：34/34 通过，主 App 与下载扩展均为 0.1.0 (6)，分发签名和配置、源码冻结、Archive UUID、模型与许可一致；无内嵌脚本、权重和诊断探针。
+- [Apple 校验和上传](apple-validation.json)已通过。[TestFlight 回读](testflight-build6-readback.json)为 `VALID` / `IN_BETA_TESTING`，[独立只读复核](testflight-build6-independent-readback.json) 16/16 通过，只绑定既有唯一自身内部测试组。首次测试邀请仍为 `INVITED`，未重新邀请或添加他人；未提交 App Store 审核或公开发布。
+- [手机 UI 测试](phone6-ui-infrastructure.json)：仅一次尝试，测试连接建立前 Runner 退出 74，测试方法没有开始，也没有点 AI、参数生成或取消。无锁屏证据。这是测试基础设施失败，不算 App AI 失败，更不算预览或缩略图通过。已请求用户直接运行正常 App 6 扶手椅 AI 流程，等真实新结果回读。
+
+App 6 的真机生成、当前 AI 修订预览与缩略图仍待复测；复杂通用题材的结构、细节和生成成功率仍未达到全面验收。未完成的项目不由上述自动检查或历史已删除作品的量测代替。

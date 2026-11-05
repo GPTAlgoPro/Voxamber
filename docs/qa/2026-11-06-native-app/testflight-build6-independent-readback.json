@@ -1,0 +1,98 @@
+{
+  "checkedAt": "2026-11-05T17:30:41.494537+00:00",
+  "result": "PASS",
+  "scope": "Independent GET-only readback after Root distribution, exact target build and existing self internal group. No invitations, notifications, mutations or phone operation.",
+  "appID": "6831042755",
+  "bundleID": "com.kaisun.voxamber",
+  "version": "0.1.0",
+  "build": "6",
+  "buildID": "a9be62ea-2071-44a5-b6e8-2b4f083f9a9d",
+  "checks": {
+    "exactBuild6Identity": true,
+    "exactPrereleaseVersionPlatform": true,
+    "processingVALIDAndNonexpired": true,
+    "exportComplianceExemptUnchanged": true,
+    "internalIN_BETA_TESTING": true,
+    "autoNotificationsEnabled": true,
+    "groupBelongsToTargetApp": true,
+    "internalGroupWithoutPublicLinkOrAllBuildAccess": true,
+    "existingGroupContainsExactBuild6": true,
+    "buildHasOnlyExpectedGroupAndNoDirectTesters": true,
+    "exactlyOneSelfMemberVerifiedOnlyInMemory": true,
+    "selfInvitationActive": true,
+    "bothLocalizedTestNotesMatch": true,
+    "noExternalBetaReviewSubmission": true,
+    "production1RemainsPrepareWithoutRelease": true,
+    "ipaHashAndBytesStillMatchIndependentDistributionAudit": true
+  },
+  "methodsUsed": [
+    "GET"
+  ],
+  "processing": {
+    "state": "VALID",
+    "expired": false,
+    "usesNonExemptEncryption": false,
+    "uploadedDate": "2026-11-05T09:25:10-08:00"
+  },
+  "internalBeta": {
+    "autoNotifyEnabled": true,
+    "internalBuildState": "IN_BETA_TESTING",
+    "externalBuildState": "READY_FOR_BETA_SUBMISSION"
+  },
+  "group": {
+    "id": "7d4c4aba-14b9-423e-b1ae-d50ce983d527",
+    "isInternal": true,
+    "hasAccessToAllBuilds": false,
+    "publicLinkEnabledRaw": null,
+    "testerCount": 1,
+    "uniqueSelfVerifiedInMemory": true,
+    "testerStates": [
+      "INVITED"
+    ],
+    "build6Included": true,
+    "buildGroupIDs": [
+      "7d4c4aba-14b9-423e-b1ae-d50ce983d527"
+    ],
+    "directTesterCount": 0
+  },
+  "localizations": {
+    "zh-Hans": {
+      "present": true,
+      "matchesExpected": true,
+      "utf8Bytes": 1014,
+      "sha256": "90b83e41f7bb6cccec214a27b934ed9013f76f2ddcd8fa79263d0fa33742c8a5"
+    },
+    "en-US": {
+      "present": true,
+      "matchesExpected": true,
+      "utf8Bytes": 1131,
+      "sha256": "4d53337c61e08b61bb07d54b75acd3f888fb7d25a5902367c9a024b7b94f75a9"
+    }
+  },
+  "externalReviewRelationshipEmpty": true,
+  "productionAppStoreVersions": [
+    {
+      "version": "1.0",
+      "appStoreState": "PREPARE_FOR_SUBMISSION"
+    }
+  ],
+  "artifact": {
+    "ipaPath": "Apple/.build/Distribution/0.1.0-6/ThreeLiveStudio.ipa",
+    "bytes": 26061326,
+    "sha256": "f99d32f11697a3dc99ed6b8a4efdb35c38b0c8d324ee0364589cfaa819b0e00c",
+    "matchesDistributionAudit": true
+  },
+  "serverInternalDistributionReady": true,
+  "testerAcceptanceVerified": false,
+  "testerInstalledAnyBuildStateVerified": false,
+  "exactBuild6TestFlightInstallationVerified": false,
+  "installationObservability": "Tester state is not an exact-build installation event. No phone was operated by this audit.",
+  "mutationsPerformed": false,
+  "invitationOrNotificationPerformed": false,
+  "contactsRetained": false,
+  "rawResponsesRetained": false,
+  "remainingAcceptance": [
+    "The self tester accepts the existing invitation if still INVITED and installs build 6 from TestFlight.",
+    "Real TestFlight cold model download, offline creation, cancellation/retry and saved-work/preview checks remain separate."
+  ]
+}

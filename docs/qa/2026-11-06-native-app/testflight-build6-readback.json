@@ -1,0 +1,78 @@
+{
+  "buildID": "a9be62ea-2071-44a5-b6e8-2b4f083f9a9d",
+  "processingState": "VALID",
+  "internalBeta": {
+    "autoNotifyEnabled": true,
+    "internalBuildState": "IN_BETA_TESTING",
+    "externalBuildState": "READY_FOR_BETA_SUBMISSION"
+  },
+  "checks": {
+    "exactAppBuildVersion": true,
+    "processingVALID": true,
+    "selfInternalGroupOnly": true,
+    "groupIncludesBuild6": true,
+    "localizedNotesMatch": true,
+    "internalIN_BETA_TESTING": true,
+    "noExternalReview": true,
+    "production1StillPrepare": true
+  },
+  "result": "PASS",
+  "selfMembershipVerifiedOnlyInMemory": true,
+  "testerCount": 1,
+  "testerStates": [
+    "INVITED"
+  ],
+  "groupBuildIDs": [
+    "a9be62ea-2071-44a5-b6e8-2b4f083f9a9d",
+    "dc9052bb-57ff-4c76-b6b5-8cf9596dfe5c",
+    "3cf16290-baeb-470a-980e-25f197923346",
+    "165057ba-889c-4ad8-839f-0980744742d1"
+  ],
+  "localizedNoteReadback": {
+    "zh-Hans": {
+      "present": true,
+      "matchesPrepared": true,
+      "sha256": "90b83e41f7bb6cccec214a27b934ed9013f76f2ddcd8fa79263d0fa33742c8a5"
+    },
+    "en-US": {
+      "present": true,
+      "matchesPrepared": true,
+      "sha256": "4d53337c61e08b61bb07d54b75acd3f888fb7d25a5902367c9a024b7b94f75a9"
+    }
+  },
+  "actions": [
+    {
+      "operation": "setExactBuildNotes",
+      "locale": "zh-Hans"
+    },
+    {
+      "operation": "setExactBuildNotes",
+      "locale": "en-US"
+    },
+    {
+      "operation": "bindExactBuildToExistingSelfInternalGroup"
+    }
+  ],
+  "mutated": true,
+  "mode": "distribute",
+  "noManualInvitationOrOtherTesterAdded": true,
+  "actualBuild6InstallVerified": false,
+  "actualNewDeviceStopLatencyVerified": false,
+  "appleHostedColdDownloadVerified": false,
+  "observedAt": "2026-11-05T17:28:06.596716+00:00",
+  "appID": "6831042755",
+  "bundleID": "com.kaisun.voxamber",
+  "version": "0.1.0",
+  "build": "6",
+  "notesPrepared": {
+    "zh-Hans": "维珀 0.1.0（6）内部测试\n\n新增支持设备的可用内存权限；普通内存警告先回收缓存，持续内存不足时仍会停止任务。\n从灵感开始创作时，将当前完整造型参数带入 AI，保持已选结构和材质的上下文。\n收到完整造型参数后及时结束生成；未完成的结果仍会明确提示。\n预览取消不再作为最终加载错误显示，重新进入页面可重新加载。\n作品库使用每件已保存模型自己的真实缩略图，预览失败不会损坏已保存作品。\n\n请重点测试：选择灵感后生成、取消后再次生成、预览重新进入、保存并打开作品、作品库缩略图。\n\n继续使用同一份 Qwen3.5 4B INT4 素材，本机 AI 需要 12GB 或以上内存。复杂题材的结构、细节与成功率仍处于早期，可能失败或需要手动编辑。本次不承诺全面修复 AI 造型质量。首次 Apple 素材下载和离线使用仍需实机验证；不以 Mac 测试速度代表手机速度。",
+    "en-US": "Voxamber 0.1.0 (6), internal test\n\nAdds the supported-device memory entitlement. Ordinary memory warnings reclaim caches first; sustained low memory can still stop a task.\nStarting from an inspiration now supplies its full current shape parameters to AI, preserving the selected structure and material context.\nGeneration stops when a complete parameter object has arrived; incomplete output still reports a failure.\nCanceled preview loading no longer appears as a final loading error. Returning to the page can reload it.\nThe library uses real thumbnails of each saved model. A preview failure cannot damage saved work.\n\nPlease test generating from an inspiration, canceling and generating again, reopening previews, saving/reopening work, and library thumbnails.\n\nUses the same Qwen3.5 4B INT4 assets. On-device AI requires at least 12 GB RAM. Complex subject structure, detail and success rate remain early and may fail or need manual editing. This build does not promise a comprehensive modeling-quality fix. First-time Apple asset download and offline use still need phone verification; Mac timings are not phone speed claims."
+  },
+  "notPerformed": [
+    "AppStoreReviewSubmission",
+    "externalBetaReview",
+    "publicLinkCreation",
+    "otherTesters",
+    "phoneOperation"
+  ]
+}

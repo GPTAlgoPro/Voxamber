@@ -1,0 +1,22 @@
+{
+  "observedAt": "2026-11-05T17:19:49.207153+00:00",
+  "appVersion": "0.1.0",
+  "appBuild": "6",
+  "installedNormalDeveloperRelease": true,
+  "archive": "Apple/.build/Archives/Voxamber-0.1.0-6.xcarchive",
+  "preservation": {
+    "beforeFileCount": 1,
+    "afterFileCount": 1,
+    "allSHAUnchanged": true,
+    "publishedProjectsBefore": 0,
+    "publishedProjectsAfter": 0
+  },
+  "modelInventory": {
+    "rowsBefore": 12,
+    "rowsAfter": 12,
+    "sameFileMetadata": true
+  },
+  "deletedParameterWorksRestored": false,
+  "TestFlightInstall": false,
+  "AIGenerationVerified": false
+}
