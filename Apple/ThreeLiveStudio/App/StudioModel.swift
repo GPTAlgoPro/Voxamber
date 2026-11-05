@@ -133,7 +133,7 @@ final class StudioModel {
                         systemPrompt: ScenePrompt.system,
                         prompt: try ScenePrompt.userRequest(request, currentSpec: previous == nil ? nil : initialScene),
                         maxTokens: 3072,
-                        jsonSchema: try SceneGenerationSchema.jsonSchema(currentScene: previous == nil ? nil : initialScene),
+                        // Keep the phone-verified single-turn protocol while staged assembly is evaluated.
                         onProgress: { _ in },
                         onCompletion: { completion.record($0) })
                     try Task.checkCancellation()
