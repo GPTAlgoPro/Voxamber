@@ -1,5 +1,7 @@
 # ThreeLiveStudio：2026 年 12 月 iPhone 离线研发设计
 
+> 历史设计，已被当前 Voxamber 方案替代（2026-11-06 核对）。当前要求见根目录 [AGENTS.md](../../AGENTS.md)、[原生实施记录顶部修正](2026-11-05-native-minicpm-app.md) 与 [结构化造型方案](2026-11-05-native-structured-generation-design.md)。现有工程已建立并在 `dev` 开发；产品是通用建模 App，采用原生 Swift / MLX / Metal，不能恢复本文件中的建筑限定、Boa/JS 编译器或“仅 Apple 模型”的旧决策。下文保留原始设计历史，不作为自动任务实施指令。12 月安排已调整为现有研发的阶段复盘，见 [发布跟踪计划](../tracking/ios-27.3-monitoring-plan.md)。
+
 状态：**待实施的工程设计**。编制日期：2026-11-05；正式研发窗口：2026-12-01 至 2026-12-31。本文仅设计 Xcode 工程与验收路径，本轮不创建工程、不实现 App，也不表示已经构建、安装或提交 App Store。
 
 ## 1. 目标与现有依据

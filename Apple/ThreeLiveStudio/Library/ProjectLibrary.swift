@@ -1,8 +1,14 @@
 import SwiftUI
+import UIKit
 
 struct ProjectLibrary: View {
     @Bindable var studio: StudioModel
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var deletion: CreationProject?
+
+    private var columns: [GridItem] {
+        [GridItem(.adaptive(minimum: dynamicTypeSize.isAccessibilitySize ? 280 : 150, maximum: 360), spacing: 16, alignment: .top)]
+    }
 
     var body: some View {
         Group {
@@ -13,27 +19,14 @@ struct ProjectLibrary: View {
                     Text(StudioCopy.text("生成完成后，作品会自动保存在这里。", "Your finished creations are saved here automatically."))
                 } actions: { Button(StudioCopy.text("开始创作", "Start creating")) { studio.tab = .create }.buttonStyle(.glassProminent) }
             } else {
-                List {
-                    ForEach(studio.projects) { project in
-                        Button { Task { await studio.open(project) } } label: {
-                            HStack(spacing: 16) {
-                                Image(systemName: "cube.transparent")
-                                    .font(.title2).foregroundStyle(StudioStyle.accent)
-                                    .frame(width: 54, height: 54)
-                                    .background(.teal.opacity(0.1), in: .rect(cornerRadius: 16))
-                                VStack(alignment: .leading, spacing: 6) {
-                                    Text(project.name).font(.headline).foregroundStyle(.primary)
-                                    Text(project.updatedAt, style: .date).font(.caption).foregroundStyle(.secondary)
-                                }
-                                Spacer()
-                                Image(systemName: "chevron.right").font(.caption).foregroundStyle(.tertiary)
-                            }.padding(.vertical, 8)
+                ScrollView {
+                    LazyVGrid(columns: columns, spacing: 20) {
+                        ForEach(studio.projects) { project in
+                            ProjectThumbnailCard(project: project, store: studio.store, suspended: studio.busy,
+                                open: { Task { await studio.open(project) } }, delete: { deletion = project })
                         }
-                        .listRowBackground(Color.white.opacity(0.045))
-                        .swipeActions { Button(StudioCopy.text("删除", "Delete"), role: .destructive) { deletion = project } }
-                        .contextMenu { Button(StudioCopy.text("删除作品", "Delete creation"), role: .destructive) { deletion = project } }
-                    }
-                }.scrollContentBackground(.hidden)
+                    }.padding(20)
+                }
             }
         }
         .background { StudioBackground() }
@@ -44,5 +37,77 @@ struct ProjectLibrary: View {
         .confirmationDialog(StudioCopy.text("删除这件作品及其保存的版本？", "Delete this creation and its saved versions?"), isPresented: Binding(get: { deletion != nil }, set: { if !$0 { deletion = nil } }), titleVisibility: .visible) {
             if let deletion { Button(StudioCopy.text("删除作品", "Delete creation"), role: .destructive) { Task { await studio.delete(deletion); self.deletion = nil } } }
         } message: { Text(StudioCopy.text("已经导出到其他位置的文件会保留。", "Files already exported to other locations are kept.")) }
+    }
+}
+
+private struct ProjectThumbnailCard: View {
+    let project: CreationProject
+    let store: ProjectStore
+    let suspended: Bool
+    let open: () -> Void
+    let delete: () -> Void
+    @State private var image: UIImage?
+    @State private var loadedIdentity: String?
+    @State private var unavailable = false
+    @State private var retry = 0
+
+    private var identity: String { project.revision.uuidString + project.usdzSHA256 }
+    private var request: ThumbnailRequest { .init(identity: identity, suspended: suspended, retry: retry) }
+    private struct ThumbnailRequest: Equatable { let identity: String; let suspended: Bool; let retry: Int }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            ZStack(alignment: .topTrailing) {
+                Button(action: open) {
+                    VStack(alignment: .leading, spacing: 10) {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 20).fill(Color.white.opacity(0.055))
+                            if let image, loadedIdentity == identity {
+                                Image(uiImage: image).resizable().scaledToFit().padding(12)
+                            } else if unavailable || suspended {
+                                Text(StudioCopy.text("预览稍后再试", "Preview unavailable"))
+                                    .font(.caption).foregroundStyle(.secondary).multilineTextAlignment(.center).padding()
+                            } else {
+                                ProgressView().accessibilityLabel(StudioCopy.text("载入作品预览", "Loading creation preview"))
+                            }
+                        }.aspectRatio(1, contentMode: .fit).accessibilityHidden(true)
+                        Text(project.name).font(.headline).foregroundStyle(.primary).lineLimit(2)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        Text(project.updatedAt, style: .date).font(.caption).foregroundStyle(.secondary)
+                    }.contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .accessibilityElement(children: .ignore)
+                .accessibilityLabel(project.name)
+                .accessibilityHint(StudioCopy.text("打开这件三维作品", "Open this 3D creation"))
+
+                Menu {
+                    Button(StudioCopy.text("重新载入预览", "Reload preview"), systemImage: "arrow.clockwise") { retry += 1 }
+                    Button(StudioCopy.text("删除作品", "Delete creation"), systemImage: "trash", role: .destructive, action: delete)
+                } label: {
+                    Image(systemName: "ellipsis").font(.body.weight(.semibold))
+                        .frame(width: 44, height: 44).background(.ultraThinMaterial, in: .circle)
+                }
+                .accessibilityLabel(StudioCopy.text("作品选项：", "Options for ") + project.name)
+                .padding(6)
+            }
+        }
+        .task(id: request) {
+            guard !Task.isCancelled else { return }
+            image = nil; loadedIdentity = nil; unavailable = false
+            guard !suspended else { return }
+            let expected = identity
+            do {
+                let data = try await store.thumbnail(for: project)
+                try Task.checkCancellation()
+                guard expected == identity, let decoded = UIImage(data: data) else {
+                    unavailable = true; return
+                }
+                loadedIdentity = expected; image = decoded
+            } catch {
+                guard !Task.isCancelled else { return }
+                unavailable = true
+            }
+        }
     }
 }

@@ -1,0 +1,11 @@
+{
+  "observedAt": "2026-11-05T17:22:16.624956+00:00",
+  "version": "0.1.0",
+  "build": "6",
+  "artifactSHA256": "f99d32f11697a3dc99ed6b8a4efdb35c38b0c8d324ee0364589cfaa819b0e00c",
+  "validation": "PASS",
+  "validator": "Apple altool",
+  "uploadStatus": "UPLOAD_SUCCEEDED",
+  "TestFlightAvailabilityVerified": false,
+  "uploadObservedAt": "2026-11-05T17:24:42.214623+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "childrenPerParent" : {
+    "seat" : 5
+  },
+  "maximumParentDepth" : 1,
+  "nativeTopology" : "unique identifiers, supported primitives/faces, one first root, existing parents and acyclic connected graph",
+  "parts" : 6,
+  "qualityLimit" : "Topology checks do not establish that parts or geometry match the requested object."
+}

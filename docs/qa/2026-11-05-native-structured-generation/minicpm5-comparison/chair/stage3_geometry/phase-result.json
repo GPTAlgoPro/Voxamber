@@ -1,0 +1,22 @@
+{
+  "firstTokenSeconds" : 0.73984191700000002,
+  "nativeCompletion" : {
+    "generatedTokenCount" : 319,
+    "grammar" : {
+      "compiledSchemaSHA256" : "0d12f74c6a83169de0e9b1a2b5ee098e7ac49874eefe037dd4963a56b2d4b9c9",
+      "floatBoundsRequireNativeValidation" : true,
+      "originalSchemaSHA256" : "6dcf8e22604c92ad6a27cabbd14b27d1a016b54891e1b92a1b3bb7678525d5d2"
+    },
+    "grammarEnabled" : true,
+    "grammarTerminated" : true,
+    "inputTokenCount" : 1510,
+    "reason" : "stop",
+    "tokenLimit" : 3072
+  },
+  "rawScope" : "Formal API returned accepted JSON; no caller-side repair. Rejected formal buffers are unavailable.",
+  "responseBytes" : 970,
+  "responseSHA256" : "bacf61cc0df58958b0fa1d636f2dc5f052c2f0ece218fd0f08aa066c5a46a486",
+  "seconds" : 3.3354209661483765,
+  "sharedCaseDeadlineTriggered" : false,
+  "status" : "returned"
+}

@@ -1,0 +1,28 @@
+{
+  "records" : [
+    {
+      "fixture" : "chair",
+      "fixtureIsAI" : false,
+      "height" : 256,
+      "modelSHA256After" : "99b5d1b38fce5e8fc01da28651ac7038f0e7e8b58812254a20edc4839bb41cc2",
+      "pngBytes" : 14665,
+      "pngSHA256" : "53ceeace95112760c49fd7b2763237c0eebb3cdaebdbf6e1f0c2ebdd08b4d57b",
+      "seconds" : 0.14108192920684814,
+      "sourceUSDZSHA256" : "99b5d1b38fce5e8fc01da28651ac7038f0e7e8b58812254a20edc4839bb41cc2",
+      "width" : 256
+    },
+    {
+      "fixture" : "robot",
+      "fixtureIsAI" : false,
+      "height" : 256,
+      "modelSHA256After" : "21f10e1b01ad832610e42082e24789d8b177bf001f1a9fb8ff355ae4186a0373",
+      "pngBytes" : 14834,
+      "pngSHA256" : "1afc38042696577a3a876f6fbdeccb2f5e236131efe6d171693ec81dcb59483f",
+      "seconds" : 0.11775410175323486,
+      "sourceUSDZSHA256" : "21f10e1b01ad832610e42082e24789d8b177bf001f1a9fb8ff355ae4186a0373",
+      "width" : 256
+    }
+  ],
+  "renderer" : "Actual QLThumbnailGenerator .thumbnail from each exported USDZ",
+  "scope" : "Parameter-generated native mesh fixtures in isolated scratch paths, not AI\/user-library acceptance or restored deleted works"
+}

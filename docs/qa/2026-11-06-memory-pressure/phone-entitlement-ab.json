@@ -1,0 +1,37 @@
+{
+  "recordedAt": "2026-11-05T16:36:18.260227+00:00",
+  "scope": "Same iPhone, same executable UUID and sources; development app signature entitlement removed only in control. Fresh startup after model-file integrity verification, no AI allocation used for these limit samples.",
+  "appVersion": "0.1.0",
+  "appBuild": "5",
+  "sameExecutableUUID": true,
+  "codeUUID": "F9069A06-C3A1-31C6-87C9-454009353D25",
+  "physicalMemoryBytes": 12263407616,
+  "withIncreasedMemory": {
+    "signedEntitlement": true,
+    "provisioningAllowsEntitlement": true,
+    "availableProcessBytes": 6405945456,
+    "footprintBytes": 36505488,
+    "derivedLimitBytes": 6442450944,
+    "derivedLimitGiB": 6.0
+  },
+  "controlWithoutIncreasedMemory": {
+    "signedEntitlementPresent": false,
+    "availableProcessBytes": 3503061128,
+    "footprintBytes": 36931448,
+    "derivedLimitBytes": 3539992576,
+    "derivedLimitGiB": 3.296875
+  },
+  "derivation": "os_proc_available_memory() plus task_vm_info.phys_footprint; SDK documents remaining dirty limit minus footprint. Values are runtime snapshots, not guaranteed future allocations.",
+  "largerBudgetObserved": true,
+  "existingUserDataRestored": false,
+  "AIGenerationOrSavingAcceptedByThisTest": false,
+  "finalEnabledInstallPending": false,
+  "finalNormalAppBuild": "5",
+  "finalSnapshotDerivedLimitBytes": 6442450944,
+  "finalEnabledRuntimeBudgetVerified": true,
+  "currentUserDataPreservationBeforeSubsequentUserActivity": {
+    "files": 1,
+    "allSHAUnchanged": true,
+    "deletedParameterWorksRestored": false
+  }
+}

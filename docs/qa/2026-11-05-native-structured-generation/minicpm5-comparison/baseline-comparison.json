@@ -1,0 +1,124 @@
+{
+  "recordedAtUTC": "2026-11-05T15:36:39.509024+00:00",
+  "decision": "Do not replace Qwen default with this MiniCPM5 checkpoint under the frozen nonthinking greedy protocol",
+  "exactSame28BaselineSourceHashesAndExecutable": true,
+  "protocolAndPreflightByteIdentical": true,
+  "modelOnlyChange": "Official MiniCPM5-2B-MLX 2,516,756,480 total parameters, affine4bit/group64 vs existing Qwen3.5-4B artifact",
+  "cases": [
+    {
+      "id": "robot",
+      "qwenBaseline": {
+        "phaseCalls": 3,
+        "seconds": 26.955522060394287,
+        "nativeAsset": true,
+        "failureStage": null,
+        "fullRequestAccepted": false
+      },
+      "miniCPM5": {
+        "phaseCalls": 1,
+        "seconds": 3.778934955596924,
+        "nativeAsset": false,
+        "failureStage": "stage1_outline",
+        "fullRequestAccepted": false
+      }
+    },
+    {
+      "id": "lamp",
+      "qwenBaseline": {
+        "phaseCalls": 3,
+        "seconds": 11.929579973220825,
+        "nativeAsset": true,
+        "failureStage": null,
+        "fullRequestAccepted": false
+      },
+      "miniCPM5": {
+        "phaseCalls": 1,
+        "seconds": 2.1503509283065796,
+        "nativeAsset": false,
+        "failureStage": "stage1_outline",
+        "fullRequestAccepted": false
+      }
+    },
+    {
+      "id": "whale",
+      "qwenBaseline": {
+        "phaseCalls": 3,
+        "seconds": 49.54715394973755,
+        "nativeAsset": false,
+        "failureStage": "stage3_geometry",
+        "fullRequestAccepted": false
+      },
+      "miniCPM5": {
+        "phaseCalls": 3,
+        "seconds": 7.501386046409607,
+        "nativeAsset": false,
+        "failureStage": "native_anchor_and_core_geometry",
+        "fullRequestAccepted": false
+      }
+    },
+    {
+      "id": "aircraft",
+      "qwenBaseline": {
+        "phaseCalls": 3,
+        "seconds": 17.815412044525146,
+        "nativeAsset": false,
+        "failureStage": "native_anchor_and_core_geometry",
+        "fullRequestAccepted": false
+      },
+      "miniCPM5": {
+        "phaseCalls": 1,
+        "seconds": 4.2337950468063354,
+        "nativeAsset": false,
+        "failureStage": "stage1_outline",
+        "fullRequestAccepted": false
+      }
+    },
+    {
+      "id": "chair",
+      "qwenBaseline": {
+        "phaseCalls": 3,
+        "seconds": 20.619686007499695,
+        "nativeAsset": true,
+        "failureStage": null,
+        "fullRequestAccepted": false
+      },
+      "miniCPM5": {
+        "phaseCalls": 3,
+        "seconds": 5.725032925605774,
+        "nativeAsset": true,
+        "failureStage": null,
+        "fullRequestAccepted": false
+      }
+    }
+  ],
+  "summary": {
+    "qwenNativeAssets": 3,
+    "miniCPM5NativeAssets": 1,
+    "qwenFullRequestsAccepted": 0,
+    "miniCPM5FullRequestsAccepted": 0,
+    "qwenFreshPhaseCalls": 15,
+    "miniCPM5ReachedFreshPhaseCalls": 9,
+    "qwenProcessWallSeconds": 127.94324707984924,
+    "miniCPM5ProcessWallSeconds": 23.883800983428955,
+    "qwenMLXPeakBytes": 3034562212,
+    "miniCPM5MLXPeakBytes": 1810578144,
+    "miniCPM5AfterUnload": {
+      "activeBytes": 4752,
+      "cacheBytes": 0,
+      "peakBytes": 1810578144
+    }
+  },
+  "interpretation": [
+    "MiniCPM5 loaded natively with official template/EOS and lower observed memory; runtime compatibility succeeded.",
+    "The candidate did not improve this product workflow: more early invalid assembly plans, degenerate freeform geometry and no fully accepted request.",
+    "Totalwall time is not a speedup factor: different stages were skipped after rejection, tokenizers and generated lengths differ. Per-phase records are preserved.",
+    "This is not a universal ranking of model capabilities. The frozen production-oriented protocol is nonthinking/greedy and differs from vendor thinking/sampling benchmark settings.",
+    "No new prompts, model-specific schema hacks, library changes, retries or repairs were introduced to make the candidate pass."
+  ],
+  "limits": [
+    "No iPhone memory/performance test",
+    "No Apple asset pack or App default change",
+    "No PyTorch numerical golden-output parity beyond static full tensors and actual native sanity",
+    "Language/code benchmark claims were not used as3D quality acceptance"
+  ]
+}

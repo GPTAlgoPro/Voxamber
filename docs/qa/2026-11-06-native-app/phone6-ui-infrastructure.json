@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUTC": "2026-11-05T17:28:02.663521+00:00",
+  "status": "infra_blocked_test_not_started",
+  "attempts": 1,
+  "device": "iPhone 17 Pro Max / iOS 27.2",
+  "mainAppBundleID": "com.kaisun.voxamber",
+  "intendedMainAppBuild": "6",
+  "selectedTest": "PhoneVoxamberUITests/PhoneVoxamberUITests/test01ChairStarterAIEntrySavePreviewAndLibraryEvidence",
+  "flagsInXctestrun": {
+    "VOX_UI_ALLOW_NEW_CREATION": "1",
+    "VOX_UI_ALLOW_PLANNED_CANCEL": "0",
+    "VOX_UI_RUN_ID": "chair6-20261105T172329Z"
+  },
+  "execution": {
+    "exitCode": 65,
+    "hostTimeout": false,
+    "seconds": 24.66,
+    "summary": [
+      "** TEST EXECUTE FAILED **"
+    ]
+  },
+  "infrastructureFailure": {
+    "runnerExitCode": 74,
+    "xcodebuildExitCode": 65,
+    "message": "The test runner exited with code 74 before establishing connection.",
+    "rootReadOnlyDTXDiagnosis": "Peer refused XCTestDriverInterface; not evidence of screen lock or App AI failure."
+  },
+  "testMethodStarted": false,
+  "uiCommandsExecutedByTestBody": false,
+  "aiButtonPressedByRunner": false,
+  "parameterGenerationPressed": false,
+  "plannedCancellationTriggered": false,
+  "mainAppBuiltOrInstalledByRunner": false,
+  "mainAppTargetDependency": false,
+  "deletedWorkRestored": false,
+  "runnerInstalledOrLaunchAttemptedByXcode": true,
+  "postRunReadOnlyCopies": [
+    {
+      "source": "Documents/Creations",
+      "exitCode": 0
+    },
+    {
+      "source": "Documents/Measurements",
+      "exitCode": 0
+    }
+  ],
+  "recursiveCreationsListingExitCode": 0,
+  "currentProjectPointers": [],
+  "currentCreationsFiles": [
+    "draft.json"
+  ],
+  "newAIPublishedRevisionVerified": false,
+  "historicalMeasurementFiles": [
+    {
+      "file": "F93D13FC-892E-407E-86E5-EB823D3F4AA0.json",
+      "project": "E39CCF95-DC2F-40FD-920F-FE08CA0BC13F",
+      "revision": "F93D13FC-892E-407E-86E5-EB823D3F4AA0",
+      "model": "manual"
+    },
+    {
+      "file": "74BD783B-0E68-4101-95CB-DD9D8D8E8E39.json",
+      "project": "FECFC9BE-91A0-49E6-A3DC-E94FCE3F3E87",
+      "revision": "74BD783B-0E68-4101-95CB-DD9D8D8E8E39",
+      "model": "manual"
+    },
+    {
+      "file": "31F56BA9-EB99-4BC7-B30F-A8C3A0D68144.json",
+      "project": "C4C324B1-780B-4FB7-B732-BEFD4C2FF387",
+      "revision": "31F56BA9-EB99-4BC7-B30F-A8C3A0D68144",
+      "model": "manual"
+    },
+    {
+      "file": "9E7B3D08-A79C-4E00-B766-ED9E48403722.json",
+      "project": "1DDBFA69-1E62-4940-B926-C6D43F6F0815",
+      "revision": "9E7B3D08-A79C-4E00-B766-ED9E48403722",
+      "model": "manual"
+    },
+    {
+      "file": "25C5C4AA-38C4-4619-9DDC-A0118970E065.json",
+      "project": "8444E07B-96C0-4E02-AAF8-235E3282CB9B",
+      "revision": "25C5C4AA-38C4-4619-9DDC-A0118970E065",
+      "model": "manual"
+    },
+    {
+      "file": "785D277C-89A3-4134-BD44-D4B5C231A337.json",
+      "project": "FECFC9BE-91A0-49E6-A3DC-E94FCE3F3E87",
+      "revision": "785D277C-89A3-4134-BD44-D4B5C231A337",
+      "model": "千问 Qwen3.5 · 4B INT4"
+    },
+    {
+      "file": "1DA44C5E-9A6A-4B79-B998-10B20906815B.json",
+      "project": "57AD3886-A2E0-49B8-8FD9-F3905BFCF789",
+      "revision": "1DA44C5E-9A6A-4B79-B998-10B20906815B",
+      "model": "manual"
+    },
+    {
+      "file": "1A4CD05D-BA22-4692-973E-FA5EC4C6A5DC.json",
+      "project": "B97D2B1C-69E6-4D49-99C0-993D9F01650B",
+      "revision": "1A4CD05D-BA22-4692-973E-FA5EC4C6A5DC",
+      "model": "manual"
+    },
+    {
+      "file": "95521DE1-3C9C-4E27-AA8B-82B169B97013.json",
+      "project": "D012811C-B11B-4054-A957-5EEF364D6770",
+      "revision": "95521DE1-3C9C-4E27-AA8B-82B169B97013",
+      "model": "manual"
+    }
+  ],
+  "historyNotCurrentArtifact": "Historical 785D277C AI measurement is retained, but no current project pointer or model files are present; not counted as current preview/thumbnail acceptance.",
+  "draft": {
+    "beforeSHA256": "9404c319a52a22a79455b80ddaa13c53a20a3a093e7a37f12749d5759f1cfedd",
+    "afterSHA256": "9404c319a52a22a79455b80ddaa13c53a20a3a093e7a37f12749d5759f1cfedd",
+    "unchanged": true
+  },
+  "screenshotsFromThisRun": [],
+  "previewAccepted": false,
+  "thumbnailAccepted": false,
+  "phoneUIOperationsStopped": true,
+  "followUp": "Root will ask the user to perform the normal build6 Armchair→AI action directly, then inspect the actual new measurement/files. No additional UI-test attempt or unlock request made."
+}

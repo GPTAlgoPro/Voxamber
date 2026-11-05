@@ -196,7 +196,7 @@ struct CreationWorkspace: View {
 
     private func ensureGenericScene() {
         // Older documents may have no general-purpose editable scene.
-        if studio.sceneSpec == nil { studio.sceneSpec = .chair }
+        if studio.sceneSpec == nil { studio.sceneSpec = StudioModel.blankScene }
     }
 }
 

@@ -1,0 +1,129 @@
+{
+  "recordedAtUTC": "2026-11-05T15:36:39.508641+00:00",
+  "scope": "Actual unmodified outputs from the single allowed comparison. Native validation rejects stopped remaining phases without retry.",
+  "cases": {
+    "robot": {
+      "actualCaseStatus": "rejected_or_failed",
+      "actualError": "Outline validation failed: missing parent or cycle",
+      "phaseCalls": 1,
+      "stage1PartCount": 8,
+      "stage1DuplicateIDIndices": {},
+      "stage1SelfParents": [
+        {
+          "index": 1,
+          "id": "body",
+          "parent": "body"
+        }
+      ],
+      "stage1UnknownParents": [],
+      "rawOutlineFile": "robot/stage1_outline/accepted-model-json.json",
+      "otherUnreplayedSemanticProblems": "eyes point to left/right arms rather than head; native self-parent gate stops before semantic/geometry, no repaired run."
+    },
+    "lamp": {
+      "actualCaseStatus": "rejected_or_failed",
+      "actualError": "Outline validation failed: missing parent or cycle",
+      "phaseCalls": 1,
+      "stage1PartCount": 4,
+      "stage1DuplicateIDIndices": {},
+      "stage1SelfParents": [
+        {
+          "index": 1,
+          "id": "cylinder_black",
+          "parent": "cylinder_black"
+        }
+      ],
+      "stage1UnknownParents": [],
+      "rawOutlineFile": "lamp/stage1_outline/accepted-model-json.json",
+      "firstObservedCause": "cylinder_black.parent=cylinder_black, a self-cycle. Root cone remains separate; no native graph repair."
+    },
+    "whale": {
+      "actualCaseStatus": "rejected_or_failed",
+      "actualError": "挤出轮廓不能共线。",
+      "phaseCalls": 3,
+      "stage1PartCount": 5,
+      "stage1DuplicateIDIndices": {},
+      "stage1SelfParents": [],
+      "stage1UnknownParents": [],
+      "rawOutlineFile": "whale/stage1_outline/accepted-model-json.json",
+      "rawGeometryFile": "whale/stage3_geometry/accepted-model-json.json",
+      "failedNode": "tail_fins",
+      "primitive": "extrusion",
+      "failedField": "profile",
+      "actualProfile": [
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.1,
+          0.5
+        ],
+        [
+          0.1,
+          0.5
+        ],
+        [
+          0.1,
+          0.0
+        ]
+      ],
+      "observedPointCount": 4,
+      "uniquePointCount": 2,
+      "shoelaceArea": 0.0,
+      "allXEqual": true,
+      "firstObservedCoreError": "挤出轮廓不能共线。",
+      "otherObservedSemantics": "Black box body plus one eye node; raw model did not satisfy streamlined blue body/two eyes, before any visual asset."
+    },
+    "aircraft": {
+      "actualCaseStatus": "rejected_or_failed",
+      "actualError": "Outline validation failed: outline identifier/primitive/purpose",
+      "phaseCalls": 1,
+      "stage1PartCount": 10,
+      "stage1DuplicateIDIndices": {
+        "wing_left": [
+          0,
+          2,
+          6,
+          8
+        ],
+        "wing_right": [
+          1,
+          3,
+          7,
+          9
+        ]
+      },
+      "stage1SelfParents": [
+        {
+          "index": 2,
+          "id": "wing_left",
+          "parent": "wing_left"
+        },
+        {
+          "index": 6,
+          "id": "wing_left",
+          "parent": "wing_left"
+        },
+        {
+          "index": 8,
+          "id": "wing_left",
+          "parent": "wing_left"
+        }
+      ],
+      "stage1UnknownParents": [],
+      "rawOutlineFile": "aircraft/stage1_outline/accepted-model-json.json",
+      "firstObservedCause": "wing_left repeats first at index2; wing_left/wing_right each occur4times. IDs otherwise fit pattern, primitives are allowed, and purposes are short; duplicate identity explains the generic native identifier/primitive/purpose error."
+    },
+    "chair": {
+      "actualCaseStatus": "exported_for_visual_review",
+      "actualError": null,
+      "phaseCalls": 3,
+      "stage1PartCount": 6,
+      "stage1DuplicateIDIndices": {},
+      "stage1SelfParents": [],
+      "stage1UnknownParents": [],
+      "rawOutlineFile": "chair/stage1_outline/accepted-model-json.json"
+    }
+  },
+  "noOutputRepairOrReplay": true
+}

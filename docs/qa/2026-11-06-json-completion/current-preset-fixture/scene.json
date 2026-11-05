@@ -1,0 +1,181 @@
+{
+  "name" : "青玉扶手椅",
+  "nodes" : [
+    {
+      "color" : "#29A99A",
+      "id" : "seat",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.46,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.35,
+      "size" : [
+        0.55,
+        0.09,
+        0.52
+      ]
+    },
+    {
+      "color" : "#34C3B0",
+      "id" : "back",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.76,
+        -0.22
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        -6,
+        0,
+        0
+      ],
+      "roughness" : 0.35,
+      "size" : [
+        0.53,
+        0.56,
+        0.08
+      ]
+    },
+    {
+      "color" : "#40374D",
+      "id" : "leg_fl",
+      "metallic" : 0.65,
+      "position" : [
+        -0.21,
+        0.22,
+        0.2
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.045,
+        0.44,
+        0.045
+      ]
+    },
+    {
+      "color" : "#40374D",
+      "id" : "leg_fr",
+      "metallic" : 0.65,
+      "position" : [
+        0.21,
+        0.22,
+        0.2
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.045,
+        0.44,
+        0.045
+      ]
+    },
+    {
+      "color" : "#40374D",
+      "id" : "leg_bl",
+      "metallic" : 0.65,
+      "position" : [
+        -0.21,
+        0.22,
+        -0.2
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.045,
+        0.44,
+        0.045
+      ]
+    },
+    {
+      "color" : "#40374D",
+      "id" : "leg_br",
+      "metallic" : 0.65,
+      "position" : [
+        0.21,
+        0.22,
+        -0.2
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.045,
+        0.44,
+        0.045
+      ]
+    },
+    {
+      "color" : "#D7B975",
+      "id" : "arm_l",
+      "metallic" : 0.65,
+      "position" : [
+        -0.26,
+        0.66,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.055,
+        0.055,
+        0.48
+      ]
+    },
+    {
+      "color" : "#D7B975",
+      "id" : "arm_r",
+      "metallic" : 0.65,
+      "position" : [
+        0.26,
+        0.66,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.055,
+        0.055,
+        0.48
+      ]
+    }
+  ]
+}

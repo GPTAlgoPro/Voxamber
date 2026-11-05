@@ -1,0 +1,12 @@
+{
+  "scope": "Local isolated guard checks only; no ASC mutation, real IPA audit or distribution claim",
+  "scriptSHA256": "7417dd250a547a6c06042ab06bc454a021462cf25bb1e0d0e666c03a85e05ac0",
+  "checks": {
+    "readOnlyRejectsMutationBeforeAuthOrNetwork": true,
+    "missingAuditRejected": true,
+    "ExactAuditedIdentityHashPassesSyntheticGuardOnly": true,
+    "tamperedIPARejected": true,
+    "wrongBuildAuditRejected": true
+  },
+  "result": "PASS"
+}

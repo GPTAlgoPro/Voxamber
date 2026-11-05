@@ -1,0 +1,201 @@
+{
+  "recordedAtUTC": "2026-11-05T14:48:46.352227+00:00",
+  "sourcesPrimaryOnly": true,
+  "researchScope": "Read-only official HF/GitHub metadata and model cards plus local pinned native code; no weights were downloaded before this report. Subsequent candidate download/comparison is separately authorized.",
+  "recommendation": "One official MiniCPM5-2B-MLX comparison against unchanged Qwen3.5-4B baseline; no default or Apple-hosted pack change",
+  "candidate": {
+    "repo": "openbmb/MiniCPM5-2B-MLX",
+    "revision": "8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3",
+    "officialTotalParameters": 2516756480,
+    "nonEmbeddingParameters": 1981982720,
+    "architecture": "LlamaForCausalLM",
+    "modelType": "llama",
+    "license": "Apache-2.0 for repository and weights, stated by official model card",
+    "quantization": {
+      "bits": 4,
+      "groupSize": 64,
+      "mode": "affine"
+    },
+    "runtimeFiles": [
+      {
+        "path": "config.json",
+        "bytes": 886,
+        "gitBlobSHA1": "dd2f53cf0f66f8bed0e129da8e8a3652089c36f2",
+        "lfsSHA256": null,
+        "publicURL": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX/resolve/8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3/config.json"
+      },
+      {
+        "path": "generation_config.json",
+        "bytes": 213,
+        "gitBlobSHA1": "be1cb19dd96be786cf0dd4ee45630afe1c81238b",
+        "lfsSHA256": null,
+        "publicURL": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX/resolve/8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3/generation_config.json"
+      },
+      {
+        "path": "chat_template.jinja",
+        "bytes": 9060,
+        "gitBlobSHA1": "be166eec32c67d62c71d6e0dfaf2c0f194b00923",
+        "lfsSHA256": null,
+        "publicURL": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX/resolve/8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3/chat_template.jinja"
+      },
+      {
+        "path": "tokenizer.json",
+        "bytes": 9894271,
+        "gitBlobSHA1": "ec0bf9a34dc884738494ed1f74d0c5327b06d690",
+        "lfsSHA256": null,
+        "publicURL": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX/resolve/8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3/tokenizer.json"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "bytes": 435,
+        "gitBlobSHA1": "4471a1d21adae490693a08e1cbcac4e65025798d",
+        "lfsSHA256": null,
+        "publicURL": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX/resolve/8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3/tokenizer_config.json"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "bytes": 68721,
+        "gitBlobSHA1": "3be082021e2337e4102df879fc3c3898f1685775",
+        "lfsSHA256": null,
+        "publicURL": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX/resolve/8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3/model.safetensors.index.json"
+      },
+      {
+        "path": "model.safetensors",
+        "bytes": 1416035216,
+        "gitBlobSHA1": "013e08e50344166c6e70f87a6d2456c0e23daa4d",
+        "lfsSHA256": "c207798696a4a454e7ac211b25227625466c693335941cee8904fb922f295cc1",
+        "publicURL": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX/resolve/8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3/model.safetensors"
+      }
+    ],
+    "runtimeBytes": 1426008802,
+    "weightBytes": 1416035216,
+    "weightSHA256": "c207798696a4a454e7ac211b25227625466c693335941cee8904fb922f295cc1",
+    "config": {
+      "hiddenSize": 2048,
+      "intermediateSize": 6144,
+      "layers": 42,
+      "queryHeads": 16,
+      "kvHeads": 2,
+      "headDim": 128,
+      "ropeTheta": 5000000,
+      "ropeScaling": null,
+      "tieWordEmbeddings": false,
+      "vocabSize": 130560
+    },
+    "eosIDs": [
+      1,
+      130073
+    ],
+    "templateSource": "Separate official chat_template.jinja has enable_thinking=false branch emitting empty think prefix; tokenizer_config class is TokenizersBackend. Must verify actual native tokens, not merely architecture label."
+  },
+  "officialRelatedModels": [
+    {
+      "id": "openbmb/MiniCPM5-1B",
+      "totalParameters": 1080632832,
+      "eligibility": "<=8B; smaller alternative, not separately recommended this round"
+    },
+    {
+      "id": "openbmb/MiniCPM4.1-8B",
+      "totalParameters": 8185253888,
+      "eligibility": "Nominal8B class but above strict8.0B total; disclose rather than equating to <=8.0"
+    },
+    {
+      "id": "openbmb/MiniCPM-SALA",
+      "totalParameters": 9477203968,
+      "eligibility": "Excluded; sparse/linear attention does not reduce total parameters"
+    },
+    {
+      "id": "Qwen/Qwen3.8-27B",
+      "totalParameters": 27781427952,
+      "eligibility": "Smallest official3.8 checkpoint found; above cap"
+    },
+    {
+      "id": "Qwen/Qwen3.5-4B",
+      "totalParameters": 4659865088,
+      "eligibility": "Current baseline eligible; actual 3D quality unaccepted in frozen fresh-five QA"
+    }
+  ],
+  "officialQwen38APIIDs": [
+    "Qwen/Qwen3.8-27B",
+    "Qwen/Qwen3.8-Flash-Next",
+    "Qwen/Qwen3.8-2.4T-A95B",
+    "Qwen/Qwen3.8-27B-FP8",
+    "Qwen/Qwen3.8-Flash-Next-FP8",
+    "Qwen/Qwen3.8-2.4T-A95B-FP8"
+  ],
+  "nativeStaticAssessment": {
+    "sdk": "mlx-swift-lm3.32.3, revision3b339ad6e3b3f44c8121ecff5131c7fd55e075e6",
+    "modelRegistry": "Libraries/MLXLLM/LLMModelFactory.swift:54 registers llama",
+    "configuration": "Models/Llama.swift:210-315 supports candidate head_dim/GQA/ropeTheta/nullScaling/untiedHead. Candidate has no MiniCPM scale_emb/scale_depth/dim_model_base keys; do not apply old mUP wrapper scaling.",
+    "operations": "Native MLX/Metal standard GQA attention, RoPE, RMSNorm, SwiGLU and affine group quantization; no new SALA/Lightning attention port expected. Actual loading/key/quantization/tokenization parity not yet measured.",
+    "stopSet": "LLMModelFactory.swift:701-716 loads config EOS and generation_config override. Verify actual context set{1,130073} and id130073=<|im_end|>.",
+    "alternativeNativePackage": "Existing MiniCPMNative is a separate GGUF llama.cpp C++/Metal wrapper, pinned e0eca9d8f57ac8f5a5ad6191a8007b93436c1e71. It has minicpm4 architecture code but hardcodes MiniCPM-V4.7 ChatML; not a plug-in for MLX files and not checkpoint parity evidence."
+  },
+  "memoryEvidence": {
+    "weights": "1.416GB official file, not runtime peak",
+    "calculatedBF16KVAt8192TokensBytes": 352321536,
+    "estimateScope": "42layers*2KVheads*128headDim*K-and-V*2bytes*8192 =336MiB; excludes model activations, temporary buffers, allocator/tokenizer/grammar and App/3D memory. Not a measured iPhone peak.",
+    "vendorMobile": "Official V-Apps lists MiniCPM5-2B GGUF recommended>=6GB RAM. Official MiniCPM LiteRT guide reports iPhone17Pro int4 Metal+CPU initialization5.7/2.2s; those use a different1.55GB blockwise32/OCTAV bundle, not this official MLX affine/g64 artifact.",
+    "ourPhoneEvidence": "None for MiniCPM5; do not claim mobile-perfect or12GB acceptance before testing."
+  },
+  "qwenThinkingAssessment": {
+    "official": "Qwen3.5 supports enable_thinking=false; default thinking and recommended very long benchmark budgets are not 12GB-iPhone quality proof.",
+    "currentWrapper": "generateJSON thinking=true explicitly throws; Direct always supplies false.",
+    "sdk": "GenerationComponents.applyingThinkingBudget exists in ThinkingBudget.swift:476, but Qwen35 uses QwenReasoningProtocol.tagged with no validated budgetTransition. Original Qwen3 preset has a separate transition. Budget requires transition or tested override plus answer/protocol headroom.",
+    "constraintIssue": "A JSON-only grammar applied from the first thought token blocks actual free reasoning; requires phase gating or a separate planning phase. Not just a cheap flag on the frozen production wrapper.",
+    "recommendation": "Do not open this and a new-model trial simultaneously; candidate comparison is the single next model experiment."
+  },
+  "licensesToAcquire": {
+    "sourceRepo": "OpenBMB/MiniCPM",
+    "revision": "316cfb1cea39f39cfa16b4f5703b77495c2340be",
+    "path": "LICENSE",
+    "bytes": 11335,
+    "gitBlobSHA1": "b5ff00dcf3d8024db285692aecd4340017875c06",
+    "publicURL": "https://raw.githubusercontent.com/OpenBMB/MiniCPM/316cfb1cea39f39cfa16b4f5703b77495c2340be/LICENSE",
+    "notice": "Preserve Apache text and model/source attribution; repo file list has no separate NOTICE in the quantized HF snapshot."
+  },
+  "citations": [
+    {
+      "title": "Official MiniCPM5-2B model card, parameter count and license",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B"
+    },
+    {
+      "title": "Official MiniCPM5-2B-MLX repository",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX"
+    },
+    {
+      "title": "Pinned official asset metadata",
+      "url": "https://huggingface.co/api/models/openbmb/MiniCPM5-2B-MLX/revision/8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3?blobs=true"
+    },
+    {
+      "title": "Official MiniCPM release chronology",
+      "url": "https://github.com/OpenBMB/MiniCPM"
+    },
+    {
+      "title": "Official MLX deployment cookbook",
+      "url": "https://github.com/OpenBMB/MiniCPM/blob/main/docs/deployment/mlx.md"
+    },
+    {
+      "title": "Official LiteRT mobile evidence and limitations",
+      "url": "https://github.com/OpenBMB/MiniCPM/blob/main/docs/deployment/litert.md"
+    },
+    {
+      "title": "Official phone app model requirements",
+      "url": "https://github.com/OpenBMB/MiniCPM-V-Apps"
+    },
+    {
+      "title": "Official Qwen3.8 model catalog API",
+      "url": "https://huggingface.co/api/models?author=Qwen&search=Qwen3.8&limit=100&full=true"
+    },
+    {
+      "title": "Official Qwen3.5-4B reasoning documentation",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B"
+    }
+  ],
+  "confidence": {
+    "officialIdentityCountsLicense": "high",
+    "staticNativeCompatibility": "high, pending actual tensors and template/EOS sanity",
+    "12GBiPhoneActualPerformance": "unmeasured",
+    "3DPlanningQualityAdvantage": "unknown; language/code benchmark claims are not 3D acceptance"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "cancelAfterFirstTokenObserved" : true,
+  "cancelToSettledAndUnloadedSeconds" : 0.036643028259277344,
+  "candidate" : "official MiniCPM5-2B-MLX",
+  "comparisonMayProceed" : true,
+  "compileGraphs" : false,
+  "fixedSyntheticPromptOnly" : true,
+  "genericActorFormalJSONAfterReload" : "{\"ok\": true}",
+  "mlxAfterCancelUnload" : 9496,
+  "mlxAfterFinalUnload" : {
+    "activeBytes" : 14240,
+    "cacheBytes" : 0,
+    "peakBytes" : 1580578428
+  },
+  "mlxAfterInspectorRelease" : 4752,
+  "nativeInspectionPassed" : true,
+  "noPromptOrTemplateRepair" : true,
+  "productionLibraryUnchanged" : true,
+  "reloadSeconds" : 0.46017098426818848,
+  "sampler" : "greedy0",
+  "scope" : "Native loader/tensor/template/EOS and lifecycle sanity, not 3D or iPhone acceptance",
+  "status" : "passed",
+  "unloadSeconds" : 0.036562085151672363
+}

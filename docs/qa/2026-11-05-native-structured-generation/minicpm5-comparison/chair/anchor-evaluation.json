@@ -1,0 +1,132 @@
+{
+  "boundsSource" : "SceneGenerator.bounds(for:) actual rotated/freeform vertices after center attachment",
+  "centerPassLimit" : "Center-layout Core decoding can reject deep graphs at its global-position gate; this single-chair depth-one probe does not establish a general nested evaluator",
+  "contactLimit" : "World AABB attachment is not proof of actual surface contact for hollow, concave or torus geometry",
+  "coordinates" : "World-axis face directions, matching the existing resolver; not parent-local axes",
+  "formula" : "tangent sign * max(0, (parent actual AABB extent - child actual AABB extent) / 2)",
+  "insideScope" : "Only center is supported by this prototype",
+  "normalAndGround" : "Existing SceneAttachmentResolver operations, unchanged",
+  "relations" : [
+    {
+      "actualChildExtent" : [
+        0.5,
+        0.80000001192092896,
+        0.099999997764825821
+      ],
+      "actualParentExtent" : [
+        0.5,
+        0.44999998807907104,
+        0.10000000149011612
+      ],
+      "anchor" : "center",
+      "evaluatedOffset" : [
+        0,
+        0,
+        0
+      ],
+      "face" : "front",
+      "node" : "back",
+      "parent" : "seat",
+      "requestedAxesWithZeroSpread" : [
+
+      ]
+    },
+    {
+      "actualChildExtent" : [
+        0.10000000894069672,
+        0.6000000536441803,
+        0.10000000149011612
+      ],
+      "actualParentExtent" : [
+        0.5,
+        0.44999998807907104,
+        0.10000000149011612
+      ],
+      "anchor" : "center",
+      "evaluatedOffset" : [
+        0,
+        0,
+        0
+      ],
+      "face" : "left",
+      "node" : "leg1",
+      "parent" : "seat",
+      "requestedAxesWithZeroSpread" : [
+
+      ]
+    },
+    {
+      "actualChildExtent" : [
+        0.10000000894069672,
+        0.6000000536441803,
+        0.10000000149011612
+      ],
+      "actualParentExtent" : [
+        0.5,
+        0.44999998807907104,
+        0.10000000149011612
+      ],
+      "anchor" : "center",
+      "evaluatedOffset" : [
+        0,
+        0,
+        0
+      ],
+      "face" : "right",
+      "node" : "leg2",
+      "parent" : "seat",
+      "requestedAxesWithZeroSpread" : [
+
+      ]
+    },
+    {
+      "actualChildExtent" : [
+        0.10000000149011612,
+        0.6000000536441803,
+        0.099999997764825821
+      ],
+      "actualParentExtent" : [
+        0.5,
+        0.44999998807907104,
+        0.10000000149011612
+      ],
+      "anchor" : "center",
+      "evaluatedOffset" : [
+        0,
+        0,
+        0
+      ],
+      "face" : "front",
+      "node" : "leg3",
+      "parent" : "seat",
+      "requestedAxesWithZeroSpread" : [
+
+      ]
+    },
+    {
+      "actualChildExtent" : [
+        0.10000000149011612,
+        0.6000000536441803,
+        0.099999997764825821
+      ],
+      "actualParentExtent" : [
+        0.5,
+        0.44999998807907104,
+        0.10000000149011612
+      ],
+      "anchor" : "center",
+      "evaluatedOffset" : [
+        0,
+        0,
+        0
+      ],
+      "face" : "back",
+      "node" : "leg4",
+      "parent" : "seat",
+      "requestedAxesWithZeroSpread" : [
+
+      ]
+    }
+  ],
+  "zeroSpreadLimit" : "Requested non-center axes with zero spread collapse; record as a quality failure, never scale or nudge"
+}

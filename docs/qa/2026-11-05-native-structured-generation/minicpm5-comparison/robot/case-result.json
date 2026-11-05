@@ -1,0 +1,24 @@
+{
+  "actualCaseSeconds" : 3.7789349555969238,
+  "cachedResponsesUsed" : false,
+  "caseDeadlineExceeded" : false,
+  "caseSharedDeadlineSeconds" : 180,
+  "error" : "Outline validation failed: missing parent or cycle",
+  "errorType" : "ProductionQuality.(unknown context at $103fa5af0).ProbeError",
+  "exported" : false,
+  "failureStage" : "stage1_outline",
+  "id" : "robot",
+  "mlxAfterCase" : {
+    "activeBytes" : 1415930512,
+    "cacheBytes" : 33595800,
+    "peakBytes" : 1752983348
+  },
+  "nativeSceneAccepted" : false,
+  "originalRequest" : "做一个站立的蓝色玩具机器人，包含立方体头、躯干、左右两条手臂和两条腿，以及两个球形黄色眼睛，底部在Y=0。",
+  "outputRepair" : false,
+  "phaseCalls" : 1,
+  "rendered" : false,
+  "retries" : 0,
+  "status" : "rejected_or_failed",
+  "visualQualityAccepted" : false
+}

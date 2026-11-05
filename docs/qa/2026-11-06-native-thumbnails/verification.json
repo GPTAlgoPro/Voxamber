@@ -1,0 +1,111 @@
+{
+  "scope": "Host-native thumbnail cache and immutable project integration; not iPhone/Simulator/TestFlight or AI generation quality acceptance",
+  "fixturePrivacy": "Only fresh synthetic parameter fixtures under temporary/ignored paths. No access to, recreation of, or restoration of deleted user projects.",
+  "sourceSHA256": {
+    "Apple/ThreeLiveStudio/Library/ProjectThumbnailService.swift": "8f326fdea943d0ef6d432eab057090f82d18678349c71e1266d00e3213368e64",
+    "Apple/ThreeLiveStudio/Storage/ProjectStore.swift": "da6ca9ee9d89fb80ec8bd15e243bc56d97a6fb75d21b7ef454be3a16ad543220",
+    "Apple/ThreeLiveStudio/Library/ProjectLibrary.swift": "6bc15d3ebdbc818226f74410746423348ae55b93bfaf657b2ad3e2ce92b90a7e",
+    "Apple/ThreeLiveStudioTests/ProjectThumbnailServiceTests.swift": "c6eac5c7ef960dc73210a11f3de0d1fa675784059c2f948bd981f42edd1cc1da",
+    "Apple/ThreeLiveStudioTests/ProjectThumbnailStoreTests.swift": "3e303225a37216227e37679d52add1d4048c21652e296005634072cbad7203c0"
+  },
+  "validation": {
+    "hostReleaseBuild": "passed",
+    "hostTestsPassed": 10,
+    "hostTestsFailed": 0,
+    "tests": [
+      {
+        "name": "ProjectThumbnailServiceTests testCancelledOldRevisionCannotReplaceNewRevisionWhenRendererFinishesLate",
+        "result": "passed",
+        "seconds": 0.023
+      },
+      {
+        "name": "ProjectThumbnailServiceTests testDiskReuseDoesNotRenderAgainAndChangedSourceDigestFailsClosed",
+        "result": "passed",
+        "seconds": 0.002
+      },
+      {
+        "name": "ProjectThumbnailServiceTests testInvalidRendererDataIsNotCachedAndFailureCanRetryWithoutChangingSource",
+        "result": "passed",
+        "seconds": 0.002
+      },
+      {
+        "name": "ProjectThumbnailServiceTests testLastWaiterCancellationCancelsOwnedRenderAndQueueCanContinue",
+        "result": "passed",
+        "seconds": 0.015
+      },
+      {
+        "name": "ProjectThumbnailServiceTests testLateCancelledResultCannotPersistOrServeDeletedProject",
+        "result": "passed",
+        "seconds": 0.009
+      },
+      {
+        "name": "ProjectThumbnailServiceTests testRealIdentityIncludesRevisionDigestURLAndPixelSize",
+        "result": "passed",
+        "seconds": 0.001
+      },
+      {
+        "name": "ProjectThumbnailServiceTests testTwoCallersCoalesceAndOneCancellationKeepsOtherRequestAlive",
+        "result": "passed",
+        "seconds": 0.01
+      },
+      {
+        "name": "ProjectThumbnailServiceTests testUndecodableDiskImageIsRemovedAndRenderedAgain",
+        "result": "passed",
+        "seconds": 0.01
+      },
+      {
+        "name": "ProjectThumbnailStoreTests testDeletedProjectCannotBeListedOrRestoredByThumbnailRequest",
+        "result": "passed",
+        "seconds": 0.008
+      },
+      {
+        "name": "ProjectThumbnailStoreTests testThumbnailFailureCannotInvalidateCommittedNativeFilesOrMetadata",
+        "result": "passed",
+        "seconds": 0.006
+      }
+    ],
+    "nativeQuickLookRenderReceipt": "actual-render-receipt.json",
+    "renderedPNGManuallyViewed": true,
+    "iOSAppCompile": "pending Root combined batch",
+    "phone": "not operated",
+    "modelInference": "not run",
+    "independentSourceReview": "completed; no blocking issue. Post-await caller cancellation, bounded cached pixel decode, and already-cancelled card-task entry guard included."
+  },
+  "implementation": {
+    "renderer": "Apple QuickLookThumbnailing QLThumbnailGenerator .thumbnail, scale1, iconModefalse; 20sec owned watchdog",
+    "identity": [
+      "projectID",
+      "revision",
+      "USDZ SHA256",
+      "standardized file URL",
+      "pixel size",
+      "cache format version"
+    ],
+    "actualSourceDigest": "streaming SHA256 before cache read and after render",
+    "pixels": 256,
+    "clampedPixelRange": [
+      192,
+      320
+    ],
+    "rendererConcurrency": 1,
+    "NSCacheCostBytes": 8388608,
+    "NSCacheCount": 64,
+    "diskBudgetBytes": 67108864,
+    "inflight": "coalesced waiters, per-caller cancellation, last-waiter cancellation, generation token rejects stale completions",
+    "committedArtifacts": "publish transaction untouched; derived thumbnail failure cannot revoke project pointer or GLB/USDZ",
+    "delete": "project deletion then cache invalidation; no automatic project recreation",
+    "unavailableUI": "neutral unavailable text + explicit reload option, never file/preset icon fallback",
+    "memoryHook": "await store.reduceThumbnailMemory()"
+  },
+  "limits": [
+    "macOS Quick Look timing is not iPhone timing; OS renderer cache warmth is uncontrolled",
+    "Cancellation/coalescing/race tests use an injected controlled renderer; real QL positive render is separately evidenced",
+    "User visual modeling quality and AI output acceptance remain unresolved by thumbnail work",
+    "Old unused revision cache entries are evicted by disk budget, current project deletion invalidates all its cached revisions"
+  ],
+  "environment": {
+    "swift": "Apple Swift 6.4.2",
+    "target": "arm64-apple-macosx27.2.0",
+    "macOS": "27.2 (26B123)"
+  }
+}

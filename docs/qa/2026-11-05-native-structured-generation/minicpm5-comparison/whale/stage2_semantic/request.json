@@ -1,0 +1,9 @@
+{
+  "api" : "QwenEngine.generateJSONDirect",
+  "maxTokens" : 3072,
+  "prefillStepSize" : 128,
+  "remainingSharedCaseSeconds" : 177.5533549785614,
+  "schemaSHA256" : "362badd117450e5ed16dacd5f09da3c9bda910923b9cf3f00bd2c5de6353e8c1",
+  "system" : "Classify semantic placement anchors only. For each input row choose the anchor matching its stated purpose on the given face. If the purpose states no tangential direction, choose center. Directions are world directions; a back face does not mirror left and right.\nExact allowed anchor labels:\ntop/bottom faces: center,left,right,front,back,frontLeft,frontRight,backLeft,backRight.\nfront/back faces: center,left,right,top,bottom,topLeft,topRight,bottomLeft,bottomRight.\nleft/right faces: center,front,back,top,bottom,frontTop,frontBottom,backTop,backBottom.\ninside face: center.\nReturn only this JSON format: {\"anchors\":[{\"id\":\"same input id\",\"anchor\":\"one allowed label\"}]}. Include each input id exactly once, keep input order, and include no extra keys or explanations.",
+  "user" : "{\"rows\":[{\"face\":\"left\",\"id\":\"left_fins\",\"purpose\":\"左侧鳍\"},{\"face\":\"right\",\"id\":\"right_fins\",\"purpose\":\"右侧鳍\"},{\"face\":\"bottom\",\"id\":\"tail_fins\",\"purpose\":\"分叉尾鳍\"},{\"face\":\"top\",\"id\":\"eyes\",\"purpose\":\"可见眼睛\"}]}"
+}

@@ -1,0 +1,107 @@
+{
+  "completedAtUTC": "2026-11-05T15:22:05.165519+00:00",
+  "repo": "openbmb/MiniCPM5-2B-MLX",
+  "revision": "8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3",
+  "runtimeFiles": [
+    {
+      "path": "config.json",
+      "bytes": 886,
+      "gitBlobSHA1": "dd2f53cf0f66f8bed0e129da8e8a3652089c36f2",
+      "lfsSHA256": null,
+      "publicURL": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX/resolve/8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3/config.json",
+      "sha256": "deb9ca33e863cbc84a9ab7209cd924fc05505dc33270c807d47f1b78fbd53a50",
+      "actualGitBlobSHA1": "dd2f53cf0f66f8bed0e129da8e8a3652089c36f2",
+      "verified": true
+    },
+    {
+      "path": "generation_config.json",
+      "bytes": 213,
+      "gitBlobSHA1": "be1cb19dd96be786cf0dd4ee45630afe1c81238b",
+      "lfsSHA256": null,
+      "publicURL": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX/resolve/8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3/generation_config.json",
+      "sha256": "9ac4f32e5f32358697a9f438a3ea89ef80e6ba786c72c49e932f9f21c122fdb1",
+      "actualGitBlobSHA1": "be1cb19dd96be786cf0dd4ee45630afe1c81238b",
+      "verified": true
+    },
+    {
+      "path": "chat_template.jinja",
+      "bytes": 9060,
+      "gitBlobSHA1": "be166eec32c67d62c71d6e0dfaf2c0f194b00923",
+      "lfsSHA256": null,
+      "publicURL": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX/resolve/8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3/chat_template.jinja",
+      "sha256": "cc945752db555d60949b16989df4ccfeb52a313d6b4b5c5229dd786e2e9fcf1c",
+      "actualGitBlobSHA1": "be166eec32c67d62c71d6e0dfaf2c0f194b00923",
+      "verified": true
+    },
+    {
+      "path": "tokenizer.json",
+      "bytes": 9894271,
+      "gitBlobSHA1": "ec0bf9a34dc884738494ed1f74d0c5327b06d690",
+      "lfsSHA256": null,
+      "publicURL": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX/resolve/8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3/tokenizer.json",
+      "sha256": "3e065a558a034185fe299917b398685c1facd0169a9eea1e629eb30c171fed81",
+      "actualGitBlobSHA1": "ec0bf9a34dc884738494ed1f74d0c5327b06d690",
+      "verified": true
+    },
+    {
+      "path": "tokenizer_config.json",
+      "bytes": 435,
+      "gitBlobSHA1": "4471a1d21adae490693a08e1cbcac4e65025798d",
+      "lfsSHA256": null,
+      "publicURL": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX/resolve/8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3/tokenizer_config.json",
+      "sha256": "b89503c3e5070c6b6d33daf2e20cb4a5c88537c1670d9b7e0cfb4506a61448a9",
+      "actualGitBlobSHA1": "4471a1d21adae490693a08e1cbcac4e65025798d",
+      "verified": true
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "bytes": 68721,
+      "gitBlobSHA1": "3be082021e2337e4102df879fc3c3898f1685775",
+      "lfsSHA256": null,
+      "publicURL": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX/resolve/8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3/model.safetensors.index.json",
+      "sha256": "ccf202e0a06fe3c7eb8f354cfb29412a5e64956ad895413d4d9267ae4b3a6045",
+      "actualGitBlobSHA1": "3be082021e2337e4102df879fc3c3898f1685775",
+      "verified": true
+    },
+    {
+      "path": "model.safetensors",
+      "bytes": 1416035216,
+      "gitBlobSHA1": "013e08e50344166c6e70f87a6d2456c0e23daa4d",
+      "lfsSHA256": "c207798696a4a454e7ac211b25227625466c693335941cee8904fb922f295cc1",
+      "publicURL": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX/resolve/8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3/model.safetensors",
+      "sha256": "c207798696a4a454e7ac211b25227625466c693335941cee8904fb922f295cc1",
+      "actualGitBlobSHA1": null,
+      "verified": true
+    }
+  ],
+  "runtimeBytes": 1426008802,
+  "license": {
+    "bytes": 11335,
+    "sha256": "202d02b14796563546e1a1d1e761410fa9e399bf7e1b85d8b43c972658341202",
+    "gitBlobSHA1": "b5ff00dcf3d8024db285692aecd4340017875c06",
+    "sourceRevision": "316cfb1cea39f39cfa16b4f5703b77495c2340be",
+    "publicURL": "https://raw.githubusercontent.com/OpenBMB/MiniCPM/316cfb1cea39f39cfa16b4f5703b77495c2340be/LICENSE",
+    "verified": true
+  },
+  "attribution": {
+    "model": "openbmb/MiniCPM5-2B-MLX",
+    "revision": "8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3",
+    "weightsAndRepositoryLicense": "Apache-2.0",
+    "officialModelCard": "https://huggingface.co/openbmb/MiniCPM5-2B",
+    "sourceAttribution": "MiniCPM Team / OpenBMB",
+    "licenseSourceRevision": "316cfb1cea39f39cfa16b4f5703b77495c2340be",
+    "licenseSourceURL": "https://raw.githubusercontent.com/OpenBMB/MiniCPM/316cfb1cea39f39cfa16b4f5703b77495c2340be/LICENSE",
+    "separateNOTICEInHFSnapshot": false,
+    "QwenDefaultUnchanged": true
+  },
+  "transport": {
+    "hfPinnedRevision": "8a9ad7539ac86281d0ac2b017ba04a5de53fe9a3",
+    "modelscopePinnedRevision": "5e4fedf8312e1fecdbbe3218360fd51b3e6cb793",
+    "publicMirrorURL": "https://modelscope.cn/models/OpenBMB/MiniCPM5-2B-MLX/resolve/5e4fedf8312e1fecdbbe3218360fd51b3e6cb793/model.safetensors",
+    "reason": "Measured4MiB identical content about3x faster, then explicit authorized graceful route retarget",
+    "validPrefixAndPartsPreserved": true,
+    "shortPartsResumedWithoutReset": true,
+    "finalWholeWeightSHA256": "c207798696a4a454e7ac211b25227625466c693335941cee8904fb922f295cc1"
+  },
+  "QwenAppOrAppleAssetPackChanged": false
+}

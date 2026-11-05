@@ -1,0 +1,179 @@
+{
+  "actualProcessWallSeconds" : 23.883800983428955,
+  "allPhaseTokenLimits" : 3072,
+  "cachedModelResponsesUsed" : false,
+  "cases" : [
+    {
+      "actualCaseSeconds" : 3.7789349555969238,
+      "cachedResponsesUsed" : false,
+      "caseDeadlineExceeded" : false,
+      "caseSharedDeadlineSeconds" : 180,
+      "error" : "Outline validation failed: missing parent or cycle",
+      "errorType" : "ProductionQuality.(unknown context at $103fa5af0).ProbeError",
+      "exported" : false,
+      "failureStage" : "stage1_outline",
+      "id" : "robot",
+      "mlxAfterCase" : {
+        "activeBytes" : 1415930512,
+        "cacheBytes" : 33595800,
+        "peakBytes" : 1752983348
+      },
+      "nativeSceneAccepted" : false,
+      "originalRequest" : "做一个站立的蓝色玩具机器人，包含立方体头、躯干、左右两条手臂和两条腿，以及两个球形黄色眼睛，底部在Y=0。",
+      "outputRepair" : false,
+      "phaseCalls" : 1,
+      "rendered" : false,
+      "retries" : 0,
+      "status" : "rejected_or_failed",
+      "visualQualityAccepted" : false
+    },
+    {
+      "actualCaseSeconds" : 2.1503509283065796,
+      "cachedResponsesUsed" : false,
+      "caseDeadlineExceeded" : false,
+      "caseSharedDeadlineSeconds" : 180,
+      "error" : "Outline validation failed: missing parent or cycle",
+      "errorType" : "ProductionQuality.(unknown context at $103fa5af0).ProbeError",
+      "exported" : false,
+      "failureStage" : "stage1_outline",
+      "id" : "lamp",
+      "mlxAfterCase" : {
+        "activeBytes" : 1415930512,
+        "cacheBytes" : 24945116,
+        "peakBytes" : 1763993464
+      },
+      "nativeSceneAccepted" : false,
+      "originalRequest" : "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地Y=0，整体高约0.8米。",
+      "outputRepair" : false,
+      "phaseCalls" : 1,
+      "rendered" : false,
+      "retries" : 0,
+      "status" : "rejected_or_failed",
+      "visualQualityAccepted" : false
+    },
+    {
+      "actualCaseSeconds" : 7.5013860464096069,
+      "cachedResponsesUsed" : false,
+      "caseDeadlineExceeded" : false,
+      "caseSharedDeadlineSeconds" : 180,
+      "error" : "挤出轮廓不能共线。",
+      "errorType" : "CreationCore.CreationError",
+      "exported" : false,
+      "failureStage" : "native_anchor_and_core_geometry",
+      "id" : "whale",
+      "mlxAfterCase" : {
+        "activeBytes" : 1415930512,
+        "cacheBytes" : 33913308,
+        "peakBytes" : 1807356744
+      },
+      "nativeSceneAccepted" : false,
+      "originalRequest" : "一条弯曲尾巴的蓝色小鲸鱼，流线型椭圆身体，左右鳍和分叉尾鳍，两个可见眼睛；尾鳍或侧鳍至少用一个extrusion自由轮廓。是独立海洋动物造型，不要平台。",
+      "outlineDiagnostics" : {
+        "childrenPerParent" : {
+          "body" : 4
+        },
+        "maximumParentDepth" : 1,
+        "nativeTopology" : "unique identifiers, supported primitives/faces, one first root, existing parents and acyclic connected graph",
+        "parts" : 5,
+        "qualityLimit" : "Topology checks do not establish that parts or geometry match the requested object."
+      },
+      "outputRepair" : false,
+      "phaseCalls" : 3,
+      "rendered" : false,
+      "retries" : 0,
+      "status" : "rejected_or_failed",
+      "visualQualityAccepted" : false
+    },
+    {
+      "actualCaseSeconds" : 4.2337950468063354,
+      "cachedResponsesUsed" : false,
+      "caseDeadlineExceeded" : false,
+      "caseSharedDeadlineSeconds" : 180,
+      "error" : "Outline validation failed: outline identifier/primitive/purpose",
+      "errorType" : "ProductionQuality.(unknown context at $103fa5af0).ProbeError",
+      "exported" : false,
+      "failureStage" : "stage1_outline",
+      "id" : "aircraft",
+      "mlxAfterCase" : {
+        "activeBytes" : 1415930512,
+        "cacheBytes" : 33595868,
+        "peakBytes" : 1807356744
+      },
+      "nativeSceneAccepted" : false,
+      "originalRequest" : "带后掠机翼的未来飞行器，银色流线机身、左右对称不规则机翼、两个推进器，机翼至少一个用extrusion自由轮廓，机身可用lathe。做一个整体，不要平台。",
+      "outputRepair" : false,
+      "phaseCalls" : 1,
+      "rendered" : false,
+      "retries" : 0,
+      "status" : "rejected_or_failed",
+      "visualQualityAccepted" : false
+    },
+    {
+      "actualCaseSeconds" : 5.7250329256057739,
+      "cachedResponsesUsed" : false,
+      "caseDeadlineExceeded" : false,
+      "caseSharedDeadlineSeconds" : 180,
+      "exported" : true,
+      "glbSHA256" : "40942a5d33149e0b9cd254dfef81490b28b8a6b63eb810b64bfb4b0bb1190a6b",
+      "id" : "chair",
+      "mlxAfterCase" : {
+        "activeBytes" : 1415930512,
+        "cacheBytes" : 34255220,
+        "peakBytes" : 1810578144
+      },
+      "nativeSceneAccepted" : true,
+      "nodes" : 6,
+      "originalRequest" : "一把简洁的棕色木椅，必须包含坐面、靠背和四条腿，地面Y=0，坐面高度约0.45米，不要增加底部平台。",
+      "outlineDiagnostics" : {
+        "childrenPerParent" : {
+          "seat" : 5
+        },
+        "maximumParentDepth" : 1,
+        "nativeTopology" : "unique identifiers, supported primitives/faces, one first root, existing parents and acyclic connected graph",
+        "parts" : 6,
+        "qualityLimit" : "Topology checks do not establish that parts or geometry match the requested object."
+      },
+      "outputRepair" : false,
+      "phaseCalls" : 3,
+      "rendered" : true,
+      "retries" : 0,
+      "status" : "exported_for_visual_review",
+      "triangles" : 72,
+      "usdzSHA256" : "2dd819ba94810bbc65feafa44e6f85d17b643a5a31c54d04088d7e84a2b81479",
+      "visualQualityAccepted" : false
+    }
+  ],
+  "caseSharedDeadlineSeconds" : 180,
+  "executionOrder" : [
+    "robot",
+    "lamp",
+    "whale",
+    "aircraft",
+    "chair"
+  ],
+  "graphCompilation" : false,
+  "loadSeconds" : 0.45354294776916504,
+  "mlxAfterUnload" : {
+    "activeBytes" : 4752,
+    "cacheBytes" : 0,
+    "peakBytes" : 1810578144
+  },
+  "mlxBeforeUnload" : {
+    "activeBytes" : 1415930512,
+    "cacheBytes" : 34255220,
+    "peakBytes" : 1810578144
+  },
+  "modelLoadsPlanned" : 1,
+  "modelProcesses" : 1,
+  "outputRepair" : false,
+  "phoneOperated" : false,
+  "plannedCases" : 5,
+  "prefillStepSize" : 128,
+  "productionChanges" : false,
+  "retries" : 0,
+  "scope" : "Five fixed synthetic subjects, every reached phase generated freshly. A failed phase stops that case without retries; validity/render counters are not visual acceptance. Mac-only single-root prototype, not App/device or universal scene acceptance.",
+  "singleRootPrototype" : true,
+  "status" : "complete",
+  "temperature" : 0,
+  "thinking" : false
+}

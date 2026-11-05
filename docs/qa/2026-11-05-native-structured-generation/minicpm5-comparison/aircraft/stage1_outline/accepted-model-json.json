@@ -1,0 +1,82 @@
+{
+  "name": "未来飞行器",
+  "parts": [
+    {
+      "id": "wing_left",
+      "primitive": "extrusion",
+      "purpose": "左侧机翼"
+    },
+    {
+      "id": "wing_right",
+      "primitive": "extrusion",
+      "purpose": "右侧机翼"
+    ,
+      "parent": "wing_left",
+      "face": "front"
+    },
+    {
+      "id": "wing_left",
+      "primitive": "extrusion",
+      "purpose": "左侧机翼"
+    ,
+      "parent": "wing_left",
+      "face": "front"
+    },
+    {
+      "id": "wing_right",
+      "primitive": "extrusion",
+      "purpose": "右侧机翼"
+    ,
+      "parent": "wing_left",
+      "face": "front"
+    },
+    {
+      "id": "propeller_1",
+      "primitive": "box",
+      "purpose": "推进器1"
+    ,
+      "parent": "wing_left",
+      "face": "front"
+    },
+    {
+      "id": "propeller_2",
+      "primitive": "box",
+      "purpose": "推进器2"
+    ,
+      "parent": "wing_left",
+      "face": "front"
+    },
+    {
+      "id": "wing_left",
+      "primitive": "box",
+      "purpose": "机身"
+    ,
+      "parent": "wing_left",
+      "face": "front"
+    },
+    {
+      "id": "wing_right",
+      "primitive": "box",
+      "purpose": "机身"
+    ,
+      "parent": "wing_left",
+      "face": "front"
+    },
+    {
+      "id": "wing_left",
+      "primitive": "box",
+      "purpose": "机身"
+    ,
+      "parent": "wing_left",
+      "face": "front"
+    },
+    {
+      "id": "wing_right",
+      "primitive": "box",
+      "purpose": "机身"
+    ,
+      "parent": "wing_left",
+      "face": "front"
+    }
+  ]
+}

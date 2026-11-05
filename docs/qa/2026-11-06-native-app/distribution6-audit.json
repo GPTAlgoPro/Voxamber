@@ -1,0 +1,953 @@
+{
+  "checkedAt": "2026-11-05T17:18:53.518811+00:00",
+  "result": "PASS",
+  "scope": "Read-only actual exported IPA upload gate; ignored extraction only. No build, simulator, phone, upload, metadata or account operation.",
+  "artifact": {
+    "ipaPath": "Apple/.build/Distribution/0.1.0-6/ThreeLiveStudio.ipa",
+    "bytes": 26061326,
+    "sha256": "f99d32f11697a3dc99ed6b8a4efdb35c38b0c8d324ee0364589cfaa819b0e00c",
+    "version": "0.1.0",
+    "build": "6",
+    "sourceArchivePath": "Apple/.build/Archives/Voxamber-0.1.0-6.xcarchive",
+    "unchangedDuringAudit": true
+  },
+  "checks": {
+    "onlyExpectedAppAndDownloader": true,
+    "actualVersionBuild": true,
+    "codesignStrictVerificationAllSucceeded": true,
+    "allSignatureMetadataReadable": true,
+    "appleDistributionAuthorityBoth": true,
+    "getTaskAllowFalseBothSignedAndProfile": true,
+    "betaReportsActiveTrueBothSignedAndProfile": true,
+    "distributionProfilesNoDeviceList": true,
+    "allTeamAndApplicationIdentifiersMatch": true,
+    "appGroupsBothSignedAndProfilesMatch": true,
+    "extensionEmbeddedUnderExtensions": true,
+    "mainThreeBAFlagsMatch": true,
+    "extensionGroupAndEXPointMatch": true,
+    "bothExecutablesDeviceARM64": true,
+    "bothBinaryUUIDsMatchFreshArchive": true,
+    "nonSigningResourcesMatchFreshArchive": true,
+    "sevenLicensesHashMatchSourceAndPriorFour": true,
+    "privacyManifestsParse": true,
+    "mainPrivacyHashMatchesSource": true,
+    "modelManifestHashMatchesSource": true,
+    "modelFilePinsMatchUploadedPackContract": true,
+    "noTestBundlePaths": true,
+    "noEmbeddedWeightFiles": true,
+    "noScriptRuntimeFiles": true,
+    "noForbiddenQATestRuntimeSymbolsOrStrings": true,
+    "noTestOrInterpreterDynamicDependencies": true,
+    "noDuoDebugProbeInRelease": true,
+    "engineSourceUnchangedDuringArchiveAuditWindow": true,
+    "mainIncreasedMemoryLimitSignedAndProfileTrue": true,
+    "extensionHasNoIncreasedMemoryLimitEntitlement": true,
+    "allPreparedProductionAndRegressionSourcesUnchanged": true,
+    "earlyStopFourSourceFreezeHashesMatch": true,
+    "noStandalonePhoneBenchInRelease": true,
+    "newReleaseFeatureMarkersPresentInMainExecutable": true
+  },
+  "bundles": [
+    {
+      "relativePath": ".",
+      "bundleID": "com.kaisun.voxamber",
+      "version": "0.1.0",
+      "build": "6",
+      "minimumOSVersion": "26.0",
+      "sdk": "iphoneos27.2",
+      "signature": {
+        "verifyExitCode": 0,
+        "metadataExitCode": 0,
+        "entitlementsExitCode": 0,
+        "metadata": {
+          "Identifier": "com.kaisun.voxamber",
+          "Format": "app bundle with Mach-O thin (arm64)",
+          "CDHash": "7d6de75c47e368cb868bad11002cac6f6a24f10c",
+          "TeamIdentifier": "M97RTV2PQG"
+        },
+        "authorityClassifications": [
+          "Apple Distribution",
+          "Apple Worldwide Developer Relations Certification Authority",
+          "Apple Root CA"
+        ],
+        "entitlements": {
+          "application-identifier": "M97RTV2PQG.com.kaisun.voxamber",
+          "com.apple.developer.team-identifier": "M97RTV2PQG",
+          "com.apple.security.application-groups": [
+            "group.com.kaisun.voxamber.background-assets"
+          ],
+          "get-task-allow": false,
+          "beta-reports-active": true,
+          "com.apple.developer.kernel.increased-memory-limit": true
+        }
+      },
+      "provisioningProfile": {
+        "parseExitCode": 0,
+        "teamIdentifiers": [
+          "M97RTV2PQG"
+        ],
+        "expirationDate": "2027-09-05T09:51:23Z",
+        "hasProvisionedDevices": false,
+        "provisionsAllDevices": false,
+        "entitlements": {
+          "application-identifier": "M97RTV2PQG.com.kaisun.voxamber",
+          "com.apple.developer.team-identifier": "M97RTV2PQG",
+          "com.apple.security.application-groups": [
+            "group.com.kaisun.voxamber.background-assets"
+          ],
+          "get-task-allow": false,
+          "beta-reports-active": true,
+          "com.apple.developer.kernel.increased-memory-limit": true
+        }
+      },
+      "macho": {
+        "sha256": "ad6426bfce0bb6786329d727fc350bbaf092a46e849a1782cf3f9a2a8ee62376",
+        "bytes": 22024752,
+        "architectures": [
+          "arm64"
+        ],
+        "architectureExitCode": 0,
+        "buildPlatformExitCode": 0,
+        "isIOSDevicePlatform": true,
+        "dynamicDependenciesExitCode": 0,
+        "dynamicDependencies": [
+          "/usr/lib/libc++.1.dylib",
+          "/System/Library/Frameworks/Foundation.framework/Foundation",
+          "/System/Library/Frameworks/Metal.framework/Metal",
+          "/System/Library/Frameworks/Accelerate.framework/Accelerate",
+          "/usr/lib/libobjc.A.dylib",
+          "/usr/lib/libSystem.B.dylib",
+          "/System/Library/Frameworks/AVFAudio.framework/AVFAudio",
+          "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+          "/System/Library/Frameworks/BackgroundAssets.framework/BackgroundAssets",
+          "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+          "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+          "/System/Library/Frameworks/CoreImage.framework/CoreImage",
+          "/System/Library/Frameworks/CoreMedia.framework/CoreMedia",
+          "/System/Library/Frameworks/CryptoKit.framework/CryptoKit",
+          "/System/Library/Frameworks/ImageIO.framework/ImageIO",
+          "/System/Library/Frameworks/Network.framework/Network",
+          "/System/Library/Frameworks/QuickLook.framework/QuickLook",
+          "/System/Library/Frameworks/QuickLookThumbnailing.framework/QuickLookThumbnailing",
+          "/System/Library/Frameworks/RealityFoundation.framework/RealityFoundation",
+          "/System/Library/Frameworks/Security.framework/Security",
+          "/System/Library/Frameworks/StoreKit.framework/StoreKit",
+          "/System/Library/Frameworks/SwiftUI.framework/SwiftUI",
+          "/System/Library/Frameworks/UIKit.framework/UIKit",
+          "/System/Library/Frameworks/_RealityKit_SwiftUI.framework/_RealityKit_SwiftUI",
+          "/usr/lib/swift/libswiftARKit.dylib",
+          "/usr/lib/swift/libswiftAVFoundation.dylib",
+          "/usr/lib/swift/libswiftAccelerate.dylib",
+          "/usr/lib/swift/libswiftCompression.dylib",
+          "/usr/lib/swift/libswiftCore.dylib",
+          "/usr/lib/swift/libswiftCoreAudio.dylib",
+          "/usr/lib/swift/libswiftCoreFoundation.dylib",
+          "/usr/lib/swift/libswiftCoreImage.dylib",
+          "/usr/lib/swift/libswiftCoreLocation.dylib",
+          "/usr/lib/swift/libswiftCoreMIDI.dylib",
+          "/usr/lib/swift/libswiftDarwin.dylib",
+          "/usr/lib/swift/libswiftDispatch.dylib",
+          "/usr/lib/swift/libswiftGLKit.dylib",
+          "/usr/lib/swift/libswiftMetal.dylib",
+          "/usr/lib/swift/libswiftModelIO.dylib",
+          "/usr/lib/swift/libswiftOSLog.dylib",
+          "/usr/lib/swift/libswiftObjectiveC.dylib",
+          "/usr/lib/swift/libswiftObservation.dylib",
+          "/usr/lib/swift/libswiftQuartzCore.dylib",
+          "/usr/lib/swift/libswiftRegexBuilder.dylib",
+          "/usr/lib/swift/libswiftSceneKit.dylib",
+          "/usr/lib/swift/libswiftSpatial.dylib",
+          "/usr/lib/swift/libswiftSpriteKit.dylib",
+          "/usr/lib/swift/libswiftSystem.dylib",
+          "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib",
+          "/usr/lib/swift/libswiftXPC.dylib",
+          "/usr/lib/swift/libswift_Builtin_float.dylib",
+          "/usr/lib/swift/libswift_Concurrency.dylib",
+          "/usr/lib/swift/libswift_DarwinFoundation1.dylib",
+          "/usr/lib/swift/libswift_StringProcessing.dylib",
+          "/usr/lib/swift/libswiftos.dylib",
+          "/usr/lib/swift/libswiftsimd.dylib"
+        ],
+        "symbolScanExitCode": 0,
+        "stringScanExitCode": 0,
+        "forbiddenSymbols": [],
+        "forbiddenStringMarkers": {
+          "DeviceAcceptanceProbe": false,
+          "DEVICE_QA": false,
+          "--qa-inference": false,
+          "AppDeviceQA-": false,
+          "XCTest.framework": false,
+          "libXCTest": false,
+          "libpython": false,
+          "Python.framework": false,
+          "JavaScriptCore.framework": false,
+          "quickjs": false,
+          "boa_engine": false,
+          "libnode": false
+        },
+        "duoDebugProbeMarkers": {
+          "DuoVerificationProbe": false,
+          "--duo-qa": false,
+          "duo-layout-probe.json": false
+        },
+        "standaloneBenchMarkers": {
+          "NativePhoneModelBench": false,
+          "--run-mini-sanity": false,
+          "minicpm5-device-report.json": false
+        },
+        "newReleaseFeatureMarkers": {
+          "jsonComplete": true,
+          "last-memory-pressure.json": true,
+          "memory-budget.json": true,
+          "VoxamberModelThumbnails-v1": true,
+          "retryModelPreview": true
+        },
+        "assetPackIDMarker": true,
+        "ipaUUID": {
+          "exitCode": 0,
+          "values": [
+            {
+              "uuid": "FF17D43C-B279-341F-9ABD-B8C192276CA1",
+              "architecture": "arm64"
+            }
+          ]
+        },
+        "archiveUUID": {
+          "exitCode": 0,
+          "values": [
+            {
+              "uuid": "FF17D43C-B279-341F-9ABD-B8C192276CA1",
+              "architecture": "arm64"
+            }
+          ]
+        },
+        "uuidMatchesArchive": true
+      },
+      "backgroundAssets": {
+        "BAHasManagedAssetPacks": true,
+        "BAUsesAppleHosting": true,
+        "BAAppGroupID": "group.com.kaisun.voxamber.background-assets"
+      }
+    },
+    {
+      "relativePath": "Extensions/VoxamberModelDownloader.appex",
+      "bundleID": "com.kaisun.voxamber.model-downloader",
+      "version": "0.1.0",
+      "build": "6",
+      "minimumOSVersion": "26.0",
+      "sdk": "iphoneos27.2",
+      "signature": {
+        "verifyExitCode": 0,
+        "metadataExitCode": 0,
+        "entitlementsExitCode": 0,
+        "metadata": {
+          "Identifier": "com.kaisun.voxamber.model-downloader",
+          "Format": "bundle with Mach-O thin (arm64)",
+          "CDHash": "4105c3f3c6c8eebe48edbd32c1a1c7ab7601dbce",
+          "TeamIdentifier": "M97RTV2PQG"
+        },
+        "authorityClassifications": [
+          "Apple Distribution",
+          "Apple Worldwide Developer Relations Certification Authority",
+          "Apple Root CA"
+        ],
+        "entitlements": {
+          "application-identifier": "M97RTV2PQG.com.kaisun.voxamber.model-downloader",
+          "com.apple.developer.team-identifier": "M97RTV2PQG",
+          "com.apple.security.application-groups": [
+            "group.com.kaisun.voxamber.background-assets"
+          ],
+          "get-task-allow": false,
+          "beta-reports-active": true
+        }
+      },
+      "provisioningProfile": {
+        "parseExitCode": 0,
+        "teamIdentifiers": [
+          "M97RTV2PQG"
+        ],
+        "expirationDate": "2027-09-05T09:51:23Z",
+        "hasProvisionedDevices": false,
+        "provisionsAllDevices": false,
+        "entitlements": {
+          "application-identifier": "M97RTV2PQG.com.kaisun.voxamber.model-downloader",
+          "com.apple.developer.team-identifier": "M97RTV2PQG",
+          "com.apple.security.application-groups": [
+            "group.com.kaisun.voxamber.background-assets"
+          ],
+          "get-task-allow": false,
+          "beta-reports-active": true
+        }
+      },
+      "macho": {
+        "sha256": "2307b34f7cdffe618119f0548fa326f6f0c3f58b7a131891a1b7f95d0d2b4b4b",
+        "bytes": 87792,
+        "architectures": [
+          "arm64"
+        ],
+        "architectureExitCode": 0,
+        "buildPlatformExitCode": 0,
+        "isIOSDevicePlatform": true,
+        "dynamicDependenciesExitCode": 0,
+        "dynamicDependencies": [
+          "/System/Library/Frameworks/BackgroundAssets.framework/BackgroundAssets",
+          "/System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation",
+          "/System/Library/Frameworks/StoreKit.framework/StoreKit",
+          "/System/Library/Frameworks/Foundation.framework/Foundation",
+          "/usr/lib/libobjc.A.dylib",
+          "/usr/lib/libSystem.B.dylib",
+          "/System/Library/Frameworks/UIKit.framework/UIKit",
+          "/usr/lib/swift/libswiftCore.dylib",
+          "/usr/lib/swift/libswiftCoreFoundation.dylib",
+          "/usr/lib/swift/libswiftCoreImage.dylib",
+          "/usr/lib/swift/libswiftCoreLocation.dylib",
+          "/usr/lib/swift/libswiftDispatch.dylib",
+          "/usr/lib/swift/libswiftMetal.dylib",
+          "/usr/lib/swift/libswiftOSLog.dylib",
+          "/usr/lib/swift/libswiftObjectiveC.dylib",
+          "/usr/lib/swift/libswiftQuartzCore.dylib",
+          "/usr/lib/swift/libswiftSpatial.dylib",
+          "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib",
+          "/usr/lib/swift/libswiftXPC.dylib",
+          "/usr/lib/swift/libswift_Builtin_float.dylib",
+          "/usr/lib/swift/libswift_Concurrency.dylib",
+          "/usr/lib/swift/libswiftos.dylib",
+          "/usr/lib/swift/libswiftsimd.dylib"
+        ],
+        "symbolScanExitCode": 0,
+        "stringScanExitCode": 0,
+        "forbiddenSymbols": [],
+        "forbiddenStringMarkers": {
+          "DeviceAcceptanceProbe": false,
+          "DEVICE_QA": false,
+          "--qa-inference": false,
+          "AppDeviceQA-": false,
+          "XCTest.framework": false,
+          "libXCTest": false,
+          "libpython": false,
+          "Python.framework": false,
+          "JavaScriptCore.framework": false,
+          "quickjs": false,
+          "boa_engine": false,
+          "libnode": false
+        },
+        "duoDebugProbeMarkers": {
+          "DuoVerificationProbe": false,
+          "--duo-qa": false,
+          "duo-layout-probe.json": false
+        },
+        "standaloneBenchMarkers": {
+          "NativePhoneModelBench": false,
+          "--run-mini-sanity": false,
+          "minicpm5-device-report.json": false
+        },
+        "newReleaseFeatureMarkers": {
+          "jsonComplete": false,
+          "last-memory-pressure.json": false,
+          "memory-budget.json": false,
+          "VoxamberModelThumbnails-v1": false,
+          "retryModelPreview": false
+        },
+        "assetPackIDMarker": true,
+        "ipaUUID": {
+          "exitCode": 0,
+          "values": [
+            {
+              "uuid": "6EAB855A-1A46-3533-B41B-EA8BD0B6BDFA",
+              "architecture": "arm64"
+            }
+          ]
+        },
+        "archiveUUID": {
+          "exitCode": 0,
+          "values": [
+            {
+              "uuid": "6EAB855A-1A46-3533-B41B-EA8BD0B6BDFA",
+              "architecture": "arm64"
+            }
+          ]
+        },
+        "uuidMatchesArchive": true
+      },
+      "backgroundAssets": {
+        "BAAppGroupID": "group.com.kaisun.voxamber.background-assets",
+        "EXAppExtensionAttributes": {
+          "EXExtensionPointIdentifier": "com.apple.background-asset-downloader-extension"
+        }
+      }
+    }
+  ],
+  "payload": {
+    "fileCount": 30,
+    "totalBytes": 27682212,
+    "fileInventory": [
+      {
+        "path": "AppIcon60x60@2x.png",
+        "bytes": 21651,
+        "sha256": "8c872d307abfd2c534b209b685d30a03cb79f49d8aad4bb78e510f3646dee2df"
+      },
+      {
+        "path": "AppIcon76x76@2x~ipad.png",
+        "bytes": 34697,
+        "sha256": "162061d112d5056917badd7074ed3f0a78397ee87d9969236c4f0fc797e3e25f"
+      },
+      {
+        "path": "Assets.car",
+        "bytes": 2992664,
+        "sha256": "dc25ac3687166eac7faccfd73d8860b5b4efbe1a088791e540df0415464415a8"
+      },
+      {
+        "path": "DLPack.txt",
+        "bytes": 11388,
+        "sha256": "6bbee1883f24c06770474e1d8c44cd8e021693798548eab83747a4c6e63cc579"
+      },
+      {
+        "path": "Extensions/VoxamberModelDownloader.appex/Info.plist",
+        "bytes": 994,
+        "sha256": "0b8093804771b576e9e3cb35231812dec13f7d572cc73bcfd72e0b41e8186e72"
+      },
+      {
+        "path": "Extensions/VoxamberModelDownloader.appex/VoxamberModelDownloader",
+        "bytes": 87792,
+        "sha256": "2307b34f7cdffe618119f0548fa326f6f0c3f58b7a131891a1b7f95d0d2b4b4b"
+      },
+      {
+        "path": "Extensions/VoxamberModelDownloader.appex/_CodeSignature/CodeResources",
+        "bytes": 2040,
+        "sha256": "1a1e9b1ea246fb1b52cae070526a37a1719897fb79133f54ed53ade399f46e02"
+      },
+      {
+        "path": "Extensions/VoxamberModelDownloader.appex/embedded.mobileprovision",
+        "bytes": 14576,
+        "sha256": "747dee9b350fc90afc7a31f98bb3c021bd835983585d17b870de072e3dfbdf04"
+      },
+      {
+        "path": "Info.plist",
+        "bytes": 1677,
+        "sha256": "912e9c51bb72956b66660fa9533e09f1becbf25d550a83837122fdbba4887750"
+      },
+      {
+        "path": "LanguageModel.json",
+        "bytes": 4729,
+        "sha256": "be9d82a513eaeb8381a3be1967f8f7d25931db8aa7b3ca9f21aa2881d7fd4604"
+      },
+      {
+        "path": "MLX-Swift-LM.txt",
+        "bytes": 1067,
+        "sha256": "7b1d86acac816ce8192209d7e01141c129b4d48d474c15cc5fb4af62f497c323"
+      },
+      {
+        "path": "MLX-Swift.txt",
+        "bytes": 1067,
+        "sha256": "44326a4ea062241ae6fc26ee2ec90bdc81af7eb7b9d3966181b733fa69d42057"
+      },
+      {
+        "path": "PicoJSON.txt",
+        "bytes": 1414,
+        "sha256": "52a7da16781b4b899382c9ddfcf059235cdee73e2f45cfd7402c2ae9a2e9d28d"
+      },
+      {
+        "path": "PkgInfo",
+        "bytes": 8,
+        "sha256": "82502191c9484b04d685374f9879a0066069c49b8acae7a04b01d38d07e8eca0"
+      },
+      {
+        "path": "PrivacyInfo.xcprivacy",
+        "bytes": 1246,
+        "sha256": "a3aaadda630c6b420d1f3663da592fcd70ee44ff72fa35d41553b0ad66b6a4fa"
+      },
+      {
+        "path": "Qwen-Model.txt",
+        "bytes": 11544,
+        "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a"
+      },
+      {
+        "path": "Swift-Transformers.txt",
+        "bytes": 11347,
+        "sha256": "648b81e6c6f9975c3b6cf6d630229b6c8d6f1ddaef55f5770f576adda19f3495"
+      },
+      {
+        "path": "ThreeLiveStudio",
+        "bytes": 22024752,
+        "sha256": "ad6426bfce0bb6786329d727fc350bbaf092a46e849a1782cf3f9a2a8ee62376"
+      },
+      {
+        "path": "XGrammar.txt",
+        "bytes": 11413,
+        "sha256": "7416fb6978b1064db50b358e161804e0599afc317b7a5df42136edaa713e7bab"
+      },
+      {
+        "path": "_CodeSignature/CodeResources",
+        "bytes": 8583,
+        "sha256": "587923ce5a0b26c5bd89266fb52db41a3b74c56de2859cd19cfcdea3de0e5f2c"
+      },
+      {
+        "path": "embedded.mobileprovision",
+        "bytes": 14611,
+        "sha256": "4c78cf18a988087e81a8c3555dac53cfaa73762ed26fa0c5ea6b8a293cf84390"
+      },
+      {
+        "path": "en.lproj/InfoPlist.strings",
+        "bytes": 181,
+        "sha256": "eb5be035300dd59ae0a8bb0b2225ce623e705f9ea94b70c33596c477ec61fe99"
+      },
+      {
+        "path": "mlx-swift_Cmlx.bundle/Info.plist",
+        "bytes": 672,
+        "sha256": "edeed615e12b40b68da82c821a26f7c899edaa4881c869c91fe34747aebcb9e6"
+      },
+      {
+        "path": "mlx-swift_Cmlx.bundle/default.metallib",
+        "bytes": 2399192,
+        "sha256": "9661f090f215179bb3ba647a4a1cd347f8d8bebed8cbd7e2fdaf6f71fa7ea886"
+      },
+      {
+        "path": "swift-crypto_Crypto.bundle/Info.plist",
+        "bytes": 684,
+        "sha256": "11a758dbc27f56a0cb48127b54bae7a31f5f950a6a4420a93031f72055f686cd"
+      },
+      {
+        "path": "swift-crypto_Crypto.bundle/PrivacyInfo.xcprivacy",
+        "bytes": 398,
+        "sha256": "42fb8a30dd8d7ba0900e1bf17fe64ed8c12cfdb8a9c791ab6b4e1eceb0f299c0"
+      },
+      {
+        "path": "swift-transformers_Hub.bundle/Info.plist",
+        "bytes": 690,
+        "sha256": "8dbe33674a521d47ea4b45c22c6eb2a3fed01209a5859ccf4fb883d0eb24386f"
+      },
+      {
+        "path": "swift-transformers_Hub.bundle/gpt2_tokenizer_config.json",
+        "bytes": 234,
+        "sha256": "551e26ec611d8d0c8edc3ef72e518a38418cb71f40de1347dd486a595e1557d7"
+      },
+      {
+        "path": "swift-transformers_Hub.bundle/t5_tokenizer_config.json",
+        "bytes": 20746,
+        "sha256": "e0aff0b1de9071e30d9a60a199303b6abe916a64a19932bd1c46992279b41a1f"
+      },
+      {
+        "path": "zh-Hans.lproj/InfoPlist.strings",
+        "bytes": 155,
+        "sha256": "6550dadedc34fbd117d9ef77421fe5465b64043f3154402dfe56e11d2efb86f2"
+      }
+    ],
+    "testResidualPaths": [],
+    "embeddedWeightPaths": [],
+    "scriptRuntimePaths": []
+  },
+  "licenses": [
+    {
+      "name": "DLPack.txt",
+      "bytes": 11388,
+      "sha256": "6bbee1883f24c06770474e1d8c44cd8e021693798548eab83747a4c6e63cc579",
+      "matchesBuild2Baseline": null,
+      "matchesCurrentSource": true
+    },
+    {
+      "name": "MLX-Swift-LM.txt",
+      "bytes": 1067,
+      "sha256": "7b1d86acac816ce8192209d7e01141c129b4d48d474c15cc5fb4af62f497c323",
+      "matchesBuild2Baseline": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "name": "MLX-Swift.txt",
+      "bytes": 1067,
+      "sha256": "44326a4ea062241ae6fc26ee2ec90bdc81af7eb7b9d3966181b733fa69d42057",
+      "matchesBuild2Baseline": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "name": "PicoJSON.txt",
+      "bytes": 1414,
+      "sha256": "52a7da16781b4b899382c9ddfcf059235cdee73e2f45cfd7402c2ae9a2e9d28d",
+      "matchesBuild2Baseline": null,
+      "matchesCurrentSource": true
+    },
+    {
+      "name": "Qwen-Model.txt",
+      "bytes": 11544,
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+      "matchesBuild2Baseline": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "name": "Swift-Transformers.txt",
+      "bytes": 11347,
+      "sha256": "648b81e6c6f9975c3b6cf6d630229b6c8d6f1ddaef55f5770f576adda19f3495",
+      "matchesBuild2Baseline": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "name": "XGrammar.txt",
+      "bytes": 11413,
+      "sha256": "7416fb6978b1064db50b358e161804e0599afc317b7a5df42136edaa713e7bab",
+      "matchesBuild2Baseline": null,
+      "matchesCurrentSource": true
+    }
+  ],
+  "privacyManifests": [
+    {
+      "path": "PrivacyInfo.xcprivacy",
+      "sha256": "a3aaadda630c6b420d1f3663da592fcd70ee44ff72fa35d41553b0ad66b6a4fa",
+      "declaration": {
+        "NSPrivacyTracking": false,
+        "NSPrivacyTrackingDomains": [],
+        "NSPrivacyCollectedDataTypes": [],
+        "NSPrivacyAccessedAPITypes": [
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryDiskSpace",
+            "NSPrivacyAccessedAPITypeReasons": [
+              "E174.1"
+            ]
+          },
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryFileTimestamp",
+            "NSPrivacyAccessedAPITypeReasons": [
+              "C617.1"
+            ]
+          },
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategorySystemBootTime",
+            "NSPrivacyAccessedAPITypeReasons": [
+              "35F9.1"
+            ]
+          },
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults",
+            "NSPrivacyAccessedAPITypeReasons": [
+              "CA92.1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "swift-crypto_Crypto.bundle/PrivacyInfo.xcprivacy",
+      "sha256": "42fb8a30dd8d7ba0900e1bf17fe64ed8c12cfdb8a9c791ab6b4e1eceb0f299c0",
+      "declaration": {
+        "NSPrivacyTracking": false,
+        "NSPrivacyAccessedAPITypes": [],
+        "NSPrivacyCollectedDataTypes": [],
+        "NSPrivacyTrackingDomains": []
+      }
+    }
+  ],
+  "model": {
+    "id": "qwen3.5-4b-mlx-int4",
+    "fileCount": 10,
+    "pinnedTotalBytes": 3061129077,
+    "manifestSHA256": "be9d82a513eaeb8381a3be1967f8f7d25931db8aa7b3ca9f21aa2881d7fd4604",
+    "uploadedPackContractSHA256": "a35e9148db6f07e3ede938438227002b6b26686a6ffc84830c9136c8de079eca",
+    "matchesBuild2PinsAndUploadedPack": true
+  },
+  "engineSource": {
+    "path": "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift",
+    "sha256": "1e1a33f77a8f052d26ebbbd211b35942d0c6a8cb2469e5872ecf992ffd7d7fa3",
+    "preparedAt": "2026-11-05T17:15:54.324080+00:00",
+    "unchangedFromPreparation": true,
+    "limitation": "Source freeze hash plus Archive UUID linkage; not an independently separable statically linked engine-binary hash."
+  },
+  "sourceFreeze": {
+    "preparedAt": "2026-11-05T17:15:54.324080+00:00",
+    "sourceCount": 43,
+    "sources": [
+      {
+        "path": "Apple/ModelDownloader/Downloader.entitlements",
+        "preparedSHA256": "4be83ab07cca447170097f5b156661cbbb6a3947c2ae06507a713a09f0b71f6d",
+        "currentSHA256": "4be83ab07cca447170097f5b156661cbbb6a3947c2ae06507a713a09f0b71f6d",
+        "matches": true
+      },
+      {
+        "path": "Apple/ModelDownloader/Downloader.swift",
+        "preparedSHA256": "46d7b96a5d8d76fe6a67ce2f6239f68fb2a4420417ea583750e95383e0ff8cd0",
+        "currentSHA256": "46d7b96a5d8d76fe6a67ce2f6239f68fb2a4420417ea583750e95383e0ff8cd0",
+        "matches": true
+      },
+      {
+        "path": "Apple/ModelDownloader/Info.plist",
+        "preparedSHA256": "cda820fdacc9f1d6130422adda3a890db22a73ea2c0a8b61d665aefa71f15518",
+        "currentSHA256": "cda820fdacc9f1d6130422adda3a890db22a73ea2c0a8b61d665aefa71f15518",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/CreationCore/Sources/CreationCore/AttachmentResolver.swift",
+        "preparedSHA256": "3d156c1644fb84b6030728ba60ea3027592a7eca91e254daaf9bf91714e10f94",
+        "currentSHA256": "3d156c1644fb84b6030728ba60ea3027592a7eca91e254daaf9bf91714e10f94",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/CreationCore/Sources/CreationCore/BuildingGenerator.swift",
+        "preparedSHA256": "8a72052f967164f71d289826a6647deb540bb845df3c9314463b5fe4dc7e5180",
+        "currentSHA256": "8a72052f967164f71d289826a6647deb540bb845df3c9314463b5fe4dc7e5180",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/CreationCore/Sources/CreationCore/BuildingSpec.swift",
+        "preparedSHA256": "d6dcad6fb5cedcd3de441751692517ac5a08585d2cc8eca67f7b9991f6d021f9",
+        "currentSHA256": "d6dcad6fb5cedcd3de441751692517ac5a08585d2cc8eca67f7b9991f6d021f9",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/CreationCore/Sources/CreationCore/FreeformGeometry.swift",
+        "preparedSHA256": "aabb0be5dd83d1e248ee2bf8f9899d6200b3659bc5474c8b8b15984c018f0206",
+        "currentSHA256": "aabb0be5dd83d1e248ee2bf8f9899d6200b3659bc5474c8b8b15984c018f0206",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/CreationCore/Sources/CreationCore/SceneGenerationSchema.swift",
+        "preparedSHA256": "c7207a9c83a345370c80a51e0d608be3c1ebdfc58ee195de339bab744cc26d52",
+        "currentSHA256": "c7207a9c83a345370c80a51e0d608be3c1ebdfc58ee195de339bab744cc26d52",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/CreationCore/Sources/CreationCore/SceneGenerator.swift",
+        "preparedSHA256": "1798cd672b99fad741e1c2325f0176a20a912e1e9e1549eb00a848e874516f19",
+        "currentSHA256": "1798cd672b99fad741e1c2325f0176a20a912e1e9e1549eb00a848e874516f19",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/CreationCore/Sources/CreationCore/ScenePlan.swift",
+        "preparedSHA256": "b2b31ccd0bce71dd6d0d3a6c30c15b713323b58314301a5030a7e324c45b3137",
+        "currentSHA256": "b2b31ccd0bce71dd6d0d3a6c30c15b713323b58314301a5030a7e324c45b3137",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/CreationCore/Sources/CreationCore/SceneSpec.swift",
+        "preparedSHA256": "3163e0b570843aead62b72df949721f26529cb19691c2fa96b39785a41a81ca4",
+        "currentSHA256": "3163e0b570843aead62b72df949721f26529cb19691c2fa96b39785a41a81ca4",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/CreationCore/Sources/CreationCore/StrictJSONObject.swift",
+        "preparedSHA256": "27b46fcfc3c1e6bbad423103b2d568e7c3840b124e5e3848990bed5ff59dcf24",
+        "currentSHA256": "27b46fcfc3c1e6bbad423103b2d568e7c3840b124e5e3848990bed5ff59dcf24",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/QwenNative/Sources/QwenNative/LocalTokenizer.swift",
+        "preparedSHA256": "82988617a11bed0234181f904e214c2bdc0fc29c995b0b233f78ddf00ccc7937",
+        "currentSHA256": "82988617a11bed0234181f904e214c2bdc0fc29c995b0b233f78ddf00ccc7937",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/QwenNative/Sources/QwenNative/NativeJSONGrammar.swift",
+        "preparedSHA256": "7dbc4cf98e9c6d414cc3d9e6230c20955997efb682b11c8476173bd74eeeb016",
+        "currentSHA256": "7dbc4cf98e9c6d414cc3d9e6230c20955997efb682b11c8476173bd74eeeb016",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift",
+        "preparedSHA256": "1e1a33f77a8f052d26ebbbd211b35942d0c6a8cb2469e5872ecf992ffd7d7fa3",
+        "currentSHA256": "1e1a33f77a8f052d26ebbbd211b35942d0c6a8cb2469e5872ecf992ffd7d7fa3",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/QwenNative/Sources/QwenNative/QwenGenerationCompletion.swift",
+        "preparedSHA256": "f2a762906ec689b55a5687703e040e3bb11df5891b1267af515204c337ba3896",
+        "currentSHA256": "f2a762906ec689b55a5687703e040e3bb11df5891b1267af515204c337ba3896",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/QwenNative/Sources/QwenNative/QwenTokenStream.swift",
+        "preparedSHA256": "074714e201c3fec4ec97307428d95f9a3b8ae3ddc207398e114d6a60c1fa234f",
+        "currentSHA256": "074714e201c3fec4ec97307428d95f9a3b8ae3ddc207398e114d6a60c1fa234f",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/QwenNative/Tests/QwenNativeTests/JSONCompletionTests.swift",
+        "preparedSHA256": "284ced52b4791959d89c9012f54995d307233e240658380aa972d644ad7edaa3",
+        "currentSHA256": "284ced52b4791959d89c9012f54995d307233e240658380aa972d644ad7edaa3",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/ThreeLiveNative/Sources/ThreeLiveNative/ThreeLiveNative.swift",
+        "preparedSHA256": "1b9e3efc4471f8c5bbc2a3bb0332ab54595b3273fc18d4e645a48f56ede5f6c1",
+        "currentSHA256": "1b9e3efc4471f8c5bbc2a3bb0332ab54595b3273fc18d4e645a48f56ede5f6c1",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudio/App/MemoryPressurePolicy.swift",
+        "preparedSHA256": "d99f63280c4cf531687a67f492779483117a6a3a3177626401e0ca726173eeee",
+        "currentSHA256": "d99f63280c4cf531687a67f492779483117a6a3a3177626401e0ca726173eeee",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudio/App/StudioModel.swift",
+        "preparedSHA256": "36ec5bc9d5e16b5e17b9979cf8383f995893329bd5a0ca73d2f05629be7bf254",
+        "currentSHA256": "36ec5bc9d5e16b5e17b9979cf8383f995893329bd5a0ca73d2f05629be7bf254",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudio/App/ThreeLiveStudioApp.swift",
+        "preparedSHA256": "354a8877fdb2d5169dc32a0e4b7a86dfb2cb7fac7a0c9b5197ddd2f712643966",
+        "currentSHA256": "354a8877fdb2d5169dc32a0e4b7a86dfb2cb7fac7a0c9b5197ddd2f712643966",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudio/Creation/CreationWorkspace.swift",
+        "preparedSHA256": "7201ede5dacb31b6d0eaeed31970b70d924de2f7c6b3b430fac20fda446dd2a5",
+        "currentSHA256": "7201ede5dacb31b6d0eaeed31970b70d924de2f7c6b3b430fac20fda446dd2a5",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudio/Creation/SceneParameters.swift",
+        "preparedSHA256": "b0294035346b3a7e0327a202f80487b22e72eb6408b7d7a18a4f5e9f50ea6074",
+        "currentSHA256": "b0294035346b3a7e0327a202f80487b22e72eb6408b7d7a18a4f5e9f50ea6074",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudio/Design/StudioStyle.swift",
+        "preparedSHA256": "3dbe306c31ec4ef6ed0457f68b1de0802dd716bf18959c94f29ab1f4b03a2a26",
+        "currentSHA256": "3dbe306c31ec4ef6ed0457f68b1de0802dd716bf18959c94f29ab1f4b03a2a26",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudio/Diagnostics/DeviceAcceptanceProbe.swift",
+        "preparedSHA256": "ef46203efc136a182dc6dbb4e2bd903dec6f874d2b71c4340cc1df3cadc98c56",
+        "currentSHA256": "ef46203efc136a182dc6dbb4e2bd903dec6f874d2b71c4340cc1df3cadc98c56",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudio/Library/ProjectLibrary.swift",
+        "preparedSHA256": "6bc15d3ebdbc818226f74410746423348ae55b93bfaf657b2ad3e2ce92b90a7e",
+        "currentSHA256": "6bc15d3ebdbc818226f74410746423348ae55b93bfaf657b2ad3e2ce92b90a7e",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudio/Library/ProjectThumbnailService.swift",
+        "preparedSHA256": "8f326fdea943d0ef6d432eab057090f82d18678349c71e1266d00e3213368e64",
+        "currentSHA256": "8f326fdea943d0ef6d432eab057090f82d18678349c71e1266d00e3213368e64",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudio/Models/AppleHostedModelSource.swift",
+        "preparedSHA256": "22289d4f33f9048e426cc8f33e96d86efb5d77291fee07eee5648ecc850236b2",
+        "currentSHA256": "22289d4f33f9048e426cc8f33e96d86efb5d77291fee07eee5648ecc850236b2",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudio/Models/ModelLibrary.swift",
+        "preparedSHA256": "76e7b5b336d32905515efe30252ec4468326083e0ae83dc1e95f0b6bfda56c6d",
+        "currentSHA256": "76e7b5b336d32905515efe30252ec4468326083e0ae83dc1e95f0b6bfda56c6d",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudio/Models/ModelManager.swift",
+        "preparedSHA256": "5e6f32f214ee0fbe78245b50dbb6c2ba5d504d13d57e4f4062ed5e7b305b986a",
+        "currentSHA256": "5e6f32f214ee0fbe78245b50dbb6c2ba5d504d13d57e4f4062ed5e7b305b986a",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudio/Models/VerifiedModelStore.swift",
+        "preparedSHA256": "62497d9da85ff014ebe5fe7b5d315b7367def45552caf65ebc2593392d16a44d",
+        "currentSHA256": "62497d9da85ff014ebe5fe7b5d315b7367def45552caf65ebc2593392d16a44d",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudio/Preview/ModelViewport.swift",
+        "preparedSHA256": "aac3239f1a3db95a444ebb4bb367364f117c413ceec2bc60d7b14dc5b399012b",
+        "currentSHA256": "aac3239f1a3db95a444ebb4bb367364f117c413ceec2bc60d7b14dc5b399012b",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudio/Resources/Info.plist",
+        "preparedSHA256": "9ca2435f210b13d8fac636887ad68db45a96fdf880c3fe3071fc5331ae5551a8",
+        "currentSHA256": "9ca2435f210b13d8fac636887ad68db45a96fdf880c3fe3071fc5331ae5551a8",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudio/Resources/Voxamber.entitlements",
+        "preparedSHA256": "92964619eecdc448a6a8f48eafbe5522190388c0b4c5a79728d0609ab7dcf318",
+        "currentSHA256": "92964619eecdc448a6a8f48eafbe5522190388c0b4c5a79728d0609ab7dcf318",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudio/Storage/ProjectStore.swift",
+        "preparedSHA256": "da6ca9ee9d89fb80ec8bd15e243bc56d97a6fb75d21b7ef454be3a16ad543220",
+        "currentSHA256": "da6ca9ee9d89fb80ec8bd15e243bc56d97a6fb75d21b7ef454be3a16ad543220",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudioTests/AIContextTests.swift",
+        "preparedSHA256": "2fb6ae46b96ffd3df7cc8399438af3997c5fbfdadd1356771e8e7ce6dd3f9fb1",
+        "currentSHA256": "2fb6ae46b96ffd3df7cc8399438af3997c5fbfdadd1356771e8e7ce6dd3f9fb1",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudioTests/MemoryPressureTests.swift",
+        "preparedSHA256": "6b4406a5e20043ced88ef829f7223a8cc66ea59395fe4cc0c1d8baf1918ea9bb",
+        "currentSHA256": "6b4406a5e20043ced88ef829f7223a8cc66ea59395fe4cc0c1d8baf1918ea9bb",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudioTests/ModelViewportTests.swift",
+        "preparedSHA256": "0cb5bc51a14222ad61cdcd5d9b21a3193bb54a3566b388ca032492b0334f2b57",
+        "currentSHA256": "0cb5bc51a14222ad61cdcd5d9b21a3193bb54a3566b388ca032492b0334f2b57",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudioTests/ProjectThumbnailServiceTests.swift",
+        "preparedSHA256": "c6eac5c7ef960dc73210a11f3de0d1fa675784059c2f948bd981f42edd1cc1da",
+        "currentSHA256": "c6eac5c7ef960dc73210a11f3de0d1fa675784059c2f948bd981f42edd1cc1da",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudioTests/ProjectThumbnailStoreTests.swift",
+        "preparedSHA256": "3e303225a37216227e37679d52add1d4048c21652e296005634072cbad7203c0",
+        "currentSHA256": "3e303225a37216227e37679d52add1d4048c21652e296005634072cbad7203c0",
+        "matches": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudioTests/StudioCancellationTests.swift",
+        "preparedSHA256": "b32667d0f88ede6dd41558c8f45b7ad4fbc070541972eb14176b64d26560d5be",
+        "currentSHA256": "b32667d0f88ede6dd41558c8f45b7ad4fbc070541972eb14176b64d26560d5be",
+        "matches": true
+      },
+      {
+        "path": "Apple/project.yml",
+        "preparedSHA256": "43c36278e5e499ee52e1fcbe84354676d62a515bf7f8bbdc937a7b91743c3818",
+        "currentSHA256": "43c36278e5e499ee52e1fcbe84354676d62a515bf7f8bbdc937a7b91743c3818",
+        "matches": true
+      }
+    ],
+    "earlyStopSourceFreezeReference": "docs/qa/2026-11-06-json-completion/verification.json",
+    "earlyStopFourFiles": [
+      {
+        "path": "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift",
+        "frozenSHA256": "1e1a33f77a8f052d26ebbbd211b35942d0c6a8cb2469e5872ecf992ffd7d7fa3",
+        "currentSHA256": "1e1a33f77a8f052d26ebbbd211b35942d0c6a8cb2469e5872ecf992ffd7d7fa3",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/QwenNative/Sources/QwenNative/QwenGenerationCompletion.swift",
+        "frozenSHA256": "f2a762906ec689b55a5687703e040e3bb11df5891b1267af515204c337ba3896",
+        "currentSHA256": "f2a762906ec689b55a5687703e040e3bb11df5891b1267af515204c337ba3896",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/QwenNative/Sources/QwenNative/QwenTokenStream.swift",
+        "frozenSHA256": "074714e201c3fec4ec97307428d95f9a3b8ae3ddc207398e114d6a60c1fa234f",
+        "currentSHA256": "074714e201c3fec4ec97307428d95f9a3b8ae3ddc207398e114d6a60c1fa234f",
+        "matches": true
+      },
+      {
+        "path": "Apple/Packages/QwenNative/Tests/QwenNativeTests/JSONCompletionTests.swift",
+        "frozenSHA256": "284ced52b4791959d89c9012f54995d307233e240658380aa972d644ad7edaa3",
+        "currentSHA256": "284ced52b4791959d89c9012f54995d307233e240658380aa972d644ad7edaa3",
+        "matches": true
+      }
+    ],
+    "limitation": "The source snapshot predates the final archive under the agreed source freeze. Executable UUIDs link the inspected IPA to that archive; this is not an independently separable statically linked implementation hash."
+  },
+  "archiveLinkage": {
+    "nonSigningResourcesCompared": 19,
+    "resourceMismatches": []
+  },
+  "limits": [
+    "Static artifact gate only; Apple upload processing and TestFlight readiness are separate.",
+    "No physical-device stopping latency, Apple-hosted cold download or model content-quality acceptance performed.",
+    "Build 1 benchmark evidence and build 2 TestFlight status do not prove build 6 device behavior."
+  ]
+}
