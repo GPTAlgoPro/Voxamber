@@ -1,0 +1,33 @@
+{
+  "actualCaseSeconds" : 7.5013860464096069,
+  "cachedResponsesUsed" : false,
+  "caseDeadlineExceeded" : false,
+  "caseSharedDeadlineSeconds" : 180,
+  "error" : "挤出轮廓不能共线。",
+  "errorType" : "CreationCore.CreationError",
+  "exported" : false,
+  "failureStage" : "native_anchor_and_core_geometry",
+  "id" : "whale",
+  "mlxAfterCase" : {
+    "activeBytes" : 1415930512,
+    "cacheBytes" : 33913308,
+    "peakBytes" : 1807356744
+  },
+  "nativeSceneAccepted" : false,
+  "originalRequest" : "一条弯曲尾巴的蓝色小鲸鱼，流线型椭圆身体，左右鳍和分叉尾鳍，两个可见眼睛；尾鳍或侧鳍至少用一个extrusion自由轮廓。是独立海洋动物造型，不要平台。",
+  "outlineDiagnostics" : {
+    "childrenPerParent" : {
+      "body" : 4
+    },
+    "maximumParentDepth" : 1,
+    "nativeTopology" : "unique identifiers, supported primitives/faces, one first root, existing parents and acyclic connected graph",
+    "parts" : 5,
+    "qualityLimit" : "Topology checks do not establish that parts or geometry match the requested object."
+  },
+  "outputRepair" : false,
+  "phaseCalls" : 3,
+  "rendered" : false,
+  "retries" : 0,
+  "status" : "rejected_or_failed",
+  "visualQualityAccepted" : false
+}

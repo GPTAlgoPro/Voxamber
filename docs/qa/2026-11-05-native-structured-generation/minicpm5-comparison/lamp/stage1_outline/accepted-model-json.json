@@ -1,0 +1,34 @@
+{
+  "name": "台灯",
+  "parts": [
+    {
+      "id": "cone_red",
+      "primitive": "cone",
+      "purpose": "红色圆锥灯罩"
+    },
+    {
+      "id": "cylinder_black",
+      "primitive": "cylinder",
+      "purpose": "灰色圆柱底座"
+    ,
+    "parent": "cylinder_black",
+      "face": "bottom"
+    },
+    {
+      "id": "rod_black",
+      "primitive": "cylinder",
+      "purpose": "细圆柱支杆"
+    ,
+    "parent": "cylinder_black",
+      "face": "top"
+    },
+    {
+      "id": "sphere_light",
+      "primitive": "sphere",
+      "purpose": "球形灯泡"
+    ,
+    "parent": "rod_black",
+      "face": "top"
+    }
+  ]
+}

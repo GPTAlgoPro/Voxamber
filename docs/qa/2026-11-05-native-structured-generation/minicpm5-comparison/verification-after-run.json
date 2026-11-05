@@ -1,0 +1,30 @@
+{
+  "verifiedAfterRunUTC": "2026-11-05T15:34:26.749389+00:00",
+  "same28BaselineSourceHashesBeforeAndAfter": true,
+  "sameBaselineExecutableBeforeAndAfter": true,
+  "sameProtocolAndPreflightBytesAsBaseline": true,
+  "oldFiveQAFolderArtifactsUnchanged": true,
+  "candidateRuntimeSevenFileStatIdentitiesUnchanged": true,
+  "candidateWeightWholeSHAFromVerifiedDownload": "c207798696a4a454e7ac211b25227625466c693335941cee8904fb922f295cc1",
+  "candidateWeightRehashedAfterInference": false,
+  "nonWeightAssetHashesReverified": true,
+  "sanityLocalTokenizerAdapterByteIdenticalToProduction": true,
+  "sanityRunnerSourceSHA256": {
+    "Sources/MiniCPMSanity/LocalTokenizer.swift": "82988617a11bed0234181f904e214c2bdc0fc29c995b0b233f78ddf00ccc7937",
+    "Sources/MiniCPMSanity/main.swift": "271d5661ce3c90d778f6418c143628c07273de1ffaf1445c6967ff9b2acddea2"
+  },
+  "actualFreshCaseCount": 5,
+  "actualReachedPhaseCalls": 9,
+  "casesNotRetried": true,
+  "noFallbackOrRepair": true,
+  "modelProcessesForComparison": 1,
+  "modelLoadCountForComparison": 1,
+  "inferenceExitedAndModelUnloaded": true,
+  "mlxAfterUnload": {
+    "activeBytes": 4752,
+    "cacheBytes": 0,
+    "peakBytes": 1810578144
+  },
+  "phoneOperated": false,
+  "QwenDefaultOrApplePackChanged": false
+}

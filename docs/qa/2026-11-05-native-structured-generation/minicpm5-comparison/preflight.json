@@ -1,0 +1,28 @@
+{
+  "allPhaseTokenLimits" : 3072,
+  "anchorHelperSourceSHA256" : "e641b7499e8a91c02aa61e4b41e57c8219f4d123e8e94bea9248b454e02a5575",
+  "cardinalityChecks" : [
+    {
+      "allDefinitionsPreserved" : true,
+      "exactCardinality" : true,
+      "parts" : 32,
+      "passed" : true,
+      "semanticRows" : 31
+    },
+    {
+      "allDefinitionsPreserved" : true,
+      "exactCardinality" : true,
+      "parts" : 1,
+      "passed" : true,
+      "semanticRows" : 0
+    }
+  ],
+  "caseSharedDeadlineSeconds" : 180,
+  "controllerSourceSHA256" : "1c42f8849c49ed5474f66002a93b560fff6040cb2cc084444dd8b72fd6a65661",
+  "duplicateOutlineRejected" : true,
+  "historicalModelResponsesUsedByThisController" : false,
+  "modelLoaded" : false,
+  "passed" : true,
+  "singleRootScope" : "Single-root connected object prototype; not a universal multi-object scene contract",
+  "zeroChildNativeGrammarCompiledAndAcceptedEmptyAnchors" : true
+}

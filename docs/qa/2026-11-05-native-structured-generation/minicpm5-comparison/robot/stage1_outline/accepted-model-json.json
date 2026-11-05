@@ -1,0 +1,66 @@
+{
+  "name": "Blue Robot",
+  "parts": [
+    {
+      "id": "head",
+      "primitive": "box",
+      "purpose": "头部"
+    },
+    {
+      "id": "body",
+      "primitive": "box",
+      "purpose": "躯干"
+    ,
+      "parent": "body",
+      "face": "front"
+    },
+    {
+      "id": "left_arm",
+      "primitive": "box",
+      "purpose": "左手臂"
+    ,
+      "parent": "body",
+      "face": "front"
+    },
+    {
+      "id": "right_arm",
+      "primitive": "box",
+      "purpose": "右手臂"
+    ,
+      "parent": "body",
+      "face": "front"
+    },
+    {
+      "id": "left_leg",
+      "primitive": "box",
+      "purpose": "左腿"
+    ,
+      "parent": "body",
+      "face": "front"
+    },
+    {
+      "id": "right_leg",
+      "primitive": "box",
+      "purpose": "右腿"
+    ,
+      "parent": "body",
+      "face": "front"
+    },
+    {
+      "id": "eye_left",
+      "primitive": "sphere",
+      "purpose": "左眼"
+    ,
+      "parent": "left_arm",
+      "face": "front"
+    },
+    {
+      "id": "eye_right",
+      "primitive": "sphere",
+      "purpose": "右眼"
+    ,
+      "parent": "right_arm",
+      "face": "front"
+    }
+  ]
+}

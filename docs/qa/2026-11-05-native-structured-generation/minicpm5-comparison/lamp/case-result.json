@@ -1,0 +1,24 @@
+{
+  "actualCaseSeconds" : 2.1503509283065796,
+  "cachedResponsesUsed" : false,
+  "caseDeadlineExceeded" : false,
+  "caseSharedDeadlineSeconds" : 180,
+  "error" : "Outline validation failed: missing parent or cycle",
+  "errorType" : "ProductionQuality.(unknown context at $103fa5af0).ProbeError",
+  "exported" : false,
+  "failureStage" : "stage1_outline",
+  "id" : "lamp",
+  "mlxAfterCase" : {
+    "activeBytes" : 1415930512,
+    "cacheBytes" : 24945116,
+    "peakBytes" : 1763993464
+  },
+  "nativeSceneAccepted" : false,
+  "originalRequest" : "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地Y=0，整体高约0.8米。",
+  "outputRepair" : false,
+  "phaseCalls" : 1,
+  "rendered" : false,
+  "retries" : 0,
+  "status" : "rejected_or_failed",
+  "visualQualityAccepted" : false
+}

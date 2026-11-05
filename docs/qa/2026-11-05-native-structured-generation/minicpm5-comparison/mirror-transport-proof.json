@@ -1,0 +1,25 @@
+{
+  "measuredAtUTC": "2026-11-05T15:16:51.418640+00:00",
+  "sameCandidateOnly": true,
+  "modelscopeRevision": "5e4fedf8312e1fecdbbe3218360fd51b3e6cb793",
+  "publicPinnedURL": "https://modelscope.cn/models/OpenBMB/MiniCPM5-2B-MLX/resolve/5e4fedf8312e1fecdbbe3218360fd51b3e6cb793/model.safetensors",
+  "weightExpectedSHA256": "c207798696a4a454e7ac211b25227625466c693335941cee8904fb922f295cc1",
+  "mirrorProbe": {
+    "seconds": 1.335403083008714,
+    "bytes": 4194304,
+    "bytesPerSecond": 3140852.416298211,
+    "status": 206,
+    "contentRange": "bytes 0-4194303/1416035216",
+    "sha256": "9a4d95ee01b13ee6ad0b7324385220c0438c3a3b2cb3396a14cbb1afe4d53c3c",
+    "matchesAlreadyReceivedHFFirst4MiB": true
+  },
+  "concurrentHFAggregate20SecondObservation": {
+    "seconds": 20.007125124975573,
+    "newBytes": 20971520,
+    "bytesPerSecond": 1048202.5712839942,
+    "beforeBytes": 859832320,
+    "afterBytes": 880803840
+  },
+  "observedThroughputRatio": 2.9964173933010185,
+  "limits": "One4MiB mirror transfer, not a promise of full-file sustained rate. HF existing handle89737 remained running. Final whole-file SHA remains mandatory."
+}

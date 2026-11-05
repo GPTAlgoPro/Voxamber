@@ -1,0 +1,29 @@
+{
+  "idSetExactlyMatches" : true,
+  "notSemanticAcceptance" : "This verifies syntax/IDs/labels only. Human purpose matching is recorded separately without modifying output.",
+  "noUnknownLabels" : true,
+  "observed" : [
+    {
+      "anchor" : "center",
+      "id" : "back"
+    },
+    {
+      "anchor" : "center",
+      "id" : "leg1"
+    },
+    {
+      "anchor" : "center",
+      "id" : "leg2"
+    },
+    {
+      "anchor" : "center",
+      "id" : "leg3"
+    },
+    {
+      "anchor" : "center",
+      "id" : "leg4"
+    }
+  ],
+  "preservesInputOrder" : true,
+  "valid" : true
+}

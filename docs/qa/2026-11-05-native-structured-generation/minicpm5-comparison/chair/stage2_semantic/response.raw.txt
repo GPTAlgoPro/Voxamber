@@ -1,0 +1,1 @@
+{"anchors":[{"id":"back","anchor":"center"},{"id":"leg1","anchor":"center"},{"id":"leg2","anchor":"center"},{"id":"leg3","anchor":"center"},{"id":"leg4","anchor":"center"}]}

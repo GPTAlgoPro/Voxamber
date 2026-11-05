@@ -1,0 +1,24 @@
+{
+  "actualCaseSeconds" : 4.2337950468063354,
+  "cachedResponsesUsed" : false,
+  "caseDeadlineExceeded" : false,
+  "caseSharedDeadlineSeconds" : 180,
+  "error" : "Outline validation failed: outline identifier/primitive/purpose",
+  "errorType" : "ProductionQuality.(unknown context at $103fa5af0).ProbeError",
+  "exported" : false,
+  "failureStage" : "stage1_outline",
+  "id" : "aircraft",
+  "mlxAfterCase" : {
+    "activeBytes" : 1415930512,
+    "cacheBytes" : 33595868,
+    "peakBytes" : 1807356744
+  },
+  "nativeSceneAccepted" : false,
+  "originalRequest" : "带后掠机翼的未来飞行器，银色流线机身、左右对称不规则机翼、两个推进器，机翼至少一个用extrusion自由轮廓，机身可用lathe。做一个整体，不要平台。",
+  "outputRepair" : false,
+  "phaseCalls" : 1,
+  "rendered" : false,
+  "retries" : 0,
+  "status" : "rejected_or_failed",
+  "visualQualityAccepted" : false
+}

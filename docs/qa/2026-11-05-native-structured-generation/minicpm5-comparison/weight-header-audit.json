@@ -1,0 +1,86 @@
+{
+  "verifiedDownloadedWeight": true,
+  "pinnedWeightSHA256": "c207798696a4a454e7ac211b25227625466c693335941cee8904fb922f295cc1",
+  "fileBytes": 1416035216,
+  "headerBytes": 109448,
+  "format": {
+    "format": "mlx"
+  },
+  "actualTensorCount": 973,
+  "expectedTensorCount": 973,
+  "all42LayerWeightKeyShapesMatchStandardLlamaGQA": true,
+  "allAffine4bitGroup64WeightScaleBiasShapesMatch": true,
+  "untiedEmbeddingAndHeadPresent": true,
+  "configContainsOldMiniCPMMUPFields": false,
+  "logicalLearnedParameterCount": 2516756480,
+  "ropeTheta": 5000000,
+  "ropeScaling": null,
+  "sampleTensorMetadata": {
+    "model.embed_tokens.weight": {
+      "data_offsets": [
+        1259655168,
+        1393348608
+      ],
+      "dtype": "U32",
+      "shape": [
+        130560,
+        256
+      ]
+    },
+    "lm_head.weight": {
+      "data_offsets": [
+        16711680,
+        150405120
+      ],
+      "dtype": "U32",
+      "shape": [
+        130560,
+        256
+      ]
+    },
+    "model.layers.0.self_attn.q_proj.weight": {
+      "data_offsets": [
+        997646336,
+        999743488
+      ],
+      "dtype": "U32",
+      "shape": [
+        2048,
+        256
+      ]
+    },
+    "model.layers.0.self_attn.k_proj.weight": {
+      "data_offsets": [
+        1253097472,
+        1253359616
+      ],
+      "dtype": "U32",
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "model.layers.0.mlp.down_proj.weight": {
+      "data_offsets": [
+        1210966016,
+        1217257472
+      ],
+      "dtype": "U32",
+      "shape": [
+        2048,
+        768
+      ]
+    },
+    "model.norm.weight": {
+      "data_offsets": [
+        150405120,
+        150409216
+      ],
+      "dtype": "BF16",
+      "shape": [
+        2048
+      ]
+    }
+  },
+  "numericalLimit": "Header/key/shape audit is not numerical PyTorch parity or 3D/iPhone acceptance."
+}

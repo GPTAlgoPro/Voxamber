@@ -1,0 +1,42 @@
+{
+  "name": "弯曲尾巴的蓝色小鲸鱼",
+  "parts": [
+    {
+      "id": "body",
+      "primitive": "box",
+      "purpose": "主体身体"
+    },
+    {
+      "id": "left_fins",
+      "primitive": "box",
+      "purpose": "左侧鳍"
+    ,
+    "parent": "body",
+    "face": "left"
+    },
+    {
+      "id": "right_fins",
+      "primitive": "box",
+      "purpose": "右侧鳍"
+    ,
+    "parent": "body",
+    "face": "right"
+    },
+    {
+      "id": "tail_fins",
+      "primitive": "extrusion",
+      "purpose": "分叉尾鳍"
+    ,
+    "parent": "body",
+    "face": "bottom"
+    },
+    {
+      "id": "eyes",
+      "primitive": "sphere",
+      "purpose": "可见眼睛"
+    ,
+    "parent": "body",
+    "face": "top"
+    }
+  ]
+}

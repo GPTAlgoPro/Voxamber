@@ -1,0 +1,295 @@
+{
+  "recordedAtUTC": "2026-11-05T15:20:52.276071+00:00",
+  "terminatedHFSession": 89737,
+  "terminatedPID": 22251,
+  "reason": "Measured same-byte official mirror about3x faster; explicit transport optimization, not timeout inferred from observation. HF tail requests also reported network errors.",
+  "prefixBytes": 71303168,
+  "ranges": [
+    {
+      "file": "000071303168-000104857599.part",
+      "start": 71303168,
+      "end": 104857599,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "704bec757a6bbbe07fbefc7d064732b62e03412bc65c5029f6798a08cf1751fb"
+    },
+    {
+      "file": "000104857600-000138412031.part",
+      "start": 104857600,
+      "end": 138412031,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "7b5752b12177e43709c88c3491426a43f463881c08e0f6aef94aebc86369e2b6"
+    },
+    {
+      "file": "000138412032-000171966463.part",
+      "start": 138412032,
+      "end": 171966463,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "0cf819e1023c705c1b361495a31019eeeeb75d38f2aae0efa1ddc10d89da2de0"
+    },
+    {
+      "file": "000171966464-000205520895.part",
+      "start": 171966464,
+      "end": 205520895,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "2899628a6b337ae6f7d2e981518f375abd4c562751dfb42fb2f6777099ad39d7"
+    },
+    {
+      "file": "000205520896-000239075327.part",
+      "start": 205520896,
+      "end": 239075327,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "3ddcb4c30e74e4fc41c8c2fcda45abec7daedc5a0d5d0e13646d557dee40a75d"
+    },
+    {
+      "file": "000239075328-000272629759.part",
+      "start": 239075328,
+      "end": 272629759,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "153ca8f3ef9c65b9fe24492cf8a9a146d2e5f1ddf567105da3767cb223077685"
+    },
+    {
+      "file": "000272629760-000306184191.part",
+      "start": 272629760,
+      "end": 306184191,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "de9815c6b4c5a3fcd7b5e1b4c3b1597099fea93c15823851e997923b5aba8c21"
+    },
+    {
+      "file": "000306184192-000339738623.part",
+      "start": 306184192,
+      "end": 339738623,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "07eb5b9d9d3ba16ab67a54b1fbc54604fce3655df654b0be74316e635c435565"
+    },
+    {
+      "file": "000339738624-000373293055.part",
+      "start": 339738624,
+      "end": 373293055,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "f5bc1ee52a9b80d5105f02f923dab2731c27ae5e8821e1a381b1f6bd40909945"
+    },
+    {
+      "file": "000373293056-000406847487.part",
+      "start": 373293056,
+      "end": 406847487,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "5b6a9f725fd0273cea469311da8b878f1c1e7c9fb3f9ab318d9ab983bf147a71"
+    },
+    {
+      "file": "000406847488-000440401919.part",
+      "start": 406847488,
+      "end": 440401919,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "6988669bb5e8eda6931073e12275542f24895e01c358287877df6722bd03d8aa"
+    },
+    {
+      "file": "000440401920-000473956351.part",
+      "start": 440401920,
+      "end": 473956351,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "b75bc7ecad16e3acd99eaa7825e25b49a5a0773ee666568fa31338598636bd0d"
+    },
+    {
+      "file": "000473956352-000507510783.part",
+      "start": 473956352,
+      "end": 507510783,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "00ae9e03f9727e7615b95a028fb2d93f6821539dc7eac7615476f065d1cfadb9"
+    },
+    {
+      "file": "000507510784-000541065215.part",
+      "start": 507510784,
+      "end": 541065215,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "ce6cf8a7d6ccc6e40c0a79f7cf8d56dd65afc88643ddb0076a265b457fd44b45"
+    },
+    {
+      "file": "000541065216-000574619647.part",
+      "start": 541065216,
+      "end": 574619647,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "c1f1e16f9a7c3ee8fa1bb987fc457e394f3bacdfa54df08a83f0065acd3ddca6"
+    },
+    {
+      "file": "000574619648-000608174079.part",
+      "start": 574619648,
+      "end": 608174079,
+      "bytes": 16777216,
+      "expectedBytes": 33554432,
+      "complete": false
+    },
+    {
+      "file": "000608174080-000641728511.part",
+      "start": 608174080,
+      "end": 641728511,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "925f13eb9d0ef101557253d1c8c1b3da56763611cfcfbd30bcaac19ca0223c90"
+    },
+    {
+      "file": "000641728512-000675282943.part",
+      "start": 641728512,
+      "end": 675282943,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "6a6ed9886b13e4551f142f9f4b7c39dd556b5c286b2c5e293fbe69bbf90aa4e5"
+    },
+    {
+      "file": "000675282944-000708837375.part",
+      "start": 675282944,
+      "end": 708837375,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "46a0e2708b190a144b45b7c45b5dfe98a07bf6cec911f31b10967ce2a5e60780"
+    },
+    {
+      "file": "000708837376-000742391807.part",
+      "start": 708837376,
+      "end": 742391807,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "f91a92942ba3421629efe5ea086a53216a515b025bf1a76498aca795ae2768ac"
+    },
+    {
+      "file": "000742391808-000775946239.part",
+      "start": 742391808,
+      "end": 775946239,
+      "bytes": 16777216,
+      "expectedBytes": 33554432,
+      "complete": false
+    },
+    {
+      "file": "000775946240-000809500671.part",
+      "start": 775946240,
+      "end": 809500671,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "6a38c173f7e029171e391144498377dcb39b5f7d08221223d1f97cdf59f94ccc"
+    },
+    {
+      "file": "000809500672-000843055103.part",
+      "start": 809500672,
+      "end": 843055103,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "40be5ae368fc5579967e131004dc43bcf757111707497dfc839f4c4cf234e2b1"
+    },
+    {
+      "file": "000843055104-000876609535.part",
+      "start": 843055104,
+      "end": 876609535,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "4715ae97db3744df5ec26f6d59f48009badd84bb09a5645fff348fab2c07d32c"
+    },
+    {
+      "file": "000876609536-000910163967.part",
+      "start": 876609536,
+      "end": 910163967,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "a03773e24f704fe3f09537170d9015bce0e5da7222e8f8da8edc6c25c0b86cd8"
+    },
+    {
+      "file": "000910163968-000943718399.part",
+      "start": 910163968,
+      "end": 943718399,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "87b06751b3148fb21840163a1400f9dec0e2eb8367cd3146f313ba1d607c1f86"
+    },
+    {
+      "file": "000943718400-000977272831.part",
+      "start": 943718400,
+      "end": 977272831,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "dc694ef0eeac141c79de88741950df8f0f4c3fde9dd3b9d473c64118aa1f6b3f"
+    },
+    {
+      "file": "001077936128-001111490559.part",
+      "start": 1077936128,
+      "end": 1111490559,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "b648097c7b62c87bf3389086e932b862635fc6d17d21d9660d9c8b70ba34267e"
+    },
+    {
+      "file": "001111490560-001145044991.part",
+      "start": 1111490560,
+      "end": 1145044991,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "a46c18a7a4997b42ac8880b44c6367a7917a2b718f9657814f1e231017c44aa0"
+    },
+    {
+      "file": "001145044992-001178599423.part",
+      "start": 1145044992,
+      "end": 1178599423,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "bcc1f3213d17eb0e801f8e716e1a1240b08793753efd3dfd256b144223dd6028"
+    },
+    {
+      "file": "001178599424-001212153855.part",
+      "start": 1178599424,
+      "end": 1212153855,
+      "bytes": 33554432,
+      "expectedBytes": 33554432,
+      "complete": true,
+      "sha256": "986f1cebf75eec53df3d7a876d797231e21534aa6ee337ba11e5d0fcf1d30840"
+    },
+    {
+      "file": "001212153856-001245708287.part",
+      "start": 1212153856,
+      "end": 1245708287,
+      "bytes": 0,
+      "expectedBytes": 33554432,
+      "complete": false
+    }
+  ],
+  "newRoute": "official ModelScope pinned5e4fedf8312e1fecdbbe3218360fd51b3e6cb793, same full SHA256c207798696a4a454e7ac211b25227625466c693335941cee8904fb922f295cc1"
+}

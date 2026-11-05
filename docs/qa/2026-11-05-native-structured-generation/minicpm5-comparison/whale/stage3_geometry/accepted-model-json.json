@@ -1,0 +1,46 @@
+{
+  "name": "弯曲尾巴的蓝色小鲸鱼",
+  "nodes": [
+    {
+      "id": "body",
+      "primitive": "box",
+      "dimensions": {"width": 1.0, "height": 2.0, "depth": 0.5},
+      "color": "#0A0A0A"
+    },
+    {
+      "id": "left_fins",
+      "primitive": "box",
+      "dimensions": {"width": 0.3, "height": 0.4, "depth": 0.1},
+      "color": "#0A0A0A",
+      "attach": {"parent": "body", "face": "left", "anchor": "center"}
+    },
+    {
+      "id": "right_fins",
+      "primitive": "box",
+      "dimensions": {"width": 0.3, "height": 0.4, "depth": 0.1},
+      "color": "#0A0A0A",
+      "attach": {"parent": "body", "face": "right", "anchor": "center"}
+    },
+    {
+      "id": "tail_fins",
+      "primitive": "extrusion",
+      "dimensions": {"width": 0.2, "height": 0.5, "depth": 0.1},
+      "color": "#0A0A0A",
+      "profile": [
+        [0.1, 0.0],
+        [0.1, 0.5]
+      ,
+      [0.1, 0.5],
+        [0.1, 0.0]
+      ],
+      "attach": {"parent": "body", "face": "bottom", "anchor": "center"}
+    },
+    {
+      "id": "eyes",
+      "primitive": "sphere",
+      "dimensions": {"width": 0.05, "height": 0.05, "depth": 0.05},
+      "color": "#0A0A0A",
+      "attach": {"parent": "body", "face": "top", "anchor": "center"}
+    }
+  ]
+}
