@@ -1,0 +1,34 @@
+{
+  "actualCaseSeconds" : 49.547153949737549,
+  "cachedResponsesUsed" : false,
+  "caseDeadlineExceeded" : false,
+  "caseSharedDeadlineSeconds" : 180,
+  "error" : "造型参数超过本次生成长度，请简化描述后重试。",
+  "errorType" : "QwenNative.QwenError",
+  "exported" : false,
+  "failureStage" : "stage3_geometry",
+  "id" : "whale",
+  "mlxAfterCase" : {
+    "activeBytes" : 2367679904,
+    "cacheBytes" : 34399928,
+    "peakBytes" : 3034562212
+  },
+  "nativeSceneAccepted" : false,
+  "originalRequest" : "一条弯曲尾巴的蓝色小鲸鱼，流线型椭圆身体，左右鳍和分叉尾鳍，两个可见眼睛；尾鳍或侧鳍至少用一个extrusion自由轮廓。是独立海洋动物造型，不要平台。",
+  "outlineDiagnostics" : {
+    "childrenPerParent" : {
+      "tail_base" : 1,
+      "whale_body" : 5
+    },
+    "maximumParentDepth" : 2,
+    "nativeTopology" : "unique identifiers, supported primitives/faces, one first root, existing parents and acyclic connected graph",
+    "parts" : 7,
+    "qualityLimit" : "Topology checks do not establish that parts or geometry match the requested object."
+  },
+  "outputRepair" : false,
+  "phaseCalls" : 3,
+  "rendered" : false,
+  "retries" : 0,
+  "status" : "rejected_or_failed",
+  "visualQualityAccepted" : false
+}

@@ -1,0 +1,9 @@
+{
+  "api" : "QwenEngine.generateJSONDirect",
+  "maxTokens" : 3072,
+  "prefillStepSize" : 128,
+  "remainingSharedCaseSeconds" : 174.83171796798706,
+  "schemaSHA256" : "56537d106a31c833d07bcf29cbab8d16dab564ae985f05983db85393009d6939",
+  "system" : "Classify semantic placement anchors only. For each input row choose the anchor matching its stated purpose on the given face. If the purpose states no tangential direction, choose center. Directions are world directions; a back face does not mirror left and right.\nExact allowed anchor labels:\ntop/bottom faces: center,left,right,front,back,frontLeft,frontRight,backLeft,backRight.\nfront/back faces: center,left,right,top,bottom,topLeft,topRight,bottomLeft,bottomRight.\nleft/right faces: center,front,back,top,bottom,frontTop,frontBottom,backTop,backBottom.\ninside face: center.\nReturn only this JSON format: {\"anchors\":[{\"id\":\"same input id\",\"anchor\":\"one allowed label\"}]}. Include each input id exactly once, keep input order, and include no extra keys or explanations.",
+  "user" : "{\"rows\":[{\"face\":\"top\",\"id\":\"p2\",\"purpose\":\"Left irregular swept wing, free profile\"},{\"face\":\"top\",\"id\":\"p3\",\"purpose\":\"Right irregular swept wing, mirror of left\"},{\"face\":\"bottom\",\"id\":\"p4\",\"purpose\":\"Left rear thruster nozzle\"},{\"face\":\"bottom\",\"id\":\"p5\",\"purpose\":\"Right rear thruster nozzle\"}]}"
+}

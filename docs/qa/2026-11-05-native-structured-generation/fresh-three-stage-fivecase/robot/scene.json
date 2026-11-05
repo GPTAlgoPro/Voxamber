@@ -1,0 +1,203 @@
+{
+  "name" : "Standing Blue Toy Robot",
+  "nodes" : [
+    {
+      "color" : "#1a1a2e",
+      "id" : "base",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.397,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.6,
+      "size" : [
+        0.6,
+        0.2,
+        0.3
+      ]
+    },
+    {
+      "color" : "#1a1a2e",
+      "id" : "head",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        1.016,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.6,
+      "size" : [
+        0.35,
+        0.25,
+        0.35
+      ]
+    },
+    {
+      "color" : "#1a1a2e",
+      "id" : "torso",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.694,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.6,
+      "size" : [
+        0.5,
+        0.4,
+        0.35
+      ]
+    },
+    {
+      "color" : "#1a1a2e",
+      "id" : "left_arm",
+      "metallic" : 0.1,
+      "position" : [
+        -0.277,
+        0.694,
+        0.145
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.6,
+      "size" : [
+        0.06,
+        0.35,
+        0.06
+      ]
+    },
+    {
+      "color" : "#1a1a2e",
+      "id" : "right_arm",
+      "metallic" : 0.1,
+      "position" : [
+        0.277,
+        0.694,
+        -0.145
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.6,
+      "size" : [
+        0.06,
+        0.35,
+        0.06
+      ]
+    },
+    {
+      "color" : "#1a1a2e",
+      "id" : "left_leg",
+      "metallic" : 0.1,
+      "position" : [
+        -0.26000002,
+        0.15,
+        0.11000001
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.6,
+      "size" : [
+        0.08,
+        0.3,
+        0.08
+      ]
+    },
+    {
+      "color" : "#1a1a2e",
+      "id" : "right_leg",
+      "metallic" : 0.1,
+      "position" : [
+        0.26000002,
+        0.15,
+        0.11000001
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.6,
+      "size" : [
+        0.08,
+        0.3,
+        0.08
+      ]
+    },
+    {
+      "color" : "#f4d03f",
+      "id" : "left_eye",
+      "metallic" : 0.3,
+      "position" : [
+        0,
+        1.016,
+        0.192
+      ],
+      "primitive" : "sphere",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.2,
+      "size" : [
+        0.04,
+        0.04,
+        0.04
+      ]
+    },
+    {
+      "color" : "#f4d03f",
+      "id" : "right_eye",
+      "metallic" : 0.3,
+      "position" : [
+        0,
+        1.016,
+        0.192
+      ],
+      "primitive" : "sphere",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.2,
+      "size" : [
+        0.04,
+        0.04,
+        0.04
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "boundsSource" : "SceneGenerator.bounds(for:) actual rotated/freeform vertices after center attachment",
+  "centerPassLimit" : "Center-layout Core decoding can reject deep graphs at its global-position gate; this single-chair depth-one probe does not establish a general nested evaluator",
+  "contactLimit" : "World AABB attachment is not proof of actual surface contact for hollow, concave or torus geometry",
+  "coordinates" : "World-axis face directions, matching the existing resolver; not parent-local axes",
+  "formula" : "tangent sign * max(0, (parent actual AABB extent - child actual AABB extent) / 2)",
+  "insideScope" : "Only center is supported by this prototype",
+  "normalAndGround" : "Existing SceneAttachmentResolver operations, unchanged",
+  "relations" : [
+    {
+      "actualChildExtent" : [
+        0.029999999329447746,
+        0.69999995827674866,
+        0.029999999329447746
+      ],
+      "actualParentExtent" : [
+        0.15000000596046448,
+        0.05000000074505806,
+        0.15000000596046448
+      ],
+      "anchor" : "center",
+      "evaluatedOffset" : [
+        0,
+        0,
+        0
+      ],
+      "face" : "top",
+      "node" : "stem",
+      "parent" : "base",
+      "requestedAxesWithZeroSpread" : [
+
+      ]
+    },
+    {
+      "actualChildExtent" : [
+        0.039999999105930328,
+        0.039999961853027344,
+        0.039999999105930328
+      ],
+      "actualParentExtent" : [
+        0.029999999329447746,
+        0.69999995827674866,
+        0.029999999329447746
+      ],
+      "anchor" : "center",
+      "evaluatedOffset" : [
+        0,
+        0,
+        0
+      ],
+      "face" : "top",
+      "node" : "bulb",
+      "parent" : "stem",
+      "requestedAxesWithZeroSpread" : [
+
+      ]
+    },
+    {
+      "actualChildExtent" : [
+        0.11999999731779099,
+        0.25,
+        0.11999999731779099
+      ],
+      "actualParentExtent" : [
+        0.029999999329447746,
+        0.69999995827674866,
+        0.029999999329447746
+      ],
+      "anchor" : "center",
+      "evaluatedOffset" : [
+        0,
+        0,
+        0
+      ],
+      "face" : "top",
+      "node" : "shade",
+      "parent" : "stem",
+      "requestedAxesWithZeroSpread" : [
+
+      ]
+    }
+  ],
+  "zeroSpreadLimit" : "Requested non-center axes with zero spread collapse; record as a quality failure, never scale or nudge"
+}

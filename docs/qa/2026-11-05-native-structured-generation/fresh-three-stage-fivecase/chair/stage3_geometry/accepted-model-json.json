@@ -1,0 +1,67 @@
+{
+  "name": "BrownWoodChair",
+  "nodes": [
+    {
+      "id": "base_frame",
+      "primitive": "box",
+      "dimensions": { "width": 0.6, "height": 0.5, "depth": 0.4 },
+      "color": "#5D4037",
+      "metallic": 0.1,
+      "roughness": 0.6
+    },
+    {
+      "id": "seat",
+      "primitive": "box",
+      "dimensions": { "width": 0.55, "height": 0.05, "depth": 0.35 },
+      "color": "#5D4037",
+      "attach": { "parent": "base_frame", "face": "top", "anchor": "center" },
+      "metallic": 0.1,
+      "roughness": 0.6
+    },
+    {
+      "id": "backrest",
+      "primitive": "box",
+      "dimensions": { "width": 0.5, "height": 0.4, "depth": 0.15 },
+      "color": "#5D4037",
+      "attach": { "parent": "base_frame", "face": "top", "anchor": "back" },
+      "metallic": 0.1,
+      "roughness": 0.6
+    },
+    {
+      "id": "leg_1",
+      "primitive": "cylinder",
+      "dimensions": { "width": 0.06, "height": 0.45, "depth": 0.06 },
+      "color": "#5D4037",
+      "attach": { "parent": "base_frame", "face": "bottom", "anchor": "frontLeft" },
+      "metallic": 0.1,
+      "roughness": 0.6
+    },
+    {
+      "id": "leg_2",
+      "primitive": "cylinder",
+      "dimensions": { "width": 0.06, "height": 0.45, "depth": 0.06 },
+      "color": "#5D4037",
+      "attach": { "parent": "base_frame", "face": "bottom", "anchor": "frontRight" },
+      "metallic": 0.1,
+      "roughness": 0.6
+    },
+    {
+      "id": "leg_3",
+      "primitive": "cylinder",
+      "dimensions": { "width": 0.06, "height": 0.45, "depth": 0.06 },
+      "color": "#5D4037",
+      "attach": { "parent": "base_frame", "face": "bottom", "anchor": "backLeft" },
+      "metallic": 0.1,
+      "roughness": 0.6
+    },
+    {
+      "id": "leg_4",
+      "primitive": "cylinder",
+      "dimensions": { "width": 0.06, "height": 0.45, "depth": 0.06 },
+      "color": "#5D4037",
+      "attach": { "parent": "base_frame", "face": "bottom", "anchor": "backRight" },
+      "metallic": 0.1,
+      "roughness": 0.6
+    }
+  ]
+}

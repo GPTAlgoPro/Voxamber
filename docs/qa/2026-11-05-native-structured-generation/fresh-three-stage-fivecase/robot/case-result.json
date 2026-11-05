@@ -1,0 +1,36 @@
+{
+  "actualCaseSeconds" : 26.955522060394287,
+  "cachedResponsesUsed" : false,
+  "caseDeadlineExceeded" : false,
+  "caseSharedDeadlineSeconds" : 180,
+  "exported" : true,
+  "glbSHA256" : "14044cb6044d34307657cb8066f789fb47418bad545357cb908eb6fb19ce7182",
+  "id" : "robot",
+  "mlxAfterCase" : {
+    "activeBytes" : 2367679904,
+    "cacheBytes" : 34027062,
+    "peakBytes" : 3034562212
+  },
+  "nativeSceneAccepted" : true,
+  "nodes" : 9,
+  "originalRequest" : "做一个站立的蓝色玩具机器人，包含立方体头、躯干、左右两条手臂和两条腿，以及两个球形黄色眼睛，底部在Y=0。",
+  "outlineDiagnostics" : {
+    "childrenPerParent" : {
+      "base" : 3,
+      "head" : 2,
+      "torso" : 3
+    },
+    "maximumParentDepth" : 3,
+    "nativeTopology" : "unique identifiers, supported primitives/faces, one first root, existing parents and acyclic connected graph",
+    "parts" : 9,
+    "qualityLimit" : "Topology checks do not establish that parts or geometry match the requested object."
+  },
+  "outputRepair" : false,
+  "phaseCalls" : 3,
+  "rendered" : true,
+  "retries" : 0,
+  "status" : "exported_for_visual_review",
+  "triangles" : 1988,
+  "usdzSHA256" : "8c44e928b114871631db5466dcaa5907ef6ab1fc774964fddea5314e440c027f",
+  "visualQualityAccepted" : false
+}

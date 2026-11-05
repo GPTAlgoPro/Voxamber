@@ -1,0 +1,1 @@
+{"anchors":[{"id":"p2","anchor":"left"},{"id":"p3","anchor":"right"},{"id":"p4","anchor":"left"},{"id":"p5","anchor":"right"}]}

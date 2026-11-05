@@ -1,0 +1,58 @@
+{
+  "name": "Blue Streamlined Whale",
+  "parts": [
+    {
+      "id": "whale_body",
+      "primitive": "mesh",
+      "purpose": "Main elliptical streamlined body, center of mass"
+    },
+    {
+      "id": "tail_base",
+      "primitive": "extrusion",
+      "purpose": "Central vertical support for tail flukes"
+    ,
+    "parent": "whale_body",
+    "face": "bottom"
+    },
+    {
+      "id": "left_fin",
+      "primitive": "extrusion",
+      "purpose": "Left lateral pectoral fin"
+    ,
+    "parent": "whale_body",
+    "face": "left"
+    },
+    {
+      "id": "right_fin",
+      "primitive": "extrusion",
+      "purpose": "Right lateral pectoral fin"
+    ,
+    "parent": "whale_body",
+    "face": "right"
+    },
+    {
+      "id": "tail_flukes",
+      "primitive": "mesh",
+      "purpose": "Bifurcated tail flukes attached to tail base"
+    ,
+    "parent": "tail_base",
+    "face": "top"
+    },
+    {
+      "id": "eye_left",
+      "primitive": "sphere",
+      "purpose": "Left visible eye"
+    ,
+    "parent": "whale_body",
+    "face": "front"
+    },
+    {
+      "id": "eye_right",
+      "primitive": "sphere",
+      "purpose": "Right visible eye"
+    ,
+    "parent": "whale_body",
+    "face": "front"
+    }
+  ]
+}

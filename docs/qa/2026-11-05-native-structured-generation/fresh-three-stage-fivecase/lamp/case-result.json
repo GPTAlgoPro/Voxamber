@@ -1,0 +1,35 @@
+{
+  "actualCaseSeconds" : 11.929579973220825,
+  "cachedResponsesUsed" : false,
+  "caseDeadlineExceeded" : false,
+  "caseSharedDeadlineSeconds" : 180,
+  "exported" : true,
+  "glbSHA256" : "3d6ad80ff19feaf29269a02cb54f8812d2d7a5afcb13fb4bf85e592a85a68ba9",
+  "id" : "lamp",
+  "mlxAfterCase" : {
+    "activeBytes" : 2367679904,
+    "cacheBytes" : 34240130,
+    "peakBytes" : 3034562212
+  },
+  "nativeSceneAccepted" : true,
+  "nodes" : 4,
+  "originalRequest" : "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地Y=0，整体高约0.8米。",
+  "outlineDiagnostics" : {
+    "childrenPerParent" : {
+      "base" : 1,
+      "stem" : 2
+    },
+    "maximumParentDepth" : 2,
+    "nativeTopology" : "unique identifiers, supported primitives/faces, one first root, existing parents and acyclic connected graph",
+    "parts" : 4,
+    "qualityLimit" : "Topology checks do not establish that parts or geometry match the requested object."
+  },
+  "outputRepair" : false,
+  "phaseCalls" : 3,
+  "rendered" : true,
+  "retries" : 0,
+  "status" : "exported_for_visual_review",
+  "triangles" : 1040,
+  "usdzSHA256" : "831b984890e0069f6709b332a0300d864ca05001b0396e051ee38b48d7c1fe14",
+  "visualQualityAccepted" : false
+}

@@ -1,0 +1,9 @@
+{
+  "api" : "QwenEngine.generateJSONDirect",
+  "maxTokens" : 3072,
+  "prefillStepSize" : 128,
+  "remainingSharedCaseSeconds" : 173.65224897861481,
+  "schemaSHA256" : "0a0ce93b773052f816f2f23a419c433ddcd314388022e2a3537c71896292eb65",
+  "system" : "Classify semantic placement anchors only. For each input row choose the anchor matching its stated purpose on the given face. If the purpose states no tangential direction, choose center. Directions are world directions; a back face does not mirror left and right.\nExact allowed anchor labels:\ntop/bottom faces: center,left,right,front,back,frontLeft,frontRight,backLeft,backRight.\nfront/back faces: center,left,right,top,bottom,topLeft,topRight,bottomLeft,bottomRight.\nleft/right faces: center,front,back,top,bottom,frontTop,frontBottom,backTop,backBottom.\ninside face: center.\nReturn only this JSON format: {\"anchors\":[{\"id\":\"same input id\",\"anchor\":\"one allowed label\"}]}. Include each input id exactly once, keep input order, and include no extra keys or explanations.",
+  "user" : "{\"rows\":[{\"face\":\"bottom\",\"id\":\"tail_base\",\"purpose\":\"Central vertical support for tail flukes\"},{\"face\":\"left\",\"id\":\"left_fin\",\"purpose\":\"Left lateral pectoral fin\"},{\"face\":\"right\",\"id\":\"right_fin\",\"purpose\":\"Right lateral pectoral fin\"},{\"face\":\"top\",\"id\":\"tail_flukes\",\"purpose\":\"Bifurcated tail flukes attached to tail base\"},{\"face\":\"front\",\"id\":\"eye_left\",\"purpose\":\"Left visible eye\"},{\"face\":\"front\",\"id\":\"eye_right\",\"purpose\":\"Right visible eye\"}]}"
+}

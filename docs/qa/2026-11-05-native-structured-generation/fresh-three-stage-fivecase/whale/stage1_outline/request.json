@@ -1,0 +1,9 @@
+{
+  "api" : "QwenEngine.generateJSON (Direct wrapper)",
+  "maxTokens" : 3072,
+  "prefillStepSize" : 128,
+  "remainingSharedCaseSeconds" : 179.99968004226685,
+  "schemaSHA256" : "552825b1103e4090ac12a4666f90e3c7f15114fe7b85106d712137c464019b70",
+  "system" : "你是通用三维造型的装配规划器。只输出一个符合格式的JSON装配提纲，不输出尺寸、坐标、颜色或解释。\nname是作品名称，parts是作品必需且彼此可区分的实体部件。每个部件只写id、primitive、purpose；连接部件再写parent、face。primitive可用box、sphere、cylinder、cone、torus、mesh、lathe、extrusion。purpose简短说明该实体作用与相对方位。\n主体根部件放第一项，不写parent和face；其余部件连接实际承载它的部件。并列的部件共享同一实际支撑，不要为了书写顺序把它们逐个串接。只规划构成物体所需的实体，避免重复拆分。\n原生几何都是闭合实体，不需要另外添加封口、盖面、边角或连接占位部件。不要增加展示平台。部件最多32个；由题材需要决定数量，不必填满。仅输出JSON。",
+  "user" : "一条弯曲尾巴的蓝色小鲸鱼，流线型椭圆身体，左右鳍和分叉尾鳍，两个可见眼睛；尾鳍或侧鳍至少用一个extrusion自由轮廓。是独立海洋动物造型，不要平台。"
+}

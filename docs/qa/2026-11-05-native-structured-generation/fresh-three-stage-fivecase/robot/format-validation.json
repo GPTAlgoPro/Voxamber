@@ -1,0 +1,24 @@
+{
+  "validator": "Khronos glTF Validator",
+  "version": "2.0.0-dev.3.10",
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "hints": 0,
+  "messages": [],
+  "scope": "Format evidence only; not visual request acceptance",
+  "usdz": {
+    "zipCRCValid": true,
+    "allStored": true,
+    "allPayloadsAligned64": true,
+    "members": [
+      {
+        "name": "scene.usda",
+        "bytes": 109656,
+        "stored": true,
+        "payloadAligned64": true
+      }
+    ],
+    "exactAppleImportAndTwoPNGsPassed": true
+  }
+}

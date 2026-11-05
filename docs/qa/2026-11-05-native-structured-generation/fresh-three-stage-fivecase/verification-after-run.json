@@ -1,0 +1,27 @@
+{
+  "verifiedAfterRunUTC": "2026-11-05T14:21:20.099448+00:00",
+  "allSourceHashesUnchanged": true,
+  "sourceFiles": 28,
+  "evaluatorSHA256Unchanged": "e641b7499e8a91c02aa61e4b41e57c8219f4d123e8e94bea9248b454e02a5575",
+  "oldFourQAFoldersArtifactsUnchanged": true,
+  "modelStatFilesUnchanged": 10,
+  "modelFullSHAReusedFromPriorVerifiedStableFiles": true,
+  "modelFilesRehashedThisBatch": false,
+  "modelProcesses": 1,
+  "modelLoads": 1,
+  "actualFreshPhaseCalls": 15,
+  "actualCaseCount": 5,
+  "retries": 0,
+  "fallbackAssets": false,
+  "outputRepair": false,
+  "allCaseDeadlineFlagsFalse": true,
+  "actualProcessWallSeconds": 127.94324707984924,
+  "unloadedMLX": {
+    "activeBytes": 4000,
+    "cacheBytes": 0,
+    "peakBytes": 3034562212
+  },
+  "phoneOperated": false,
+  "productionChanged": false,
+  "inferenceProcessExited": true
+}

@@ -1,0 +1,58 @@
+{
+  "name": "BrownWoodChair",
+  "parts": [
+    {
+      "id": "base_frame",
+      "primitive": "box",
+      "purpose": "Main structural frame supporting the chair, positioned at Y=0"
+    },
+    {
+      "id": "seat",
+      "primitive": "box",
+      "purpose": "Sitting surface located at Y=0.45m, resting on base_frame"
+    ,
+      "parent": "base_frame",
+      "face": "top"
+    },
+    {
+      "id": "backrest",
+      "primitive": "box",
+      "purpose": "Back support positioned behind the seat, resting on base_frame"
+    ,
+      "parent": "base_frame",
+      "face": "top"
+    },
+    {
+      "id": "leg_1",
+      "primitive": "cylinder",
+      "purpose": "Front-left leg extending from base_frame to ground"
+    ,
+      "parent": "base_frame",
+      "face": "bottom"
+    },
+    {
+      "id": "leg_2",
+      "primitive": "cylinder",
+      "purpose": "Front-right leg extending from base_frame to ground"
+    ,
+      "parent": "base_frame",
+      "face": "bottom"
+    },
+    {
+      "id": "leg_3",
+      "primitive": "cylinder",
+      "purpose": "Back-left leg extending from base_frame to ground"
+    ,
+      "parent": "base_frame",
+      "face": "bottom"
+    },
+    {
+      "id": "leg_4",
+      "primitive": "cylinder",
+      "purpose": "Back-right leg extending from base_frame to ground"
+    ,
+      "parent": "base_frame",
+      "face": "bottom"
+    }
+  ]
+}

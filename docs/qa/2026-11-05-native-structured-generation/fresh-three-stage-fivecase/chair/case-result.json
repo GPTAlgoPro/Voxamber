@@ -1,0 +1,34 @@
+{
+  "actualCaseSeconds" : 20.619686007499695,
+  "cachedResponsesUsed" : false,
+  "caseDeadlineExceeded" : false,
+  "caseSharedDeadlineSeconds" : 180,
+  "exported" : true,
+  "glbSHA256" : "b74df02d13e335f3436213c4d27ba8aed7df6d16e03b73dd9d8dd07a3f3d6736",
+  "id" : "chair",
+  "mlxAfterCase" : {
+    "activeBytes" : 2367679904,
+    "cacheBytes" : 34175618,
+    "peakBytes" : 3034562212
+  },
+  "nativeSceneAccepted" : true,
+  "nodes" : 7,
+  "originalRequest" : "一把简洁的棕色木椅，必须包含坐面、靠背和四条腿，地面Y=0，坐面高度约0.45米，不要增加底部平台。",
+  "outlineDiagnostics" : {
+    "childrenPerParent" : {
+      "base_frame" : 6
+    },
+    "maximumParentDepth" : 1,
+    "nativeTopology" : "unique identifiers, supported primitives/faces, one first root, existing parents and acyclic connected graph",
+    "parts" : 7,
+    "qualityLimit" : "Topology checks do not establish that parts or geometry match the requested object."
+  },
+  "outputRepair" : false,
+  "phaseCalls" : 3,
+  "rendered" : true,
+  "retries" : 0,
+  "status" : "exported_for_visual_review",
+  "triangles" : 548,
+  "usdzSHA256" : "0008abe22fbaabe9eef5014597ed12c68167bfc0ff2fc4b8dcd0b9364fa9be9c",
+  "visualQualityAccepted" : false
+}

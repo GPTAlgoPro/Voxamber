@@ -1,0 +1,1 @@
+{"anchors":[{"id":"head","anchor":"center"},{"id":"torso","anchor":"center"},{"id":"left_arm","anchor":"front"},{"id":"right_arm","anchor":"back"},{"id":"left_leg","anchor":"frontLeft"},{"id":"right_leg","anchor":"frontRight"},{"id":"left_eye","anchor":"center"},{"id":"right_eye","anchor":"center"}]}

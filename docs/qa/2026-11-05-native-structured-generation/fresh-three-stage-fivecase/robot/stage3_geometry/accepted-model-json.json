@@ -1,0 +1,85 @@
+{
+  "name": "Standing Blue Toy Robot",
+  "nodes": [
+    {
+      "id": "base",
+      "primitive": "box",
+      "dimensions": { "width": 0.6, "height": 0.2, "depth": 0.3 },
+      "color": "#1a1a2e",
+      "metallic": 0.1,
+      "roughness": 0.6
+    },
+    {
+      "id": "head",
+      "primitive": "box",
+      "dimensions": { "width": 0.35, "height": 0.25, "depth": 0.35 },
+      "color": "#1a1a2e",
+      "attach": { "parent": "torso", "face": "top", "anchor": "center" },
+      "metallic": 0.1,
+      "roughness": 0.6
+    },
+    {
+      "id": "torso",
+      "primitive": "box",
+      "dimensions": { "width": 0.5, "height": 0.4, "depth": 0.35 },
+      "color": "#1a1a2e",
+      "attach": { "parent": "base", "face": "top", "anchor": "center" },
+      "metallic": 0.1,
+      "roughness": 0.6
+    },
+    {
+      "id": "left_arm",
+      "primitive": "cylinder",
+      "dimensions": { "width": 0.06, "height": 0.35, "depth": 0.06 },
+      "color": "#1a1a2e",
+      "attach": { "parent": "torso", "face": "left", "anchor": "front" },
+      "metallic": 0.1,
+      "roughness": 0.6
+    },
+    {
+      "id": "right_arm",
+      "primitive": "cylinder",
+      "dimensions": { "width": 0.06, "height": 0.35, "depth": 0.06 },
+      "color": "#1a1a2e",
+      "attach": { "parent": "torso", "face": "right", "anchor": "back" },
+      "metallic": 0.1,
+      "roughness": 0.6
+    },
+    {
+      "id": "left_leg",
+      "primitive": "cylinder",
+      "dimensions": { "width": 0.08, "height": 0.3, "depth": 0.08 },
+      "color": "#1a1a2e",
+      "attach": { "parent": "base", "face": "bottom", "anchor": "frontLeft" },
+      "metallic": 0.1,
+      "roughness": 0.6
+    },
+    {
+      "id": "right_leg",
+      "primitive": "cylinder",
+      "dimensions": { "width": 0.08, "height": 0.3, "depth": 0.08 },
+      "color": "#1a1a2e",
+      "attach": { "parent": "base", "face": "bottom", "anchor": "frontRight" },
+      "metallic": 0.1,
+      "roughness": 0.6
+    },
+    {
+      "id": "left_eye",
+      "primitive": "sphere",
+      "dimensions": { "width": 0.04, "height": 0.04, "depth": 0.04 },
+      "color": "#f4d03f",
+      "attach": { "parent": "head", "face": "front", "anchor": "center" },
+      "metallic": 0.3,
+      "roughness": 0.2
+    },
+    {
+      "id": "right_eye",
+      "primitive": "sphere",
+      "dimensions": { "width": 0.04, "height": 0.04, "depth": 0.04 },
+      "color": "#f4d03f",
+      "attach": { "parent": "head", "face": "front", "anchor": "center" },
+      "metallic": 0.3,
+      "roughness": 0.2
+    }
+  ]
+}

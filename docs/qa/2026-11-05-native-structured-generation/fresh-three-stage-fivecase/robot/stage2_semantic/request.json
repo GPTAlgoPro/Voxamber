@@ -1,0 +1,9 @@
+{
+  "api" : "QwenEngine.generateJSONDirect",
+  "maxTokens" : 3072,
+  "prefillStepSize" : 128,
+  "remainingSharedCaseSeconds" : 169.80487096309662,
+  "schemaSHA256" : "a2cdf0a9adcbde03f1a8aa0ea07c74627f3d5285591473435a737d386d85c994",
+  "system" : "Classify semantic placement anchors only. For each input row choose the anchor matching its stated purpose on the given face. If the purpose states no tangential direction, choose center. Directions are world directions; a back face does not mirror left and right.\nExact allowed anchor labels:\ntop/bottom faces: center,left,right,front,back,frontLeft,frontRight,backLeft,backRight.\nfront/back faces: center,left,right,top,bottom,topLeft,topRight,bottomLeft,bottomRight.\nleft/right faces: center,front,back,top,bottom,frontTop,frontBottom,backTop,backBottom.\ninside face: center.\nReturn only this JSON format: {\"anchors\":[{\"id\":\"same input id\",\"anchor\":\"one allowed label\"}]}. Include each input id exactly once, keep input order, and include no extra keys or explanations.",
+  "user" : "{\"rows\":[{\"face\":\"top\",\"id\":\"head\",\"purpose\":\"Cubic head mounted on top of torso\"},{\"face\":\"top\",\"id\":\"torso\",\"purpose\":\"Central trunk connecting head and legs\"},{\"face\":\"left\",\"id\":\"left_arm\",\"purpose\":\"Left arm extending from left side of torso\"},{\"face\":\"right\",\"id\":\"right_arm\",\"purpose\":\"Right arm extending from right side of torso\"},{\"face\":\"bottom\",\"id\":\"left_leg\",\"purpose\":\"Left leg extending from bottom left of torso\"},{\"face\":\"bottom\",\"id\":\"right_leg\",\"purpose\":\"Right leg extending from bottom right of torso\"},{\"face\":\"front\",\"id\":\"left_eye\",\"purpose\":\"Left yellow eye on front of head\"},{\"face\":\"front\",\"id\":\"right_eye\",\"purpose\":\"Right yellow eye on front of head\"}]}"
+}
