@@ -4,6 +4,9 @@ import Foundation
 /// unknown token, and must not be reported as a confirmed EOS for raw generation.
 public enum QwenTerminationReason: String, Codable, Sendable {
     case stop, outputLimit, cancelled, grammarFailure
+    /// A valid complete object was emitted; the owned producer was stopped and
+    /// awaited. This is not evidence of EOS or of native scene validity.
+    case jsonComplete
 }
 
 public struct QwenGrammarMetadata: Codable, Sendable {
@@ -14,7 +17,9 @@ public struct QwenGrammarMetadata: Codable, Sendable {
     public let floatBoundsRequireNativeValidation: Bool
 }
 
-/// Content-free terminal evidence. Counts exclude the SDK's discarded stop token;
+/// Content-free terminal evidence. Counts cover consumed output tokens and
+/// exclude the SDK's discarded stop token. On jsonComplete the producer may
+/// already have buffered lookahead; no unconsumed tokens are reported as output.
 /// grammarTerminated refers to matcher acceptance, including its one-token lookahead.
 public struct QwenGenerationCompletion: Codable, Sendable {
     public let reason: QwenTerminationReason

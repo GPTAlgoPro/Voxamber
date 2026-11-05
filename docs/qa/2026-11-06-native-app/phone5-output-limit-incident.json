@@ -1,0 +1,17 @@
+{
+  "appBuild": "5",
+  "completion": {
+    "generatedTokenCount": 3072,
+    "grammarEnabled": false,
+    "grammarTerminated": false,
+    "inputTokenCount": 1038,
+    "reason": "outputLimit",
+    "tokenLimit": 3072
+  },
+  "model": "qwen3.5-4b-mlx-int4",
+  "observedError": "造型参数超过本次生成长度，请简化描述后重试。",
+  "requestWasShort": true,
+  "conclusion": "Output budget exhausted; metadata does not identify the missing raw output or prove trailing whitespace. The selected unpublished starter context was independently confirmed to be omitted in build 5.",
+  "oldMemoryCancellationRecordBelongsToBuild": "4",
+  "notEvidenceOfNewMemoryCancellation": true
+}

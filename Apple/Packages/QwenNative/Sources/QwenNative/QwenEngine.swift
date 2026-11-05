@@ -28,10 +28,10 @@ public enum QwenError: LocalizedError, Sendable {
         switch self {
         case .modelNotLoaded: "请先下载并载入本地模型。"
         case .busy: "本地模型正在处理上一项任务。"
-        case .invalidJSON: "模型没有返回完整的造型参数，请简化描述后重试。"
+        case .invalidJSON: "本次生成未返回完整的造型参数，请重试。"
         case .promptTooLong: "设计描述过长，请缩短后重试。"
         case .unsupportedThinking: "当前单轮生成通道不支持思考模式。"
-        case .outputLimit: "造型参数超过本次生成长度，请简化描述后重试。"
+        case .outputLimit: "本次生成未能在长度上限内完成，请重试。"
         case .grammarFailure: "本次造型参数未能通过格式约束，请重试。"
         }
     }
@@ -54,6 +54,13 @@ public actor QwenEngine {
     public nonisolated func memorySnapshot() -> QwenMemorySnapshot {
         QwenMemorySnapshot(activeBytes: Memory.activeMemory,
                            cacheBytes: Memory.cacheMemory, peakBytes: Memory.peakMemory)
+    }
+
+    /// Releases only unused allocator buffers; active model and KV tensors stay owned.
+    public func reclaimUnusedCache() -> QwenMemorySnapshot? {
+        guard model != nil || generationTask != nil || isLoading else { return nil }
+        Memory.clearCache()
+        return memorySnapshot()
     }
 
     public func load(modelDirectory: URL) async throws {
@@ -93,22 +100,17 @@ public actor QwenEngine {
         guard !thinking else { throw QwenError.unsupportedThinking }
         let capture = QwenCompletionCapture()
         let raw = try await generateJSONDirect(systemPrompt: systemPrompt, prompt: prompt,
-            maxTokens: maxTokens, prefillStepSize: 128, jsonSchema: jsonSchema,
+            maxTokens: maxTokens, prefillStepSize: 128, jsonSchema: jsonSchema, stopAtCompleteJSON: true,
             onProgress: onProgress,
             onCompletion: { completion in capture.record(completion); onCompletion(completion) })
         try Task.checkCancellation()
-        if capture.completion?.reason == .outputLimit { throw QwenError.outputLimit }
-        guard raw.utf8.count <= 16_384 else { throw QwenError.invalidJSON }
-        let result = Self.removeFence(raw)
-        guard let data = result.data(using: .utf8),
-              let object = try? JSONSerialization.jsonObject(with: data), object is [String: Any] else {
-            throw QwenError.invalidJSON
-        }
-        return result
+        return try QwenJSONObject.validate(raw, termination: capture.completion?.reason)
     }
 
     /// Phone-verified single-turn raw implementation shared by formal and diagnostic calls.
     /// Returns decoded output, which may be partial at a small token limit; the caller owns JSON validation.
+    /// stopAtCompleteJSON is opt-in here; formal generateJSON enables it to stop
+    /// after a fully valid object without waiting for EOS or trailing whitespace.
     /// Stage/progress callbacks contain timings and counts only, never input or generated content.
     public func generateJSONDirect(
         systemPrompt: String,
@@ -116,6 +118,7 @@ public actor QwenEngine {
         maxTokens: Int = 64,
         prefillStepSize: Int = 128,
         jsonSchema: String? = nil,
+        stopAtCompleteJSON: Bool = false,
         onStage: @escaping @Sendable (String) -> Void = { _ in },
         onProgress: @escaping @Sendable (QwenGenerationProgress) -> Void = { _ in },
         onCompletion: @escaping @Sendable (QwenGenerationCompletion) -> Void = { _ in }
@@ -187,50 +190,21 @@ public actor QwenEngine {
                     promptTokenCount: inputCount, modelConfiguration: context.configuration,
                     tokenizer: context.tokenizer, iterator: iterator)
                 reporter.emit("raw_stream_ready", inputTokens: inputCount)
-                var tokens: [Int] = []
-                var firstTokenSeconds: Double?
-                var nativeStopReason: GenerateStopReason?
-                var lastProgress = ContinuousClock.now
-                await withTaskCancellationHandler {
-                    for await event in stream {
-                        if Task.isCancelled { producer.cancel(); break }
-                        if grammar?.state.snapshot.failure != nil { producer.cancel(); break }
-                        switch event {
-                        case .token(let token):
-                            tokens.append(token)
-                            if firstTokenSeconds == nil {
-                                firstTokenSeconds = reporter.elapsed
-                                reporter.emit("first_raw_token", inputTokens: inputCount, generatedTokens: 1)
-                            }
-                            if tokens.count == 1 || lastProgress.duration(to: .now) >= .milliseconds(100) {
-                                onProgress(QwenGenerationProgress(text: "", elapsedSeconds: reporter.elapsed,
-                                    firstTokenSeconds: firstTokenSeconds))
-                                lastProgress = .now
-                            }
-                        case .info(let info):
-                            nativeStopReason = info.stopReason
-                            reporter.emit("native_generation_complete", inputTokens: info.promptTokenCount,
-                                          generatedTokens: info.generationTokenCount)
-                        }
-                    }
-                    if Task.isCancelled { producer.cancel() }
-                    // The public task settles its actual generation stream before completing.
-                    await producer.value
-                } onCancel: { producer.cancel() }
+                let collected = await QwenTokenStream.collect(stream: stream, producer: producer,
+                    tokenizer: context.tokenizer, stopAtCompleteJSON: stopAtCompleteJSON,
+                    elapsed: { reporter.elapsed }, shouldAbort: { grammar?.state.snapshot.failure != nil },
+                    onFirstToken: { reporter.emit("first_raw_token", inputTokens: inputCount, generatedTokens: 1) },
+                    onProgress: onProgress,
+                    onInfo: { info in reporter.emit("native_generation_complete", inputTokens: info.promptTokenCount,
+                                                   generatedTokens: info.generationTokenCount) })
+                let tokens = collected.tokens
                 Stream.defaultStream.synchronize()
                 streamSettled = true
                 reporter.emit("raw_stream_finished", inputTokens: inputCount, generatedTokens: tokens.count)
                 let grammarSnapshot = grammar?.state.snapshot
-                let reason: QwenTerminationReason
-                if Task.isCancelled { reason = .cancelled }
-                else if grammarSnapshot?.failure != nil { reason = .grammarFailure }
-                else {
-                    switch nativeStopReason {
-                    case .stop: reason = grammar != nil && grammarSnapshot?.terminated != true ? .grammarFailure : .stop
-                    case .length: reason = .outputLimit
-                    case .cancelled, nil: reason = .cancelled
-                    }
-                }
+                let reason = collected.termination(isCancelled: Task.isCancelled,
+                    grammarFailed: grammarSnapshot?.failure != nil, grammarEnabled: grammar != nil,
+                    grammarTerminated: grammarSnapshot?.terminated ?? false)
                 onCompletion(QwenGenerationCompletion(reason: reason,
                     inputTokenCount: inputCount, generatedTokenCount: tokens.count, tokenLimit: tokenLimit,
                     grammarEnabled: grammar != nil, grammarTerminated: grammarSnapshot?.terminated ?? false,
@@ -253,6 +227,7 @@ public actor QwenEngine {
     }
 
     public func unload() async {
+        let hadRuntime = model != nil || generationTask != nil || isLoading
         isUnloading = true
         epoch = UUID()
         if let task = generationTask {
@@ -264,25 +239,13 @@ public actor QwenEngine {
                 context.model.invalidateCompiledTraces()
             }
         }
-        Stream.gpu.synchronize()
+        if hadRuntime { Stream.gpu.synchronize() }
         grammarCache.reset()
         model = nil
         directory = nil
-        Memory.clearCache()
+        if hadRuntime { Memory.clearCache() }
         isUnloading = false
     }
-
-    private nonisolated static func removeFence(_ value: String) -> String {
-        let trimmed = value.trimmingCharacters(in: .whitespacesAndNewlines)
-        if trimmed.hasPrefix("```json\n"), trimmed.hasSuffix("```") {
-            return String(trimmed.dropFirst(8).dropLast(3)).trimmingCharacters(in: .whitespacesAndNewlines)
-        }
-        if trimmed.hasPrefix("```\n"), trimmed.hasSuffix("```") {
-            return String(trimmed.dropFirst(4).dropLast(3)).trimmingCharacters(in: .whitespacesAndNewlines)
-        }
-        return trimmed
-    }
-
 
 }
 

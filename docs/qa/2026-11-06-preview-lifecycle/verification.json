@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUTC": "2026-11-05T16:33:33.120811+00:00",
+  "status": "passed_simulator_preview_and_integrated_app_unit_regression",
+  "problem": "The user supplied an App screenshot whose preview was covered by a final Swift.CancellationError message. The prior generic catch published cancellation as an error and never cleared an earlier error on a later successful load.",
+  "scope": "ModelViewport.swift and its new targeted tests; integrated App tests also verify separately owned memory-pressure, cancellation, thumbnail and store changes. This agent did not operate a phone, restore deleted projects, publish a synthetic fixture into the model library, run AI generation, change a model/asset pack, sign, upload or release.",
+  "fix": {
+    "viewLifecycle": "Load Entity using a SwiftUI-owned .task keyed by URL and explicit retry ID; RealityView make only configures the camera and update mounts the ready entity.",
+    "requestOwnership": "A cancelled task cannot enter and supersede newer work. Request IDs protect success and error publication from stale completions.",
+    "cancellation": "Swift cancellation and its NSError bridge produce a paused/cancelled state, without a final error overlay. A disappearing view does not start a background retry; reappearance receives a new view task.",
+    "genuineFailure": "Real asset errors remain visible with an explicit Reload preview action. New attempts clear old errors.",
+    "geometryAndFiles": "Existing 0.65/longest preview fit, orbit interaction, source URLs and AR/export files are preserved."
+  },
+  "sourceSHA256": {
+    "Apple/ThreeLiveStudio/Preview/ModelViewport.swift": "aac3239f1a3db95a444ebb4bb367364f117c413ceec2bc60d7b14dc5b399012b",
+    "Apple/ThreeLiveStudioTests/ModelViewportTests.swift": "0cb5bc51a14222ad61cdcd5d9b21a3193bb54a3566b388ca032492b0334f2b57"
+  },
+  "otherOwnersIntegratedSourceSHA256": {
+    "Apple/ThreeLiveStudio/App/MemoryPressurePolicy.swift": "d99f63280c4cf531687a67f492779483117a6a3a3177626401e0ca726173eeee",
+    "Apple/ThreeLiveStudio/App/StudioModel.swift": "b1bdca5d6d5b86684ed85806498ec8b55b504e97074522131721265a9c3d86d7",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift": "47ff256b46ad383e7a45e3bb690bf8bedef7abf8de0878daf073a392b9510a7f"
+  },
+  "independentReadOnlyReview": {
+    "reviewer": "product_audit",
+    "result": "No blocking issue found",
+    "scope": "Source review of task lifetime, stale-ID guards, entity identity/removal, camera target clearing and unchanged normalization; review alone was not device or final pixel evidence."
+  },
+  "finalVerification": {
+    "tool": "XcodeBuildMCP test_sim",
+    "project": "Apple/ThreeLiveStudio.xcodeproj",
+    "scheme": "ThreeLiveStudio",
+    "configuration": "Debug",
+    "selection": "ThreeLiveStudioTests (all App unit tests, no UI-test target)",
+    "profile": "preview-lifecycle-fix",
+    "derivedData": "Apple/.build/PreviewLifecycleDerivedData",
+    "parallelTesting": false,
+    "device": {
+      "architecture": "arm64",
+      "deviceId": "44F69398-0D10-403D-B3BB-037C75C23B15",
+      "deviceName": "Lilt StoreKit QA 29",
+      "modelName": "iPhone 17 Pro",
+      "osBuildNumber": "23A343",
+      "osVersion": "26.0",
+      "platform": "iOS Simulator"
+    },
+    "discovered": 52,
+    "passed": 51,
+    "failed": 0,
+    "skipped": 1,
+    "elapsedBuildAndTestSeconds": 42.7,
+    "warnings": 0,
+    "errors": 0,
+    "testRunnerStartUTC": "2026-11-05T16:27:03.927000+00:00",
+    "testRunnerFinishUTC": "2026-11-05T16:27:24.748000+00:00",
+    "suitePassCounts": {
+      "ModelViewportTests": 7,
+      "MemoryPressureTests": 6,
+      "StudioCancellationTests": 10,
+      "ProjectThumbnailServiceTests": 8,
+      "ProjectThumbnailStoreTests": 2,
+      "ProjectStoreTests": 9,
+      "VerifiedModelStoreTests": 9
+    },
+    "skip": {
+      "suite": "OnDeviceInferenceTests",
+      "test": "testVerifiedLocalSceneWorkflowCancellationAndMemory",
+      "reason": "Real iPhone inference benchmark; simulator measurements are not accepted.",
+      "scope": "Not counted as successful AI generation or physical-device acceptance."
+    },
+    "previewTests": [
+      {
+        "name": "testActualNativeUSDZMountsInRealityViewAndKeepsTheExistingPreviewFit",
+        "status": "passed",
+        "milliseconds": 716
+      },
+      {
+        "name": "testAViewTaskLoadsAgainAfterDisappearanceInsteadOfKeepingCancellationAsAnError",
+        "status": "passed",
+        "milliseconds": 189
+      },
+      {
+        "name": "testBridgedCancellationFromAnAssetLoaderIsAlsoNotAFinalError",
+        "status": "passed",
+        "milliseconds": 2
+      },
+      {
+        "name": "testCancellationDoesNotBecomeAFinalErrorAndAVisibleRetryCanLoad",
+        "status": "passed",
+        "milliseconds": 1
+      },
+      {
+        "name": "testCancelledTaskCannotPublishAnAssetThatFinishesLate",
+        "status": "passed",
+        "milliseconds": 23
+      },
+      {
+        "name": "testRealFailureRemainsVisibleAndSuccessfulRetryClearsIt",
+        "status": "passed",
+        "milliseconds": 6
+      },
+      {
+        "name": "testSupersededSuccessAndFailureCannotOverwriteTheNewerURL",
+        "status": "passed",
+        "milliseconds": 46
+      }
+    ],
+    "resultBundle": "/Users/kaisun/Library/Developer/XcodeBuildMCP/workspaces/Three-Live-a778a850dbab/result-bundles/test_sim_2026-11-05T16-26-42-216Z_pid89126_af05c6f8.xcresult",
+    "buildLog": "/Users/kaisun/Library/Developer/XcodeBuildMCP/workspaces/Three-Live-a778a850dbab/logs/test_sim_2026-11-05T16-26-42-216Z_pid89126_26a831b0.log",
+    "independentXCResultSummaryReadback": "Passed; 51 passed, 0 failed, 1 skipped"
+  },
+  "actualPreviewFixture": {
+    "source": "New synthetic box exported by the unmodified native ThreeLiveNative USDZ exporter into a private temporary test directory, removed after the test. No prior user project was restored.",
+    "loadedBy": "Actual ModelViewport view-owned task with the real Entity(contentsOf:) loader",
+    "sceneMembershipAsserted": true,
+    "longestPreviewExtentAsserted": 0.65,
+    "centerZeroAsserted": true,
+    "image": "actual-native-usdz-preview.png",
+    "imageSHA256": "51fb1559fef4ca5bdd45049c4bbe27bb40164f90ded07c8f07641096ead5a03d",
+    "imagePixels": [
+      1206,
+      2622
+    ],
+    "imageViewed": true,
+    "observed": "The native box front face is visibly rendered in green against the black RealityView background, without a cancellation or failed-preview overlay.",
+    "notAIOutput": true,
+    "savedToUserLibrary": false
+  },
+  "earlierIntegratedRun": {
+    "status": "superseded_after_separate_production_runtime_fix",
+    "selection": "ModelViewportTests7 + MemoryPressureTests5 + StudioCancellationTests10",
+    "passed": 17,
+    "failedByHostAbort": 5,
+    "skipped": 0,
+    "elapsedSeconds": 190.2,
+    "previewPassed": 7,
+    "resultBundleBasename": "test_sim_2026-11-05T16-04-23-521Z_pid89126_8599766b.xcresult",
+    "observedCause": "Crash traces show libc++ basic_string(nullptr) in mlx::core::metal::Device::Device. Three unload tests entered Stream.gpu via QwenEngine.unload although no model had loaded; two older cancellation tests entered Memory.activeMemory via AppMemorySnapshot.current. This was distinct from RealityKit preview, whose seven tests passed.",
+    "subsequentRootOwnedFix": "OS-only memory snapshots, unloaded-runtime guards and asynchronous guarded reclaim avoid initializing MLX GPU just to measure/release an idle runtime; later full regression is the final result above.",
+    "physicalPhoneCausationNotEstablishedByTheseAborts": true
+  },
+  "primaryLifecycleReference": "https://developer.apple.com/documentation/swiftui/view/task(id:name:priority:file:line:_:)",
+  "limits": [
+    "The exact phone event that cancelled the original RealityView make load was not identified by this Simulator run.",
+    "No physical-device preview, AI success/save, stop latency, memory-pressure quality, cold hosted download, offline journey or TestFlight delivery acceptance is established here.",
+    "The displayed fixture is newly generated native test geometry, not an AI model and not a replacement for any deleted user project.",
+    "Thumbnail tests cover the service/store contracts; this preview capture is not a complete phone model-library thumbnail journey.",
+    "The isolated SI/scale UI and assembly candidates remain unpromoted and held."
+  ]
+}

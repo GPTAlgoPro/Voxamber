@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-11-05T17:15:46.860237+00:00",
+  "appVersion": "0.1.0",
+  "appBuild": "6",
+  "result": "Passed",
+  "scope": "Frozen-source Simulator App unit tests; conditional physical-device inference test was skipped. No real phone acceptance asserted.",
+  "tests": {
+    "totalTestCount": 57,
+    "passedTests": 56,
+    "failedTests": 0,
+    "skippedTests": 1,
+    "runtimeWarnings": [],
+    "testFailures": []
+  },
+  "resultBundle": "Apple/.build/TestResults/build6-unit-frozen.xcresult",
+  "sourceSHA256": {
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift": "1e1a33f77a8f052d26ebbbd211b35942d0c6a8cb2469e5872ecf992ffd7d7fa3",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenTokenStream.swift": "074714e201c3fec4ec97307428d95f9a3b8ae3ddc207398e114d6a60c1fa234f",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenGenerationCompletion.swift": "f2a762906ec689b55a5687703e040e3bb11df5891b1267af515204c337ba3896",
+    "Apple/ThreeLiveStudio/App/StudioModel.swift": "36ec5bc9d5e16b5e17b9979cf8383f995893329bd5a0ca73d2f05629be7bf254",
+    "Apple/ThreeLiveStudio/App/MemoryPressurePolicy.swift": "d99f63280c4cf531687a67f492779483117a6a3a3177626401e0ca726173eeee",
+    "Apple/ThreeLiveStudio/App/ThreeLiveStudioApp.swift": "354a8877fdb2d5169dc32a0e4b7a86dfb2cb7fac7a0c9b5197ddd2f712643966",
+    "Apple/ThreeLiveStudio/Creation/CreationWorkspace.swift": "7201ede5dacb31b6d0eaeed31970b70d924de2f7c6b3b430fac20fda446dd2a5",
+    "Apple/ThreeLiveStudio/Library/ProjectLibrary.swift": "6bc15d3ebdbc818226f74410746423348ae55b93bfaf657b2ad3e2ce92b90a7e",
+    "Apple/ThreeLiveStudio/Library/ProjectThumbnailService.swift": "8f326fdea943d0ef6d432eab057090f82d18678349c71e1266d00e3213368e64",
+    "Apple/ThreeLiveStudio/Preview/ModelViewport.swift": "aac3239f1a3db95a444ebb4bb367364f117c413ceec2bc60d7b14dc5b399012b",
+    "Apple/ThreeLiveStudio/Storage/ProjectStore.swift": "da6ca9ee9d89fb80ec8bd15e243bc56d97a6fb75d21b7ef454be3a16ad543220",
+    "Apple/ThreeLiveStudio/Resources/Voxamber.entitlements": "92964619eecdc448a6a8f48eafbe5522190388c0b4c5a79728d0609ab7dcf318",
+    "Apple/project.yml": "43c36278e5e499ee52e1fcbe84354676d62a515bf7f8bbdc937a7b91743c3818"
+  },
+  "deletedUserWorksRestored": false
+}

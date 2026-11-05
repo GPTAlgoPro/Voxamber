@@ -32,6 +32,14 @@ final class StudioModel {
     @ObservationIgnored let store: ProjectStore
     @ObservationIgnored private let backgroundTasks: BackgroundTaskClient
     @ObservationIgnored private let idleTimerLease: GenerationIdleTimerLease
+    @ObservationIgnored private let memoryPressure: MemoryPressureClient
+    @ObservationIgnored private var memoryMonitor: CriticalMemoryPressureMonitor?
+    @ObservationIgnored private var memoryReclaimTask: Task<Void, Never>?
+    @ObservationIgnored private var memoryReclaimID: UUID?
+    @ObservationIgnored private var memoryPressureSequence: UInt64 = 0
+    @ObservationIgnored private var pendingMemoryWarning: (owner: UUID, before: AppMemorySnapshot)?
+    @ObservationIgnored private var memoryBudgetRecords: [MemoryBudgetRecord] = []
+    private(set) var lastMemoryAction: MemoryPressureAction?
     @ObservationIgnored private var work: Task<Void, Never>?
     @ObservationIgnored private var operationID: UUID?
     @ObservationIgnored private var timer: Task<Void, Never>?
@@ -43,11 +51,16 @@ final class StudioModel {
     @ObservationIgnored private var backgroundLease: BackgroundTaskLease?
 
     init(models: ModelManager = ModelManager(), store: ProjectStore = ProjectStore(),
-         backgroundTasks: BackgroundTaskClient = .system, idleTimer: IdleTimerClient = .system) {
+         backgroundTasks: BackgroundTaskClient = .system, idleTimer: IdleTimerClient = .system,
+         memoryPressure: MemoryPressureClient? = nil, monitorCriticalMemory: Bool = true) {
         self.models = models
         self.store = store
         self.backgroundTasks = backgroundTasks
         self.idleTimerLease = GenerationIdleTimerLease(client: idleTimer)
+        self.memoryPressure = memoryPressure ?? .system(engine: models.engine)
+        if monitorCriticalMemory {
+            memoryMonitor = CriticalMemoryPressureMonitor { [weak self] in self?.handleMemoryPressure(.critical) }
+        }
     }
 
     static var blankScene: SceneSpec {
@@ -57,6 +70,14 @@ final class StudioModel {
 
     var hasUnbuiltChanges: Bool { assets?.project.specification != sceneSpec }
     var canExport: Bool { assets != nil && !hasUnbuiltChanges && !busy }
+    var sceneForAIContext: SceneSpec? {
+        guard let sceneSpec else { return nil }
+        if assets != nil { return sceneSpec }
+        var blank = Self.blankScene
+        // A saved untouched draft stays blank when the App language changes.
+        if ["自由造型", "Untitled creation"].contains(sceneSpec.name) { blank.name = sceneSpec.name }
+        return sceneSpec == blank ? nil : sceneSpec
+    }
 
     func start() async {
         #if DEVICE_QA
@@ -75,6 +96,7 @@ final class StudioModel {
         if let draft = await store.loadDraft() { sceneSpec = draft.spec; prompt = draft.prompt }
         await refreshLibrary()
         await models.checkInstallation()
+        recordMemoryBudget(phase: "startup")
     }
 
     func refreshLibrary() async {
@@ -102,7 +124,8 @@ final class StudioModel {
         operationID = id
         if usingAI { idleTimerLease.begin(for: id) }
         let start = Date()
-        let initialScene = sceneSpec ?? .chair
+        let initialScene = sceneSpec ?? Self.blankScene
+        let aiContext = sceneForAIContext
         let request = prompt.trimmingCharacters(in: .whitespacesAndNewlines)
         let previous = assets?.project
         timer = Task {
@@ -121,7 +144,9 @@ final class StudioModel {
                 if usingAI {
                     guard !request.isEmpty else { throw StudioError.message("写下你想创建或修改的物体。") }
                     stage = "正在唤醒本机 AI"
+                    recordMemoryBudget(phase: "before-model-load")
                     try await models.prepare()
+                    recordMemoryBudget(phase: "after-model-load")
                     try Task.checkCancellation()
                     let began = Date()
                     stage = "正在理解你的构想"
@@ -131,7 +156,7 @@ final class StudioModel {
                     }
                     let response = try await models.engine.generateJSON(
                         systemPrompt: ScenePrompt.system,
-                        prompt: try ScenePrompt.userRequest(request, currentSpec: previous == nil ? nil : initialScene),
+                        prompt: try ScenePrompt.userRequest(request, currentSpec: aiContext),
                         maxTokens: 3072,
                         // Keep the phone-verified single-turn protocol while staged assembly is evaluated.
                         onProgress: { _ in },
@@ -222,8 +247,86 @@ final class StudioModel {
         } catch { /* Local timing diagnostics do not change the stopped state. */ }
     }
 
-    func handleMemoryPressure() {
-        requestCleanup(reason: .memoryPressure, needsBackgroundLease: false)
+    func handleMemoryPressure(_ severity: MemoryPressureSeverity = .warning) {
+        if severity == .warning, isCleaningUp { return }
+        let before = memoryPressure.snapshot()
+        // Critical pressure and an exceeded process limit must cancel before
+        // waiting for the model allocator's evaluation lock.
+        if severity == .critical || before.availableProcessBytes == 0 || work == nil {
+            memoryPressureSequence &+= 1
+            pendingMemoryWarning = nil
+            let action = MemoryPressurePolicy.action(severity: severity, snapshot: before, hasOwnedOperation: work != nil)
+            lastMemoryAction = action
+            saveMemoryPressure(severity: severity, action: action, before: before, after: before,
+                               reclaimed: false, allocator: nil, oldOperationEnded: false)
+            requestCleanup(reason: .memoryPressure, needsBackgroundLease: false)
+            return
+        }
+        if memoryReclaimTask != nil {
+            if let operationID { pendingMemoryWarning = (operationID, before) }
+            return
+        }
+        memoryPressureSequence &+= 1
+        let sequence = memoryPressureSequence
+        let id = UUID(), owner = operationID
+        memoryReclaimID = id
+        lastMemoryAction = .reclaimAndContinue
+        memoryReclaimTask = Task {
+            // QwenEngine is an independent actor. A cache trim can wait on GPU
+            // evaluation; never perform that synchronous wait on the UI actor.
+            let allocator = await memoryPressure.reclaimUnusedCache()
+            guard memoryReclaimID == id else { return }
+            memoryReclaimTask = nil
+            memoryReclaimID = nil
+            let pending = pendingMemoryWarning
+            pendingMemoryWarning = nil
+            let currentPending = pending.flatMap { $0.owner == operationID ? $0 : nil }
+            // A later critical event has already cancelled and recorded its
+            // decision. An older warning must never replace that evidence.
+            guard !isCleaningUp,
+                  memoryPressureSequence == sequence || currentPending != nil else { return }
+            let after = memoryPressure.snapshot()
+            let eventOwner = currentPending?.owner ?? owner
+            let stale = operationID != eventOwner
+            let action: MemoryPressureAction = stale ? .reclaimAndContinue :
+                MemoryPressurePolicy.action(severity: severity, snapshot: after, hasOwnedOperation: work != nil)
+            lastMemoryAction = action
+            saveMemoryPressure(severity: severity, action: action, before: currentPending?.before ?? before, after: after,
+                               reclaimed: true, allocator: allocator, oldOperationEnded: stale)
+            if !stale, action != .reclaimAndContinue {
+                requestCleanup(reason: .memoryPressure, needsBackgroundLease: false)
+            }
+        }
+    }
+
+    private func saveMemoryPressure(severity: MemoryPressureSeverity, action: MemoryPressureAction,
+                                    before: AppMemorySnapshot, after: AppMemorySnapshot,
+                                    reclaimed: Bool, allocator: QwenMemorySnapshot?, oldOperationEnded: Bool) {
+        let record = MemoryPressureRecord(time: Date(),
+            appBuild: Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? "unknown",
+            severity: severity, action: action, stage: stage, elapsedSeconds: elapsed,
+            hasOwnedOperation: work != nil, before: before, afterReclaim: after,
+            reclaimCompleted: reclaimed, allocatorAfterReclaim: allocator,
+            relatedOperationAlreadyEnded: oldOperationEnded)
+        let url = URL.documentsDirectory.appending(path: "Measurements/last-memory-pressure.json")
+        do {
+            try FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
+            let encoder = JSONEncoder(); encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
+            try encoder.encode(record).write(to: url, options: .atomic)
+        } catch { /* Local resource diagnostics never decide whether a task is cancelled. */ }
+    }
+
+    private func recordMemoryBudget(phase: String) {
+        memoryBudgetRecords.append(MemoryBudgetRecord(time: Date(), phase: phase,
+            appBuild: Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? "unknown",
+            snapshot: memoryPressure.snapshot()))
+        if memoryBudgetRecords.count > 32 { memoryBudgetRecords.removeFirst(memoryBudgetRecords.count - 32) }
+        let url = URL.documentsDirectory.appending(path: "Measurements/memory-budget.json")
+        do {
+            try FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
+            let encoder = JSONEncoder(); encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
+            try encoder.encode(memoryBudgetRecords).write(to: url, options: .atomic)
+        } catch { /* Resource snapshots do not alter a user's creation or task state. */ }
     }
 
     func open(_ project: CreationProject) async {
@@ -238,7 +341,13 @@ final class StudioModel {
         guard !busy else { return }
         do {
             try await store.remove(project)
-            if assets?.project.id == project.id { assets = nil }
+            if assets?.project.id == project.id {
+                draftTask?.cancel()
+                assets = nil
+                sceneSpec = Self.blankScene
+                prompt = ""
+                try await store.saveDraft(spec: Self.blankScene, prompt: "")
+            }
             await refreshLibrary()
         } catch { errorMessage = error.localizedDescription }
     }

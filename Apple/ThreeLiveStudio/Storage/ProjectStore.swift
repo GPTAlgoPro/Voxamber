@@ -31,11 +31,14 @@ enum StudioError: LocalizedError {
 
 actor ProjectStore {
     let root: URL
+    private let thumbnails: ProjectThumbnailService
     private let encoder: JSONEncoder
     private let decoder = JSONDecoder()
 
-    init(root: URL = URL.documentsDirectory.appending(path: "Creations")) {
+    init(root: URL = URL.documentsDirectory.appending(path: "Creations"),
+         thumbnails: ProjectThumbnailService = .shared) {
         self.root = root
+        self.thumbnails = thumbnails
         encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
     }
@@ -110,8 +113,18 @@ actor ProjectStore {
         return value
     }
 
-    func remove(_ project: CreationProject) throws {
+    func thumbnail(for project: CreationProject) async throws -> Data {
+        try await thumbnails.thumbnail(for: ProjectThumbnailSource(projectID: project.id, revision: project.revision,
+            fileDigest: project.usdzSHA256, fileURL: assets(for: project).usdzURL))
+    }
+
+    func reduceThumbnailMemory() async {
+        await thumbnails.reduceMemory()
+    }
+
+    func remove(_ project: CreationProject) async throws {
         try FileManager.default.removeItem(at: root.appending(path: project.id.uuidString))
+        await thumbnails.invalidate(projectID: project.id)
     }
 
     func saveDraft(spec: SceneSpec, prompt: String) throws {

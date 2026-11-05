@@ -146,7 +146,7 @@ final class StudioCancellationTests: XCTestCase {
         let model = StudioModel(models: ModelManager(unloadRuntime: { await gate.run() }),
                                 store: ProjectStore(root: root), backgroundTasks: platform.client)
         model.generate(usingAI: false)
-        model.handleMemoryPressure()
+        model.handleMemoryPressure(.critical)
         try await waitUntil { gate.callCount == 1 }
         XCTAssertEqual(platform.beginCount, 0)
         model.enterBackground()

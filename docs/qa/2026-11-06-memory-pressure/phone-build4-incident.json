@@ -1,0 +1,9 @@
+{
+  "source": "Actual phone Documents/Measurements/last-stop.json copied after user reported automatic cancellation",
+  "installedBuild": "4",
+  "reason": "memoryPressure",
+  "secondsToIdle": 0.397848166,
+  "terminalStage": "\u5df2\u53d6\u6d88",
+  "lastInferenceCompletionPresent": false,
+  "scope": "Confirms the app cancellation branch was memoryPressure. Does not yet prove OS process headroom or that new policy succeeds on device."
+}

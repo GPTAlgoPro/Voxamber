@@ -1,0 +1,121 @@
+{
+  "scope": "Complete emitted JSON object stopping in formal native Direct generation. Synthetic native producer tests and package compile; no proof about the missing historical user buffer or real phone AI success.",
+  "sourceSHA256": {
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift": "1e1a33f77a8f052d26ebbbd211b35942d0c6a8cb2469e5872ecf992ffd7d7fa3",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenGenerationCompletion.swift": "f2a762906ec689b55a5687703e040e3bb11df5891b1267af515204c337ba3896",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenTokenStream.swift": "074714e201c3fec4ec97307428d95f9a3b8ae3ddc207398e114d6a60c1fa234f",
+    "Apple/Packages/QwenNative/Tests/QwenNativeTests/JSONCompletionTests.swift": "284ced52b4791959d89c9012f54995d307233e240658380aa972d644ad7edaa3"
+  },
+  "formalAPI": {
+    "name": "QwenEngine.generateJSON",
+    "stopAtCompleteJSON": true,
+    "maxTokensUnchanged": 3072,
+    "maximumRawUTF8BytesUnchanged": 16384,
+    "prefillStepSizeUnchanged": 128,
+    "jsonSchemaDefaultUnchanged": null
+  },
+  "rawDirectAPI": {
+    "newOptionalArgument": "stopAtCompleteJSON:Bool=false",
+    "defaultBehaviorUnchanged": true
+  },
+  "termination": {
+    "reason": "jsonComplete",
+    "means": "The complete consumed emitted buffer is a valid JSON object or complete previously allowed fence, owned producer cancelled and awaited, Metal stream synchronized; not EOS or validated scene geometry",
+    "precedence": [
+      "external user cancellation",
+      "grammar failure",
+      "JSON object completion",
+      "SDK stop/length/cancelled"
+    ],
+    "counts": "Consumed output tokens; discarded SDK stop token/unconsumed producer lookahead not counted"
+  },
+  "preserved": [
+    "No bracket/fence append or partial-object extraction",
+    "No model/prompt/schema/default-weight changes",
+    "No graph compilation enabled",
+    "Parent actor cache reclaim and hadRuntime unload guards",
+    "Final native SceneSpec validation remains caller responsibility"
+  ],
+  "validation": {
+    "newNativeProducerTestsPassed": 7,
+    "allQwenNativeTestsPassed": 23,
+    "failed": 0,
+    "tests": [
+      {
+        "name": "testActualUserCancellationWinsOverObjectCompletionAndSettlesProducer",
+        "seconds": 0.057,
+        "result": "passed"
+      },
+      {
+        "name": "testBracesInsideEscapedStringsDoNotCompleteOrDiscardNestedContent",
+        "seconds": 0.007,
+        "result": "passed"
+      },
+      {
+        "name": "testCompletionMetadataAndGrammarFailurePrecedenceAreExplicit",
+        "seconds": 0.0,
+        "result": "passed"
+      },
+      {
+        "name": "testDirectDefaultModePreservesRawTokensAndLengthReason",
+        "seconds": 0.021,
+        "result": "passed"
+      },
+      {
+        "name": "testFencesMustBeCompleteAndSameTokenTrailingGarbageIsRejected",
+        "seconds": 0.009,
+        "result": "passed"
+      },
+      {
+        "name": "testIncompleteAtLengthLimitRejectsAndExactlyCompleteAtLimitIsAccepted",
+        "seconds": 0.018,
+        "result": "passed"
+      },
+      {
+        "name": "testNativeProducerStopsCompleteObjectBeforeEndlessWhitespaceAndSettles",
+        "seconds": 0.034,
+        "result": "passed"
+      }
+    ],
+    "arm64_iOS26ReleaseQwenNativeCompile": "passed 3.46s before final localized string-only edit; Root build6 will compile final source",
+    "phone": "not operated",
+    "weightsGeneration": "One authorized formal current-preset Mac fixture complete; see current-preset-fixture/results.json. Not phone acceptance.",
+    "independentSourceReview": "Completed; no blocking finding. Read-only review, no duplicate build/model/phone claims.",
+    "finalMacSourceCompile": "passed through CompletionFixture native Swift Release build"
+  },
+  "historicalFailure": "The screenshot and prior metadata prove output limit only. This work does not establish that the missing old response ended in whitespace.",
+  "fixtureManifest": {
+    "context-preservation.json": {
+      "bytes": 210,
+      "sha256": "d265671508ac29c8c10007ba7084d759d3c3b576b1cbc24c07a331931f15becb"
+    },
+    "input-preset.json": {
+      "bytes": 2782,
+      "sha256": "8eb4d68c059568ba936f9c708b6aef39a28fd5ec78964762a30c60ea9605e83a"
+    },
+    "model.glb": {
+      "bytes": 29036,
+      "sha256": "65c5edc84fb4a088a6cf35f3344bcf61a88597dcabce147e88aec58086625501"
+    },
+    "model.usdz": {
+      "bytes": 40791,
+      "sha256": "99b5d1b38fce5e8fc01da28651ac7038f0e7e8b58812254a20edc4839bb41cc2"
+    },
+    "request.json": {
+      "bytes": 7278,
+      "sha256": "764f925e94b8bb8e9a4c26f5b1a524ec833318aa3b2cb8775cea88bcdb773e30"
+    },
+    "response.json": {
+      "bytes": 1503,
+      "sha256": "e3a5c292400dc42550d0a85303deaf44945cbcf1e3b4d526d58154f5b9b7a48b"
+    },
+    "results.json": {
+      "bytes": 1190,
+      "sha256": "7d9c9139c9ef8b7e5c659381c254d4849130aadba587f0078ef18fc30cb296e0"
+    },
+    "scene.json": {
+      "bytes": 2782,
+      "sha256": "8eb4d68c059568ba936f9c708b6aef39a28fd5ec78964762a30c60ea9605e83a"
+    }
+  }
+}

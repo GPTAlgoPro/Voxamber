@@ -1,0 +1,34 @@
+{
+  "observedAt": "2026-11-05T16:47:57.018683+00:00",
+  "appBuild": "5",
+  "normalDeveloperReleaseApp": true,
+  "XCTestOrQAInvokedForThisCreation": false,
+  "AIModelMeasurement": "千问 Qwen3.5 · 4B INT4",
+  "timings": {
+    "export": 0.020003080368041992,
+    "geometry": 0.014024019241333008,
+    "interpretation": 37.471091985702515,
+    "total": 38.59744703769684
+  },
+  "publishedRevisionMatchesAIMeasurement": true,
+  "published": {
+    "projectID": "FECFC9BE-91A0-49E6-A3DC-E94FCE3F3E87",
+    "revision": "785D277C-89A3-4134-BD44-D4B5C231A337",
+    "nodes": 8,
+    "glbBytes": 29036,
+    "usdzBytes": 40791,
+    "glbHashMatches": true,
+    "usdzHashMatches": true
+  },
+  "normalInferenceCompletion": {
+    "generatedTokenCount": 666,
+    "grammarEnabled": false,
+    "grammarTerminated": false,
+    "inputTokenCount": 2685,
+    "reason": "stop",
+    "tokenLimit": 3072
+  },
+  "parameterGenerationCountedAsAI": false,
+  "oldDeletedModelsRestored": false,
+  "scope": "Actual normal-phone AI call plus successful native geometry/export/committed revision and file SHA readback. This does not assert artifact visual quality, live viewport or library thumbnail presentation, a fresh from-scratch subject, or TestFlight signing/install."
+}

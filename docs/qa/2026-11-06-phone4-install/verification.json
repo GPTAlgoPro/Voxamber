@@ -1,0 +1,28 @@
+{
+  "recordedAt": "2026-11-05T15:41:52.424937+00:00",
+  "bundleID": "com.kaisun.voxamber",
+  "oldVersion": "0.1.0",
+  "oldBuild": "1",
+  "installedVersion": "0.1.0",
+  "installedBuild": "4",
+  "installedAsDeveloperApp": true,
+  "launchSucceeded": true,
+  "sourceArchive": "Apple/.build/Archives/Voxamber-0.1.0-4.xcarchive",
+  "creationsPreserved": {
+    "files": 29,
+    "totalBytes": 1311856,
+    "allSHA256Unchanged": true,
+    "backupRetainedOutsideGit": true
+  },
+  "qwenModelInventory": {
+    "entries": 12,
+    "pathsSizesModificationDatesUnchanged": true,
+    "fullPostInstallWeightHashesRecomputed": false
+  },
+  "defaultModel": "Qwen3.5 4B INT4",
+  "MiniCPMDefaultActivated": false,
+  "actualTestFlightInstallVerified": false,
+  "testFlightBuild4SeparatelyAvailable": true,
+  "phoneActualAICancellationRetest": false,
+  "scope": "Normal development-signed release build4 installed without uninstall. User creations were privately copied and SHA-checked; model inventory metadata retained. No user file content/path hashes are exposed in this sanitized receipt."
+}

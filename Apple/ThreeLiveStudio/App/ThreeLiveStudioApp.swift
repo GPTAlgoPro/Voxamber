@@ -37,7 +37,7 @@ struct StudioRoot: View {
             }
         }
         .tabViewStyle(.sidebarAdaptable)
-        .alert(StudioCopy.text("请稍作调整", "Please adjust your creation"), isPresented: Binding(get: { studio.errorMessage != nil }, set: { if !$0 { studio.errorMessage = nil } })) {
+        .alert(StudioCopy.text("未能完成", "Could not complete"), isPresented: Binding(get: { studio.errorMessage != nil }, set: { if !$0 { studio.errorMessage = nil } })) {
             Button(StudioCopy.text("好", "OK"), role: .cancel) { studio.errorMessage = nil }
         } message: { Text(studio.errorMessage ?? "") }
     }
