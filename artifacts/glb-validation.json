@@ -1,0 +1,33 @@
+{
+  "input": "palace.glb",
+  "bytes": 906532,
+  "meshes": 17,
+  "materials": 17,
+  "nodes": 17,
+  "vertices": 26150,
+  "triangles": 22040,
+  "bounds_world_meters": [
+    [
+      -0.504,
+      0.504
+    ],
+    [
+      0,
+      0.42216
+    ],
+    [
+      -0.38495999999999997,
+      0.43440000000000006
+    ]
+  ],
+  "issues": {
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 0,
+    "numHints": 0,
+    "messages": [],
+    "truncated": false
+  },
+  "generator": "Three-Live Compiler",
+  "validatorVersion": "2.0.0-dev.3.10"
+}

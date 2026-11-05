@@ -1,0 +1,1311 @@
+{
+  "appBuild" : "1",
+  "appOptimization" : "-O",
+  "appVersion" : "0.1.0",
+  "cancellationAfterFirstToken" : true,
+  "cancellationObserved" : true,
+  "cancellationSettleSeconds" : 0.052632375,
+  "cancellationUnloadSeconds" : 0.045532417,
+  "cases" : [
+    {
+      "exportSeconds" : 0.004446042,
+      "firstTokenSeconds" : 1.980993834,
+      "generationSeconds" : 55.26104675,
+      "geometrySeconds" : 0.000320166,
+      "glbBytes" : 45944,
+      "glbSHA256" : "f628873e54a5700bd698a0fd266514353816e77994684193a1fc5e4d9675fa22",
+      "id" : "chair",
+      "meshCount" : 18,
+      "mlx" : {
+        "activeBytes" : 2367679904,
+        "cacheBytes" : 33917924,
+        "peakBytes" : 3034562212
+      },
+      "nodeCount" : 18,
+      "persistenceAndReopenSeconds" : 0.009522417,
+      "physicalFootprintBytes" : 2572112040,
+      "realityKitBoundsMetres" : [
+        0.43600002,
+        1.809,
+        0.35
+      ],
+      "realityKitLoadSeconds" : 0.473435083,
+      "scene" : {
+        "name" : "简约木椅",
+        "nodes" : [
+          {
+            "color" : "#8B4513",
+            "id" : "leg1",
+            "metallic" : 0.1,
+            "position" : [
+              0,
+              1.566,
+              0
+            ],
+            "primitive" : "cylinder",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.06,
+              0.45,
+              0.06
+            ]
+          },
+          {
+            "color" : "#8B4513",
+            "id" : "leg2",
+            "metallic" : 0.1,
+            "position" : [
+              0.06,
+              1.119,
+              0
+            ],
+            "primitive" : "cylinder",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.06,
+              0.45,
+              0.06
+            ]
+          },
+          {
+            "color" : "#8B4513",
+            "id" : "leg3",
+            "metallic" : 0.1,
+            "position" : [
+              -9.313226e-10,
+              0.672,
+              0
+            ],
+            "primitive" : "cylinder",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.06,
+              0.45,
+              0.06
+            ]
+          },
+          {
+            "color" : "#8B4513",
+            "id" : "leg4",
+            "metallic" : 0.1,
+            "position" : [
+              -1.8626451e-09,
+              0.22500002,
+              0
+            ],
+            "primitive" : "cylinder",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.06,
+              0.45,
+              0.06
+            ]
+          },
+          {
+            "color" : "#8B4513",
+            "id" : "seat",
+            "metallic" : 0.1,
+            "position" : [
+              -1.8626451e-09,
+              0.472,
+              0
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.4,
+              0.05,
+              0.35
+            ]
+          },
+          {
+            "color" : "#8B4513",
+            "id" : "backrest",
+            "metallic" : 0.1,
+            "position" : [
+              0,
+              0.66899997,
+              0
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.35,
+              0.35,
+              0.05
+            ]
+          },
+          {
+            "color" : "#8B4513",
+            "id" : "backrest_left",
+            "metallic" : 0.1,
+            "position" : [
+              -0.183,
+              0.66899997,
+              0
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.02,
+              0.35,
+              0.05
+            ]
+          },
+          {
+            "color" : "#8B4513",
+            "id" : "backrest_right",
+            "metallic" : 0.1,
+            "position" : [
+              0.183,
+              0.66899997,
+              0
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.02,
+              0.35,
+              0.05
+            ]
+          },
+          {
+            "color" : "#8B4513",
+            "id" : "leg1_top",
+            "metallic" : 0.1,
+            "position" : [
+              0,
+              1.799,
+              0
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.06,
+              0.02,
+              0.06
+            ]
+          },
+          {
+            "color" : "#8B4513",
+            "id" : "leg2_top",
+            "metallic" : 0.1,
+            "position" : [
+              0.06,
+              1.352,
+              0
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.06,
+              0.02,
+              0.06
+            ]
+          },
+          {
+            "color" : "#8B4513",
+            "id" : "leg3_top",
+            "metallic" : 0.1,
+            "position" : [
+              -1.8626451e-09,
+              0.905,
+              0
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.06,
+              0.02,
+              0.06
+            ]
+          },
+          {
+            "color" : "#8B4513",
+            "id" : "leg4_top",
+            "metallic" : 0.1,
+            "position" : [
+              -1.8626451e-09,
+              0.45800006,
+              0
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.06,
+              0.02,
+              0.06
+            ]
+          },
+          {
+            "color" : "#8B4513",
+            "id" : "seat_left",
+            "metallic" : 0.1,
+            "position" : [
+              -0.208,
+              0.472,
+              0
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.02,
+              0.05,
+              0.35
+            ]
+          },
+          {
+            "color" : "#8B4513",
+            "id" : "seat_right",
+            "metallic" : 0.1,
+            "position" : [
+              0.208,
+              0.472,
+              0
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.02,
+              0.05,
+              0.35
+            ]
+          },
+          {
+            "color" : "#8B4513",
+            "id" : "backrest_bottom",
+            "metallic" : 0.1,
+            "position" : [
+              0,
+              0.48599994,
+              0
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.35,
+              0.02,
+              0.05
+            ]
+          },
+          {
+            "color" : "#8B4513",
+            "id" : "backrest_top",
+            "metallic" : 0.1,
+            "position" : [
+              0,
+              0.852,
+              0
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.35,
+              0.02,
+              0.05
+            ]
+          },
+          {
+            "color" : "#8B4513",
+            "id" : "backrest_front",
+            "metallic" : 0.1,
+            "position" : [
+              0,
+              0.66899997,
+              0.033
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.35,
+              0.35,
+              0.02
+            ]
+          },
+          {
+            "color" : "#8B4513",
+            "id" : "backrest_back",
+            "metallic" : 0.1,
+            "position" : [
+              0,
+              0.66899997,
+              -0.033
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.35,
+              0.35,
+              0.02
+            ]
+          }
+        ]
+      },
+      "thermalState" : 0,
+      "triangles" : 680,
+      "usdzBytes" : 62536,
+      "usdzSHA256" : "450f7c93cb547dbe3ed8d25f3eeebc53fe0ae63eb5b2d4a5c520b72dec44f775",
+      "validSchema" : true,
+      "vertices" : 856
+    },
+    {
+      "exportSeconds" : 0.004735583,
+      "firstTokenSeconds" : 2.688317125,
+      "generationSeconds" : 62.882904208,
+      "geometrySeconds" : 0.000456958,
+      "glbBytes" : 63656,
+      "glbSHA256" : "d5ea3eaedc59358b5424e17d2bdfe2af3f6760799f8b713b7808460bf695da51",
+      "id" : "robot",
+      "meshCount" : 9,
+      "mlx" : {
+        "activeBytes" : 2367679904,
+        "cacheBytes" : 34001904,
+        "peakBytes" : 3034562212
+      },
+      "nodeCount" : 9,
+      "persistenceAndReopenSeconds" : 0.0091185,
+      "physicalFootprintBytes" : 2571669672,
+      "realityKitBoundsMetres" : [
+        0.23400001,
+        0.67200005,
+        0.2
+      ],
+      "realityKitLoadSeconds" : 0.066364166,
+      "scene" : {
+        "name" : "蓝色立方体机器人",
+        "nodes" : [
+          {
+            "color" : "#333333",
+            "id" : "base",
+            "metallic" : 0.1,
+            "position" : [
+              0,
+              0.225,
+              0
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.2,
+              0.05,
+              0.2
+            ]
+          },
+          {
+            "color" : "#0000FF",
+            "id" : "torso",
+            "metallic" : 0.1,
+            "position" : [
+              0,
+              0.397,
+              0
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.18,
+              0.3,
+              0.18
+            ]
+          },
+          {
+            "color" : "#0000FF",
+            "id" : "head",
+            "metallic" : 0.1,
+            "position" : [
+              0,
+              0.60400003,
+              0
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.12,
+              0.12,
+              0.12
+            ]
+          },
+          {
+            "color" : "#FFFF00",
+            "id" : "eye_left",
+            "metallic" : 0.1,
+            "position" : [
+              -0.05,
+              0.6240001,
+              0.067999996
+            ],
+            "primitive" : "sphere",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.02,
+              0.02,
+              0.02
+            ]
+          },
+          {
+            "color" : "#FFFF00",
+            "id" : "eye_right",
+            "metallic" : 0.1,
+            "position" : [
+              0.05,
+              0.6240001,
+              0.067999996
+            ],
+            "primitive" : "sphere",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.02,
+              0.02,
+              0.02
+            ]
+          },
+          {
+            "color" : "#0000FF",
+            "id" : "arm_left",
+            "metallic" : 0.1,
+            "position" : [
+              -0.102000006,
+              0.54700005,
+              0
+            ],
+            "primitive" : "cylinder",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.03,
+              0.25,
+              0.03
+            ]
+          },
+          {
+            "color" : "#0000FF",
+            "id" : "arm_right",
+            "metallic" : 0.1,
+            "position" : [
+              0.102000006,
+              0.54700005,
+              0
+            ],
+            "primitive" : "cylinder",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.03,
+              0.25,
+              0.03
+            ]
+          },
+          {
+            "color" : "#0000FF",
+            "id" : "leg_left",
+            "metallic" : 0.1,
+            "position" : [
+              -0.06,
+              0.12499999,
+              0
+            ],
+            "primitive" : "cylinder",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.04,
+              0.25,
+              0.04
+            ]
+          },
+          {
+            "color" : "#0000FF",
+            "id" : "leg_right",
+            "metallic" : 0.1,
+            "position" : [
+              0.06,
+              0.12499999,
+              0
+            ],
+            "primitive" : "cylinder",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.04,
+              0.25,
+              0.04
+            ]
+          }
+        ]
+      },
+      "thermalState" : 0,
+      "triangles" : 1988,
+      "usdzBytes" : 113547,
+      "usdzSHA256" : "b5a35bc3e204b26a43259fc7c9c200f4016c3762d803d61557895c8441f8bcbb",
+      "validSchema" : true,
+      "vertices" : 1316
+    },
+    {
+      "exportSeconds" : 0.003640375,
+      "firstTokenSeconds" : 3.004539625,
+      "generationSeconds" : 14.895832583,
+      "geometrySeconds" : 0.000281708,
+      "glbBytes" : 29604,
+      "glbSHA256" : "72b5054d2f32cdba5e22a8ece99ae159ddb6aabcbff996a6211c98ae187aa74d",
+      "id" : "lamp",
+      "meshCount" : 4,
+      "mlx" : {
+        "activeBytes" : 2367679904,
+        "cacheBytes" : 34582508,
+        "peakBytes" : 3034562212
+      },
+      "nodeCount" : 4,
+      "persistenceAndReopenSeconds" : 0.0114445,
+      "physicalFootprintBytes" : 2603847848,
+      "realityKitBoundsMetres" : [
+        0.3,
+        1.094,
+        0.325
+      ],
+      "realityKitLoadSeconds" : 0.062169834,
+      "scene" : {
+        "name" : "RedLamp",
+        "nodes" : [
+          {
+            "color" : "#808080",
+            "id" : "base",
+            "metallic" : 0.1,
+            "position" : [
+              0,
+              0.05,
+              0
+            ],
+            "primitive" : "box",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.3,
+              0.1,
+              0.3
+            ]
+          },
+          {
+            "color" : "#808080",
+            "id" : "stem",
+            "metallic" : 0.1,
+            "position" : [
+              0,
+              0.422,
+              0.05
+            ],
+            "primitive" : "cylinder",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.05,
+              0.65,
+              0.05
+            ]
+          },
+          {
+            "color" : "#FFD700",
+            "id" : "bulb",
+            "metallic" : 0.1,
+            "position" : [
+              0,
+              0.784,
+              0.05
+            ],
+            "primitive" : "sphere",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.08,
+              0.08,
+              0.08
+            ]
+          },
+          {
+            "color" : "#FF0000",
+            "id" : "shade",
+            "metallic" : 0.1,
+            "position" : [
+              0,
+              0.91899997,
+              0.05
+            ],
+            "primitive" : "cone",
+            "rotation" : [
+              0,
+              0,
+              0
+            ],
+            "roughness" : 0.45,
+            "size" : [
+              0.25,
+              0.35,
+              0.25
+            ]
+          }
+        ]
+      },
+      "thermalState" : 1,
+      "triangles" : 924,
+      "usdzBytes" : 53071,
+      "usdzSHA256" : "7a2c98ce37412bdce5891922e8289832a6a726adaf9dfdc26d4d0e1b5969091c",
+      "validSchema" : true,
+      "vertices" : 613
+    }
+  ],
+  "elapsedSeconds" : 209.627434292,
+  "firstLoadSeconds" : 1.516496709,
+  "footprintStates" : {
+    "after_cancellation_settled" : 2640859304,
+    "after_cancellation_unload" : 169003688,
+    "after_final_unload" : 156043992,
+    "after_first_load" : 2836533344,
+    "before_cancellation" : 2603847848,
+    "before_first_load" : 37750696
+  },
+  "footprints" : {
+    "maximumObservedMLXActiveBytes" : 3034566204,
+    "maximumObservedMLXCacheBytes" : 66121728,
+    "maximumReportedMLXPeakBytes" : 3034566204,
+    "sampleIntervalSeconds" : 0.1,
+    "sampledPeakPhysicalFootprintBytes" : 3167998240,
+    "samples" : 1981,
+    "thermalStatesObserved" : [
+      0,
+      1
+    ]
+  },
+  "hardware" : "iPhone18,2",
+  "loadCacheNote" : "First model load in this probe follows streaming hash verification, which may warm filesystem caches; it is not a cold-storage benchmark.",
+  "manifestSHA256" : "be9d82a513eaeb8381a3be1967f8f7d25931db8aa7b3ca9f21aa2881d7fd4604",
+  "measuredAt" : "2026-11-05T10:03:21Z",
+  "memoryStates" : {
+    "after_cancellation_settled" : {
+      "activeBytes" : 2367679904,
+      "cacheBytes" : 33844924,
+      "peakBytes" : 3034562212
+    },
+    "after_cancellation_unload" : {
+      "activeBytes" : 4000,
+      "cacheBytes" : 0,
+      "peakBytes" : 3034562212
+    },
+    "after_final_unload" : {
+      "activeBytes" : 7992,
+      "cacheBytes" : 0,
+      "peakBytes" : 3034566204
+    },
+    "after_first_load" : {
+      "activeBytes" : 2367679904,
+      "cacheBytes" : 38671360,
+      "peakBytes" : 3034562212
+    },
+    "after_reload" : {
+      "activeBytes" : 2367683896,
+      "cacheBytes" : 42603520,
+      "peakBytes" : 3034566204
+    },
+    "before_cancellation" : {
+      "activeBytes" : 2367679904,
+      "cacheBytes" : 34582508,
+      "peakBytes" : 3034562212
+    },
+    "before_first_load" : {
+      "activeBytes" : 0,
+      "cacheBytes" : 0,
+      "peakBytes" : 0
+    }
+  },
+  "mlxActiveBytesReleasedAfterCancellation" : 2367675904,
+  "modelID" : "qwen3.5-4b-mlx-int4",
+  "noTestRunnerInjected" : true,
+  "optimizedAssertionsConfiguration" : true,
+  "os" : "Version 27.2 (Build 24B119)",
+  "phase" : "complete",
+  "physicalMemoryBytes" : 12263407616,
+  "qaCompilationFlag" : "DEVICE_QA",
+  "qaCompilationFlagEnabled" : true,
+  "reloadCase" : {
+    "exportSeconds" : 0.003946459,
+    "firstTokenSeconds" : 2.812337667,
+    "generationSeconds" : 66.449872125,
+    "geometrySeconds" : 0.000343584,
+    "glbBytes" : 45944,
+    "glbSHA256" : "f628873e54a5700bd698a0fd266514353816e77994684193a1fc5e4d9675fa22",
+    "id" : "chair_after_reload",
+    "meshCount" : 18,
+    "mlx" : {
+      "activeBytes" : 2367683896,
+      "cacheBytes" : 33922024,
+      "peakBytes" : 3034566204
+    },
+    "nodeCount" : 18,
+    "persistenceAndReopenSeconds" : 0.013073041,
+    "physicalFootprintBytes" : 2607517984,
+    "realityKitBoundsMetres" : [
+      0.43600002,
+      1.809,
+      0.35
+    ],
+    "realityKitLoadSeconds" : 0.080881208,
+    "scene" : {
+      "name" : "简约木椅",
+      "nodes" : [
+        {
+          "color" : "#8B4513",
+          "id" : "leg1",
+          "metallic" : 0.1,
+          "position" : [
+            0,
+            1.566,
+            0
+          ],
+          "primitive" : "cylinder",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.06,
+            0.45,
+            0.06
+          ]
+        },
+        {
+          "color" : "#8B4513",
+          "id" : "leg2",
+          "metallic" : 0.1,
+          "position" : [
+            0.06,
+            1.119,
+            0
+          ],
+          "primitive" : "cylinder",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.06,
+            0.45,
+            0.06
+          ]
+        },
+        {
+          "color" : "#8B4513",
+          "id" : "leg3",
+          "metallic" : 0.1,
+          "position" : [
+            -9.313226e-10,
+            0.672,
+            0
+          ],
+          "primitive" : "cylinder",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.06,
+            0.45,
+            0.06
+          ]
+        },
+        {
+          "color" : "#8B4513",
+          "id" : "leg4",
+          "metallic" : 0.1,
+          "position" : [
+            -1.8626451e-09,
+            0.22500002,
+            0
+          ],
+          "primitive" : "cylinder",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.06,
+            0.45,
+            0.06
+          ]
+        },
+        {
+          "color" : "#8B4513",
+          "id" : "seat",
+          "metallic" : 0.1,
+          "position" : [
+            -1.8626451e-09,
+            0.472,
+            0
+          ],
+          "primitive" : "box",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.4,
+            0.05,
+            0.35
+          ]
+        },
+        {
+          "color" : "#8B4513",
+          "id" : "backrest",
+          "metallic" : 0.1,
+          "position" : [
+            0,
+            0.66899997,
+            0
+          ],
+          "primitive" : "box",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.35,
+            0.35,
+            0.05
+          ]
+        },
+        {
+          "color" : "#8B4513",
+          "id" : "backrest_left",
+          "metallic" : 0.1,
+          "position" : [
+            -0.183,
+            0.66899997,
+            0
+          ],
+          "primitive" : "box",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.02,
+            0.35,
+            0.05
+          ]
+        },
+        {
+          "color" : "#8B4513",
+          "id" : "backrest_right",
+          "metallic" : 0.1,
+          "position" : [
+            0.183,
+            0.66899997,
+            0
+          ],
+          "primitive" : "box",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.02,
+            0.35,
+            0.05
+          ]
+        },
+        {
+          "color" : "#8B4513",
+          "id" : "leg1_top",
+          "metallic" : 0.1,
+          "position" : [
+            0,
+            1.799,
+            0
+          ],
+          "primitive" : "box",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.06,
+            0.02,
+            0.06
+          ]
+        },
+        {
+          "color" : "#8B4513",
+          "id" : "leg2_top",
+          "metallic" : 0.1,
+          "position" : [
+            0.06,
+            1.352,
+            0
+          ],
+          "primitive" : "box",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.06,
+            0.02,
+            0.06
+          ]
+        },
+        {
+          "color" : "#8B4513",
+          "id" : "leg3_top",
+          "metallic" : 0.1,
+          "position" : [
+            -1.8626451e-09,
+            0.905,
+            0
+          ],
+          "primitive" : "box",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.06,
+            0.02,
+            0.06
+          ]
+        },
+        {
+          "color" : "#8B4513",
+          "id" : "leg4_top",
+          "metallic" : 0.1,
+          "position" : [
+            -1.8626451e-09,
+            0.45800006,
+            0
+          ],
+          "primitive" : "box",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.06,
+            0.02,
+            0.06
+          ]
+        },
+        {
+          "color" : "#8B4513",
+          "id" : "seat_left",
+          "metallic" : 0.1,
+          "position" : [
+            -0.208,
+            0.472,
+            0
+          ],
+          "primitive" : "box",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.02,
+            0.05,
+            0.35
+          ]
+        },
+        {
+          "color" : "#8B4513",
+          "id" : "seat_right",
+          "metallic" : 0.1,
+          "position" : [
+            0.208,
+            0.472,
+            0
+          ],
+          "primitive" : "box",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.02,
+            0.05,
+            0.35
+          ]
+        },
+        {
+          "color" : "#8B4513",
+          "id" : "backrest_bottom",
+          "metallic" : 0.1,
+          "position" : [
+            0,
+            0.48599994,
+            0
+          ],
+          "primitive" : "box",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.35,
+            0.02,
+            0.05
+          ]
+        },
+        {
+          "color" : "#8B4513",
+          "id" : "backrest_top",
+          "metallic" : 0.1,
+          "position" : [
+            0,
+            0.852,
+            0
+          ],
+          "primitive" : "box",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.35,
+            0.02,
+            0.05
+          ]
+        },
+        {
+          "color" : "#8B4513",
+          "id" : "backrest_front",
+          "metallic" : 0.1,
+          "position" : [
+            0,
+            0.66899997,
+            0.033
+          ],
+          "primitive" : "box",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.35,
+            0.35,
+            0.02
+          ]
+        },
+        {
+          "color" : "#8B4513",
+          "id" : "backrest_back",
+          "metallic" : 0.1,
+          "position" : [
+            0,
+            0.66899997,
+            -0.033
+          ],
+          "primitive" : "box",
+          "rotation" : [
+            0,
+            0,
+            0
+          ],
+          "roughness" : 0.45,
+          "size" : [
+            0.35,
+            0.35,
+            0.02
+          ]
+        }
+      ]
+    },
+    "thermalState" : 1,
+    "triangles" : 680,
+    "usdzBytes" : 62536,
+    "usdzSHA256" : "450f7c93cb547dbe3ed8d25f3eeebc53fe0ae63eb5b2d4a5c520b72dec44f775",
+    "validSchema" : true,
+    "vertices" : 856
+  },
+  "reloadSeconds" : 1.969935166,
+  "runID" : "1B95721D-98B1-486F-8098-E10D700D7CA4",
+  "runtime" : "Swift MLX \/ Metal",
+  "schemaVersion" : 1,
+  "scope" : "Optimized native iPhone App; local-only model API after streaming hash verification. Fixed structural prompts do not prove every subject. System network radios were not disabled by this probe; flight-mode acceptance is separate.",
+  "status" : "passed",
+  "verifiedFileCount" : 10,
+  "verifiedWeightBytes" : 3061129077,
+  "weightVerificationSeconds" : 2.060892375,
+  "weightsVerified" : true
+}

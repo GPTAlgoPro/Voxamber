@@ -1,0 +1,13 @@
+{
+  "activeBytesAfterUnload" : 4000,
+  "elapsedSeconds" : 6.6492699384689331,
+  "firstTokenSeconds" : 1.1554422090000001,
+  "followupJSONValid" : true,
+  "glbBytes" : 11356,
+  "meshes" : 3,
+  "nodes" : 3,
+  "sceneValid" : true,
+  "scope" : "Formal single-turn generation\/JSON\/ScenePlan\/mesh\/export lifecycle regression; not modeling-quality acceptance",
+  "triangles" : 204,
+  "usdzBytes" : 17653
+}

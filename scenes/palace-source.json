@@ -1,0 +1,161 @@
+{
+  "title": "琉金重檐殿 / Golden Eaves Hall",
+  "description": "Original parametric imperial hall inspired by Chinese Ming/Qing monumental timber architecture; not a measured replica or historical restoration.",
+  "source_generator": "scripts/generate_palace.py",
+  "compiler": "Google Three-Live native authoring DSL",
+  "scale_meters_per_design_unit": 0.024,
+  "presentation": "Tabletop architectural model; front is +Z, up is +Y, ground minimum Y=0.",
+  "bounds_meters": {
+    "width": 1.008,
+    "depth": 0.81936,
+    "height": 0.42216
+  },
+  "parts": {
+    "lower_eaves": {
+      "type": "curved four-face hipped roof",
+      "half_width": 14.9,
+      "half_depth": 9.5,
+      "top": 11.12,
+      "tile_ribs": 84
+    },
+    "upper_eaves": {
+      "type": "curved four-face hipped roof",
+      "half_width": 13.6,
+      "half_depth": 8.15,
+      "top": 16.3,
+      "tile_ribs": 84
+    },
+    "columns": 20,
+    "lattice_door_leaves": 12,
+    "terrace_levels": 3,
+    "roof_tiers": 2,
+    "stair_treads": 11,
+    "lanterns": 4
+  },
+  "script_bytes": 1037397,
+  "meshes": 17,
+  "vertices": 26150,
+  "indices": 66120,
+  "triangles": 22040,
+  "host_geometry_validation": {
+    "max_normal_length_error": 7.266412640483111e-07,
+    "degenerate_triangles": 0,
+    "triangles_oriented_to_outward_normals": true,
+    "quantized_corner_winding_repairs": 5,
+    "duplicate_triangles_removed": 312
+  },
+  "materials": [
+    {
+      "material": "courtyard_basalt",
+      "vertices": 24,
+      "indices": 36,
+      "triangles": 12
+    },
+    {
+      "material": "paving_sandstone",
+      "vertices": 960,
+      "indices": 1440,
+      "triangles": 480
+    },
+    {
+      "material": "terrace_warm_marble",
+      "vertices": 1152,
+      "indices": 1728,
+      "triangles": 576
+    },
+    {
+      "material": "rail_carved_marble",
+      "vertices": 3232,
+      "indices": 6768,
+      "triangles": 2256
+    },
+    {
+      "material": "plinth_shadow",
+      "vertices": 592,
+      "indices": 1548,
+      "triangles": 516
+    },
+    {
+      "material": "cinnabar_columns",
+      "vertices": 1256,
+      "indices": 2784,
+      "triangles": 928
+    },
+    {
+      "material": "vermilion_joinery",
+      "vertices": 1584,
+      "indices": 2376,
+      "triangles": 792
+    },
+    {
+      "material": "shadowed_rosewood",
+      "vertices": 176,
+      "indices": 312,
+      "triangles": 104
+    },
+    {
+      "material": "lattice_goldwood",
+      "vertices": 5608,
+      "indices": 10512,
+      "triangles": 3504
+    },
+    {
+      "material": "bracket_jade",
+      "vertices": 1392,
+      "indices": 2088,
+      "triangles": 696
+    },
+    {
+      "material": "bracket_lapis",
+      "vertices": 1104,
+      "indices": 1656,
+      "triangles": 552
+    },
+    {
+      "material": "painted_cream",
+      "vertices": 528,
+      "indices": 792,
+      "triangles": 264
+    },
+    {
+      "material": "roof_honey_glaze",
+      "vertices": 1642,
+      "indices": 2520,
+      "triangles": 840
+    },
+    {
+      "material": "roof_tile_light",
+      "vertices": 1944,
+      "indices": 9720,
+      "triangles": 3240
+    },
+    {
+      "material": "roof_tile_shadow",
+      "vertices": 2264,
+      "indices": 11664,
+      "triangles": 3888
+    },
+    {
+      "material": "ridge_imperial_gold",
+      "vertices": 2556,
+      "indices": 9792,
+      "triangles": 3264
+    },
+    {
+      "material": "lantern_silk",
+      "vertices": 136,
+      "indices": 384,
+      "triangles": 128
+    }
+  ],
+  "authoring_instructions_read": [
+    "upstream/AGENTS.md",
+    "upstream/skills/three-live-authoring/SKILL.md",
+    "upstream/docs/llm-guide.md"
+  ],
+  "notes": [
+    "Geometry and normals are precomputed in Python; runtime authoring only constructs supported BufferGeometry and MeshStandardMaterial.",
+    "No input model, textures, pretrained weights, cloud inference, downloaded geometry, or Three.js exporters.",
+    "Ridge ornaments are deliberately abstract, not historically complete zoomorphic sculptures."
+  ]
+}

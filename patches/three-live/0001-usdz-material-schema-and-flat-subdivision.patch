@@ -1,0 +1,29 @@
+--- a/three-live/src/three-convert.ts
++++ b/three-live/src/three-convert.ts
+@@ -1890,13 +1890,11 @@
+         : '';
+ 
+     const xr = mesh.xrTraits;
+-    let meshHeaderMeta = '';
++    let meshHeaderMeta = ' (\nprepend apiSchemas = ["MaterialBindingAPI"]\n)';
+     if (xr) {
+-      const metaLines: string[] = [];
++      const metaLines: string[] = ['prepend apiSchemas = ["MaterialBindingAPI"]'];
+       if (xr.physics && xr.physics !== 'none') {
+-        metaLines.push(
+-          `prepend apiSchemas = ["PhysicsBodyAPI", "PhysicsCollisionAPI"]`,
+-        );
++        metaLines[0] = `prepend apiSchemas = ["MaterialBindingAPI", "PhysicsBodyAPI", "PhysicsCollisionAPI"]`;
+       }
+       const xrDictLines: string[] =
+         getSharedRegistry().xrTraitSerializer?.usdLines(
+@@ -1960,7 +1958,8 @@
+       usda += `double3 xformOp:translate.timeSamples = { ${tSamples} }\nquatf xformOp:orient.timeSamples = { ${rSamples} }\ndouble3 xformOp:scale.timeSamples = { ${sSamples} }\nuniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]\n`;
+     }
+ 
+-    usda += `float3[] extent = [(${formatNum(minX)}, ${formatNum(minY)}, ${formatNum(minZ)}), (${formatNum(maxX)}, ${formatNum(maxY)}, ${formatNum(maxZ)})]
++    usda += `uniform token subdivisionScheme = "none"
++float3[] extent = [(${formatNum(minX)}, ${formatNum(minY)}, ${formatNum(minZ)}), (${formatNum(maxX)}, ${formatNum(maxY)}, ${formatNum(maxZ)})]
+ int[] faceVertexCounts = [${faceVertexCountsStr}]
+ int[] faceVertexIndices = [${formatIndicesArray(mesh.indices)}]
+ point3f[] points = [${formatPointsArray(mesh.positions)}]

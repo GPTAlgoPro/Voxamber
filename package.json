@@ -1,0 +1,15 @@
+{
+  "name": "three-live-apple-palace-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reproducible Google Three-Live v1.2.3 Apple Silicon architectural model experiment",
+  "scripts": {
+    "generate": "python3 scripts/generate_palace.py",
+    "pipeline": "python3 scripts/run_pipeline.py",
+    "validate:glb": "node scripts/validate_glb.mjs",
+    "serve": "python3 scripts/serve.py"
+  },
+  "devDependencies": {
+    "gltf-validator": "2.0.0-dev.3.10"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-11-05T10:03:19.243586+00:00",
+  "checks": [
+    {
+      "kind": "client",
+      "sdk": "iphoneos",
+      "target": "arm64-apple-ios26.0",
+      "exitCode": 0,
+      "warningsAsErrors": true,
+      "strictConcurrency": "complete"
+    },
+    {
+      "kind": "extension",
+      "sdk": "iphoneos",
+      "target": "arm64-apple-ios26.0",
+      "exitCode": 0,
+      "warningsAsErrors": true,
+      "strictConcurrency": "complete"
+    },
+    {
+      "kind": "client",
+      "sdk": "iphonesimulator",
+      "target": "arm64-apple-ios26.0-simulator",
+      "exitCode": 0,
+      "warningsAsErrors": true,
+      "strictConcurrency": "complete"
+    },
+    {
+      "kind": "extension",
+      "sdk": "iphonesimulator",
+      "target": "arm64-apple-ios26.0-simulator",
+      "exitCode": 0,
+      "warningsAsErrors": true,
+      "strictConcurrency": "complete"
+    },
+    {
+      "kind": "plist",
+      "source": "Apple/ModelDownloader/Info.plist",
+      "exitCode": 0
+    },
+    {
+      "kind": "plist",
+      "source": "Apple/ModelDownloader/Downloader.entitlements",
+      "exitCode": 0
+    },
+    {
+      "kind": "plist",
+      "source": "Apple/ThreeLiveStudio/Resources/Voxamber.entitlements",
+      "exitCode": 0
+    }
+  ],
+  "sources": {
+    "Apple/ThreeLiveStudio/Models/AppleHostedModelSource.swift": "22289d4f33f9048e426cc8f33e96d86efb5d77291fee07eee5648ecc850236b2",
+    "Apple/ModelDownloader/Downloader.swift": "46d7b96a5d8d76fe6a67ce2f6239f68fb2a4420417ea583750e95383e0ff8cd0",
+    "Apple/ModelDownloader/Info.plist": "cda820fdacc9f1d6130422adda3a890db22a73ea2c0a8b61d665aefa71f15518",
+    "Apple/ModelDownloader/Downloader.entitlements": "0b914fca227874c4362bbb5ec2e108a7e31f5212bbd2b3375560d91b75395359",
+    "Apple/ThreeLiveStudio/Resources/Voxamber.entitlements": "0b914fca227874c4362bbb5ec2e108a7e31f5212bbd2b3375560d91b75395359"
+  },
+  "runtimeDownloadVerified": false,
+  "runtimeCancellationVerified": false,
+  "testFlightColdDownloadRequired": true,
+  "storeKitSandboxAppIDMayBeNil": true,
+  "officialReferences": [
+    "https://developer.apple.com/documentation/storekit/apptransaction/appid",
+    "https://developer.apple.com/documentation/backgroundassets/assetpackmanager",
+    "https://developer.apple.com/help/app-store-connect/test-a-beta-version/test-apple-hosted-asset-packs/"
+  ]
+}

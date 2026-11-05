@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "project_directory": "/Users/kaisun/Three-Live",
+  "timezone": "Asia/Shanghai",
+  "created_on": "2026-11-05",
+  "objective": "跟踪 iOS 27.3 正式版，提醒用户更新，在本项目准备 Xcode 工程，并于 2026 年 12 月进入 iPhone 离线古建筑生成研发。",
+  "automation": {
+    "id": "ios-27-3-three-live-12",
+    "kind": "heartbeat",
+    "cadence": "每小时",
+    "status": "ACTIVE",
+    "destination": "current_thread"
+  },
+  "official_baseline": {
+    "checked_on": "2026-11-05",
+    "ios": "iOS 27.3 beta",
+    "ios_build": "24C5037i",
+    "ios_announced_on": "2026-11-03",
+    "xcode": "Xcode 27.3 beta",
+    "xcode_build": "27C5020n",
+    "china_rollout_announced_on": "2026-10-31",
+    "china_rollout_window": "2026-12，具体日期尚未公布",
+    "china_scope": "首批核心 Apple 智能功能；公告未明确确认第三方 Foundation Models API 中国区可用",
+    "sources": [
+      "https://developer.apple.com/news/releases/",
+      "https://www.apple.com.cn/newsroom/2026/10/apple-intelligence-features-are-coming-to-users-in-china/",
+      "https://support.apple.com/zh-cn/121115",
+      "https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel",
+      "https://developer.apple.com/xcode/system-requirements"
+    ]
+  },
+  "milestones": {
+    "ios_final_confirmed": false,
+    "ios_final_version": null,
+    "ios_final_build": null,
+    "ios_final_release_date": null,
+    "release_update_notice_sent": false,
+    "china_foundation_models_api_confirmed": false,
+    "target_iphone_model_available": "not_checked",
+    "xcode_final_confirmed": false,
+    "xcode_design_path": "docs/plans/2026-12-iphone-offline-xcode-design.md",
+    "xcode_design_prepared": true,
+    "xcode_project_path": "Apple/ThreeLiveStudio.xcodeproj",
+    "xcode_project_created": false,
+    "xcode_build_verified": false,
+    "december_kickoff_not_before": "2026-12-01",
+    "december_kickoff_reported": false
+  },
+  "last_check": {
+    "checked_at": "2026-11-05T10:35:23+08:00",
+    "result": "正式版未发布；官方基线仍为 27.3 beta。12 月中国区推出计划已由 Apple 新闻稿确认。",
+    "source": "https://developer.apple.com/news/releases/"
+  },
+  "events": [
+    {
+      "date": "2026-11-05",
+      "event": "已创建并读取确认每小时当前对话发布跟踪；已完成离线 Xcode 工程设计与 12 月分周计划。工程尚未创建、构建或安装。",
+      "documents": [
+        "docs/tracking/ios-27.3-monitoring-plan.md",
+        "docs/plans/2026-12-iphone-offline-xcode-design.md"
+      ]
+    }
+  ]
+}

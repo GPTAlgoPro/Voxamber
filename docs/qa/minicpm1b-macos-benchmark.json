@@ -1,0 +1,76 @@
+{
+  "cases" : [
+    {
+      "exactParameters" : true,
+      "id" : "palace-default",
+      "mismatches" : [
+
+      ],
+      "output" : "{\n    \"name\": \"default_palace\",\n    \"kind\": \"palace\",\n    \"width\": 1,\n    \"depth\": 0.8,\n    \"height\": 0.6,\n    \"floors\": 1,\n    \"roofTiers\": 2,\n    \"roofColor\": \"gold\",\n    \"columnColor\": \"vermilion\",\n    \"detail\": \"standard\",\n    \"eaveLift\": 0.035\n}",
+      "prompt" : "建一座金瓦朱柱的双重檐宫殿，尺寸用默认值。",
+      "seconds" : 4.4659602080000003,
+      "validSchema" : true
+    },
+    {
+      "exactParameters" : true,
+      "id" : "pavilion-dimensions",
+      "mismatches" : [
+
+      ],
+      "output" : "{\n    \"name\": \"亭\",\n    \"kind\": \"pavilion\",\n    \"width\": 0.9,\n    \"depth\": 0.9,\n    \"height\": 0.8,\n    \"floors\": 1,\n    \"roofTiers\": 1,\n    \"roofColor\": \"jade\",\n    \"columnColor\": \"ivory\",\n    \"detail\": \"standard\",\n    \"eaveLift\": 0.03\n}",
+      "prompt" : "做一座青绿琉璃瓦、象牙白柱子的亭，宽0.9米深0.9米高0.8米，单层单檐。",
+      "seconds" : 3.4840340420000002,
+      "validSchema" : true
+    },
+    {
+      "exactParameters" : true,
+      "id" : "tower-levels",
+      "mismatches" : [
+
+      ],
+      "output" : "{\n    \"name\": \"塔楼\",\n    \"kind\": \"tower\",\n    \"width\": 0.65,\n    \"depth\": 0.65,\n    \"height\": 1.5,\n    \"floors\": 3,\n    \"roofTiers\": 1,\n    \"roofColor\": \"slate\",\n    \"columnColor\": \"walnut\",\n    \"detail\": \"standard\",\n    \"eaveLift\": 0.025\n}",
+      "prompt" : "三层青灰瓦塔楼，木色柱子，宽0.65米深0.65米高1.5米，每层一重檐。",
+      "seconds" : 3.4759696249999998,
+      "validSchema" : true
+    },
+    {
+      "exactParameters" : true,
+      "id" : "edit-preserve",
+      "mismatches" : [
+
+      ],
+      "output" : "{\"name\":\"琉金重檐殿\",\"kind\":\"palace\",\"width\":1,\"depth\":0.8,\"height\":0.6,\"floors\":1,\"roofTiers\":2,\"roofColor\":\"slate\",\"columnColor\":\"vermilion\",\"detail\":\"standard\",\"eaveLift\":0.035,\"columnColor\":\"vermilion\"}",
+      "prompt" : "保持尺寸和所有其他参数，只把屋顶换成青灰色。",
+      "seconds" : 2.7438254579999999,
+      "validSchema" : true
+    },
+    {
+      "exactParameters" : false,
+      "id" : "edit-dimensions",
+      "mismatches" : [
+        "floors"
+      ],
+      "output" : "{\"name\": \"碧瓦清风亭\", \"kind\": \"pavilion\", \"width\": 1.2, \"depth\": 0.8, \"height\": 1, \"floors\": 2, \"roofTiers\": 2, \"roofColor\": \"gold\", \"columnColor\": \"vermilion\", \"detail\": \"fine\", \"eaveLift\": 0.05, \"columnColor\": \"vermilion\"}",
+      "prompt" : "宽改1.2米深0.8米高1米，金瓦朱红柱子，双重檐。",
+      "seconds" : 3.3610576669999999,
+      "validSchema" : true
+    },
+    {
+      "exactParameters" : true,
+      "id" : "edit-combination",
+      "mismatches" : [
+
+      ],
+      "output" : "{\"name\": \"青瓦望月楼\", \"kind\": \"tower\", \"width\": 0.65, \"depth\": 0.65, \"height\": 1.1, \"floors\": 2, \"roofTiers\": 2, \"roofColor\": \"gold\", \"columnColor\": \"walnut\", \"detail\": \"standard\", \"eaveLift\": 0.025}",
+      "prompt" : "把楼层改为二层，每层改双重檐，屋顶换成金色。保留其他参数。",
+      "seconds" : 3.4531289580000002,
+      "validSchema" : true
+    }
+  ],
+  "date" : "2026-11-05T07:46:39Z",
+  "device" : "kaisun.local",
+  "loadSeconds" : 9.579841708,
+  "modelDirectory" : "Apple\/.build\/Models\/minicpm-v-4.7-1b-q4km\/MiniCPM-V-4_7-1B-Q4_K_M.gguf",
+  "physicalMemoryBytes" : 51539607552,
+  "runtime" : "llama.cpp native C++ \/ Metal"
+}

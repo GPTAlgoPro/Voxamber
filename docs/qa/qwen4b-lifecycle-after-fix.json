@@ -1,0 +1,22 @@
+{
+  "cycles" : [
+    {
+      "activeAfterUnload" : 195907564,
+      "activeBeforeUnload" : 2367680052,
+      "cycle" : 1,
+      "peakBytes" : 3034562212
+    },
+    {
+      "activeAfterUnload" : 445243362,
+      "activeBeforeUnload" : 2563587608,
+      "cycle" : 2,
+      "peakBytes" : 3230469768
+    },
+    {
+      "activeAfterUnload" : 872673294,
+      "activeBeforeUnload" : 2812923406,
+      "cycle" : 3,
+      "peakBytes" : 3479805566
+    }
+  ]
+}

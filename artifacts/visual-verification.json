@@ -1,0 +1,106 @@
+{
+  "verified_at_utc": "2026-11-05T01:02:00.753228+00:00",
+  "files_match_compile_receipt": true,
+  "macOS_Preview": {
+    "opened_file": "artifacts/palace.usdz",
+    "sha256": "88a1a44e41151008016665701cd62d6964a6a2005f0a7540d1365956584626ab",
+    "screenshot": "artifacts/macos-preview.png",
+    "observed": "Complete hall, roofs, railings and stairs displayed; triangular roof artifacts gone after explicit subdivisionScheme=none",
+    "verification": "Actual native UI via computer-use screenshot"
+  },
+  "Blender_matched_camera_import": {
+    "glb": {
+      "file": "palace.glb",
+      "mesh_objects": 17,
+      "vertices": 26150,
+      "triangles": 22040,
+      "bounds_blender_z_up": [
+        [
+          -0.5040000081062317,
+          -0.4344000220298767,
+          0.0
+        ],
+        [
+          0.5040000081062317,
+          0.38496002554893494,
+          0.42215999960899353
+        ]
+      ],
+      "materials": [
+        "Material_0",
+        "Material_1",
+        "Material_10",
+        "Material_11",
+        "Material_12",
+        "Material_13",
+        "Material_14",
+        "Material_15",
+        "Material_16",
+        "Material_2",
+        "Material_3",
+        "Material_4",
+        "Material_5",
+        "Material_6",
+        "Material_7",
+        "Material_8",
+        "Material_9"
+      ],
+      "note": "Imported artifact rendered in Blender; geometry originated in Google Three-Live native compiler."
+    },
+    "usdz": {
+      "file": "palace.usdz",
+      "mesh_objects": 17,
+      "vertices": 26150,
+      "triangles": 22040,
+      "bounds_blender_z_up": [
+        [
+          -0.5040000081062317,
+          -0.4343999922275543,
+          -2.880999794285799e-08
+        ],
+        [
+          0.5040000081062317,
+          0.38495999574661255,
+          0.4221600294113159
+        ]
+      ],
+      "materials": [
+        "Material_0",
+        "Material_1",
+        "Material_10",
+        "Material_11",
+        "Material_12",
+        "Material_13",
+        "Material_14",
+        "Material_15",
+        "Material_16",
+        "Material_2",
+        "Material_3",
+        "Material_4",
+        "Material_5",
+        "Material_6",
+        "Material_7",
+        "Material_8",
+        "Material_9"
+      ],
+      "note": "Imported artifact rendered in Blender; geometry originated in Google Three-Live native compiler."
+    }
+  },
+  "browser": {
+    "success": true,
+    "initialGLB": {
+      "loaded": true,
+      "error": null,
+      "materials": 17
+    },
+    "browserWorkerRecompile": {
+      "success": true,
+      "elapsed_ms": 106.80000001192093,
+      "materials": 17,
+      "source_bytes": 1037397
+    },
+    "engine": "Google Three-Live v1.2.3 Web Worker; separate from native Rust compiler"
+  },
+  "iPhone_physical_AR": "not performed",
+  "thumbnail_command": "qlmanage thumbnail task was stopped after it did not finish; Preview UI and RealityKit readback used for native verification"
+}

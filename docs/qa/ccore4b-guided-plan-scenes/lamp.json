@@ -1,0 +1,93 @@
+{
+  "name" : "红色圆锥台灯",
+  "nodes" : [
+    {
+      "color" : "#68717a",
+      "id" : "base",
+      "metallic" : 0.25,
+      "position" : [
+        0,
+        0.06,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.55,
+      "size" : [
+        0.48,
+        0.12,
+        0.48
+      ]
+    },
+    {
+      "color" : "#68717a",
+      "id" : "stem",
+      "metallic" : 0.25,
+      "position" : [
+        0,
+        0.407,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.55,
+      "size" : [
+        0.055,
+        0.58,
+        0.055
+      ]
+    },
+    {
+      "color" : "#a51f25",
+      "id" : "shade",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.904,
+        0
+      ],
+      "primitive" : "cone",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.38,
+      "size" : [
+        0.48,
+        0.42,
+        0.48
+      ]
+    },
+    {
+      "color" : "#ffd68a",
+      "id" : "bulb",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.904,
+        0
+      ],
+      "primitive" : "sphere",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.25,
+      "size" : [
+        0.16,
+        0.2,
+        0.16
+      ]
+    }
+  ]
+}

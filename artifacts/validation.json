@@ -1,0 +1,123 @@
+{
+  "compiler": "Google Three-Live v1.2.3 official macOS arm64 release",
+  "upstream_commit": "c0ff24b628795286a175f1a71611673df5dbc05d",
+  "steps": [
+    {
+      "name": "host_geometry_generation",
+      "elapsed_ms": 210.21,
+      "exit_code": 0,
+      "stdout": "{\n  \"script_bytes\": 1037397,\n  \"meshes\": 17,\n  \"vertices\": 26150,\n  \"indices\": 66120,\n  \"triangles\": 22040\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "native_scene_validation",
+      "elapsed_ms": 200.93,
+      "exit_code": 0,
+      "stdout": "Scene validation successful:\n  Meshes: 17\n    [0] 'courtyard_basalt' - 24 vertices, 36 indices\n    [1] 'paving_sandstone' - 960 vertices, 1440 indices\n    [2] 'terrace_warm_marble' - 1152 vertices, 1728 indices\n    [3] 'rail_carved_marble' - 3232 vertices, 6768 indices\n    [4] 'plinth_shadow' - 592 vertices, 1548 indices\n    [5] 'cinnabar_columns' - 1256 vertices, 2784 indices\n    [6] 'vermilion_joinery' - 1584 vertices, 2376 indices\n    [7] 'shadowed_rosewood' - 176 vertices, 312 indices\n    [8] 'lattice_goldwood' - 5608 vertices, 10512 indices\n    [9] 'bracket_jade' - 1392 vertices, 2088 indices\n    [10] 'bracket_lapis' - 1104 vertices, 1656 indices\n    [11] 'painted_cream' - 528 vertices, 792 indices\n    [12] 'roof_honey_glaze' - 1642 vertices, 2520 indices\n    [13] 'roof_tile_light' - 1944 vertices, 9720 indices\n    [14] 'roof_tile_shadow' - 2264 vertices, 11664 indices\n    [15] 'ridge_imperial_gold' - 2556 vertices, 9792 indices\n    [16] 'lantern_silk' - 136 vertices, 384 indices\n  Materials: 17\n  Lights: 0\n",
+      "stderr": ""
+    },
+    {
+      "name": "native_js_to_glb",
+      "elapsed_ms": 200.54,
+      "exit_code": 0,
+      "stdout": "Successfully compiled \"scenes/palace.js\" -> \"/Users/kaisun/Three-Live/artifacts/palace.glb\" (906532 bytes)\n",
+      "stderr": ""
+    },
+    {
+      "name": "native_js_to_usdz",
+      "elapsed_ms": 351.96,
+      "exit_code": 0,
+      "stdout": "Successfully compiled \"scenes/palace.js\" -> \"/Users/kaisun/Three-Live/artifacts/palace-raw.usdz\" (1650759 bytes)\n",
+      "stderr": ""
+    },
+    {
+      "name": "native_glb_to_usdz",
+      "elapsed_ms": 172.89,
+      "exit_code": 0,
+      "stdout": "Successfully compiled \"/Users/kaisun/Three-Live/artifacts/palace.glb\" -> \"/Users/kaisun/Three-Live/artifacts/palace-from-glb-raw.usdz\" (1650759 bytes)\n",
+      "stderr": ""
+    },
+    {
+      "name": "raw_apple_compliance",
+      "elapsed_ms": 98.98,
+      "exit_code": 1,
+      "stdout": "\nValidation Result with no explicit variants set\nError: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/courtyard_basalt>.\n\tPossible Fixes which can be applied:\n\t- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..\nError: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/rail_carved_marble>.\n\tPossible Fixes which can be applied:\n\t- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..\nError: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/paving_sandstone>.\n\tPossible Fixes which can be applied:\n\t- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..\nError: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/terrace_warm_marble>.\n\tPossible Fixes which can be applied:\n\t- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..\nError: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/vermilion_joinery>.\n\tPossible Fixes which can be applied:\n\t- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..\nError: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/lattice_goldwood>.\n\tPossible Fixes which can be applied:\n\t- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..\nError: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/plinth_shadow>.\n\tPossible Fixes which can be applied:\n\t- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..\nError: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/shadowed_rosewood>.\n\tPossible Fixes which can be applied:\n\t- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..\nError: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/bracket_lapis>.\n\tPossible Fixes which can be applied:\n\t- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..\nError: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/painted_cream>.\n\tPossible Fixes which can be applied:\n\t- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..\nError: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/cinnabar_columns>.\n\tPossible Fixes which can be applied:\n\t- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..\nError: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/bracket_jade>.\n\tPossible Fixes which can be applied:\n\t- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..\nError: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/roof_tile_light>.\n\tPossible Fixes which can be applied:\n\t- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..\nError: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/roof_tile_shadow>.\n\tPossible Fixes which can be applied:\n\t- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..\nError: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/lantern_silk>.\n\tPossible Fixes which can be applied:\n\t- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..\nError: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/ridge_imperial_gold>.\n\tPossible Fixes which can be applied:\n\t- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..\nError: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/roof_honey_glaze>.\n\tPossible Fixes which can be applied:\n\t- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..\nFailed!\n",
+      "stderr": ""
+    },
+    {
+      "name": "apple_usdc_encoding",
+      "elapsed_ms": 44.37,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "apple_usdz_packaging",
+      "elapsed_ms": 23.69,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "final_apple_compliance",
+      "elapsed_ms": 78.16,
+      "exit_code": 0,
+      "stdout": "\nValidation Result with no explicit variants set\nSuccess!\n",
+      "stderr": ""
+    },
+    {
+      "name": "khronos_glb_validation",
+      "elapsed_ms": 100.44,
+      "exit_code": 0,
+      "stdout": "{\n  \"input\": \"palace.glb\",\n  \"bytes\": 906532,\n  \"meshes\": 17,\n  \"materials\": 17,\n  \"nodes\": 17,\n  \"vertices\": 26150,\n  \"triangles\": 22040,\n  \"bounds_world_meters\": [\n    [\n      -0.504,\n      0.504\n    ],\n    [\n      0,\n      0.42216\n    ],\n    [\n      -0.38495999999999997,\n      0.43440000000000006\n    ]\n  ],\n  \"issues\": {\n    \"numErrors\": 0,\n    \"numWarnings\": 0,\n    \"numInfos\": 0,\n    \"numHints\": 0,\n    \"messages\": [],\n    \"truncated\": false\n  },\n  \"generator\": \"Three-Live Compiler\",\n  \"validatorVersion\": \"2.0.0-dev.3.10\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "macOS_realitykit_import_readback",
+      "elapsed_ms": 303.48,
+      "exit_code": 0,
+      "stdout": "{\n  \"boundsMetres\" : {\n    \"extents\" : [\n      1.0080000162124634,\n      0.42215999960899353,\n      0.81936001777648926\n    ],\n    \"max\" : [\n      0.50400000810623169,\n      0.42215999960899353,\n      0.43439999222755432\n    ],\n    \"min\" : [\n      -0.50400000810623169,\n      0,\n      -0.38495999574661255\n    ]\n  },\n  \"engine\" : \"Apple RealityKit Entity(contentsOf:)\",\n  \"entities\" : 19,\n  \"input\" : \"\\/Users\\/kaisun\\/Three-Live\\/artifacts\\/palace.usdz\",\n  \"invalidValues\" : 0,\n  \"loadAndReadbackSeconds\" : 0.23838198184967041,\n  \"modelEntities\" : 17,\n  \"models\" : [\n    {\n      \"materials\" : 1,\n      \"materialTypes\" : [\n        \"PhysicallyBasedMaterial\"\n      ],\n      \"name\" : \"courtyard_basalt\",\n      \"normals\" : 24,\n      \"parts\" : 1,\n      \"triangles\" : 12,\n      \"vertices\" : 24\n    },\n    {\n      \"materials\" : 1,\n      \"materialTypes\" : [\n        \"PhysicallyBasedMaterial\"\n      ],\n      \"name\" : \"paving_sandstone\",\n      \"normals\" : 960,\n      \"parts\" : 1,\n      \"triangles\" : 480,\n      \"vertices\" : 960\n    },\n    {\n      \"materials\" : 1,\n      \"materialTypes\" : [\n        \"PhysicallyBasedMaterial\"\n      ],\n      \"name\" : \"terrace_warm_marble\",\n      \"normals\" : 1152,\n      \"parts\" : 1,\n      \"triangles\" : 576,\n      \"vertices\" : 1152\n    },\n    {\n      \"materials\" : 1,\n      \"materialTypes\" : [\n        \"PhysicallyBasedMaterial\"\n      ],\n      \"name\" : \"rail_carved_marble\",\n      \"normals\" : 3232,\n      \"parts\" : 1,\n      \"triangles\" : 2256,\n      \"vertices\" : 3232\n    },\n    {\n      \"materials\" : 1,\n      \"materialTypes\" : [\n        \"PhysicallyBasedMaterial\"\n      ],\n      \"name\" : \"plinth_shadow\",\n      \"normals\" : 592,\n      \"parts\" : 1,\n      \"triangles\" : 516,\n      \"vertices\" : 592\n    },\n    {\n      \"materials\" : 1,\n      \"materialTypes\" : [\n        \"PhysicallyBasedMaterial\"\n      ],\n      \"name\" : \"cinnabar_columns\",\n      \"normals\" : 1256,\n      \"parts\" : 1,\n      \"triangles\" : 928,\n      \"vertices\" : 1256\n    },\n    {\n      \"materials\" : 1,\n      \"materialTypes\" : [\n        \"PhysicallyBasedMaterial\"\n      ],\n      \"name\" : \"vermilion_joinery\",\n      \"normals\" : 1584,\n      \"parts\" : 1,\n      \"triangles\" : 792,\n      \"vertices\" : 1584\n    },\n    {\n      \"materials\" : 1,\n      \"materialTypes\" : [\n        \"PhysicallyBasedMaterial\"\n      ],\n      \"name\" : \"shadowed_rosewood\",\n      \"normals\" : 176,\n      \"parts\" : 1,\n      \"triangles\" : 104,\n      \"vertices\" : 176\n    },\n    {\n      \"materials\" : 1,\n      \"materialTypes\" : [\n        \"PhysicallyBasedMaterial\"\n      ],\n      \"name\" : \"lattice_goldwood\",\n      \"normals\" : 5608,\n      \"parts\" : 1,\n      \"triangles\" : 3504,\n      \"vertices\" : 5608\n    },\n    {\n      \"materials\" : 1,\n      \"materialTypes\" : [\n        \"PhysicallyBasedMaterial\"\n      ],\n      \"name\" : \"bracket_jade\",\n      \"normals\" : 1392,\n      \"parts\" : 1,\n      \"triangles\" : 696,\n      \"vertices\" : 1392\n    },\n    {\n      \"materials\" : 1,\n      \"materialTypes\" : [\n        \"PhysicallyBasedMaterial\"\n      ],\n      \"name\" : \"bracket_lapis\",\n      \"normals\" : 1104,\n      \"parts\" : 1,\n      \"triangles\" : 552,\n      \"vertices\" : 1104\n    },\n    {\n      \"materials\" : 1,\n      \"materialTypes\" : [\n        \"PhysicallyBasedMaterial\"\n      ],\n      \"name\" : \"painted_cream\",\n      \"normals\" : 528,\n      \"parts\" : 1,\n      \"triangles\" : 264,\n      \"vertices\" : 528\n    },\n    {\n      \"materials\" : 1,\n      \"materialTypes\" : [\n        \"PhysicallyBasedMaterial\"\n      ],\n      \"name\" : \"roof_honey_glaze\",\n      \"normals\" : 1456,\n      \"parts\" : 1,\n      \"triangles\" : 840,\n      \"vertices\" : 1456\n    },\n    {\n      \"materials\" : 1,\n      \"materialTypes\" : [\n        \"PhysicallyBasedMaterial\"\n      ],\n      \"name\" : \"roof_tile_light\",\n      \"normals\" : 1944,\n      \"parts\" : 1,\n      \"triangles\" : 3240,\n      \"vertices\" : 1944\n    },\n    {\n      \"materials\" : 1,\n      \"materialTypes\" : [\n        \"PhysicallyBasedMaterial\"\n      ],\n      \"name\" : \"roof_tile_shadow\",\n      \"normals\" : 2264,\n      \"parts\" : 1,\n      \"triangles\" : 3888,\n      \"vertices\" : 2264\n    },\n    {\n      \"materials\" : 1,\n      \"materialTypes\" : [\n        \"PhysicallyBasedMaterial\"\n      ],\n      \"name\" : \"ridge_imperial_gold\",\n      \"normals\" : 2556,\n      \"parts\" : 1,\n      \"triangles\" : 3264,\n      \"vertices\" : 2556\n    },\n    {\n      \"materials\" : 1,\n      \"materialTypes\" : [\n        \"PhysicallyBasedMaterial\"\n      ],\n      \"name\" : \"lantern_silk\",\n      \"normals\" : 136,\n      \"parts\" : 1,\n      \"triangles\" : 128,\n      \"vertices\" : 136\n    }\n  ],\n  \"platform\" : \"Version 27.2 (Build 26B123)\",\n  \"scope\" : \"Native macOS import, mesh\\/material readback and finite bounds; no rendered UI or physical iPhone AR test\",\n  \"success\" : true,\n  \"triangles\" : 22040,\n  \"vertices\" : 25964\n}\n",
+      "stderr": ""
+    }
+  ],
+  "usd_postprocess": {
+    "applied_schema": "MaterialBindingAPI",
+    "subdivisionScheme": "none",
+    "mesh_prims_updated": 17,
+    "vertex_index_or_material_values_changed": false,
+    "reason": "Declare material binding schema and preserve authored triangles instead of the USD default Catmull-Clark surface"
+  },
+  "cross_format_readback": {
+    "model_counts_equal": true,
+    "triangle_counts_equal": true,
+    "bounds_equal_within_meters": 1e-05,
+    "native_direct_and_glb_transcoded_usdz_identical": true
+  },
+  "files": {
+    "palace.js": {
+      "bytes": 1037397,
+      "sha256": "5d6a492a4b4ca6df05beb2d9c6a2da471aa4042ac8825cefb07d7f3e2ea8e41a"
+    },
+    "palace.glb": {
+      "bytes": 906532,
+      "sha256": "a06c6de71415c52e268a178e13adfa7bca13bf8372cb7620b9c246ec380402bc"
+    },
+    "palace-raw.usdz": {
+      "bytes": 1650759,
+      "sha256": "5940c0688f20d20d112c76b3085bd538dd44df1e17a88e279fde991dd2757cb4"
+    },
+    "palace-from-glb-raw.usdz": {
+      "bytes": 1650759,
+      "sha256": "5940c0688f20d20d112c76b3085bd538dd44df1e17a88e279fde991dd2757cb4"
+    },
+    "palace.usdz": {
+      "bytes": 636850,
+      "sha256": "88a1a44e41151008016665701cd62d6964a6a2005f0a7540d1365956584626ab"
+    }
+  },
+  "compiler_sha256": "70dbe721a1fc00f6c169b16d2ef4fd8a16d765ff0aaab1f6c9165241e00eac6c",
+  "runtime_acceptance": {
+    "macOS_realitykit": true,
+    "iPhone_physical_AR": "not performed"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "cases" : [
+    {
+      "diagnostics" : [
+
+      ],
+      "id" : "chair",
+      "nodeCount" : 7,
+      "primitiveTypes" : [
+        "box",
+        "cylinder"
+      ],
+      "prompt" : "棕色木椅，包含坐面、薄靠背和四条腿，坐面约0.45米高，不要无关大平台。",
+      "rawRelations" : "{\"name\":\"棕色木椅\",\"nodes\":[{\"id\":\"chair_base\",\"primitive\":\"box\",\"dimensions\":{\"width\":0.45,\"height\":0.02,\"depth\":0.45},\"color\":\"#8B4513\"},{\"id\":\"chair_seat\",\"primitive\":\"box\",\"dimensions\":{\"width\":0.42,\"height\":0.05,\"depth\":0.42},\"color\":\"#8B4513\",\"attach\":{\"parent\":\"chair_base\",\"face\":\"top\",\"xOffset\":0,\"zOffset\":0.02}},{\"id\":\"chair_backrest\",\"primitive\":\"box\",\"dimensions\":{\"width\":0.08,\"height\":0.35,\"depth\":0.08},\"color\":\"#8B4513\",\"attach\":{\"parent\":\"chair_seat\",\"face\":\"top\",\"xOffset\":0,\"zOffset\":0.02}},{\"id\":\"chair_leg_fl\",\"primitive\":\"cylinder\",\"dimensions\":{\"width\":0.05,\"height\":0.55,\"depth\":0.05},\"color\":\"#8B4513\",\"attach\":{\"parent\":\"chair_base\",\"face\":\"bottom\",\"xOffset\":0.15,\"zOffset\":0.05}},{\"id\":\"chair_leg_fr\",\"primitive\":\"cylinder\",\"dimensions\":{\"width\":0.05,\"height\":0.55,\"depth\":0.05},\"color\":\"#8B4513\",\"attach\":{\"parent\":\"chair_base\",\"face\":\"bottom\",\"xOffset\":-0.15,\"zOffset\":0.05}},{\"id\":\"chair_leg_bl\",\"primitive\":\"cylinder\",\"dimensions\":{\"width\":0.05,\"height\":0.55,\"depth\":0.05},\"color\":\"#8B4513\",\"attach\":{\"parent\":\"chair_base\",\"face\":\"bottom\",\"xOffset\":0.15,\"zOffset\":-0.05}},{\"id\":\"chair_leg_br\",\"primitive\":\"cylinder\",\"dimensions\":{\"width\":0.05,\"height\":0.55,\"depth\":0.05},\"color\":\"#8B4513\",\"attach\":{\"parent\":\"chair_base\",\"face\":\"bottom\",\"xOffset\":-0.15,\"zOffset\":-0.05}}]}",
+      "resolvedScene" : "{\n  \"name\" : \"棕色木椅\",\n  \"nodes\" : [\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"chair_base\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0,\n        0.55799997,\n        0\n      ],\n      \"primitive\" : \"box\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.45,\n        0.02,\n        0.45\n      ]\n    },\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"chair_seat\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0,\n        0.59099996,\n        0.02\n      ],\n      \"primitive\" : \"box\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.42,\n        0.05,\n        0.42\n      ]\n    },\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"chair_backrest\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0,\n        0.788,\n        0.039999995\n      ],\n      \"primitive\" : \"box\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.08,\n        0.35,\n        0.08\n      ]\n    },\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"chair_leg_fl\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0.15,\n        0.27499998,\n        0.05\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.05,\n        0.55,\n        0.05\n      ]\n    },\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"chair_leg_fr\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        -0.15,\n        0.27499998,\n        0.05\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.05,\n        0.55,\n        0.05\n      ]\n    },\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"chair_leg_bl\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0.15,\n        0.27499998,\n        -0.05\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.05,\n        0.55,\n        0.05\n      ]\n    },\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"chair_leg_br\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        -0.15,\n        0.27499998,\n        -0.05\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.05,\n        0.55,\n        0.05\n      ]\n    }\n  ]\n}",
+      "seconds" : 7.3899949789047241,
+      "semanticChecksPass" : true,
+      "semanticDiagnostics" : [
+
+      ],
+      "spatialChecksPass" : true,
+      "triangleCount" : 548,
+      "validSchema" : true
+    },
+    {
+      "diagnostics" : [
+
+      ],
+      "id" : "robot",
+      "nodeCount" : 8,
+      "primitiveTypes" : [
+        "box",
+        "cylinder",
+        "sphere"
+      ],
+      "prompt" : "蓝色玩具机器人，立方体头和躯干、左右手臂和双腿、两个球形黄色眼睛，正面朝+Z。",
+      "rawRelations" : "{\n  \"name\": \"蓝色立方体机器人\",\n  \"nodes\": [\n    {\n      \"id\": \"base\",\n      \"primitive\": \"box\",\n      \"dimensions\": {\n        \"width\": 0.4,\n        \"height\": 0.3,\n        \"depth\": 0.2\n      },\n      \"color\": \"#333333\"\n    },\n    {\n      \"id\": \"head\",\n      \"primitive\": \"box\",\n      \"dimensions\": {\n        \"width\": 0.25,\n        \"height\": 0.25,\n        \"depth\": 0.25\n      },\n      \"color\": \"#1E90FF\",\n      \"attach\": {\n        \"parent\": \"base\",\n        \"face\": \"top\",\n        \"xOffset\": 0,\n        \"yOffset\": 0.12,\n        \"zOffset\": 0\n      }\n    },\n    {\n      \"id\": \"arm_l\",\n      \"primitive\": \"cylinder\",\n      \"dimensions\": {\n        \"width\": 0.05,\n        \"height\": 0.35,\n        \"depth\": 0.05\n      },\n      \"color\": \"#1E90FF\",\n      \"attach\": {\n        \"parent\": \"head\",\n        \"face\": \"front\",\n        \"xOffset\": -0.12,\n        \"yOffset\": 0,\n        \"zOffset\": 0.1\n      }\n    },\n    {\n      \"id\": \"arm_r\",\n      \"primitive\": \"cylinder\",\n      \"dimensions\": {\n        \"width\": 0.05,\n        \"height\": 0.35,\n        \"depth\": 0.05\n      },\n      \"color\": \"#1E90FF\",\n      \"attach\": {\n        \"parent\": \"head\",\n        \"face\": \"front\",\n        \"xOffset\": 0.12,\n        \"yOffset\": 0,\n        \"zOffset\": 0.1\n      }\n    },\n    {\n      \"id\": \"leg_l\",\n      \"primitive\": \"cylinder\",\n      \"dimensions\": {\n        \"width\": 0.06,\n        \"height\": 0.3,\n        \"depth\": 0.06\n      },\n      \"color\": \"#1E90FF\",\n      \"attach\": {\n        \"parent\": \"base\",\n        \"face\": \"bottom\",\n        \"xOffset\": -0.15,\n        \"yOffset\": 0,\n        \"zOffset\": 0.05\n      }\n    },\n    {\n      \"id\": \"leg_r\",\n      \"primitive\": \"cylinder\",\n      \"dimensions\": {\n        \"width\": 0.06,\n        \"height\": 0.3,\n        \"depth\": 0.06\n      },\n      \"color\": \"#1E90FF\",\n      \"attach\": {\n        \"parent\": \"base\",\n        \"face\": \"bottom\",\n        \"xOffset\": 0.15,\n        \"yOffset\": 0,\n        \"zOffset\": 0.05\n      }\n    },\n    {\n      \"id\": \"eye_l\",\n      \"primitive\": \"sphere\",\n      \"dimensions\": {\n        \"width\": 0.04,\n        \"height\": 0.04,\n        \"depth\": 0.04\n      },\n      \"color\": \"#FFD700\",\n      \"attach\": {\n        \"parent\": \"head\",\n        \"face\": \"front\",\n        \"xOffset\": -0.06,\n        \"yOffset\": 0,\n        \"zOffset\": 0.02\n      }\n    },\n    {\n      \"id\": \"eye_r\",\n      \"primitive\": \"sphere\",\n      \"dimensions\": {\n        \"width\": 0.04,\n        \"height\": 0.04,\n        \"depth\": 0.04\n      },\n      \"color\": \"#FFD700\",\n      \"attach\": {\n        \"parent\": \"head\",\n        \"face\": \"front\",\n        \"xOffset\": 0.06,\n        \"yOffset\": 0,\n        \"zOffset\": 0.02\n      }\n    }\n  ]\n}",
+      "resolvedScene" : "{\n  \"name\" : \"蓝色立方体机器人\",\n  \"nodes\" : [\n    {\n      \"color\" : \"#333333\",\n      \"id\" : \"base\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0,\n        0.44700003,\n        0\n      ],\n      \"primitive\" : \"box\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.4,\n        0.3,\n        0.2\n      ]\n    },\n    {\n      \"color\" : \"#1E90FF\",\n      \"id\" : \"head\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0,\n        0.71900004,\n        0\n      ],\n      \"primitive\" : \"box\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.25,\n        0.25,\n        0.25\n      ]\n    },\n    {\n      \"color\" : \"#1E90FF\",\n      \"id\" : \"arm_l\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        -0.12,\n        0.71900004,\n        0.147\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.05,\n        0.35,\n        0.05\n      ]\n    },\n    {\n      \"color\" : \"#1E90FF\",\n      \"id\" : \"arm_r\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0.12,\n        0.71900004,\n        0.147\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.05,\n        0.35,\n        0.05\n      ]\n    },\n    {\n      \"color\" : \"#1E90FF\",\n      \"id\" : \"leg_l\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        -0.15,\n        0.15,\n        0.05\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.06,\n        0.3,\n        0.06\n      ]\n    },\n    {\n      \"color\" : \"#1E90FF\",\n      \"id\" : \"leg_r\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0.15,\n        0.15,\n        0.05\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.06,\n        0.3,\n        0.06\n      ]\n    },\n    {\n      \"color\" : \"#FFD700\",\n      \"id\" : \"eye_l\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        -0.06,\n        0.71900004,\n        0.142\n      ],\n      \"primitive\" : \"sphere\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.04,\n        0.04,\n        0.04\n      ]\n    },\n    {\n      \"color\" : \"#FFD700\",\n      \"id\" : \"eye_r\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0.06,\n        0.71900004,\n        0.142\n      ],\n      \"primitive\" : \"sphere\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.04,\n        0.04,\n        0.04\n      ]\n    }\n  ]\n}",
+      "seconds" : 13.872109055519104,
+      "semanticChecksPass" : true,
+      "semanticDiagnostics" : [
+
+      ],
+      "spatialChecksPass" : true,
+      "triangleCount" : 1976,
+      "validSchema" : true
+    },
+    {
+      "diagnostics" : [
+
+      ],
+      "id" : "lamp",
+      "nodeCount" : 5,
+      "primitiveTypes" : [
+        "box",
+        "cone",
+        "cylinder",
+        "sphere"
+      ],
+      "prompt" : "一盏红色圆锥灯罩台灯，灰色圆柱底座和细圆柱支杆，可以加球形灯泡，整体约0.8米高。",
+      "rawRelations" : "{\"name\":\"RedConeLamp\",\"nodes\":[{\"id\":\"base\",\"primitive\":\"cylinder\",\"dimensions\":{\"width\":0.15,\"height\":0.05,\"depth\":0.15},\"color\":\"#808080\"},{\"id\":\"stem\",\"primitive\":\"cylinder\",\"dimensions\":{\"width\":0.03,\"height\":0.55,\"depth\":0.03},\"color\":\"#808080\",\"attach\":{\"parent\":\"base\",\"face\":\"top\",\"xOffset\":0,\"yOffset\":0.025,\"zOffset\":0.025}},{\"id\":\"bulb\",\"primitive\":\"sphere\",\"dimensions\":{\"width\":0.06,\"height\":0.06,\"depth\":0.06},\"color\":\"#FFFFFF\",\"attach\":{\"parent\":\"stem\",\"face\":\"top\",\"xOffset\":0,\"yOffset\":0.03,\"zOffset\":0.03}},{\"id\":\"lampshade\",\"primitive\":\"cone\",\"dimensions\":{\"width\":0.12,\"height\":0.25,\"depth\":0.12},\"color\":\"#CC0000\",\"attach\":{\"parent\":\"bulb\",\"face\":\"top\",\"xOffset\":0,\"yOffset\":0.025,\"zOffset\":0.025}},{\"id\":\"switch\",\"primitive\":\"box\",\"dimensions\":{\"width\":0.02,\"height\":0.03,\"depth\":0.02},\"color\":\"#555555\",\"attach\":{\"parent\":\"stem\",\"face\":\"front\",\"xOffset\":0.01,\"yOffset\":-0.015,\"zOffset\":0.01}}]}",
+      "resolvedScene" : "{\n  \"name\" : \"RedConeLamp\",\n  \"nodes\" : [\n    {\n      \"color\" : \"#808080\",\n      \"id\" : \"base\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0,\n        0.025,\n        0\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.15,\n        0.05,\n        0.15\n      ]\n    },\n    {\n      \"color\" : \"#808080\",\n      \"id\" : \"stem\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0,\n        0.32200003,\n        0.025\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.03,\n        0.55,\n        0.03\n      ]\n    },\n    {\n      \"color\" : \"#FFFFFF\",\n      \"id\" : \"bulb\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0,\n        0.624,\n        0.055\n      ],\n      \"primitive\" : \"sphere\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.06,\n        0.06,\n        0.06\n      ]\n    },\n    {\n      \"color\" : \"#CC0000\",\n      \"id\" : \"lampshade\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0,\n        0.77599996,\n        0.08\n      ],\n      \"primitive\" : \"cone\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.12,\n        0.25,\n        0.12\n      ]\n    },\n    {\n      \"color\" : \"#555555\",\n      \"id\" : \"switch\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0.01,\n        0.30700004,\n        0.048\n      ],\n      \"primitive\" : \"box\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.02,\n        0.03,\n        0.02\n      ]\n    }\n  ]\n}",
+      "seconds" : 5.3791309595108032,
+      "semanticChecksPass" : true,
+      "semanticDiagnostics" : [
+
+      ],
+      "spatialChecksPass" : true,
+      "triangleCount" : 1052,
+      "validSchema" : true
+    },
+    {
+      "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+      "id" : "whale",
+      "prompt" : "一条弯曲尾巴的蓝色小鲸鱼，流线型椭圆身体，左右鳍和分叉尾鳍，两个可见眼睛；尾鳍或侧鳍至少用一个extrusion自由轮廓。是独立海洋动物造型，不要平台。",
+      "seconds" : 39.820042967796326,
+      "validSchema" : false
+    },
+    {
+      "error" : "部件中心须在 ±3 米内，尺寸须为 0.02–2.5 米，旋转须为 ±360 度内。",
+      "id" : "aircraft",
+      "prompt" : "带后掠机翼的未来飞行器，银色流线机身、左右对称不规则机翼、两个推进器，机翼至少一个用extrusion自由轮廓，机身可用lathe。做一个整体，不要平台。",
+      "seconds" : 16.159381985664368,
+      "validSchema" : false
+    }
+  ],
+  "method" : "Qwen4B direct part graph + native AABB attachment solver; no object template or generated code"
+}

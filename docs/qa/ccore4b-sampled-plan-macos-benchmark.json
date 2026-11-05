@@ -1,0 +1,49 @@
+{
+  "cases" : [
+    {
+      "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+      "id" : "chair",
+      "prompt" : "棕色木椅，包含坐面、薄靠背和四条腿，坐面约0.45米高，不要无关大平台。",
+      "rejectedOrIncompleteOutput" : "",
+      "seconds" : 17.694611072540283,
+      "validSchema" : false
+    },
+    {
+      "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+      "id" : "robot",
+      "prompt" : "蓝色玩具机器人，立方体头和躯干、左右手臂和双腿、两个球形黄色眼睛，正面朝+Z。",
+      "rejectedOrIncompleteOutput" : "",
+      "seconds" : 16.576701998710632,
+      "validSchema" : false
+    },
+    {
+      "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+      "id" : "lamp",
+      "prompt" : "一盏红色圆锥灯罩台灯，灰色圆柱底座和细圆柱支杆，可以加球形灯泡，整体约0.8米高。",
+      "rejectedOrIncompleteOutput" : "",
+      "seconds" : 8.5538510084152222,
+      "validSchema" : false
+    },
+    {
+      "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+      "id" : "whale",
+      "prompt" : "一条弯曲尾巴的蓝色小鲸鱼，流线型椭圆身体，左右鳍和分叉尾鳍，两个可见眼睛；尾鳍或侧鳍至少用一个extrusion自由轮廓。是独立海洋动物造型，不要平台。",
+      "rejectedOrIncompleteOutput" : "",
+      "seconds" : 18.643170952796936,
+      "validSchema" : false
+    },
+    {
+      "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+      "id" : "aircraft",
+      "prompt" : "带后掠机翼的未来飞行器，银色流线机身、左右对称不规则机翼、两个推进器，机翼至少一个用extrusion自由轮廓，机身可用lathe。做一个整体，不要平台。",
+      "rejectedOrIncompleteOutput" : "",
+      "seconds" : 26.338394999504089,
+      "validSchema" : false
+    }
+  ],
+  "method" : "Native MLX direct named ScenePlan + production AABB attachment solver; no object template or generated code",
+  "mlxActiveBytesAfterLoad" : 3269961632,
+  "mlxActiveBytesAfterUnload" : 4000,
+  "mlxPeakBytes" : 4278807656,
+  "modelDirectory" : "Apple\/.build\/Models\/ccore-3d-coder-4b-optiq-experiment"
+}

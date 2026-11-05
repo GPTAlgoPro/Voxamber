@@ -1,0 +1,53 @@
+{
+  "cases" : [
+    {
+      "elapsedSeconds" : 0.2036510705947876,
+      "id" : "tiny",
+      "outputUTF8Bytes" : 15,
+      "stages" : [
+        "direct_begin elapsed=0.000 inputTokenCount=0 generatedTokenCount=0",
+        "tokenizer_prepare_begin elapsed=0.000 inputTokenCount=0 generatedTokenCount=0",
+        "tokenizer_prepare_done elapsed=0.014 inputTokenCount=27 generatedTokenCount=0",
+        "kv_cache_begin elapsed=0.014 inputTokenCount=27 generatedTokenCount=0",
+        "kv_cache_ready elapsed=0.014 inputTokenCount=27 generatedTokenCount=0",
+        "prefill_begin elapsed=0.014 inputTokenCount=27 generatedTokenCount=0",
+        "prefill_submitted processed=27 elapsed=0.094 inputTokenCount=27 generatedTokenCount=0",
+        "prefill_ready elapsed=0.095 inputTokenCount=27 generatedTokenCount=0",
+        "raw_stream_ready elapsed=0.095 inputTokenCount=27 generatedTokenCount=0",
+        "first_raw_token elapsed=0.127 inputTokenCount=27 generatedTokenCount=1",
+        "native_generation_complete elapsed=0.197 inputTokenCount=27 generatedTokenCount=8",
+        "raw_stream_finished elapsed=0.203 inputTokenCount=27 generatedTokenCount=8",
+        "direct_finished elapsed=0.203 inputTokenCount=27 generatedTokenCount=8"
+      ]
+    },
+    {
+      "elapsedSeconds" : 1.200065016746521,
+      "id" : "long",
+      "outputUTF8Bytes" : 19,
+      "stages" : [
+        "direct_begin elapsed=0.000 inputTokenCount=0 generatedTokenCount=0",
+        "tokenizer_prepare_begin elapsed=0.000 inputTokenCount=0 generatedTokenCount=0",
+        "tokenizer_prepare_done elapsed=0.053 inputTokenCount=1031 generatedTokenCount=0",
+        "kv_cache_begin elapsed=0.053 inputTokenCount=1031 generatedTokenCount=0",
+        "kv_cache_ready elapsed=0.053 inputTokenCount=1031 generatedTokenCount=0",
+        "prefill_begin elapsed=0.053 inputTokenCount=1031 generatedTokenCount=0",
+        "prefill_submitted processed=115 elapsed=0.130 inputTokenCount=1031 generatedTokenCount=0",
+        "prefill_submitted processed=230 elapsed=0.242 inputTokenCount=1031 generatedTokenCount=0",
+        "prefill_submitted processed=345 elapsed=0.356 inputTokenCount=1031 generatedTokenCount=0",
+        "prefill_submitted processed=460 elapsed=0.470 inputTokenCount=1031 generatedTokenCount=0",
+        "prefill_submitted processed=575 elapsed=0.582 inputTokenCount=1031 generatedTokenCount=0",
+        "prefill_submitted processed=690 elapsed=0.696 inputTokenCount=1031 generatedTokenCount=0",
+        "prefill_submitted processed=805 elapsed=0.809 inputTokenCount=1031 generatedTokenCount=0",
+        "prefill_submitted processed=920 elapsed=0.927 inputTokenCount=1031 generatedTokenCount=0",
+        "prefill_submitted processed=1030 elapsed=1.043 inputTokenCount=1031 generatedTokenCount=0",
+        "prefill_submitted processed=1031 elapsed=1.102 inputTokenCount=1031 generatedTokenCount=0",
+        "prefill_ready elapsed=1.102 inputTokenCount=1031 generatedTokenCount=0",
+        "raw_stream_ready elapsed=1.102 inputTokenCount=1031 generatedTokenCount=0",
+        "first_raw_token elapsed=1.116 inputTokenCount=1031 generatedTokenCount=1",
+        "native_generation_complete elapsed=1.196 inputTokenCount=1031 generatedTokenCount=8",
+        "raw_stream_finished elapsed=1.199 inputTokenCount=1031 generatedTokenCount=8",
+        "direct_finished elapsed=1.199 inputTokenCount=1031 generatedTokenCount=8"
+      ]
+    }
+  ]
+}

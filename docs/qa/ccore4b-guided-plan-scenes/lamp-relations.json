@@ -1,0 +1,84 @@
+{
+"name": "红色圆锥台灯",
+"nodes": [
+  {
+    "id": "base",
+    "primitive": "cylinder",
+    "dimensions": {
+      "width": 0.48,
+      "height": 0.12,
+      "depth": 0.48
+    },
+    "color": "#68717a",
+    "metallic": 0.25,
+    "roughness": 0.55
+  },
+  {
+    "id": "stem",
+    "primitive": "cylinder",
+    "dimensions": {
+      "width": 0.055,
+      "height": 0.58,
+      "depth": 0.055
+    },
+    "color": "#68717a",
+    "rotation": {
+      "x": 0,
+     "y": 0,
+      "z": 0
+    }
+  ,
+  "attach": {
+    "parent": "base",
+    "face": "top",
+    "xOffset": 0
+  },
+  "metallic": 0.25,
+    "roughness": 0.55
+  },
+  {
+    "id": "shade",
+    "primitive": "cone",
+    "dimensions": {
+      "width": 0.48,
+      "height": 0.42,
+      "depth": 0.48
+    },
+    "color": "#a51f25",
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ,
+    "attach": {
+    "parent": "stem",
+    "face": "top",
+    "xOffset": 0
+  },
+  "roughness": 0.38
+  },
+  {
+    "id": "bulb",
+    "primitive": "sphere",
+    "dimensions": {
+      "width": 0.16,
+      "height": 0.2,
+      "depth": 0.16
+    },
+    "color": "#ffd68a",
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ,
+    "attach": {
+    "parent": "shade",
+    "face": "inside",
+    "xOffset": 0
+  },
+  "roughness": 0.25
+  }
+]
+}

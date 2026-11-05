@@ -1,0 +1,38 @@
+{
+  "file": "palace.usdz",
+  "mesh_objects": 17,
+  "vertices": 26150,
+  "triangles": 22040,
+  "bounds_blender_z_up": [
+    [
+      -0.5040000081062317,
+      -0.4343999922275543,
+      -2.880999794285799e-08
+    ],
+    [
+      0.5040000081062317,
+      0.38495999574661255,
+      0.4221600294113159
+    ]
+  ],
+  "materials": [
+    "Material_0",
+    "Material_1",
+    "Material_10",
+    "Material_11",
+    "Material_12",
+    "Material_13",
+    "Material_14",
+    "Material_15",
+    "Material_16",
+    "Material_2",
+    "Material_3",
+    "Material_4",
+    "Material_5",
+    "Material_6",
+    "Material_7",
+    "Material_8",
+    "Material_9"
+  ],
+  "note": "Imported artifact rendered in Blender; geometry originated in Google Three-Live native compiler."
+}

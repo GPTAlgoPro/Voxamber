@@ -1,0 +1,26 @@
+[
+  {
+    "query": "维珀",
+    "time": "2026-11-05T07:55:33+00:00",
+    "storefront": "cn",
+    "exactMatches": []
+  },
+  {
+    "query": "维珀",
+    "time": "2026-11-05T07:55:34+00:00",
+    "storefront": "us",
+    "exactMatches": []
+  },
+  {
+    "query": "Voxamber",
+    "time": "2026-11-05T07:55:34+00:00",
+    "storefront": "cn",
+    "exactMatches": []
+  },
+  {
+    "query": "Voxamber",
+    "time": "2026-11-05T07:55:38+00:00",
+    "storefront": "us",
+    "exactMatches": []
+  }
+]

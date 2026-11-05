@@ -1,0 +1,149 @@
+{
+  "cases" : [
+    {
+      "exactParameters" : true,
+      "firstTokenSeconds" : 0.66085245800000003,
+      "id" : "palace-default",
+      "mismatches" : [
+
+      ],
+      "output" : "{\n  \"name\": \"金瓦朱柱双重檐宫殿\",\n  \"kind\": \"palace\",\n  \"width\": 1,\n  \"depth\": 0.8,\n  \"height\": 0.6,\n  \"floors\": 1,\n  \"roofTiers\": 2,\n  \"roofColor\": \"gold\",\n  \"columnColor\": \"vermilion\",\n  \"detail\": \"standard\",\n  \"eaveLift\": 0.035\n}",
+      "prompt" : "建一座金瓦朱柱的双重檐宫殿，尺寸用默认值。",
+      "seconds" : 1.9806414999999999,
+      "validSchema" : true
+    },
+    {
+      "exactParameters" : true,
+      "firstTokenSeconds" : 0.54900274999999998,
+      "id" : "pavilion-dimensions",
+      "mismatches" : [
+
+      ],
+      "output" : "{\"name\":\"亭\",\"kind\":\"pavilion\",\"width\":0.9,\"depth\":0.9,\"height\":0.8,\"floors\":1,\"roofTiers\":1,\"roofColor\":\"jade\",\"columnColor\":\"ivory\",\"detail\":\"standard\",\"eaveLift\":0.03}",
+      "prompt" : "做一座青绿琉璃瓦、象牙白柱子的亭，宽0.9米深0.9米高0.8米，单层单檐。",
+      "seconds" : 1.285878375,
+      "validSchema" : true
+    },
+    {
+      "exactParameters" : true,
+      "firstTokenSeconds" : 0.62018375000000003,
+      "id" : "tower-levels",
+      "mismatches" : [
+
+      ],
+      "output" : "{\"name\":\"三层青灰瓦塔楼\",\"kind\":\"tower\",\"width\":0.65,\"depth\":0.65,\"height\":1.5,\"floors\":3,\"roofTiers\":1,\"roofColor\":\"slate\",\"columnColor\":\"walnut\",\"detail\":\"standard\",\"eaveLift\":0.025}",
+      "prompt" : "三层青灰瓦塔楼，木色柱子，宽0.65米深0.65米高1.5米，每层一重檐。",
+      "seconds" : 1.483957958,
+      "validSchema" : true
+    },
+    {
+      "exactParameters" : true,
+      "firstTokenSeconds" : 0.66256925,
+      "id" : "edit-preserve",
+      "mismatches" : [
+
+      ],
+      "output" : "{\"name\":\"琉金重檐殿\",\"kind\":\"palace\",\"width\":1,\"depth\":0.8,\"height\":0.6,\"floors\":1,\"roofTiers\":2,\"roofColor\":\"slate\",\"columnColor\":\"vermilion\",\"detail\":\"standard\",\"eaveLift\":0.035}",
+      "prompt" : "保持尺寸和所有其他参数，只把屋顶换成青灰色。",
+      "seconds" : 1.450536958,
+      "validSchema" : true
+    },
+    {
+      "exactParameters" : true,
+      "firstTokenSeconds" : 0.64185904199999999,
+      "id" : "edit-dimensions",
+      "mismatches" : [
+
+      ],
+      "output" : "{\"name\":\"碧瓦清风亭\",\"kind\":\"pavilion\",\"width\":1.2,\"depth\":0.8,\"height\":1.0,\"floors\":1,\"roofTiers\":2,\"roofColor\":\"gold\",\"columnColor\":\"vermilion\",\"detail\":\"standard\",\"eaveLift\":0.03}",
+      "prompt" : "宽改1.2米深0.8米高1米，金瓦朱红柱子，双重檐。",
+      "seconds" : 1.45811925,
+      "validSchema" : true
+    },
+    {
+      "exactParameters" : true,
+      "firstTokenSeconds" : 0.65691208300000004,
+      "id" : "edit-combination",
+      "mismatches" : [
+
+      ],
+      "output" : "{\"name\":\"青瓦望月楼\",\"kind\":\"tower\",\"width\":0.65,\"depth\":0.65,\"height\":1.1,\"floors\":2,\"roofTiers\":2,\"roofColor\":\"gold\",\"columnColor\":\"walnut\",\"detail\":\"standard\",\"eaveLift\":0.025}",
+      "prompt" : "把楼层改为二层，每层改双重檐，屋顶换成金色。保留其他参数。",
+      "seconds" : 1.5015729169999998,
+      "validSchema" : true
+    }
+  ],
+  "date" : "2026-11-05T08:04:03Z",
+  "device" : "kaisun.local",
+  "loadSeconds" : 1.171129042,
+  "mlxActiveBytesAfterLoad" : 2367679904,
+  "mlxActiveBytesAfterUnload" : 427430632,
+  "mlxActiveBytesBeforeUnload" : 2367680744,
+  "mlxPeakBytes" : 3529829972,
+  "modelDirectory" : "Apple\/.build\/Models\/qwen3.5-4b-mlx-int4",
+  "physicalMemoryBytes" : 51539607552,
+  "runtime" : "MLX Swift \/ Metal",
+  "sceneCases" : [
+    {
+      "boundsMaximum" : [
+        0.34999999403953552,
+        0.72499996423721313,
+        0.25
+      ],
+      "boundsMinimum" : [
+        -0.34999999403953552,
+        0,
+        -0.25
+      ],
+      "finiteGeometry" : true,
+      "firstTokenSeconds" : 0.99298487499999999,
+      "id" : "chair",
+      "initialOutput" : "{\"name\":\"简约木椅\",\"nodes\":[{\"id\":\"seat\",\"primitive\":\"cylinder\",\"position\":[0,0.45,0],\"size\":[0.5,0.05,0.5],\"rotation\":[0,0,0],\"color\":\"#8B5A2B\",\"metallic\":0.1,\"roughness\":0.6},{\"id\":\"backrest\",\"primitive\":\"cylinder\",\"position\":[0,0.65,0.25],\"size\":[0.45,0.15,0.45],\"rotation\":[0,0,0],\"color\":\"#8B5A2B\",\"metallic\":0.1,\"roughness\":0.6},{\"id\":\"leg1\",\"primitive\":\"cylinder\",\"position\":[-0.32,0.025,0.22],\"size\":[0.06,0.45,0.06],\"rotation\":[0,0,0],\"color\":\"#8B5A2B\",\"metallic\":0.1,\"roughness\":0.6},{\"id\":\"leg2\",\"primitive\":\"cylinder\",\"position\":[0.32,0.025,0.22],\"size\":[0.06,0.45,0.06],\"rotation\":[0,0,0],\"color\":\"#8B5A2B\",\"metallic\":0.1,\"roughness\":0.6},{\"id\":\"leg3\",\"primitive\":\"cylinder\",\"position\":[-0.32,0.025,-0.22],\"size\":[0.06,0.45,0.06],\"rotation\":[0,0,0],\"color\":\"#8B5A2B\",\"metallic\":0.1,\"roughness\":0.6},{\"id\":\"leg4\",\"primitive\":\"cylinder\",\"position\":[0.32,0.025,-0.22],\"size\":[0.06,0.45,0.06],\"rotation\":[0,0,0],\"color\":\"#8B5A2B\",\"metallic\":0.1,\"roughness\":0.6}]}",
+      "initialSeconds" : 5.9592018329999998,
+      "initialSpatialIssues" : [
+        "leg1底部Y=-0.19999999，低于地面。若该部件落地，其中心Y应为高度的一半=0.225。",
+        "leg2底部Y=-0.19999999，低于地面。若该部件落地，其中心Y应为高度的一半=0.225。",
+        "leg3底部Y=-0.19999999，低于地面。若该部件落地，其中心Y应为高度的一半=0.225。",
+        "leg4底部Y=-0.19999999，低于地面。若该部件落地，其中心Y应为高度的一半=0.225。",
+        "物体由互不接触的部件组构成。请用实际上下端点重新核算相接位置：上方件底Y=centerY-height\/2，下方件顶Y=centerY+height\/2，两者应相同或略交叠。支架水平位置应在其支撑板范围内。",
+        "椅背应是后侧(-Z)竖立的薄盒子：厚度约0.05，中心Z约为-0.225，底端接坐面顶Y=0.475。"
+      ],
+      "meshCount" : 6,
+      "nodeCount" : 6,
+      "output" : "{\"name\":\"棕色木椅\",\"nodes\":[{\"id\":\"seat\",\"primitive\":\"cylinder\",\"position\":[0,0.45,0],\"size\":[0.5,0.05,0.5],\"rotation\":[0,0,0],\"color\":\"#8B5A2B\",\"metallic\":0.1,\"roughness\":0.6},{\"id\":\"backrest\",\"primitive\":\"cylinder\",\"position\":[0,0.65,-0.225],\"size\":[0.45,0.15,0.05],\"rotation\":[0,0,0],\"color\":\"#8B5A2B\",\"metallic\":0.1,\"roughness\":0.6},{\"id\":\"leg1\",\"primitive\":\"cylinder\",\"position\":[-0.32,0.225,0.22],\"size\":[0.06,0.45,0.06],\"rotation\":[0,0,0],\"color\":\"#8B5A2B\",\"metallic\":0.1,\"roughness\":0.6},{\"id\":\"leg2\",\"primitive\":\"cylinder\",\"position\":[0.32,0.225,0.22],\"size\":[0.06,0.45,0.06],\"rotation\":[0,0,0],\"color\":\"#8B5A2B\",\"metallic\":0.1,\"roughness\":0.6},{\"id\":\"leg3\",\"primitive\":\"cylinder\",\"position\":[-0.32,0.225,-0.22],\"size\":[0.06,0.45,0.06],\"rotation\":[0,0,0],\"color\":\"#8B5A2B\",\"metallic\":0.1,\"roughness\":0.6},{\"id\":\"leg4\",\"primitive\":\"cylinder\",\"position\":[0.32,0.225,-0.22],\"size\":[0.06,0.45,0.06],\"rotation\":[0,0,0],\"color\":\"#8B5A2B\",\"metallic\":0.1,\"roughness\":0.6}]}",
+      "passesHeuristicChecks" : false,
+      "prompt" : "一把简洁的棕色木椅，必须包含坐面、靠背和四条腿，地面Y=0，坐面高度约0.45米，不要增加底部平台。",
+      "remainingSpatialIssues" : [
+        "物体由互不接触的部件组构成。请用实际上下端点重新核算相接位置：上方件底Y=centerY-height\/2，下方件顶Y=centerY+height\/2，两者应相同或略交叠。支架水平位置应在其支撑板范围内。",
+        "椅背应是后侧(-Z)竖立的薄盒子：厚度约0.05，中心Z约为-0.225，底端接坐面顶Y=0.475。"
+      ],
+      "repairAttempted" : true,
+      "repairSeconds" : 6.6637085420000002,
+      "seconds" : 12.625800458000001,
+      "semanticChecks" : {
+        "atLeastSixParts" : true,
+        "brownMaterial" : true,
+        "connectedParts" : false,
+        "groundContact" : true,
+        "seatAndBack" : false
+      },
+      "triangleCount" : 768,
+      "validSchema" : true,
+      "vertexCount" : 780
+    },
+    {
+      "error" : "模型没有返回完整的建筑参数，请简化描述后重试。",
+      "id" : "robot",
+      "prompt" : "做一个站立的蓝色玩具机器人，包含立方体头、躯干、左右两条手臂和两条腿，以及两个球形黄色眼睛，底部在Y=0。",
+      "seconds" : 15.931359333,
+      "validSchema" : false
+    },
+    {
+      "error" : "模型没有返回完整的建筑参数，请简化描述后重试。",
+      "id" : "lamp",
+      "prompt" : "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地Y=0，整体高约0.8米。",
+      "seconds" : 9.0663641659999996,
+      "validSchema" : false
+    }
+  ]
+}

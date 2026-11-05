@@ -1,0 +1,75 @@
+{
+  "cases" : [
+    {
+      "diagnostics" : [
+
+      ],
+      "id" : "chair",
+      "nodeCount" : 6,
+      "primitiveTypes" : [
+        "box",
+        "cylinder"
+      ],
+      "prompt" : "棕色木椅，包含坐面、薄靠背和四条腿，坐面约0.45米高，不要无关大平台。",
+      "rawRelations" : "{\"name\":\"棕色木椅\",\"nodes\":[{\"id\":\"seat\",\"primitive\":\"box\",\"position\":[0,0,0.45],\"size\":[0.5,0.5,0.15],\"rotation\":[0,0,0],\"color\":\"#8B4513\",\"metallic\":0.1,\"roughness\":0.6,\"parentID\":null,\"attachment\":null,\"offset\":[0,0,0]},{\"id\":\"backrest\",\"primitive\":\"box\",\"position\":[0,0,0.55],\"size\":[0.5,0.6,0.05],\"rotation\":[0,0,0],\"color\":\"#8B4513\",\"metallic\":0.1,\"roughness\":0.6,\"parentID\":\"seat\",\"attachment\":\"top\",\"offset\":[0,0,0]},{\"id\":\"leg1\",\"primitive\":\"cylinder\",\"position\":[-0.25,0,0.05],\"size\":[0.06,0.06,0.65],\"rotation\":[0,0,0],\"color\":\"#8B4513\",\"metallic\":0.1,\"roughness\":0.6,\"parentID\":\"seat\",\"attachment\":\"bottom\",\"offset\":[-0.125,0,0]},{\"id\":\"leg2\",\"primitive\":\"cylinder\",\"position\":[0.25,0,0.05],\"size\":[0.06,0.06,0.65],\"rotation\":[0,0,0],\"color\":\"#8B4513\",\"metallic\":0.1,\"roughness\":0.6,\"parentID\":\"seat\",\"attachment\":\"bottom\",\"offset\":[0.125,0,0]},{\"id\":\"leg3\",\"primitive\":\"cylinder\",\"position\":[-0.125,0,0.05],\"size\":[0.05,0.05,0.65],\"rotation\":[0,0,0],\"color\":\"#8B4513\",\"metallic\":0.1,\"roughness\":0.6,\"parentID\":\"seat\",\"attachment\":\"bottom\",\"offset\":[-0.0625,0,0]},{\"id\":\"leg4\",\"primitive\":\"cylinder\",\"position\":[0.125,0,0.05],\"size\":[0.05,0.05,0.65],\"rotation\":[0,0,0],\"color\":\"#8B4513\",\"metallic\":0.1,\"roughness\":0.6,\"parentID\":\"seat\",\"attachment\":\"bottom\",\"offset\":[0.0625,0,0]}]}",
+      "resolvedScene" : "{\n  \"name\" : \"棕色木椅\",\n  \"nodes\" : [\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"seat\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0,\n        0.307,\n        0.45\n      ],\n      \"primitive\" : \"box\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.6,\n      \"size\" : [\n        0.5,\n        0.5,\n        0.15\n      ]\n    },\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"backrest\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0,\n        0.854,\n        0.45\n      ],\n      \"primitive\" : \"box\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.6,\n      \"size\" : [\n        0.5,\n        0.6,\n        0.05\n      ]\n    },\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"leg1\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        -0.125,\n        0.030000001,\n        0.45\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.6,\n      \"size\" : [\n        0.06,\n        0.06,\n        0.65\n      ]\n    },\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"leg2\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0.125,\n        0.030000001,\n        0.45\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.6,\n      \"size\" : [\n        0.06,\n        0.06,\n        0.65\n      ]\n    },\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"leg3\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        -0.0625,\n        0.034999996,\n        0.45\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.6,\n      \"size\" : [\n        0.05,\n        0.05,\n        0.65\n      ]\n    },\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"leg4\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0.0625,\n        0.034999996,\n        0.45\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.6,\n      \"size\" : [\n        0.05,\n        0.05,\n        0.65\n      ]\n    }\n  ]\n}",
+      "seconds" : 7.3595349788665771,
+      "spatialChecksPass" : true,
+      "triangleCount" : 536,
+      "validSchema" : true
+    },
+    {
+      "diagnostics" : [
+
+      ],
+      "id" : "robot",
+      "nodeCount" : 8,
+      "primitiveTypes" : [
+        "box",
+        "cylinder",
+        "sphere"
+      ],
+      "prompt" : "蓝色玩具机器人，立方体头和躯干、左右手臂和双腿、两个球形黄色眼睛，正面朝+Z。",
+      "rawRelations" : "{\"name\":\"蓝色玩具机器人\",\"nodes\":[{\"id\":\"head\",\"primitive\":\"box\",\"position\":[0,0,0.5],\"size\":[0.3,0.3,0.35],\"rotation\":[0,0,0],\"color\":\"#1E90FF\",\"metallic\":0.3,\"roughness\":0.5,\"parentID\":null,\"attachment\":null,\"offset\":[0,0,0]},{\"id\":\"torso\",\"primitive\":\"box\",\"position\":[0,0,0],\"size\":[0.32,0.32,0.45],\"rotation\":[0,0,0],\"color\":\"#1E90FF\",\"metallic\":0.3,\"roughness\":0.5,\"parentID\":\"head\",\"attachment\":\"bottom\",\"offset\":[0,0,0]},{\"id\":\"eyeL\",\"primitive\":\"sphere\",\"position\":[-0.08,0.05,0.25],\"size\":[0.05,0.05,0.05],\"rotation\":[0,0,0],\"color\":\"#FFD700\",\"metallic\":0.6,\"roughness\":0.2,\"parentID\":\"torso\",\"attachment\":\"front\",\"offset\":[0,0,0]},{\"id\":\"eyeR\",\"primitive\":\"sphere\",\"position\":[0.08,0.05,0.25],\"size\":[0.05,0.05,0.05],\"rotation\":[0,0,0],\"color\":\"#FFD700\",\"metallic\":0.6,\"roughness\":0.2,\"parentID\":\"torso\",\"attachment\":\"front\",\"offset\":[0,0,0]},{\"id\":\"armL\",\"primitive\":\"cylinder\",\"position\":[-0.15,0.15,0.05],\"size\":[0.06,0.06,0.35],\"rotation\":[0,0,0],\"color\":\"#1E90FF\",\"metallic\":0.3,\"roughness\":0.5,\"parentID\":\"torso\",\"attachment\":\"left\",\"offset\":[0,0,0]},{\"id\":\"armR\",\"primitive\":\"cylinder\",\"position\":[0.15,0.15,0.05],\"size\":[0.06,0.06,0.35],\"rotation\":[0,0,0],\"color\":\"#1E90FF\",\"metallic\":0.3,\"roughness\":0.5,\"parentID\":\"torso\",\"attachment\":\"right\",\"offset\":[0,0,0]},{\"id\":\"legL\",\"primitive\":\"cylinder\",\"position\":[-0.12,0.05,0.05],\"size\":[0.06,0.06,0.35],\"rotation\":[0,0,0],\"color\":\"#1E90FF\",\"metallic\":0.3,\"roughness\":0.5,\"parentID\":\"torso\",\"attachment\":\"bottom\",\"offset\":[0,0,0]},{\"id\":\"legR\",\"primitive\":\"cylinder\",\"position\":[0.12,0.05,0.05],\"size\":[0.06,0.06,0.35],\"rotation\":[0,0,0],\"color\":\"#1E90FF\",\"metallic\":0.3,\"roughness\":0.5,\"parentID\":\"torso\",\"attachment\":\"bottom\",\"offset\":[0,0,0]}]}",
+      "resolvedScene" : "{\n  \"name\" : \"蓝色玩具机器人\",\n  \"nodes\" : [\n    {\n      \"color\" : \"#1E90FF\",\n      \"id\" : \"head\",\n      \"metallic\" : 0.3,\n      \"position\" : [\n        0,\n        0.524,\n        0.5\n      ],\n      \"primitive\" : \"box\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.5,\n      \"size\" : [\n        0.3,\n        0.3,\n        0.35\n      ]\n    },\n    {\n      \"color\" : \"#1E90FF\",\n      \"id\" : \"torso\",\n      \"metallic\" : 0.3,\n      \"position\" : [\n        0,\n        0.21699998,\n        0.5\n      ],\n      \"primitive\" : \"box\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.5,\n      \"size\" : [\n        0.32,\n        0.32,\n        0.45\n      ]\n    },\n    {\n      \"color\" : \"#FFD700\",\n      \"id\" : \"eyeL\",\n      \"metallic\" : 0.6,\n      \"position\" : [\n        0,\n        0.21699998,\n        0.74700004\n      ],\n      \"primitive\" : \"sphere\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.2,\n      \"size\" : [\n        0.05,\n        0.05,\n        0.05\n      ]\n    },\n    {\n      \"color\" : \"#FFD700\",\n      \"id\" : \"eyeR\",\n      \"metallic\" : 0.6,\n      \"position\" : [\n        0,\n        0.21699998,\n        0.74700004\n      ],\n      \"primitive\" : \"sphere\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.2,\n      \"size\" : [\n        0.05,\n        0.05,\n        0.05\n      ]\n    },\n    {\n      \"color\" : \"#1E90FF\",\n      \"id\" : \"armL\",\n      \"metallic\" : 0.3,\n      \"position\" : [\n        -0.18699999,\n        0.21699998,\n        0.5\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.5,\n      \"size\" : [\n        0.06,\n        0.06,\n        0.35\n      ]\n    },\n    {\n      \"color\" : \"#1E90FF\",\n      \"id\" : \"armR\",\n      \"metallic\" : 0.3,\n      \"position\" : [\n        0.18699999,\n        0.21699998,\n        0.5\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.5,\n      \"size\" : [\n        0.06,\n        0.06,\n        0.35\n      ]\n    },\n    {\n      \"color\" : \"#1E90FF\",\n      \"id\" : \"legL\",\n      \"metallic\" : 0.3,\n      \"position\" : [\n        0,\n        0.029999971,\n        0.5\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.5,\n      \"size\" : [\n        0.06,\n        0.06,\n        0.35\n      ]\n    },\n    {\n      \"color\" : \"#1E90FF\",\n      \"id\" : \"legR\",\n      \"metallic\" : 0.3,\n      \"position\" : [\n        0,\n        0.029999971,\n        0.5\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.5,\n      \"size\" : [\n        0.06,\n        0.06,\n        0.35\n      ]\n    }\n  ]\n}",
+      "seconds" : 8.9633190631866455,
+      "spatialChecksPass" : true,
+      "triangleCount" : 1976,
+      "validSchema" : true
+    },
+    {
+      "diagnostics" : [
+
+      ],
+      "id" : "lamp",
+      "nodeCount" : 4,
+      "primitiveTypes" : [
+        "cone",
+        "cylinder",
+        "sphere"
+      ],
+      "prompt" : "一盏红色圆锥灯罩台灯，灰色圆柱底座和细圆柱支杆，可以加球形灯泡，整体约0.8米高。",
+      "rawRelations" : "{\"name\":\"红色圆锥灯罩台灯\",\"nodes\":[{\"id\":\"base\",\"primitive\":\"cylinder\",\"position\":[0,0,0],\"size\":[0.15,0.15,0.15],\"rotation\":[0,0,0],\"color\":\"#808080\",\"metallic\":0.3,\"roughness\":0.6,\"parentID\":null,\"attachment\":null,\"offset\":[0,0,0]},{\"id\":\"stem\",\"primitive\":\"cylinder\",\"position\":[0,0.05,0],\"size\":[0.03,0.6,0.03],\"rotation\":[0,0,0],\"color\":\"#808080\",\"metallic\":0.3,\"roughness\":0.6,\"parentID\":\"base\",\"attachment\":\"top\",\"offset\":[0,0,0]},{\"id\":\"lampshade\",\"primitive\":\"cone\",\"position\":[0,0.65,0],\"size\":[0.12,0.12,0.12],\"rotation\":[0,0,0],\"color\":\"#DC143C\",\"metallic\":0.2,\"roughness\":0.5,\"parentID\":\"stem\",\"attachment\":\"top\",\"offset\":[0,0,0]},{\"id\":\"bulb\",\"primitive\":\"sphere\",\"position\":[0,0.65,0],\"size\":[0.04,0.04,0.04],\"rotation\":[0,0,0],\"color\":\"#FFD700\",\"metallic\":0.8,\"roughness\":0.2,\"parentID\":\"lampshade\",\"attachment\":\"bottom\",\"offset\":[0,0,0]}]}",
+      "resolvedScene" : "{\n  \"name\" : \"红色圆锥灯罩台灯\",\n  \"nodes\" : [\n    {\n      \"color\" : \"#808080\",\n      \"id\" : \"base\",\n      \"metallic\" : 0.3,\n      \"position\" : [\n        0,\n        0.075,\n        0\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.6,\n      \"size\" : [\n        0.15,\n        0.15,\n        0.15\n      ]\n    },\n    {\n      \"color\" : \"#808080\",\n      \"id\" : \"stem\",\n      \"metallic\" : 0.3,\n      \"position\" : [\n        0,\n        0.44700003,\n        0\n      ],\n      \"primitive\" : \"cylinder\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.6,\n      \"size\" : [\n        0.03,\n        0.6,\n        0.03\n      ]\n    },\n    {\n      \"color\" : \"#DC143C\",\n      \"id\" : \"lampshade\",\n      \"metallic\" : 0.2,\n      \"position\" : [\n        0,\n        0.804,\n        0\n      ],\n      \"primitive\" : \"cone\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.5,\n      \"size\" : [\n        0.12,\n        0.12,\n        0.12\n      ]\n    },\n    {\n      \"color\" : \"#FFD700\",\n      \"id\" : \"bulb\",\n      \"metallic\" : 0.8,\n      \"position\" : [\n        0,\n        0.727,\n        0\n      ],\n      \"primitive\" : \"sphere\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.2,\n      \"size\" : [\n        0.04,\n        0.04,\n        0.04\n      ]\n    }\n  ]\n}",
+      "seconds" : 4.9677059650421143,
+      "spatialChecksPass" : true,
+      "triangleCount" : 1040,
+      "validSchema" : true
+    },
+    {
+      "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+      "id" : "whale",
+      "prompt" : "一条弯曲尾巴的蓝色小鲸鱼，流线型椭圆身体，左右鳍和分叉尾鳍，两个可见眼睛；尾鳍或侧鳍至少用一个extrusion自由轮廓。是独立海洋动物造型，不要平台。",
+      "seconds" : 34.80056893825531,
+      "validSchema" : false
+    },
+    {
+      "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+      "id" : "aircraft",
+      "prompt" : "带后掠机翼的未来飞行器，银色流线机身、左右对称不规则机翼、两个推进器，机翼至少一个用extrusion自由轮廓，机身可用lathe。做一个整体，不要平台。",
+      "seconds" : 34.051214933395386,
+      "validSchema" : false
+    }
+  ],
+  "method" : "Qwen4B direct part graph + native AABB attachment solver; no object template or generated code"
+}

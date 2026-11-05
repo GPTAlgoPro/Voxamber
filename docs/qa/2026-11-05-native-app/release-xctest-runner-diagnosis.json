@@ -1,0 +1,64 @@
+{
+  "observedAt": "2026-11-05T08:38:14+00:00",
+  "scope": "Read-only diagnosis of app-hosted Release XCTest startup; no build, launch, retry, settings changes or device-session changes performed by this diagnostic task.",
+  "sourceLog": "docs/qa/2026-11-05-native-app/phone-inference-test.log",
+  "sourceDiagnostics": "Apple/.build/device-test-diagnostics",
+  "failure": {
+    "runnerExitCode": 74,
+    "testOperationErrorDomain": "XCTHTestOperationCoordinatorErrorDomain",
+    "testOperationErrorCode": 5,
+    "testsReachedAssertions": false,
+    "message": "The test runner exited with code 74 before establishing connection."
+  },
+  "timeline": [
+    {
+      "localTime": "16:24:51.031",
+      "event": "Mac connected to testmanagerd; test-runner session transport acquired; listening for test-bundle proxy connection."
+    },
+    {
+      "localTime": "16:24:51.175",
+      "event": "Session initiation returned without an error."
+    },
+    {
+      "localTime": "16:24:53.274",
+      "event": "The development-signed host app launched with PID 5964."
+    },
+    {
+      "localTime": "16:25:12.025",
+      "event": "Host framework reported Exiting due to IDE disconnection."
+    },
+    {
+      "localTime": "16:25:12.068",
+      "event": "Launch session expired; XCTest coordinator reported runner exit 74 before connection."
+    }
+  ],
+  "verifiedChecks": {
+    "currentReleaseAppStrictSignatureValid": true,
+    "currentEmbeddedUnitTestBundleStrictSignatureValid": true,
+    "currentReleaseAppAllowsDebuggerAttach": true,
+    "hostBundleId": "com.kaisun.voxamber",
+    "unitTestBundleId": "com.kaisun.ThreeLiveStudioTests",
+    "sdk": "iphoneos27.2",
+    "xcodeBuild": "27B52",
+    "releaseUnitTestBundleLoader": "Apple/DerivedDataDevice/Build/Products/Release-iphoneos/ThreeLiveStudio.app/ThreeLiveStudio",
+    "unitTestLinkCommandEvidenceLine": 489,
+    "embeddedBundleLocationCorrect": true,
+    "xctestrunFileAvailableInInspectedDerivedData": false,
+    "appHostedTestTargetSettingsInspectedViaXcodeTool": true,
+    "projectFileParsedDirectly": false
+  },
+  "ruledOutWithinEvidenceScope": [
+    "Compilation or test assertion failure as the reported failure stage.",
+    "Missing development debugger permission on the currently inspected Release host.",
+    "An obviously incorrect BUNDLE_LOADER executable or missing embedded test bundle in the observed Release link/install path."
+  ],
+  "notEstablished": [
+    "The underlying cause of the test-bundle-to-IDE connection loss.",
+    "A dyld or missing-symbol failure; no such explicit diagnostic appears in the collected logs.",
+    "A concurrency conflict with another IDE session; this remains unproven.",
+    "A causal relationship between PointerUI XPC warnings and runner termination.",
+    "A confirmed Xcode27.2/iOS27.2 regression or Release-only configuration defect."
+  ],
+  "decision": "Stop runner retries. Parent task is validating the real optimized Release app with a DEVICE_QA-gated on-device probe, without XCTest injection or persistent IDE control. This receipt does not claim that probe has passed.",
+  "appOrProjectChangesMade": false
+}

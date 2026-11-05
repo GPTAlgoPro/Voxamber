@@ -1,0 +1,130 @@
+{
+  "name": "棕色木椅",
+  "nodes": [
+    {
+      "id": "seat",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.05,
+        "depth": 0.45
+      },
+      "color": "#8B4513",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "id": "backrest",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.2,
+        "height": 0.3,
+        "depth": 0.05
+      },
+      "color": "#8B4513",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "attach": {
+        "parent": "seat",
+        "face": "front",
+        "xOffset": 0,
+        "yOffset": 0.3,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "leg1",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.03,
+        "height": 0.25,
+        "depth": 0.03
+      },
+      "color": "#8B4513",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "attach": {
+        "parent": "seat",
+        "face": "bottom",
+        "xOffset": -0.25,
+        "yOffset": 0,
+        "zOffset": -0.1
+      }
+    },
+    {
+      "id": "leg2",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.03,
+        "height": 0.25,
+        "depth": 0.03
+      },
+      "color": "#8B4513",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "attach": {
+        "parent": "seat",
+        "face": "bottom",
+        "xOffset": 0.25,
+        "yOffset": 0,
+        "zOffset": -0.1
+      }
+    },
+    {
+      "id": "leg3",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.03,
+        "height": 0.25,
+        "depth": 0.03
+      },
+      "color": "#8B4513",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "attach": {
+        "parent": "seat",
+        "face": "bottom",
+        "xOffset": -0.25,
+        "yOffset": 0,
+        "zOffset": 0.1
+      }
+    },
+    {
+      "id": "leg4",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.03,
+        "height": 0.25,
+        "depth": 0.03
+      },
+      "color": "#8B4513",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "attach": {
+        "parent": "seat",
+        "face": "bottom",
+        "xOffset": 0.25,
+        "yOffset": 0,
+        "zOffset": 0.1
+      }
+    }
+  ]
+}

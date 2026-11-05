@@ -1,0 +1,115 @@
+{
+  "name" : "RedConeLamp",
+  "nodes" : [
+    {
+      "color" : "#808080",
+      "id" : "base",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.025,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.15,
+        0.05,
+        0.15
+      ]
+    },
+    {
+      "color" : "#808080",
+      "id" : "stem",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.32200003,
+        0.025
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.03,
+        0.55,
+        0.03
+      ]
+    },
+    {
+      "color" : "#FFFFFF",
+      "id" : "bulb",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.624,
+        0.055
+      ],
+      "primitive" : "sphere",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.06,
+        0.06,
+        0.06
+      ]
+    },
+    {
+      "color" : "#CC0000",
+      "id" : "lampshade",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.77599996,
+        0.08
+      ],
+      "primitive" : "cone",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.12,
+        0.25,
+        0.12
+      ]
+    },
+    {
+      "color" : "#555555",
+      "id" : "switch",
+      "metallic" : 0.1,
+      "position" : [
+        0.01,
+        0.30700004,
+        0.048
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.02,
+        0.03,
+        0.02
+      ]
+    }
+  ]
+}

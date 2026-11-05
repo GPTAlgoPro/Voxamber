@@ -1,0 +1,21 @@
+{
+  "recordedAt": "2026-11-05T08:22:28.047835+00:00",
+  "results": [
+    {
+      "scope": "storage-and-model-store",
+      "passed": true,
+      "expectedTestCount": 18,
+      "sourceLog": "/Users/kaisun/Library/Developer/XcodeBuildMCP/workspaces/Three-Live-a778a850dbab/logs/test_sim_2026-11-05T07-59-12-341Z_pid3982_7c4480ed.log",
+      "coversFinalGenericSchema": false,
+      "note": "Earlier passing result; rerun after final geometry and schema changes."
+    },
+    {
+      "scope": "initial-phone-simulator-creation-restore-export",
+      "passed": true,
+      "expectedTestCount": 1,
+      "sourceLog": "/Users/kaisun/Library/Developer/XcodeBuildMCP/workspaces/Three-Live-a778a850dbab/logs/test_sim_2026-11-05T07-41-53-302Z_pid3982_bc56cd2c.log",
+      "coversFinalGenericSchema": false,
+      "note": "Earlier passing result; rerun after final geometry and schema changes."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "cases" : [
+    {
+      "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+      "id" : "chair",
+      "prompt" : "棕色木椅，包含坐面、薄靠背和四条腿，坐面约0.45米高，不要无关大平台。",
+      "rejectedOrIncompleteOutput" : "",
+      "seconds" : 9.3610900640487671,
+      "validSchema" : false
+    },
+    {
+      "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+      "id" : "robot",
+      "prompt" : "蓝色玩具机器人，立方体头和躯干、左右手臂和双腿、两个球形黄色眼睛，正面朝+Z。",
+      "rejectedOrIncompleteOutput" : "",
+      "seconds" : 17.078294992446899,
+      "validSchema" : false
+    },
+    {
+      "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+      "id" : "lamp",
+      "prompt" : "一盏红色圆锥灯罩台灯，灰色圆柱底座和细圆柱支杆，可以加球形灯泡，整体约0.8米高。",
+      "rejectedOrIncompleteOutput" : "",
+      "seconds" : 7.3996200561523438,
+      "validSchema" : false
+    },
+    {
+      "error" : "场景计划的数值、类型或连接面不符合要求。",
+      "id" : "whale",
+      "prompt" : "一条弯曲尾巴的蓝色小鲸鱼，流线型椭圆身体，左右鳍和分叉尾鳍，两个可见眼睛；尾鳍或侧鳍至少用一个extrusion自由轮廓。是独立海洋动物造型，不要平台。",
+      "rejectedOrIncompleteOutput" : "{\"name\":\"Blue Streamline Whales\",\"nodes\":[{\"id\":\"body\",\"primitive\":\"lathe\",\"dimensions\":{\"width\":0.4,\"height\":0.6,\"depth\":0.4},\"color\":\"#00BFFF\",\"profile\":[[0.1,0],\"0.35,0.15\",\"0.55,0.25\",\"0.7,0.35\",\"0.85,0.45\",\"0.95,0.55\",\"1.0,0.65\",\"0.95,0.75\",\"0.85,0.85\",\"0.7,0.95\",\"0.55,1.05\",\"0.4,1.15\",\"0.25,1.2\",\"0.1,1.2\"]},{\"id\":\"head_main\",\"primitive\":\"sphere\",\"dimensions\":{\"width\":0.25,\"height\":0.35,\"depth\":0.25},\"color\":\"#00BFFF\",\"attach\":{\"parent\":\"body\",\"face\":\"top\",\"xOffset\":-0.12,\"yOffset\":0.15,\"zOffset\":0.05}},{\"id\":\"eye_l\",\"primitive\":\"sphere\",\"dimensions\":{\"width\":0.04,\"height\":0.04,\"depth\":0.04},\"color\":\"#FFFFFF\",\"attach\":{\"parent\":\"head_main\",\"face\":\"front\",\"xOffset\":-0.06,\"yOffset\":0.02,\"zOffset\":0.02}},{\"id\":\"eye_r\",\"primitive\":\"sphere\",\"dimensions\":{\"width\":0.04,\"height\":0.04,\"depth\":0.04},\"color\":\"#FFFFFF\",\"attach\":{\"parent\":\"head_main\",\"face\":\"front\",\"xOffset\":0.06,\"yOffset\":0.02,\"zOffset\":0.02}},{\"id\":\"fin_left\",\"primitive\":\"extrusion\",\"dimensions\":{\"width\":0.15,\"height\":0.1,\"depth\":0.02},\"color\":\"#00BFFF\",\"attach\":{\"parent\":\"body\",\"face\":\"left\",\"xOffset\":-0.18,\"yOffset\":0.2,\"zOffset\":0.02},\"profile\":[[0,0],[0.05,0.05],[0.12,0.08],[0.18,0.06],[0.25,0.03]]},{\"id\":\"fin_right\",\"primitive\":\"extrusion\",\"dimensions\":{\"width\":0.15,\"height\":0.1,\"depth\":0.02},\"color\":\"#00BFFF\",\"attach\":{\"parent\":\"body\",\"face\":\"right\",\"xOffset\":0.18,\"yOffset\":0.2,\"zOffset\":0.02},\"profile\":[[0,0],[0.05,0.05],[0.12,0.08],[0.18,0.06],[0.25,0.03]]},{\"id\":\"tail_base\",\"primitive\":\"cylinder\",\"dimensions\":{\"width\":0.06,\"height\":0.5,\"depth\":0.06},\"color\":\"#00BFFF\",\"attach\":{\"parent\":\"body\",\"face\":\"bottom\",\"xOffset\":0,\"yOffset\":0.1,\"zOffset\":0.05}},{\"id\":\"tail_top\",\"primitive\":\"mesh\",\"dimensions\":{\"width\":0.12,\"height\":0.1,\"depth\":0.08},\"color\":\"#00BFFF\",\"vertices\":[[0,0.05,-0.04],[0.06,0.08,0],[0,-0.05,0.04],[-0.06,0.08,0],[0,0.05,-0.04]],\"triangles\":[[0,1,2],[0,2,3],[0,3,1]]}]}",
+      "seconds" : 15.91553008556366,
+      "validSchema" : false
+    },
+    {
+      "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+      "id" : "aircraft",
+      "prompt" : "带后掠机翼的未来飞行器，银色流线机身、左右对称不规则机翼、两个推进器，机翼至少一个用extrusion自由轮廓，机身可用lathe。做一个整体，不要平台。",
+      "rejectedOrIncompleteOutput" : "",
+      "seconds" : 52.607846021652222,
+      "validSchema" : false
+    }
+  ],
+  "method" : "Native MLX direct named ScenePlan + production AABB attachment solver; no object template or generated code",
+  "mlxActiveBytesAfterLoad" : 2367679904,
+  "mlxActiveBytesAfterUnload" : 4000,
+  "mlxPeakBytes" : 3440948166,
+  "modelDirectory" : "Apple\/.build\/Models\/qwen3.5-4b-mlx-int4"
+}

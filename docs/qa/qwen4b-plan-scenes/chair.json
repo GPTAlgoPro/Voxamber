@@ -1,0 +1,159 @@
+{
+  "name" : "棕色木椅",
+  "nodes" : [
+    {
+      "color" : "#8B4513",
+      "id" : "chair_base",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.55799997,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.45,
+        0.02,
+        0.45
+      ]
+    },
+    {
+      "color" : "#8B4513",
+      "id" : "chair_seat",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.59099996,
+        0.02
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.42,
+        0.05,
+        0.42
+      ]
+    },
+    {
+      "color" : "#8B4513",
+      "id" : "chair_backrest",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.788,
+        0.039999995
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.08,
+        0.35,
+        0.08
+      ]
+    },
+    {
+      "color" : "#8B4513",
+      "id" : "chair_leg_fl",
+      "metallic" : 0.1,
+      "position" : [
+        0.15,
+        0.27499998,
+        0.05
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.05,
+        0.55,
+        0.05
+      ]
+    },
+    {
+      "color" : "#8B4513",
+      "id" : "chair_leg_fr",
+      "metallic" : 0.1,
+      "position" : [
+        -0.15,
+        0.27499998,
+        0.05
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.05,
+        0.55,
+        0.05
+      ]
+    },
+    {
+      "color" : "#8B4513",
+      "id" : "chair_leg_bl",
+      "metallic" : 0.1,
+      "position" : [
+        0.15,
+        0.27499998,
+        -0.05
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.05,
+        0.55,
+        0.05
+      ]
+    },
+    {
+      "color" : "#8B4513",
+      "id" : "chair_leg_br",
+      "metallic" : 0.1,
+      "position" : [
+        -0.15,
+        0.27499998,
+        -0.05
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.05,
+        0.55,
+        0.05
+      ]
+    }
+  ]
+}

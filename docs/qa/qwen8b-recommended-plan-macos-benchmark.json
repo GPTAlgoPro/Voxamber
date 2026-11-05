@@ -1,0 +1,65 @@
+{
+  "cases" : [
+    {
+      "diagnostics" : [
+
+      ],
+      "firstTokenSeconds" : -1,
+      "id" : "chair",
+      "nodeCount" : 6,
+      "primitiveTypes" : [
+        "box"
+      ],
+      "prompt" : "棕色木椅，包含坐面、薄靠背和四条腿，坐面约0.45米高，不要无关大平台。",
+      "rawRelations" : "{\"name\":\"棕色木椅\",\"nodes\":[{\"id\":\"seat\",\"primitive\":\"box\",\"dimensions\":{\"width\":0.6,\"height\":0.05,\"depth\":0.45},\"color\":\"#8B4513\"},{\"id\":\"backrest\",\"primitive\":\"box\",\"dimensions\":{\"width\":0.2,\"height\":0.3,\"depth\":0.05},\"color\":\"#8B4513\",\"attach\":{\"parent\":\"seat\",\"face\":\"front\",\"xOffset\":-0.15,\"yOffset\":0.15,\"zOffset\":0}},{\"id\":\"leg1\",\"primitive\":\"box\",\"dimensions\":{\"width\":0.02,\"height\":0.2,\"depth\":0.02},\"color\":\"#8B4513\",\"attach\":{\"parent\":\"seat\",\"face\":\"bottom\",\"xOffset\":-0.25,\"yOffset\":0,\"zOffset\":-0.1}},{\"id\":\"leg2\",\"primitive\":\"box\",\"dimensions\":{\"width\":0.02,\"height\":0.2,\"depth\":0.02},\"color\":\"#8B4513\",\"attach\":{\"parent\":\"seat\",\"face\":\"bottom\",\"xOffset\":0.25,\"yOffset\":0,\"zOffset\":-0.1}},{\"id\":\"leg3\",\"primitive\":\"box\",\"dimensions\":{\"width\":0.02,\"height\":0.2,\"depth\":0.02},\"color\":\"#8B4513\",\"attach\":{\"parent\":\"seat\",\"face\":\"bottom\",\"xOffset\":-0.25,\"yOffset\":0,\"zOffset\":0.1}},{\"id\":\"leg4\",\"primitive\":\"box\",\"dimensions\":{\"width\":0.02,\"height\":0.2,\"depth\":0.02},\"color\":\"#8B4513\",\"attach\":{\"parent\":\"seat\",\"face\":\"bottom\",\"xOffset\":0.25,\"yOffset\":0,\"zOffset\":0.1}}]}",
+      "resolvedScene" : "{\n  \"name\" : \"棕色木椅\",\n  \"nodes\" : [\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"seat\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0,\n        0.222,\n        0\n      ],\n      \"primitive\" : \"box\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.6,\n        0.05,\n        0.45\n      ]\n    },\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"backrest\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        -0.15,\n        0.372,\n        0.247\n      ],\n      \"primitive\" : \"box\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.2,\n        0.3,\n        0.05\n      ]\n    },\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"leg1\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        -0.25,\n        0.1,\n        -0.1\n      ],\n      \"primitive\" : \"box\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.02,\n        0.2,\n        0.02\n      ]\n    },\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"leg2\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0.25,\n        0.1,\n        -0.1\n      ],\n      \"primitive\" : \"box\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.02,\n        0.2,\n        0.02\n      ]\n    },\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"leg3\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        -0.25,\n        0.1,\n        0.1\n      ],\n      \"primitive\" : \"box\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.02,\n        0.2,\n        0.02\n      ]\n    },\n    {\n      \"color\" : \"#8B4513\",\n      \"id\" : \"leg4\",\n      \"metallic\" : 0.1,\n      \"position\" : [\n        0.25,\n        0.1,\n        0.1\n      ],\n      \"primitive\" : \"box\",\n      \"rotation\" : [\n        0,\n        0,\n        0\n      ],\n      \"roughness\" : 0.45,\n      \"size\" : [\n        0.02,\n        0.2,\n        0.02\n      ]\n    }\n  ]\n}",
+      "seconds" : 14.386584997177124,
+      "semanticChecksPass" : false,
+      "semanticDiagnostics" : [
+        "chair-back-too-narrow",
+        "chair-back-not-at-rear-edge",
+        "chair-front-rear-legs-too-close"
+      ],
+      "spatialChecksPass" : true,
+      "triangleCount" : 72,
+      "validSchema" : true
+    },
+    {
+      "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+      "id" : "robot",
+      "prompt" : "蓝色玩具机器人，立方体头和躯干、左右手臂和双腿、两个球形黄色眼睛，正面朝+Z。",
+      "rejectedOrIncompleteOutput" : "",
+      "seconds" : 15.445200085639954,
+      "validSchema" : false
+    },
+    {
+      "error" : "rotation 必须为包含 x、y、z 的命名坐标。",
+      "id" : "lamp",
+      "prompt" : "一盏红色圆锥灯罩台灯，灰色圆柱底座和细圆柱支杆，可以加球形灯泡，整体约0.8米高。",
+      "rejectedOrIncompleteOutput" : "{\"name\":\"红色圆锥灯罩台灯\",\"nodes\":[{\"id\":\"lamp_base\",\"primitive\":\"cylinder\",\"dimensions\":{\"width\":0.1,\"height\":0.2,\"depth\":0.1},\"color\":\"#808080\",\"rotation\":{\"z\":180}},{\"id\":\"support_post\",\"primitive\":\"cylinder\",\"dimensions\":{\"width\":0.02,\"height\":0.3,\"depth\":0.02},\"color\":\"#808080\",\"attach\":{\"parent\":\"lamp_base\",\"face\":\"top\",\"xOffset\":0,\"yOffset\":0.1,\"zOffset\":0}},{\"id\":\"lamp_shade\",\"primitive\":\"cone\",\"dimensions\":{\"width\":0.2,\"height\":0.3,\"depth\":0.2},\"color\":\"#FF0000\",\"attach\":{\"parent\":\"support_post\",\"face\":\"top\",\"xOffset\":0,\"yOffset\":0.15,\"zOffset\":0}},{\"id\":\"light_bulb\",\"primitive\":\"sphere\",\"dimensions\":{\"width\":0.05,\"height\":0.05,\"depth\":0.05},\"color\":\"#FFA500\",\"attach\":{\"parent\":\"lamp_shade\",\"face\":\"top\",\"xOffset\":0,\"yOffset\":0.1,\"zOffset\":0}}]}",
+      "seconds" : 9.7129479646682739,
+      "validSchema" : false
+    },
+    {
+      "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+      "id" : "whale",
+      "prompt" : "一条弯曲尾巴的蓝色小鲸鱼，流线型椭圆身体，左右鳍和分叉尾鳍，两个可见眼睛；尾鳍或侧鳍至少用一个extrusion自由轮廓。是独立海洋动物造型，不要平台。",
+      "rejectedOrIncompleteOutput" : "",
+      "seconds" : 82.609175086021423,
+      "validSchema" : false
+    },
+    {
+      "error" : "模型没有返回完整的造型参数，请简化描述后重试。",
+      "id" : "aircraft",
+      "prompt" : "带后掠机翼的未来飞行器，银色流线机身、左右对称不规则机翼、两个推进器，机翼至少一个用extrusion自由轮廓，机身可用lathe。做一个整体，不要平台。",
+      "rejectedOrIncompleteOutput" : "",
+      "seconds" : 12.93006706237793,
+      "validSchema" : false
+    }
+  ],
+  "method" : "Native MLX direct named ScenePlan + production AABB attachment solver; no object template or generated code",
+  "mlxActiveBytesAfterLoad" : 4607735792,
+  "mlxActiveBytesAfterUnload" : 4080,
+  "mlxPeakBytes" : 5473220808,
+  "modelDirectory" : "Apple\/.build\/Models\/qwen3-8b-mlx-int4"
+}

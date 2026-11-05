@@ -1,0 +1,43 @@
+{
+  "appID": "6831042755",
+  "assetPackID": "Voxamber-Qwen35-4B-INT4",
+  "assetRecordID": "659bb03a-5104-4bfe-87a2-4029c4c3432f",
+  "bundleID": "com.kaisun.voxamber",
+  "errorCodes": [],
+  "files": [
+    {
+      "approvedSHA256": "0fde54567b434b7b03d0b2583100bea37b1d39f6edc3e875b7d52ca782ba7992",
+      "assetType": "MANIFEST",
+      "fileName": "Manifest.json",
+      "fileSize": 1308,
+      "id": "99dc42fa-fd73-4c4d-86d1-35abd944be6f",
+      "serverFileChecksum": {
+        "algorithm": "MD5",
+        "hash": "10a99be7087b4ebb6118766818ad4c6b"
+      },
+      "state": "COMPLETE"
+    },
+    {
+      "approvedSHA256": "d10cceac24c6d6df77c59f67e19e39d9a361cf07c3df57c4cec3516813ff038e",
+      "assetType": "ASSET",
+      "fileName": "Voxamber - Qwen3.5 4B INT4.aar",
+      "fileSize": 2786862971,
+      "id": "84ed6c0f-895d-4cf4-96bc-ae3827588a01",
+      "serverFileChecksum": {
+        "algorithm": "MD5",
+        "hash": "95491370ca4502ea42e9a80518a747d8"
+      },
+      "state": "COMPLETE"
+    }
+  ],
+  "platforms": [
+    "IOS"
+  ],
+  "schemaVersion": 1,
+  "scope": "Upload and processing only; no beta/review/release activation",
+  "serverState": "COMPLETE",
+  "verifiedAtUnixSeconds": 1793870284,
+  "version": "1",
+  "versionID": "2afe746b-6efc-4c4d-b35c-dbb6cb653464",
+  "warningCodes": []
+}

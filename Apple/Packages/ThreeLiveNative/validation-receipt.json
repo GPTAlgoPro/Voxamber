@@ -1,0 +1,134 @@
+{
+  "observed_at": "2026-11-05T15:34:35.979214+08:00",
+  "implementation": "Pure Swift + Foundation; no script interpreter or binary runtime dependency",
+  "source_sha256": "1e6d3a72b6ae02cd001bb318b4f5c3117de815d80ac03a2a9f1a48e7061d2db4",
+  "swift_tests": {
+    "executed": 4,
+    "failures": 0,
+    "command": "swift test --package-path Apple/Packages/ThreeLiveNative"
+  },
+  "khronos_validator_version": "2.0.0-dev.3.10",
+  "scope": "macOS serialization and native RealityKit loading; not iPhone performance, rendered UI, AR placement, or TestFlight acceptance",
+  "models": [
+    {
+      "preset": "palace",
+      "glb": {
+        "bytes": 450040,
+        "sha256": "5a89c22cfcafc3cf7e2a1cab1daf25f490d81ffb5a8b6dfd05ca062fbc52a619",
+        "khronos_errors": 0,
+        "khronos_warnings": 0
+      },
+      "usdz": {
+        "bytes": 703640,
+        "sha256": "0e7c08bd2d9a4587c44ec0d6b0d7c0b80458368ccc4db9549011cfb51fd550aa",
+        "apple_strict_arkit_validation": "Success",
+        "zip_crc_verified": true
+      },
+      "macos_realitykit": {
+        "success": true,
+        "loadAndReadbackSeconds": 0.22303199768066406,
+        "modelEntities": 10,
+        "vertices": 12446,
+        "triangles": 11808,
+        "invalidValues": 0,
+        "boundsMetres": {
+          "extents": [
+            1,
+            0.6000000238418579,
+            0.800000011920929
+          ],
+          "max": [
+            0.5,
+            0.6000000238418579,
+            0.4000000059604645
+          ],
+          "min": [
+            -0.5,
+            0,
+            -0.4000000059604645
+          ]
+        }
+      }
+    },
+    {
+      "preset": "pavilion",
+      "glb": {
+        "bytes": 208632,
+        "sha256": "b4b500eff22f8219c26eccd105f5b788bc9132b960ee5c3edc09f58cead7818a",
+        "khronos_errors": 0,
+        "khronos_warnings": 0
+      },
+      "usdz": {
+        "bytes": 316787,
+        "sha256": "8a349dfd06819c152c6b4fc24910b689fc8918f2a825668f40a85949280d1aa1",
+        "apple_strict_arkit_validation": "Success",
+        "zip_crc_verified": true
+      },
+      "macos_realitykit": {
+        "success": true,
+        "loadAndReadbackSeconds": 0.20279407501220703,
+        "modelEntities": 10,
+        "vertices": 5488,
+        "triangles": 5606,
+        "invalidValues": 0,
+        "boundsMetres": {
+          "extents": [
+            0.6499999761581421,
+            0.6499999761581421,
+            0.6499999761581421
+          ],
+          "max": [
+            0.32499998807907104,
+            0.6499999761581421,
+            0.32499998807907104
+          ],
+          "min": [
+            -0.32499998807907104,
+            0,
+            -0.32499998807907104
+          ]
+        }
+      }
+    },
+    {
+      "preset": "tower",
+      "glb": {
+        "bytes": 836804,
+        "sha256": "6ecaac99ed82a50bbf732488c615f4646c8a58f3c5467c8ad72b182c3d7f1a87",
+        "khronos_errors": 0,
+        "khronos_warnings": 0
+      },
+      "usdz": {
+        "bytes": 1323409,
+        "sha256": "e5b65b92750c28bf741cbee6feb44d4db6fc7b99d1addf3b4b71f492bb1d0251",
+        "apple_strict_arkit_validation": "Success",
+        "zip_crc_verified": true
+      },
+      "macos_realitykit": {
+        "success": true,
+        "loadAndReadbackSeconds": 0.23946702480316162,
+        "modelEntities": 10,
+        "vertices": 23866,
+        "triangles": 21194,
+        "invalidValues": 0,
+        "boundsMetres": {
+          "extents": [
+            0.6499999761581421,
+            1.100000023841858,
+            0.6499999761581421
+          ],
+          "max": [
+            0.32499998807907104,
+            1.100000023841858,
+            0.32499998807907104
+          ],
+          "min": [
+            -0.32499998807907104,
+            0,
+            -0.32499998807907104
+          ]
+        }
+      }
+    }
+  ]
+}

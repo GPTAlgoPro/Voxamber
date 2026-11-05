@@ -1,0 +1,16 @@
+{
+  "time": "2026-11-05T08:01:59+00:00",
+  "targetBundleId": "com.kaisun.voxamber",
+  "creationMethod": "Visible Safari UI through computer-use",
+  "submittedForAppStoreReview": false,
+  "appRecords": [
+    {
+      "id": "6831042755",
+      "name": "Voxamber",
+      "bundleId": "com.kaisun.voxamber",
+      "sku": "VOXAMBER2026",
+      "primaryLocale": "zh-Hans"
+    }
+  ],
+  "verified": true
+}

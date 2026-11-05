@@ -1,0 +1,22 @@
+{
+  "appGroupCreated": true,
+  "appGroupIdentifier": "group.com.kaisun.voxamber.background-assets",
+  "appID": "6831042755",
+  "associations": [
+    {
+      "bundleRecordID": "TK9NCA3M7W",
+      "identifier": "com.kaisun.voxamber",
+      "requestedGroupSelectedAfterReopen": true,
+      "selectedGroupCount": 1
+    },
+    {
+      "bundleRecordID": "4XB5FYJB92",
+      "identifier": "com.kaisun.voxamber.model-downloader",
+      "requestedGroupSelectedAfterReopen": true,
+      "selectedGroupCount": 1
+    }
+  ],
+  "projectSettingsModified": false,
+  "verificationMethod": "Developer Portal visible UI: saved each exact bundle, reopened App Groups editor, verified only the requested group remained checked",
+  "verifiedAt": "2026-11-05T09:37:00+00:00"
+}
