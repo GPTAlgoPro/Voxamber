@@ -1,4 +1,8 @@
 name: ThreeLiveStudio
+configs:
+  Debug: debug
+  Release: release
+  Release-QA: release
 options:
   bundleIdPrefix: com.kaisun
   deploymentTarget:
@@ -17,7 +21,16 @@ settings:
     DEVELOPMENT_TEAM: M97RTV2PQG
     CODE_SIGN_STYLE: Automatic
     MARKETING_VERSION: "0.1.0"
-    CURRENT_PROJECT_VERSION: "1"
+    CURRENT_PROJECT_VERSION: "2"
+schemes:
+  Voxamber-DeviceQA:
+    build:
+      targets:
+        ThreeLiveStudio: [run]
+    run:
+      config: Release-QA
+      commandLineArguments:
+        --qa-inference: true
 targets:
   ThreeLiveStudio:
     type: application
@@ -25,6 +38,9 @@ targets:
     sources:
       - path: ThreeLiveStudio
     settings:
+      configs:
+        Release-QA:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) DEVICE_QA"
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.kaisun.voxamber
         TARGETED_DEVICE_FAMILY: "1,2"
@@ -33,14 +49,33 @@ targets:
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ENABLE_PREVIEWS: YES
         SWIFT_STRICT_CONCURRENCY: complete
+        CODE_SIGN_ENTITLEMENTS: ThreeLiveStudio/Resources/Voxamber.entitlements
     dependencies:
       - package: CreationCore
       - package: QwenNative
       - package: ThreeLiveNative
+      - target: VoxamberModelDownloader
+        embed: true
     scheme:
       testTargets:
         - ThreeLiveStudioTests
         - ThreeLiveStudioUITests
+  VoxamberModelDownloader:
+    type: extensionkit-extension
+    platform: iOS
+    sources: [ModelDownloader/Downloader.swift]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kaisun.voxamber.model-downloader
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: ModelDownloader/Info.plist
+        CODE_SIGN_ENTITLEMENTS: ModelDownloader/Downloader.entitlements
+        APPLICATION_EXTENSION_API_ONLY: YES
+        SKIP_INSTALL: YES
+    dependencies:
+      - sdk: BackgroundAssets.framework
+      - sdk: ExtensionFoundation.framework
+      - sdk: StoreKit.framework
   ThreeLiveStudioTests:
     type: bundle.unit-test
     platform: iOS

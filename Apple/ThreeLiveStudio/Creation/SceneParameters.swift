@@ -258,6 +258,8 @@ enum StudioCopy {
             "已就绪 · 可离线使用":"Ready · Available offline",
             "模型不完整，请重新安装":"Model files are incomplete. Please reinstall.",
             "正在下载，已完成的文件会保留":"Downloading · Completed files are kept",
+            "正在从 Apple 下载模型素材":"Downloading model assets from Apple",
+            "正在校验并安装 Apple 素材":"Verifying and installing Apple assets",
             "正在导入并校验":"Importing and checking model files",
             "已就绪 · 新安装已取消":"Ready · New installation cancelled",
             "已取消，重试可复用已完成文件":"Cancelled · Retry to reuse completed files",
@@ -276,7 +278,9 @@ enum StudioCopy {
             "已取消":"Cancelled",
             "正在停止":"Stopping",
             "未完成":"Not completed",
-            "已取消，之前保存的作品仍在。":"Cancelled. Your saved creations are kept."
+            "已取消，之前保存的作品仍在。":"Cancelled. Your saved creations are kept.",
+            "离开 App 后已停止生成，之前的作品已保留。":"Generation stopped after leaving the app. Your saved creations are kept.",
+            "设备内存紧张，本次生成已停止，之前的作品已保留。":"Generation stopped because device memory is low. Your saved creations are kept."
         ][value] ?? value
     }
 }

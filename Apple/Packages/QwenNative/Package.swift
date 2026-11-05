@@ -22,6 +22,8 @@ let package = Package(
             .product(name: "MLXLMCommon", package: "mlx-swift-lm"),
             .product(name: "Tokenizers", package: "swift-transformers"),
         ]),
-        .executableTarget(name: "QwenBench", dependencies: ["QwenNative", "CreationCore", "ThreeLiveNative"]),
+        .executableTarget(name: "QwenBench", dependencies: ["QwenNative", "CreationCore", "ThreeLiveNative",
+            .product(name: "MLXGuidedGeneration", package: "mlx-swift-lm")],
+            resources: [.copy("plan-schema.json")]),
     ]
 )

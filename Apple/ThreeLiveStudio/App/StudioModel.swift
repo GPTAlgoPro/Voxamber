@@ -1,9 +1,11 @@
 import Foundation
+import UIKit
 import Observation
 import CreationCore
 import ThreeLiveNative
 
 enum StudioTab: Hashable { case create, library, models }
+enum GenerationStopReason: String, Sendable { case user, background, memoryPressure }
 
 @MainActor @Observable
 final class StudioModel {
@@ -18,11 +20,14 @@ final class StudioModel {
     var errorMessage: String?
     var notice: String?
     var showParameters = false
+    private(set) var stopReason: GenerationStopReason?
+    private(set) var lastStopLatency: Double?
     let models = ModelManager()
     @ObservationIgnored let store = ProjectStore()
     @ObservationIgnored private var work: Task<Void, Never>?
     @ObservationIgnored private var timer: Task<Void, Never>?
     @ObservationIgnored private var draftTask: Task<Void, Never>?
+    @ObservationIgnored private var stopRequestedAt: ContinuousClock.Instant?
 
     static var blankScene: SceneSpec {
         SceneSpec(name: StudioCopy.text("自由造型", "Untitled creation"), nodes: [SceneNode(id: "form", primitive: .sphere,
@@ -35,7 +40,12 @@ final class StudioModel {
     func start() async {
         #if DEVICE_QA
         if ProcessInfo.processInfo.arguments.contains("--qa-inference") {
-            await DeviceAcceptanceProbe.run(studio: self)
+            UIApplication.shared.isIdleTimerDisabled = true
+            let task = Task { await DeviceAcceptanceProbe.run(studio: self) }
+            work = task
+            await withTaskCancellationHandler { await task.value } onCancel: { task.cancel() }
+            finishOperation()
+            await models.checkInstallation()
             return
         }
         #endif
@@ -64,7 +74,7 @@ final class StudioModel {
     func generate(usingAI: Bool) {
         guard !busy else { return }
         if usingAI && !models.installed { tab = .models; return }
-        busy = true; errorMessage = nil; notice = nil; elapsed = 0
+        busy = true; errorMessage = nil; notice = nil; elapsed = 0; stopReason = nil; lastStopLatency = nil; stopRequestedAt = nil
         let start = Date()
         let initialScene = sceneSpec ?? .chair
         let request = prompt.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -76,7 +86,7 @@ final class StudioModel {
             }
         }
         work = Task {
-            defer { busy = false; timer?.cancel(); timer = nil; work = nil }
+            defer { finishOperation(); timer?.cancel(); timer = nil }
             do {
                 draftTask?.cancel()
                 try await store.saveDraft(spec: initialScene, prompt: request)
@@ -126,12 +136,52 @@ final class StudioModel {
                 await refreshLibrary()
                 notice = "已保存到作品库"
                 stage = "已完成"
-            } catch is CancellationError { stage = "已取消"; notice = "已取消，之前保存的作品仍在。" }
+            } catch is CancellationError {
+                stage = "已取消"
+                switch stopReason {
+                case .background: notice = "离开 App 后已停止生成，之前的作品已保留。"
+                case .memoryPressure: notice = "设备内存紧张，本次生成已停止，之前的作品已保留。"
+                default: notice = "已取消，之前保存的作品仍在。"
+                }
+            }
             catch { stage = "未完成"; errorMessage = error.localizedDescription }
         }
     }
 
-    func cancel() { work?.cancel(); stage = "正在停止" }
+    func cancel(reason: GenerationStopReason = .user) {
+        guard busy, let operation = work, !operation.isCancelled else { return }
+        stopReason = reason
+        stopRequestedAt = .now
+        operation.cancel()
+        stage = "正在停止"
+    }
+
+    private func finishOperation() {
+        busy = false
+        work = nil
+        guard let requested = stopRequestedAt else { return }
+        let duration = requested.duration(to: .now).components
+        let seconds = Double(duration.seconds) + Double(duration.attoseconds) / 1e18
+        lastStopLatency = seconds
+        stopRequestedAt = nil
+        let receipt: [String: Any] = ["schemaVersion": 1, "reason": stopReason?.rawValue ?? "unknown",
+            "secondsToIdle": seconds, "busy": busy, "hasOwnedTask": work != nil, "terminalStage": stage,
+            "appBuild": Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? "unknown"]
+        let url = URL.documentsDirectory.appending(path: "Measurements/last-stop.json")
+        do {
+            try FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
+            try JSONSerialization.data(withJSONObject: receipt, options: [.prettyPrinted, .sortedKeys]).write(to: url, options: .atomic)
+        } catch { /* Local timing diagnostics do not change the stopped state. */ }
+    }
+
+    func handleMemoryPressure() {
+        let pending = work
+        cancel(reason: .memoryPressure)
+        Task {
+            await pending?.value
+            await models.unload()
+        }
+    }
 
     func open(_ project: CreationProject) async {
         guard !busy else { return }
@@ -162,10 +212,17 @@ final class StudioModel {
     }
 
     func enterBackground() {
-        cancel(); draftTask?.cancel()
+        let pending = work
+        cancel(reason: .background); draftTask?.cancel()
         let value = sceneSpec ?? Self.blankScene, text = prompt
         Task { try? await store.saveDraft(spec: value, prompt: text) }
-        Task { await models.unload() }
+        let lease = pending == nil ? UIBackgroundTaskIdentifier.invalid :
+            UIApplication.shared.beginBackgroundTask(withName: "Stop on-device generation") { pending?.cancel() }
+        Task {
+            await pending?.value
+            await models.unload()
+            if lease != .invalid { UIApplication.shared.endBackgroundTask(lease) }
+        }
     }
 
     private func saveMeasurement(_ timings: [String: Double], ai: Bool, project: CreationProject) async {

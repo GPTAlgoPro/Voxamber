@@ -1,13 +1,15 @@
 # 维珀 Voxamber · 原生离线 3D 创作
 
-正在开发的 iPhone / iPhone Duo 通用建模 App，应用类别为生产力。用户自由描述创作内容，不设建筑、家具等题材白名单；示例只作灵感起点。
+iPhone / iPhone Duo 通用建模测试版 App，应用类别为生产力。用户自由描述创作内容，不设建筑、家具等题材白名单；示例只作灵感起点。
 
 - 中文描述 → 本地模型理解 → 原生几何生成 → RealityKit 预览 → 逐部件编辑 → 本地保存 / 恢复 → GLB、USDZ 导出和系统 AR 预览。
-- 正式端侧模型上限 **8B**，目标设备 **12GB 及以上内存**。当前选型候选为 Qwen3.5 4B INT4 / Swift MLX / Metal；官方当前 Qwen3.8 最小公开模型为 27B，不能误称存在官方 3.8 4B。
+- 正式端侧模型上限 **8B**，目标设备 **12GB 及以上内存**。当前使用 Qwen3.5 4B INT4 / Swift MLX / Metal；官方当前 Qwen3.8 最小公开模型为 27B，不能误称存在官方 3.8 4B。
 - App 不包含 Python、JavaScript 解释器或外部脚本环境。原生 Swift 几何与导出包直接产出模型文件；Mac 开发工具不进入 App。
-- 新品牌、通用几何玻璃图标和 App Store Connect 新记录已准备，bundle 为 `com.kaisun.voxamber`。尚未完成上传或宣告 TestFlight 可用。
+- 当前测试版 **0.1.0 (2)** 已完成 Apple 处理并进入仅本人参与的内部 TestFlight；bundle 为 `com.kaisun.voxamber`。这不代表 App Store 已审核或公开上架。
 
 工程：[Apple/ThreeLiveStudio.xcodeproj](Apple/ThreeLiveStudio.xcodeproj)。实施与当前边界：[实施记录](docs/plans/2026-11-05-native-minicpm-app.md)。核验回执与测试证据：[原生 App 验证目录](docs/qa/2026-11-05-native-app)。
+
+官网：[维珀](https://gptalgopro.github.io/Voxamber-Website/) · [支持](https://gptalgopro.github.io/Voxamber-Website/support/) · [隐私政策](https://gptalgopro.github.io/Voxamber-Website/privacy/)。千问素材包版本 1 已上传 Apple 托管并处理完成；TestFlight 实机首次冷下载仍待验证。
 
 原有 Three-Live Mac 几何实验保留在下方，属于研发历史和导出对照，不限定 App 的创作题材。
 

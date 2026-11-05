@@ -1,0 +1,162 @@
+{
+  "events" : [
+    {
+      "stage" : "case_begin tiny",
+      "time" : "2026-11-05T09:50:21Z"
+    },
+    {
+      "stage" : "direct_begin elapsed=0.000 inputTokenCount=0 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:21Z"
+    },
+    {
+      "stage" : "tokenizer_prepare_begin elapsed=0.001 inputTokenCount=0 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:21Z"
+    },
+    {
+      "stage" : "tokenizer_prepare_done elapsed=0.012 inputTokenCount=28 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:21Z"
+    },
+    {
+      "stage" : "kv_cache_begin elapsed=0.013 inputTokenCount=28 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:21Z"
+    },
+    {
+      "stage" : "kv_cache_ready elapsed=0.013 inputTokenCount=28 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:21Z"
+    },
+    {
+      "stage" : "prefill_begin elapsed=0.014 inputTokenCount=28 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:21Z"
+    },
+    {
+      "stage" : "prefill_submitted processed=28 elapsed=0.677 inputTokenCount=28 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:22Z"
+    },
+    {
+      "stage" : "prefill_ready elapsed=0.680 inputTokenCount=28 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:22Z"
+    },
+    {
+      "stage" : "raw_stream_ready elapsed=0.682 inputTokenCount=28 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:22Z"
+    },
+    {
+      "stage" : "first_raw_token elapsed=0.742 inputTokenCount=28 generatedTokenCount=1",
+      "time" : "2026-11-05T09:50:22Z"
+    },
+    {
+      "stage" : "native_generation_complete elapsed=0.986 inputTokenCount=28 generatedTokenCount=6",
+      "time" : "2026-11-05T09:50:22Z"
+    },
+    {
+      "stage" : "raw_stream_finished elapsed=0.996 inputTokenCount=28 generatedTokenCount=6",
+      "time" : "2026-11-05T09:50:22Z"
+    },
+    {
+      "stage" : "direct_finished elapsed=0.998 inputTokenCount=28 generatedTokenCount=6",
+      "time" : "2026-11-05T09:50:22Z"
+    },
+    {
+      "stage" : "case_finished tiny",
+      "time" : "2026-11-05T09:50:22Z"
+    },
+    {
+      "stage" : "case_begin long",
+      "time" : "2026-11-05T09:50:22Z"
+    },
+    {
+      "stage" : "direct_begin elapsed=0.000 inputTokenCount=0 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:22Z"
+    },
+    {
+      "stage" : "tokenizer_prepare_begin elapsed=0.001 inputTokenCount=0 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:22Z"
+    },
+    {
+      "stage" : "tokenizer_prepare_done elapsed=0.044 inputTokenCount=1031 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:22Z"
+    },
+    {
+      "stage" : "kv_cache_begin elapsed=0.045 inputTokenCount=1031 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:22Z"
+    },
+    {
+      "stage" : "kv_cache_ready elapsed=0.046 inputTokenCount=1031 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:22Z"
+    },
+    {
+      "stage" : "prefill_begin elapsed=0.046 inputTokenCount=1031 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:22Z"
+    },
+    {
+      "stage" : "prefill_submitted processed=115 elapsed=0.213 inputTokenCount=1031 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:22Z"
+    },
+    {
+      "stage" : "prefill_submitted processed=230 elapsed=0.403 inputTokenCount=1031 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:23Z"
+    },
+    {
+      "stage" : "prefill_submitted processed=345 elapsed=0.596 inputTokenCount=1031 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:23Z"
+    },
+    {
+      "stage" : "prefill_submitted processed=460 elapsed=0.788 inputTokenCount=1031 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:23Z"
+    },
+    {
+      "stage" : "prefill_submitted processed=575 elapsed=0.983 inputTokenCount=1031 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:23Z"
+    },
+    {
+      "stage" : "prefill_submitted processed=690 elapsed=1.176 inputTokenCount=1031 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:23Z"
+    },
+    {
+      "stage" : "prefill_submitted processed=805 elapsed=1.380 inputTokenCount=1031 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:24Z"
+    },
+    {
+      "stage" : "prefill_submitted processed=920 elapsed=1.585 inputTokenCount=1031 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:24Z"
+    },
+    {
+      "stage" : "prefill_submitted processed=1030 elapsed=1.786 inputTokenCount=1031 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:24Z"
+    },
+    {
+      "stage" : "prefill_submitted processed=1031 elapsed=1.856 inputTokenCount=1031 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:24Z"
+    },
+    {
+      "stage" : "prefill_ready elapsed=1.857 inputTokenCount=1031 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:24Z"
+    },
+    {
+      "stage" : "raw_stream_ready elapsed=1.857 inputTokenCount=1031 generatedTokenCount=0",
+      "time" : "2026-11-05T09:50:24Z"
+    },
+    {
+      "stage" : "first_raw_token elapsed=1.896 inputTokenCount=1031 generatedTokenCount=1",
+      "time" : "2026-11-05T09:50:24Z"
+    },
+    {
+      "stage" : "native_generation_complete elapsed=2.174 inputTokenCount=1031 generatedTokenCount=8",
+      "time" : "2026-11-05T09:50:24Z"
+    },
+    {
+      "stage" : "raw_stream_finished elapsed=2.184 inputTokenCount=1031 generatedTokenCount=8",
+      "time" : "2026-11-05T09:50:24Z"
+    },
+    {
+      "stage" : "direct_finished elapsed=2.186 inputTokenCount=1031 generatedTokenCount=8",
+      "time" : "2026-11-05T09:50:24Z"
+    },
+    {
+      "stage" : "case_finished long",
+      "time" : "2026-11-05T09:50:24Z"
+    }
+  ],
+  "runID" : "48D3F105-146B-4ABF-8EF0-066613DC1D3C",
+  "scope" : "Direct native inference stages only; not modeling-quality acceptance."
+}

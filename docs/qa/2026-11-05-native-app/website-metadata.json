@@ -1,0 +1,117 @@
+{
+  "appID": "6831042755",
+  "bundleID": "com.kaisun.voxamber",
+  "checkedAt": "2026-11-05T09:33:12.295628+00:00",
+  "schemaVersion": "4.6",
+  "schemaSHA256": "74732362a91236dcb66eb1620f8be18c2b6060771269b483eab578473bb32763",
+  "operations": [
+    {
+      "resource": "appInfoLocalizations",
+      "id": "fe6a6de3-82ae-49ce-a237-66603a58451c",
+      "locale": "zh-Hans",
+      "action": "PATCH",
+      "attributes": {
+        "privacyPolicyUrl": "https://gptalgopro.github.io/Voxamber-Website/privacy/"
+      },
+      "verified": true
+    },
+    {
+      "resource": "appInfoLocalizations",
+      "id": "1d031e80-0995-4bcd-9dc6-6bbf4f6ccd25",
+      "locale": "en-US",
+      "action": "PATCH",
+      "attributes": {
+        "privacyPolicyUrl": "https://gptalgopro.github.io/Voxamber-Website/en/privacy/"
+      },
+      "verified": true
+    },
+    {
+      "resource": "appStoreVersionLocalizations",
+      "id": "15d4eb8e-cc5c-4cbf-a1c9-b89e18bb77e4",
+      "locale": "zh-Hans",
+      "action": "PATCH",
+      "attributes": {
+        "marketingUrl": "https://gptalgopro.github.io/Voxamber-Website/",
+        "supportUrl": "https://gptalgopro.github.io/Voxamber-Website/support/"
+      },
+      "verified": true
+    },
+    {
+      "resource": "appStoreVersionLocalizations",
+      "id": "0df8a7f6-5bf4-4be8-a935-59d392063a26",
+      "locale": "en-US",
+      "action": "PATCH",
+      "attributes": {
+        "marketingUrl": "https://gptalgopro.github.io/Voxamber-Website/en/",
+        "supportUrl": "https://gptalgopro.github.io/Voxamber-Website/en/support/"
+      },
+      "verified": true
+    },
+    {
+      "resource": "betaAppLocalizations",
+      "id": "d7d2e997-3eba-4acc-88e0-baa3b9118209",
+      "locale": "zh-Hans",
+      "action": "POST_LOCALIZATION",
+      "attributes": {
+        "marketingUrl": "https://gptalgopro.github.io/Voxamber-Website/",
+        "privacyPolicyUrl": "https://gptalgopro.github.io/Voxamber-Website/privacy/"
+      },
+      "verified": true
+    },
+    {
+      "resource": "betaAppLocalizations",
+      "id": "7ad4c3e3-f938-4ea2-a493-89309134390e",
+      "locale": "en-US",
+      "action": "POST_LOCALIZATION",
+      "attributes": {
+        "marketingUrl": "https://gptalgopro.github.io/Voxamber-Website/en/",
+        "privacyPolicyUrl": "https://gptalgopro.github.io/Voxamber-Website/en/privacy/"
+      },
+      "verified": true
+    }
+  ],
+  "reviewSubmitted": false,
+  "appInfoScopes": [
+    {
+      "id": "f8fed99d-159e-44d8-8c86-56bd491234d7",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "id": "1d031e80-0995-4bcd-9dc6-6bbf4f6ccd25",
+          "locale": "en-US",
+          "privacyPolicyUrl": null
+        },
+        {
+          "id": "fe6a6de3-82ae-49ce-a237-66603a58451c",
+          "locale": "zh-Hans",
+          "privacyPolicyUrl": null
+        }
+      ]
+    }
+  ],
+  "versionScopes": [
+    {
+      "id": "025c4d13-07e7-4f69-9926-bcb039360f59",
+      "version": "1.0",
+      "platform": "IOS",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "localizations": [
+        {
+          "id": "0df8a7f6-5bf4-4be8-a935-59d392063a26",
+          "locale": "en-US",
+          "marketingUrl": null,
+          "supportUrl": null
+        },
+        {
+          "id": "15d4eb8e-cc5c-4cbf-a1c9-b89e18bb77e4",
+          "locale": "zh-Hans",
+          "marketingUrl": null,
+          "supportUrl": null
+        }
+      ]
+    }
+  ],
+  "betaScopes": [],
+  "verifiedAt": "2026-11-05T09:33:33.249886+00:00",
+  "allAttemptedURLsVerified": true
+}

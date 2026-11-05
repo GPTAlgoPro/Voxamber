@@ -336,11 +336,16 @@ public actor VerifiedModelStore {
         defer { try? handle.close() }
         var digest = SHA256()
         var read: Int64 = 0
-        while let block = try handle.read(upToCount: 4 * 1_024 * 1_024), !block.isEmpty {
-            try Task.checkCancellation()
-            read += Int64(block.count)
-            guard read <= file.byteCount else { throw VerifiedModelStoreError.invalidFile(file.path) }
-            digest.update(data: block)
+        while true {
+            let didRead = try autoreleasepool {
+                try Task.checkCancellation()
+                guard let block = try handle.read(upToCount: 4 * 1_024 * 1_024), !block.isEmpty else { return false }
+                read += Int64(block.count)
+                guard read <= file.byteCount else { throw VerifiedModelStoreError.invalidFile(file.path) }
+                digest.update(data: block)
+                return true
+            }
+            if !didRead { break }
         }
         guard read == file.byteCount,
               digest.finalize().map({ String(format: "%02x", $0) }).joined() == file.sha256.lowercased() else {
@@ -360,12 +365,17 @@ public actor VerifiedModelStore {
         let output = try FileHandle(forWritingTo: destination)
         defer { try? output.close() }
         var written: Int64 = 0
-        while let block = try input.read(upToCount: 4 * 1_024 * 1_024), !block.isEmpty {
-            try Task.checkCancellation()
-            written += Int64(block.count)
-            guard written <= expected else { throw VerifiedModelStoreError.invalidFile(source.lastPathComponent) }
-            try output.write(contentsOf: block)
-            update(written)
+        while true {
+            let didRead = try autoreleasepool {
+                try Task.checkCancellation()
+                guard let block = try input.read(upToCount: 4 * 1_024 * 1_024), !block.isEmpty else { return false }
+                written += Int64(block.count)
+                guard written <= expected else { throw VerifiedModelStoreError.invalidFile(source.lastPathComponent) }
+                try output.write(contentsOf: block)
+                update(written)
+                return true
+            }
+            if !didRead { break }
         }
         guard written == expected else { throw VerifiedModelStoreError.invalidFile(source.lastPathComponent) }
         try output.synchronize()

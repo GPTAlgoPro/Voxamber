@@ -1,0 +1,163 @@
+{
+  "name" : "棕色木椅",
+  "nodes" : [
+    {
+      "color" : "#8a4f24",
+      "id" : "seat",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.657,
+        0
+      ],
+      "primitive" : "lathe",
+      "profile" : [
+        [
+          0.36,
+          0.04
+        ],
+        [
+          0.38,
+          0.07
+        ],
+        [
+          0.36,
+          0.1
+        ],
+        [
+          0.3,
+          0.11
+        ],
+        [
+          0.27,
+          0.08
+        ],
+        [
+          0.27,
+          0.04
+        ]
+      ],
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.72,
+        0.08,
+        0.48
+      ]
+    },
+    {
+      "color" : "#8a4f24",
+      "id" : "back",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.934,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.62,
+        0.48,
+        0.07
+      ]
+    },
+    {
+      "color" : "#703b1d",
+      "id" : "leftLeg",
+      "metallic" : 0.1,
+      "position" : [
+        -1,
+        0.31,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.12,
+        0.62,
+        0.12
+      ]
+    },
+    {
+      "color" : "#703b1d",
+      "id" : "rightLeg",
+      "metallic" : 0.1,
+      "position" : [
+        1,
+        0.31,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.12,
+        0.62,
+        0.12
+      ]
+    },
+    {
+      "color" : "#703b1d",
+      "id" : "frontLeg",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.31,
+        0.22
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.12,
+        0.62,
+        0.12
+      ]
+    },
+    {
+      "color" : "#703b1d",
+      "id" : "backLeg",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.31,
+        -1
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.12,
+        0.62,
+        0.12
+      ]
+    }
+  ]
+}

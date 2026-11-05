@@ -1,0 +1,137 @@
+{
+  "name" : "棕色木椅",
+  "nodes" : [
+    {
+      "color" : "#8B4513",
+      "id" : "seat",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.272,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.6,
+        0.05,
+        0.45
+      ]
+    },
+    {
+      "color" : "#8B4513",
+      "id" : "backrest",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.572,
+        0.247
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.2,
+        0.3,
+        0.05
+      ]
+    },
+    {
+      "color" : "#8B4513",
+      "id" : "leg1",
+      "metallic" : 0.1,
+      "position" : [
+        -0.25,
+        0.12500001,
+        -0.1
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.03,
+        0.25,
+        0.03
+      ]
+    },
+    {
+      "color" : "#8B4513",
+      "id" : "leg2",
+      "metallic" : 0.1,
+      "position" : [
+        0.25,
+        0.12500001,
+        -0.1
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.03,
+        0.25,
+        0.03
+      ]
+    },
+    {
+      "color" : "#8B4513",
+      "id" : "leg3",
+      "metallic" : 0.1,
+      "position" : [
+        -0.25,
+        0.12500001,
+        0.1
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.03,
+        0.25,
+        0.03
+      ]
+    },
+    {
+      "color" : "#8B4513",
+      "id" : "leg4",
+      "metallic" : 0.1,
+      "position" : [
+        0.25,
+        0.12500001,
+        0.1
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.03,
+        0.25,
+        0.03
+      ]
+    }
+  ]
+}

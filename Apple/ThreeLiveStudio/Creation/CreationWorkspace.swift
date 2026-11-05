@@ -6,7 +6,6 @@ struct CreationWorkspace: View {
     @Environment(\.horizontalSizeClass) private var widthClass
     @Environment(\.dynamicTypeSize) private var typeSize
     @State private var quickLook: PreviewItem?
-    @State private var share: ShareItem?
     @FocusState private var promptFocused: Bool
 
     var body: some View {
@@ -40,7 +39,6 @@ struct CreationWorkspace: View {
         }
         .safeAreaBar(edge: .bottom) { actionBar }
         .sheet(item: $quickLook) { item in NativeQuickLook(url: item.url).ignoresSafeArea() }
-        .sheet(item: $share) { item in NativeShare(urls: item.urls) }
         .onChange(of: studio.prompt) { _, _ in studio.persistDraft() }
         .onChange(of: studio.sceneSpec) { _, _ in studio.persistDraft() }
     }
@@ -131,9 +129,9 @@ struct CreationWorkspace: View {
                         Button(StudioCopy.text("实景预览", "View in your space"), systemImage: "arkit") { quickLook = PreviewItem(url: assets.usdzURL) }
                             .accessibilityIdentifier("openAR")
                         Menu {
-                            Button(StudioCopy.text("导出 USDZ", "Export USDZ")) { share = ShareItem(urls: [assets.usdzURL]) }
-                            Button(StudioCopy.text("导出 GLB", "Export GLB")) { share = ShareItem(urls: [assets.glbURL]) }
-                            Button(StudioCopy.text("导出两个格式", "Export both formats")) { share = ShareItem(urls: [assets.usdzURL, assets.glbURL]) }
+                            ShareLink(item: assets.usdzURL) { Text(StudioCopy.text("导出 USDZ", "Export USDZ")) }
+                            ShareLink(item: assets.glbURL) { Text(StudioCopy.text("导出 GLB", "Export GLB")) }
+                            ShareLink(items: [assets.usdzURL, assets.glbURL]) { Text(StudioCopy.text("导出两个格式", "Export both formats")) }
                         } label: { Label(StudioCopy.text("导出", "Export"), systemImage: "square.and.arrow.up") }
                         .accessibilityIdentifier("exportMenu")
                     }.buttonStyle(.glass).disabled(!studio.canExport)
@@ -198,4 +196,3 @@ struct CreationWorkspace: View {
 }
 
 private struct PreviewItem: Identifiable { let id = UUID(); let url: URL }
-private struct ShareItem: Identifiable { let id = UUID(); let urls: [URL] }

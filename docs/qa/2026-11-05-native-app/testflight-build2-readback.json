@@ -1,0 +1,132 @@
+{
+  "appID": "6831042755",
+  "bundleID": "com.kaisun.voxamber",
+  "version": "0.1.0",
+  "build": "2",
+  "buildID": "165057ba-889c-4ad8-839f-0980744742d1",
+  "ipaSHA256": "9aae337761a86451b9c746940d462929bce30abf0eec8808125768a5a73b5d1b",
+  "observedAt": "2026-11-05T11:01:04.670385+00:00",
+  "upload": {
+    "sanitizedAltoolSuccessLogVerified": true,
+    "reuploadPerformed": false
+  },
+  "processing": {
+    "state": "VALID",
+    "expired": false,
+    "usesNonExemptEncryption": false,
+    "uploadedDate": "2026-11-05T02:55:12-08:00",
+    "compliancePatchPerformed": false
+  },
+  "internalBeta": {
+    "autoNotifyEnabled": true,
+    "internalBuildState": "IN_BETA_TESTING",
+    "externalBuildState": "READY_FOR_BETA_SUBMISSION"
+  },
+  "group": {
+    "id": "7d4c4aba-14b9-423e-b1ae-d50ce983d527",
+    "isInternal": true,
+    "hasAccessToAllBuilds": false,
+    "publicLinkEnabledRaw": null,
+    "publicLinkEnabled": false,
+    "testerCount": 1,
+    "uniqueSelfMembershipVerifiedInMemory": true,
+    "testerStatesBeforeBuildBinding": [
+      "NOT_INVITED"
+    ],
+    "testerStatesAfterBuildBinding": [
+      "INVITED"
+    ],
+    "testerInviteTypes": [
+      "EMAIL"
+    ],
+    "groupBuildIDs": [
+      "165057ba-889c-4ad8-839f-0980744742d1"
+    ],
+    "buildGroupIDs": [
+      "7d4c4aba-14b9-423e-b1ae-d50ce983d527"
+    ],
+    "directTesterCount": 0
+  },
+  "localizations": {
+    "zh-Hans": "维珀 0.1.0（2）内部测试\n\n用文字描述三维造型，调整部件、网格和材质，并保存、导出或在真实空间中预览。\n\n本机 AI 需要 12GB 或以上内存的 iPhone。首次从 Apple 下载 Qwen3.5 4B INT4 模型素材，校验安装后可离线生成。\n\n包含 AI 生成与停止后状态恢复的修复，请重点测试取消、再次生成和保存作品。\n\n复杂造型的结构与细节质量仍处于早期阶段，可能需要手动调整。",
+    "en-US": "Voxamber 0.1.0 (2), internal test\n\nCreate 3D forms from descriptions; edit parts, meshes and materials, then save, export or preview in AR.\n\nOn-device AI requires an iPhone with at least 12 GB RAM. Download the Qwen3.5 4B INT4 model from Apple once; after verification and installation, generation runs offline.\n\nIncludes fixes for AI generation and state recovery after stopping. Please test cancellation, starting another generation, and saving work.\n\nComplex shapes and fine detail are still early and may need manual editing."
+  },
+  "actions": [
+    {
+      "operation": "updateBuildTestNotes",
+      "locale": "zh-Hans",
+      "succeeded": true
+    },
+    {
+      "operation": "updateBuildTestNotes",
+      "locale": "en-US",
+      "succeeded": true
+    },
+    {
+      "operation": "addExactBuildToExistingInternalGroup",
+      "httpStatus": 204,
+      "succeeded": true
+    }
+  ],
+  "independentReadbackComplete": true,
+  "notPerformed": [
+    "externalBetaReviewSubmission",
+    "publicLinkCreation",
+    "AppStoreReviewSubmission",
+    "addingOtherTesters",
+    "deviceInstallOrLaunch"
+  ],
+  "actualTestFlightInstallVerified": false,
+  "result": "PASS",
+  "checks": {
+    "exactBuild2Identity": true,
+    "exactPrereleaseVersionPlatform": true,
+    "processingVALID": true,
+    "encryptionAlreadyExempt": true,
+    "internalBuildIN_BETA_TESTING": true,
+    "automaticNotificationsEnabled": true,
+    "groupBelongsOnlyToTargetApp": true,
+    "internalGroupNoPublicLinkOrAllBuildAccess": true,
+    "groupToBuildRelationshipExact": true,
+    "buildToGroupRelationshipExact": true,
+    "exactlyOneSelfMemberVerifiedInMemory": true,
+    "selfTesterInvitationActive": true,
+    "localizedTestNotesMatch": true,
+    "noExternalBetaReview": true,
+    "appStoreVersion1UntouchedPrepare": true
+  },
+  "independentReadbackMethods": [
+    "GET exact build with app/prerelease/group relationships",
+    "GET buildBetaDetail",
+    "GET internal-group build relationships",
+    "GET unique group tester and compare current account identity only in memory",
+    "GET localized build test notes",
+    "GET AppStoreVersion state",
+    "GET betaAppReviewSubmission relationship"
+  ],
+  "externalBetaReviewRelationshipEmpty": true,
+  "productionAppStoreVersions": [
+    {
+      "version": "1.0",
+      "appStoreState": "PREPARE_FOR_SUBMISSION",
+      "appVersionState": "PREPARE_FOR_SUBMISSION"
+    }
+  ],
+  "serverInternalDistributionReady": true,
+  "selfInvitationIssuedVerified": true,
+  "testerAcceptanceVerified": false,
+  "testerHasInstalledAnyBuildStateVerified": false,
+  "actualTestFlightBuild2InstallVerified": false,
+  "manualInvitationOrNotificationPerformed": false,
+  "invitationMechanism": "Apple automatically invited the existing unique self tester after this build was added to the internal group.",
+  "remainingAcceptance": [
+    "The tester accepts the invitation and installs build 2 in TestFlight.",
+    "Verify Apple-hosted model cold download and verified private import.",
+    "Verify offline generation, stopping/retry, saved work and export on the phone."
+  ],
+  "officialReferences": [
+    "https://developer.apple.com/help/app-store-connect/test-a-beta-version/add-internal-testers/",
+    "https://developer.apple.com/documentation/appstoreconnectapi/beta-tester-invitations",
+    "https://developer.apple.com/documentation/appstoreconnectapi/get-v1-buildbetadetails-_id_"
+  ]
+}

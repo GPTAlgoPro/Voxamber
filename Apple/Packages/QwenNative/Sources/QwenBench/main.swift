@@ -19,6 +19,13 @@ private final class ProgressMeasurement: @unchecked Sendable {
     var firstTokenSeconds: Double? { lock.withLock { first } }
 }
 
+private final class DirectEvents: @unchecked Sendable {
+    private let lock = NSLock()
+    private var values: [String] = []
+    func append(_ value: String) { lock.withLock { values.append(value) } }
+    var snapshot: [String] { lock.withLock { values } }
+}
+
 private let cases: [BenchmarkCase] = [
     .init(id: "palace-default", prompt: "建一座金瓦朱柱的双重檐宫殿，尺寸用默认值。", current: nil,
           expected: ["kind": "palace", "roofColor": "gold", "columnColor": "vermilion", "roofTiers": "2", "floors": "1"]),
@@ -41,7 +48,81 @@ private struct QwenBench {
         guard arguments.count >= 3 else {
             print("Usage: QwenBench MODEL_DIRECTORY REPORT_JSON"); return
         }
+        if arguments.contains("--cancellation-probe") {
+            try await CancellationProbe.run(modelDirectory: URL(fileURLWithPath: arguments[1]),
+                                             reportURL: URL(fileURLWithPath: arguments[2]))
+            return
+        }
+        if arguments.contains("--render-report") {
+            try await AttachmentBenchmark.renderReport(URL(fileURLWithPath: arguments[1]),
+                                                       destination: URL(fileURLWithPath: arguments[2]))
+            return
+        }
+        if arguments.contains("--sampled") {
+            let sampled = SampledModel(ccoreSettings: arguments.contains("--ccore-sampling"))
+            try await sampled.load(URL(fileURLWithPath: arguments[1]))
+            try await AttachmentBenchmark.run(engine: sampled, reportURL: URL(fileURLWithPath: arguments[2]))
+            return
+        }
+        if arguments.contains("--guided") {
+            let guided = try GuidedModel()
+            try await guided.load(URL(fileURLWithPath: arguments[1]))
+            try await AttachmentBenchmark.run(engine: guided, reportURL: URL(fileURLWithPath: arguments[2]))
+            return
+        }
         let engine = QwenEngine()
+        if arguments.contains("--formal-direct-regression") {
+            let began = Date()
+            let progress = ProgressMeasurement()
+            try await engine.load(modelDirectory: URL(fileURLWithPath: arguments[1]))
+            let response = try await engine.generateJSON(systemPrompt: ScenePrompt.system,
+                prompt: ScenePrompt.userRequest("红色台灯：底座、沿Y轴竖直的细圆柱支杆、圆锥形灯罩。三个部件用attach连接。灯杆height=0.55,width=0.03,depth=0.03。"),
+                onProgress: { progress.update($0) })
+            let scene = try SceneSpec.decodeModelResponse(response)
+            let meshes = try SceneGenerator.generate(for: scene)
+            let glb = try ThreeLiveNative.exportGLB(meshes)
+            let usdz = try ThreeLiveNative.exportUSDZ(meshes)
+            let followup = try await engine.generateJSON(systemPrompt: "只返回JSON对象。", prompt: "返回ok为true。", maxTokens: 32)
+            let followupObject = try JSONSerialization.jsonObject(with: Data(followup.utf8)) as? [String: Any]
+            await engine.unload()
+            let memory = await engine.memorySnapshot()
+            let report: [String: Any] = ["scope": "Formal single-turn generation/JSON/ScenePlan/mesh/export lifecycle regression; not modeling-quality acceptance",
+                "sceneValid": true, "nodes": scene.nodes.count, "meshes": meshes.count,
+                "triangles": meshes.reduce(0) { $0 + $1.indices.count / 3 },
+                "glbBytes": glb.count, "usdzBytes": usdz.count,
+                "firstTokenSeconds": progress.firstTokenSeconds ?? -1,
+                "followupJSONValid": followupObject != nil,
+                "elapsedSeconds": Date().timeIntervalSince(began), "activeBytesAfterUnload": memory.activeBytes]
+            try JSONSerialization.data(withJSONObject: report, options: [.prettyPrinted, .sortedKeys])
+                .write(to: URL(fileURLWithPath: arguments[2]))
+            print("Formal direct regression: Plan/mesh/GLB/USDZ/followup PASS")
+            return
+        }
+        if arguments.contains("--direct-probe") {
+            try await engine.load(modelDirectory: URL(fileURLWithPath: arguments[1]))
+            var records: [[String: Any]] = []
+            for (id, system, user) in [
+                ("tiny", "只返回JSON对象。", "返回ok为true。"),
+                ("long", ScenePrompt.system, try ScenePrompt.userRequest("做一个蓝色机器人。")),
+            ] {
+                let events = DirectEvents()
+                let began = Date()
+                do {
+                    let result = try await engine.generateJSONDirect(systemPrompt: system, prompt: user,
+                        maxTokens: 8, prefillStepSize: 128,
+                        onStage: { value in events.append(value); print("direct-\(id) \(value)") })
+                    records.append(["id": id, "stages": events.snapshot,
+                                    "elapsedSeconds": Date().timeIntervalSince(began), "outputUTF8Bytes": result.utf8.count])
+                } catch {
+                    records.append(["id": id, "stages": events.snapshot,
+                                    "elapsedSeconds": Date().timeIntervalSince(began), "error": error.localizedDescription])
+                }
+            }
+            await engine.unload()
+            try JSONSerialization.data(withJSONObject: ["cases": records], options: [.prettyPrinted, .sortedKeys])
+                .write(to: URL(fileURLWithPath: arguments[2]))
+            return
+        }
         if arguments.contains("--lifecycle") {
             var cycles: [[String: Any]] = []
             for cycle in 1...3 {

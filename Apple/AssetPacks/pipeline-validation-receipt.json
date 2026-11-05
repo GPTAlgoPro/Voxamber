@@ -1,0 +1,16 @@
+{
+  "appleArchiveFullPayloadRoundtrip": true,
+  "contractFilesVerified": 1,
+  "downloaderReferenceiOS26TypecheckExitCode": 0,
+  "integrationPlistLintPassed": true,
+  "legalFilesVerified": 4,
+  "mainAppSourcesOrSettingsModified": false,
+  "modelFilesVerified": 10,
+  "testFlightColdDownloadVerified": false,
+  "unitTests": {
+    "command": "python3 -m unittest discover -s scripts/apple-hosted-models -p 'test_*.py' -v",
+    "failed": 0,
+    "passed": 16
+  },
+  "verifiedAt": "2026-11-05T09:37:57+00:00"
+}

@@ -1,0 +1,82 @@
+{
+"name": "棕色木椅",
+"nodes": [
+  {
+   "id": "seat",
+   "primitive": "lathe",
+  "dimensions": {
+    "width": 0.72,
+   "height": 0.08,
+   "depth": 0.48
+   },
+   "color": "#8a4f24",
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   }
+  ,
+  "profile": [
+   [0.36, 0.04],
+   [0.38, 0.07],
+   [0.36, 0.10],
+   [0.30, 0.11],
+   [0.27, 0.08],
+   [0.27, 0.04]
+  ]
+  },
+  {
+   "id": "back",
+   "primitive": "box",
+   "dimensions": {
+    "width": 0.62,
+    "height": 0.48,
+   "depth": 0.07
+   },
+   "color": "#8a4f24",
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "attach": {
+    "parent": "seat",
+    "face": "top",
+    "xOffset": 0,
+    "yOffset": 0.18
+   }
+  },
+  {
+   "id": "leftLeg",
+   "primitive": "box",
+   "dimensions": {
+    "width": 0.12,
+    "height": 0.62,
+    "depth": 0.12
+   },
+   "color": "#703b1d",
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "attach": {
+    "parent": "seat",
+    "face": "bottom",
+    "xOffset": -1.0,
+    "zOffset": 0
+   }
+  },
+  {
+   "id": "rightLeg",
+   "primitive": "box",
+   "dimensions": {
+    "width": 0.12,
+    "height": 0.62,
+    "depth": 0.12
+   },
+   "color": "#703b1d",
+   "rotation": {
+    "x": 0,
+   
+"y":0, "z":0}, "attach": { "parent": "seat", "face": "bottom", "xOffset":1.0, "yOffset":0} }, { "id": "frontLeg", "primitive": "box", "dimensions": { "width":0.12, "height":0.62, "depth":0.12}, "color": "#703b1d", "rotation": { "x":0, "y":0, "z":0}, "attach": { "parent": "seat", "face": "bottom", "xOffset":0, "zOffset":0.22} }, { "id": "backLeg", "primitive": "box", "dimensions": { "width":0.12, "height":0.62, "depth":0.12}, "color": "#703b1d", "rotation": { "x":0, "y":0, "z":0}, "attach": { "parent": "seat", "face": "bottom", "xOffset":0, "zOffset":-1.0}}] }

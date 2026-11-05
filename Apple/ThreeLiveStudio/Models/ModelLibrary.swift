@@ -29,7 +29,7 @@ struct ModelLibrary: View {
                         if manager.loaded { Button(StudioCopy.text("释放运行内存", "Free working memory")) { Task { await manager.unload() } }.buttonStyle(.glass).disabled(generationBusy) }
                         Button(StudioCopy.text("移除模型", "Remove model"), role: .destructive) { deleting = true }.disabled(generationBusy)
                     } else {
-                        Button(StudioCopy.text("下载模型 · 3.1GB", "Download model · 3.1 GB"), systemImage: "arrow.down.circle") { manager.download() }
+                        Button(StudioCopy.text("下载 Apple 素材 · 3.1GB", "Download Apple assets · 3.1 GB"), systemImage: "arrow.down.circle") { manager.download() }
                             .buttonStyle(.glassProminent).disabled(!manager.eligible || generationBusy)
                             .accessibilityIdentifier("downloadModel")
                         Button(StudioCopy.text("从文件导入", "Import from Files"), systemImage: "folder") { importing = true }
@@ -53,6 +53,12 @@ struct ModelLibrary: View {
                     }.font(.footnote)
                     Link(StudioCopy.text("模型来源与许可", "Model source and license"), destination: URL(string: "https://huggingface.co/mlx-community/Qwen3.5-4B-4bit")!)
                         .font(.footnote)
+                    Link(StudioCopy.text("隐私政策", "Privacy policy"), destination: URL(string: StudioCopy.isEnglish
+                        ? "https://gptalgopro.github.io/Voxamber-Website/en/privacy/"
+                        : "https://gptalgopro.github.io/Voxamber-Website/privacy/")!).font(.footnote)
+                    Link(StudioCopy.text("帮助与支持", "Help and support"), destination: URL(string: StudioCopy.isEnglish
+                        ? "https://gptalgopro.github.io/Voxamber-Website/en/support/"
+                        : "https://gptalgopro.github.io/Voxamber-Website/support/")!).font(.footnote)
                 }.studioCard()
             }.padding(24).frame(maxWidth: 700)
                 .frame(maxWidth: .infinity)

@@ -1,0 +1,29 @@
+{
+  "apiReadbackScope": "Exact bundle IDs, team prefix and APP_GROUPS capabilities only; public appGroups registration/association API is absent (HTTP404).",
+  "apiReadbackVerified": true,
+  "appGroupAssociationsVerified": true,
+  "appGroupCreated": true,
+  "appGroupIdentifier": "group.com.kaisun.voxamber.background-assets",
+  "appGroupsAPIHTTPStatus": 404,
+  "appID": "6831042755",
+  "associationCheckedGroupCountPerBundle": 1,
+  "associationVerificationMethod": "Developer Portal visible UI: saved each exact bundle, reopened App Groups editor, verified only the requested group remained checked",
+  "bundleID": "com.kaisun.voxamber",
+  "bundles": [
+    {
+      "appGroupsCapabilityPresent": true,
+      "bundleRecordID": "TK9NCA3M7W",
+      "identifier": "com.kaisun.voxamber"
+    },
+    {
+      "appGroupsCapabilityPresent": true,
+      "bundleRecordID": "4XB5FYJB92",
+      "identifier": "com.kaisun.voxamber.model-downloader"
+    }
+  ],
+  "capabilitiesVerified": true,
+  "extensionBundleID": "com.kaisun.voxamber.model-downloader",
+  "observedAt": "2026-11-05T09:22:12+00:00",
+  "projectSettingsModified": false,
+  "verifiedAt": "2026-11-05T09:37:00+00:00"
+}

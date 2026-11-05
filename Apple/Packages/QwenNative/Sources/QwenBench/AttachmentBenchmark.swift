@@ -9,7 +9,7 @@ enum AttachmentBenchmark {
         private let lock = NSLock()
         private var text = ""
         private var first: Double?
-        func update(_ value: QwenGenerationProgress) {
+        func update(_ value: BenchProgress) {
             lock.withLock { text = value.text; first = value.firstTokenSeconds }
         }
         var lastText: String { lock.withLock { text } }
@@ -17,7 +17,7 @@ enum AttachmentBenchmark {
     }
     static let system = ScenePrompt.system
 
-    static func run(engine: QwenEngine, reportURL: URL) async throws {
+    static func run(engine: any BenchModel, reportURL: URL) async throws {
         let requests = [
             ("chair", "棕色木椅，包含坐面、薄靠背和四条腿，坐面约0.45米高，不要无关大平台。"),
             ("robot", "蓝色玩具机器人，立方体头和躯干、左右手臂和双腿、两个球形黄色眼睛，正面朝+Z。"),
@@ -26,20 +26,22 @@ enum AttachmentBenchmark {
             ("aircraft", "带后掠机翼的未来飞行器，银色流线机身、左右对称不规则机翼、两个推进器，机翼至少一个用extrusion自由轮廓，机身可用lathe。做一个整体，不要平台。"),
         ]
         var results: [[String: Any]] = []
-        let loadedMemory = await engine.memorySnapshot()
+        let loadedMemory = await engine.benchMemorySnapshot()
         for (id, request) in requests {
             let began = Date()
             let progress = ProgressRecorder()
             var raw = ""
             do {
-                raw = try await engine.generateJSON(systemPrompt: system,
+                raw = try await engine.benchGenerate(systemPrompt: system,
                     prompt: ScenePrompt.userRequest(request), maxTokens: 3072,
                     onProgress: { progress.update($0) })
                 let scene = try resolve(raw)
                 let meshes = try SceneGenerator.generate(for: scene)
                 let diagnostics = spatialDiagnostics(scene, meshes: meshes)
                 let semantics = semanticDiagnostics(id, scene: scene)
-                let artifacts = reportURL.deletingLastPathComponent().appendingPathComponent("attachment-generated-scenes")
+                let artifactName = reportURL.deletingPathExtension().lastPathComponent
+                    .replacingOccurrences(of: "-macos-benchmark", with: "-scenes")
+                let artifacts = reportURL.deletingLastPathComponent().appendingPathComponent(artifactName)
                 try FileManager.default.createDirectory(at: artifacts, withIntermediateDirectories: true)
                 let encoder = JSONEncoder(); encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
                 try Data(raw.utf8).write(to: artifacts.appendingPathComponent(id + "-relations.json"))
@@ -68,9 +70,9 @@ enum AttachmentBenchmark {
                 print("attachment-\(id): FAIL \(error.localizedDescription)")
             }
         }
-        let peakMemory = await engine.memorySnapshot()
+        let peakMemory = await engine.benchMemorySnapshot()
         await engine.unload()
-        let releasedMemory = await engine.memorySnapshot()
+        let releasedMemory = await engine.benchMemorySnapshot()
         try JSONSerialization.data(withJSONObject: ["method": "Native MLX direct named ScenePlan + production AABB attachment solver; no object template or generated code",
             "modelDirectory": CommandLine.arguments[1], "mlxActiveBytesAfterLoad": loadedMemory.activeBytes,
             "mlxPeakBytes": peakMemory.peakBytes, "mlxActiveBytesAfterUnload": releasedMemory.activeBytes,
@@ -80,6 +82,26 @@ enum AttachmentBenchmark {
 
     static func resolve(_ text: String) throws -> SceneSpec {
         try SceneSpec.decodeModelResponse(text)
+    }
+
+    static func renderReport(_ input: URL, destination: URL) async throws {
+        let report = try JSONSerialization.jsonObject(with: Data(contentsOf: input)) as! [String: Any]
+        try FileManager.default.createDirectory(at: destination, withIntermediateDirectories: true)
+        for record in report["cases"] as? [[String: Any]] ?? [] {
+            guard let id = record["id"] as? String,
+                  id.utf8.allSatisfy({ (97...122).contains($0) || $0 == 45 }),
+                  let json = record["resolvedScene"] as? String else { continue }
+            let scene = try SceneSpec.decodeModelResponse(json)
+            let meshes = try SceneGenerator.generate(for: scene)
+            let asset = destination.appendingPathComponent(id + ".usdz")
+            try ThreeLiveNative.exportUSDZ(meshes).write(to: asset)
+            try ThreeLiveNative.exportGLB(meshes).write(to: destination.appendingPathComponent(id + ".glb"))
+            try Data(json.utf8).write(to: destination.appendingPathComponent(id + ".json"))
+            #if os(macOS)
+            try await ModelPreview.write(usdzURL: asset, meshes: meshes, destination: destination.appendingPathComponent(id + ".png"))
+            try await ModelPreview.write(usdzURL: asset, meshes: meshes, destination: destination.appendingPathComponent(id + "-front.png"), front: true)
+            #endif
+        }
     }
 
     private static func bounds(of mesh: GeneratedMesh) -> ([Float], [Float]) {

@@ -14,6 +14,7 @@ final class ModelManager {
     private(set) var status = "尚未安装"
     var errorMessage: String?
     @ObservationIgnored private let resourceStore = VerifiedModelStore(root: URL.documentsDirectory.appending(path: "Models"))
+    @ObservationIgnored private let appleSource = AppleHostedModelSource()
     @ObservationIgnored private var operation: Task<Void, Never>?
     @ObservationIgnored private var directory: URL?
 
@@ -43,7 +44,7 @@ final class ModelManager {
     private func install(from source: URL?) {
         guard eligible, !busy else { return }
         busy = true; progress = 0; errorMessage = nil
-        status = source == nil ? "正在下载，已完成的文件会保留" : "正在导入并校验"
+        status = source == nil ? "正在从 Apple 下载模型素材" : "正在导入并校验"
         let update: @Sendable (Double) -> Void = { [weak self] value in
             Task { @MainActor [weak self] in self?.progress = value }
         }
@@ -55,7 +56,12 @@ final class ModelManager {
                 if let source {
                     directory = try await resourceStore.importDirectory(source, manifest: manifest, progress: update)
                 } else {
-                    directory = try await resourceStore.install(manifest: manifest, progress: update)
+                    let managed = try await appleSource.download(progress: { value in update(value * 0.75) })
+                    status = "正在校验并安装 Apple 素材"
+                    directory = try await resourceStore.importDirectory(managed, manifest: manifest,
+                        progress: { value in update(0.75 + value * 0.25) })
+                    // Retain the verified private model, then release the redundant managed copy.
+                    try? await appleSource.removeManagedCopy()
                 }
                 installed = true; progress = 1; status = "已就绪 · 可离线使用"
             } catch is CancellationError { status = installed ? "已就绪 · 新安装已取消" : "已取消，重试可复用已完成文件" }

@@ -15,8 +15,7 @@ struct ThreeLiveStudioApp: App {
                     if phase == .background { studio.enterBackground() }
                 }
                 .onReceive(NotificationCenter.default.publisher(for: UIApplication.didReceiveMemoryWarningNotification)) { _ in
-                    studio.cancel()
-                    Task { await studio.models.unload() }
+                    studio.handleMemoryPressure()
                 }
         }
     }

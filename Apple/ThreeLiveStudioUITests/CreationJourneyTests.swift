@@ -6,6 +6,7 @@ final class CreationJourneyTests: XCTestCase {
 
     func testCreateSaveReopenAndExport() throws {
         let app = XCUIApplication()
+        app.launchArguments += ["-AppleLanguages", "(zh-Hans)", "-AppleLocale", "zh_CN"]
         app.launch()
         let generate = app.buttons["generateParameters"]
         XCTAssertTrue(generate.waitForExistence(timeout: 10))
@@ -19,10 +20,22 @@ final class CreationJourneyTests: XCTestCase {
         export.tap()
         XCTAssertTrue(app.buttons["导出 USDZ"].waitForExistence(timeout: 3))
         app.buttons["导出 USDZ"].tap()
-        XCTAssertTrue(app.otherElements["ActivityListView"].waitForExistence(timeout: 3) || app.buttons["Copy"].exists || app.buttons["拷贝"].exists)
+        let shareAttachment = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        shareAttachment.name = "native-share-panel"; shareAttachment.lifetime = .keepAlways; add(shareAttachment)
+        let shareSurface = app.descendants(matching: .any)["ActivityListView"]
+        let shareExists = shareSurface.waitForExistence(timeout: 8) || app.buttons["存储到“文件”"].exists
+            || app.buttons["存储到文件"].exists || app.buttons["Save to Files"].exists || app.buttons["Copy"].exists
+            || app.buttons["拷贝"].exists || app.buttons["隔空投送"].exists || app.buttons["AirDrop"].exists
+        if !shareExists {
+            let lines = app.debugDescription.split(separator: "\n").filter { line in
+                ["USDZ", "usdz", "Activity", "Share", "分享", "存储", "文件", "Copy", "拷贝", "Close", "关闭", "取消"].contains { line.contains($0) }
+            }
+            print("NATIVE_SHARE_DIAGNOSTIC " + lines.joined(separator: "\n"))
+        }
+        XCTAssertTrue(shareExists)
         app.terminate()
         app.launch()
-        app.tabBars.buttons["作品"].tap()
+        app.buttons["作品"].tap()
         let item = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "自由造型")).firstMatch
         XCTAssertTrue(item.waitForExistence(timeout: 10))
         item.tap()
@@ -33,11 +46,12 @@ final class CreationJourneyTests: XCTestCase {
 
     func testModelTabAndAccessibleCreationControls() {
         let app = XCUIApplication()
+        app.launchArguments += ["-AppleLanguages", "(zh-Hans)", "-AppleLocale", "zh_CN"]
         app.launchArguments += ["-UIPreferredContentSizeCategoryName", "UICTContentSizeCategoryAccessibilityXXXL"]
         app.launch()
         XCTAssertTrue(app.buttons["generateParameters"].waitForExistence(timeout: 10))
         XCTAssertTrue(app.buttons["generateParameters"].isHittable)
-        app.tabBars.buttons["本机模型"].tap()
+        app.buttons["本机模型"].tap()
         XCTAssertTrue(app.staticTexts["modelStatus"].waitForExistence(timeout: 5))
     }
 }

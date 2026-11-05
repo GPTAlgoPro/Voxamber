@@ -20,12 +20,14 @@ public enum QwenError: LocalizedError, Sendable {
     case busy
     case invalidJSON
     case promptTooLong
+    case unsupportedThinking
     public var errorDescription: String? {
         switch self {
         case .modelNotLoaded: "请先下载并载入本地模型。"
         case .busy: "本地模型正在处理上一项任务。"
         case .invalidJSON: "模型没有返回完整的造型参数，请简化描述后重试。"
         case .promptTooLong: "设计描述过长，请缩短后重试。"
+        case .unsupportedThinking: "当前单轮生成通道不支持思考模式。"
         }
     }
 }
@@ -42,7 +44,8 @@ public actor QwenEngine {
 
     public init() {}
 
-    public func memorySnapshot() -> QwenMemorySnapshot {
+    /// Thread-safe global allocator scalars; sampling must not wait behind actor-bound prefill.
+    public nonisolated func memorySnapshot() -> QwenMemorySnapshot {
         QwenMemorySnapshot(activeBytes: Memory.activeMemory,
                            cacheBytes: Memory.cacheMemory, peakBytes: Memory.peakMemory)
     }
@@ -56,6 +59,9 @@ public actor QwenEngine {
         model = nil
         directory = nil
         Memory.cacheLimit = 32 * 1024 * 1024
+        // The current Qwen3.5 compiled-trace path retains buffers across model reloads.
+        // Use native Metal operators without graph trace/fusion until lifecycle evidence is stable.
+        MLX.compile(enable: false)
         let loaded = try await LLMModelFactory.shared.loadContainer(
             from: modelDirectory, using: LocalTokenizerLoader())
         try Task.checkCancellation()
@@ -64,57 +70,106 @@ public actor QwenEngine {
         directory = modelDirectory
     }
 
+    /// Uses the phone-verified single-turn path, then validates a complete JSON object.
+    /// The direct method owns the sole task/cache lifecycle; this wrapper adds no nested task.
     public func generateJSON(
         systemPrompt: String,
         prompt: String,
-        maxTokens: Int = 1536,
+        maxTokens: Int = 3072,
         thinking: Bool = false,
+        onProgress: @escaping @Sendable (QwenGenerationProgress) -> Void = { _ in }
+    ) async throws -> String {
+        guard !thinking else { throw QwenError.unsupportedThinking }
+        let raw = try await generateJSONDirect(systemPrompt: systemPrompt, prompt: prompt,
+            maxTokens: maxTokens, prefillStepSize: 128, onProgress: onProgress)
+        try Task.checkCancellation()
+        guard raw.utf8.count <= 16_384 else { throw QwenError.invalidJSON }
+        let result = Self.removeFence(raw)
+        guard let data = result.data(using: .utf8),
+              let object = try? JSONSerialization.jsonObject(with: data), object is [String: Any] else {
+            throw QwenError.invalidJSON
+        }
+        return result
+    }
+
+    /// Phone-verified single-turn raw implementation shared by formal and diagnostic calls.
+    /// Returns decoded output, which may be partial at a small token limit; the caller owns JSON validation.
+    /// Stage/progress callbacks contain timings and counts only, never input or generated content.
+    public func generateJSONDirect(
+        systemPrompt: String,
+        prompt: String,
+        maxTokens: Int = 64,
+        prefillStepSize: Int = 128,
+        onStage: @escaping @Sendable (String) -> Void = { _ in },
         onProgress: @escaping @Sendable (QwenGenerationProgress) -> Void = { _ in }
     ) async throws -> String {
         guard !isLoading, !isUnloading, generationTask == nil else { throw QwenError.busy }
         guard let model else { throw QwenError.modelNotLoaded }
         guard prompt.count <= 6000, systemPrompt.count <= 8000 else { throw QwenError.promptTooLong }
         try Task.checkCancellation()
+        let reporter = DirectStageReporter(began: .now, callback: onStage)
+        reporter.emit("direct_begin")
         let task = Task<String, Error> {
-            let session = ChatSession(model, instructions: systemPrompt,
-                generateParameters: GenerateParameters(maxTokens: max(64, min(maxTokens, 3072)),
-                                                       maxKVSize: 8192, temperature: 0),
-                additionalContext: ["enable_thinking": thinking])
-            let started = ContinuousClock.now
-            var lastUpdate = started
-            var text = ""
-            var raw = ""
-            var firstTokenSeconds: Double?
-            do {
-                for try await chunk in session.streamResponse(to: prompt) {
-                    try Task.checkCancellation()
-                    raw += chunk
-                    if raw.utf8.count > 65_536 { throw QwenError.invalidJSON }
-                    text = Self.visibleOutput(raw, thinking: thinking)
-                    let isFirst = firstTokenSeconds == nil && !text.isEmpty
-                    if isFirst { firstTokenSeconds = Self.seconds(since: started) }
-                    if text.utf8.count > 16_384 { throw QwenError.invalidJSON }
-                    if isFirst || lastUpdate.duration(to: .now) >= .milliseconds(100) {
-                        onProgress(QwenGenerationProgress(text: text, elapsedSeconds: Self.seconds(since: started),
-                                                          firstTokenSeconds: firstTokenSeconds))
-                        lastUpdate = .now
+            try await model.perform { context in
+                reporter.emit("tokenizer_prepare_begin")
+                let input = try await context.processor.prepare(input: UserInput(
+                    chat: [.system(systemPrompt), .user(prompt)],
+                    additionalContext: ["enable_thinking": false]))
+                let inputCount = input.text.tokens.size
+                reporter.emit("tokenizer_prepare_done", inputTokens: inputCount)
+                guard inputCount <= 8192 else { throw QwenError.promptTooLong }
+                try Task.checkCancellation()
+                let prefill = PrefillParameters(stepSize: max(1, min(prefillStepSize, 1024)),
+                    chunking: .balanced, progress: { processed, total in
+                        reporter.emit("prefill_submitted processed=\(processed)", inputTokens: total)
+                    })
+                let parameters = GenerateParameters(maxTokens: max(1, min(maxTokens, 3072)),
+                    maxKVSize: 8192, temperature: 0, prefill: prefill)
+                reporter.emit("kv_cache_begin", inputTokens: inputCount)
+                let cache = try context.model.newCache(parameters: parameters)
+                reporter.emit("kv_cache_ready", inputTokens: inputCount)
+                reporter.emit("prefill_begin", inputTokens: inputCount)
+                let iterator = try TokenIterator(input: input, model: context.model,
+                                                 cache: cache, parameters: parameters)
+                reporter.emit("prefill_ready", inputTokens: inputCount)
+                let (stream, producer) = MLXLMCommon.generateTokenTask(
+                    promptTokenCount: inputCount, modelConfiguration: context.configuration,
+                    tokenizer: context.tokenizer, iterator: iterator)
+                reporter.emit("raw_stream_ready", inputTokens: inputCount)
+                var tokens: [Int] = []
+                var firstTokenSeconds: Double?
+                var lastProgress = ContinuousClock.now
+                await withTaskCancellationHandler {
+                    for await event in stream {
+                        if Task.isCancelled { producer.cancel(); break }
+                        switch event {
+                        case .token(let token):
+                            tokens.append(token)
+                            if firstTokenSeconds == nil {
+                                firstTokenSeconds = reporter.elapsed
+                                reporter.emit("first_raw_token", inputTokens: inputCount, generatedTokens: 1)
+                            }
+                            if tokens.count == 1 || lastProgress.duration(to: .now) >= .milliseconds(100) {
+                                onProgress(QwenGenerationProgress(text: "", elapsedSeconds: reporter.elapsed,
+                                    firstTokenSeconds: firstTokenSeconds))
+                                lastProgress = .now
+                            }
+                        case .info(let info):
+                            reporter.emit("native_generation_complete", inputTokens: info.promptTokenCount,
+                                          generatedTokens: info.generationTokenCount)
+                        }
                     }
-                }
-            } catch {
-                // The stream cancels its producer on termination. Wait for GPU work before release.
-                await session.synchronize()
-                throw error
+                    if Task.isCancelled { producer.cancel() }
+                    // The public task settles its actual generation stream before completing.
+                    await producer.value
+                } onCancel: { producer.cancel() }
+                Stream.defaultStream.synchronize()
+                reporter.emit("raw_stream_finished", inputTokens: inputCount, generatedTokens: tokens.count)
+                try Task.checkCancellation()
+                let result = context.tokenizer.decode(tokenIds: tokens, skipSpecialTokens: false)
+                reporter.emit("direct_finished", inputTokens: inputCount, generatedTokens: tokens.count)
+                return result
             }
-            await session.synchronize()
-            try Task.checkCancellation()
-            let result = Self.removeFence(text)
-            guard let data = result.data(using: .utf8),
-                  let object = try? JSONSerialization.jsonObject(with: data), object is [String: Any] else {
-                throw QwenError.invalidJSON
-            }
-            onProgress(QwenGenerationProgress(text: result, elapsedSeconds: Self.seconds(since: started),
-                                              firstTokenSeconds: firstTokenSeconds))
-            return result
         }
         generationTask = task
         defer { generationTask = nil }
@@ -142,11 +197,6 @@ public actor QwenEngine {
         isUnloading = false
     }
 
-    private nonisolated static func seconds(since started: ContinuousClock.Instant) -> Double {
-        let duration = started.duration(to: .now).components
-        return Double(duration.seconds) + Double(duration.attoseconds) / 1e18
-    }
-
     private nonisolated static func removeFence(_ value: String) -> String {
         let trimmed = value.trimmingCharacters(in: .whitespacesAndNewlines)
         if trimmed.hasPrefix("```json\n"), trimmed.hasSuffix("```") {
@@ -158,12 +208,17 @@ public actor QwenEngine {
         return trimmed
     }
 
-    /// Thinking is an internal model mode; only the final answer reaches the app or reports.
-    private nonisolated static func visibleOutput(_ raw: String, thinking: Bool) -> String {
-        guard thinking else { return raw }
-        if let end = raw.range(of: "</think>") {
-            return String(raw[end.upperBound...]).trimmingCharacters(in: .whitespacesAndNewlines)
-        }
-        return ""
+
+}
+
+private struct DirectStageReporter: Sendable {
+    let began: ContinuousClock.Instant
+    let callback: @Sendable (String) -> Void
+    var elapsed: Double {
+        let value = began.duration(to: .now).components
+        return Double(value.seconds) + Double(value.attoseconds) / 1e18
+    }
+    func emit(_ stage: String, inputTokens: Int = 0, generatedTokens: Int = 0) {
+        callback("\(stage) elapsed=\(String(format: "%.3f", elapsed)) inputTokenCount=\(inputTokens) generatedTokenCount=\(generatedTokens)")
     }
 }

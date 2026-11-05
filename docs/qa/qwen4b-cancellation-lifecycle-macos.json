@@ -1,0 +1,15 @@
+{
+  "activeBytesAfterFinalUnload" : 7992,
+  "activeBytesAfterUnload" : 4000,
+  "cancelToGenerationSettledSeconds" : 0.014827750000000001,
+  "cancelToUnloadSeconds" : 0.068664292000000002,
+  "firstTokenObserved" : true,
+  "firstTokenSeconds" : 1.1430779170000001,
+  "followupError" : "",
+  "followupJSONValid" : true,
+  "generationOutcome" : "cancelled",
+  "passed" : true,
+  "reloadError" : "",
+  "reloadSeconds" : 0.95573149999999996,
+  "scope" : "Mac real first-token cancellation -> immediate unload -> reload -> follow-up JSON; no UI-label assertions or phone operations"
+}

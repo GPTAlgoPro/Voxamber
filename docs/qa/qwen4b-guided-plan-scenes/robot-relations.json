@@ -1,0 +1,21 @@
+{
+  "name": "蓝色立方体机器人",
+  "nodes": [
+    {
+      "id": "base",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.4,
+        "height": 0.5,
+       "depth": 0.2
+      },
+      "color": "#333333"
+    },
+    {
+      "id": "head",
+      "primitive": "box",
+     "dimensions": {
+        "width": 0.3,
+       "height": 0.3,
+       
+"depth":0.25} , "color": "#1E90FF" , "attach": { "parent": "base", "face": "top", "xOffset": -1.5} , "roughness":0.2} , { "id": "eyeL", "primitive": "sphere", "dimensions": { "width":0.05, "height":0.05, "depth":0.05}, "color": "#FFD700", "attach": { "parent": "head", "face": "front", "xOffset": -1.0}, "roughness":0.2} , { "id": "eyeR", "primitive": "sphere", "dimensions": { "width":0.05, "height":0.05, "depth":0.05}, "color": "#FFD700", "attach": { "parent": "head", "face": "front", "xOffset": -1.0}, "roughness":0.2} , { "id": "armL", "primitive": "cylinder", "dimensions": { "width":0.04, "height":0.6, "depth":0.04}, "color": "#1E90FF", "attach": { "parent": "head", "face": "top", "xOffset": -1.0}, "roughness":0.2} , { "id": "armR", "primitive": "cylinder", "dimensions": { "width":0.04, "height":0.6, "depth":0.04}, "color": "#1E90FF", "attach": { "parent": "head", "face": "top", "xOffset": -1.0}, "roughness":0.2} , { "id": "legL", "primitive": "cylinder", "dimensions": { "width":0.04, "height":0.6, "depth":0.04}, "color": "#1E90FF", "attach": { "parent": "base", "face": "bottom", "xOffset": -1.0}, "roughness":0.2} , { "id": "legR", "primitive": "cylinder", "dimensions": { "width":0.04, "height":0.6, "depth":0.04}, "color": "#1E90FF", "attach": { "parent": "base", "face": "bottom", "xOffset": -1.0}, "roughness":0.2} ]}

@@ -37,7 +37,7 @@ enum DeviceAcceptanceProbe {
         let sampler = Task.detached(priority: .utility) {
             while !Task.isCancelled {
                 footprints.record(physicalBytes: Self.physicalFootprint(),
-                                  mlx: await engine.memorySnapshot(),
+                                  mlx: engine.memorySnapshot(),
                                   thermal: ProcessInfo.processInfo.thermalState.rawValue)
                 try? await Task.sleep(for: .milliseconds(100))
             }
@@ -70,16 +70,43 @@ enum DeviceAcceptanceProbe {
             report.manifestSHA256 = SHA256.hash(data: manifestBytes).map { String(format: "%02x", $0) }.joined()
             report.verifiedFileCount = manifest.files.count
             report.verifiedWeightBytes = manifest.files.reduce(0) { $0 + $1.byteCount }
-            report.memoryStates["before_first_load"] = await engine.memorySnapshot()
+            report.memoryStates["before_first_load"] = engine.memorySnapshot()
             report.footprintStates["before_first_load"] = Self.physicalFootprint()
             report.phase = "first_model_load_after_hash_verification"
             try checkpoint(&report, footprints: footprints, output: output, studio: studio)
             let loadStart = ContinuousClock.now
             try await engine.load(modelDirectory: directory)
             report.firstLoadSeconds = Self.seconds(since: loadStart)
-            report.memoryStates["after_first_load"] = await engine.memorySnapshot()
+            report.memoryStates["after_first_load"] = engine.memorySnapshot()
             report.footprintStates["after_first_load"] = Self.physicalFootprint()
             try checkpoint(&report, footprints: footprints, output: output, studio: studio)
+
+            if ProcessInfo.processInfo.arguments.contains("--qa-direct") {
+                let journal = DirectDiagnosticJournal(url: documents.appending(path: "Measurements/direct-device-stages.json"), runID: report.runID)
+                let diagnostics = [
+                    ("tiny", "Return a JSON object only.", "Say ok in JSON."),
+                    ("long", ScenePrompt.system, try ScenePrompt.userRequest("一台蓝色的机器人。"))
+                ]
+                for (name, system, prompt) in diagnostics {
+                    report.phase = "direct_" + name
+                    try checkpoint(&report, footprints: footprints, output: output, studio: studio)
+                    journal.record("case_begin " + name)
+                    let generation = Task {
+                        try await engine.generateJSONDirect(systemPrompt: system, prompt: prompt,
+                            maxTokens: 8, prefillStepSize: 128, onStage: { journal.record($0) })
+                    }
+                    _ = try await awaitGeneration(generation, timeoutSeconds: 45)
+                    journal.record("case_finished " + name)
+                }
+                await engine.unload()
+                sampler.cancel(); await sampler.value
+                report.status = "diagnostic_completed"
+                report.phase = "direct_diagnostic_finished"
+                report.memoryStates["after_direct_unload"] = engine.memorySnapshot()
+                try checkpoint(&report, footprints: footprints, output: output, studio: studio)
+                studio.notice = "分段诊断完成，尚不代表完整生成验收通过。"
+                return
+            }
 
             for item in Self.cases {
                 report.phase = "generating_" + item.id
@@ -90,7 +117,7 @@ enum DeviceAcceptanceProbe {
             }
 
             report.phase = "cancelling_after_first_generated_token"
-            report.memoryStates["before_cancellation"] = await engine.memorySnapshot()
+            report.memoryStates["before_cancellation"] = engine.memorySnapshot()
             report.footprintStates["before_cancellation"] = Self.physicalFootprint()
             try checkpoint(&report, footprints: footprints, output: output, studio: studio)
             let cancellation = AcceptanceCancellation()
@@ -112,14 +139,14 @@ enum DeviceAcceptanceProbe {
                 report.cancellationAfterFirstToken = true
                 report.cancellationSettleSeconds = cancellation.requestedAt.map { Self.seconds(since: $0) }
             }
-            report.memoryStates["after_cancellation_settled"] = await engine.memorySnapshot()
+            report.memoryStates["after_cancellation_settled"] = engine.memorySnapshot()
             report.footprintStates["after_cancellation_settled"] = Self.physicalFootprint()
-            let beforeUnload = await engine.memorySnapshot()
+            let beforeUnload = engine.memorySnapshot()
             let unloadStart = ContinuousClock.now
             await engine.unload()
             report.cancellationUnloadSeconds = Self.seconds(since: unloadStart)
             try await Task.sleep(for: .milliseconds(300))
-            let afterUnload = await engine.memorySnapshot()
+            let afterUnload = engine.memorySnapshot()
             report.memoryStates["after_cancellation_unload"] = afterUnload
             report.footprintStates["after_cancellation_unload"] = Self.physicalFootprint()
             report.mlxActiveBytesReleasedAfterCancellation = beforeUnload.activeBytes - afterUnload.activeBytes
@@ -130,13 +157,13 @@ enum DeviceAcceptanceProbe {
             let reloadStart = ContinuousClock.now
             try await engine.load(modelDirectory: directory)
             report.reloadSeconds = Self.seconds(since: reloadStart)
-            report.memoryStates["after_reload"] = await engine.memorySnapshot()
+            report.memoryStates["after_reload"] = engine.memorySnapshot()
             let afterReload = try await runCase(.init(id: "chair_after_reload", prompt: Self.cases[0].prompt),
                                                 engine: engine, projectsRoot: temporary)
             report.reloadCase = afterReload
             await engine.unload()
             try await Task.sleep(for: .milliseconds(300))
-            report.memoryStates["after_final_unload"] = await engine.memorySnapshot()
+            report.memoryStates["after_final_unload"] = engine.memorySnapshot()
             report.footprintStates["after_final_unload"] = Self.physicalFootprint()
             sampler.cancel()
             await sampler.value
@@ -151,14 +178,19 @@ enum DeviceAcceptanceProbe {
             await engine.unload()
             sampler.cancel()
             await sampler.value
-            report.status = "failed"
+            report.status = (error is CancellationError || Task.isCancelled) ? "cancelled" : "failed"
             report.failure = .init(kind: String(reflecting: type(of: error)),
                                    domain: (error as NSError).domain, code: (error as NSError).code)
-            report.memoryStates["after_failure_cleanup"] = await engine.memorySnapshot()
+            report.memoryStates["after_failure_cleanup"] = engine.memorySnapshot()
             report.footprintStates["after_failure_cleanup"] = Self.physicalFootprint()
             try? checkpoint(&report, footprints: footprints, output: output, studio: studio)
-            studio.stage = "真机验收未完成"
-            studio.errorMessage = "验收在“\(report.phase)”阶段未完成：" + error.localizedDescription
+            if report.status == "cancelled" {
+                studio.stage = "已取消"
+                studio.notice = "测试已停止，之前的作品已保留。"
+            } else {
+                studio.stage = "真机验收未完成"
+                studio.errorMessage = "验收在“\(report.phase)”阶段未完成：" + error.localizedDescription
+            }
         }
     }
 
@@ -214,7 +246,7 @@ enum DeviceAcceptanceProbe {
             meshCount: files.meshCount, vertices: files.vertices, triangles: files.triangles,
             glbBytes: files.glb.count, usdzBytes: files.usdz.count,
             glbSHA256: project.glbSHA256, usdzSHA256: project.usdzSHA256,
-            realityKitBoundsMetres: extents, mlx: await engine.memorySnapshot(),
+            realityKitBoundsMetres: extents, mlx: engine.memorySnapshot(),
             physicalFootprintBytes: Self.physicalFootprint(), thermalState: ProcessInfo.processInfo.thermalState.rawValue)
     }
 
@@ -411,6 +443,24 @@ private final class AcceptanceCancellation: @unchecked Sendable {
             return operation
         }
         task?.cancel()
+    }
+}
+
+private final class DirectDiagnosticJournal: @unchecked Sendable {
+    private let lock = NSLock()
+    private let url: URL
+    private let runID: String
+    private var events: [[String: String]] = []
+    init(url: URL, runID: String) { self.url = url; self.runID = runID }
+    func record(_ stage: String) {
+        lock.withLock {
+            events.append(["stage": String(stage.prefix(512)), "time": ISO8601DateFormatter().string(from: .now)])
+            let value: [String: Any] = ["runID": runID, "scope": "Direct native inference stages only; not modeling-quality acceptance.", "events": events]
+            do {
+                try FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
+                try JSONSerialization.data(withJSONObject: value, options: [.prettyPrinted, .sortedKeys]).write(to: url, options: .atomic)
+            } catch { /* Diagnostic persistence must not change inference behavior. */ }
+        }
     }
 }
 

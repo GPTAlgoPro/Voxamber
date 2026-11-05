@@ -1,0 +1,20 @@
+{
+  "appID": "6831042755",
+  "appleArchiveRoundtripVerified": true,
+  "archiveByteCount": 2786862971,
+  "archiveSHA256": "d10cceac24c6d6df77c59f67e19e39d9a361cf07c3df57c4cec3516813ff038e",
+  "assetPackID": "Voxamber-Qwen35-4B-INT4",
+  "builtAtUTC": "2026-11-05T09:03:51+00:00",
+  "bundleID": "com.kaisun.voxamber",
+  "contractSHA256": "a35e9148db6f07e3ede938438227002b6b26686a6ffc84830c9136c8de079eca",
+  "dataOnlyPayloadVerified": true,
+  "manifestByteCount": 1308,
+  "manifestSHA256": "0fde54567b434b7b03d0b2583100bea37b1d39f6edc3e875b7d52ca782ba7992",
+  "modelByteCount": 3061129077,
+  "packagingTool": "2.0",
+  "payloadFileCount": 15,
+  "platforms": [
+    "iOS"
+  ],
+  "schemaVersion": 1
+}

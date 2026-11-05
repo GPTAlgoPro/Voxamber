@@ -26,7 +26,7 @@ final class OnDeviceInferenceTests: XCTestCase {
         let sampler = Task.detached(priority: .utility) {
             while !Task.isCancelled {
                 footprints.record(physicalBytes: Self.physicalFootprint(),
-                                  mlx: await engine.memorySnapshot(),
+                                  mlx: engine.memorySnapshot(),
                                   thermal: ProcessInfo.processInfo.thermalState.rawValue)
                 try? await Task.sleep(for: .milliseconds(100))
             }
@@ -49,14 +49,14 @@ final class OnDeviceInferenceTests: XCTestCase {
             report.manifestSHA256 = SHA256.hash(data: manifestBytes).map { String(format: "%02x", $0) }.joined()
             report.verifiedFileCount = manifest.files.count
             report.verifiedWeightBytes = manifest.files.reduce(0) { $0 + $1.byteCount }
-            report.memoryStates["before_first_load"] = await engine.memorySnapshot()
+            report.memoryStates["before_first_load"] = engine.memorySnapshot()
             report.footprintStates["before_first_load"] = Self.physicalFootprint()
             report.phase = "first_model_load_after_hash_verification"
             try checkpoint(&report, footprints: footprints, output: output)
             let loadStart = ContinuousClock.now
             try await engine.load(modelDirectory: directory)
             report.firstLoadSeconds = Self.seconds(since: loadStart)
-            report.memoryStates["after_first_load"] = await engine.memorySnapshot()
+            report.memoryStates["after_first_load"] = engine.memorySnapshot()
             report.footprintStates["after_first_load"] = Self.physicalFootprint()
             try checkpoint(&report, footprints: footprints, output: output)
 
@@ -69,7 +69,7 @@ final class OnDeviceInferenceTests: XCTestCase {
             }
 
             report.phase = "cancelling_after_first_generated_token"
-            report.memoryStates["before_cancellation"] = await engine.memorySnapshot()
+            report.memoryStates["before_cancellation"] = engine.memorySnapshot()
             report.footprintStates["before_cancellation"] = Self.physicalFootprint()
             try checkpoint(&report, footprints: footprints, output: output)
             let cancellation = DeviceGenerationCancellation()
@@ -91,14 +91,14 @@ final class OnDeviceInferenceTests: XCTestCase {
                 report.cancellationAfterFirstToken = true
                 report.cancellationSettleSeconds = cancellation.requestedAt.map { Self.seconds(since: $0) }
             }
-            report.memoryStates["after_cancellation_settled"] = await engine.memorySnapshot()
+            report.memoryStates["after_cancellation_settled"] = engine.memorySnapshot()
             report.footprintStates["after_cancellation_settled"] = Self.physicalFootprint()
-            let beforeUnload = await engine.memorySnapshot()
+            let beforeUnload = engine.memorySnapshot()
             let unloadStart = ContinuousClock.now
             await engine.unload()
             report.cancellationUnloadSeconds = Self.seconds(since: unloadStart)
             try await Task.sleep(for: .milliseconds(300))
-            let afterUnload = await engine.memorySnapshot()
+            let afterUnload = engine.memorySnapshot()
             report.memoryStates["after_cancellation_unload"] = afterUnload
             report.footprintStates["after_cancellation_unload"] = Self.physicalFootprint()
             report.mlxActiveBytesReleasedAfterCancellation = beforeUnload.activeBytes - afterUnload.activeBytes
@@ -109,13 +109,13 @@ final class OnDeviceInferenceTests: XCTestCase {
             let reloadStart = ContinuousClock.now
             try await engine.load(modelDirectory: directory)
             report.reloadSeconds = Self.seconds(since: reloadStart)
-            report.memoryStates["after_reload"] = await engine.memorySnapshot()
+            report.memoryStates["after_reload"] = engine.memorySnapshot()
             let afterReload = try await runCase(.init(id: "chair_after_reload", prompt: Self.cases[0].prompt),
                                                 engine: engine, projectsRoot: temporary)
             report.reloadCase = afterReload
             await engine.unload()
             try await Task.sleep(for: .milliseconds(300))
-            report.memoryStates["after_final_unload"] = await engine.memorySnapshot()
+            report.memoryStates["after_final_unload"] = engine.memorySnapshot()
             report.footprintStates["after_final_unload"] = Self.physicalFootprint()
             sampler.cancel()
             await sampler.value
@@ -131,7 +131,7 @@ final class OnDeviceInferenceTests: XCTestCase {
             report.status = "failed"
             report.failure = .init(kind: String(reflecting: type(of: error)),
                                    domain: (error as NSError).domain, code: (error as NSError).code)
-            report.memoryStates["after_failure_cleanup"] = await engine.memorySnapshot()
+            report.memoryStates["after_failure_cleanup"] = engine.memorySnapshot()
             report.footprintStates["after_failure_cleanup"] = Self.physicalFootprint()
             try? checkpoint(&report, footprints: footprints, output: output)
             throw error
@@ -190,7 +190,7 @@ final class OnDeviceInferenceTests: XCTestCase {
             meshCount: files.meshCount, vertices: files.vertices, triangles: files.triangles,
             glbBytes: files.glb.count, usdzBytes: files.usdz.count,
             glbSHA256: project.glbSHA256, usdzSHA256: project.usdzSHA256,
-            realityKitBoundsMetres: extents, mlx: await engine.memorySnapshot(),
+            realityKitBoundsMetres: extents, mlx: engine.memorySnapshot(),
             physicalFootprintBytes: Self.physicalFootprint(), thermalState: ProcessInfo.processInfo.thermalState.rawValue)
     }
 

@@ -1,13 +1,13 @@
 {
-  "name" : "RedConeLamp",
+  "name" : "红色圆锥灯罩台灯",
   "nodes" : [
     {
       "color" : "#808080",
-      "id" : "base",
+      "id" : "light_base",
       "metallic" : 0.1,
       "position" : [
         0,
-        0.025,
+        0.1,
         0
       ],
       "primitive" : "cylinder",
@@ -18,19 +18,19 @@
       ],
       "roughness" : 0.45,
       "size" : [
-        0.15,
-        0.05,
-        0.15
+        0.1,
+        0.2,
+        0.1
       ]
     },
     {
       "color" : "#808080",
-      "id" : "stem",
+      "id" : "support_post",
       "metallic" : 0.1,
       "position" : [
         0,
-        0.32200003,
-        0.025
+        0.39699998,
+        0
       ],
       "primitive" : "cylinder",
       "rotation" : [
@@ -40,41 +40,19 @@
       ],
       "roughness" : 0.45,
       "size" : [
-        0.03,
-        0.55,
-        0.03
+        0.02,
+        0.4,
+        0.02
       ]
     },
     {
-      "color" : "#FFFFFF",
-      "id" : "bulb",
-      "metallic" : 0.1,
-      "position" : [
-        0,
-        0.624,
-        0.055
-      ],
-      "primitive" : "sphere",
-      "rotation" : [
-        0,
-        0,
-        0
-      ],
-      "roughness" : 0.45,
-      "size" : [
-        0.06,
-        0.06,
-        0.06
-      ]
-    },
-    {
-      "color" : "#CC0000",
+      "color" : "#ff0000",
       "id" : "lampshade",
       "metallic" : 0.1,
       "position" : [
         0,
-        0.77599996,
-        0.08
+        0.694,
+        0
       ],
       "primitive" : "cone",
       "rotation" : [
@@ -84,21 +62,21 @@
       ],
       "roughness" : 0.45,
       "size" : [
-        0.12,
-        0.25,
-        0.12
+        0.2,
+        0.2,
+        0.2
       ]
     },
     {
-      "color" : "#555555",
-      "id" : "switch",
+      "color" : "#ff0000",
+      "id" : "light_bulb",
       "metallic" : 0.1,
       "position" : [
-        0.01,
-        0.30700004,
-        0.048
+        0,
+        0.81600004,
+        0
       ],
-      "primitive" : "box",
+      "primitive" : "sphere",
       "rotation" : [
         0,
         0,
@@ -106,9 +84,9 @@
       ],
       "roughness" : 0.45,
       "size" : [
-        0.02,
-        0.03,
-        0.02
+        0.05,
+        0.05,
+        0.05
       ]
     }
   ]
