@@ -1,5 +1,8 @@
 import SwiftUI
 import CreationCore
+#if DEBUG
+import CryptoKit
+#endif
 
 struct CreationWorkspace: View {
     @Bindable var studio: StudioModel
@@ -16,7 +19,8 @@ struct CreationWorkspace: View {
                 } secondary: {
                     preview.padding(24)
                 }
-                .arrangementViewStyle(.split.axes(.horizontal))
+                // Keep both panes when Duo rotates into a tall arrangement.
+                .arrangementViewStyle(.split)
             } else {
                 ScrollView {
                     VStack(spacing: 24) {
@@ -41,6 +45,7 @@ struct CreationWorkspace: View {
         .sheet(item: $quickLook) { item in NativeQuickLook(url: item.url).ignoresSafeArea() }
         .onChange(of: studio.prompt) { _, _ in studio.persistDraft() }
         .onChange(of: studio.sceneSpec) { _, _ in studio.persistDraft() }
+        .duoVerificationProbe(studio)
     }
 
     private var hero: some View {
@@ -156,7 +161,7 @@ struct CreationWorkspace: View {
                     ProgressView().tint(StudioStyle.accent)
                     VStack(alignment: .leading) {
                         Text(StudioCopy.status(studio.stage)).font(.subheadline.weight(.medium))
-                        (Text(studio.elapsed, format: .number.precision(.fractionLength(1))) + Text(" s"))
+                        Text("\(studio.elapsed, format: .number.precision(.fractionLength(1))) s")
                             .font(.caption.monospacedDigit()).foregroundStyle(.secondary)
                     }
                     Spacer()
@@ -196,3 +201,72 @@ struct CreationWorkspace: View {
 }
 
 private struct PreviewItem: Identifiable { let id = UUID(); let url: URL }
+
+private extension View {
+    @ViewBuilder
+    func duoVerificationProbe(_ studio: StudioModel) -> some View {
+        #if DEBUG
+        if #available(iOS 27.1, *), ProcessInfo.processInfo.arguments.contains("--duo-qa") {
+            modifier(DuoVerificationProbe(studio: studio))
+        } else { self }
+        #else
+        self
+        #endif
+    }
+}
+
+#if DEBUG
+@available(iOS 27.1, *)
+@MainActor
+private struct DuoVerificationProbe: ViewModifier {
+    let studio: StudioModel
+    @Environment(\.horizontalSizeClass) private var sizeClass
+    @Environment(\.scenePhase) private var phase
+    @State private var size = CGSize.zero
+    @State private var angle: Double?
+    @State private var hingeState: String?
+    @State private var records: [Entry] = []
+
+    func body(content: Content) -> some View {
+        content
+            .onGeometryChange(for: CGSize.self) { $0.size } action: { value in
+                size = value; record("geometry")
+            }
+            .onHingeChange { _, context in
+                angle = context.hinge?.angle.degrees
+                hingeState = context.hinge.map { String(describing: $0.status) }
+                record("hinge")
+            }
+            .onAppear { record("appear") }
+            .onChange(of: studio.prompt) { _, _ in record("prompt") }
+            .onChange(of: studio.showParameters) { _, _ in record("editor") }
+            .onChange(of: phase) { _, _ in record("scenePhase") }
+    }
+
+    private func record(_ reason: String) {
+        let encoder = JSONEncoder(); encoder.outputFormatting = [.sortedKeys]
+        let data = try? encoder.encode(CreativeState(scene: studio.sceneSpec, prompt: studio.prompt))
+        let hash = data.map { SHA256.hash(data: $0).map { String(format: "%02x", $0) }.joined() }
+        records.append(Entry(reason: reason, time: Date().timeIntervalSince1970,
+            pid: ProcessInfo.processInfo.processIdentifier, width: size.width, height: size.height,
+            horizontalSizeClass: sizeClass == .regular ? "regular" : "compact",
+            scenePhase: String(describing: phase), hingeAngleDegrees: angle, hingeState: hingeState,
+            creativeStateSHA256: hash, editorExpanded: studio.showParameters,
+            selectedTab: String(describing: studio.tab), busy: studio.busy))
+        if records.count > 128 { records.removeFirst(records.count - 128) }
+        let url = URL.documentsDirectory.appending(path: "Measurements/duo-layout-probe.json")
+        do {
+            try FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
+            try encoder.encode(records).write(to: url, options: .atomic)
+        } catch { /* Developer-only evidence never changes the app's layout or workflow. */ }
+    }
+
+    private struct CreativeState: Encodable { let scene: SceneSpec?; let prompt: String }
+    private struct Entry: Encodable {
+        let reason: String; let time: Double; let pid: Int32; let width: Double; let height: Double
+        let horizontalSizeClass: String; let scenePhase: String; let hingeAngleDegrees: Double?
+        let hingeState: String?; let creativeStateSHA256: String?; let editorExpanded: Bool
+        let selectedTab: String; let busy: Bool
+    }
+}
+#endif

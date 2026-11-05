@@ -1,0 +1,196 @@
+{
+  "recordedAtUTC": "2026-11-05T11:48:07.817670+00:00",
+  "scope": "iPhone Duo iOS 27.1 Simulator, Debug --duo-qa; no physical Duo or radio-off inference tested",
+  "status": "passed_scoped_layout_and_state_checks",
+  "rootCause": {
+    "file": "Apple/ThreeLiveStudio/Creation/CreationWorkspace.swift",
+    "before": ".arrangementViewStyle(.split.axes(.horizontal))",
+    "after": ".arrangementViewStyle(.split)",
+    "trigger": "Rotate expanded inner display into tall arrangement; horizontal-only split drops secondary model viewport by API design.",
+    "evidenceBefore": "open-rotation-display3.png",
+    "evidenceAfter": "fixed-open-rotation-display3.png",
+    "primarySource": "https://developer.apple.com/videos/play/tech-talks/111463/?time=721"
+  },
+  "tooling": {
+    "hingeTransport": "Local Simulator-only HID helper built from serve-sim; native public App .onHingeChange is independent readback",
+    "source": "https://github.com/EvanBacon/serve-sim",
+    "revision": "8e7d2060d40328a2b57ce2d0de98c54ca334ed1b",
+    "shippingInApp": false,
+    "guestHingeAPI": "SwiftUI onHingeChange (iOS 27.1+)",
+    "note": "Simulator input helper uses developer-only private simulator frameworks outside App; no embedded script/runtime/helper in distribution."
+  },
+  "checks": {
+    "closedBookOpenHingeCallbacks": true,
+    "rotationGeometryChanged": true,
+    "singleProcessAcrossPostFixTransitions": true,
+    "nonemptyRobotSceneAndPromptHashPreserved": true,
+    "expandedEditorStatePreserved": true,
+    "selectedTabPreserved": true,
+    "nativeParametersGenerateAndSave": true,
+    "savedGLBAndUSDZHashesMatch": true,
+    "actualRealityKitPreviewVisibleOpenAndBookBothOrientations": true,
+    "sourceBuildNoErrors": true,
+    "diffWhitespaceCheck": true
+  },
+  "steps": [
+    {
+      "step": "fixed-closed-baseline",
+      "busy": false,
+      "creativeStateSHA256": "8a1280c39b71689fae080155a6e5d56fa84ec83a608e19436ba504ea566ada0e",
+      "editorExpanded": true,
+      "height": 562,
+      "hingeAngleDegrees": 0,
+      "hingeState": "closed",
+      "horizontalSizeClass": "compact",
+      "pid": 97464,
+      "reason": "editor",
+      "scenePhase": "active",
+      "selectedTab": "create",
+      "time": 1793879181.034789,
+      "width": 382
+    },
+    {
+      "step": "fixed-book",
+      "busy": false,
+      "creativeStateSHA256": "8a1280c39b71689fae080155a6e5d56fa84ec83a608e19436ba504ea566ada0e",
+      "editorExpanded": true,
+      "height": 553,
+      "hingeAngleDegrees": 127.77777862548827,
+      "hingeState": "partiallyOpen",
+      "horizontalSizeClass": "regular",
+      "pid": 97464,
+      "reason": "hinge",
+      "scenePhase": "active",
+      "selectedTab": "create",
+      "time": 1793879184.5784922,
+      "width": 867
+    },
+    {
+      "step": "fixed-open",
+      "busy": false,
+      "creativeStateSHA256": "8a1280c39b71689fae080155a6e5d56fa84ec83a608e19436ba504ea566ada0e",
+      "editorExpanded": true,
+      "height": 553,
+      "hingeAngleDegrees": 180,
+      "hingeState": "fullyOpen",
+      "horizontalSizeClass": "regular",
+      "pid": 97464,
+      "reason": "hinge",
+      "scenePhase": "active",
+      "selectedTab": "create",
+      "time": 1793879188.18206,
+      "width": 867
+    },
+    {
+      "step": "fixed-open-rotation",
+      "busy": false,
+      "creativeStateSHA256": "8a1280c39b71689fae080155a6e5d56fa84ec83a608e19436ba504ea566ada0e",
+      "editorExpanded": true,
+      "height": 786,
+      "hingeAngleDegrees": 180,
+      "hingeState": "fullyOpen",
+      "horizontalSizeClass": "regular",
+      "pid": 97464,
+      "reason": "geometry",
+      "scenePhase": "active",
+      "selectedTab": "create",
+      "time": 1793879192.6082091,
+      "width": 669.0000000000001
+    },
+    {
+      "step": "fixed-book-rotation",
+      "busy": false,
+      "creativeStateSHA256": "8a1280c39b71689fae080155a6e5d56fa84ec83a608e19436ba504ea566ada0e",
+      "editorExpanded": true,
+      "height": 786,
+      "hingeAngleDegrees": 127.77777862548827,
+      "hingeState": "partiallyOpen",
+      "horizontalSizeClass": "regular",
+      "pid": 97464,
+      "reason": "hinge",
+      "scenePhase": "active",
+      "selectedTab": "create",
+      "time": 1793879234.912108,
+      "width": 669.0000000000001
+    },
+    {
+      "step": "fixed-closed-rotation",
+      "busy": false,
+      "creativeStateSHA256": "8a1280c39b71689fae080155a6e5d56fa84ec83a608e19436ba504ea566ada0e",
+      "editorExpanded": true,
+      "height": 350,
+      "hingeAngleDegrees": 0,
+      "hingeState": "closed",
+      "horizontalSizeClass": "compact",
+      "pid": 97464,
+      "reason": "geometry",
+      "scenePhase": "active",
+      "selectedTab": "create",
+      "time": 1793879239.108242,
+      "width": 594
+    },
+    {
+      "step": "fixed-open-restored",
+      "busy": false,
+      "creativeStateSHA256": "8a1280c39b71689fae080155a6e5d56fa84ec83a608e19436ba504ea566ada0e",
+      "editorExpanded": true,
+      "height": 553,
+      "hingeAngleDegrees": 180,
+      "hingeState": "fullyOpen",
+      "horizontalSizeClass": "regular",
+      "pid": 97464,
+      "reason": "geometry",
+      "scenePhase": "active",
+      "selectedTab": "create",
+      "time": 1793879244.4541368,
+      "width": 867
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "fixed-book-display3.png",
+      "sha256": "51941b507c3abf2879ab0a159250c56b2f31fb55a69d60cedfc22c5800b0aa7c"
+    },
+    {
+      "file": "fixed-book-rotation-display3.png",
+      "sha256": "1cc924aa00c1cefab86406e49a9876581236bf73eb6f4252a32aec5030caa945"
+    },
+    {
+      "file": "fixed-closed-baseline-display1.png",
+      "sha256": "f14ed862ae45bcbad5dfa035f8761b2657aafd99282c85f64bac5759b68cf972"
+    },
+    {
+      "file": "fixed-closed-rotation-display1.png",
+      "sha256": "2843092c77c8f5abcf3fa26659ac3eecd816d764b3587cb2cf2c849f2bbcb6b9"
+    },
+    {
+      "file": "fixed-open-display3.png",
+      "sha256": "c285adfe5c64af47d83d25a97209e7ae21e0c22515a609dd227f566c5a4dcb15"
+    },
+    {
+      "file": "fixed-open-restored-display3.png",
+      "sha256": "3e089e453879429cf02987781af67389fb8a5493024bb97b033b29f12374320d"
+    },
+    {
+      "file": "fixed-open-rotation-display3.png",
+      "sha256": "fb6589c90e3da2df0a564882384b1d052ee38aa07dbf743846ff7d433c4c27e8"
+    },
+    {
+      "file": "open-rotation-display3.png",
+      "sha256": "6257a4f464ca6e12decd6af604c7b4e849c43f506c6af08c496958d30b8bccf1"
+    }
+  ],
+  "limits": [
+    "Duo share-sheet presentation/export destination completion remains unverified: MCP taps target an inactive panel; developer display-target taps triggered cover buttons but inner share attempts did not produce a sheet. Do not equate button existence with share completion.",
+    "Layout and state continuity are Simulator evidence; no physical Duo hardware test.",
+    "Closed compact layout uses one scrolling column; model viewport can be below expanded editor, as on a regular iPhone.",
+    "Model quality and AI latency were not retested by this layout run.",
+    "A concurrent focused XCTest reinstall interrupted the first pre-fix run and changed data container; not treated as a crash. Post-fix proof starts fresh PID97464."
+  ],
+  "build": {
+    "debugResult": "succeeded",
+    "elapsedSeconds": 16.7,
+    "logBasename": "build_run_sim_2026-11-05T11-45-38-634Z_pid89126_c696aeeb.log"
+  },
+  "savedModelsReceipt": "native-save-readback.json"
+}
