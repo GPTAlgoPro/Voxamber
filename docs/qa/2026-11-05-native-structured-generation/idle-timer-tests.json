@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUTC": "2026-11-05T12:28:56.227945+00:00",
+  "status": "passed_scoped_idle_timer_and_lifecycle_tests",
+  "problem": "Normal admitted AI generation did not disable automatic screen locking; the QA outer start path also set the idle timer before the probe snapshotted it, so QA completion preserved true instead of the actual prior value.",
+  "fixScope": {
+    "files": [
+      "Apple/ThreeLiveStudio/App/StudioModel.swift",
+      "Apple/ThreeLiveStudioTests/StudioCancellationTests.swift"
+    ],
+    "behavior": [
+      "Acquire an operation-owned native idle-timer lease for admitted normal AI operations and QA probe work.",
+      "Restore the previous idle-timer value on normal operation completion, including success, failure and user cancellation.",
+      "When lifecycle cleanup owns the operation, defer lease release until cancellation and runtime unload finish.",
+      "Use operation IDs so an old completion cannot release a newer lease.",
+      "Manual parameter generation and routing to model installation do not acquire the lease."
+    ]
+  },
+  "provenance": {
+    "baselineCommitBeforeThisFix": "40a9dedf00b71a6c9547720b7bf7a277f45ab193",
+    "testedFiles": [
+      {
+        "path": "Apple/ThreeLiveStudio/App/StudioModel.swift",
+        "sha256": "a59503f680f1a2348676b645ddb85eb9209190afecd7a373e3f337c2dd0c3973",
+        "matchesImmediatelyAfterTestReadback": true
+      },
+      {
+        "path": "Apple/ThreeLiveStudioTests/StudioCancellationTests.swift",
+        "sha256": "f03d995a27d65c3c0236f21eb5987c94f6f19d68dbd2633e9aa67090d00b0331",
+        "matchesImmediatelyAfterTestReadback": true
+      }
+    ],
+    "note": "These are hashes of the current App source actually compiled in the focused test run. StudioModel also contains root-owned QwenNative import, jsonSchema call and privacy-safe inference completion diagnostics; those separate changes are not attributed to the idle-timer fix. No code, build, simulator, version or account changes occurred while writing this receipt."
+  },
+  "verification": {
+    "tool": "XcodeBuildMCP test_sim",
+    "scheme": "ThreeLiveStudio",
+    "configuration": "Debug",
+    "onlyTesting": "ThreeLiveStudioTests/StudioCancellationTests",
+    "parallelTesting": false,
+    "profile": "idle-timer-lifecycle",
+    "derivedDataPath": "Apple/.build/IdleTimerDerivedData",
+    "device": {
+      "architecture": "arm64",
+      "deviceId": "44F69398-0D10-403D-B3BB-037C75C23B15",
+      "deviceName": "Lilt StoreKit QA 29",
+      "modelName": "iPhone 17 Pro",
+      "osBuildNumber": "23A343",
+      "osVersion": "26.0",
+      "platform": "iOS Simulator"
+    },
+    "buildAndTestElapsedSeconds": 80.8,
+    "testRunnerStartUTC": "2026-11-05T12:26:04.732000+00:00",
+    "testRunnerFinishUTC": "2026-11-05T12:26:14.556000+00:00",
+    "result": "Passed",
+    "total": 10,
+    "passed": 10,
+    "failed": 0,
+    "skipped": 0,
+    "buildErrors": 0,
+    "runtimeWarnings": [],
+    "upstreamBuildWarnings": {
+      "reportedCount": 20,
+      "source": "mlx-swift Cmlx generated Metal/C++ headers",
+      "category": "C++17 extension warnings (static_assert without message, inline variables, constexpr if)"
+    },
+    "diffWhitespaceCheck": "passed",
+    "tests": [
+      {
+        "suite": "StudioCancellationTests",
+        "name": "testAIIdleTimerLeasePreservesPreviouslyDisabledSetting",
+        "status": "passed",
+        "durationMilliseconds": 2
+      },
+      {
+        "suite": "StudioCancellationTests",
+        "name": "testAIIdleTimerLeaseRestoresSettingAndRejectsStaleCompletion",
+        "status": "passed",
+        "durationMilliseconds": 1
+      },
+      {
+        "suite": "StudioCancellationTests",
+        "name": "testBackgroundCleanupBlocksRetryUntilUnloadAndPreservesSavedRevision",
+        "status": "passed",
+        "durationMilliseconds": 109
+      },
+      {
+        "suite": "StudioCancellationTests",
+        "name": "testCancellingAnOwnedGenerationSettlesAndPreservesPublishedAssets",
+        "status": "passed",
+        "durationMilliseconds": 14
+      },
+      {
+        "suite": "StudioCancellationTests",
+        "name": "testEveryUnloadCallerObservesFinalStateAtItsOwnReturn",
+        "status": "passed",
+        "durationMilliseconds": 25
+      },
+      {
+        "suite": "StudioCancellationTests",
+        "name": "testIdleStopDoesNotInventAStoppingState",
+        "status": "passed",
+        "durationMilliseconds": 1
+      },
+      {
+        "suite": "StudioCancellationTests",
+        "name": "testLeaseAlsoEndsOnceWhenExpirationIsSynchronousDuringBegin",
+        "status": "passed",
+        "durationMilliseconds": 1
+      },
+      {
+        "suite": "StudioCancellationTests",
+        "name": "testManualGenerationAndUninstalledAIDoNotAcquireIdleTimer",
+        "status": "passed",
+        "durationMilliseconds": 25
+      },
+      {
+        "suite": "StudioCancellationTests",
+        "name": "testMemoryCleanupGetsOneLeaseWhenBackgroundedAndExpirationEndsItOnce",
+        "status": "passed",
+        "durationMilliseconds": 25
+      },
+      {
+        "suite": "StudioCancellationTests",
+        "name": "testModelUnloadCoalescesAndPrepareCannotTreatItAsALoadedModel",
+        "status": "passed",
+        "durationMilliseconds": 14
+      }
+    ],
+    "resultBundle": "/Users/kaisun/Library/Developer/XcodeBuildMCP/workspaces/Three-Live-a778a850dbab/result-bundles/test_sim_2026-11-05T12-24-53-863Z_pid89126_6d9d3668.xcresult",
+    "buildLog": "/Users/kaisun/Library/Developer/XcodeBuildMCP/workspaces/Three-Live-a778a850dbab/logs/test_sim_2026-11-05T12-24-53-863Z_pid89126_fa02872f.log",
+    "independentXCResultSummaryReadback": "Passed, 10 passed / 0 failed / 0 skipped"
+  },
+  "coverage": [
+    "New tests exercise the production lease helper previous-value restoration, idempotence, owner identity and stale-completion protection using an injected platform effect.",
+    "New App test exercises actual normal manual generation success/cancellation and uninstalled-AI routing without changing the idle timer.",
+    "Seven existing App lifecycle tests pass, covering owned cancellation, background/memory cleanup admission gates, background lease expiration and shared model unload completion."
+  ],
+  "readOnlyReviews": [
+    {
+      "reviewer": "root",
+      "result": "No new production lease issue found",
+      "basis": "Read-only diff review of operation ownership, deferred cleanup release, previous-value restoration and stale-ID guards."
+    },
+    {
+      "reviewer": "product_audit",
+      "result": "No new production lease issue found",
+      "basis": "Independent read-only review as reported to root; no additional device or build validation implied."
+    }
+  ],
+  "limits": [
+    "No physical phone was operated by this test run. No real AI generation or automatic-lock scenario was exercised with model weights. Helper tests and source review do not prove real-device inference behavior.",
+    "The reported earlier 100-second stopping problem is not attributed to auto-lock by this receipt; there is no direct causal device evidence for that claim.",
+    "A pre-existing DEVICE_QA-only window remains: the child probe clears busy just before the outer start task finishes. This run did not expand the production operation API to address that unobserved QA reentrancy edge; do not claim comprehensive QA race proof.",
+    "The final run compiled the current production App source in Debug. DEVICE_QA-guarded outer-start behavior was reviewed in source, not executed in this Debug run.",
+    "No App release archive, upload, TestFlight availability, physical-device acceptance, Duo share or radio-off inference is established here."
+  ],
+  "supersededSetupAttempt": {
+    "status": "package_resolution_failed_before_app_compile",
+    "cause": "A concurrent QwenNative Package.swift test-target declaration preceded its Tests source directory, producing overlapping-source diagnostics. The run was held until package source/target layout froze, then the final focused run above passed.",
+    "logBasename": "build_run_sim_2026-11-05T12-10-40-277Z_pid89126_4ba9a814.log"
+  }
+}

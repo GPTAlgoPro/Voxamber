@@ -20,10 +20,16 @@ let package = Package(
             .product(name: "MLX", package: "mlx-swift"),
             .product(name: "MLXLLM", package: "mlx-swift-lm"),
             .product(name: "MLXLMCommon", package: "mlx-swift-lm"),
+            .product(name: "MLXGuidedGeneration", package: "mlx-swift-lm"),
             .product(name: "Tokenizers", package: "swift-transformers"),
         ]),
         .executableTarget(name: "QwenBench", dependencies: ["QwenNative", "CreationCore", "ThreeLiveNative",
             .product(name: "MLXGuidedGeneration", package: "mlx-swift-lm")],
             resources: [.copy("plan-schema.json")]),
+        .testTarget(name: "QwenNativeTests", dependencies: ["QwenNative", "CreationCore",
+            .product(name: "MLX", package: "mlx-swift"),
+            .product(name: "MLXNN", package: "mlx-swift"),
+            .product(name: "MLXLMCommon", package: "mlx-swift-lm"),
+            .product(name: "MLXGuidedGeneration", package: "mlx-swift-lm")]),
     ]
 )

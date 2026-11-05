@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "recordType": "creation_core_scene_generation_schema_tests",
+  "recordedAtUTC": "2026-11-05T12:30:32.040543+00:00",
+  "frozen": true,
+  "scope": "Actual CreationCore Swift Testing execution on the development Mac. This evidence is distinct from native grammar adapter tests, model generation, App tests and device acceptance.",
+  "api": "SceneGenerationSchema.jsonSchema(currentScene: SceneSpec? = nil) throws -> String",
+  "sourceSHA256": {
+    "Apple/Packages/CreationCore/Sources/CreationCore/SceneGenerationSchema.swift": "c7207a9c83a345370c80a51e0d608be3c1ebdfc58ee195de339bab744cc26d52",
+    "Apple/Packages/CreationCore/Tests/CreationCoreTests/SceneGenerationSchemaTests.swift": "2aadc19717699728986efcc458d9b4052a540e34a0c001bb72f6b370c8a03442"
+  },
+  "sourceMatchesObservedTestFreeze": true,
+  "testRun": {
+    "command": "swift test",
+    "workingDirectory": "Apple/Packages/CreationCore",
+    "host": "Apple Silicon Mac",
+    "configuration": "debug",
+    "target": "arm64e-apple-macos14.0",
+    "testingLibraryVersion": "2403",
+    "observedAtUTC": "2026-11-05T12:16:30Z",
+    "exitCode": 0,
+    "passed": 47,
+    "failed": 0,
+    "newSchemaTests": 7,
+    "previousCoreTests": 40,
+    "swiftTestingSeconds": 0.368,
+    "incrementalBuildSeconds": 0.74,
+    "xctestShimTestCount": 0,
+    "countExplanation": "The XCTest compatibility shim prints zero tests; the subsequent Swift Testing runner explicitly passed 47 tests."
+  },
+  "schemaTestNames": [
+    "generationSchemaKeepsFullNodeBudgetAndAllPlacementOrders",
+    "generationSchemaAcceptsEditableFreeGeometryAtItsActualLimits",
+    "generationSchemaPreservesSnapshotFloatBoundaryAndGraphemeNames",
+    "generationSchemaLeavesMaterialsRotationAndPlacementOptional",
+    "generationSchemaRejectsMalformedFieldsRangesAndPrimitiveGeometry",
+    "generationSchemaDoesNotReplaceNativeGraphAndTopologyValidation",
+    "generationSchemaIsDeterministicAndRejectsInvalidEditInput"
+  ],
+  "authoritativeContract": {
+    "encoding": "Deterministic Draft 2020-12 JSON Schema constructed with native Swift/Foundation JSONSerialization, sorted object keys; no script or bundled schema resource.",
+    "nodes": {
+      "minimum": 1,
+      "maximum": 32,
+      "allArrayPositionsUseTheSameNodeContract": true,
+      "firstNodeNeedNotBeRoot": true
+    },
+    "primitives": [
+      "box",
+      "sphere",
+      "cylinder",
+      "cone",
+      "torus",
+      "mesh",
+      "lathe",
+      "extrusion"
+    ],
+    "nodeObjectAlternatives": 24,
+    "placement": "For every primitive: grounded root (neither placement field), origin only, or attach only. Both fields together are forbidden.",
+    "additionalProperties": false,
+    "requiredCommonFields": [
+      "id",
+      "primitive",
+      "dimensions",
+      "color"
+    ],
+    "optionalDefaults": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "metallic": 0.1,
+      "roughness": 0.45,
+      "attachmentOffsets": [
+        0,
+        0,
+        0
+      ]
+    },
+    "dimensionsMeters": {
+      "conceptualMinimum": 0.02,
+      "maximum": 2.5,
+      "schemaMinimum": 0.019999999552965164,
+      "minimumReason": "ScenePlan.snapshot bridges Float(0.02) through NSNumber; the exact stored Float lower bound preserves valid editable snapshots."
+    },
+    "positionAndOffsetMeters": [
+      -3,
+      3
+    ],
+    "rotationDegrees": [
+      -360,
+      360
+    ],
+    "materialRange": [
+      0,
+      1
+    ],
+    "lathe": {
+      "profilePoints": [
+        2,
+        64
+      ],
+      "pointArity": 2,
+      "radiusMinimum": 0
+    },
+    "extrusion": {
+      "profilePoints": [
+        3,
+        64
+      ],
+      "pointArity": 2
+    },
+    "mesh": {
+      "vertices": [
+        3,
+        1024
+      ],
+      "vertexArity": 3,
+      "triangles": [
+        1,
+        2048
+      ],
+      "triangleArity": 3,
+      "integerIndexRange": [
+        0,
+        1023
+      ]
+    },
+    "freeGeometryCoordinates": "Full finite Float range; no artificial +/-1 or +/-3 bound on normalized profile/mesh input coordinates.",
+    "currentScene": "Validated using native attachment resolution; does not reduce IDs, primitive choices or budgets.",
+    "schemaAvoids": [
+      "not",
+      "if/then/else",
+      "dependentRequired",
+      "allOf intersections"
+    ],
+    "schemaUses": [
+      "oneOf over disjoint complete objects",
+      "$defs/$ref",
+      "prefixItems with fixed tuple cardinality",
+      "additionalProperties=false"
+    ]
+  },
+  "verifiedFixtures": [
+    "32-node editable ScenePlan snapshot; 33 rejected.",
+    "An attached child appears first and its unattached root later.",
+    "A single editable scene with 1024 mesh vertices/2048 triangles, 64-point lathe and 64-point extrusion, preserved through snapshot/schema validation/native decode/native mesh generation.",
+    "Profile values outside the obsolete experimental +/-3 range remain valid.",
+    "Exact Float(0.02) snapshot boundary, +/-3 origins and +/-360 rotations.",
+    "A 40-grapheme name represented by 80 Unicode scalars remains editable.",
+    "All eight primitives with optional placement, rotation and material defaults.",
+    "Unknown fields, primitive-inappropriate geometry, type mismatches, invalid counts and numeric bounds rejected as applicable.",
+    "Schema-admissible missing parent/cycle/duplicate IDs/out-of-range relative mesh index/degenerate topology still rejected by native validation.",
+    "Duplicate raw JSON fields rejected by StrictJSONObject before Foundation collapses them."
+  ],
+  "nativeValidationBoundary": {
+    "requiredAfterGrammar": true,
+    "owners": [
+      "StrictJSONObject",
+      "ScenePlan",
+      "SceneSpec",
+      "SceneAttachmentResolver",
+      "FreeformGeometry",
+      "SceneGenerator"
+    ],
+    "nativeOnlySemantics": [
+      "Raw JSON duplicate-key detection",
+      "ID uniqueness and referenced-parent existence",
+      "No self references or graph cycles",
+      "Mesh index less than the actual vertex count, nondegenerate triangles and valid profiles",
+      "Aggregate rendered geometry budget",
+      "Finite Float representation and all authoritative numeric bounds",
+      "Name trimmed nonempty, no control characters, at most 40 Swift extended grapheme clusters",
+      "Visual meaning, recognizable silhouette and requested edit intent"
+    ],
+    "name": "JSON Schema maxLength counts code points rather than Swift extended grapheme clusters; name uses minLength=1 and defers the 40-grapheme rule to native validation. No fake 40-codepoint restriction or huge grammar repetition counter.",
+    "responseUTF8Bytes": {
+      "coreMaximum": 262144,
+      "formalEngineMaximum": 16384,
+      "formalEngineTokenCap": 3072,
+      "note": "Full Core schema capacity does not imply the maximum-size scene fits the production prompt/output token and byte budgets."
+    }
+  },
+  "adapterComparison": {
+    "receipt": "docs/qa/2026-11-05-native-structured-generation/grammar-tests.json",
+    "claimedByThisCoreRun": false,
+    "authoritativeSchemaNumerics": "Original schema preserves full number minimum/maximum values.",
+    "pinnedNativeCompilerCompatibility": "The adapter separately removes bounds only from type=number schema nodes because pinned xgrammar v0.1.30 rejects valid long decimals/scientific notation. Native numeric validation remains mandatory; integer/count/structural bounds remain in compiled grammar.",
+    "propertyOrder": "JSON Schema object semantics and Core decoding are order independent. The pinned native compiler accepts schema property order; emitted schema and ScenePlan.snapshot are sorted, and adapter fixtures compare that canonical order. Reordered equivalent object keys are not claimed accepted by the grammar. Node array order remains unrestricted.",
+    "nativeMatcherEvidence": "Native compilation/matcher, fixed TokenIterator and raw-producer tests belong to the separate adapter receipt, not these 47 Core tests."
+  },
+  "notEstablished": [
+    "Model output acceptance rate",
+    "General 3D visual quality",
+    "Full-model memory or cancellation latency",
+    "iPhone/Simulator/App execution",
+    "Cold model download",
+    "Archive/upload/Apple processing/TestFlight readiness"
+  ],
+  "noNewExecutionDuringReceiptCreation": true,
+  "noSourceOrModelChangesDuringReceiptCreation": true
+}

@@ -81,7 +81,7 @@ struct ModelLibrary: View {
 }
 
 private struct OpenSourceLicensesView: View {
-    private let licenses=["MLX-Swift","MLX-Swift-LM","Swift-Transformers"]
+    private let licenses=["MLX-Swift","MLX-Swift-LM","Swift-Transformers","XGrammar","PicoJSON","DLPack","Qwen-Model"]
     var body: some View {
         List {
             ForEach(licenses,id:\.self) { name in
