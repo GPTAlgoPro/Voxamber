@@ -1,0 +1,381 @@
+{
+  "api" : "QwenEngine.generateJSON",
+  "attemptCount" : 1,
+  "decodeSeconds" : 0.00081801414489746094,
+  "exported" : true,
+  "exportSeconds" : 0.0017110109329223633,
+  "firstTokenSeconds" : 3.544774334,
+  "fixedPrompt" : "一把简洁的棕色木椅，必须包含坐面、靠背和四条腿，地面Y=0，坐面高度约0.45米，不要增加底部平台。",
+  "generationSeconds" : 16.56563401222229,
+  "geometrySeconds" : 0.00010991096496582031,
+  "glbBytes" : 42612,
+  "glbSHA256" : "32265ca770147e485cc9cc7f335bb6bf1d0df203ca78b4ec6681a43fb0089d25",
+  "id" : "chair",
+  "jsonObjectAccepted" : true,
+  "meshes" : 16,
+  "meshSummary" : {
+    "approximateAABBConnectedComponents" : 1,
+    "boundsMaximum" : [
+      0.22499999403953552,
+      2.3159999847412109,
+      0.45800000429153442
+    ],
+    "boundsMinimum" : [
+      -0.22499999403953552,
+      0,
+      -0.22499999403953552
+    ],
+    "connectionMetricLimit" : "AABB proximity within 15mm is diagnostic only; not proof of actual surface attachment or visual quality",
+    "finiteBuffers" : true,
+    "parts" : [
+      {
+        "color" : "#8B4513",
+        "id" : "seat",
+        "position" : [
+          0,
+          0.82200002670288086,
+          0
+        ],
+        "primitive" : "box",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.44999998807907104,
+          0.44999998807907104,
+          0.019999999552965164
+        ]
+      },
+      {
+        "color" : "#8B4513",
+        "id" : "backrest",
+        "position" : [
+          0,
+          0.82200002670288086,
+          0
+        ],
+        "primitive" : "box",
+        "rotation" : [
+          0,
+          90,
+          0
+        ],
+        "size" : [
+          0.44999998807907104,
+          0.60000002384185791,
+          0.019999999552965164
+        ]
+      },
+      {
+        "color" : "#8B4513",
+        "id" : "leg1",
+        "position" : [
+          0,
+          0.82200002670288086,
+          0
+        ],
+        "primitive" : "cylinder",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.05000000074505806,
+          1.2000000476837158,
+          0.019999999552965164
+        ]
+      },
+      {
+        "color" : "#8B4513",
+        "id" : "leg2",
+        "position" : [
+          0,
+          0.82200002670288086,
+          0
+        ],
+        "primitive" : "cylinder",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.05000000074505806,
+          1.2000000476837158,
+          0.019999999552965164
+        ]
+      },
+      {
+        "color" : "#8B4513",
+        "id" : "leg3",
+        "position" : [
+          0,
+          0.82200002670288086,
+          0
+        ],
+        "primitive" : "cylinder",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.05000000074505806,
+          1.2000000476837158,
+          0.019999999552965164
+        ]
+      },
+      {
+        "color" : "#8B4513",
+        "id" : "leg4",
+        "position" : [
+          0,
+          0.82200002670288086,
+          0
+        ],
+        "primitive" : "cylinder",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.05000000074505806,
+          1.2000000476837158,
+          0.019999999552965164
+        ]
+      },
+      {
+        "color" : "#8B4513",
+        "id" : "backrest_attach",
+        "position" : [
+          0.019999999552965164,
+          0.30000001192092896,
+          0
+        ],
+        "primitive" : "box",
+        "rotation" : [
+          0,
+          90,
+          0
+        ],
+        "size" : [
+          0.44999998807907104,
+          0.60000002384185791,
+          0.019999999552965164
+        ]
+      },
+      {
+        "color" : "#8B4513",
+        "id" : "leg1_attach",
+        "position" : [
+          0,
+          1.6440000534057617,
+          0
+        ],
+        "primitive" : "box",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.05000000074505806,
+          0.44999998807907104,
+          0.019999999552965164
+        ]
+      },
+      {
+        "color" : "#8B4513",
+        "id" : "leg2_attach",
+        "position" : [
+          0,
+          1.6440000534057617,
+          0
+        ],
+        "primitive" : "box",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.05000000074505806,
+          0.44999998807907104,
+          0.019999999552965164
+        ]
+      },
+      {
+        "color" : "#8B4513",
+        "id" : "leg3_attach",
+        "position" : [
+          0,
+          1.6440000534057617,
+          0
+        ],
+        "primitive" : "box",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.05000000074505806,
+          0.44999998807907104,
+          0.019999999552965164
+        ]
+      },
+      {
+        "color" : "#8B4513",
+        "id" : "leg4_attach",
+        "position" : [
+          0,
+          1.6440000534057617,
+          0
+        ],
+        "primitive" : "box",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.05000000074505806,
+          0.44999998807907104,
+          0.019999999552965164
+        ]
+      },
+      {
+        "color" : "#8B4513",
+        "id" : "backrest_attach2",
+        "position" : [
+          0.019999999552965164,
+          0.82200002670288086,
+          0.23299999535083771
+        ],
+        "primitive" : "box",
+        "rotation" : [
+          0,
+          90,
+          0
+        ],
+        "size" : [
+          0.44999998807907104,
+          0.60000002384185791,
+          0.019999999552965164
+        ]
+      },
+      {
+        "color" : "#8B4513",
+        "id" : "leg1_attach2",
+        "position" : [
+          0,
+          2.0910000801086426,
+          0
+        ],
+        "primitive" : "box",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.05000000074505806,
+          0.44999998807907104,
+          0.019999999552965164
+        ]
+      },
+      {
+        "color" : "#8B4513",
+        "id" : "leg2_attach2",
+        "position" : [
+          0,
+          2.0910000801086426,
+          0
+        ],
+        "primitive" : "box",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.05000000074505806,
+          0.44999998807907104,
+          0.019999999552965164
+        ]
+      },
+      {
+        "color" : "#8B4513",
+        "id" : "leg3_attach2",
+        "position" : [
+          0,
+          2.0910000801086426,
+          0
+        ],
+        "primitive" : "box",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.05000000074505806,
+          0.44999998807907104,
+          0.019999999552965164
+        ]
+      },
+      {
+        "color" : "#8B4513",
+        "id" : "leg4_attach2",
+        "position" : [
+          0,
+          2.0910000801086426,
+          0
+        ],
+        "primitive" : "box",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.05000000074505806,
+          0.44999998807907104,
+          0.019999999552965164
+        ]
+      }
+    ]
+  },
+  "nativeCompletion" : {
+    "generatedTokenCount" : 1015,
+    "grammar" : {
+      "compiledSchemaSHA256" : "deba307c57adc21b75ff4e0f4333ff82444be7a10d31de4dbd3be107ee35e2a4",
+      "floatBoundsCheckedAfterDecoding" : true,
+      "originalSchemaSHA256" : "fad4c0e9225540310c4eec80ee03a88ddd9a91bb94f8e7b6ef82d40103eeafc2"
+    },
+    "grammarEnabled" : true,
+    "grammarTerminated" : true,
+    "inputTokenCount" : 1065,
+    "reason" : "stop",
+    "tokenLimit" : 3072
+  },
+  "nativeDecode" : "SceneSpec.decodeModelResponse",
+  "nodes" : 16,
+  "progressCallbacks" : 126,
+  "rendered" : true,
+  "renderSeconds" : 0.21923995018005371,
+  "responseBytes" : 2708,
+  "responseSHA256" : "486f3012eed758ffc683f7d03dd6ca1be983aa02a7d4f2a32239d693efa40a7b",
+  "sceneAccepted" : true,
+  "status" : "exported_for_visual_review",
+  "totalSeconds" : 16.790899991989136,
+  "triangles" : 656,
+  "truncationStatus" : "stop",
+  "usdzBytes" : 56817,
+  "usdzSHA256" : "687a50092207da5d6714592391d528271b1be72bc3e7d7f2ca13143dca86e5ef",
+  "vertices" : 808
+}

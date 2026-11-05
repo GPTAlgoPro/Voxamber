@@ -1,0 +1,212 @@
+{
+  "recordedAtUTC": "2026-11-05T12:50:05.516589+00:00",
+  "scope": "One fixed synthetic chair request, two formal Direct calls maximum, no retry/repair/preset or production changes",
+  "modelID": "qwen3.5-4b-mlx-int4",
+  "modelFiles": [
+    {
+      "path": "chat_template.jinja",
+      "bytes": 7756,
+      "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "config.json",
+      "bytes": 3366,
+      "sha256": "f3efc81b2ea8d96a45301037d3ccccbcccdef44a961845c87f286aaddbc6eaaa",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "model.safetensors",
+      "bytes": 3034300695,
+      "sha256": "5fb9acd0246866381cf8c5c354c6db1019f6498eec4ccb4f5edcc71ffeacb2db",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "bytes": 101944,
+      "sha256": "52e534c41f7b97708329c85f762e5882bf48bd5955a422c6ae74eba321e6048a",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "preprocessor_config.json",
+      "bytes": 390,
+      "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "processor_config.json",
+      "bytes": 1300,
+      "sha256": "14932921ca485d458a04dafd8069fbb0a4505622a48208d19ed247115801385b",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "tokenizer.json",
+      "bytes": 19989343,
+      "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "tokenizer_config.json",
+      "bytes": 1139,
+      "sha256": "e98f1901ac6f0adff67b1d540bfa0c36ac1a0cf59eb72ed78146ef89aafa1182",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "video_preprocessor_config.json",
+      "bytes": 385,
+      "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "vocab.json",
+      "bytes": 6722759,
+      "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003",
+      "matchesPinnedManifest": true
+    }
+  ],
+  "modelFileCount": 10,
+  "modelBytes": 3061129077,
+  "sourceSHA256": {
+    "Apple/Packages/QwenNative/Package.swift": "ff2e120cdf828d7031db77207770caf3ac2933d4e62297d0b67cf0c94315caef",
+    "Apple/Packages/QwenNative/Package.resolved": "f786e22cb3052d8b2089ba0302de4c894708a5b44ebe30ec6a6592c1b1a5f6af",
+    "Apple/ThreeLiveStudio/Resources/LanguageModel.json": "be9d82a513eaeb8381a3be1967f8f7d25931db8aa7b3ca9f21aa2881d7fd4604",
+    "Apple/Packages/QwenNative/Sources/QwenNative/LocalTokenizer.swift": "82988617a11bed0234181f904e214c2bdc0fc29c995b0b233f78ddf00ccc7937",
+    "Apple/Packages/QwenNative/Sources/QwenNative/NativeJSONGrammar.swift": "7dbc4cf98e9c6d414cc3d9e6230c20955997efb682b11c8476173bd74eeeb016",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift": "9323d1ab24c58e1e8a40d22a6f65f3686fe00e7fcea7361405f3beef76bbe595",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenGenerationCompletion.swift": "c27c479d13c2de07ba1e5920947bd0f9cff7c7354ec6ae73aa5ea552fc722fba",
+    "Apple/Packages/CreationCore/Sources/CreationCore/AttachmentResolver.swift": "3d156c1644fb84b6030728ba60ea3027592a7eca91e254daaf9bf91714e10f94",
+    "Apple/Packages/CreationCore/Sources/CreationCore/BuildingGenerator.swift": "8a72052f967164f71d289826a6647deb540bb845df3c9314463b5fe4dc7e5180",
+    "Apple/Packages/CreationCore/Sources/CreationCore/BuildingSpec.swift": "d6dcad6fb5cedcd3de441751692517ac5a08585d2cc8eca67f7b9991f6d021f9",
+    "Apple/Packages/CreationCore/Sources/CreationCore/FreeformGeometry.swift": "aabb0be5dd83d1e248ee2bf8f9899d6200b3659bc5474c8b8b15984c018f0206",
+    "Apple/Packages/CreationCore/Sources/CreationCore/SceneGenerationSchema.swift": "c7207a9c83a345370c80a51e0d608be3c1ebdfc58ee195de339bab744cc26d52",
+    "Apple/Packages/CreationCore/Sources/CreationCore/SceneGenerator.swift": "1798cd672b99fad741e1c2325f0176a20a912e1e9e1549eb00a848e874516f19",
+    "Apple/Packages/CreationCore/Sources/CreationCore/ScenePlan.swift": "b2b31ccd0bce71dd6d0d3a6c30c15b713323b58314301a5030a7e324c45b3137",
+    "Apple/Packages/CreationCore/Sources/CreationCore/SceneSpec.swift": "3163e0b570843aead62b72df949721f26529cb19691c2fa96b39785a41a81ca4",
+    "Apple/Packages/CreationCore/Sources/CreationCore/StrictJSONObject.swift": "27b46fcfc3c1e6bbad423103b2d568e7c3840b124e5e3848990bed5ff59dcf24",
+    "Apple/Packages/ThreeLiveNative/Sources/ThreeLiveNative/ThreeLiveNative.swift": "1b9e3efc4471f8c5bbc2a3bb0332ab54595b3273fc18d4e645a48f56ede5f6c1",
+    "Apple/.build/outline-quality-runner/Sources/ProductionQuality/ModelPreview.swift": "41833cedafddfc579a0c30522934ac9faae629289e2b3aa6de8394b588148048",
+    "Apple/.build/outline-quality-runner/Sources/ProductionQuality/OutlineProbe.swift": "375c4f819cfae9a7010614b2eae6b73fcc33f0dce3597aab73596d5b304f6588",
+    "Apple/.build/outline-quality-runner/Sources/ProductionQuality/RejectionDiagnostics.swift": "613112e8fcccca3b8459e82f80927d7b0226a316a5878dc75cddc0b1dff64f0b",
+    "Apple/.build/outline-quality-runner/Sources/ProductionQuality/main.swift": "36bf919222cfc6083c9bded504ded91f1ff150763d191264a2249f310869f2ff",
+    "Apple/.build/outline-quality-runner/Package.swift": "ced2fd4cd9ddf687fea17bc9adba638f7cdeba40461afcac9faee2ee5e2b3b9d",
+    "Apple/.build/outline-quality-runner/Package.resolved": "ad8a921a39c8877c088bb11317ce7e5f6ecb3e4e17f6842f8ce214a59537f52a"
+  },
+  "nativeDependencies": [
+    {
+      "identity": "eventsource",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/mattt/EventSource.git",
+      "state": {
+        "revision": "bb4b61273b5a976bb571859c17f903ebc3439df1",
+        "version": "1.6.0"
+      }
+    },
+    {
+      "identity": "mlx-swift",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/ml-explore/mlx-swift",
+      "state": {
+        "revision": "19601207e9a0de51e03ee6ec0c3c5f3784275075",
+        "version": "0.32.3"
+      }
+    },
+    {
+      "identity": "mlx-swift-lm",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/ml-explore/mlx-swift-lm",
+      "state": {
+        "revision": "3b339ad6e3b3f44c8121ecff5131c7fd55e075e6",
+        "version": "3.32.3"
+      }
+    },
+    {
+      "identity": "swift-asn1",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/apple/swift-asn1.git",
+      "state": {
+        "revision": "917b472dbe53ba699cbb0495f9a95a084bc6364d",
+        "version": "1.7.4"
+      }
+    },
+    {
+      "identity": "swift-collections",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/apple/swift-collections.git",
+      "state": {
+        "revision": "f96b909e1a9e469620bc5037c1e24e00153f376f",
+        "version": "1.7.5"
+      }
+    },
+    {
+      "identity": "swift-crypto",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/apple/swift-crypto.git",
+      "state": {
+        "revision": "da9d28d69ebe3894b18376c8f2395c2f37b8448f",
+        "version": "4.5.2"
+      }
+    },
+    {
+      "identity": "swift-huggingface",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/huggingface/swift-huggingface.git",
+      "state": {
+        "revision": "f0a0cb43cb1b402d2bbf6fb10d8981328c449c48",
+        "version": "0.13.0"
+      }
+    },
+    {
+      "identity": "swift-jinja",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/huggingface/swift-jinja.git",
+      "state": {
+        "revision": "1e4d0dc69f7ec1277131fb3853808229c5991825",
+        "version": "2.5.2"
+      }
+    },
+    {
+      "identity": "swift-numerics",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/apple/swift-numerics",
+      "state": {
+        "revision": "0c0290ff6b24942dadb83a929ffaaa1481df04a2",
+        "version": "1.1.1"
+      }
+    },
+    {
+      "identity": "swift-syntax",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/swiftlang/swift-syntax.git",
+      "state": {
+        "revision": "79e4b74a295b6eb74a8b585e3a39d29e70c1dbd1",
+        "version": "603.0.2"
+      }
+    },
+    {
+      "identity": "swift-transformers",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/huggingface/swift-transformers",
+      "state": {
+        "revision": "b38443e44d93eca770f2eb68e2a4d0fa100f9aa2",
+        "version": "1.3.0"
+      }
+    },
+    {
+      "identity": "yyjson",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/ibireme/yyjson.git",
+      "state": {
+        "revision": "8b4a38dc994a110abaec8a400615567bd996105f",
+        "version": "0.12.0"
+      }
+    }
+  ],
+  "sourceRunnerCopiedFrom": "Apple/.build/structured-quality-runner Package.swift+Package.resolved+Sources only, without .build",
+  "build": {
+    "derivedData": "Apple/.build/outline-quality-runner/.build/out",
+    "readOnlyDependencyCheckouts": "Apple/.build/production-quality-runner/.build/checkouts",
+    "newDependenciesDownloaded": false
+  },
+  "host": "Apple Silicon Mac; no phone operation",
+  "outlineScope": "Single fixed chair only: one first root plus connected children is a prototype constraint, not a product restriction for arbitrary multi-object scenes."
+}
