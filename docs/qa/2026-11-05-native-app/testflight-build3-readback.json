@@ -1,0 +1,83 @@
+{
+  "observedAt": "2026-11-05T12:00:55.926605+00:00",
+  "appID": "6831042755",
+  "bundleID": "com.kaisun.voxamber",
+  "version": "0.1.0",
+  "build": "3",
+  "buildID": "3cf16290-baeb-470a-980e-25f197923346",
+  "processingState": "VALID",
+  "internalBeta": {
+    "autoNotifyEnabled": true,
+    "internalBuildState": "IN_BETA_TESTING",
+    "externalBuildState": "READY_FOR_BETA_SUBMISSION"
+  },
+  "checks": {
+    "exactAppBuildVersion": true,
+    "processingVALID": true,
+    "selfInternalGroupOnly": true,
+    "groupIncludesBuild3": true,
+    "localizedNotesMatch": true,
+    "internalIN_BETA_TESTING": true,
+    "noExternalReview": true,
+    "production1StillPrepare": true
+  },
+  "result": "PASS",
+  "selfMembershipVerifiedOnlyInMemory": true,
+  "testerCount": 1,
+  "testerStates": [
+    "INVITED"
+  ],
+  "groupBuildIDs": [
+    "3cf16290-baeb-470a-980e-25f197923346",
+    "165057ba-889c-4ad8-839f-0980744742d1"
+  ],
+  "notes": {
+    "zh-Hans": "维珀 0.1.0（3）内部测试\n\n修复取消生成后的清理与重试竞态；清理结束前不会接受下一次生成，后台停止流程会正确释放后台额度。\n修复 iPhone Duo 展开并旋转后预览区消失的问题。\n\n请重点测试：生成中取消、取消后再次生成、切出后返回、保存并重新打开作品。超过100秒的停止场景尚未在新版实机复现，仍需验证。\n\n本机AI需要12GB或以上内存。首次从Apple下载Qwen3.5 4B INT4素材，校验安装后可离线使用。复杂造型的成功率、结构和细节仍处于早期阶段，可能生成失败或需要手动调整。",
+    "en-US": "Voxamber 0.1.0 (3), internal test\n\nFixes cleanup/retry races after cancellation. Another generation is admitted only after cleanup; background assertions are ended correctly.\nFixes the missing viewport after unfolding and rotating iPhone Duo.\n\nPlease test cancellation, retry, returning from background, and saving/reopening work. The reported stop lasting over 100 seconds has not been reproduced on a phone with this revision and still needs verification.\n\nOn-device AI requires 12 GB RAM. Download the Qwen3.5 4B INT4 asset pack from Apple once; after verification it runs offline. Complex shape success rate, structure and detail are still early; generation may fail or need manual editing."
+  },
+  "actions": [
+    {
+      "operation": "setExactBuildNotes",
+      "locale": "zh-Hans"
+    },
+    {
+      "operation": "setExactBuildNotes",
+      "locale": "en-US"
+    },
+    {
+      "operation": "bindExactBuildToExistingSelfInternalGroup"
+    }
+  ],
+  "noManualInvitationOrOtherTesterAdded": true,
+  "actualBuild3InstallVerified": false,
+  "actualNewDeviceStopLatencyVerified": false,
+  "appleHostedColdDownloadVerified": false,
+  "notPerformed": [
+    "AppStoreReviewSubmission",
+    "externalBetaReview",
+    "publicLinkCreation",
+    "otherTesters",
+    "phoneOperation"
+  ],
+  "independentReadback": {
+    "observedAt": "2026-11-05T12:02:08.021236+00:00",
+    "result": "PASS",
+    "checks": {
+      "exactBuild3Valid": true,
+      "rightApp": true,
+      "rightMarketingVersion": true,
+      "onlyExistingSelfGroup": true,
+      "reverseGroupContainsExactlyBuilds2and3": true,
+      "internalBetaReady": true,
+      "encryptionAlreadyExempt": true
+    },
+    "methods": [
+      "GET build/app/prerelease/group/direct-tester relationships",
+      "GET buildBetaDetail",
+      "GET reverse group build relationships"
+    ],
+    "noMutationPerformed": true
+  },
+  "sourceCodeCommit": "7939d3d",
+  "ipaSHA256": "b74fb81e63182e8912329a3187820e761918baaf85ee9dd0bd6ed6e9ecf3cf3c"
+}
