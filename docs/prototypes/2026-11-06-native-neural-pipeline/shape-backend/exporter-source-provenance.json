@@ -1,0 +1,17 @@
+[
+  {
+    "source": "Packages/Hunyuan3DMobile/Sources/HunyuanPaintMLX/AppleAssetExporter.swift",
+    "sourceSHA256": "6598b86dc472706b7d6d5421228ac38395feec1b685e9e5423be4f9ed4a1bd55",
+    "derivation": "geometry-only function subsets, or unchanged archive writer; functions retained with source names for provenance"
+  },
+  {
+    "source": "Packages/Hunyuan3DMobile/Sources/HunyuanPaintMLX/AppleUSDZPackageBuilder.swift",
+    "sourceSHA256": "417fa9d66db4b97044bfc0eda671a00da552b58490679984f77c6f876b3b61fb",
+    "derivation": "geometry-only function subsets, or unchanged archive writer; functions retained with source names for provenance"
+  },
+  {
+    "source": "Packages/Hunyuan3DMobile/Sources/HunyuanPaintMLX/USDZArchiveWriter.swift",
+    "sourceSHA256": "cc9de8b29060927390c8989cdf33afd08c74ad1259be5dd43798bc825d68bb1a",
+    "derivation": "geometry-only function subsets, or unchanged archive writer; functions retained with source names for provenance"
+  }
+]

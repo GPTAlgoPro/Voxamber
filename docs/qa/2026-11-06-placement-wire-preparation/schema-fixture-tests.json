@@ -1,0 +1,76 @@
+{
+  "scope": "CPU standard Draft2020-12 schema validation of isolated Swift/Core fixtures; no model/GPU batch",
+  "schemaMetaValidation": "passed",
+  "fixtureCount": 7,
+  "allExpectedResultsPassed": true,
+  "cases": [
+    {
+      "fixture": "all8_explicit_multi_roots",
+      "newSchemaExpectedValid": true,
+      "newSchemaActualValid": true,
+      "originalSchemaValid": true,
+      "legacyCoreAcceptedInSwiftTest": true,
+      "nodeCount": 8,
+      "newSchemaErrorPaths": []
+    },
+    {
+      "fixture": "all_explicit_zero_origins_allowed_but_not_migration_equivalent",
+      "newSchemaExpectedValid": true,
+      "newSchemaActualValid": true,
+      "originalSchemaValid": true,
+      "legacyCoreAcceptedInSwiftTest": true,
+      "nodeCount": 2,
+      "newSchemaErrorPaths": []
+    },
+    {
+      "fixture": "canonical_snapshot_preserves_grounded_scene",
+      "newSchemaExpectedValid": true,
+      "newSchemaActualValid": true,
+      "originalSchemaValid": true,
+      "legacyCoreAcceptedInSwiftTest": true,
+      "nodeCount": 2,
+      "newSchemaErrorPaths": []
+    },
+    {
+      "fixture": "full32_explicit_multi_roots",
+      "newSchemaExpectedValid": true,
+      "newSchemaActualValid": true,
+      "originalSchemaValid": true,
+      "legacyCoreAcceptedInSwiftTest": true,
+      "nodeCount": 32,
+      "newSchemaErrorPaths": []
+    },
+    {
+      "fixture": "implicit_first_explicit_zero_tail",
+      "newSchemaExpectedValid": true,
+      "newSchemaActualValid": true,
+      "originalSchemaValid": true,
+      "legacyCoreAcceptedInSwiftTest": true,
+      "nodeCount": 2,
+      "newSchemaErrorPaths": []
+    },
+    {
+      "fixture": "legacy_implicit_tail_not_new_wire",
+      "newSchemaExpectedValid": false,
+      "newSchemaActualValid": false,
+      "originalSchemaValid": true,
+      "legacyCoreAcceptedInSwiftTest": true,
+      "nodeCount": 2,
+      "newSchemaErrorPaths": [
+        "nodes/1"
+      ]
+    },
+    {
+      "fixture": "mesh1024v2048t_profiles64",
+      "newSchemaExpectedValid": true,
+      "newSchemaActualValid": true,
+      "originalSchemaValid": true,
+      "legacyCoreAcceptedInSwiftTest": true,
+      "nodeCount": 3,
+      "newSchemaErrorPaths": []
+    }
+  ],
+  "zeroOriginCaveat": "Only conditional equivalence with implicit first root grounding. All-explicit origin0 allowed but not an unconditional migration. Canonical actual-position snapshots preserve geometry.",
+  "placementSchemaSHA256": "9579b675093203308c51f1debf9b2620b9e0e5a4d7201aa532e9f91ad37c98a5",
+  "originalSchemaSHA256": "fad4c0e9225540310c4eec80ee03a88ddd9a91bb94f8e7b6ef82d40103eeafc2"
+}

@@ -1,0 +1,97 @@
+{
+  "approximateAABBConnectedComponents" : 1,
+  "boundsMaximum" : [
+    0.10000000149011612,
+    0.94399994611740112,
+    0.090000003576278687
+  ],
+  "boundsMinimum" : [
+    -0.10000000149011612,
+    0,
+    -0.090000003576278687
+  ],
+  "connectionMetricLimit" : "AABB proximity within 15mm is diagnostic only; not proof of actual surface attachment or visual quality",
+  "finiteBuffers" : true,
+  "parts" : [
+    {
+      "color" : "#5A5A5A",
+      "id" : "basePlate",
+      "position" : [
+        0,
+        0.02500000037252903,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.20000000298023224,
+        0.05000000074505806,
+        0.18000000715255737
+      ]
+    },
+    {
+      "color" : "#B0B0B0",
+      "id" : "pole",
+      "position" : [
+        0,
+        0.37200000882148743,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.029999999329447746,
+        0.64999997615814209,
+        0.029999999329447746
+      ]
+    },
+    {
+      "color" : "#FF4444",
+      "id" : "bulbHull",
+      "position" : [
+        0,
+        0.81899994611740112,
+        0
+      ],
+      "primitive" : "cone",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.11999999731779099,
+        0.25,
+        0.11999999731779099
+      ]
+    },
+    {
+      "color" : "#FFFFFF",
+      "id" : "bulbBody",
+      "position" : [
+        0,
+        0.778999924659729,
+        0
+      ],
+      "primitive" : "sphere",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.079999998211860657,
+        0.079999998211860657,
+        0.079999998211860657
+      ]
+    }
+  ]
+}

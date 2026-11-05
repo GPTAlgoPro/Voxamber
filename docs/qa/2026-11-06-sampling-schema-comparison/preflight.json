@@ -1,0 +1,19 @@
+{
+  "scope": "Preparation only, no model load or generation",
+  "checks": {
+    "samplingBundleMetadataIdentical": true,
+    "fivePromptsAndWrappedRequestsIdentical": true,
+    "systemPromptIdentical": true,
+    "currentSpecNil": true,
+    "max32NodesUnchanged": true,
+    "all8Primitives": true,
+    "all24PrimitivePlacementVariants": true,
+    "profile64Both": true,
+    "mesh1024Vertices2048Triangles": true,
+    "schemaOriginalFloatsStillBounded": true,
+    "schemaRootMultiPartNoForcedSingleRoot": true
+  },
+  "originalSchemaSHA256": "fad4c0e9225540310c4eec80ee03a88ddd9a91bb94f8e7b6ef82d40103eeafc2",
+  "grammarCompiledHashAndFloatMode": "Will be observed from actual engine completion metadata; no prefilled false guarantee",
+  "build": "Native Swift Mac Release passed10.64s"
+}

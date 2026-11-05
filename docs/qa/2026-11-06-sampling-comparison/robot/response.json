@@ -1,0 +1,292 @@
+{
+  "name": "蓝色立方体头机器人站立造型",
+  "nodes": [
+    {
+      "id": "base_plate",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.4,
+        "height": 0.05,
+        "depth": 0.15
+      },
+      "color": "#2A2A2A",
+      "origin": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "id": "spine_rod",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.35,
+        "height": 0.7,
+        "depth": 0.05
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "base_plate",
+        "face": "top",
+        "xOffset": 0,
+        "yOffset": 0.025,
+        "zOffset": -0.025
+      }
+    },
+    {
+      "id": "head_block",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.36,
+        "height": 0.25,
+        "depth": 0.18
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "spine_rod",
+        "face": "top",
+        "xOffset": 0,
+        "yOffset": 0.05,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "eye_left",
+      "primitive": "sphere",
+      "dimensions": {
+        "width": 0.05,
+        "height": 0.05,
+        "depth": 0.05
+      },
+      "color": "#FFFF00",
+      "attach": {
+        "parent": "head_block",
+        "face": "front",
+        "xOffset": -0.025,
+        "yOffset": 0.0125,
+        "zOffset": 0.015
+      }
+    },
+    {
+      "id": "eye_right",
+      "primitive": "sphere",
+      "dimensions": {
+        "width": 0.05,
+        "height": 0.05,
+        "depth": 0.05
+      },
+      "color": "#FFFF00",
+      "attach": {
+        "parent": "head_block",
+        "face": "front",
+        "xOffset": 0.025,
+        "yOffset": 0.0125,
+        "zOffset": 0.015
+      }
+    },
+    {
+      "id": "arm_l_base",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.1,
+        "height": 0.05,
+        "depth": 0.05
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "head_block",
+        "face": "top",
+        "xOffset": -0.1,
+        "yOffset": 0,
+        "zOffset": -0.025
+      }
+    },
+    {
+      "id": "arm_l_pivot",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.15,
+        "depth": 0.06
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "arm_l_base",
+        "face": "bottom",
+        "xOffset": 0,
+        "yOffset": -0.075,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "arm_l_upper",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.3,
+        "depth": 0.06
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "arm_l_pivot",
+        "face": "top",
+        "xOffset": 0,
+        "yOffset": 0.075,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "arm_l_end",
+      "primitive": "sphere",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.06,
+        "depth": 0.06
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "arm_l_upper",
+        "face": "top",
+        "xOffset": 0,
+        "yOffset": 0.03,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "arm_r_base",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.1,
+        "height": 0.05,
+        "depth": 0.05
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "head_block",
+        "face": "top",
+        "xOffset": 0.1,
+        "yOffset": 0,
+        "zOffset": -0.025
+      }
+    },
+    {
+      "id": "arm_r_pivot",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.15,
+        "depth": 0.06
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "arm_r_base",
+        "face": "bottom",
+        "xOffset": 0,
+        "yOffset": -0.075,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "arm_r_upper",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.3,
+        "depth": 0.06
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "arm_r_pivot",
+        "face": "top",
+        "xOffset": 0,
+        "yOffset": 0.075,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "arm_r_end",
+      "primitive": "sphere",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.06,
+        "depth": 0.06
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "arm_r_upper",
+        "face": "top",
+        "xOffset": 0,
+        "yOffset": 0.03,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "leg_l_shin",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.08,
+        "height": 0.25,
+        "depth": 0.08
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "spine_rod",
+        "face": "bottom",
+        "xOffset": -0.04,
+        "yOffset": -0.125,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "leg_l_foot",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.1,
+        "height": 0.04,
+        "depth": 0.08
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "leg_l_shin",
+        "face": "bottom",
+        "xOffset": 0,
+        "yOffset": -0.02,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "leg_r_shin",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.08,
+        "height": 0.25,
+        "depth": 0.08
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "spine_rod",
+        "face": "bottom",
+        "xOffset": 0.04,
+        "yOffset": -0.125,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "leg_r_foot",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.1,
+        "height": 0.04,
+        "depth": 0.08
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "leg_r_shin",
+        "face": "bottom",
+        "xOffset": 0,
+        "yOffset": -0.02,
+        "zOffset": 0
+      }
+    }
+  ]
+}

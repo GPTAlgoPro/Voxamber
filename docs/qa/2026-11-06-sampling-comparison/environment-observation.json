@@ -1,0 +1,6 @@
+{
+  "recordedUTC": "2026-11-05T18:01:43.664920+00:00",
+  "reportedByRoot": "An independent Simulator run of three UIKit scale/UI tests may have overlapped the start of this batch; it was not concurrent MLX model inference.",
+  "timingInterpretation": "All timing/memory values are host observations. Nonrandom sequential control, one seed, cache/system/thermal state and possible UI work prevent causal sampling speed claims. The primary question is shape quality and repetitive expansion, not speed.",
+  "productionProtocolChanged": false
+}

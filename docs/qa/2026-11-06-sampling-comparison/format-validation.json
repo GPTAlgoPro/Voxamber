@@ -1,0 +1,12 @@
+{
+  "tool": "Khronos glTF Validator",
+  "version": "2.0.0-dev.3.10",
+  "cases": [
+    {
+      "id": "robot",
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "scope": "Actual generated asset formats only, not visual acceptance"
+}

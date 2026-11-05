@@ -1,0 +1,17 @@
+{
+  "scope": "Actual USDZ ZIP/CRC/alignment; actual SceneKit import/render already performed, not visual acceptance",
+  "cases": [
+    {
+      "id": "robot",
+      "CRCValid": true,
+      "entries": [
+        {
+          "entry": "scene.usda",
+          "uncompressed": true,
+          "payloadAlignment64": true
+        }
+      ],
+      "allPassed": true
+    }
+  ]
+}

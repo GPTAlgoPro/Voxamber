@@ -1,0 +1,14 @@
+{
+  "observedInAllThreeCalls": true,
+  "backend": "pinned native xgrammar0.1.30",
+  "sourceLocation": "json_schema_converter.cc:3175",
+  "meaning": "When pattern is provided with minLength/maxLength/format, this compiler ignores the length/format constraints. The native decoder length guard remains active.",
+  "lampObserved": {
+    "rawCompleteJSONObject": true,
+    "requiredNegativeFieldMissing": true,
+    "reason": "jsonComplete",
+    "grammarTerminated": false,
+    "strictDecoderRejected": true
+  },
+  "causalityLimit": "The warning directly establishes the length-enforcement limitation. It does not alone prove why a required field was absent; do not claim successful full-schema validation from jsonComplete."
+}

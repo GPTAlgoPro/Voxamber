@@ -1,0 +1,30 @@
+--- old frozen decoder
++++ new current decoder
+@@ -3,13 +3,13 @@
+ 
+ enum CreationIntentDecoder {
+     static let systemPrompt = """
+-    Convert the user's idea into a concise English visual brief for an on-device 3D asset image generator.
+-    Preserve the requested subject, component counts, relationships, colors and materials. Do not substitute a template or add an unrequested pedestal. Include the complete subject in frame, with a clean neutral background unless the requested scene needs its surroundings.
+-    Return only JSON with exactly title, positivePrompt, negativePrompt. title uses the user's language, 1-40 characters. positivePrompt is compact English, at most 180 characters. negativePrompt is a short English list, at most 120 characters, that never contradicts the request. Do not produce geometry, code, coordinates, explanations or Markdown.
++    Translate the user's visual idea into compact English for an image generator.
++    Preserve the subjects, counts, relationships, colors and materials. Do not invent objects or substitute a template. Express any requested exclusions in that same English description. Frame the complete subject clearly.
++    Return exactly these JSON fields: title in the user's language (1-40 characters), positivePrompt in English ASCII (1-180 characters), negativePrompt as the empty string. The negativePrompt is always empty: do not infer a negative list from the user's desired features. Do not output geometry, scripts, coordinates, explanations or Markdown.
+     """
+ 
+     static let schema = """
+-    {"type":"object","properties":{"title":{"type":"string","minLength":1,"maxLength":40},"positivePrompt":{"type":"string","minLength":1,"maxLength":180},"negativePrompt":{"type":"string","maxLength":120}},"required":["title","positivePrompt","negativePrompt"],"additionalProperties":false}
++    {"type":"object","properties":{"title":{"type":"string","minLength":1,"maxLength":40},"positivePrompt":{"type":"string","minLength":1,"maxLength":180,"pattern":"^[ -~]+$"},"negativePrompt":{"type":"string","const":""}},"required":["title","positivePrompt","negativePrompt"],"additionalProperties":false}
+     """
+ 
+     static func decode(_ response: String) throws -> CreationIntent {
+@@ -23,7 +23,8 @@
+         guard (1...40).contains(intent.title.count),
+               !intent.title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
+               !intent.positivePrompt.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
+-              intent.positivePrompt.count <= 180, intent.negativePrompt.count <= 120,
++              intent.positivePrompt.count <= 180, intent.negativePrompt.isEmpty,
++              intent.positivePrompt.unicodeScalars.allSatisfy({ (32...126).contains($0.value) }),
+               ![intent.title, intent.positivePrompt, intent.negativePrompt].contains(where: {
+                   $0.unicodeScalars.contains(where: CharacterSet.controlCharacters.contains)
+               }) else { throw CreationError.invalidIntent }

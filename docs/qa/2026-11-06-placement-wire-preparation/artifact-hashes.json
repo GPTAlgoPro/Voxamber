@@ -1,0 +1,126 @@
+{
+  "frozenAtUTC": "2026-11-05T18:31:46.503724+00:00",
+  "scope": "Preparation only, no model invocation",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1919,
+      "sha256": "b147de6cce9dc0ad5d9450ddec10fce8e31d56f3debbf644cc41558b8d6261ea"
+    },
+    {
+      "path": "authoritative-original-schema.json",
+      "bytes": 15865,
+      "sha256": "fad4c0e9225540310c4eec80ee03a88ddd9a91bb94f8e7b6ef82d40103eeafc2"
+    },
+    {
+      "path": "cpu-fixtures/all8_explicit_multi_roots.expect.json",
+      "bytes": 56,
+      "sha256": "7b829731e3d4c4a094a9f28fd7151fb179604d43d25a45cffc5245a5890f6042"
+    },
+    {
+      "path": "cpu-fixtures/all8_explicit_multi_roots.json",
+      "bytes": 2460,
+      "sha256": "d2d1b4b5c62b05c63fef2c71ad06772ea4d37d1c0251268dc30af0d8b418a767"
+    },
+    {
+      "path": "cpu-fixtures/all_explicit_zero_origins_allowed_but_not_migration_equivalent.expect.json",
+      "bytes": 56,
+      "sha256": "7b829731e3d4c4a094a9f28fd7151fb179604d43d25a45cffc5245a5890f6042"
+    },
+    {
+      "path": "cpu-fixtures/all_explicit_zero_origins_allowed_but_not_migration_equivalent.json",
+      "bytes": 402,
+      "sha256": "aaeb414877a2bb292b039a8751395fd2dd1f22e81c902e1ec3de39eaa6e64a59"
+    },
+    {
+      "path": "cpu-fixtures/canonical_snapshot_preserves_grounded_scene.expect.json",
+      "bytes": 56,
+      "sha256": "9b260d3ab151957d404689824caac01e6acdfa517bd4140f9981398ff49999f0"
+    },
+    {
+      "path": "cpu-fixtures/canonical_snapshot_preserves_grounded_scene.json",
+      "bytes": 626,
+      "sha256": "6109d513add4ddad1864bcb41eb445a62e5922fc88ccd2900e3355cb277d273e"
+    },
+    {
+      "path": "cpu-fixtures/full32_explicit_multi_roots.expect.json",
+      "bytes": 56,
+      "sha256": "7b829731e3d4c4a094a9f28fd7151fb179604d43d25a45cffc5245a5890f6042"
+    },
+    {
+      "path": "cpu-fixtures/full32_explicit_multi_roots.json",
+      "bytes": 7217,
+      "sha256": "e05d6967a08f3f06b56fb932a8fd929fab0d34bbf110affcafd9ddd75909da33"
+    },
+    {
+      "path": "cpu-fixtures/implicit_first_explicit_zero_tail.expect.json",
+      "bytes": 56,
+      "sha256": "9b260d3ab151957d404689824caac01e6acdfa517bd4140f9981398ff49999f0"
+    },
+    {
+      "path": "cpu-fixtures/implicit_first_explicit_zero_tail.json",
+      "bytes": 373,
+      "sha256": "f66d14fa7a4ba0ffe2c081183b0a96da6bf3abb698ef3404b983b8acf7e9248c"
+    },
+    {
+      "path": "cpu-fixtures/legacy_implicit_tail_not_new_wire.expect.json",
+      "bytes": 57,
+      "sha256": "4553419cd63bb95967b685c3ebf5378d098ff157c41b68d980798556dbaa9cf1"
+    },
+    {
+      "path": "cpu-fixtures/legacy_implicit_tail_not_new_wire.json",
+      "bytes": 344,
+      "sha256": "80cdc308b46867836f86f9f0d77e4c06a0c47d0a31f8d7878b06d639e0a9e7ab"
+    },
+    {
+      "path": "cpu-fixtures/mesh1024v2048t_profiles64.expect.json",
+      "bytes": 56,
+      "sha256": "9b260d3ab151957d404689824caac01e6acdfa517bd4140f9981398ff49999f0"
+    },
+    {
+      "path": "cpu-fixtures/mesh1024v2048t_profiles64.json",
+      "bytes": 30656,
+      "sha256": "a7cc620d33e69db9b211986cf5f0f430da18eaf3532be187c46cecec0891bcee"
+    },
+    {
+      "path": "cpu-fixtures/original-schema.json",
+      "bytes": 15865,
+      "sha256": "fad4c0e9225540310c4eec80ee03a88ddd9a91bb94f8e7b6ef82d40103eeafc2"
+    },
+    {
+      "path": "cpu-fixtures/placement-schema.json",
+      "bytes": 24691,
+      "sha256": "9579b675093203308c51f1debf9b2620b9e0e5a4d7201aa532e9f91ad37c98a5"
+    },
+    {
+      "path": "fixed-prompts.json",
+      "bytes": 7297,
+      "sha256": "6ab5d1a723913f36db64f13b3cf9dbe69826dc6f30f8932043058e14ed0e2aa1"
+    },
+    {
+      "path": "placement-schema.json",
+      "bytes": 24691,
+      "sha256": "9579b675093203308c51f1debf9b2620b9e0e5a4d7201aa532e9f91ad37c98a5"
+    },
+    {
+      "path": "prepared-verification.json",
+      "bytes": 3453,
+      "sha256": "67fd3366b6ae011d3ebf133752923e6271dc5bc77cd8182e3a66dc1f28feeb2b"
+    },
+    {
+      "path": "protocol-before-generation.md",
+      "bytes": 3269,
+      "sha256": "540d29adbc97bd6dd8261937c6fa2c30c4b59cdd11548d615fd7d069f356a580"
+    },
+    {
+      "path": "schema-fixture-tests.json",
+      "bytes": 2592,
+      "sha256": "5dd6a3cdae23f54af440d99d9c000739b1b02618d1ea50605b73c86d846067b1"
+    },
+    {
+      "path": "schema.json",
+      "bytes": 24691,
+      "sha256": "9579b675093203308c51f1debf9b2620b9e0e5a4d7201aa532e9f91ad37c98a5"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "approximateAABBConnectedComponents" : 1,
+  "boundsMaximum" : [
+    0.15000000596046448,
+    1.093999981880188,
+    0.16499999165534973
+  ],
+  "boundsMinimum" : [
+    -0.15000000596046448,
+    0,
+    -0.15000000596046448
+  ],
+  "connectionMetricLimit" : "AABB proximity within 15mm is diagnostic only; not proof of actual surface attachment or visual quality",
+  "finiteBuffers" : true,
+  "parts" : [
+    {
+      "color" : "#808080",
+      "id" : "base",
+      "position" : [
+        0,
+        0.05000000074505806,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.30000001192092896,
+        0.10000000149011612,
+        0.30000001192092896
+      ]
+    },
+    {
+      "color" : "#808080",
+      "id" : "stem",
+      "position" : [
+        0,
+        0.42199999094009399,
+        0.019999999552965164
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.05000000074505806,
+        0.64999997615814209,
+        0.05000000074505806
+      ]
+    },
+    {
+      "color" : "#FFD700",
+      "id" : "bulb",
+      "position" : [
+        0,
+        0.7839999794960022,
+        0.039999999105930328
+      ],
+      "primitive" : "sphere",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.079999998211860657,
+        0.079999998211860657,
+        0.079999998211860657
+      ]
+    },
+    {
+      "color" : "#FF0000",
+      "id" : "shade",
+      "position" : [
+        0,
+        0.91899996995925903,
+        0.039999999105930328
+      ],
+      "primitive" : "cone",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.25,
+        0.34999999403953552,
+        0.25
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "recordedAtUTC": "2026-11-05T21:32:46.421365+00:00",
+  "version": "0.1.0",
+  "developmentBuild": "7",
+  "scope": "App compilation, Simulator unit regression and typed draft integration. Not neural shape inference or physical iPhone acceptance.",
+  "tests": [
+    {
+      "suite": "build7-native-integration",
+      "result": "Passed",
+      "totalTestCount": 85,
+      "passedTests": 84,
+      "failedTests": 0,
+      "skippedTests": 1
+    },
+    {
+      "suite": "build7-draft-tests",
+      "result": "Passed",
+      "totalTestCount": 5,
+      "passedTests": 5,
+      "failedTests": 0,
+      "skippedTests": 0
+    }
+  ],
+  "sourceSHA256": {
+    "Apple/ThreeLiveStudio/App/StudioModel.swift": "4b3afb624fcc60ab2edff34130d9355abad40a6ef8a595bf9c1270bb9cda4613",
+    "Apple/ThreeLiveStudio/App/ThreeLiveStudioApp.swift": "6278026786bb4aa8a6109edfd4fa4e6ac28d8052c4edf6b8c3efe01737ae6b3e",
+    "Apple/ThreeLiveStudio/Creation/CreationWorkspace.swift": "0bf192da3d561c9371d31251ddd65a20fe06012e6e52100aad58638e143353fb",
+    "Apple/ThreeLiveStudio/Models/NeuralModelLibrary.swift": "8477821b01eae84bb6eff05165381112e8b46395c7c2d5a65fe36dab03587aad",
+    "Apple/ThreeLiveStudio/Storage/ProjectStore.swift": "66f89c55b23c1547ab4e425a028dbf860fcb8eb9ee832654c44d7d71f9be0c26",
+    "Apple/ThreeLiveStudio/Storage/WorkspaceDraft.swift": "e268bcc5c823793223a230f12065be24acacae052a3fdcb9e13882fcf4af604f",
+    "Apple/ThreeLiveStudio/Storage/ProjectContent.swift": "0ae00e5a6e5ee22dcf067545f8207b43ec39aafce59f12dfcbf1dc3f0c84986b",
+    "Apple/ThreeLiveStudio/Storage/NeuralProjectDescriptor.swift": "924ee11a4a30bfbb0801fbffc80b37b8b668bf7349079707f6155de627ebdb01",
+    "Apple/ThreeLiveStudio/Storage/NeuralProjectValidation.swift": "98687e8bed22bc3ab74863ead026f1f201d98ac5344b879371cb3e4fc135d332",
+    "Apple/ThreeLiveStudio/Storage/PublicationPermit.swift": "34007fed94a44fcafb950006f9621fe81019be2ef68cbe255ef6c293ed058214",
+    "Apple/ThreeLiveStudioTests/WorkspaceDraftTests.swift": "ef1a57e78e22fa458879caa04745abc6ef61c35333f99b23e72937f8e469887b",
+    "Apple/ThreeLiveStudioTests/AIContextTests.swift": "a052908cfd632229eb2875d4c645b526cc54b70426b8cc175d161abfe47094f9",
+    "Apple/project.yml": "63fbfec51b6b31f2ae66165cf610134d67433d6fcd435c58490dd8423073489b"
+  },
+  "currentPhoneBuildStill": "6",
+  "TestFlightNewBuildUploaded": false,
+  "releaseMainUpdated": false,
+  "AIButtonUsesNativeNeuralPipeline": true,
+  "old4BGeometryPlannerFallbackUsed": false,
+  "newShapeModelWeightsComplete": false,
+  "normalPhoneAIGenerationAcceptedForBuild7": false,
+  "notPerformed": [
+    "new device installation",
+    "complete text-to-3D run",
+    "new Apple model-pack upload",
+    "new TestFlight upload",
+    "App Store submission"
+  ],
+  "knownOpenGates": [
+    "helper full semantic fidelity",
+    "Core ML resource lifetime and handoff headroom",
+    "shape source download/Q4 pack identity",
+    "new-runtime learned shape quality/peak/cancellation",
+    "mesh editing App UI and data roundtrip",
+    "Apple-hosted models and offline phone flow"
+  ],
+  "finalIntegratedCheck": {
+    "result": "Passed",
+    "totalTestCount": 94,
+    "passedTests": 93,
+    "failedTests": 0,
+    "skippedTests": 1
+  },
+  "finalResultBundle": "Apple/.build/TestResults/build7-checkpoint-final.xcresult",
+  "updatedAtUTC": "2026-11-05T21:42:05.752268+00:00",
+  "finalSourceChangesIncluded": [
+    "Queued progress/reference callbacks reject canceled or revoked operations",
+    "Dense artifact preparation executes in an owned canceled-and-awaited detached worker",
+    "Switching starter/project/deleting current work clears stale reference image",
+    "Committed model installation awaits its scoped managed-copy cleanup after cancellation"
+  ]
+}

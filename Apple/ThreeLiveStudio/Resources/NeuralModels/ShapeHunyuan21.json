@@ -1,0 +1,38 @@
+{
+  "formatVersion": 1,
+  "group": "shape",
+  "id": "hunyuan-shape-2.1-q4",
+  "displayName": "三维形体 · Hunyuan2.1",
+  "identityStatus": "pinned",
+  "sourceReferenceURL": "https://huggingface.co/tencent/Hunyuan3D-2.1/tree/0b94677654c57bb9a6b6845cd7b704ccf551d327",
+  "source": {
+    "repository": "tencent/Hunyuan3D-2.1",
+    "revision": "0b94677654c57bb9a6b6845cd7b704ccf551d327",
+    "license": "Tencent Hunyuan3D2.1 Community",
+    "parameterCountDeployed": 3569340225,
+    "packNote": "Original Snap Q4 offline merge identity; reconstruction pending exact output SHA. Public FP16 sources are not this pack.",
+    "territoryExcludes": [
+      "European Union",
+      "United Kingdom",
+      "South Korea"
+    ]
+  },
+  "apple": {
+    "assetPackID": "Voxamber-Hunyuan21-Shape-Q4",
+    "modelRootRelativePath": "models/hunyuan-shape-2.1-q4",
+    "available": false,
+    "contractRelativePath": "contracts/hunyuan-shape-2.1-q4.json"
+  },
+  "files": [
+    {
+      "path": "model.q4.safetensors",
+      "byteCount": 2490378616,
+      "sha256": "69cd908e83bbf51200c63a2a163e2dfd34d2be0571c33b92f4a922489c564842"
+    },
+    {
+      "path": "config.yaml",
+      "byteCount": 2078,
+      "sha256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e"
+    }
+  ]
+}

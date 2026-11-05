@@ -1,0 +1,202 @@
+{
+  "name": "未来飞行器带后掠机翼",
+  "nodes": [
+    {
+      "id": "fuselage_root",
+      "primitive": "lathe",
+      "dimensions": {
+        "width": 0.6,
+        "height": 3.5,
+        "depth": 0.4
+      },
+      "color": "#C0C0C0",
+      "profile": [
+        [0.1, 0],
+        [0.25, 0.5],
+        [0.4, 1.0],
+        [0.5, 1.2],
+        [0.6, 1.5],
+        [0.7, 1.6],
+        [0.8, 1.6],
+        [0.9, 1.5],
+        [1.0, 1.2],
+        [1.0, 0.8],
+        [0.9, 0.5],
+        [0.8, 0.3],
+        [0.6, 0.2],
+        [0.4, 0.1]
+      ]
+    },
+    {
+      "id": "wing_left_base",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.5,
+        "height": 0.2,
+        "depth": 0.15
+      },
+      "color": "#B0B0B0",
+      "attach": {
+        "parent": "fuselage_root",
+        "face": "top",
+        "xOffset": -0.25,
+        "zOffset": 0.3
+      }
+    },
+    {
+      "id": "wing_right_base",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.5,
+        "height": 0.2,
+        "depth": 0.15
+      },
+      "color": "#B0B0B0",
+      "attach": {
+        "parent": "fuselage_root",
+        "face": "top",
+        "xOffset": 0.25,
+        "zOffset": 0.3
+      }
+    },
+    {
+      "id": "wing_left_wing",
+      "primitive": "extrusion",
+      "dimensions": {
+        "width": 0.5,
+        "height": 1.2,
+        "depth": 0.15
+      },
+      "color": "#A0A0A0",
+      "profile": [
+        [0.25, 0],
+        [0.3, 0.1],
+        [0.35, 0.25],
+        [0.4, 0.4],
+        [0.45, 0.55],
+        [0.5, 0.7],
+        [0.55, 0.85],
+        [0.6, 1.0],
+        [0.65, 1.15],
+        [0.7, 1.3],
+        [0.75, 1.45],
+        [0.8, 1.6],
+        [0.9, 1.5],
+        [1.0, 1.3],
+        [1.0, 1.0],
+        [0.9, 0.7],
+        [0.8, 0.5],
+        [0.7, 0.4],
+        [0.6, 0.3],
+        [0.5, 0.2],
+        [0.4, 0.1],
+        [0.3, 0],
+        [0.25, 0]
+      ],
+      "attach": {
+        "parent": "wing_left_base",
+        "face": "top",
+        "yOffset": 0.05
+      },
+      "rotation": {
+        "x": -5,
+        "y": 0,
+        "z": -5
+      }
+    },
+    {
+      "id": "wing_right_wing",
+      "primitive": "extrusion",
+      "dimensions": {
+        "width": 0.5,
+        "height": 1.2,
+        "depth": 0.15
+      },
+      "color": "#A0A0A0",
+      "profile": [
+        [0.25, 0],
+        [0.3, 0.1],
+        [0.35, 0.25],
+        [0.4, 0.4],
+        [0.45, 0.55],
+        [0.5, 0.7],
+        [0.55, 0.85],
+        [0.6, 1.0],
+        [0.65, 1.15],
+        [0.7, 1.3],
+        [0.75, 1.45],
+        [0.8, 1.6],
+        [0.9, 1.5],
+        [1.0, 1.3],
+        [1.0, 1.0],
+        [0.9, 0.7],
+        [0.8, 0.5],
+        [0.7, 0.4],
+        [0.6, 0.3],
+        [0.5, 0.2],
+        [0.4, 0.1],
+        [0.3, 0],
+        [0.25, 0]
+      ],
+      "attach": {
+        "parent": "wing_right_base",
+        "face": "top",
+        "yOffset": 0.05
+      },
+      "rotation": {
+        "x": 5,
+        "y": 0,
+        "z": -5
+      }
+    },
+    {
+      "id": "thruster_left",
+      "primitive": "cone",
+      "dimensions": {
+        "width": 0.25,
+        "height": 0.4,
+        "depth": 0.25
+      },
+      "color": "#E0E0E0",
+      "attach": {
+        "parent": "fuselage_root",
+        "face": "bottom",
+        "xOffset": -0.25,
+        "zOffset": -0.6
+      }
+    },
+    {
+      "id": "thruster_right",
+      "primitive": "cone",
+      "dimensions": {
+        "width": 0.25,
+        "height": 0.4,
+        "depth": 0.25
+      },
+      "color": "#D0D0D0",
+      "attach": {
+        "parent": "fuselage_root",
+        "face": "bottom",
+        "xOffset": 0.25,
+        "zOffset": -0.6
+      }
+    },
+    {
+      "id": "nose_cone",
+      "primitive": "cone",
+      "dimensions": {
+        "width": 0.3,
+        "height": 0.8,
+        "depth": 0.3
+      },
+      "color": "#D3D3D3",
+      "attach": {
+        "parent": "fuselage_root",
+        "face": "front",
+        "xOffset": 0,
+        "yOffset": 0,
+        "zOffset": -0.2
+      }
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "name" : "蓝色立方体机器人",
+  "nodes" : [
+    {
+      "color" : "#333333",
+      "id" : "base",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.325,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.2,
+        0.05,
+        0.2
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "torso",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.52199996,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.18,
+        0.35,
+        0.16
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "head",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.75399995,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.12,
+        0.12,
+        0.12
+      ]
+    },
+    {
+      "color" : "#FFD700",
+      "id" : "eye_left",
+      "metallic" : 0.1,
+      "position" : [
+        -0.045,
+        0.75399995,
+        0.072
+      ],
+      "primitive" : "sphere",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.03,
+        0.03,
+        0.03
+      ]
+    },
+    {
+      "color" : "#FFD700",
+      "id" : "eye_right",
+      "metallic" : 0.1,
+      "position" : [
+        0.045,
+        0.75399995,
+        0.072
+      ],
+      "primitive" : "sphere",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.03,
+        0.03,
+        0.03
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "arm_left",
+      "metallic" : 0.1,
+      "position" : [
+        -0.107,
+        0.69699997,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.04,
+        0.3,
+        0.04
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "arm_right",
+      "metallic" : 0.1,
+      "position" : [
+        0.107,
+        0.69699997,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.04,
+        0.3,
+        0.04
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "leg_left",
+      "metallic" : 0.1,
+      "position" : [
+        -0.05,
+        0.175,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.05,
+        0.35,
+        0.05
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "leg_right",
+      "metallic" : 0.1,
+      "position" : [
+        0.05,
+        0.175,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.05,
+        0.35,
+        0.05
+      ]
+    }
+  ]
+}

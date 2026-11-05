@@ -1,0 +1,9 @@
+{
+  "scope": "Known pre-edit SDK default geometry writer CPU grid artifact; not neural inference",
+  "bytes": 5541880,
+  "sha256": "58c3c024b419d15a60183a70a43d9a1004c31aca4442d4540e186ed792102d7b",
+  "vertices": 154449,
+  "triangles": 307328,
+  "USDZbytes": 14913317,
+  "USDZsha256": "a7d17bb3d563ecfcfd9eeea879c6ee52eb9c6a228452a6bd7c6c3858987db376"
+}

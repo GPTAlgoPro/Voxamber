@@ -1,0 +1,160 @@
+Snap3D Third-Party Notices
+===========================
+
+This notice covers third-party components and model artifacts distributed with
+Snap3D. It does not grant a license to Snap3D's original source code.
+
+OpenCV 5.0.0 (when the optional native SDK is installed)
+------------------------------------------------------
+Source: https://github.com/opencv/opencv
+Pinned source revision: 40738fb16ceddb5fb3fea747585f7ce6abb0605b
+License: Apache License 2.0. The complete upstream license and bundled dependency
+notices are included in the app's OpenCVNotices directory; the upstream privacy
+manifest is included in OpenCVPrivacy.bundle. See Vendor/OpenCV/README.md and
+Scripts/opencv/opencv-5.0.0.lock.json for platform provenance and build settings.
+The iPhone slice is the official release binary; macOS and arm64 Simulator slices
+are built from the same unmodified source. Snap3D's C/Swift bridge is separate.
+
+meshoptimizer
+-------------
+Source: https://github.com/zeux/meshoptimizer
+Copyright (c) 2016-2026 Arseny Kapoulkine
+License: MIT. The complete license is bundled as LICENSE.md and remains in
+Vendor/meshoptimizer/LICENSE.md in the source tree.
+
+xatlas
+------
+Source: https://github.com/jpcy/xatlas
+Copyright (c) 2018-2020 Jonathan Young
+License: MIT. The complete license is bundled as LICENSE and remains in
+Vendor/xatlas/LICENSE in the source tree.
+
+xatlas also incorporates the following MIT-licensed code. The same complete
+MIT terms bundled as LICENSE apply, and these copyright notices are retained:
+
+thekla_atlas: Copyright (c) 2013 Thekla, Inc; Copyright NVIDIA Corporation
+2006 -- Ignacio Castano <icastano@nvidia.com>.
+
+Fast-BVH: Copyright (c) 2012 Brandon Pelfrey.
+
+xatlas also incorporates OpenNL under the following BSD 3-Clause terms:
+
+Copyright (c) 2004-2010, Bruno Levy
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice,
+  this list of conditions and the following disclaimer.
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+* Neither the name of the ALICE Project-Team nor the names of its contributors
+  may be used to endorse or promote products derived from this software
+  without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+Apple Core ML Depth Anything V2 Small
+-------------------------------------
+Source: https://huggingface.co/apple/coreml-depth-anything-v2-small
+Pinned revision: cfef6f6f2a70783dedc0bfae40cecbc2052285d3
+License: Apache License 2.0.
+
+Video Depth Anything
+--------------------
+Source: https://github.com/DepthAnything/Video-Depth-Anything
+Authors: Sili Chen, Hengkai Guo, Shengnan Zhu, Feihu Zhang, Zilong Huang,
+Jiashi Feng, Bingyi Kang; ByteDance.
+Snap3D's local conversion scripts produce Core ML packages from the upstream
+Relative and Metric Video Depth Anything checkpoints.
+License: Apache License 2.0.
+
+Depth Anything 3 Base
+--------------------
+Source: https://github.com/ByteDance-Seed/Depth-Anything-3
+Model: https://huggingface.co/depth-anything/DA3-BASE
+Pinned source revision: 3d835ec1a5802d64a8b8b15f817a1ab54809bfe4
+Pinned model revision: f4a6c9b3c95e41c82048423d3493a81ec3fa810e
+Copyright 2025 The Depth Anything 3 Team.
+Copyright (c) 2025 ByteDance Ltd. and/or its affiliates.
+DINO backbone: Copyright (c) Meta Platforms, Inc. and affiliates.
+License: Apache License 2.0; complete terms are bundled as Apache-2.0.txt.
+Snap3D adapts the full multi-view model to fixed-shape Float32 Core ML packages
+and implements native input/output processing. Approved model packages are
+installed separately. Conversion changes are documented in Scripts/da3-coreml;
+upstream authors do not endorse Snap3D. No warranty is provided.
+
+Hunyuan3D-Swift
+---------------
+Source: https://github.com/zimengxiong/hunyuan3d-swift
+Pinned source revision: 292331f4d26ddb80b9dcea6bcb5629ff82f12b82
+Copyright (c) 2026 Zimeng Xiong
+License: MIT. Snap3D includes modified Shape/Paint Swift sources in the
+Hunyuan3DMobile package; the complete terms are bundled as
+Hunyuan3D-Swift-LICENSE.txt.
+
+MLX Swift
+---------
+Source: https://github.com/ml-explore/mlx-swift
+Pinned version: 0.31.4
+Copyright (c) 2023-2024 Apple Inc.
+License: MIT.
+
+Tencent Hunyuan 3D 2.0 models
+-----------------------------
+Sources: https://huggingface.co/tencent/Hunyuan3D-2mini and
+https://huggingface.co/tencent/Hunyuan3D-2
+License: Tencent Hunyuan 3D 2.0 Community License Agreement. Model packs are
+installed separately and are not committed to or bundled with Snap3D. The
+complete agreement is bundled as Tencent-Hunyuan-3D-2-License.txt.
+
+Notice required by the model agreement: “Tencent Hunyuan 3D 2.0 is licensed
+under the Tencent Hunyuan 3D 2.0 Community License Agreement, Copyright © 2025
+Tencent. All Rights Reserved. The trademark rights of “Tencent Hunyuan” are
+owned by Tencent or its affiliate.” Tencent is not affiliated with, associated
+with, sponsoring, or endorsing Snap3D.
+
+Tencent Hunyuan 3D 2.1 PBR Paint
+--------------------------------
+Source: https://huggingface.co/tencent/Hunyuan3D-2.1
+License: Tencent Hunyuan 3D 2.1 Community License Agreement. The complete
+agreement is bundled as Tencent-Hunyuan-3D-2.1-License.txt. Its model agreement
+applies corresponding required notices and territory/commercial-use conditions
+to the 2.1 Works.
+
+Notice required by the model agreement: “Tencent Hunyuan 3D 2.1 is licensed
+under the Tencent Hunyuan 3D 2.1 Community License Agreement, Copyright © 2025
+Tencent. All Rights Reserved. The trademark rights of “Tencent Hunyuan” are
+owned by Tencent or its affiliate.”
+
+The complete Apache License 2.0 is bundled as Apache-2.0.txt.
+
+LingBot-Map native MLX runtime
+-----------------------------
+Source: https://github.com/Robbyant/lingbot-map
+Revision: 849e690bb086103637e44b1e91878d9d43a8bf0c
+This implementation adapts LingBot-Map by the Robbyant Team, revision
+849e690bb086103637e44b1e91878d9d43a8bf0c, licensed under Apache-2.0.
+Its DINO/DPT components include code attributed upstream to Meta Platforms, Inc.
+and affiliates. Original license and source attribution are retained.
+Changes: MLX tensor operations, explicit portable rotary math, inference-only
+state, independently checked interpolation, quantized weight access and bounded IO.
+Model checkpoint redistribution is a separate artifact from source code.
+The complete upstream license is bundled as LICENSE.upstream.txt.
+
+Pillow-compatible RGB resampling
+-------------------------------
+Native resampling adapts Pillow integer bicubic interpolation. Original
+copyright and MIT-CMU terms are bundled as LICENSE-Pillow.txt.

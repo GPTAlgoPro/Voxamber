@@ -1,0 +1,25 @@
+{
+  "measurement": "Safe strict HTTP206 reads of pinned FP16 safetensors JSON headers only, no tensors/models loaded or weights downloaded",
+  "headerBytesRead": 183634,
+  "sourceRepo": "dgrauet/hunyuan3d-2.1-mlx",
+  "sourceRevision": "6bb9063eda419c4024a63f72507122339f69c2a1",
+  "components": {
+    "DiT_all_experts": 3050758720,
+    "ShapeVAE_full": 327746177,
+    "ShapeVAE_unused_encoder_dropped": 113533312,
+    "ShapeVAE_runtime_decoder": 214212865,
+    "DINOv2_L": 304368640
+  },
+  "fullShapeSourceStoredElements": 3682873537,
+  "deployedShapeStoredElements": 3569340225,
+  "Qwen35_08_officialFullParameters": 873438784,
+  "SDXL_fullOriginalConservativeParameters": 3468837867,
+  "countDefinition": "Stored original FP16 element counts, including all experts, with unused point-cloud VAE encoder actually omitted by deployed pack. Quantized storage words are not model parameter count. SDXL uses full VAE count conservatively.",
+  "sourceLinks": [
+    "https://huggingface.co/dgrauet/hunyuan3d-2.1-mlx/tree/6bb9063eda419c4024a63f72507122339f69c2a1",
+    "https://huggingface.co/Qwen/Qwen3.5-0.8B/tree/2fc06364715b967f1860aea9cf38778875588b17",
+    "https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1"
+  ],
+  "auditableSelfDistributedFoundationWeightParameters": 7911616876,
+  "countScope": "Three self-distributed foundation weight groups only. Apple Vision system foreground model parameters are private/unknown and are not included. SDXL must load only counted UNet+two text encoders+VAE, no uncounted SafetyChecker/Refiner/PBR."
+}

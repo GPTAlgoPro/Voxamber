@@ -1,0 +1,154 @@
+{
+  "frozenAtUTC": "2026-11-05T19:30:05.576656+00:00",
+  "SDK": "VoxamberShapeNative",
+  "scope": "Source/provenance/CPU tests and Mac+iOS generic compilation only. No new weighted neural inference, phone, App update, ASC or public release.",
+  "sourceSHA256": {
+    "Apple/Packages/VoxamberShapeNative/Package.resolved": "54d80c781855d6667f33fb896994e01e800dcf7e33e2ff167925e522fda8c16e",
+    "Apple/Packages/VoxamberShapeNative/Package.swift": "59e0afcd7b4cdc8d49ae990c63d014516c016e2bf72388af6642edffcc594f24",
+    "Apple/Packages/VoxamberShapeNative/README.md": "16c6a4cad13de87c690f09691042e167546260bb011d50dddb22fea54dbd945b",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/DINOv2.swift": "041d410c5c07e1f154c4ca0f9650f0a47e1452df87b5c595974a4f75f9995af9",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/DiT.swift": "d81076464f85a571f85e2bc69a7944f7fffd41415e6dd7e6cc6fdba67f8333f8",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/DiTPlain.swift": "9a634d2eb36cf7f6981281b959f87e737fd7ee434befd917fb262d76e0fd3a43",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/GLB.swift": "3e90e6987198f47f7bf4b41e1c07366b871b66348fd15c9e3b9efb150b94bfbb",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Layers.swift": "947d09a19e49b04ea2710ecc0f132fe0143e184e0881cede8c77a493319c2a5d",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/MCTables.swift": "73cf18dee2e30d5e8703db7792db6856d792345cee9bac349f9764ac70d9b0b9",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/MarchingCubes.swift": "f4d9e1fc138ed798ef2c740e6b4d00b94ab323a917196e1d8032c55735071b39",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Pipeline.swift": "3774aa0c216c870cf626d89eb6d8dec1398904732e5a8bafb127b7c134f1c7ba",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Preprocess.swift": "a97ce60087d1aafc70f47007a0f22e0d0fdb9481314a7a131e7c7787aa9b0568",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Sampler.swift": "72e5272fd603a164718fc500462d2a3904dfd351c173683d46fa9e573f088ad2",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeDenoiser.swift": "c3629b746530f4fd2f200ceb5c08f761699aa7d6d8ab452a563ac247e662a73c",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeExecutionStrategy.swift": "529364d722588ffc202a027c9b332147c17d5a36e249166875fc223cc2535c32",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeGenerator.swift": "97ee58db6beeb71db5537ae225bb3ae58d2d31cd6cbc04bcdc1dbac3f5ddab29",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapePackLayout.swift": "95b6d54ba50efaa3624a7b83098b4b007cdcc035b3a27931c791e61acd178c5e",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/VAE.swift": "df06b82b5c75f558dcadca8b317c21294973cbcf14d74fccaadbc1f49ef8e557",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Version.swift": "961a7675dde1ae6c859411dff3a8b86114cf87d0538cc0a085da07a34ac532ef",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Module.swift": "b63ae8318b66a3a70d511a401d3ff95d2d36a767f6471631e2ee7fb5b968d426",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Hunyuan3D-Swift-MIT.txt": "e0485dc21868a42682cf1255af42d1bf038cf5e80608b2006b5c69d65d426d7f",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Hunyuan3D-Swift-ThirdParty.md": "abd4d61f1c0bf3dcfc6a399457f26254be74518dc53de8b69e2606e3a3a1d241",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Snap3D-ThirdPartyNotices.txt": "679ddc10a7dbe0c3170c55dfd00dd2c6b40bab320c7927c6fe6ea22754023b8c",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Tencent-Hunyuan-3D-2.1-License.txt": "f60f9fdf0c40cdd3983123eb8181caac027a6f86d4ea3c827618e5e1e5adc6db",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt": "5bd08f93b2d280bb26ff3eed5d3996fe47a9698b5f7785163928668d7fd578c6",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt": "ffccf6b539a82e6084d14ff064dadd22d33384d6164b07c0c5a3141810df0350",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/hunyuan-shape-2.1.yaml": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeAssetExporter.swift": "e885e2ccaefb3a5bd9b6d89dcbb73ee71cc8484638d3ac20f9d4a67709248afa",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeEngine.swift": "b90f9832668cc6c25e051ffedd9ff7874ad7dc0367735f4aaae6a82b80fa119e",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeMeshArchive.swift": "6a17380137da51ea6f9e0f9f83eeab8d2f0887e6511f658eb3a27dcbbf5a7a04",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeRuntimeSupport.swift": "03383288b5933c0e40f0f634f4c18f037df3985d222d522ffdabac129bf402bc",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeTypes.swift": "b2a4410b4b7486e1e258bd4f41d4ef9f26cd6b2fd0d89acfa7064543123df530",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/USDZArchiveWriter.swift": "cc9de8b29060927390c8989cdf33afd08c74ad1259be5dd43798bc825d68bb1a",
+    "Apple/Packages/VoxamberShapeNative/Tests/VoxamberShapeNativeTests/ShapeSDKTests.swift": "f98cc66474b281719c376d231d479ff9a150d4c801df2d1be718d1e681b69684"
+  },
+  "builds": {
+    "MacReleaseSDK": "passed",
+    "MacReleaseTests": "9passed0failed",
+    "arm64_iOS26_Generic_Release": "passed40.67s initial /2.48s finalincremental",
+    "SimulatorWeightedGeneration": "explicitly rejected before MLX loading"
+  },
+  "tests": [
+    {
+      "name": "testBaseGLBRestoresGeometryAndDoesNotOverwriteExistingDestination",
+      "seconds": 0.003,
+      "result": "passed"
+    },
+    {
+      "name": "testBuffersValidateRealIndexAndFiniteDataWithLargeExplicitCaps",
+      "seconds": 0.0,
+      "result": "passed"
+    },
+    {
+      "name": "testBundledTrainedConfigurationMatchesPinnedHashAndRejectsAlteration",
+      "seconds": 0.001,
+      "result": "passed"
+    },
+    {
+      "name": "testColdIdleCancellationAndUnloadRequireNoModelOrGPUWork",
+      "seconds": 0.0,
+      "result": "passed"
+    },
+    {
+      "name": "testGlobalShapeLeaseHasOneOwnerAndSafeRelease",
+      "seconds": 0.0,
+      "result": "passed"
+    },
+    {
+      "name": "testPreparedInputRequiresActualDecoded512PNG",
+      "seconds": 0.027,
+      "result": "passed"
+    },
+    {
+      "name": "testPreparedRGBAForegroundAlphaIsPreservedBeforeNativePreprocessing",
+      "seconds": 0.003,
+      "result": "passed"
+    },
+    {
+      "name": "testStreamingIntegrityRejectsMutationSymlinkAndCancellation",
+      "seconds": 0.005,
+      "result": "passed"
+    },
+    {
+      "name": "testSyntheticLargeNeuralSizedGeometryExportsAndRestoresBeyondOldCaps",
+      "seconds": 0.442,
+      "result": "passed"
+    }
+  ],
+  "syntheticLargeGeometry": {
+    "vertices": 154449,
+    "syntheticCPUFixture": true,
+    "neuralInferencePerformed": false,
+    "triangles": 307328,
+    "GLBbytes": 5541880,
+    "USDZbytes": 14913317
+  },
+  "gltfFormat": {
+    "scope": "Synthetic CPU grid fixture; proves format/large-mesh support only, not neural model inference or device parity",
+    "version": "2.0.0-dev.3.10",
+    "issues": {
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 0,
+      "numHints": 0,
+      "messages": [],
+      "truncated": false
+    }
+  },
+  "publicContract": {
+    "generate": "ShapeEngine.generate(pngData:Data,shapePackURL:URL,configurationYAML:String,seed:UInt64,onProgress:)->ShapeResult",
+    "input": "512square PNG preserving foreground alpha; DINO internally alpha-bounds/border.15/white composite; Vision preparation outside SDK",
+    "outputs": [
+      "actual positions/normals/UInt32 indices",
+      "actual GLB/USDZ Data",
+      "baseMeshData alias unchangedGLB",
+      "stats/provenance/validationReceipt"
+    ],
+    "archiveFormatID": "org.khronos.gltf.binary",
+    "archiveVersion": 2,
+    "geometryLayoutVersion": 1,
+    "maximumVertices": 2000000,
+    "maximumTriangles": 4000000,
+    "maximumIndices": 12000000,
+    "maximumGLBbytes": 268435456,
+    "maximumUSDZbytes": 536870912
+  },
+  "lifecycle": "Task cancellation marks actual token/cancels worker and awaits. Unload waits, multiple unloads block reentry, status derives token; idle unload does not initialize Metal. Other engines require caller stage serialization.",
+  "historicalPhoneEvidence": {
+    "sourceFile": "/Users/kaisun/Snap3D/docs/HUNYUAN_MOBILE_PIPELINE.md",
+    "lines": "205-224",
+    "device": "iPhone17ProMax iOS27 Release development test host",
+    "shapeSeconds": 281.93,
+    "vertices": 153894,
+    "triangles": 307320,
+    "availableProcessBytesBefore": 6354434112,
+    "phoneShapePeakBytes": null,
+    "macPeakGiB_SeparateExecutionAB": 4.43,
+    "admissionMinimumGiB": 5.5
+  },
+  "unverified": [
+    "0.31.4-to-0.32.3 weighted numerical/mesh parity",
+    "new whole-App physical peak within6GiB",
+    "single2.1 bounded phone cancellation latency",
+    "multiinput quality/repeat/thermal/cleanApple download",
+    "text-to-image-to-shape end-to-end phone"
+  ],
+  "weightsDownloadedOrCopiedByThisAgent": false,
+  "Snap3DModifiedOrStarted": false
+}

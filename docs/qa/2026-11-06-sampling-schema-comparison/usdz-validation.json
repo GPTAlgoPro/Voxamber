@@ -1,0 +1,53 @@
+{
+  "scope": "Actual USDZ ZIP/CRC/alignment plus actual SceneKit import/render, not visual quality",
+  "cases": [
+    {
+      "id": "robot",
+      "CRCValid": true,
+      "entries": [
+        {
+          "entry": "scene.usda",
+          "uncompressed": true,
+          "payloadAlignment64": true
+        }
+      ],
+      "allPassed": true
+    },
+    {
+      "id": "lamp",
+      "CRCValid": true,
+      "entries": [
+        {
+          "entry": "scene.usda",
+          "uncompressed": true,
+          "payloadAlignment64": true
+        }
+      ],
+      "allPassed": true
+    },
+    {
+      "id": "whale",
+      "CRCValid": true,
+      "entries": [
+        {
+          "entry": "scene.usda",
+          "uncompressed": true,
+          "payloadAlignment64": true
+        }
+      ],
+      "allPassed": true
+    },
+    {
+      "id": "chair",
+      "CRCValid": true,
+      "entries": [
+        {
+          "entry": "scene.usda",
+          "uncompressed": true,
+          "payloadAlignment64": true
+        }
+      ],
+      "allPassed": true
+    }
+  ]
+}

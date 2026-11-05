@@ -1,0 +1,280 @@
+{
+  "sourceRepository": "https://github.com/apple-aiml-research/ml-stable-diffusion",
+  "commit": "ea2805dc1945be20561c77e5f6d1d9a5a637cda2",
+  "copiedAtUTC": "2026-11-05T18:47:18.940399+00:00",
+  "excludedUpstreamSwiftFiles": [
+    "pipeline/StableDiffusion3Pipeline+Resources.swift",
+    "pipeline/StableDiffusion3Pipeline.swift",
+    "pipeline/TextEncoderT5.swift",
+    "tokenizer/T5Tokenizer.swift"
+  ],
+  "downloadedSourceFiles": [
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/CGImage+vImage.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/CGImage+vImage.swift",
+      "bytes": 9085,
+      "gitBlobSHA1": "6dd4606f89f0fbcb3bc1432f35e052af0380bdd3",
+      "upstreamSHA256": "1a705171079dc8f71909804f38c2f47d3240f5d5a5b4c4b771f48ec26b4fc18d",
+      "retained": true,
+      "currentSHA256": "1a705171079dc8f71909804f38c2f47d3240f5d5a5b4c4b771f48ec26b4fc18d"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/ControlNet.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/ControlNet.swift",
+      "bytes": 4776,
+      "gitBlobSHA1": "9525b160928536c09aab178920044078ef7a8229",
+      "upstreamSHA256": "0c671cc7f98ceee1c3e02c2adcf31b1527aaf61a1eaa058b4c48dabe01ef298b",
+      "retained": false,
+      "currentSHA256": null
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/DPMSolverMultistepScheduler.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/DPMSolverMultistepScheduler.swift",
+      "bytes": 11877,
+      "gitBlobSHA1": "64388ddc8197e9650902daf6841e28832e2517d3",
+      "upstreamSHA256": "935b57f0b632a9e166b7c46f8dfa18b5b24f1d3e70c261e87ffde9b89a24cdc3",
+      "retained": true,
+      "currentSHA256": "935b57f0b632a9e166b7c46f8dfa18b5b24f1d3e70c261e87ffde9b89a24cdc3"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/Decoder.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/Decoder.swift",
+      "bytes": 2772,
+      "gitBlobSHA1": "1d39aa32009d488997d3ce83d237652302afefa8",
+      "upstreamSHA256": "6ace6ca382998b486ed7de37ee720e81217eea957ef6a057efd4e80b05a666b7",
+      "retained": true,
+      "currentSHA256": "6ace6ca382998b486ed7de37ee720e81217eea957ef6a057efd4e80b05a666b7"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/DiscreteFlowScheduler.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/DiscreteFlowScheduler.swift",
+      "bytes": 4894,
+      "gitBlobSHA1": "59e3ea4a155092fadea2773508f682d0864bd2ee",
+      "upstreamSHA256": "24a07120cb033a080100045b4d4efb9a73151b941c812be455d3ac83db64bae0",
+      "retained": true,
+      "currentSHA256": "24a07120cb033a080100045b4d4efb9a73151b941c812be455d3ac83db64bae0"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/Encoder.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/Encoder.swift",
+      "bytes": 3851,
+      "gitBlobSHA1": "678db54b925c591e620fde324ceeb5cd201a1548",
+      "upstreamSHA256": "50f34834d4122dcdbec8f87f5c8ec8df38df9dd760e458359622e435b3eeca01",
+      "retained": true,
+      "currentSHA256": "50f34834d4122dcdbec8f87f5c8ec8df38df9dd760e458359622e435b3eeca01"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/ManagedMLModel.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/ManagedMLModel.swift",
+      "bytes": 4447,
+      "gitBlobSHA1": "e1983186bd5b73121137409f73337ffd3072e4b8",
+      "upstreamSHA256": "50294be55b4bec01796d9a8a4f61c45092482567f708c509de242ee3b45bd3dd",
+      "retained": true,
+      "currentSHA256": "50294be55b4bec01796d9a8a4f61c45092482567f708c509de242ee3b45bd3dd"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/MultiModalDiffusionTransformer.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/MultiModalDiffusionTransformer.swift",
+      "bytes": 4525,
+      "gitBlobSHA1": "b5ee7ffa9f8cac76d8ff266362d345cf54d4df77",
+      "upstreamSHA256": "c981b745de66e0349a02293dfb2797493ec62ef8a374f85d97199754e8e7c29d",
+      "retained": false,
+      "currentSHA256": null
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/MultilingualTextEncoder.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/MultilingualTextEncoder.swift",
+      "bytes": 7718,
+      "gitBlobSHA1": "f401e230f09f1b5b9e1f47ab0c70cd2a6fb02cfd",
+      "upstreamSHA256": "57a7c304f58db1ba5d8f12703919df5ba927e047d3136baa366419b9a1cc761b",
+      "retained": false,
+      "currentSHA256": null
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/NumPyRandomSource.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/NumPyRandomSource.swift",
+      "bytes": 4172,
+      "gitBlobSHA1": "62c9c5be77ac4c516ba6a9756e5a4b339f378543",
+      "upstreamSHA256": "72d94364c28b66ddfc2b82e61591286eeddc9b505004ac009aff8f4e99b678d6",
+      "retained": true,
+      "currentSHA256": "72d94364c28b66ddfc2b82e61591286eeddc9b505004ac009aff8f4e99b678d6"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/NvRandomSource.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/NvRandomSource.swift",
+      "bytes": 3392,
+      "gitBlobSHA1": "594e98c9cf8144a9793c1bdff1595b256f6239f6",
+      "upstreamSHA256": "509ee5424533408f0a3bb2af6fcfcec248d44e042bbdd84a345c35ea00efdc3a",
+      "retained": true,
+      "currentSHA256": "509ee5424533408f0a3bb2af6fcfcec248d44e042bbdd84a345c35ea00efdc3a"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/RandomSource.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/RandomSource.swift",
+      "bytes": 263,
+      "gitBlobSHA1": "b961ce8477a11cce7ca008ab232fc5d229b66dc9",
+      "upstreamSHA256": "ddbc5f36a51986473d7b90183ddaae130f9e67de8896977f4d9cfee85d52c1d8",
+      "retained": true,
+      "currentSHA256": "ddbc5f36a51986473d7b90183ddaae130f9e67de8896977f4d9cfee85d52c1d8"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/ResourceManaging.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/ResourceManaging.swift",
+      "bytes": 577,
+      "gitBlobSHA1": "3813487a7d3937fd97d4fe6d3c547dd5174a1fc4",
+      "upstreamSHA256": "d534f14e4d7a9660a2efacf3220f74fdb9698b08247c9c57ed902d733793dccb",
+      "retained": true,
+      "currentSHA256": "d534f14e4d7a9660a2efacf3220f74fdb9698b08247c9c57ed902d733793dccb"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/SafetyChecker.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/SafetyChecker.swift",
+      "bytes": 6276,
+      "gitBlobSHA1": "fdc615e82778c1c3aa5a934aa26b622cfb8d2dc7",
+      "upstreamSHA256": "bc087a3c34f04c47f2947c4396a191ebef9331dd522efaff7ea751fbbbf3d705",
+      "retained": false,
+      "currentSHA256": null
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/SampleTimer.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/SampleTimer.swift",
+      "bytes": 1998,
+      "gitBlobSHA1": "e14e2917fabdaf153147274bf7eb050c290b1edb",
+      "upstreamSHA256": "7f92135b35657cb7966d56b91a113db0352bf75247f2375380319ac42e56e3ae",
+      "retained": false,
+      "currentSHA256": null
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/Scheduler.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/Scheduler.swift",
+      "bytes": 13506,
+      "gitBlobSHA1": "0a816e37809250b22e614b08ffd5946a78bb1c0f",
+      "upstreamSHA256": "8a0fe6568bc89aa04def364dcddaef479875b8cb95628a94a1420dddf7e01b70",
+      "retained": true,
+      "currentSHA256": "8a0fe6568bc89aa04def364dcddaef479875b8cb95628a94a1420dddf7e01b70"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/StableDiffusionPipeline+Resources.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/StableDiffusionPipeline+Resources.swift",
+      "bytes": 6921,
+      "gitBlobSHA1": "39b6942c39911fb960d1a516339903654342d905",
+      "upstreamSHA256": "fcd3d5e5429d47d6efbe1c1e52f2ee326b16ccb83f871b1d7e712d73348d765e",
+      "retained": false,
+      "currentSHA256": null
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/StableDiffusionPipeline.Configuration.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/StableDiffusionPipeline.Configuration.swift",
+      "bytes": 4403,
+      "gitBlobSHA1": "12f67963e2f397aa15fe06edd728deec543c0218",
+      "upstreamSHA256": "d0ef6e241b54fa9d69bca7cbfd24931b1f0abe5161b4d0d9416fca1c657372b5",
+      "retained": true,
+      "currentSHA256": "97156ca93fbfdd7555b0fe9b53ef9472706bc79869624dc3a09afc64ecb2d61e"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/StableDiffusionPipeline.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/StableDiffusionPipeline.swift",
+      "bytes": 18645,
+      "gitBlobSHA1": "4f67987e1cb014d101053d3974e22ec76c9fe78b",
+      "upstreamSHA256": "f38c25ad98ef5a4abf2a2628202419c793731522a924fbd9dd13a1872985dee3",
+      "retained": true,
+      "currentSHA256": "79b86817aa8b8c37727e4dd1f1097c7be690317df0dcbbdcd7924c9a40e6bb84"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/StableDiffusionXL+Resources.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/StableDiffusionXL+Resources.swift",
+      "bytes": 4974,
+      "gitBlobSHA1": "f770f2f1a970f99c1023217f7190d45d4efc9f33",
+      "upstreamSHA256": "c547460a6e3c09852e65570e3d9579623a2f93b3a374627a88321b98b44cde39",
+      "retained": true,
+      "currentSHA256": "c547460a6e3c09852e65570e3d9579623a2f93b3a374627a88321b98b44cde39"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/StableDiffusionXLPipeline.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/StableDiffusionXLPipeline.swift",
+      "bytes": 15678,
+      "gitBlobSHA1": "a4aad817ddcb20e0e4fd8fd0c35ca95ec8107f87",
+      "upstreamSHA256": "747e13e69f2b855932d700808b0c547695c59f73ee043362ade861c802a5d616",
+      "retained": true,
+      "currentSHA256": "1dec109f5b54987e196500e6f2539449957394e06d6779b2c320cd968c140884"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/TextEncoder.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/TextEncoder.swift",
+      "bytes": 3403,
+      "gitBlobSHA1": "0465cee61b60307eba55ba57f56b55721cbc8036",
+      "upstreamSHA256": "2bf89afc39ebd3b6a6e1b1f8d6adde08fc3da07d6f28e84b1a58ebfb91c24eec",
+      "retained": false,
+      "currentSHA256": null
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/TextEncoderXL.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/TextEncoderXL.swift",
+      "bytes": 3587,
+      "gitBlobSHA1": "db79f00e90263524c1bb4ce8db752c9bb6fc9b71",
+      "upstreamSHA256": "7af760be14516e4f3f68d1cf9bf80f05893e05d9f435c2514431e92b538baa78",
+      "retained": true,
+      "currentSHA256": "7af760be14516e4f3f68d1cf9bf80f05893e05d9f435c2514431e92b538baa78"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/TorchRandomSource.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/TorchRandomSource.swift",
+      "bytes": 5530,
+      "gitBlobSHA1": "d7ef4267fb045d4853d2a8db6e22a7c2e9122ae3",
+      "upstreamSHA256": "e45eddd61857793176c1f0accfd41537a6bac012d6ee1d3abce2db1a7e0f3b51",
+      "retained": true,
+      "currentSHA256": "e45eddd61857793176c1f0accfd41537a6bac012d6ee1d3abce2db1a7e0f3b51"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/pipeline/Unet.swift",
+      "localPath": "Sources/AppleSDXL/pipeline/Unet.swift",
+      "bytes": 7514,
+      "gitBlobSHA1": "7e8fc967077ecaf44794d4cfef9a2e78842e3067",
+      "upstreamSHA256": "2f22d726c1f6aa942ebffab8e26ceffa443def8970b6e99602795cce815c7962",
+      "retained": true,
+      "currentSHA256": "2f22d726c1f6aa942ebffab8e26ceffa443def8970b6e99602795cce815c7962"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/tokenizer/BPETokenizer+Reading.swift",
+      "localPath": "Sources/AppleSDXL/tokenizer/BPETokenizer+Reading.swift",
+      "bytes": 1914,
+      "gitBlobSHA1": "aec161c640e805bf170ee56c9d98af725d7fa3cc",
+      "upstreamSHA256": "0a27e1ade18f20ab0d61c439deb0c383210e5994e6d792c588a5dbf1aededf96",
+      "retained": true,
+      "currentSHA256": "0a27e1ade18f20ab0d61c439deb0c383210e5994e6d792c588a5dbf1aededf96"
+    },
+    {
+      "upstreamPath": "swift/StableDiffusion/tokenizer/BPETokenizer.swift",
+      "localPath": "Sources/AppleSDXL/tokenizer/BPETokenizer.swift",
+      "bytes": 6360,
+      "gitBlobSHA1": "3f7ed9d238f6fbcfe6d05950f89c008f55f91525",
+      "upstreamSHA256": "280cfd0ad51c3668dd3adab28c8e094f5168be8710b5830c393e2f795c752fe9",
+      "retained": true,
+      "currentSHA256": "64b8f4bbbfa6bfba1c6d4789b65d868cf0c0e1fe3ccc8c8f2b4aa19475c6fe3c"
+    }
+  ],
+  "licenseSHA256": "4f7eae00de7a3b4ea1d6b3d26f64c113b999dda4e7d3269f3278caac66575fc3",
+  "weightsDownloaded": false,
+  "additionalRemovedNonSDXLFiles": [
+    "pipeline/ControlNet.swift",
+    "pipeline/MultiModalDiffusionTransformer.swift",
+    "pipeline/MultilingualTextEncoder.swift",
+    "pipeline/SafetyChecker.swift",
+    "pipeline/SampleTimer.swift",
+    "pipeline/StableDiffusionPipeline+Resources.swift",
+    "pipeline/TextEncoder.swift"
+  ],
+  "localModifications": {
+    "pipeline/StableDiffusionPipeline.swift": "Extract shared enums/protocol/progress/helpers; remove SD1 runtime and aliases.",
+    "pipeline/StableDiffusionPipeline.Configuration.swift": "Retain shared configuration; remove SD1 aliases.",
+    "tokenizer/BPETokenizer.swift": "Propagate vocabulary decoding error with try instead of try!.",
+    "pipeline/StableDiffusionXLPipeline.swift": "Propagate required TE1 load/prewarm errors; add cooperative cancellation before/between required loads, at each denoising step, and before decoder."
+  },
+  "retainedSwiftFiles": 20,
+  "externalPackageDependencies": [],
+  "licenseFilesSHA256": {
+    "LICENSE.md": "4f7eae00de7a3b4ea1d6b3d26f64c113b999dda4e7d3269f3278caac66575fc3",
+    "MODEL-LICENSE-SDXL.md": "19b6998b569b53ac1fc2158a8a3202c8699a9a4605b47075715d9c96be7fb6d0",
+    "ACKNOWLEDGEMENTS-APPLE": "38105900a75ce50ca27f3484e9115b4e15690300c33527e8e3fed62c88620399"
+  }
+}

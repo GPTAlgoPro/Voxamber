@@ -1,0 +1,247 @@
+{
+  "name" : "蓝色立方体头机器人站立造型",
+  "nodes" : [
+    {
+      "color" : "#2A2A2A",
+      "id" : "base_plate",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.35,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.4,
+        0.05,
+        0.15
+      ]
+    },
+    {
+      "color" : "#3A3A3A",
+      "id" : "leg_left",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.35,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.8,
+      "size" : [
+        0.06,
+        0.7,
+        0.06
+      ]
+    },
+    {
+      "color" : "#3A3A3A",
+      "id" : "leg_right",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.35,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.8,
+      "size" : [
+        0.06,
+        0.7,
+        0.06
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "torso",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.35,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.4,
+      "size" : [
+        0.35,
+        0.6,
+        0.25
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "arm_left_upper",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.35,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.4,
+      "size" : [
+        0.05,
+        0.35,
+        0.05
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "arm_left_lower",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.35,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.4,
+      "size" : [
+        0.05,
+        0.25,
+        0.05
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "arm_right_upper",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.35,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.4,
+      "size" : [
+        0.05,
+        0.35,
+        0.05
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "arm_right_lower",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.35,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.4,
+      "size" : [
+        0.05,
+        0.25,
+        0.05
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "head_box",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.35,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.4,
+      "size" : [
+        0.28,
+        0.25,
+        0.22
+      ]
+    },
+    {
+      "color" : "#FFFF00",
+      "id" : "eye_left",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.35,
+        0
+      ],
+      "primitive" : "sphere",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.9,
+      "size" : [
+        0.04,
+        0.04,
+        0.04
+      ]
+    },
+    {
+      "color" : "#FFFF00",
+      "id" : "eye_right",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.35,
+        0
+      ],
+      "primitive" : "sphere",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.9,
+      "size" : [
+        0.04,
+        0.04,
+        0.04
+      ]
+    }
+  ]
+}

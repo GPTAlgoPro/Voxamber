@@ -1,0 +1,191 @@
+{
+  "soleInferenceVariable": "Full current SceneGenerationSchema replaces nil; same sampling bundle/seed/prompt/model/caps",
+  "priorWithoutSchema": {
+    "actualCalls": 5,
+    "formalObjects": 5,
+    "nativeScenesAndExports": 1,
+    "lengthStops": 0,
+    "totalConsumedTokens": 8270
+  },
+  "withFullSchema": {
+    "actualCalls": 5,
+    "formalObjects": 5,
+    "nativeScenesAndExports": 4,
+    "lengthStops": 0,
+    "totalConsumedTokens": 6811
+  },
+  "cases": [
+    {
+      "id": "robot",
+      "priorWithoutSchema": {
+        "formalObjectAccepted": true,
+        "nativeSceneAccepted": true,
+        "exported": true,
+        "completion": {
+          "generatedTokenCount": 2305,
+          "grammarEnabled": false,
+          "grammarTerminated": false,
+          "inputTokenCount": 1061,
+          "reason": "jsonComplete",
+          "tokenLimit": 3072
+        }
+      },
+      "withFullSchema": {
+        "formalObjectAccepted": true,
+        "nativeSceneAccepted": true,
+        "exported": true,
+        "completion": {
+          "generatedTokenCount": 1218,
+          "grammar": {
+            "compiledSchemaSHA256": "b4149ac625541c2e2035a576f2b7db2c806c485bf7446fc5f301e69fd9d4a8cc",
+            "floatBoundsRequireNativeValidation": true,
+            "originalSchemaSHA256": "fad4c0e9225540310c4eec80ee03a88ddd9a91bb94f8e7b6ef82d40103eeafc2"
+          },
+          "grammarEnabled": true,
+          "grammarTerminated": true,
+          "inputTokenCount": 1061,
+          "reason": "jsonComplete",
+          "tokenLimit": 3072
+        }
+      }
+    },
+    {
+      "id": "lamp",
+      "priorWithoutSchema": {
+        "formalObjectAccepted": true,
+        "nativeSceneAccepted": false,
+        "exported": false,
+        "completion": {
+          "generatedTokenCount": 445,
+          "grammarEnabled": false,
+          "grammarTerminated": false,
+          "inputTokenCount": 1065,
+          "reason": "jsonComplete",
+          "tokenLimit": 3072
+        }
+      },
+      "withFullSchema": {
+        "formalObjectAccepted": true,
+        "nativeSceneAccepted": true,
+        "exported": true,
+        "completion": {
+          "generatedTokenCount": 403,
+          "grammar": {
+            "compiledSchemaSHA256": "b4149ac625541c2e2035a576f2b7db2c806c485bf7446fc5f301e69fd9d4a8cc",
+            "floatBoundsRequireNativeValidation": true,
+            "originalSchemaSHA256": "fad4c0e9225540310c4eec80ee03a88ddd9a91bb94f8e7b6ef82d40103eeafc2"
+          },
+          "grammarEnabled": true,
+          "grammarTerminated": true,
+          "inputTokenCount": 1065,
+          "reason": "jsonComplete",
+          "tokenLimit": 3072
+        }
+      }
+    },
+    {
+      "id": "whale",
+      "priorWithoutSchema": {
+        "formalObjectAccepted": true,
+        "nativeSceneAccepted": false,
+        "exported": false,
+        "completion": {
+          "generatedTokenCount": 1955,
+          "grammarEnabled": false,
+          "grammarTerminated": false,
+          "inputTokenCount": 1074,
+          "reason": "jsonComplete",
+          "tokenLimit": 3072
+        }
+      },
+      "withFullSchema": {
+        "formalObjectAccepted": true,
+        "nativeSceneAccepted": true,
+        "exported": true,
+        "completion": {
+          "generatedTokenCount": 1549,
+          "grammar": {
+            "compiledSchemaSHA256": "b4149ac625541c2e2035a576f2b7db2c806c485bf7446fc5f301e69fd9d4a8cc",
+            "floatBoundsRequireNativeValidation": true,
+            "originalSchemaSHA256": "fad4c0e9225540310c4eec80ee03a88ddd9a91bb94f8e7b6ef82d40103eeafc2"
+          },
+          "grammarEnabled": true,
+          "grammarTerminated": true,
+          "inputTokenCount": 1074,
+          "reason": "jsonComplete",
+          "tokenLimit": 3072
+        }
+      }
+    },
+    {
+      "id": "aircraft",
+      "priorWithoutSchema": {
+        "formalObjectAccepted": true,
+        "nativeSceneAccepted": false,
+        "exported": false,
+        "completion": {
+          "generatedTokenCount": 1780,
+          "grammarEnabled": false,
+          "grammarTerminated": false,
+          "inputTokenCount": 1070,
+          "reason": "jsonComplete",
+          "tokenLimit": 3072
+        }
+      },
+      "withFullSchema": {
+        "formalObjectAccepted": true,
+        "nativeSceneAccepted": false,
+        "exported": false,
+        "completion": {
+          "generatedTokenCount": 1788,
+          "grammar": {
+            "compiledSchemaSHA256": "b4149ac625541c2e2035a576f2b7db2c806c485bf7446fc5f301e69fd9d4a8cc",
+            "floatBoundsRequireNativeValidation": true,
+            "originalSchemaSHA256": "fad4c0e9225540310c4eec80ee03a88ddd9a91bb94f8e7b6ef82d40103eeafc2"
+          },
+          "grammarEnabled": true,
+          "grammarTerminated": true,
+          "inputTokenCount": 1070,
+          "reason": "jsonComplete",
+          "tokenLimit": 3072
+        }
+      }
+    },
+    {
+      "id": "chair",
+      "priorWithoutSchema": {
+        "formalObjectAccepted": true,
+        "nativeSceneAccepted": false,
+        "exported": false,
+        "completion": {
+          "generatedTokenCount": 1785,
+          "grammarEnabled": false,
+          "grammarTerminated": false,
+          "inputTokenCount": 1065,
+          "reason": "jsonComplete",
+          "tokenLimit": 3072
+        }
+      },
+      "withFullSchema": {
+        "formalObjectAccepted": true,
+        "nativeSceneAccepted": true,
+        "exported": true,
+        "completion": {
+          "generatedTokenCount": 1853,
+          "grammar": {
+            "compiledSchemaSHA256": "b4149ac625541c2e2035a576f2b7db2c806c485bf7446fc5f301e69fd9d4a8cc",
+            "floatBoundsRequireNativeValidation": true,
+            "originalSchemaSHA256": "fad4c0e9225540310c4eec80ee03a88ddd9a91bb94f8e7b6ef82d40103eeafc2"
+          },
+          "grammarEnabled": true,
+          "grammarTerminated": true,
+          "inputTokenCount": 1065,
+          "reason": "jsonComplete",
+          "tokenLimit": 3072
+        }
+      }
+    }
+  ],
+  "visualReview": "pending Root individual review; no automatic general-quality acceptance",
+  "interpretation": "Structural/required-field compliance improved in this fixed condition; remaining numeric/graph/shape meaning are separate. One sequential seed is not a reliability estimate and timings are not speed causation."
+}

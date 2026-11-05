@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 import CreationCore
 #if DEBUG
 import CryptoKit
@@ -63,7 +64,7 @@ struct CreationWorkspace: View {
             HStack {
                 Label(StudioCopy.text("构想", "Your idea"), systemImage: "sparkle").font(.headline)
                 Spacer()
-                Label(studio.models.installed ? StudioCopy.text("本机 AI", "On-device AI") : StudioCopy.text("离线创作", "Offline creation"), systemImage: "iphone")
+                Label(studio.neuralModels.ready ? StudioCopy.text("本机 AI", "On-device AI") : StudioCopy.text("离线创作", "Offline creation"), systemImage: "iphone")
                     .font(.caption).foregroundStyle(StudioStyle.accent)
             }
             TextField(StudioCopy.text("描述你想创造的形状、结构与材质……", "Describe the form, structure, and materials you imagine…"), text: $studio.prompt, axis: .vertical)
@@ -79,9 +80,13 @@ struct CreationWorkspace: View {
                 .font(.footnote).foregroundStyle(.secondary)
             Text(StudioCopy.text("灵感起点", "Inspiration starters")).font(.caption.weight(.medium)).foregroundStyle(.secondary)
             presetButtons
-            DisclosureGroup(StudioCopy.text("编辑模型", "Edit model"), isExpanded: $studio.showParameters) {
-                SceneParameters(scene: Binding(get: { studio.sceneSpec ?? .chair }, set: { studio.sceneSpec = $0 })).padding(.top, 14)
-            }.font(.subheadline.weight(.medium)).disabled(studio.busy)
+            if let scene = studio.sceneSpec, !studio.isNeuralCreation {
+                DisclosureGroup(StudioCopy.text("编辑模型", "Edit model"), isExpanded: $studio.showParameters) {
+                    SceneParameters(scene: Binding(get: { studio.sceneSpec ?? scene }, set: {
+                        if !studio.isNeuralCreation { studio.sceneSpec = $0 }
+                    })).padding(.top, 14)
+                }.font(.subheadline.weight(.medium)).disabled(studio.busy)
+            }
             if let notice = studio.notice {
                 Label(StudioCopy.status(notice), systemImage: "checkmark.circle.fill")
                     .font(.footnote).foregroundStyle(StudioStyle.accent)
@@ -127,7 +132,8 @@ struct CreationWorkspace: View {
                 HStack {
                     Text(StudioCopy.text("拖动旋转 · 双指缩放", "Drag to rotate · Pinch to zoom")).font(.caption).foregroundStyle(.secondary)
                     Spacer()
-                    Text(StudioCopy.text("米制模型", "Dimensions in meters")).font(.caption).foregroundStyle(.secondary)
+                    Text(studio.physicalScaleKnown ? StudioCopy.text("米制模型", "Dimensions in meters") : StudioCopy.text("比例模型", "Relative scale"))
+                        .font(.caption).foregroundStyle(.secondary)
                 }
                 GlassEffectContainer {
                     HStack(spacing: 12) {
@@ -141,6 +147,13 @@ struct CreationWorkspace: View {
                         .accessibilityIdentifier("exportMenu")
                     }.buttonStyle(.glass).disabled(!studio.canExport)
                 }
+            } else if let data = studio.referenceImagePNG, let image = UIImage(data: data) {
+                Image(uiImage: image).resizable().scaledToFit()
+                    .clipShape(.rect(cornerRadius: 20))
+                Text(studio.busy
+                    ? StudioCopy.text("参考造型 · 正在生成三维形体", "Reference image · Creating the 3D shape")
+                    : StudioCopy.text("参考造型 · 三维作品尚未完成", "Reference image · 3D creation incomplete"))
+                    .font(.footnote).foregroundStyle(.secondary)
             } else {
                 VStack(spacing: 18) {
                     Image(systemName: "cube.transparent")
@@ -179,24 +192,26 @@ struct CreationWorkspace: View {
 
     @ViewBuilder private var generationActions: some View {
         Button {
-            promptFocused = false; ensureGenericScene(); studio.generate(usingAI: true)
+            promptFocused = false; studio.generate(usingAI: true)
         } label: {
-            Label(studio.models.installed ? StudioCopy.text("AI 生成并保存", "Create and save with AI") : StudioCopy.text("安装本机 AI", "Install on-device AI"), systemImage: "sparkles")
+            Label(studio.neuralModels.ready ? StudioCopy.text("AI 生成并保存", "Create and save with AI") : StudioCopy.text("准备本机模型", "Prepare on-device models"), systemImage: "sparkles")
                 .frame(maxWidth: .infinity).padding(.vertical, 6)
         }.buttonStyle(.glassProminent)
             .accessibilityIdentifier("generateAI")
-            .disabled(studio.models.busy)
-        Button {
-            promptFocused = false; ensureGenericScene(); studio.generate(usingAI: false)
-        } label: {
-            Text(StudioCopy.text("按参数生成", "Generate from edits")).padding(.vertical, 6)
-        }.buttonStyle(.glass)
-            .accessibilityIdentifier("generateParameters")
+            .disabled(studio.neuralModels.busy)
+        if !studio.isNeuralCreation {
+            Button {
+                promptFocused = false; ensureGenericScene(); studio.generate(usingAI: false)
+            } label: {
+                Text(StudioCopy.text("按参数生成", "Generate from edits")).padding(.vertical, 6)
+            }.buttonStyle(.glass)
+                .accessibilityIdentifier("generateParameters")
+        }
     }
 
     private func ensureGenericScene() {
         // Older documents may have no general-purpose editable scene.
-        if studio.sceneSpec == nil { studio.sceneSpec = StudioModel.blankScene }
+        if studio.sceneSpec == nil, !studio.isNeuralCreation { studio.sceneSpec = StudioModel.blankScene }
     }
 }
 

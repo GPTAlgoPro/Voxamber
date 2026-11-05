@@ -1,0 +1,29 @@
+--- Packages/Hunyuan3DMobile/Sources/Hy3DMLX/ShapeGenerator.swift
++++ Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeGenerator.swift
+@@ -309,11 +309,13 @@
+     /// (group size 64; VAE, norms, embedders + the projection/skip linears stay fp16). 4-bit cuts
+     /// resident weights substantially; the exact ratio depends on DiT/VAE size.
+     public init(weightsURL: URL, dtype: DType = .float16, quantize: Int = 0,
+-                packedBits: Int = 0,
++                configurationYAML: String? = nil, packedBits: Int = 0,
+                 numLatents: Int? = nil, cacheLimitMB: Int = 256,
+                 executionStrategy: ShapeExecutionStrategy = .throughput) throws {
+         MLX.Memory.cacheLimit = cacheLimitMB * 1024 * 1024    // keep the buffer cache off the jetsam limit
+-        let cfg = Self.readConfig(weightsURL)                 // per-model DiT shape (mini / 2.0 / turbo)
++        // Voxamber adaptation: the signed pack config can be supplied without
++        // modifying the checkpoint directory or writing beside managed assets.
++        let cfg = configurationYAML.map(Self.readConfigurationText) ?? Self.readConfig(weightsURL)
+         let weights = try loadArrays(url: weightsURL)
+         let condPrefix = "conditioner.main_image_encoder.model."
+         var dw: [String: MLXArray] = [:], vw: [String: MLXArray] = [:], nw: [String: MLXArray] = [:]
+@@ -413,6 +415,10 @@
+     static func readConfig(_ weightsURL: URL) -> ModelConfig? {
+         let url = weightsURL.deletingLastPathComponent().appendingPathComponent("config.yaml")
+         guard let text = try? String(contentsOf: url, encoding: .utf8) else { return nil }
++        return readConfigurationText(text)
++    }
++
++    static func readConfigurationText(_ text: String) -> ModelConfig? {
+         if text.contains("HunYuanDiTPlain") { return readPlainConfig(text) }
+         guard let d = configValue("depth", in: text).flatMap({ Int($0) }),
+               let ds = configValue("depth_single_blocks", in: text)

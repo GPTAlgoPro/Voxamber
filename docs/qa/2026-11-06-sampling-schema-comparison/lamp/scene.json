@@ -1,0 +1,93 @@
+{
+  "name" : "现代简约台灯",
+  "nodes" : [
+    {
+      "color" : "#5A5A5A",
+      "id" : "basePlate",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.025,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.2,
+        0.05,
+        0.18
+      ]
+    },
+    {
+      "color" : "#B0B0B0",
+      "id" : "pole",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.372,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.03,
+        0.65,
+        0.03
+      ]
+    },
+    {
+      "color" : "#FF4444",
+      "id" : "bulbHull",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.81899995,
+        0
+      ],
+      "primitive" : "cone",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.12,
+        0.25,
+        0.12
+      ]
+    },
+    {
+      "color" : "#FFFFFF",
+      "id" : "bulbBody",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.7789999,
+        0
+      ],
+      "primitive" : "sphere",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.08,
+        0.08,
+        0.08
+      ]
+    }
+  ]
+}

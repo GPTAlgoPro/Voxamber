@@ -1,0 +1,64 @@
+{
+  "checkedAtUTC": "2026-11-05T20:28:59.016897+00:00",
+  "sourceFilesChecked": 15,
+  "allRelevantSourceHashesUnchanged": true,
+  "sourceReadback": {
+    "Apple/Packages/QwenNative/Sources/QwenNative/LocalTokenizer.swift": true,
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenTokenStream.swift": true,
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift": true,
+    "Apple/Packages/QwenNative/Sources/QwenNative/NativeJSONGrammar.swift": true,
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenGenerationCompletion.swift": true,
+    "Apple/.build/qwen08-intent-runner/Sources/Qwen08IntentProbe/CreationIntentDecoder.swift": true,
+    "Apple/.build/qwen08-intent-runner/Sources/Qwen08IntentProbe/IntentTypes.swift": true,
+    "Apple/.build/qwen08-intent-runner/Sources/Qwen08IntentProbe/FormalJSONObject.swift": true,
+    "Apple/.build/qwen08-intent-runner/Sources/Qwen08IntentProbe/main.swift": true,
+    "Apple/Packages/VoxamberCreationNative/Sources/VoxamberCreationNative/CreationIntentDecoder.swift": true,
+    "Apple/Packages/VoxamberCreationNative/Sources/VoxamberCreationNative/CreationTypes.swift": true,
+    "Apple/Packages/QwenNative/Package.swift": true,
+    "Apple/Packages/QwenNative/Package.resolved": true,
+    "Apple/.build/qwen08-intent-runner/Package.swift": true,
+    "Apple/.build/qwen08-intent-runner/Package.resolved": true
+  },
+  "binarySHA256Unchanged": true,
+  "decoderExactSourceUnchanged": true,
+  "modelLoads": 1,
+  "modelCalls": 3,
+  "fullTenFileSHAReverifiedByNativeRunnerBeforeAndAfter": true,
+  "modelUnloaded": {
+    "activeBytes": 3008,
+    "cacheBytes": 0
+  },
+  "imagesOrMeshesGenerated": false,
+  "phoneOperated": false,
+  "defaultOrResourcePinsChanged": false,
+  "localConvertedConvExamples": [
+    {
+      "key": "language_model.model.layers.0.linear_attn.conv1d.weight",
+      "shape": [
+        6144,
+        4,
+        1
+      ],
+      "dtype": "BF16"
+    },
+    {
+      "key": "language_model.model.layers.1.linear_attn.conv1d.weight",
+      "shape": [
+        6144,
+        4,
+        1
+      ],
+      "dtype": "BF16"
+    },
+    {
+      "key": "language_model.model.layers.10.linear_attn.conv1d.weight",
+      "shape": [
+        6144,
+        4,
+        1
+      ],
+      "dtype": "BF16"
+    }
+  ],
+  "normalizationInterpretation": "Local conv1d last axis is1; pinned Qwen35 sanitizer therefore does not shift already-converted +1 norm weights again. This source check is not a numerical golden parity run."
+}

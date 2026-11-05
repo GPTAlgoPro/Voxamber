@@ -1,0 +1,49 @@
+{
+  "verifiedAtUTC": "2026-11-05T21:00:31.279736+00:00",
+  "relevantSourceFiles": 16,
+  "allSourceHashesUnchanged": true,
+  "sourceReadback": {
+    "Apple/Packages/QwenNative/Sources/QwenNative/LocalTokenizer.swift": true,
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenTokenStream.swift": true,
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift": true,
+    "Apple/Packages/QwenNative/Sources/QwenNative/NativeJSONGrammar.swift": true,
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenGenerationCompletion.swift": true,
+    "Apple/.build/qwen08-translation-intent-runner/Sources/Qwen08TranslationIntentProbe/CreationIntentDecoder.swift": true,
+    "Apple/.build/qwen08-translation-intent-runner/Sources/Qwen08TranslationIntentProbe/IntentTypes.swift": true,
+    "Apple/.build/qwen08-translation-intent-runner/Sources/Qwen08TranslationIntentProbe/FormalJSONObject.swift": true,
+    "Apple/.build/qwen08-translation-intent-runner/Sources/Qwen08TranslationIntentProbe/main.swift": true,
+    "Apple/Packages/VoxamberCreationNative/Sources/VoxamberCreationNative/CreationIntentDecoder.swift": true,
+    "Apple/Packages/VoxamberCreationNative/Sources/VoxamberCreationNative/CreationTypes.swift": true,
+    "Apple/Packages/VoxamberCreationNative/Tests/VoxamberCreationNativeTests/CreationIntentTests.swift": true,
+    "Apple/Packages/QwenNative/Package.swift": true,
+    "Apple/Packages/QwenNative/Package.resolved": true,
+    "Apple/.build/qwen08-translation-intent-runner/Package.swift": true,
+    "Apple/.build/qwen08-translation-intent-runner/Package.resolved": true
+  },
+  "binaryUnchanged": true,
+  "exactRootDecoderStillMatches": true,
+  "oldConditions": [
+    {
+      "condition": "2026-11-06-qwen08-intent",
+      "frozenFiles": 22,
+      "allHashesUnchanged": true,
+      "manifestSHA256": "6b159641cb0f75d4bb4951ea23a16479599073a6456476da0354f7f843bd782d"
+    },
+    {
+      "condition": "2026-11-06-qwen08-positive-only-intent",
+      "frozenFiles": 19,
+      "allHashesUnchanged": true,
+      "manifestSHA256": "2fefc2f98af2d8c338fa929ceb1c4021947ec59235719d1348aa5bcca963594f"
+    }
+  ],
+  "wholeTenFileSHAReverifiedBeforeAndAfter": true,
+  "modelLoads": 1,
+  "modelCalls": 3,
+  "afterUnload": {
+    "activeBytes": 3008,
+    "cacheBytes": 0
+  },
+  "sourceOrWeightsChangedByThisTask": false,
+  "extraCallsRepairsOrRetriedCases": false,
+  "imagesShapesProjectsOrPhone": false
+}

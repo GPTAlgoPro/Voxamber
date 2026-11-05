@@ -1,0 +1,15 @@
+--- Packages/Hunyuan3DMobile/Sources/Hy3DMLX/GLB.swift
++++ Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/GLB.swift
+@@ -9,6 +9,12 @@
+     /// Throws `GLBError.malformed` rather than trapping on a truncated/unexpected file.
+     public static func read(_ url: URL) throws -> Mesh {
+         let data = try Data(contentsOf: url)
++        return try read(data: data)
++    }
++
++    /// Voxamber adaptation: restore the same native geometry layout without
++    /// materializing a second temporary file. No model or Metal work is needed.
++    public static func read(data: Data) throws -> Mesh {
+         guard data.count >= 12 else { throw GLBError.malformed }
+         func u32(_ off: Int) throws -> UInt32 {
+             guard off >= 0, off <= data.count - 4 else {

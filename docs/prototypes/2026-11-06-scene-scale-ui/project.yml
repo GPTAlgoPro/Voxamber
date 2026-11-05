@@ -1,0 +1,55 @@
+name: SceneScaleUIPrototype
+options:
+  deploymentTarget:
+    iOS: "26.0"
+packages:
+  # Both local packages are stored here; no Apple/.build dependency is required.
+  SceneScaleCoreCandidate:
+    path: SceneScaleCoreCandidate
+  SceneScaleUIPrototype:
+    path: .
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    CODE_SIGNING_ALLOWED: NO
+    MARKETING_VERSION: "0.0.1"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  SceneScaleUIPrototype:
+    type: application
+    platform: iOS
+    sources:
+      - App
+    dependencies:
+      - package: SceneScaleUIPrototype
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kaisun.voxamber.scale-ui-prototype
+        PRODUCT_MODULE_NAME: SceneScaleUIPrototypeHost
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        TARGETED_DEVICE_FAMILY: "1"
+  SceneScaleUIRenderingTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - RenderingTests
+    dependencies:
+      - target: SceneScaleUIPrototype
+      - package: SceneScaleUIPrototype
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kaisun.voxamber.scale-ui-prototype.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: $(BUILT_PRODUCTS_DIR)/SceneScaleUIPrototype.app/SceneScaleUIPrototype
+        BUNDLE_LOADER: $(TEST_HOST)
+schemes:
+  SceneScaleUIPrototype:
+    build:
+      targets:
+        SceneScaleUIPrototype: all
+        SceneScaleUIRenderingTests: [test]
+    test:
+      targets:
+        - SceneScaleUIRenderingTests

@@ -1,0 +1,20 @@
+{
+  "transport": "Exact git archives from own already present source caches; not Snap3D build/goal, no weights",
+  "MLXSwiftVersion": "0.31.4",
+  "commits": [
+    {
+      "relativePath": ".",
+      "commit": "dc43e62d7055353c7f99fa071a4e71d29dfddc44"
+    },
+    {
+      "relativePath": "Source/Cmlx/mlx",
+      "commit": "ce45c52505c8158ea48d2a54e8caae05efd86bfe"
+    },
+    {
+      "relativePath": "Source/Cmlx/mlx-c",
+      "commit": "0726ca922fc902c4c61ef9c27d94132be418e945"
+    }
+  ],
+  "reason": "Avoid redundant slow old submodule network checkout; all exact required objects locally present",
+  "sourceNumericalEdits": false
+}

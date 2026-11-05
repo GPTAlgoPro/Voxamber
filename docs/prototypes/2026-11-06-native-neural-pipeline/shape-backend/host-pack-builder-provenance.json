@@ -1,0 +1,46 @@
+{
+  "Snap3DCommit": "571867edfed0b2902976eb53a97c4671c08599fa",
+  "MLXVersion": "0.31.4",
+  "recipe": "Originalmerge21 Q4 group64 source traversal/all experts/skips/unusedVAEencoder drop/metadata preserved",
+  "sources": [
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DMLX/ShapePackLayout.swift",
+      "sourceSHA256": "95b6d54ba50efaa3624a7b83098b4b007cdcc035b3a27931c791e61acd178c5e",
+      "destination": "Apple/.build/NativeShapePackBuilder/Sources/NativeShapePackLayout/ShapePackLayout.swift",
+      "preparedSHA256": "95b6d54ba50efaa3624a7b83098b4b007cdcc035b3a27931c791e61acd178c5e",
+      "changes": "Only import module / entry wrapper rename for recipe; no recipe math/metadata changes"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DShapePackCLI/main.swift",
+      "sourceSHA256": "00e15324b0bbc0bd8f33c8731066baf0e0db69751ac3d36f1d3716887873dd32",
+      "destination": "Apple/.build/NativeShapePackBuilder/Sources/NativeShapePackBuilder/SnapPackRecipe.swift",
+      "preparedSHA256": "409c6d022861aa3ab7085867bf9eae15aa8bd9e80586003333581e9f6c53666a",
+      "changes": "Only import module / entry wrapper rename for recipe; no recipe math/metadata changes"
+    }
+  ],
+  "executedPacking": false,
+  "wrapperScope": "Only known3-source Q4 merge allowed; streamed source/configSHA gates and69cd output identity gate. Failure never repins; preserve output for tensor/header/quantization parity diagnosis.",
+  "metadataUnchanged": "Original Snap3D Hy3DMLX format/bits/group_size strings remain in copied recipe",
+  "resolvedDependencies": "host-builder-dependency-pins.json: exact0.31.4 Swift/core/C commits locally archived, no numeric edits",
+  "toolSHA256": {
+    "Apple/.build/NativeShapePackBuilder/Package.resolved": "18b53f9edd875fe0879cad9e65e3239f126ca31863382516edc1cb3f3fee5421",
+    "Apple/.build/NativeShapePackBuilder/Package.swift": "82665124408fb2ce61ddc473738128a847275eeb53a67b17bb72859ebf44a7a5",
+    "Apple/.build/NativeShapePackBuilder/Sources/NativeShapePackBuilder/PackMain.swift": "6a2f0e44821a8a99e9288f1d52c2bc8e34fa644800403f84724a7a089e2bf61d",
+    "Apple/.build/NativeShapePackBuilder/Sources/NativeShapePackBuilder/SnapPackRecipe.swift": "409c6d022861aa3ab7085867bf9eae15aa8bd9e80586003333581e9f6c53666a",
+    "Apple/.build/NativeShapePackBuilder/Sources/NativeShapePackLayout/ShapePackLayout.swift": "95b6d54ba50efaa3624a7b83098b4b007cdcc035b3a27931c791e61acd178c5e"
+  },
+  "preparedAtUTC": "2026-11-05T19:47:29.221418+00:00",
+  "build": "Release passed45.65s full /5.84s final incremental",
+  "binary": {
+    "path": "Apple/.build/NativeShapePackBuilderLocalBuild/out/Products/Release/NativeShapePackBuilder",
+    "bytes": 23205528,
+    "sha256": "3086edf527760448773b8f4b353d6f2ff498ebe644abb9d93c65a3d5678d3d58"
+  },
+  "nonQuantizingChecks": {
+    "describe": "passed",
+    "unsupportedQ8BeforeSourceLoad": "rejected exit1 as expected"
+  },
+  "actualPackingExecuted": false,
+  "actualNNExecuted": false,
+  "SDKExpectedPinAltered": false
+}

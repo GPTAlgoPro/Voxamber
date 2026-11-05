@@ -33,7 +33,7 @@ struct StudioRoot: View {
                 NavigationStack { ProjectLibrary(studio: studio) }
             }
             Tab(StudioCopy.text("本机模型", "On-device AI"), systemImage: "cpu", value: .models) {
-                NavigationStack { ModelLibrary(manager: studio.models, generationBusy: studio.busy) }
+                NavigationStack { NeuralModelLibrary(manager: studio.neuralModels, generationBusy: studio.busy) }
             }
         }
         .tabViewStyle(.sidebarAdaptable)

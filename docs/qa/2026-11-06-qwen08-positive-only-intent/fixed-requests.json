@@ -1,0 +1,25 @@
+{
+  "api" : "formal-equivalent same-call raw Direct + exact production QwenJSONObject + exact CreationIntentDecoder",
+  "cases" : [
+    {
+      "id" : "lamp",
+      "user" : "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地Y=0，整体高约0.8米。"
+    },
+    {
+      "id" : "spiral_shell_vase",
+      "user" : "一个螺旋贝壳造型的蓝色花瓶，瓶口带金色细边。"
+    },
+    {
+      "id" : "violin_and_bow",
+      "user" : "一把小提琴和一根琴弓，作为两个独立物体完整入镜。"
+    }
+  ],
+  "maxTokens" : 512,
+  "prefillStepSize" : 128,
+  "schema" : "{\"type\":\"object\",\"properties\":{\"title\":{\"type\":\"string\",\"minLength\":1,\"maxLength\":40},\"positivePrompt\":{\"type\":\"string\",\"minLength\":1,\"maxLength\":180,\"pattern\":\"^[ -~]+$\"},\"negativePrompt\":{\"type\":\"string\",\"const\":\"\"}},\"required\":[\"title\",\"positivePrompt\",\"negativePrompt\"],\"additionalProperties\":false}",
+  "schemaSHA256" : "b0cca3da1b258a501d529f28f29000eda4d54b3c8847082e2883ef27804bd3ea",
+  "system" : "Translate the user's visual idea into compact English for an image generator.\nPreserve the subjects, counts, relationships, colors and materials. Do not invent objects or substitute a template. Express any requested exclusions in that same English description. Frame the complete subject clearly.\nReturn exactly these JSON fields: title in the user's language (1-40 characters), positivePrompt in English ASCII (1-180 characters), negativePrompt as the empty string. The negativePrompt is always empty: do not infer a negative list from the user's desired features. Do not output geometry, scripts, coordinates, explanations or Markdown.",
+  "systemSHA256" : "788e6c41219c95a4b51808dea85242fe8600a57de673601c4c0a1656c2612c2c",
+  "temperature" : 0,
+  "thinking" : false
+}

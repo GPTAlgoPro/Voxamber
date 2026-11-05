@@ -1,0 +1,20 @@
+--- production/Sources/QwenNative/QwenEngine.swift
++++ candidate/Sources/QwenNative/QwenEngine.swift
+@@ -169,14 +169,14 @@
+                     chunking: .balanced, progress: { processed, total in
+                         reporter.emit("prefill_submitted processed=\(processed)", inputTokens: total)
+                     })
+-                let parameters = GenerateParameters(maxTokens: tokenLimit,
+-                    maxKVSize: 8192, temperature: 0, prefill: prefill)
++                let parameters = CandidateSampling.parameters(tokenLimit: tokenLimit, prefill: prefill)
+                 reporter.emit("kv_cache_begin", inputTokens: inputCount)
+                 let cache = try context.model.newCache(parameters: parameters)
+                 reporter.emit("kv_cache_ready", inputTokens: inputCount)
+                 reporter.emit("prefill_begin", inputTokens: inputCount)
+                 let iterator = try TokenIterator(input: input, model: context.model,
+-                    cache: cache, parameters: parameters, components: grammar?.components ?? .init())
++                    cache: cache, parameters: parameters,
++                    components: CandidateSampling.components(base: grammar?.components ?? .init()))
+                 if grammar?.state.snapshot.failure != nil {
+                     Stream.defaultStream.synchronize()
+                     streamSettled = true

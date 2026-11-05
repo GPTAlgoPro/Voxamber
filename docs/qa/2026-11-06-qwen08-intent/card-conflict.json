@@ -1,0 +1,13 @@
+{
+  "checkedAtUTC": "2026-11-05T20:26:22.931323+00:00",
+  "repository": "mlx-community/Qwen3.5-0.8B-4bit",
+  "revision": "da28692b5f139cb0ec58a356b437486b7dac7462",
+  "cardSHA256": "5614ff1cdf39fd970ade36d9499d99024c089e7add90931e018b8cd8de6dd265",
+  "frontmatterBaseModel": "Qwen/Qwen3.5-0.8B-Base",
+  "bodySourceModelIDs": [
+    "Qwen/Qwen3.5-0.8B"
+  ],
+  "conflictingClaims": true,
+  "status": "read_public_pinned_card",
+  "conclusion": "Documentation labels conflict; subset tensor fingerprints and actual helper behavior are recorded independently, not resolved by README wording."
+}

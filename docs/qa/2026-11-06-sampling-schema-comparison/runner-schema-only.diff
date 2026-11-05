@@ -1,0 +1,66 @@
+--- prior-sampling/main.swift (type rename normalized)
++++ sampling-schema/main.swift
+@@ -36,13 +36,15 @@
+         guard args.count == 4, ["--prepare","--run"].contains(args[3]) else { throw CocoaError(.fileReadInvalidFileName) }
+         let output = URL(fileURLWithPath:args[2]), modelURL = URL(fileURLWithPath:args[1])
+         try FileManager.default.createDirectory(at:output,withIntermediateDirectories:true)
++        let schema = try SceneGenerationSchema.jsonSchema(currentScene:nil)
+         if args[3] == "--prepare" {
+-            try write(["system":ScenePrompt.system,"currentSpec":NSNull(),"jsonSchema":NSNull(),
++            try Data(schema.utf8).write(to:output.appending(path:"schema.json"),options:.atomic)
++            try write(["system":ScenePrompt.system,"currentSpec":NSNull(),"jsonSchemaSHA256":digest(Data(schema.utf8)),"jsonSchemaSource":"CreationCore.SceneGenerationSchema.jsonSchema(currentScene:nil)",
+                 "cases":cases.map{["id":$0.0,"prompt":$0.1,"request":try! ScenePrompt.userRequest($0.1,currentSpec:nil)]},
+                 "api":"QwenEngine.generateJSONDirect + exact production QwenJSONObject.validate",
+                 "stopAtCompleteJSON":true,"maxTokens":3072,"prefillStepSize":128,"sampling":sampling,"temperature":0.7,"thinking":false],
+                 to:output.appending(path:"fixed-prompts.json"))
+-            print("Prepared isolated sampling five-case requests; no model loaded or generated")
++            print("Prepared isolated sampling+full-schema five-case requests; no model loaded or generated")
+             return
+         }
+         guard FileManager.default.fileExists(atPath:output.appending(path:"provenance-before-generation.json").path) else { throw CocoaError(.fileNoSuchFile) }
+@@ -54,7 +56,7 @@
+         let loadSeconds=Date().timeIntervalSince(loadBegan)
+         var records:[[String:Any]]=[]
+         for (id,prompt) in cases {
+-            let record=await run(id:id,prompt:prompt,engine:engine,output:output)
++            let record=await run(id:id,prompt:prompt,engine:engine,output:output,schema:schema)
+             records.append(record)
+             try write(["status":"running","plannedCalls":5,"finishedCases":records],to:output.appending(path:"results.json"))
+         }
+@@ -62,7 +64,7 @@
+         try write(["status":"complete","plannedCalls":5,"actualCalls":records.filter{$0["modelInvocationStarted"] as? Bool == true}.count,"loadCount":1,
+             "loadSeconds":loadSeconds,"processSeconds":Date().timeIntervalSince(processStart),"host":"Mac; not iPhone evidence",
+             "api":"QwenEngine.generateJSONDirect + exact production QwenJSONObject.validate",
+-            "jsonSchema":NSNull(),"currentSpec":NSNull(),"earlyStop":true,"maxTokens":3072,"prefillStepSize":128,
++            "jsonSchemaSHA256":digest(Data(schema.utf8)),"jsonSchemaSource":"CreationCore.SceneGenerationSchema.jsonSchema(currentScene:nil)","currentSpec":NSNull(),"earlyStop":true,"maxTokens":3072,"prefillStepSize":128,
+             "temperature":0.7,"sampling":sampling,"thinking":false,"graphCompilation":false,"retries":0,"outputRepair":false,
+             "parameterFallback":false,"stagedAssembly":false,"visualReview":"pending; JSON and export counters are not quality acceptance",
+             "mlxPeakBytes":before.peakBytes,"mlxAfterUnload":["activeBytes":after.activeBytes,"cacheBytes":after.cacheBytes],
+@@ -70,9 +72,9 @@
+         print("Five-call batch finished; actual assets/rejections saved, visual review pending")
+     }
+ 
+-    @MainActor static func run(id:String,prompt:String,engine:QwenEngine,output:URL) async -> [String:Any] {
++    @MainActor static func run(id:String,prompt:String,engine:QwenEngine,output:URL,schema:String) async -> [String:Any] {
+         let folder=output.appending(path:id), began=Date(), deadline=began.addingTimeInterval(180), capture=CaseCapture()
+-        var record:[String:Any]=["id":id,"fixedPrompt":prompt,"attemptCount":1,"currentSpec":NSNull(),"jsonSchema":NSNull(),"sampling":sampling,
++        var record:[String:Any]=["id":id,"fixedPrompt":prompt,"attemptCount":1,"currentSpec":NSNull(),"jsonSchemaSHA256":digest(Data(schema.utf8)),"jsonSchemaSource":"CreationCore.SceneGenerationSchema.jsonSchema(currentScene:nil)","sampling":sampling,
+             "api":"QwenEngine.generateJSONDirect(stopAtCompleteJSON:true) + byte-identical production formal validation helper",
+             "modelInvocationStarted":false,"rawReturned":false,"formalObjectAccepted":false,"nativeSceneAccepted":false,"exported":false,"rendered":false,
+             "visualReview":"pending","retries":0,"outputRepair":false,"parameterFallback":false,"caseDeadlineSeconds":180]
+@@ -80,13 +82,13 @@
+         do {
+             try FileManager.default.createDirectory(at:folder,withIntermediateDirectories:true)
+             let request=try ScenePrompt.userRequest(prompt,currentSpec:nil)
+-            try write(["system":ScenePrompt.system,"user":request,"currentSpec":NSNull(),"jsonSchema":NSNull()],to:folder.appending(path:"request.json"))
++            try write(["system":ScenePrompt.system,"user":request,"currentSpec":NSNull(),"jsonSchemaSHA256":digest(Data(schema.utf8)),"jsonSchemaSource":"CreationCore.SceneGenerationSchema.jsonSchema(currentScene:nil)"],to:folder.appending(path:"request.json"))
+             try Data("One model invocation only.\n".utf8).write(to:folder.appending(path:"case-attempt-started.txt"),options:.withoutOverwriting)
+             stage="native_generation"
+             let generationBegan=Date()
+             record["modelInvocationStarted"]=true
+             let task=Task { try await engine.generateJSONDirect(systemPrompt:ScenePrompt.system,prompt:request,
+-                maxTokens:3072,prefillStepSize:128,jsonSchema:nil,stopAtCompleteJSON:true,
++                maxTokens:3072,prefillStepSize:128,jsonSchema:schema,stopAtCompleteJSON:true,
+                 onProgress:{capture.progress($0)},onCompletion:{capture.completion($0)}) }
+             let remaining=max(0,deadline.timeIntervalSinceNow)
+             let watchdog=Task { do { try await Task.sleep(for:.seconds(remaining));capture.timeout();task.cancel() } catch {} }

@@ -14,32 +14,48 @@
 		1B60E779EEBB540AE66D716C /* ProjectStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04C8B33AF3D96C0D4535C00 /* ProjectStoreTests.swift */; };
 		1FE359B0ED1674E9EF67DD9A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF45F9340525D2129B11DB5D /* StoreKit.framework */; };
 		211C5006D7CFB79182E6D414 /* MLX-Swift.txt in Resources */ = {isa = PBXBuildFile; fileRef = EFD1803395CA85AB24FAC799 /* MLX-Swift.txt */; };
+		24BF5563B1FDC863A31BD4F8 /* ImageSDXL.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CC0329B84603F17C4F5F969 /* ImageSDXL.json */; };
 		2746C44FB805A29ED90622F0 /* ProjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280D56379EA5205075F096F /* ProjectStore.swift */; };
 		2B795DDB1AB3B1C7719D4A67 /* ProjectThumbnailServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AAC929D64DEC63EBDEB54F /* ProjectThumbnailServiceTests.swift */; };
 		2B7B505AB4E87064276FD02D /* DLPack.txt in Resources */ = {isa = PBXBuildFile; fileRef = 201E3B61AC694BEFC803EA43 /* DLPack.txt */; };
 		2CBF57C9284B47815132E2A2 /* ModelViewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B69F79EBFC5147A7BF5DAF /* ModelViewport.swift */; };
 		2D41AA772C76BACC9E3F3392 /* OnDeviceInferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF508025F5FC777A4603B5 /* OnDeviceInferenceTests.swift */; };
 		350C9B2938283B0D820FBC51 /* ProjectThumbnailStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E3E1C2725FDB4B478CB0DB /* ProjectThumbnailStoreTests.swift */; };
+		3BE4B4701A62C2DAE8717CC8 /* NeuralModelCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E3D7A71C52E0E682A3487 /* NeuralModelCatalog.swift */; };
 		3FB858C1D08847D663B1537C /* ProjectLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34368402DAEA02742BB382C /* ProjectLibrary.swift */; };
+		47171915DD45B0540313A15E /* NeuralProjectValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889DF29060A43FC9531BF594 /* NeuralProjectValidation.swift */; };
+		4AEFFC2585D146AA4623BAAA /* ProjectContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904C2D0A9B188BEA0111A5A6 /* ProjectContent.swift */; };
+		4CF1B20E413B1D7AAA2D8EF8 /* NeuralModelLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07940B7E82FAEB28A3F4B0C1 /* NeuralModelLibrary.swift */; };
 		5067306AFCE364EAD77E0F66 /* Qwen-Model.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54CE96C85AFCA7B2690EF271 /* Qwen-Model.txt */; };
+		54489A6C0D10E0F478AA88CF /* ShapeHunyuan21.json in Resources */ = {isa = PBXBuildFile; fileRef = 23672F2F8A59ABA1F5082B65 /* ShapeHunyuan21.json */; };
 		594462793CB30CCC44DADE8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70B6E574C3FDD00A59F91E55 /* Assets.xcassets */; };
+		5B207B507713301F4153DAE1 /* WorkspaceDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1AA11060C63F3976587DE7 /* WorkspaceDraft.swift */; };
+		5B616543FD43C3D4338CA444 /* IntentQwen08.json in Resources */ = {isa = PBXBuildFile; fileRef = F219C87A8357666AA46CF84D /* IntentQwen08.json */; };
 		5C74AB977FB226D2FD8F1135 /* BackgroundAssets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B3F5ABD175835382C8AB6E /* BackgroundAssets.framework */; };
 		5E58539DF5B1BF2E88CA4DAA /* StudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D63FB8B9B5D0D5DC25D94 /* StudioModel.swift */; };
 		5F854FF5F1D21529FA212213 /* SceneParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D195F6009493FA872C580EA /* SceneParameters.swift */; };
 		60F343B870C49C73C31CBCF8 /* XGrammar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1955D6A60DD8510C3A25EE58 /* XGrammar.txt */; };
 		63D435164D2E16E30FF9F0ED /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087F76B9196AEABF7B73CAD6 /* Downloader.swift */; };
+		6471B149B9130ECD6873E481 /* PublicationPermit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD57ED2F970561A24D555F0 /* PublicationPermit.swift */; };
 		64DEB54A599505F19683FCD0 /* CreationJourneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01A6C0FE9282C7BEFC3EF2A /* CreationJourneyTests.swift */; };
+		656A035BEC45EA66D9C43C73 /* NeuralManagedImportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C33D655F3789DE141117537 /* NeuralManagedImportTests.swift */; };
 		65EEF26D5C36D93A91F3DE0B /* ModelLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4BBC0DC51B93B06AE03D6 /* ModelLibrary.swift */; };
+		730719E60645971640BC88DD /* WorkspaceDraftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73FC96D36544E8ED391D00B /* WorkspaceDraftTests.swift */; };
 		7307B3A56DF646399D609104 /* ProjectThumbnailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4203EAD386C2C9D72522CF0 /* ProjectThumbnailService.swift */; };
 		7A7CA8A9D0FABB865CE882A2 /* VerifiedModelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582011CB7CCE0BA1CAB7C70 /* VerifiedModelStore.swift */; };
+		7BA91410DC7D238B6643ADE8 /* VoxamberCreationNative in Frameworks */ = {isa = PBXBuildFile; productRef = F7708368FFF192F251EE2EE1 /* VoxamberCreationNative */; };
 		7C98C4BC2CB6CBCE3DF4DED6 /* AIContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE8C7197DFA072A45BE55A2 /* AIContextTests.swift */; };
 		7FAF09644149AB3C7ECB1E13 /* StudioCancellationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B56DE5197A148ECE286CEC /* StudioCancellationTests.swift */; };
 		81025439F11E499D01F19501 /* StudioStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68390729A630CD89992EA17 /* StudioStyle.swift */; };
+		8573C733BAEC41B8991F3499 /* NeuralManagedImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0B5C6A0A5C1A7D6312167B /* NeuralManagedImport.swift */; };
+		8A34C498BC47F5D4BABEAA16 /* NeuralAssetStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E82838875B5059A45166E /* NeuralAssetStoreTests.swift */; };
 		8C0C7091D4FE41D5DC749778 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 975B09C8D199A3944E174C24 /* PrivacyInfo.xcprivacy */; };
 		8C154C2B0E7B23AA39C1B829 /* MemoryPressureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54942D64E68D3C8B05A2B16F /* MemoryPressureTests.swift */; };
 		914CACA573F3E0A5E722B772 /* PicoJSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6EC515AFC8DB6C3CEA578FF3 /* PicoJSON.txt */; };
 		94E62342437321B659976D08 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C871680D9158E22213C02D9F /* ModelManager.swift */; };
 		9CBDDE11846CEEA50A6B2735 /* ExtensionFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C22B15D6A16DD63FF2DC91 /* ExtensionFoundation.framework */; };
+		A3562E178B1C3F4B828CB163 /* ProjectStoreV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FF5091270B0BF47D6722E7 /* ProjectStoreV2Tests.swift */; };
+		A380DE47D57FA892901DC8C9 /* NeuralModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC712F41FE2331EBA52F33 /* NeuralModelManager.swift */; };
 		A390520CABCACFD8DA094AE2 /* ThreeLiveNative in Frameworks */ = {isa = PBXBuildFile; productRef = 89274F890EAFAF9F9FE95136 /* ThreeLiveNative */; };
 		A437FC6A5A769E7879A90452 /* CreationCore in Frameworks */ = {isa = PBXBuildFile; productRef = F902F70628D1416BE2E9119D /* CreationCore */; };
 		A4C6B1067A39FCD9C5D0DAD0 /* QwenNative in Frameworks */ = {isa = PBXBuildFile; productRef = 9C74310C7B87863D0601DF9A /* QwenNative */; };
@@ -47,9 +63,11 @@
 		B13EE6CD109051E3229E21D6 /* Swift-Transformers.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDC64293A8C8A2D9F957F27B /* Swift-Transformers.txt */; };
 		B765183968903F1CB5CE5542 /* VoxamberModelDownloader.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 0EAD657921267AD8370227EE /* VoxamberModelDownloader.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CB4B92B1D96C5E2C6E84A460 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 415912223D05F8300A862C2F /* InfoPlist.strings */; };
+		CC8AE34ADBA051E6B33E4BED /* NeuralAppleHostedModelSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F9CE922BABB7730D08B10 /* NeuralAppleHostedModelSource.swift */; };
 		CE1927D0FECD6406261835DE /* ThreeLiveStudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D8F9C3D35EA6D90EB4F36B /* ThreeLiveStudioApp.swift */; };
 		CE4BED8D13AE522EFDBB6349 /* LanguageModel.json in Resources */ = {isa = PBXBuildFile; fileRef = 901D7D08CA2F20683A8A2FFB /* LanguageModel.json */; };
 		D7234CADC39EEFE68675A427 /* ModelViewportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF83FC98660B58DFE692E98 /* ModelViewportTests.swift */; };
+		E5ACF66F999518EAE76ECC67 /* NeuralProjectDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E13FD86B9D338927D458CF6 /* NeuralProjectDescriptor.swift */; };
 		F9F2C66F5F46F1B3E1E36B18 /* VerifiedModelStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A9A18EB6AE211BFC62B0F /* VerifiedModelStoreTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +110,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07940B7E82FAEB28A3F4B0C1 /* NeuralModelLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralModelLibrary.swift; sourceTree = "<group>"; };
 		087F76B9196AEABF7B73CAD6 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		0A4819A57BEA70E1C4985E4C /* DeviceAcceptanceProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAcceptanceProbe.swift; sourceTree = "<group>"; };
 		0D8AC5A8198F4814A9949AB8 /* MemoryPressurePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryPressurePolicy.swift; sourceTree = "<group>"; };
@@ -99,32 +118,45 @@
 		10C22B15D6A16DD63FF2DC91 /* ExtensionFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExtensionFoundation.framework; path = System/Library/Frameworks/ExtensionFoundation.framework; sourceTree = SDKROOT; };
 		16DCFEE2C9F656B7E5212DB7 /* CreationCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CreationCore; path = Packages/CreationCore; sourceTree = SOURCE_ROOT; };
 		1955D6A60DD8510C3A25EE58 /* XGrammar.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = XGrammar.txt; sourceTree = "<group>"; };
+		1C33D655F3789DE141117537 /* NeuralManagedImportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralManagedImportTests.swift; sourceTree = "<group>"; };
+		1E0B5C6A0A5C1A7D6312167B /* NeuralManagedImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralManagedImport.swift; sourceTree = "<group>"; };
 		201E3B61AC694BEFC803EA43 /* DLPack.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DLPack.txt; sourceTree = "<group>"; };
 		2280D56379EA5205075F096F /* ProjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStore.swift; sourceTree = "<group>"; };
+		23672F2F8A59ABA1F5082B65 /* ShapeHunyuan21.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ShapeHunyuan21.json; sourceTree = "<group>"; };
 		2446471427102B8E94EF51A2 /* ThreeLiveNative */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ThreeLiveNative; path = Packages/ThreeLiveNative; sourceTree = SOURCE_ROOT; };
 		27282FCC542B59EC0FE1FD8B /* AppleHostedModelSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleHostedModelSource.swift; sourceTree = "<group>"; };
 		2AF83FC98660B58DFE692E98 /* ModelViewportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewportTests.swift; sourceTree = "<group>"; };
 		39B56DE5197A148ECE286CEC /* StudioCancellationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioCancellationTests.swift; sourceTree = "<group>"; };
+		3B1AA11060C63F3976587DE7 /* WorkspaceDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceDraft.swift; sourceTree = "<group>"; };
 		3B930A8796D87852112F0CD7 /* ThreeLiveStudio.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ThreeLiveStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CC0329B84603F17C4F5F969 /* ImageSDXL.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ImageSDXL.json; sourceTree = "<group>"; };
 		424D60B49063FF2F7F5CB3CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		48EF508025F5FC777A4603B5 /* OnDeviceInferenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDeviceInferenceTests.swift; sourceTree = "<group>"; };
+		4CD57ED2F970561A24D555F0 /* PublicationPermit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationPermit.swift; sourceTree = "<group>"; };
 		4D195F6009493FA872C580EA /* SceneParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneParameters.swift; sourceTree = "<group>"; };
 		4D8D198FFAF4F324434D941E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		503BB8675A553EB2AA32D2B7 /* QwenNative */ = {isa = PBXFileReference; lastKnownFileType = folder; name = QwenNative; path = Packages/QwenNative; sourceTree = SOURCE_ROOT; };
+		535E82838875B5059A45166E /* NeuralAssetStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralAssetStoreTests.swift; sourceTree = "<group>"; };
 		54942D64E68D3C8B05A2B16F /* MemoryPressureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryPressureTests.swift; sourceTree = "<group>"; };
 		54CE96C85AFCA7B2690EF271 /* Qwen-Model.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Qwen-Model.txt"; sourceTree = "<group>"; };
 		557F2F9B24A98C6684073F84 /* ThreeLiveStudioTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ThreeLiveStudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55AAC929D64DEC63EBDEB54F /* ProjectThumbnailServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectThumbnailServiceTests.swift; sourceTree = "<group>"; };
 		6A97004E3096CE718ABE9059 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		6DF00D06E2AAD5FEC32BC075 /* VoxamberCreationNative */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VoxamberCreationNative; path = Packages/VoxamberCreationNative; sourceTree = SOURCE_ROOT; };
+		6E13FD86B9D338927D458CF6 /* NeuralProjectDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralProjectDescriptor.swift; sourceTree = "<group>"; };
 		6EC515AFC8DB6C3CEA578FF3 /* PicoJSON.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PicoJSON.txt; sourceTree = "<group>"; };
 		70B6E574C3FDD00A59F91E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		724E3D7A71C52E0E682A3487 /* NeuralModelCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralModelCatalog.swift; sourceTree = "<group>"; };
+		889DF29060A43FC9531BF594 /* NeuralProjectValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralProjectValidation.swift; sourceTree = "<group>"; };
 		8CE1E7CBBA34FB74E1C50541 /* CreationWorkspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationWorkspace.swift; sourceTree = "<group>"; };
 		901D7D08CA2F20683A8A2FFB /* LanguageModel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LanguageModel.json; sourceTree = "<group>"; };
+		904C2D0A9B188BEA0111A5A6 /* ProjectContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectContent.swift; sourceTree = "<group>"; };
 		975B09C8D199A3944E174C24 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		9F596AD3B0F0A9AF33029D37 /* ThreeLiveStudioUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ThreeLiveStudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63D63FB8B9B5D0D5DC25D94 /* StudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioModel.swift; sourceTree = "<group>"; };
 		A68390729A630CD89992EA17 /* StudioStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioStyle.swift; sourceTree = "<group>"; };
 		B1F4BBC0DC51B93B06AE03D6 /* ModelLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLibrary.swift; sourceTree = "<group>"; };
+		B1FF5091270B0BF47D6722E7 /* ProjectStoreV2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStoreV2Tests.swift; sourceTree = "<group>"; };
 		B32A9A18EB6AE211BFC62B0F /* VerifiedModelStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedModelStoreTests.swift; sourceTree = "<group>"; };
 		BDE8C7197DFA072A45BE55A2 /* AIContextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIContextTests.swift; sourceTree = "<group>"; };
 		C04C8B33AF3D96C0D4535C00 /* ProjectStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStoreTests.swift; sourceTree = "<group>"; };
@@ -132,16 +164,20 @@
 		C2E3E1C2725FDB4B478CB0DB /* ProjectThumbnailStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectThumbnailStoreTests.swift; sourceTree = "<group>"; };
 		C34368402DAEA02742BB382C /* ProjectLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectLibrary.swift; sourceTree = "<group>"; };
 		C582011CB7CCE0BA1CAB7C70 /* VerifiedModelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedModelStore.swift; sourceTree = "<group>"; };
+		C67F9CE922BABB7730D08B10 /* NeuralAppleHostedModelSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralAppleHostedModelSource.swift; sourceTree = "<group>"; };
 		C871680D9158E22213C02D9F /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		D01A6C0FE9282C7BEFC3EF2A /* CreationJourneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationJourneyTests.swift; sourceTree = "<group>"; };
 		D0B3F5ABD175835382C8AB6E /* BackgroundAssets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BackgroundAssets.framework; path = System/Library/Frameworks/BackgroundAssets.framework; sourceTree = SDKROOT; };
+		D73FC96D36544E8ED391D00B /* WorkspaceDraftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceDraftTests.swift; sourceTree = "<group>"; };
 		D8D8F9C3D35EA6D90EB4F36B /* ThreeLiveStudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeLiveStudioApp.swift; sourceTree = "<group>"; };
 		DCDAA8EC28B0663BE162BF87 /* MLX-Swift-LM.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MLX-Swift-LM.txt"; sourceTree = "<group>"; };
 		DDC64293A8C8A2D9F957F27B /* Swift-Transformers.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Swift-Transformers.txt"; sourceTree = "<group>"; };
 		E418C14C1F145540291DD947 /* Voxamber.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Voxamber.entitlements; sourceTree = "<group>"; };
 		E4203EAD386C2C9D72522CF0 /* ProjectThumbnailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectThumbnailService.swift; sourceTree = "<group>"; };
+		E4DC712F41FE2331EBA52F33 /* NeuralModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralModelManager.swift; sourceTree = "<group>"; };
 		EF45F9340525D2129B11DB5D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		EFD1803395CA85AB24FAC799 /* MLX-Swift.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MLX-Swift.txt"; sourceTree = "<group>"; };
+		F219C87A8357666AA46CF84D /* IntentQwen08.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IntentQwen08.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +198,7 @@
 				A437FC6A5A769E7879A90452 /* CreationCore in Frameworks */,
 				A4C6B1067A39FCD9C5D0DAD0 /* QwenNative in Frameworks */,
 				A390520CABCACFD8DA094AE2 /* ThreeLiveNative in Frameworks */,
+				7BA91410DC7D238B6643ADE8 /* VoxamberCreationNative in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +230,7 @@
 				16DCFEE2C9F656B7E5212DB7 /* CreationCore */,
 				503BB8675A553EB2AA32D2B7 /* QwenNative */,
 				2446471427102B8E94EF51A2 /* ThreeLiveNative */,
+				6DF00D06E2AAD5FEC32BC075 /* VoxamberCreationNative */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -203,6 +241,16 @@
 				0A4819A57BEA70E1C4985E4C /* DeviceAcceptanceProbe.swift */,
 			);
 			path = Diagnostics;
+			sourceTree = "<group>";
+		};
+		3463D9F69738FA58508C1278 /* NeuralModels */ = {
+			isa = PBXGroup;
+			children = (
+				3CC0329B84603F17C4F5F969 /* ImageSDXL.json */,
+				F219C87A8357666AA46CF84D /* IntentQwen08.json */,
+				23672F2F8A59ABA1F5082B65 /* ShapeHunyuan21.json */,
+			);
+			path = NeuralModels;
 			sourceTree = "<group>";
 		};
 		3B245035FA8C2844E5AE75AB /* Licenses */ = {
@@ -248,6 +296,7 @@
 				E418C14C1F145540291DD947 /* Voxamber.entitlements */,
 				415912223D05F8300A862C2F /* InfoPlist.strings */,
 				3B245035FA8C2844E5AE75AB /* Licenses */,
+				3463D9F69738FA58508C1278 /* NeuralModels */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -287,7 +336,12 @@
 		A77E792544021DB506BBD882 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				6E13FD86B9D338927D458CF6 /* NeuralProjectDescriptor.swift */,
+				889DF29060A43FC9531BF594 /* NeuralProjectValidation.swift */,
+				904C2D0A9B188BEA0111A5A6 /* ProjectContent.swift */,
 				2280D56379EA5205075F096F /* ProjectStore.swift */,
+				4CD57ED2F970561A24D555F0 /* PublicationPermit.swift */,
+				3B1AA11060C63F3976587DE7 /* WorkspaceDraft.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -321,6 +375,11 @@
 				27282FCC542B59EC0FE1FD8B /* AppleHostedModelSource.swift */,
 				B1F4BBC0DC51B93B06AE03D6 /* ModelLibrary.swift */,
 				C871680D9158E22213C02D9F /* ModelManager.swift */,
+				C67F9CE922BABB7730D08B10 /* NeuralAppleHostedModelSource.swift */,
+				1E0B5C6A0A5C1A7D6312167B /* NeuralManagedImport.swift */,
+				724E3D7A71C52E0E682A3487 /* NeuralModelCatalog.swift */,
+				07940B7E82FAEB28A3F4B0C1 /* NeuralModelLibrary.swift */,
+				E4DC712F41FE2331EBA52F33 /* NeuralModelManager.swift */,
 				C582011CB7CCE0BA1CAB7C70 /* VerifiedModelStore.swift */,
 			);
 			path = Models;
@@ -341,12 +400,16 @@
 				BDE8C7197DFA072A45BE55A2 /* AIContextTests.swift */,
 				54942D64E68D3C8B05A2B16F /* MemoryPressureTests.swift */,
 				2AF83FC98660B58DFE692E98 /* ModelViewportTests.swift */,
+				535E82838875B5059A45166E /* NeuralAssetStoreTests.swift */,
+				1C33D655F3789DE141117537 /* NeuralManagedImportTests.swift */,
 				48EF508025F5FC777A4603B5 /* OnDeviceInferenceTests.swift */,
 				C04C8B33AF3D96C0D4535C00 /* ProjectStoreTests.swift */,
+				B1FF5091270B0BF47D6722E7 /* ProjectStoreV2Tests.swift */,
 				55AAC929D64DEC63EBDEB54F /* ProjectThumbnailServiceTests.swift */,
 				C2E3E1C2725FDB4B478CB0DB /* ProjectThumbnailStoreTests.swift */,
 				39B56DE5197A148ECE286CEC /* StudioCancellationTests.swift */,
 				B32A9A18EB6AE211BFC62B0F /* VerifiedModelStoreTests.swift */,
+				D73FC96D36544E8ED391D00B /* WorkspaceDraftTests.swift */,
 			);
 			path = ThreeLiveStudioTests;
 			sourceTree = "<group>";
@@ -417,6 +480,7 @@
 				F902F70628D1416BE2E9119D /* CreationCore */,
 				9C74310C7B87863D0601DF9A /* QwenNative */,
 				89274F890EAFAF9F9FE95136 /* ThreeLiveNative */,
+				F7708368FFF192F251EE2EE1 /* VoxamberCreationNative */,
 			);
 			productName = ThreeLiveStudio;
 			productReference = 3B930A8796D87852112F0CD7 /* ThreeLiveStudio.app */;
@@ -482,6 +546,7 @@
 				845B85A6AF7B4B2BE751BC57 /* XCLocalSwiftPackageReference "Packages/CreationCore" */,
 				9059AE68BD9A716FA3922C43 /* XCLocalSwiftPackageReference "Packages/QwenNative" */,
 				F48D28FA0A70C5DAE285EC38 /* XCLocalSwiftPackageReference "Packages/ThreeLiveNative" */,
+				039D0D9183E967550B3DB2C0 /* XCLocalSwiftPackageReference "Packages/VoxamberCreationNative" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0A140EF6FFA7D6B6B1A5F387 /* Products */;
@@ -503,13 +568,16 @@
 			files = (
 				594462793CB30CCC44DADE8F /* Assets.xcassets in Resources */,
 				2B7B505AB4E87064276FD02D /* DLPack.txt in Resources */,
+				24BF5563B1FDC863A31BD4F8 /* ImageSDXL.json in Resources */,
 				CB4B92B1D96C5E2C6E84A460 /* InfoPlist.strings in Resources */,
+				5B616543FD43C3D4338CA444 /* IntentQwen08.json in Resources */,
 				CE4BED8D13AE522EFDBB6349 /* LanguageModel.json in Resources */,
 				06642796E9722D1435EB8A1C /* MLX-Swift-LM.txt in Resources */,
 				211C5006D7CFB79182E6D414 /* MLX-Swift.txt in Resources */,
 				914CACA573F3E0A5E722B772 /* PicoJSON.txt in Resources */,
 				8C0C7091D4FE41D5DC749778 /* PrivacyInfo.xcprivacy in Resources */,
 				5067306AFCE364EAD77E0F66 /* Qwen-Model.txt in Resources */,
+				54489A6C0D10E0F478AA88CF /* ShapeHunyuan21.json in Resources */,
 				B13EE6CD109051E3229E21D6 /* Swift-Transformers.txt in Resources */,
 				60F343B870C49C73C31CBCF8 /* XGrammar.txt in Resources */,
 			);
@@ -529,14 +597,24 @@
 				65EEF26D5C36D93A91F3DE0B /* ModelLibrary.swift in Sources */,
 				94E62342437321B659976D08 /* ModelManager.swift in Sources */,
 				2CBF57C9284B47815132E2A2 /* ModelViewport.swift in Sources */,
+				CC8AE34ADBA051E6B33E4BED /* NeuralAppleHostedModelSource.swift in Sources */,
+				8573C733BAEC41B8991F3499 /* NeuralManagedImport.swift in Sources */,
+				3BE4B4701A62C2DAE8717CC8 /* NeuralModelCatalog.swift in Sources */,
+				4CF1B20E413B1D7AAA2D8EF8 /* NeuralModelLibrary.swift in Sources */,
+				A380DE47D57FA892901DC8C9 /* NeuralModelManager.swift in Sources */,
+				E5ACF66F999518EAE76ECC67 /* NeuralProjectDescriptor.swift in Sources */,
+				47171915DD45B0540313A15E /* NeuralProjectValidation.swift in Sources */,
+				4AEFFC2585D146AA4623BAAA /* ProjectContent.swift in Sources */,
 				3FB858C1D08847D663B1537C /* ProjectLibrary.swift in Sources */,
 				2746C44FB805A29ED90622F0 /* ProjectStore.swift in Sources */,
 				7307B3A56DF646399D609104 /* ProjectThumbnailService.swift in Sources */,
+				6471B149B9130ECD6873E481 /* PublicationPermit.swift in Sources */,
 				5F854FF5F1D21529FA212213 /* SceneParameters.swift in Sources */,
 				5E58539DF5B1BF2E88CA4DAA /* StudioModel.swift in Sources */,
 				81025439F11E499D01F19501 /* StudioStyle.swift in Sources */,
 				CE1927D0FECD6406261835DE /* ThreeLiveStudioApp.swift in Sources */,
 				7A7CA8A9D0FABB865CE882A2 /* VerifiedModelStore.swift in Sources */,
+				5B207B507713301F4153DAE1 /* WorkspaceDraft.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,12 +633,16 @@
 				7C98C4BC2CB6CBCE3DF4DED6 /* AIContextTests.swift in Sources */,
 				8C154C2B0E7B23AA39C1B829 /* MemoryPressureTests.swift in Sources */,
 				D7234CADC39EEFE68675A427 /* ModelViewportTests.swift in Sources */,
+				8A34C498BC47F5D4BABEAA16 /* NeuralAssetStoreTests.swift in Sources */,
+				656A035BEC45EA66D9C43C73 /* NeuralManagedImportTests.swift in Sources */,
 				2D41AA772C76BACC9E3F3392 /* OnDeviceInferenceTests.swift in Sources */,
 				1B60E779EEBB540AE66D716C /* ProjectStoreTests.swift in Sources */,
+				A3562E178B1C3F4B828CB163 /* ProjectStoreV2Tests.swift in Sources */,
 				2B795DDB1AB3B1C7719D4A67 /* ProjectThumbnailServiceTests.swift in Sources */,
 				350C9B2938283B0D820FBC51 /* ProjectThumbnailStoreTests.swift in Sources */,
 				7FAF09644149AB3C7ECB1E13 /* StudioCancellationTests.swift in Sources */,
 				F9F2C66F5F46F1B3E1E36B18 /* VerifiedModelStoreTests.swift in Sources */,
+				730719E60645971640BC88DD /* WorkspaceDraftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,7 +756,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = M97RTV2PQG;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -808,7 +890,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = M97RTV2PQG;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -949,7 +1031,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = M97RTV2PQG;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -1065,6 +1147,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
+		039D0D9183E967550B3DB2C0 /* XCLocalSwiftPackageReference "Packages/VoxamberCreationNative" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/VoxamberCreationNative;
+		};
 		845B85A6AF7B4B2BE751BC57 /* XCLocalSwiftPackageReference "Packages/CreationCore" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Packages/CreationCore;
@@ -1087,6 +1173,10 @@
 		9C74310C7B87863D0601DF9A /* QwenNative */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = QwenNative;
+		};
+		F7708368FFF192F251EE2EE1 /* VoxamberCreationNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VoxamberCreationNative;
 		};
 		F902F70628D1416BE2E9119D /* CreationCore */ = {
 			isa = XCSwiftPackageProductDependency;

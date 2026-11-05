@@ -1,0 +1,223 @@
+{
+  "name": "蓝色流线小鲸鱼",
+  "nodes": [
+    {
+      "id": "body_main",
+      "primitive": "lathe",
+      "dimensions": {
+        "width": 0.6,
+        "height": 2.5,
+        "depth": 0.6
+      },
+      "color": "#1E90FF"
+    },
+    {
+      "id": "dorsal_fin",
+      "primitive": "extrusion",
+      "dimensions": {
+        "width": 0.4,
+        "height": 0.3,
+        "depth": 0.05
+      },
+      "color": "#1E90FF",
+      "profile": [
+        [0, 0],
+        [0.15, 0],
+        [0.2, 0.08],
+        [0.25, 0.15],
+        [0.2, 0.2],
+        [0.1, 0.15],
+        [0, 0]
+      ],
+      "rotation": {
+        "x": -90
+      }
+    },
+    {
+      "id": "tail_root",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.15,
+        "height": 0.2,
+        "depth": 0.15
+      },
+      "color": "#1E90FF"
+    },
+    {
+      "id": "tail_left",
+      "primitive": "mesh",
+      "dimensions": {
+        "width": 0.25,
+        "height": 0.2,
+        "depth": 0.12
+      },
+      "color": "#1E90FF",
+      "vertices": [
+        [-0.12, -0.1, 0],
+        [-0.12, 0.1, 0],
+        [0.12, 0.1, 0],
+        [0.12, -0.1, 0],
+        [-0.12, -0.1, -0.05],
+        [-0.12, 0.1, -0.05],
+        [0.12, 0.1, -0.05],
+        [0.12, -0.1, -0.05]
+      ],
+      "triangles": [
+        [0, 1, 2],
+        [0, 2, 3],
+        [0, 4, 5],
+        [0, 5, 6],
+        [1, 2, 7],
+        [3, 2, 7],
+        [4, 5, 7],
+        [6, 5, 7]
+      ]
+    },
+    {
+      "id": "tail_right",
+      "primitive": "mesh",
+      "dimensions": {
+        "width": 0.25,
+        "height": 0.2,
+        "depth": 0.12
+      },
+      "color": "#1E90FF",
+      "vertices": [
+        [-0.12, -0.1, 0.05],
+        [-0.12, 0.1, 0.05],
+        [0.12, 0.1, 0.05],
+        [0.12, -0.1, 0.05],
+        [-0.12, -0.1, -0.05],
+        [-0.12, 0.1, -0.05],
+        [0.12, 0.1, -0.05],
+        [0.12, -0.1, -0.05]
+      ],
+      "triangles": [
+        [0, 1, 2],
+        [0, 2, 3],
+        [0, 4, 5],
+        [0, 5, 6],
+        [1, 2, 7],
+        [3, 2, 7],
+        [4, 5, 7],
+        [6, 5, 7]
+      ]
+    },
+    {
+      "id": "eye_left",
+      "primitive": "sphere",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.06,
+        "depth": 0.06
+      },
+      "color": "#FFFFFF",
+      "attach": {
+        "parent": "body_main",
+        "face": "front",
+        "xOffset": -0.08,
+        "yOffset": 0.35,
+        "zOffset": 0.1
+      }
+    },
+    {
+      "id": "eye_right",
+      "primitive": "sphere",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.06,
+        "depth": 0.06
+      },
+      "color": "#FFFFFF",
+      "attach": {
+        "parent": "body_main",
+        "face": "front",
+        "xOffset": 0.08,
+        "yOffset": 0.35,
+        "zOffset": 0.1
+      }
+    },
+    {
+      "id": "pectoral_left",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.1,
+        "height": 0.1,
+        "depth": 0.2
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "body_main",
+        "face": "left",
+        "yOffset": -0.1,
+        "zOffset": 0.15
+      }
+    },
+    {
+      "id": "pectoral_right",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.1,
+        "height": 0.1,
+        "depth": 0.2
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "body_main",
+        "face": "right",
+        "yOffset": -0.1,
+        "zOffset": 0.15
+      }
+    },
+    {
+      "id": "pectoral_left_ext",
+      "primitive": "extrusion",
+      "dimensions": {
+        "width": 0.12,
+        "height": 0.08,
+        "depth": 0.04
+      },
+      "color": "#1E90FF",
+      "profile": [
+        [0, 0],
+        [0.06, 0],
+        [0.08, 0.05],
+        [0.06, 0.1],
+        [0.02, 0.05],
+        [0, 0]
+      ],
+      "attach": {
+        "parent": "pectoral_left",
+        "face": "top",
+        "xOffset": 0.02,
+        "yOffset": 0.02,
+        "zOffset": 0.02
+      }
+    },
+    {
+      "id": "pectoral_right_ext",
+      "primitive": "extrusion",
+      "dimensions": {
+        "width": 0.12,
+        "height": 0.08,
+        "depth": 0.04
+      },
+      "color": "#1E90FF",
+      "profile": [
+        [0, 0],
+        [0.06, 0],
+        [0.08, 0.05],
+        [0.06, 0.1],
+        [0.02, 0.05],
+        [0, 0]
+      ],
+      "attach": {
+        "parent": "pectoral_right",
+        "face": "bottom",
+        "xOffset": -0.02,
+        "yOffset": -0.02,
+        "zOffset": 0.02
+      }
+    }
+  ]
+}

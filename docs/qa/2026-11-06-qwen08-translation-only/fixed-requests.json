@@ -1,0 +1,25 @@
+{
+  "api" : "formal-equivalent same-call raw Direct + exact production QwenJSONObject + exact CreationIntentDecoder",
+  "cases" : [
+    {
+      "id" : "lamp",
+      "user" : "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地Y=0，整体高约0.8米。"
+    },
+    {
+      "id" : "spiral_shell_vase",
+      "user" : "一个螺旋贝壳造型的蓝色花瓶，瓶口带金色细边。"
+    },
+    {
+      "id" : "violin_and_bow",
+      "user" : "一把小提琴和一根琴弓，作为两个独立物体完整入镜。"
+    }
+  ],
+  "maxTokens" : 512,
+  "prefillStepSize" : 128,
+  "schema" : "{\"type\":\"object\",\"properties\":{\"positivePrompt\":{\"type\":\"string\",\"pattern\":\"^[ -~]{1,180}$\"}},\"required\":[\"positivePrompt\"],\"additionalProperties\":false}",
+  "schemaSHA256" : "fc9662e1df994bba609f747289a4bf945462216578472386fcecfd8d527781aa",
+  "system" : "Translate the user's visual idea into concise English. Preserve the subjects, counts, relationships, colors, materials and explicit exclusions. Do not replace objects, invent features, write geometry or explain.\nReturn only {\"positivePrompt\":\"English translation\"}. Use printable English ASCII, 1-180 characters. There are no other output fields.",
+  "systemSHA256" : "c6322597b8c0b41eef9da903f33f76d6c888a4af67ee1f265abae3351d568444",
+  "temperature" : 0,
+  "thinking" : false
+}

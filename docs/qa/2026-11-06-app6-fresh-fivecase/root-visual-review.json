@@ -1,0 +1,147 @@
+{
+  "reviewedAtUTC": "2026-11-05T17:51:21.662979+00:00",
+  "method": "Root viewed all four exact actual USDZ front and three-quarter PNGs with view_image, then checked canonical SceneSpec and generated mesh bounds; no repair, rerun or source changes.",
+  "protocol": "protocol-before-generation.md",
+  "scope": "Five fresh Mac cases matching App6 single-call configuration; not phone, production quality of arbitrary subjects, or previous three-stage protocol.",
+  "actualModelCalls": 5,
+  "nativeExports": 2,
+  "fullFixedRequestsAccepted": 1,
+  "imagesViewed": [
+    {
+      "path": "robot/front.png",
+      "sha256": "f8413de8b540270fc9afbc8389bb2024d12b54b5b5076c227265cce7a9fc667c"
+    },
+    {
+      "path": "robot/three-quarter.png",
+      "sha256": "fdfb4d32be41ac71a9d3859d47c2ef316d9bf4a7b93f5e040ca121b604f2c51f"
+    },
+    {
+      "path": "lamp/front.png",
+      "sha256": "04c15d70cf2bbdf7678bb7a45bc1f022c5fb9802f85010975d361d18f345869a"
+    },
+    {
+      "path": "lamp/three-quarter.png",
+      "sha256": "e44212cb38b3ab621e3a3b4ead6ee53e8a6498dc21110715e27d551bf7b7878d"
+    }
+  ],
+  "cases": [
+    {
+      "id": "robot",
+      "nativeSceneAccepted": true,
+      "exported": true,
+      "rendered": true,
+      "fullRequestAccepted": true,
+      "decision": "passes_predeclared_low_complexity_robot_request",
+      "evidence": {
+        "headPrimitive": "box",
+        "headDimensions": [
+          0.12,
+          0.12,
+          0.12
+        ],
+        "headLargestToSmallestDimensionRatio": 1.0,
+        "yellowEyeCenters": [
+          [
+            -0.045,
+            0.75399995,
+            0.072
+          ],
+          [
+            0.045,
+            0.75399995,
+            0.072
+          ]
+        ],
+        "yellowEyeDimensions": [
+          [
+            0.03,
+            0.03,
+            0.03
+          ],
+          [
+            0.03,
+            0.03,
+            0.03
+          ]
+        ],
+        "yellowEyeColors": [
+          "#FFD700",
+          "#FFD700"
+        ],
+        "eyeCenterSeparationX": 0.09,
+        "arms": 2,
+        "legs": 2,
+        "bodyColor": "#1E90FF",
+        "actualMinimumY": 0
+      },
+      "observations": [
+        "Both exact views show a recognizable blue toy humanoid, cubic head, two separated yellow spherical eyes and two distinct arms and grounded legs.",
+        "The extra gray box is at the pelvis, not a ground platform; the robot request did not prohibit this body part.",
+        "Arms are raised, body is elongated and the head is small. These are artistic limitations, not a new unrequested arm-pose rejection rule.",
+        "Lighting makes blue appear cyan in the Apple renders; canonical materials remain the requested blue."
+      ]
+    },
+    {
+      "id": "lamp",
+      "nativeSceneAccepted": true,
+      "exported": true,
+      "rendered": true,
+      "fullRequestAccepted": false,
+      "decision": "explicit_base_shape_and_height_fail",
+      "evidence": {
+        "actualBasePrimitive": "box",
+        "requestedBasePrimitive": "cylinder",
+        "actualHeightMetres": 1.093999981880188,
+        "requestedApproxHeightMetres": 0.8,
+        "allowedPredeclaredRangeMetres": [
+          0.72,
+          0.88
+        ],
+        "relativeHeightDeviationPercent": 36.7499977350235,
+        "actualMinimumY": 0
+      },
+      "observations": [
+        "Actual USDZ views show a square box base, directly contradicting the requested cylinder.",
+        "A red conical shade and thin cylindrical stem exist, but actual overall height is about1.094m, exceeding the predeclared tolerance.",
+        "Lighting alone is not used to reject the gray material."
+      ]
+    },
+    {
+      "id": "whale",
+      "nativeSceneAccepted": false,
+      "exported": false,
+      "rendered": false,
+      "fullRequestAccepted": false,
+      "decision": "formal_json_syntax_failure",
+      "observations": [
+        "Same-call raw is saved and contains an extra quote before the second body.profile pair.",
+        "No repaired object, hypothetical mesh or substitute image was produced."
+      ]
+    },
+    {
+      "id": "aircraft",
+      "nativeSceneAccepted": false,
+      "exported": false,
+      "rendered": false,
+      "fullRequestAccepted": false,
+      "decision": "output_limit_with_observed_runaway_profile",
+      "observations": [
+        "Same-call partial raw reaches3072tokens. Its still-open lathe profile already contains221complete pairs, above64; fuselage dimensions.height is4.5, above2.5.",
+        "These are observations in rejected partial text; the native generator was not run on a repaired version."
+      ]
+    },
+    {
+      "id": "chair",
+      "nativeSceneAccepted": false,
+      "exported": false,
+      "rendered": false,
+      "fullRequestAccepted": false,
+      "decision": "output_limit_with_observed_part_expansion",
+      "observations": [
+        "Same-call partial raw reaches3072tokens and contains44idfields, beyond the32part admission budget; final node dimensions.depth is unfinished.",
+        "44idfields in partial text are not reported as44successfully parsed nodes. No model was repaired or rendered."
+      ]
+    }
+  ],
+  "comparisonBoundary": "This batch has1/5full request acceptance and2/5native exports. Different prompts, protocols or sampled seeds must retain separate results. A single fixed robot success does not establish arbitrary-model quality."
+}

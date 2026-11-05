@@ -1,0 +1,42 @@
+{
+  "repository": "apple/coreml-stable-diffusion-xl-base-ios",
+  "revision": "ef92c54fe816c826f5328709b545338518d08db7",
+  "archiveURL": "https://huggingface.co/apple/coreml-stable-diffusion-xl-base-ios/resolve/ef92c54fe816c826f5328709b545338518d08db7/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled.zip",
+  "archiveBytes": 3052964832,
+  "publishedLFS_SHA256": "0e6b8d0ae7a1990f0cd31b5bbc8de600c096e54369add395ef21042832424faa",
+  "digestEvidence": "Public Hugging Face file metadata, not a local weight download/checksum verification.",
+  "compiledDirectoryBytes": 3052951670,
+  "componentsBytes": {
+    "TextEncoder.mlmodelc": 246336975,
+    "TextEncoder2.mlmodelc": 1389861630,
+    "UnetChunk1.mlmodelc": 660291922,
+    "UnetChunk2.mlmodelc": 655898015,
+    "VAEDecoder.mlmodelc": 99176143,
+    "merges.txt": 524657,
+    "vocab.json": 862328
+  },
+  "outputPixels": [
+    768,
+    768
+  ],
+  "tokenLength": 77,
+  "unetCompression": "4.04 average bits, mixed-bit palettization (not uniform INT4)",
+  "otherModelPrecision": "FP16",
+  "sourceVAE": "madebyollin/sdxl-vae-fp16-fix",
+  "licenses": {
+    "AppleSwiftSource": "MIT",
+    "SDXLModel": "CreativeML Open RAIL++-M",
+    "fp16FixModelCardDeclared": "MIT; preserve SDXL package weight-license terms and attribution."
+  },
+  "weightsDownloaded": false,
+  "RAMPeakEstablished": false,
+  "sourceParameterAccounting": {
+    "UNet": 2567463684,
+    "CLIPTextEncoder_ConfigDerived": 123060480,
+    "OpenCLIPTextEncoder_ConfigDerived": 694659840,
+    "fullVAE_IncludingUnusedEncoder": 83653863,
+    "conservativeFullSourceUpperBound": 3468837867,
+    "compiledPrunedParameterCountClaimed": false
+  },
+  "chainBudgetScope": "Any approximately 7.912B chain statement covers only three self-distributed foundation model weight groups. Apple Vision system foreground-model parameters are not known or included in that exact count."
+}

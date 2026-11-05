@@ -1,0 +1,95 @@
+{
+  "reviewedAtUTC": "2026-11-05T20:43:40.759176+00:00",
+  "method": "Read exact unmodified same-call raw against predeclared semantic criteria; no source/response edits, translation, retries or images.",
+  "schemaAndDecoderAccepted": 2,
+  "readableEnglishPositives": 3,
+  "positiveCoreSemanticAccepted": 1,
+  "fullHelperAccepted": 0,
+  "forcedNegativeEmptyNotCreditedAsModelAbility": true,
+  "explicitUserExclusionCasePresent": false,
+  "observedContractRows": [
+    {
+      "id": "lamp",
+      "title": "LED Desk Lamp",
+      "positiveCharacters": 241,
+      "positiveASCII": true,
+      "negativePresent": false,
+      "negativeEmpty": false,
+      "exactDecoderAccepted": false,
+      "grammarTerminated": false
+    },
+    {
+      "id": "spiral_shell_vase",
+      "title": "Blue Spiral Flowerpot",
+      "positiveCharacters": 82,
+      "positiveASCII": true,
+      "negativePresent": true,
+      "negativeEmpty": true,
+      "exactDecoderAccepted": true,
+      "grammarTerminated": true
+    },
+    {
+      "id": "violin_and_bow",
+      "title": "Violin and Bow",
+      "positiveCharacters": 73,
+      "positiveASCII": true,
+      "negativePresent": true,
+      "negativeEmpty": true,
+      "exactDecoderAccepted": true,
+      "grammarTerminated": true
+    }
+  ],
+  "cases": [
+    {
+      "id": "lamp",
+      "titleUsesUserChinese": false,
+      "titleObserved": "LED Desk Lamp",
+      "positiveSubjectPartsColors": {
+        "deskLamp": true,
+        "redConeShade": true,
+        "grayCylindricalBase": true,
+        "thinCylindricalStem": true,
+        "optionalSphereBulb": true
+      },
+      "heightRelationship": "Raw says the base rests on the floor at a height of0.8m, instead of clearly attaching0.8m to overall lamp height. Ambiguous/incorrect target relationship.",
+      "negativeRequiredFieldMissing": true,
+      "over180PositiveCharacters": true,
+      "decision": "FAIL: strict decoder rejects missing field and excessive length; Chinese-language title requirement and faithful height relation also not satisfied."
+    },
+    {
+      "id": "spiral_shell_vase",
+      "titleUsesUserChinese": false,
+      "titleObserved": "Blue Spiral Flowerpot",
+      "positiveSubjectPartsColors": {
+        "blue": true,
+        "oneVase": true,
+        "goldRimAtOpening": true,
+        "spiral": true,
+        "shellPreserved": false
+      },
+      "semanticSubstitution": "spiral shell form changed to spiral flower; no shell in the returned positive text.",
+      "negativeEmptyByContract": true,
+      "decision": "FAIL: decoded ASCII/empty-negative contract is not full fidelity; shell replaced by flower and title language wrong."
+    },
+    {
+      "id": "violin_and_bow",
+      "titleUsesUserChinese": false,
+      "titleObserved": "Violin and Bow",
+      "positiveSubjectPartsColors": {
+        "oneViolin": true,
+        "oneMusicalBowInViolinContext": true,
+        "twoDistinctObjects": true,
+        "fullyInFrame": true
+      },
+      "positiveSemanticDecision": "PASS for this requested two-object translation, without adding unrequested material/color criteria.",
+      "negativeEmptyByContract": true,
+      "decision": "Partial: core positive translation passed; full helper contract still fails user-language title requirement."
+    }
+  ],
+  "limits": [
+    "Three reused development fixtures, not independent held-out reliability.",
+    "No image, true shape, phone or final App quality acceptance.",
+    "No claim the model learned negative semantics from a forced const empty field.",
+    "No causal claim about quantization, Base origin, backend or all small models."
+  ]
+}

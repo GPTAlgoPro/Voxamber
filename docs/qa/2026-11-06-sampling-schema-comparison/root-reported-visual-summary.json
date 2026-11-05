@@ -1,0 +1,13 @@
+{
+  "source": "Parent Root coordination message, after Root reported individually viewing all8 actual PNGs; child did not substitute automated visual scoring",
+  "fullFixedRequestsAccepted": 0,
+  "actualModelCalls": 5,
+  "nativeExports": 4,
+  "findings": {
+    "robot": "Every canonical center [0,0.35,0]; large box occludes smaller parts",
+    "lamp": "Base is box; height0.944m outside0.72...0.88m",
+    "whale": "Vertical unshaped; eyes overlap; fins center",
+    "aircraft": "No artifact due native3.5m>2.5m dimension limit",
+    "chair": "Seat top0.483m within7.33% tolerance; front/back poles obstruct seat instead of normal rear backrest"
+  }
+}

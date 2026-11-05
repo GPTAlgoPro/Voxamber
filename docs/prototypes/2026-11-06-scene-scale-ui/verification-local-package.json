@@ -1,0 +1,322 @@
+{
+  "recordedAtUTC": "2026-11-05T18:03:28.536747+00:00",
+  "state": "self_contained_draft_verified_not_promoted",
+  "purpose": "Repair prototype local dependencies and preserve the unchanged frozen candidate as lightweight Git-saveable source.",
+  "scope": {
+    "productionAppChanged": false,
+    "productionCoreChanged": false,
+    "modelOrNeuralInferenceRun": false,
+    "physicalPhoneOperated": false,
+    "userAppLaunched": false,
+    "DuoSimulatorOperated": false,
+    "commitOrPublishPerformed": false
+  },
+  "dependencyRepair": {
+    "oldUIPath": "../../../Apple/.build/SceneScaleCoreCandidate",
+    "newUIPath": "SceneScaleCoreCandidate",
+    "projectYMLReferences": [
+      "SceneScaleCoreCandidate",
+      "SceneScaleUIPrototype"
+    ],
+    "corePackageCopiedFiles": 20,
+    "corePackageCopiedBytes": 162689,
+    "coreAlgorithmOrTestBytesChangedFromFrozenCandidate": false,
+    "UIControlOrEditorAlgorithmBytesChanged": false,
+    "provenance": "provenance/core-snapshot.json",
+    "provenanceSHA256": "e038460bfdbee82bad5167831a4797e8af6ea6d1501539eb8edbf6a7cc32d919"
+  },
+  "freshCheckoutSimulation": {
+    "method": "Export only Git-visible tracked/untracked eligible prototype files to a new independent directory, with no old build/cache/project directories. This is a source-export test, not a claim that this uncommitted draft was fetched from a remote Git clone.",
+    "exportedFiles": 37,
+    "sourceAndTestFiles": 30,
+    "newCoreScratchDirectory": true,
+    "newUIScratchDirectory": true,
+    "newIOSDerivedDataDirectory": true,
+    "localDependencyGraph": {
+      "name": "SceneScaleUIPrototype",
+      "dependencies": [
+        {
+          "name": "CreationCore",
+          "relativePath": "SceneScaleCoreCandidate",
+          "dependencies": []
+        }
+      ]
+    },
+    "allTestedSourceAndConfigStillMatchesExport": true,
+    "temporaryArtifactsRoot": "Apple/.build/SceneScaleUIRepro-20261105T175724Z"
+  },
+  "sourceAndTestSHA256": {
+    ".gitignore": "fc3b7ae5581426dcec2612e9b92fe7dbe9ba945d93e1b547306b71dd11d7bf1d",
+    "App/ScaleUIPrototypeApp.swift": "aa8d79ca7e361e4416ae5a32c1a9de9cf4336f0f964cec33575b04f09bd2d05e",
+    "Package.swift": "21d36e8f639025dc5f8c142759a2124bbe1bc7910ed2448610e957bcdd79a5ca",
+    "RenderingTests/ScaleUIRenderingTests.swift": "a38180c6e359df076e87f4b9e271069e8399d7c6e2d6c6b3cf51116df92677d3",
+    "SceneScaleCoreCandidate/Package.swift": "76483ca757b61255388105d2c914058e59606e7437f0dfd0230cb8faeecfd4c3",
+    "SceneScaleCoreCandidate/Sources/CreationCore/AttachmentResolver.swift": "3d156c1644fb84b6030728ba60ea3027592a7eca91e254daaf9bf91714e10f94",
+    "SceneScaleCoreCandidate/Sources/CreationCore/BuildingGenerator.swift": "8a72052f967164f71d289826a6647deb540bb845df3c9314463b5fe4dc7e5180",
+    "SceneScaleCoreCandidate/Sources/CreationCore/BuildingSpec.swift": "d6dcad6fb5cedcd3de441751692517ac5a08585d2cc8eca67f7b9991f6d021f9",
+    "SceneScaleCoreCandidate/Sources/CreationCore/FreeformGeometry.swift": "4826afc02bdfdbc156298a97121480bf1156c8f19a4577744267bc41c2ed7620",
+    "SceneScaleCoreCandidate/Sources/CreationCore/SceneGenerationSchema.swift": "27ee98c4b98c3b2c0bdd939a8f420224536fb34ec0b87f7fe061831dc4c004d5",
+    "SceneScaleCoreCandidate/Sources/CreationCore/SceneGenerator.swift": "f4eab65deda60d50780c9c9d6aa9855a50889f04f8a188ad6112032fb5fc6808",
+    "SceneScaleCoreCandidate/Sources/CreationCore/SceneLimits.swift": "28c3b45aa6380f9ec499c2c502948069223ab454557002788e991502fb98b882",
+    "SceneScaleCoreCandidate/Sources/CreationCore/ScenePlan.swift": "b2b31ccd0bce71dd6d0d3a6c30c15b713323b58314301a5030a7e324c45b3137",
+    "SceneScaleCoreCandidate/Sources/CreationCore/SceneSpec.swift": "2e182f3e3b3005ea7c931e21f6fdbf62ed5fc98381d30dd44ff9616055827c83",
+    "SceneScaleCoreCandidate/Sources/CreationCore/StrictJSONObject.swift": "27b46fcfc3c1e6bbad423103b2d568e7c3840b124e5e3848990bed5ff59dcf24",
+    "SceneScaleCoreCandidate/Sources/CreationCore/WorldMeshValidation.swift": "04e07fed9378e5b4bcc34e10ae3ac68a6672af3c4261d7328457e93c0d6dd2d3",
+    "SceneScaleCoreCandidate/Tests/CreationCoreTests/AttachmentResolverTests.swift": "6a81507bc9dfe7d6185fbef3a045e588729e1a977ae8c3467aa7cf72700b24fb",
+    "SceneScaleCoreCandidate/Tests/CreationCoreTests/CreationCoreTests.swift": "aa4d7157692f17db8d637931e367af06a675e16141cce8c3ac2a97bb3f352f26",
+    "SceneScaleCoreCandidate/Tests/CreationCoreTests/FreeformGeometryTests.swift": "48815518bfaee5439544cef328968f09dcb06f9f510db3e72c99acfc949cf013",
+    "SceneScaleCoreCandidate/Tests/CreationCoreTests/SceneCoreTests.swift": "641817baa65b99d3e5b1a2033ae7c48ff1fb0cd75bc2b0960220877a96271780",
+    "SceneScaleCoreCandidate/Tests/CreationCoreTests/SceneGenerationSchemaTests.swift": "a74bcc228040f63996211d7256a681b8546b52992e3739673810331c38bd05d7",
+    "SceneScaleCoreCandidate/Tests/CreationCoreTests/ScenePlanTests.swift": "301ec1781524364ea0b86561335e0162f976e16fc115808d7f5e8fbbea697f29",
+    "SceneScaleCoreCandidate/Tests/CreationCoreTests/SceneScaleTests.swift": "c3bec25dd2e9579c3c9b9c997eac8ebc045c6bcea6547ab267d8d1c90cc568f1",
+    "SceneScaleCoreCandidate/Tests/CreationCoreTests/StrictJSONObjectTests.swift": "9e067e272c550f89f1d32d434c6325ea2ded8faa0ac7e7b48548f9b8aa6339d8",
+    "Sources/SceneScaleUIPrototype/NumericAxisControl.swift": "dc2b521ba4197a877781e961b966dd654227d113e6447d1c6c4f693dce03d93f",
+    "Sources/SceneScaleUIPrototype/NumericAxisMath.swift": "472a830b8723e085f101f56735d127f17cfe44f742a55fae9d2ee7a990561b3c",
+    "Sources/SceneScaleUIPrototype/ScaleControlDemo.swift": "602a5ae74f62593726dbd5934527b3162dac96d5f7c19d3c639c0ca131bdb94a",
+    "Sources/SceneScaleUIPrototype/SceneParameters.swift": "bf5cb30b98ccd33d818c8d8c00b8c63c69a391edc3030ec3b19d122d499fd5e1",
+    "Tests/SceneScaleUIPrototypeTests/NumericAxisMathTests.swift": "302aa319846000651e6f34bdeeaf8ec47ac5a1b984091ac8ddeba8a25b088d50",
+    "project.yml": "a22c3b7ccc9a7e5515c3099d75cdebabb7a3cdec87f19f5fc8f61a9fe6a5dd9e"
+  },
+  "newTests": {
+    "swift": [
+      {
+        "label": "Core",
+        "command": [
+          "swift",
+          "test",
+          "--package-path",
+          "<export>/SceneScaleCoreCandidate",
+          "--scratch-path",
+          "<new build directory>",
+          "-c",
+          "debug"
+        ],
+        "startedAtUTC": "2026-11-05T17:57:43.986791+00:00",
+        "elapsedSeconds": 9.015,
+        "exitCode": 0,
+        "passed": 57,
+        "failed": 0,
+        "logSHA256": "8a9bbc3d68c787e1a4e46ec93f6866ea918800ad29367cba4414a10cd28ed566",
+        "buildSeconds": null,
+        "suiteSeconds": 0.429
+      },
+      {
+        "label": "NumericMath",
+        "command": [
+          "swift",
+          "test",
+          "--package-path",
+          "<export>",
+          "--scratch-path",
+          "<new build directory>",
+          "-c",
+          "debug"
+        ],
+        "startedAtUTC": "2026-11-05T17:57:53.001641+00:00",
+        "elapsedSeconds": 10.284,
+        "exitCode": 0,
+        "passed": 6,
+        "failed": 0,
+        "logSHA256": "4d836853c6a2e3853324b9ef7ed49f35172c7c4d57f70e88a82069d5b8232687",
+        "buildSeconds": null,
+        "suiteSeconds": 0.004
+      }
+    ],
+    "iOSUIKit": {
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "toolTotalSeconds": 25.823,
+      "result": "Passed",
+      "device": {
+        "model": "iPhone 17 Pro",
+        "runtime": "iOS 26.0",
+        "osBuild": "23A343",
+        "architecture": "arm64",
+        "platform": "iOS Simulator"
+      },
+      "windowPoints": [
+        390,
+        844
+      ],
+      "imagePixels": [
+        390,
+        844
+      ],
+      "locale": "en_US",
+      "dynamicType": [
+        "large",
+        "accessibility3"
+      ],
+      "testCases": [
+        {
+          "name": "testAppearanceDoesNotWriteOrClampAnExistingValue",
+          "passed": true,
+          "seconds": 0.547
+        },
+        {
+          "name": "testInvalidTypedDraftKeepsModelAndValidMillimetresCommitOnBlur",
+          "passed": true,
+          "seconds": 1.676
+        },
+        {
+          "name": "testRender390By844WithStandardAndAccessibilityText",
+          "passed": true,
+          "seconds": 1.244
+        }
+      ],
+      "xcresultIndependentReadback": {
+        "totalTestCount": 3,
+        "passedTests": 3,
+        "failedTests": 0,
+        "skippedTests": 0,
+        "runtimeWarnings": [],
+        "startedAtUTC": "2026-11-05T18:00:00.944000+00:00",
+        "finishedAtUTC": "2026-11-05T18:00:17.982000+00:00"
+      },
+      "xcresultArtifact": "~/Library/Developer/XcodeBuildMCP/workspaces/Three-Live-a778a850dbab/result-bundles/test_sim_2026-11-05T17-59-52-245Z_pid89126_19456648.xcresult",
+      "buildLogSHA256": "ad033a3d3f354eae965fb83bc84b3bf72ec12f11acd0243ce53435a7d8865faa",
+      "compileLogUsesExportedCore": true,
+      "compileLogUsesOldIgnoredCore": false,
+      "toolBuildWarnings": 0,
+      "toolBuildErrors": 0
+    }
+  },
+  "setupIssuesResolvedBeforeSuccessfulRun": [
+    {
+      "stage": "xcodegen_output_directory",
+      "detail": "First generation target parent did not exist; created the output directory. No source behavior changed."
+    },
+    {
+      "stage": "Xcode_local_package_resolution",
+      "detail": "First UIKit invocation ended before tests because a project generated away from project.yml resolved path . under that output directory. Regenerated the ignored project alongside project.yml and packages; final 3-test run passed.",
+      "failedAttemptSeconds": 4.12,
+      "testCasesExecuted": 0
+    }
+  ],
+  "proof": {
+    "historicalFourPNGSHA256Unchanged": {
+      "accessibility-position.png": "a1ca8ce27afc233acbb4c293291ffde533fe965fbc6477e35913145466d86bcd",
+      "accessibility.png": "48d84216963f68c7a82ebf3419bde887771220dfab9bdba1e27dfcf5bb3635d7",
+      "standard-position.png": "54385e10eddd6f6f25dde0956cb20344d1954b9782f81e3cbe332e56cca22f06",
+      "standard.png": "404883346595c1e5fb5002043844d1da6145194caf203e07637ae21360ce1cda"
+    },
+    "historicalVerificationSHA256Unchanged": "d8c633044af08be8c1c2984e5624d16b127b6085f9367ae01beef0bfa740c6af",
+    "newDirectory": "proof/2026-11-06-local-package",
+    "newPNGs": {
+      "standard.png": {
+        "sha256": "571cb863d39db66bca67c4f6fa19525baa8ddfaf67789e1077a6414c2a11830b",
+        "bytes": 175124,
+        "width": 390,
+        "height": 844,
+        "sourceModifiedAtUTC": "2026-11-05T18:00:16.837885+00:00"
+      },
+      "standard-position.png": {
+        "sha256": "05b1fb17888b652d0dc094dcdea87ef98f6f0e30e6a5ef39bb0b46c5a6ef12af",
+        "bytes": 161956,
+        "width": 390,
+        "height": 844,
+        "sourceModifiedAtUTC": "2026-11-05T18:00:17.052084+00:00"
+      },
+      "accessibility.png": {
+        "sha256": "c5df3e68b132f27b063580dc2049dad02499504e3872eca7a363b158d83619ea",
+        "bytes": 211392,
+        "width": 390,
+        "height": 844,
+        "sourceModifiedAtUTC": "2026-11-05T18:00:17.456988+00:00"
+      },
+      "accessibility-position.png": {
+        "sha256": "62d6399792ea71827be3f018e1a84482b1b1a9f963b9563a7551e65838822f97",
+        "bytes": 173920,
+        "width": 390,
+        "height": 844,
+        "sourceModifiedAtUTC": "2026-11-05T18:00:17.659885+00:00"
+      }
+    },
+    "newFourPNGsVisuallyInspected": true,
+    "ChineseAccepted": false,
+    "ChineseLimit": "Earlier iOS 26.0 Simulator lacked PingFangUI.ttc and displayed LastResort fallback squares. This run deliberately captures en_US only; no Chinese layout or real-phone acceptance claim."
+  },
+  "contractUnchanged": {
+    "dimensionMetres": [
+      0.001,
+      100
+    ],
+    "positionMetres": [
+      -1000,
+      1000
+    ],
+    "offsetMetres": [
+      -1000,
+      1000
+    ],
+    "rotationDegrees": [
+      -360,
+      360
+    ],
+    "materials": [
+      0,
+      1
+    ],
+    "maximumNodes": 32,
+    "maximumProfilePoints": 64,
+    "maximumMeshVertices": 1024,
+    "maximumMeshTriangles": 2048,
+    "maximumRenderedVertices": 20000,
+    "maximumRenderedIndices": 80000,
+    "wireFormatAndSchemaVersionChanged": false
+  },
+  "precisionScope": {
+    "rejectedFarSphereWitness": {
+      "dimensionMetres": 0.001,
+      "centerMetres": [
+        1000,
+        1000,
+        1000
+      ],
+      "collapsedTriangles": 64,
+      "triangles": 720
+    },
+    "nearOriginMillimetreSpherePasses": true,
+    "representableFarMillimetreBoxPasses": true,
+    "categoryOrNameBasedFiltering": false,
+    "outputClampingRepairRescalingOrFallback": false,
+    "validAreaDoesNotPromiseEngineeringMeasurementAccuracy": true
+  },
+  "toolchain": {
+    "Xcode": "27.2 (27B52)",
+    "Swift": "6.4.2 (swiftlang-6.4.2.1.9)",
+    "XcodeGen": "2.45.4",
+    "hostArchitecture": "Apple Silicon arm64",
+    "packageMinimumSwiftTools": "6.2 (UI), 6.0 (Core)"
+  },
+  "remainingIntegrationGaps": [
+    "Review/promote candidate SceneLimits/world-Float checks into production Core; source snapshot does not activate App behavior.",
+    "Port numeric controls and wire pending-invalid-input callback to both actual generation actions.",
+    "Validate stored existing scenes, save/reopen, SI GLB/USDZ, camera framing and AR using integrated App.",
+    "Verify Chinese, accessibility, actual phone performance/cancellation and precision limits separately.",
+    "Native model quality/offline/download/release states remain independent."
+  ],
+  "buildProductsWeightsGeneratedProjectsIncludedInSavedPrototype": false,
+  "rawLogsCommitted": false,
+  "independentReadOnlyReview": {
+    "reviewer": "product_audit teammate",
+    "scope": "Snapshot copying and unchanged scale/precision/resource contract; no build, model, or device actions by reviewer.",
+    "snapshotDocsAndOriginalCandidateThreeWaySHA256": {
+      "matched": 20,
+      "total": 20
+    },
+    "currentProductionOriginalSHA256": {
+      "matched": 17,
+      "total": 17
+    },
+    "contractAndUnifiedWorldMeshValidationEntryUnchanged": true,
+    "noNewIssueIdentifiedInSnapshotPersistence": true,
+    "doesNotEstablish": [
+      "App integration",
+      "Neural geometry quality",
+      "Chinese layout",
+      "Actual phone acceptance"
+    ]
+  }
+}

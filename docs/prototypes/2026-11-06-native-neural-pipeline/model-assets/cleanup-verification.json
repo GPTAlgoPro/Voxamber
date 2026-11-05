@@ -1,0 +1,48 @@
+{
+  "formatVersion": 1,
+  "recordedAt": "2026-11-05T21:38:00.016678+00:00",
+  "scope": "Corrective private-commit/managed-copy ownership fix only; no Apple API, inference or phone operation",
+  "finding": "Cancellation after successful private import previously skipped removeManagedCopy and could leave a redundant managed pack. New packs are still unavailable; this was a latent lifecycle defect, not an observed new-pack download incident.",
+  "behavior": "Successful import is followed unconditionally by a scoped, owned unstructured cleanup Task and awaited settlement. Only afterward is external cancellation checked. Private installed payload is never deleted. Cleanup failure remains explicit and retryable, even if the caller was cancelled.",
+  "sourceSHA256": {
+    "Apple/ThreeLiveStudio/Models/NeuralModelManager.swift": "490b9f6c1d5740c14dc89289018ee73cbbd81bd2b43fe8bc077d0e2708b208b4",
+    "Apple/ThreeLiveStudio/Models/NeuralManagedImport.swift": "310882981da0de70e38e9397245df576ae2d8c28c0b919539e750e60098b1aac",
+    "Apple/ThreeLiveStudioTests/NeuralManagedImportTests.swift": "076abe544c755a0291c931f891b084941b013466aa9e64848b4d2e42c85c228e"
+  },
+  "checks": {
+    "hostRelease": {
+      "combinedTests": 12,
+      "passed": 12,
+      "newScriptedCleanupTests": 4,
+      "failed": 0,
+      "tests": [
+        "cancel-after-private-commit still awaits un-cancelled cleanup, immutable private payload preserved",
+        "failed private import does not remove managed copy",
+        "cleanup failure remains explicit under external cancellation",
+        "successful private commit returns after exactly one cleanup"
+      ]
+    },
+    "macos26Swift6Typecheck": {
+      "passed": true,
+      "includesManager": true,
+      "actualCreationNativeModule": true,
+      "runtimeInitialized": false
+    },
+    "ios26arm64Swift6Typecheck": {
+      "passed": true,
+      "includesManager": false,
+      "includesSharedCleanupHelperAndNewLegacyAdapters": true
+    },
+    "independentReadOnlyReview": {
+      "reviewer": "product_audit",
+      "blockingFindings": 0,
+      "testsRunByReviewer": false
+    }
+  },
+  "limits": [
+    "Scripted closure/ownership fixtures use no Apple API or real managed pack; no cold Apple download is claimed.",
+    "Full App compilation and its two additional manager-specific tests remain owned by parent combined suite.",
+    "All three new pack availability flags remain false.",
+    "Initial verification.json remains an immutable receipt for the preceding source; this new receipt identifies the corrective revision."
+  ]
+}

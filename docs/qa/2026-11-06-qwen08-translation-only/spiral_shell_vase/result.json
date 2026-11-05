@@ -1,0 +1,33 @@
+{
+  "attempts" : 1,
+  "completion" : {
+    "generatedTokenCount" : 21,
+    "grammar" : {
+      "compiledSchemaSHA256" : "d538331f0e5b67799e9a69074520546f7d4a27ea32dc4519ff3349d7f5fc3448",
+      "floatBoundsRequireNativeValidation" : false,
+      "originalSchemaSHA256" : "fc9662e1df994bba609f747289a4bf945462216578472386fcecfd8d527781aa"
+    },
+    "grammarEnabled" : true,
+    "grammarTerminated" : true,
+    "inputTokenCount" : 102,
+    "reason" : "jsonComplete",
+    "tokenLimit" : 512
+  },
+  "firstTokenSeconds" : 0.63039912499999995,
+  "id" : "spiral_shell_vase",
+  "imagesOrGeometryGenerated" : false,
+  "intentAccepted" : true,
+  "maxTokens" : 512,
+  "prefillStepSize" : 128,
+  "rawReturned" : true,
+  "rawSHA256" : "59349e52748be8a144d92a15092ee3e9a682501af07cf32282c884892d2df122",
+  "rawUTF8Bytes" : 93,
+  "repair" : false,
+  "retry" : false,
+  "seconds" : 0.76727402210235596,
+  "semanticReview" : "pending manual synthetic-case review",
+  "status" : "decoded_for_semantic_review",
+  "temperature" : 0,
+  "thinking" : false,
+  "user" : "一个螺旋贝壳造型的蓝色花瓶，瓶口带金色细边。"
+}

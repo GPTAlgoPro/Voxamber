@@ -1,0 +1,96 @@
+{
+  "reviewedAtUTC": "2026-11-05T21:00:31.279374+00:00",
+  "method": "Read unmodified same-call raw and native-composed intent against the semantic rubric fixed before execution. No translation after generation, retries, string completion or source change.",
+  "nativeDecoderAccepted": 3,
+  "readableEnglishPositive": 3,
+  "completePositiveSemanticAccepted": 2,
+  "modelTitleOrNegativeAbilityMeasured": false,
+  "explicitExclusionHandlingDirectlyTested": false,
+  "observed": [
+    {
+      "id": "lamp",
+      "rawKeys": [
+        "positivePrompt"
+      ],
+      "positiveCharacters": 180,
+      "positiveASCII": true,
+      "decoderAccepted": true,
+      "grammarTerminated": true,
+      "nativeTitle": "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地",
+      "nativeNegativeEmpty": true,
+      "titleAndNegativeNotModelOutputs": true
+    },
+    {
+      "id": "spiral_shell_vase",
+      "rawKeys": [
+        "positivePrompt"
+      ],
+      "positiveCharacters": 72,
+      "positiveASCII": true,
+      "decoderAccepted": true,
+      "grammarTerminated": true,
+      "nativeTitle": "一个螺旋贝壳造型的蓝色花瓶，瓶口带金色细边。",
+      "nativeNegativeEmpty": true,
+      "titleAndNegativeNotModelOutputs": true
+    },
+    {
+      "id": "violin_and_bow",
+      "rawKeys": [
+        "positivePrompt"
+      ],
+      "positiveCharacters": 69,
+      "positiveASCII": true,
+      "decoderAccepted": true,
+      "grammarTerminated": true,
+      "nativeTitle": "一把小提琴和一根琴弓，作为两个独立物体完整入镜。",
+      "nativeNegativeEmpty": true,
+      "titleAndNegativeNotModelOutputs": true
+    }
+  ],
+  "cases": [
+    {
+      "id": "lamp",
+      "subjectPreserved": true,
+      "componentAndColorFidelity": {
+        "redConicalShade": true,
+        "grayCylindricalBase": true,
+        "thinCylindricalStem": true,
+        "optionalSphereBulbAllowed": true
+      },
+      "grounding": "Flat surface atY=0 is retained, although all resting wording is less specific than a grounded base.",
+      "overall08mPreserved": false,
+      "exactEnding": "with an overall lamp ",
+      "positiveCharacters": 180,
+      "decision": "FAIL complete translation: exact allowed character boundary reached with an unfinished clause; explicit overall0.8m quantity missing. This is not the512-token output limit and no text was appended."
+    },
+    {
+      "id": "spiral_shell_vase",
+      "subjectPreserved": true,
+      "componentAndColorFidelity": {
+        "oneBlueVase": true,
+        "spiralShellForm": true,
+        "goldenRimAtOpening": true
+      },
+      "decision": "PASS this positive semantic translation. Shell is no longer substituted by flower."
+    },
+    {
+      "id": "violin_and_bow",
+      "subjectPreserved": true,
+      "componentAndColorFidelity": {
+        "oneViolin": true,
+        "oneMusicalBowInViolinContext": true,
+        "twoDistinctObjects": true,
+        "fullyInFrame": true
+      },
+      "decision": "PASS this positive semantic translation; awkward pair wording does not change the one-violin/one-bow meaning. No unrequested color/material criterion added."
+    }
+  ],
+  "nativeComposition": "Title is native source first-line whitespace-normalized prefix40; negative is native empty. Neither receives LLM capability credit.",
+  "runtimeObservation": "No previous pattern-plus-maxLength warning appeared in this process. All three completions report jsonComplete/grammarTerminatedtrue; these are structural facts, not semantic acceptance.",
+  "limits": [
+    "Only three reused development fixtures, no reliability estimate.",
+    "No image/shape/phone/final App acceptance.",
+    "No causal quantization, checkpoint-origin or backend conclusion.",
+    "No further prompt tuning, token increase, alternative model or extra inference in this task."
+  ]
+}

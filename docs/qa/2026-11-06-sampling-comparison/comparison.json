@@ -1,0 +1,178 @@
+{
+  "scope": "One nonrandom sequential comparison of the whole official-derived native sampling bundle vs prior greedy, one seed; not presence-only or statistically reliable causation",
+  "control": {
+    "actualCalls": 5,
+    "formalObjects": 2,
+    "nativeScenesAndExports": 2,
+    "lengthStops": 2,
+    "totalConsumedTokens": 8781
+  },
+  "sampled": {
+    "actualCalls": 5,
+    "formalObjects": 5,
+    "nativeScenesAndExports": 1,
+    "lengthStops": 0,
+    "totalConsumedTokens": 8270
+  },
+  "caseRows": [
+    {
+      "id": "robot",
+      "control": {
+        "formalObjectAccepted": true,
+        "nativeSceneAccepted": true,
+        "exported": true,
+        "caseSeconds": 11.992597937583923,
+        "completion": {
+          "generatedTokenCount": 1154,
+          "grammarEnabled": false,
+          "grammarTerminated": false,
+          "inputTokenCount": 1061,
+          "reason": "jsonComplete",
+          "tokenLimit": 3072
+        }
+      },
+      "sampled": {
+        "formalObjectAccepted": true,
+        "nativeSceneAccepted": true,
+        "exported": true,
+        "caseSeconds": 26.068015098571777,
+        "completion": {
+          "generatedTokenCount": 2305,
+          "grammarEnabled": false,
+          "grammarTerminated": false,
+          "inputTokenCount": 1061,
+          "reason": "jsonComplete",
+          "tokenLimit": 3072
+        }
+      }
+    },
+    {
+      "id": "lamp",
+      "control": {
+        "formalObjectAccepted": true,
+        "nativeSceneAccepted": true,
+        "exported": true,
+        "caseSeconds": 3.4065200090408325,
+        "completion": {
+          "generatedTokenCount": 266,
+          "grammarEnabled": false,
+          "grammarTerminated": false,
+          "inputTokenCount": 1065,
+          "reason": "jsonComplete",
+          "tokenLimit": 3072
+        }
+      },
+      "sampled": {
+        "formalObjectAccepted": true,
+        "nativeSceneAccepted": false,
+        "exported": false,
+        "caseSeconds": 5.340659976005554,
+        "completion": {
+          "generatedTokenCount": 445,
+          "grammarEnabled": false,
+          "grammarTerminated": false,
+          "inputTokenCount": 1065,
+          "reason": "jsonComplete",
+          "tokenLimit": 3072
+        }
+      }
+    },
+    {
+      "id": "whale",
+      "control": {
+        "formalObjectAccepted": false,
+        "nativeSceneAccepted": false,
+        "exported": false,
+        "caseSeconds": 12.238128900527954,
+        "completion": {
+          "generatedTokenCount": 1217,
+          "grammarEnabled": false,
+          "grammarTerminated": false,
+          "inputTokenCount": 1074,
+          "reason": "stop",
+          "tokenLimit": 3072
+        }
+      },
+      "sampled": {
+        "formalObjectAccepted": true,
+        "nativeSceneAccepted": false,
+        "exported": false,
+        "caseSeconds": 20.414101004600525,
+        "completion": {
+          "generatedTokenCount": 1955,
+          "grammarEnabled": false,
+          "grammarTerminated": false,
+          "inputTokenCount": 1074,
+          "reason": "jsonComplete",
+          "tokenLimit": 3072
+        }
+      }
+    },
+    {
+      "id": "aircraft",
+      "control": {
+        "formalObjectAccepted": false,
+        "nativeSceneAccepted": false,
+        "exported": false,
+        "caseSeconds": 29.951560974121094,
+        "completion": {
+          "generatedTokenCount": 3072,
+          "grammarEnabled": false,
+          "grammarTerminated": false,
+          "inputTokenCount": 1070,
+          "reason": "outputLimit",
+          "tokenLimit": 3072
+        }
+      },
+      "sampled": {
+        "formalObjectAccepted": true,
+        "nativeSceneAccepted": false,
+        "exported": false,
+        "caseSeconds": 18.739229917526245,
+        "completion": {
+          "generatedTokenCount": 1780,
+          "grammarEnabled": false,
+          "grammarTerminated": false,
+          "inputTokenCount": 1070,
+          "reason": "jsonComplete",
+          "tokenLimit": 3072
+        }
+      }
+    },
+    {
+      "id": "chair",
+      "control": {
+        "formalObjectAccepted": false,
+        "nativeSceneAccepted": false,
+        "exported": false,
+        "caseSeconds": 30.270604968070984,
+        "completion": {
+          "generatedTokenCount": 3072,
+          "grammarEnabled": false,
+          "grammarTerminated": false,
+          "inputTokenCount": 1065,
+          "reason": "outputLimit",
+          "tokenLimit": 3072
+        }
+      },
+      "sampled": {
+        "formalObjectAccepted": true,
+        "nativeSceneAccepted": false,
+        "exported": false,
+        "caseSeconds": 18.998212099075317,
+        "completion": {
+          "generatedTokenCount": 1785,
+          "grammarEnabled": false,
+          "grammarTerminated": false,
+          "inputTokenCount": 1065,
+          "reason": "jsonComplete",
+          "tokenLimit": 3072
+        }
+      }
+    }
+  ],
+  "controlRootVisualAccepted": 1,
+  "sampledRootVisualReview": "pending",
+  "timingLimit": "An independent Simulator UIKit test may overlap start; timings/system warmth/memory are observational only, no sampling speed claim",
+  "promotion": "Not established; JSON completeness alone did not produce a higher native export count"
+}

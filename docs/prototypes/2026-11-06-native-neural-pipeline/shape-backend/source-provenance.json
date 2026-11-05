@@ -1,0 +1,206 @@
+{
+  "Snap3DCommit": "571867edfed0b2902976eb53a97c4671c08599fa",
+  "Snap3DBranch": "codex/supra-tex-mlx-evaluation (pre-existing dirty work retained; read-only access only)",
+  "upstreamSwiftPortCommit": "292331f4d26ddb80b9dcea6bcb5629ff82f12b82",
+  "originalMLXVersion": "0.31.4",
+  "newMLXVersion": "0.32.3",
+  "upstreamModelRevision": "0b94677654c57bb9a6b6845cd7b704ccf551d327",
+  "modelPack": {
+    "bytes": 2490378616,
+    "sha256": "69cd908e83bbf51200c63a2a163e2dfd34d2be0571c33b92f4a922489c564842"
+  },
+  "sources": [
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DMLX/DINOv2.swift",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/DINOv2.swift",
+      "sourceSHA256": "041d410c5c07e1f154c4ca0f9650f0a47e1452df87b5c595974a4f75f9995af9",
+      "vendoredInitialSHA256": "041d410c5c07e1f154c4ca0f9650f0a47e1452df87b5c595974a4f75f9995af9",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "041d410c5c07e1f154c4ca0f9650f0a47e1452df87b5c595974a4f75f9995af9"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DMLX/DiT.swift",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/DiT.swift",
+      "sourceSHA256": "d81076464f85a571f85e2bc69a7944f7fffd41415e6dd7e6cc6fdba67f8333f8",
+      "vendoredInitialSHA256": "d81076464f85a571f85e2bc69a7944f7fffd41415e6dd7e6cc6fdba67f8333f8",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "d81076464f85a571f85e2bc69a7944f7fffd41415e6dd7e6cc6fdba67f8333f8"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DMLX/DiTPlain.swift",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/DiTPlain.swift",
+      "sourceSHA256": "9a634d2eb36cf7f6981281b959f87e737fd7ee434befd917fb262d76e0fd3a43",
+      "vendoredInitialSHA256": "9a634d2eb36cf7f6981281b959f87e737fd7ee434befd917fb262d76e0fd3a43",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "9a634d2eb36cf7f6981281b959f87e737fd7ee434befd917fb262d76e0fd3a43"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DMLX/GLB.swift",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/GLB.swift",
+      "sourceSHA256": "04ce1ea686cbe87e9381d7a314167fa64c860ee16051ebd83cb63871a7402770",
+      "vendoredInitialSHA256": "04ce1ea686cbe87e9381d7a314167fa64c860ee16051ebd83cb63871a7402770",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "3e90e6987198f47f7bf4b41e1c07366b871b66348fd15c9e3b9efb150b94bfbb"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DMLX/Layers.swift",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Layers.swift",
+      "sourceSHA256": "947d09a19e49b04ea2710ecc0f132fe0143e184e0881cede8c77a493319c2a5d",
+      "vendoredInitialSHA256": "947d09a19e49b04ea2710ecc0f132fe0143e184e0881cede8c77a493319c2a5d",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "947d09a19e49b04ea2710ecc0f132fe0143e184e0881cede8c77a493319c2a5d"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DMLX/MCTables.swift",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/MCTables.swift",
+      "sourceSHA256": "73cf18dee2e30d5e8703db7792db6856d792345cee9bac349f9764ac70d9b0b9",
+      "vendoredInitialSHA256": "73cf18dee2e30d5e8703db7792db6856d792345cee9bac349f9764ac70d9b0b9",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "73cf18dee2e30d5e8703db7792db6856d792345cee9bac349f9764ac70d9b0b9"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DMLX/MarchingCubes.swift",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/MarchingCubes.swift",
+      "sourceSHA256": "f4d9e1fc138ed798ef2c740e6b4d00b94ab323a917196e1d8032c55735071b39",
+      "vendoredInitialSHA256": "f4d9e1fc138ed798ef2c740e6b4d00b94ab323a917196e1d8032c55735071b39",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "f4d9e1fc138ed798ef2c740e6b4d00b94ab323a917196e1d8032c55735071b39"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DMLX/Pipeline.swift",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Pipeline.swift",
+      "sourceSHA256": "3774aa0c216c870cf626d89eb6d8dec1398904732e5a8bafb127b7c134f1c7ba",
+      "vendoredInitialSHA256": "3774aa0c216c870cf626d89eb6d8dec1398904732e5a8bafb127b7c134f1c7ba",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "3774aa0c216c870cf626d89eb6d8dec1398904732e5a8bafb127b7c134f1c7ba"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DMLX/Preprocess.swift",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Preprocess.swift",
+      "sourceSHA256": "a97ce60087d1aafc70f47007a0f22e0d0fdb9481314a7a131e7c7787aa9b0568",
+      "vendoredInitialSHA256": "a97ce60087d1aafc70f47007a0f22e0d0fdb9481314a7a131e7c7787aa9b0568",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "a97ce60087d1aafc70f47007a0f22e0d0fdb9481314a7a131e7c7787aa9b0568"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DMLX/Sampler.swift",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Sampler.swift",
+      "sourceSHA256": "72e5272fd603a164718fc500462d2a3904dfd351c173683d46fa9e573f088ad2",
+      "vendoredInitialSHA256": "72e5272fd603a164718fc500462d2a3904dfd351c173683d46fa9e573f088ad2",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "72e5272fd603a164718fc500462d2a3904dfd351c173683d46fa9e573f088ad2"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DMLX/ShapeDenoiser.swift",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeDenoiser.swift",
+      "sourceSHA256": "c3629b746530f4fd2f200ceb5c08f761699aa7d6d8ab452a563ac247e662a73c",
+      "vendoredInitialSHA256": "c3629b746530f4fd2f200ceb5c08f761699aa7d6d8ab452a563ac247e662a73c",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "c3629b746530f4fd2f200ceb5c08f761699aa7d6d8ab452a563ac247e662a73c"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DMLX/ShapeExecutionStrategy.swift",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeExecutionStrategy.swift",
+      "sourceSHA256": "529364d722588ffc202a027c9b332147c17d5a36e249166875fc223cc2535c32",
+      "vendoredInitialSHA256": "529364d722588ffc202a027c9b332147c17d5a36e249166875fc223cc2535c32",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "529364d722588ffc202a027c9b332147c17d5a36e249166875fc223cc2535c32"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DMLX/ShapeGenerator.swift",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeGenerator.swift",
+      "sourceSHA256": "9a832ff0a8e98a7c349d30d87c1cd4885e454708f9d2953c3e6ea793357e46ed",
+      "vendoredInitialSHA256": "9a832ff0a8e98a7c349d30d87c1cd4885e454708f9d2953c3e6ea793357e46ed",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "97ee58db6beeb71db5537ae225bb3ae58d2d31cd6cbc04bcdc1dbac3f5ddab29"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DMLX/ShapePackLayout.swift",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapePackLayout.swift",
+      "sourceSHA256": "95b6d54ba50efaa3624a7b83098b4b007cdcc035b3a27931c791e61acd178c5e",
+      "vendoredInitialSHA256": "95b6d54ba50efaa3624a7b83098b4b007cdcc035b3a27931c791e61acd178c5e",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "95b6d54ba50efaa3624a7b83098b4b007cdcc035b3a27931c791e61acd178c5e"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DMLX/VAE.swift",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/VAE.swift",
+      "sourceSHA256": "df06b82b5c75f558dcadca8b317c21294973cbcf14d74fccaadbc1f49ef8e557",
+      "vendoredInitialSHA256": "df06b82b5c75f558dcadca8b317c21294973cbcf14d74fccaadbc1f49ef8e557",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "df06b82b5c75f558dcadca8b317c21294973cbcf14d74fccaadbc1f49ef8e557"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/Sources/Hy3DMLX/Version.swift",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Version.swift",
+      "sourceSHA256": "961a7675dde1ae6c859411dff3a8b86114cf87d0538cc0a085da07a34ac532ef",
+      "vendoredInitialSHA256": "961a7675dde1ae6c859411dff3a8b86114cf87d0538cc0a085da07a34ac532ef",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "961a7675dde1ae6c859411dff3a8b86114cf87d0538cc0a085da07a34ac532ef"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/LICENSE",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Hunyuan3D-Swift-MIT.txt",
+      "sourceSHA256": "e0485dc21868a42682cf1255af42d1bf038cf5e80608b2006b5c69d65d426d7f",
+      "vendoredInitialSHA256": "e0485dc21868a42682cf1255af42d1bf038cf5e80608b2006b5c69d65d426d7f",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "e0485dc21868a42682cf1255af42d1bf038cf5e80608b2006b5c69d65d426d7f"
+    },
+    {
+      "source": "Packages/Hunyuan3DMobile/THIRD_PARTY_LICENSES.md",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Hunyuan3D-Swift-ThirdParty.md",
+      "sourceSHA256": "abd4d61f1c0bf3dcfc6a399457f26254be74518dc53de8b69e2606e3a3a1d241",
+      "vendoredInitialSHA256": "abd4d61f1c0bf3dcfc6a399457f26254be74518dc53de8b69e2606e3a3a1d241",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "abd4d61f1c0bf3dcfc6a399457f26254be74518dc53de8b69e2606e3a3a1d241"
+    },
+    {
+      "source": "Resources/Tencent-Hunyuan-3D-2.1-License.txt",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Tencent-Hunyuan-3D-2.1-License.txt",
+      "sourceSHA256": "f60f9fdf0c40cdd3983123eb8181caac027a6f86d4ea3c827618e5e1e5adc6db",
+      "vendoredInitialSHA256": "f60f9fdf0c40cdd3983123eb8181caac027a6f86d4ea3c827618e5e1e5adc6db",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "f60f9fdf0c40cdd3983123eb8181caac027a6f86d4ea3c827618e5e1e5adc6db"
+    },
+    {
+      "source": "Resources/ThirdPartyNotices.txt",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Snap3D-ThirdPartyNotices.txt",
+      "sourceSHA256": "679ddc10a7dbe0c3170c55dfd00dd2c6b40bab320c7927c6fe6ea22754023b8c",
+      "vendoredInitialSHA256": "679ddc10a7dbe0c3170c55dfd00dd2c6b40bab320c7927c6fe6ea22754023b8c",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "679ddc10a7dbe0c3170c55dfd00dd2c6b40bab320c7927c6fe6ea22754023b8c"
+    },
+    {
+      "source": "Resources/ModelConfigs/hunyuan3d-shape-2-1-q4-config.yaml",
+      "destination": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/hunyuan-shape-2.1.yaml",
+      "sourceSHA256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e",
+      "vendoredInitialSHA256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e",
+      "sourceStillUnchanged": true,
+      "sourceMatchesPinnedCommit": true,
+      "currentVendoredSHA256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e"
+    }
+  ],
+  "weightsCopiedOrDownloaded": false,
+  "SnapProjectStartedOrModified": false,
+  "compilationIsNotWeightParity": true
+}

@@ -15,13 +15,15 @@ packages:
     path: Packages/QwenNative
   ThreeLiveNative:
     path: Packages/ThreeLiveNative
+  VoxamberCreationNative:
+    path: Packages/VoxamberCreationNative
 settings:
   base:
     SWIFT_VERSION: "6.0"
     DEVELOPMENT_TEAM: M97RTV2PQG
     CODE_SIGN_STYLE: Automatic
     MARKETING_VERSION: "0.1.0"
-    CURRENT_PROJECT_VERSION: "6"
+    CURRENT_PROJECT_VERSION: "7"
 schemes:
   Voxamber-DeviceQA:
     build:
@@ -54,6 +56,7 @@ targets:
       - package: CreationCore
       - package: QwenNative
       - package: ThreeLiveNative
+      - package: VoxamberCreationNative
       - target: VoxamberModelDownloader
         embed: true
     scheme:

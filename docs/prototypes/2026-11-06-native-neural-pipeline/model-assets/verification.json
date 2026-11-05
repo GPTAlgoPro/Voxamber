@@ -1,0 +1,97 @@
+{
+  "formatVersion": 1,
+  "recordedAt": "2026-11-05T20:53:20.298196+00:00",
+  "scope": "file resource preparation only; no neural inference, phone or Apple managed-pack transfer",
+  "sources": [
+    {
+      "path": "Apple/ThreeLiveStudio/Models/NeuralModelCatalog.swift",
+      "sha256": "a18007d4aa2e919e003dce75ee4d6dbded20e1cc2ff77434d159628c87d9f6aa"
+    },
+    {
+      "path": "Apple/ThreeLiveStudio/Models/NeuralModelManager.swift",
+      "sha256": "7152b717e8de00ebf0542302eba4a918914257b05c3ac5cf7bed53c0c9536784"
+    },
+    {
+      "path": "Apple/ThreeLiveStudio/Models/NeuralAppleHostedModelSource.swift",
+      "sha256": "5571d7119b988f81fe1df080729642846c6019ed616d22c23f7638c7cc67e5ed"
+    },
+    {
+      "path": "Apple/ThreeLiveStudioTests/NeuralAssetStoreTests.swift",
+      "sha256": "366322ed64d54e8e950fe63f4109dcd38bfc3cec1b4d3136781a8136d9be14ba"
+    },
+    {
+      "path": "Apple/ThreeLiveStudio/Resources/NeuralModels/ImageSDXL.json",
+      "sha256": "c368d2ae9183096d986c921dec162f2f493759bbfbb9ce29e1d3fc24946d75a0"
+    },
+    {
+      "path": "Apple/ThreeLiveStudio/Resources/NeuralModels/IntentQwen08.json",
+      "sha256": "53ee064ef37769876fc5c0bfd71d5c29f365562cf421c2425a4124d49b82aa09"
+    },
+    {
+      "path": "Apple/ThreeLiveStudio/Resources/NeuralModels/ShapeHunyuan21.json",
+      "sha256": "8daa90ba56984241b507e69899d3201f54aa9cb7217963c6752196b82302d9bc"
+    }
+  ],
+  "checks": {
+    "hostRelease": {
+      "tests": 8,
+      "passed": 8,
+      "syntheticFixtureOnly": true,
+      "actualCatalogRead": true
+    },
+    "ios26arm64Swift6Typecheck": {
+      "passed": true,
+      "files": [
+        "VerifiedModelStore.swift",
+        "NeuralModelCatalog.swift",
+        "AppleHostedModelSource.swift",
+        "NeuralAppleHostedModelSource.swift"
+      ],
+      "includesManager": false
+    },
+    "macos26Swift6Typecheck": {
+      "passed": true,
+      "actualCreationNativeModule": true,
+      "includesManager": true,
+      "runtimeInitialized": false
+    },
+    "additionalAppUnitTests": {
+      "count": 2,
+      "status": "not yet run; parent combined suite owns build"
+    }
+  },
+  "catalogs": [
+    {
+      "path": "Apple/ThreeLiveStudio/Resources/NeuralModels/ImageSDXL.json",
+      "group": "image",
+      "files": 27,
+      "byteCount": 3052951670,
+      "applePackID": "Voxamber-SDXL-CoreML",
+      "appleDownloadAvailable": false
+    },
+    {
+      "path": "Apple/ThreeLiveStudio/Resources/NeuralModels/IntentQwen08.json",
+      "group": "intent",
+      "files": 10,
+      "byteCount": 645315928,
+      "applePackID": "Voxamber-Qwen35-08B-INT4",
+      "appleDownloadAvailable": false
+    },
+    {
+      "path": "Apple/ThreeLiveStudio/Resources/NeuralModels/ShapeHunyuan21.json",
+      "group": "shape",
+      "files": 2,
+      "byteCount": 2490380694,
+      "applePackID": "Voxamber-Hunyuan21-Shape-Q4",
+      "appleDownloadAvailable": false
+    }
+  ],
+  "limits": [
+    "All new Apple packs are unpublished/available=false. No Apple or HTTP transfer executed.",
+    "No actual import of the multi-GB neural resources and no all-three actual ready state claimed.",
+    "Qwen0.8 exact quantized identity does not resolve its model-card Base/non-Base conflict.",
+    "Shape Q4 expected identity retained; reconstruction not yet verified.",
+    "No model loading, GPU inference, device peak-memory, cancellation-latency, or generated quality claims.",
+    "Existing downloader extension still whitelists legacy 4B only; future new-pack publication requires explicit new-ID extension policy plus upload and bundled availability update."
+  ]
+}
