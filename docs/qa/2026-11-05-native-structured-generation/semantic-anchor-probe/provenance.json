@@ -1,0 +1,263 @@
+{
+  "recordedBeforeInferenceUTC": "2026-11-05T13:22:22.605349+00:00",
+  "modelID": "qwen3.5-4b-mlx-int4",
+  "modelFiles": [
+    {
+      "path": "chat_template.jinja",
+      "bytes": 7756,
+      "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "config.json",
+      "bytes": 3366,
+      "sha256": "f3efc81b2ea8d96a45301037d3ccccbcccdef44a961845c87f286aaddbc6eaaa",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "model.safetensors",
+      "bytes": 3034300695,
+      "sha256": "5fb9acd0246866381cf8c5c354c6db1019f6498eec4ccb4f5edcc71ffeacb2db",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "bytes": 101944,
+      "sha256": "52e534c41f7b97708329c85f762e5882bf48bd5955a422c6ae74eba321e6048a",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "preprocessor_config.json",
+      "bytes": 390,
+      "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "processor_config.json",
+      "bytes": 1300,
+      "sha256": "14932921ca485d458a04dafd8069fbb0a4505622a48208d19ed247115801385b",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "tokenizer.json",
+      "bytes": 19989343,
+      "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "tokenizer_config.json",
+      "bytes": 1139,
+      "sha256": "e98f1901ac6f0adff67b1d540bfa0c36ac1a0cf59eb72ed78146ef89aafa1182",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "video_preprocessor_config.json",
+      "bytes": 385,
+      "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+      "matchesPinnedManifest": true
+    },
+    {
+      "path": "vocab.json",
+      "bytes": 6722759,
+      "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003",
+      "matchesPinnedManifest": true
+    }
+  ],
+  "modelBytes": 3061129077,
+  "nativeDependencies": [
+    {
+      "identity": "eventsource",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/mattt/EventSource.git",
+      "state": {
+        "revision": "bb4b61273b5a976bb571859c17f903ebc3439df1",
+        "version": "1.6.0"
+      }
+    },
+    {
+      "identity": "mlx-swift",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/ml-explore/mlx-swift",
+      "state": {
+        "revision": "19601207e9a0de51e03ee6ec0c3c5f3784275075",
+        "version": "0.32.3"
+      }
+    },
+    {
+      "identity": "mlx-swift-lm",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/ml-explore/mlx-swift-lm",
+      "state": {
+        "revision": "3b339ad6e3b3f44c8121ecff5131c7fd55e075e6",
+        "version": "3.32.3"
+      }
+    },
+    {
+      "identity": "swift-asn1",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/apple/swift-asn1.git",
+      "state": {
+        "revision": "917b472dbe53ba699cbb0495f9a95a084bc6364d",
+        "version": "1.7.4"
+      }
+    },
+    {
+      "identity": "swift-collections",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/apple/swift-collections.git",
+      "state": {
+        "revision": "f96b909e1a9e469620bc5037c1e24e00153f376f",
+        "version": "1.7.5"
+      }
+    },
+    {
+      "identity": "swift-crypto",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/apple/swift-crypto.git",
+      "state": {
+        "revision": "da9d28d69ebe3894b18376c8f2395c2f37b8448f",
+        "version": "4.5.2"
+      }
+    },
+    {
+      "identity": "swift-huggingface",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/huggingface/swift-huggingface.git",
+      "state": {
+        "revision": "f0a0cb43cb1b402d2bbf6fb10d8981328c449c48",
+        "version": "0.13.0"
+      }
+    },
+    {
+      "identity": "swift-jinja",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/huggingface/swift-jinja.git",
+      "state": {
+        "revision": "1e4d0dc69f7ec1277131fb3853808229c5991825",
+        "version": "2.5.2"
+      }
+    },
+    {
+      "identity": "swift-numerics",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/apple/swift-numerics",
+      "state": {
+        "revision": "0c0290ff6b24942dadb83a929ffaaa1481df04a2",
+        "version": "1.1.1"
+      }
+    },
+    {
+      "identity": "swift-syntax",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/swiftlang/swift-syntax.git",
+      "state": {
+        "revision": "79e4b74a295b6eb74a8b585e3a39d29e70c1dbd1",
+        "version": "603.0.2"
+      }
+    },
+    {
+      "identity": "swift-transformers",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/huggingface/swift-transformers",
+      "state": {
+        "revision": "b38443e44d93eca770f2eb68e2a4d0fa100f9aa2",
+        "version": "1.3.0"
+      }
+    },
+    {
+      "identity": "yyjson",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/ibireme/yyjson.git",
+      "state": {
+        "revision": "8b4a38dc994a110abaec8a400615567bd996105f",
+        "version": "0.12.0"
+      }
+    }
+  ],
+  "sourceSHA256": {
+    "Apple/Packages/QwenNative/Package.swift": "ff2e120cdf828d7031db77207770caf3ac2933d4e62297d0b67cf0c94315caef",
+    "Apple/Packages/QwenNative/Package.resolved": "f786e22cb3052d8b2089ba0302de4c894708a5b44ebe30ec6a6592c1b1a5f6af",
+    "Apple/ThreeLiveStudio/Resources/LanguageModel.json": "be9d82a513eaeb8381a3be1967f8f7d25931db8aa7b3ca9f21aa2881d7fd4604",
+    "Apple/Packages/QwenNative/Sources/QwenNative/LocalTokenizer.swift": "82988617a11bed0234181f904e214c2bdc0fc29c995b0b233f78ddf00ccc7937",
+    "Apple/Packages/QwenNative/Sources/QwenNative/NativeJSONGrammar.swift": "7dbc4cf98e9c6d414cc3d9e6230c20955997efb682b11c8476173bd74eeeb016",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift": "9323d1ab24c58e1e8a40d22a6f65f3686fe00e7fcea7361405f3beef76bbe595",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenGenerationCompletion.swift": "c27c479d13c2de07ba1e5920947bd0f9cff7c7354ec6ae73aa5ea552fc722fba",
+    "Apple/Packages/CreationCore/Sources/CreationCore/AttachmentResolver.swift": "3d156c1644fb84b6030728ba60ea3027592a7eca91e254daaf9bf91714e10f94",
+    "Apple/Packages/CreationCore/Sources/CreationCore/BuildingGenerator.swift": "8a72052f967164f71d289826a6647deb540bb845df3c9314463b5fe4dc7e5180",
+    "Apple/Packages/CreationCore/Sources/CreationCore/BuildingSpec.swift": "d6dcad6fb5cedcd3de441751692517ac5a08585d2cc8eca67f7b9991f6d021f9",
+    "Apple/Packages/CreationCore/Sources/CreationCore/FreeformGeometry.swift": "aabb0be5dd83d1e248ee2bf8f9899d6200b3659bc5474c8b8b15984c018f0206",
+    "Apple/Packages/CreationCore/Sources/CreationCore/SceneGenerationSchema.swift": "c7207a9c83a345370c80a51e0d608be3c1ebdfc58ee195de339bab744cc26d52",
+    "Apple/Packages/CreationCore/Sources/CreationCore/SceneGenerator.swift": "1798cd672b99fad741e1c2325f0176a20a912e1e9e1549eb00a848e874516f19",
+    "Apple/Packages/CreationCore/Sources/CreationCore/ScenePlan.swift": "b2b31ccd0bce71dd6d0d3a6c30c15b713323b58314301a5030a7e324c45b3137",
+    "Apple/Packages/CreationCore/Sources/CreationCore/SceneSpec.swift": "3163e0b570843aead62b72df949721f26529cb19691c2fa96b39785a41a81ca4",
+    "Apple/Packages/CreationCore/Sources/CreationCore/StrictJSONObject.swift": "27b46fcfc3c1e6bbad423103b2d568e7c3840b124e5e3848990bed5ff59dcf24",
+    "Apple/Packages/ThreeLiveNative/Sources/ThreeLiveNative/ThreeLiveNative.swift": "1b9e3efc4471f8c5bbc2a3bb0332ab54595b3273fc18d4e645a48f56ede5f6c1",
+    "Apple/.build/semantic-anchor-runner/Sources/ProductionQuality/AnchorProbe.swift": "fdd39db2ee3f536fb8263b456d3325d644c40f9c684ec657f4f7313228b233af",
+    "Apple/.build/semantic-anchor-runner/Sources/ProductionQuality/AnchorProtocol.swift": "e641b7499e8a91c02aa61e4b41e57c8219f4d123e8e94bea9248b454e02a5575",
+    "Apple/.build/semantic-anchor-runner/Sources/ProductionQuality/ModelPreview.swift": "41833cedafddfc579a0c30522934ac9faae629289e2b3aa6de8394b588148048",
+    "Apple/.build/semantic-anchor-runner/Sources/ProductionQuality/OutlineProbe.swift": "375c4f819cfae9a7010614b2eae6b73fcc33f0dce3597aab73596d5b304f6588",
+    "Apple/.build/semantic-anchor-runner/Sources/ProductionQuality/RejectionDiagnostics.swift": "613112e8fcccca3b8459e82f80927d7b0226a316a5878dc75cddc0b1dff64f0b",
+    "Apple/.build/semantic-anchor-runner/Sources/ProductionQuality/SemanticAnchorProbe.swift": "97beef6b38f3048235b2df0c89327f7d68e93cdde3454c7c2c2b913d71d88317",
+    "Apple/.build/semantic-anchor-runner/Sources/ProductionQuality/main.swift": "9d0c95a1a4a6c53751d721057bc93a0392a94fa878701f6b80a7f89c6ac08c48",
+    "Apple/.build/semantic-anchor-runner/Package.swift": "ced2fd4cd9ddf687fea17bc9adba638f7cdeba40461afcac9faee2ee5e2b3b9d",
+    "Apple/.build/semantic-anchor-runner/Package.resolved": "ad8a921a39c8877c088bb11317ce7e5f6ecb3e4e17f6842f8ce214a59537f52a"
+  },
+  "productionPackageSourcesUnchanged": true,
+  "oldFrozenArtifactsSHA256": {
+    "outline-chair-probe": {
+      "README.md": "a1cdd6c9bd4ccd0a75678cd6d768bbb27d2d43542439b92586bbd8dd1149faa5",
+      "artifact-hashes.json": "5232fc845611142dabf90d9a4b6dd13f370942116975cff07545a34f2e83dd96",
+      "format-validation.json": "0d42c88766e4c6a977cdfdae3b1b31a96c01fd5e690f9dbccfc264f08cd31170",
+      "provenance.json": "f7bb44a5dfb1a7ab0ba3f3ae3c77adf994d803049547741d9335e6e1c51e9fa5",
+      "results.json": "cf8ac813d57c32451770a425ecb81f74afd2e20d46caadf21593ce4f7accae32",
+      "stage1-outline/request.json": "9633e16c1312d4869e74d43f08123e76045421f25b8ac295b784f4fa18d953d5",
+      "stage1-outline/response.json": "08ca123dd53be7ca8a3f75e69fa14cfcfdad7eeb104d4e9ac74d02cead3d84ad",
+      "stage1-outline/schema.json": "552825b1103e4090ac12a4666f90e3c7f15114fe7b85106d712137c464019b70",
+      "stage1-outline/stage-result.json": "1fd30006207599ac3f012ba3881a34cf4aee425178a27a314e163c7da3d415d4",
+      "stage1-outline/topology.json": "b51d3d8ba1cc3963c770461f462acf6327e39556949a323f22113207453ce917",
+      "stage2-scene/front.png": "8eb6aaf6ca5988767d56104408c551bd5ca1cf08d40411d2723dd2f64c1af862",
+      "stage2-scene/mesh-summary.json": "b9cfbdda3b1b3bf58ed9301451b2d5ba56968f3b25dca4804f46df731eb5265a",
+      "stage2-scene/model.glb": "8120d37c6b28a6971382754f18dd064e66f84b511c04def4cfe834b86cfdd0f9",
+      "stage2-scene/model.usdz": "f6a6975442ae276c6801c063cdd8d9aa9ab2d3c0bfc340c76132bc42364d3522",
+      "stage2-scene/request.json": "83b0e20da1a92ef4dc368b1abaec675386bb9b6cd959795b0f8fa309d4d7c18e",
+      "stage2-scene/response.json": "e08c268a32f757728862c08ced4973b163b0bcc1d2b8c3f93507e04a9fb790ea",
+      "stage2-scene/scene.json": "cfe092061518814a9e8ae2e3fe56c15e0ff68ae39356de3e617668323b4650ca",
+      "stage2-scene/schema.json": "679d6788f5dd28c25634074e31d0d0ffd8dddbd6c0665e56b336e04b0c7da9b9",
+      "stage2-scene/stage-result.json": "0e620e8c1c4b715340b203092601cff11aa3f258454891712d3d063820b32a47",
+      "stage2-scene/three-quarter.png": "553b8c289d24a0c6817c6681e9ea6b376f70cdefb62a19a212477076141f3861",
+      "verification.json": "43cf63bcfa170b3484979154cd4292d092aba08d3f159489bc6c151186f4dac0",
+      "visual-review.json": "1a725b29cdef141378b8f7806c139477421fbb3769bbb43ddefef768a4031bcf"
+    },
+    "anchor-chair-probe": {
+      "README.md": "c664e60abbad9e91659ce40bc69ee1e2cde95a9c4d9f2d4063e4938f976f3abd",
+      "anchor-evaluation.json": "1e53f71143aec0f9498b9f241a3b8726fa1aacc9e1e70f2b8a0d4f93f78664af",
+      "anchor-response.json": "7690b9315fc1457fb02ff8ff7e66f07854a3b124bb550eefc7d502e40fe9a3bb",
+      "artifact-hashes.json": "c5c8a50d38cf9c47f0ff5b98ec3fcf063ae50586b8857dcb76f41a81396efdcf",
+      "center-legacy-plan.json": "215ef162fc5add2a93f05e351dddf92119ece45fe7fff5d759787b6338cfa10c",
+      "evaluated-legacy-plan.json": "f1aabdd06bb106ba702842dfa933436214b60a9fcfc13f9e2715f2452b4e1d4f",
+      "format-validation.json": "05cb08a10f9a6e222ff4a7aa1b53a072982b7d6866746eb7b9a7199177052af4",
+      "front.png": "cb96cf3e0b6a396be57ee20366561d19fc3279e5411bbb89692c45e16fa5a552",
+      "frozen-outline.json": "08ca123dd53be7ca8a3f75e69fa14cfcfdad7eeb104d4e9ac74d02cead3d84ad",
+      "independent-review-before-generation.json": "8da129eb04736e68f4d82421a787304e92c749cce6a16bca4d4eab2b89426b2e",
+      "mesh-summary.json": "d71eb45e0587aa7560d6ee9f896aff0174b062b741249845ece6e52231e4d777",
+      "model.glb": "ed5394558b5e21dae6ba65f032d1a96a7b2463c88b5e6ebd39db85a0fa8e1597",
+      "model.usdz": "8ec08edd309d89ca0c525e040f0f2b4fcf3d1e200b83a78ba924ac12c6818cf0",
+      "protocol-before-generation.md": "5ebe619f3617d011476e4361ffe6d9af99c33eccb4df0b41ac46bb69641edce8",
+      "protocol-declared-at.json": "e72091f00deea9f1fe65a0109c8937c23a8e54356ecd0dde28bbcb92e2957acd",
+      "protocol-self-check.json": "b3b94c99fabc045ad0c117b64ddd4ca0e602f487452998d812edd2749595b99d",
+      "provenance.json": "4688c1eeea9929d4d74ccc95e8b7fe1f656c97499c950baaf28691379541ef36",
+      "request.json": "56619749497d7ba92e9a43b965cde35d12c6bcfbd25f1ee4cdbd9e0df95698e6",
+      "results.json": "4928a3b66d85fa64859ddc41266adae584253cb1aab619df433c6bfb6b31979d",
+      "scene.json": "d3d18e6bddecdd9fed8b992bd9bcd1299e093e9f628282e89d9d95d452d07f04",
+      "schema.json": "47fba88d556199b52fe4e3ec38deff2534f08904303de68c4ad40cbe3354df36",
+      "three-quarter.png": "0223cfa16a52f1e303e556bfb6ff4239143112b29abec1a132176b3bd096f6ef",
+      "verification-after-run.json": "45fc0fe66e4f30844f27a12ca041476f2571d77a5808a400bffd8c6985a0d78f",
+      "visual-review.json": "bb41dd112d95a77c0557c192ad882c64d96a02b48f1edc74326918cbf00aadc1"
+    }
+  },
+  "newIgnoredRunner": "Apple/.build/semantic-anchor-runner",
+  "copied": "Package.swift+Package.resolved+Sources from frozen outline runner; no .build copied",
+  "privateDerivedData": "Apple/.build/semantic-anchor-runner/.build/out",
+  "newWeightsDownloaded": false,
+  "phoneOperated": false
+}

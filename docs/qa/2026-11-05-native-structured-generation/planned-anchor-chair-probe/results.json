@@ -1,0 +1,53 @@
+{
+  "api" : "QwenEngine.generateJSON (formal single-turn Direct)",
+  "firstTokenSeconds" : 2.121351583,
+  "freshCompleteThreeStageAcceptance" : false,
+  "freshGeometryCalls" : 1,
+  "freshSemanticCalls" : 0,
+  "freshStage1Calls" : 0,
+  "generationSeconds" : 12.314293026924133,
+  "glbSHA256" : "722dbb430dec6384a2b0f3993b7cd699ed1c88b67daa64ad64949a1b55f10e8c",
+  "graphCompilation" : false,
+  "loadSeconds" : 0.9484250545501709,
+  "maxTokens" : 3072,
+  "mlxAfterUnload" : {
+    "activeBytes" : 4000,
+    "cacheBytes" : 0,
+    "peakBytes" : 3034562212
+  },
+  "mlxBeforeUnload" : {
+    "activeBytes" : 2367679904,
+    "cacheBytes" : 34016642,
+    "peakBytes" : 3034562212
+  },
+  "nativeCompletion" : {
+    "generatedTokenCount" : 795,
+    "grammar" : {
+      "compiledSchemaSHA256" : "9840e5e933f7ffdd14e8c24fcae91a5933b4c3954fdcab176b233e7a0d1d8563",
+      "floatBoundsRequireNativeValidation" : true,
+      "originalSchemaSHA256" : "ea6fb9810a5833a7fcc6ccd2ce45bebd87acfcca62096d0d76cccc14bbc1b66e"
+    },
+    "grammarEnabled" : true,
+    "grammarTerminated" : true,
+    "inputTokenCount" : 1938,
+    "reason" : "stop",
+    "tokenLimit" : 3072
+  },
+  "nodes" : 7,
+  "outlineSHA256" : "08ca123dd53be7ca8a3f75e69fa14cfcfdad7eeb104d4e9ac74d02cead3d84ad",
+  "phoneOperated" : false,
+  "prefillStepSize" : 128,
+  "productionChanges" : false,
+  "responseBytes" : 2090,
+  "responseSHA256" : "3577dd156c214f82dcb3beca3fc5f2b1f0b64ba559e48e8fb23eb0b2ba305e43",
+  "schemaSHA256" : "ea6fb9810a5833a7fcc6ccd2ce45bebd87acfcca62096d0d76cccc14bbc1b66e",
+  "scope" : "New declared three-stage factorization with frozen historical model stages one/two. Only this geometry call is fresh; no complete-flow cost or general 3D/device acceptance. No retry or output repair.",
+  "semanticPlanSHA256" : "2aad6a466da5eb7041b0688ffc8296df17decad771dec1f8dec523e1a6eabd32",
+  "status" : "exported_for_visual_review",
+  "temperature" : 0,
+  "thinking" : false,
+  "thisGeometryCallAndLoadTotalSeconds" : 13.436192989349365,
+  "triangles" : 548,
+  "usdzSHA256" : "32672da64bb82a05598f07208b6fedd72a77899622b2545453e76abfbf22c4ea",
+  "visualQualityAccepted" : false
+}

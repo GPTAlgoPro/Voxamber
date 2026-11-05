@@ -1,0 +1,107 @@
+{
+  "name": "BrownWoodChair",
+  "nodes": [
+    {
+      "id": "base_frame",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.5,
+        "height": 0.05,
+        "depth": 0.4
+      },
+      "color": "#5D4037",
+      "metallic": 0.1,
+      "roughness": 0.6
+    },
+    {
+      "id": "seat",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.48,
+        "height": 0.04,
+        "depth": 0.38
+      },
+      "color": "#5D4037",
+      "attach": {
+        "parent": "base_frame",
+        "face": "top",
+        "anchor": "center"
+      }
+    },
+    {
+      "id": "backrest",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.4,
+        "height": 0.6,
+        "depth": 0.15
+      },
+      "color": "#5D4037",
+      "attach": {
+        "parent": "base_frame",
+        "face": "top",
+        "anchor": "center"
+      }
+    },
+    {
+      "id": "leg_1",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.45,
+        "depth": 0.06
+      },
+      "color": "#5D4037",
+      "attach": {
+        "parent": "base_frame",
+        "face": "bottom",
+        "anchor": "center"
+      }
+    },
+    {
+      "id": "leg_2",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.45,
+        "depth": 0.06
+      },
+      "color": "#5D4037",
+      "attach": {
+        "parent": "base_frame",
+        "face": "bottom",
+        "anchor": "center"
+      }
+    },
+    {
+      "id": "leg_3",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.45,
+        "depth": 0.06
+      },
+      "color": "#5D4037",
+      "attach": {
+        "parent": "base_frame",
+        "face": "bottom",
+        "anchor": "center"
+      }
+    },
+    {
+      "id": "leg_4",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.45,
+        "depth": 0.06
+      },
+      "color": "#5D4037",
+      "attach": {
+        "parent": "base_frame",
+        "face": "bottom",
+        "anchor": "center"
+      }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "anchorSchemaSHA256" : "47fba88d556199b52fe4e3ec38deff2534f08904303de68c4ad40cbe3354df36",
+  "baseSchemaSHA256" : "679d6788f5dd28c25634074e31d0d0ffd8dddbd6c0665e56b336e04b0c7da9b9",
+  "checks" : [
+    {
+      "anchor" : "frontLeft",
+      "face" : "top",
+      "offset" : [
+        -0.39999999850988388,
+        0,
+        0.20000001043081284
+      ],
+      "passed" : true
+    },
+    {
+      "anchor" : "topRight",
+      "face" : "front",
+      "offset" : [
+        0.39999999850988388,
+        0.30000001192092896,
+        0
+      ],
+      "passed" : true
+    },
+    {
+      "anchor" : "backBottom",
+      "face" : "left",
+      "offset" : [
+        0,
+        -0.30000001192092896,
+        -0.20000001043081284
+      ],
+      "passed" : true
+    },
+    {
+      "anchor" : "center",
+      "face" : "inside",
+      "offset" : [
+        0,
+        0,
+        0
+      ],
+      "passed" : true
+    },
+    {
+      "case" : "rotated mesh parent and concave extrusion child",
+      "differsFromNominalSizeFormula" : true,
+      "offset" : [
+        -0.2077016606926918,
+        0,
+        0.34041280299425125
+      ],
+      "passed" : true,
+      "translationInvariant" : true
+    },
+    {
+      "actualBoundsChecked" : true,
+      "offset" : [
+        0.54000549018383026,
+        0.41961855403696369,
+        0
+      ],
+      "passed" : true,
+      "primitive" : "box",
+      "rotationsAndNonuniformScale" : true
+    },
+    {
+      "actualBoundsChecked" : true,
+      "offset" : [
+        0.47166237235069275,
+        0.29418689079361637,
+        0
+      ],
+      "passed" : true,
+      "primitive" : "sphere",
+      "rotationsAndNonuniformScale" : true
+    },
+    {
+      "actualBoundsChecked" : true,
+      "offset" : [
+        0.50969325006008148,
+        0.38251064782453637,
+        0
+      ],
+      "passed" : true,
+      "primitive" : "cylinder",
+      "rotationsAndNonuniformScale" : true
+    },
+    {
+      "actualBoundsChecked" : true,
+      "offset" : [
+        0.4712660601362586,
+        0.32779170637441735,
+        0
+      ],
+      "passed" : true,
+      "primitive" : "cone",
+      "rotationsAndNonuniformScale" : true
+    },
+    {
+      "actualBoundsChecked" : true,
+      "offset" : [
+        0.46605885028839111,
+        0.35186804196889554,
+        0
+      ],
+      "passed" : true,
+      "primitive" : "torus",
+      "rotationsAndNonuniformScale" : true
+    },
+    {
+      "actualBoundsChecked" : true,
+      "offset" : [
+        0.48826002888381481,
+        0.31072191672064076,
+        0
+      ],
+      "passed" : true,
+      "primitive" : "mesh",
+      "rotationsAndNonuniformScale" : true
+    },
+    {
+      "actualBoundsChecked" : true,
+      "offset" : [
+        0.46638822928071022,
+        0.33326362196300341,
+        0
+      ],
+      "passed" : true,
+      "primitive" : "lathe",
+      "rotationsAndNonuniformScale" : true
+    },
+    {
+      "actualBoundsChecked" : true,
+      "offset" : [
+        0.48332215845584869,
+        0.43649566880976032,
+        0
+      ],
+      "passed" : true,
+      "primitive" : "extrusion",
+      "rotationsAndNonuniformScale" : true
+    }
+  ],
+  "frozenOutlineSHA256" : "08ca123dd53be7ca8a3f75e69fa14cfcfdad7eeb104d4e9ac74d02cead3d84ad",
+  "frozenRootTwoVariantsAndAllDefinitionsRetained" : true,
+  "helperSourceSHA256" : "e641b7499e8a91c02aa61e4b41e57c8219f4d123e8e94bea9248b454e02a5575",
+  "insideNonCenterRejected" : true,
+  "modelLoaded" : false,
+  "obsoleteNumericOffsetsRejected" : true,
+  "passed" : true,
+  "probeSourceSHA256" : "fdd39db2ee3f536fb8263b456d3325d644c40f9c684ec657f4f7313228b233af",
+  "roleSpecificBehavior" : false,
+  "zeroSpreadMarkedAsQualityFailureWithoutResizing" : true
+}

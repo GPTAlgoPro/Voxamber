@@ -1,0 +1,159 @@
+{
+  "name" : "BrownWoodChair",
+  "nodes" : [
+    {
+      "color" : "#8B4513",
+      "id" : "base_frame",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.472,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.6,
+      "size" : [
+        0.6,
+        0.05,
+        0.5
+      ]
+    },
+    {
+      "color" : "#8B4513",
+      "id" : "seat",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.514,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.55,
+        0.04,
+        0.48
+      ]
+    },
+    {
+      "color" : "#8B4513",
+      "id" : "backrest",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.76900005,
+        -0.175
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.52,
+        0.55,
+        0.15
+      ]
+    },
+    {
+      "color" : "#8B4513",
+      "id" : "leg_1",
+      "metallic" : 0.1,
+      "position" : [
+        -0.27,
+        0.22500001,
+        0.22
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.06,
+        0.45,
+        0.06
+      ]
+    },
+    {
+      "color" : "#8B4513",
+      "id" : "leg_2",
+      "metallic" : 0.1,
+      "position" : [
+        0.27,
+        0.22500001,
+        0.22
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.06,
+        0.45,
+        0.06
+      ]
+    },
+    {
+      "color" : "#8B4513",
+      "id" : "leg_3",
+      "metallic" : 0.1,
+      "position" : [
+        -0.27,
+        0.22500001,
+        -0.22
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.06,
+        0.45,
+        0.06
+      ]
+    },
+    {
+      "color" : "#8B4513",
+      "id" : "leg_4",
+      "metallic" : 0.1,
+      "position" : [
+        0.27,
+        0.22500001,
+        -0.22
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.06,
+        0.45,
+        0.06
+      ]
+    }
+  ]
+}

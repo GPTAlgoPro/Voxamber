@@ -1,0 +1,16 @@
+{
+  "allRecordedSourceSHA256UnchangedAfterRun": true,
+  "sourceFiles": 25,
+  "allModelFileSHA256ReverifiedAfterRun": true,
+  "modelFiles": 10,
+  "modelBytes": 3061129077,
+  "allPreviousFrozenArtifactsUnchanged": true,
+  "previousArtifacts": 22,
+  "modelProcesses": 1,
+  "stage1Attempts": 0,
+  "stage2Attempts": 1,
+  "oldResponseRepaired": false,
+  "phoneOperated": false,
+  "productionCodeModified": false,
+  "inferenceProcessExitedAndModelUnloaded": true
+}

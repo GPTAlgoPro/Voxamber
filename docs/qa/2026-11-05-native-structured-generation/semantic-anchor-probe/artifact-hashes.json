@@ -1,0 +1,21 @@
+{
+  "frozenAtUTC": "2026-11-05T13:27:54.687107+00:00",
+  "diagnosticConditions": 2,
+  "attemptsPerCondition": 1,
+  "geometryAcceptance": false,
+  "files": {
+    "README.md": "44f8de18e973a3872dcca5a43678e401e294486534768d2e30e17598f8ddd0e5",
+    "conditions-before-execution.json": "b0ed94d78c0af05f96a6b15acf5b1c5b7a425b21500e5d43d834acaf77c40f05",
+    "identical-request.json": "78e7ef1d6c0d4696fb83923df8d500ada7c525f41bad08ec03df1a3a34a264a0",
+    "provenance.json": "2029710ebdcdbfda46cd347f7148461accaf27a4109eda109c4b20b2a0ba6826",
+    "results.json": "e1392e3fd7a16ec400368af988594c0fb147da26d8c55569af7f3e83d9bbec26",
+    "semantic-input.json": "2e63421368ced41f60048a49d3c44bde109e06068130fc7babfbfe3d093b7568",
+    "semantic-review.json": "f39763b41781335f39cfdc7714bb5d06b8ccd1382185d37e6d95a72f4b19df34",
+    "structured/condition-result.json": "e91e4f34c2afc82a38c66177785723b7acc3be274ef25a5adce6012a407eae86",
+    "structured/response.raw.txt": "2aad6a466da5eb7041b0688ffc8296df17decad771dec1f8dec523e1a6eabd32",
+    "structured-schema.json": "d2a94691441bc08887e26fc09aa130c26db9c7ba15a03a149dc5af3f77f8a488",
+    "unconstrained/condition-result.json": "16948d55826d4a7bbcf9632b277e759bf9faa0fb03668a59a1b34776883b7637",
+    "unconstrained/response.raw.txt": "2aad6a466da5eb7041b0688ffc8296df17decad771dec1f8dec523e1a6eabd32",
+    "verification-after-run.json": "b3790036397824f0796813549cbdf7c01cffdcea4eb333cd58a088220f2d6d32"
+  }
+}

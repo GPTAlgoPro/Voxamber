@@ -1,0 +1,139 @@
+{
+  "reviewedAtUTC": "2026-11-05T13:26:56.260040+00:00",
+  "decision": "semantic_capability_observed_in_both_conditions",
+  "classificationMethod": "Human QA comparison against the actual frozen English purpose text, performed only after both outputs. No expected per-ID output table was supplied to the model; no response was modified or interpreted into geometry.",
+  "conditions": [
+    {
+      "condition": "structured",
+      "rows": [
+        {
+          "id": "seat",
+          "face": "top",
+          "actualFrozenPurpose": "Sitting surface located at Y=0.45m, resting on base_frame",
+          "humanQAPurposeInterpretation": "center",
+          "observed": "center",
+          "matchesPurpose": true
+        },
+        {
+          "id": "backrest",
+          "face": "top",
+          "actualFrozenPurpose": "Back support positioned behind the seat, resting on base_frame",
+          "humanQAPurposeInterpretation": "back",
+          "observed": "back",
+          "matchesPurpose": true
+        },
+        {
+          "id": "leg_1",
+          "face": "bottom",
+          "actualFrozenPurpose": "Front-left leg extending from base_frame to ground",
+          "humanQAPurposeInterpretation": "frontLeft",
+          "observed": "frontLeft",
+          "matchesPurpose": true
+        },
+        {
+          "id": "leg_2",
+          "face": "bottom",
+          "actualFrozenPurpose": "Front-right leg extending from base_frame to ground",
+          "humanQAPurposeInterpretation": "frontRight",
+          "observed": "frontRight",
+          "matchesPurpose": true
+        },
+        {
+          "id": "leg_3",
+          "face": "bottom",
+          "actualFrozenPurpose": "Back-left leg extending from base_frame to ground",
+          "humanQAPurposeInterpretation": "backLeft",
+          "observed": "backLeft",
+          "matchesPurpose": true
+        },
+        {
+          "id": "leg_4",
+          "face": "bottom",
+          "actualFrozenPurpose": "Back-right leg extending from base_frame to ground",
+          "humanQAPurposeInterpretation": "backRight",
+          "observed": "backRight",
+          "matchesPurpose": true
+        }
+      ],
+      "matches": 6,
+      "total": 6,
+      "contractValid": true
+    },
+    {
+      "condition": "unconstrained",
+      "rows": [
+        {
+          "id": "seat",
+          "face": "top",
+          "actualFrozenPurpose": "Sitting surface located at Y=0.45m, resting on base_frame",
+          "humanQAPurposeInterpretation": "center",
+          "observed": "center",
+          "matchesPurpose": true
+        },
+        {
+          "id": "backrest",
+          "face": "top",
+          "actualFrozenPurpose": "Back support positioned behind the seat, resting on base_frame",
+          "humanQAPurposeInterpretation": "back",
+          "observed": "back",
+          "matchesPurpose": true
+        },
+        {
+          "id": "leg_1",
+          "face": "bottom",
+          "actualFrozenPurpose": "Front-left leg extending from base_frame to ground",
+          "humanQAPurposeInterpretation": "frontLeft",
+          "observed": "frontLeft",
+          "matchesPurpose": true
+        },
+        {
+          "id": "leg_2",
+          "face": "bottom",
+          "actualFrozenPurpose": "Front-right leg extending from base_frame to ground",
+          "humanQAPurposeInterpretation": "frontRight",
+          "observed": "frontRight",
+          "matchesPurpose": true
+        },
+        {
+          "id": "leg_3",
+          "face": "bottom",
+          "actualFrozenPurpose": "Back-left leg extending from base_frame to ground",
+          "humanQAPurposeInterpretation": "backLeft",
+          "observed": "backLeft",
+          "matchesPurpose": true
+        },
+        {
+          "id": "leg_4",
+          "face": "bottom",
+          "actualFrozenPurpose": "Back-right leg extending from base_frame to ground",
+          "humanQAPurposeInterpretation": "backRight",
+          "observed": "backRight",
+          "matchesPurpose": true
+        }
+      ],
+      "matches": 6,
+      "total": 6,
+      "contractValid": true
+    }
+  ],
+  "rawResponsesByteIdentical": true,
+  "rawSHA256": "2aad6a466da5eb7041b0688ffc8296df17decad771dec1f8dec523e1a6eabd32",
+  "sameInputTokenCount": 339,
+  "identicalSystemAndUserSHA256": {
+    "system": "b4a54840c4effe975f751b90316f2adfff3984fec2e8f5992ab3a1230948f620",
+    "user": "2e63421368ced41f60048a49d3c44bde109e06068130fc7babfbfe3d093b7568"
+  },
+  "interpretation": [
+    "The same 4B model can choose all six appropriate anchors under this short semantic-only English task.",
+    "A native grammar-constrained call can produce the same non-center labels as the unconstrained call; this small schema does not force all-center output.",
+    "This supports investigating anchor selection in a semantic planning pass and locking those model-selected values during geometry generation. It does not validate that architecture or change production.",
+    "This does not isolate which difference from the long geometry task caused all-center output: task composition, prompt language/length, schema complexity and other context still differ. It does not fully exonerate every full-schema code path."
+  ],
+  "notAcceptance": [
+    "No meshes, geometry, rendering or phone test",
+    "One frozen set of six rows only",
+    "Two diagnostic conditions, one attempt each, no accepted retry",
+    "Timing differences include grammar preparation and order/warm-up effects; no phone speed claim"
+  ],
+  "coordinateScopeNote": "The frozen seat purpose contains its original Y=0.45m phrase. It was retained verbatim to avoid altering source data; no original user request, dimensions table or new coordinates were added."
+}

@@ -1,0 +1,33 @@
+{
+  "frozenAtUTC": "2026-11-05T13:41:07.191962+00:00",
+  "freshStage1Calls": 0,
+  "freshSemanticCalls": 0,
+  "freshGeometryCalls": 1,
+  "fullRequestAccepted": false,
+  "files": {
+    "README.md": "229cc51c030ac437e2abd430cddd50c8b446554d323373e38eae1f09ff18cdb6",
+    "anchor-evaluation.json": "bff796c5472c6619ee90b399820c7d04c12952789c31acf1447c20be84ff9c2d",
+    "architecture-before-generation.json": "4394d01c7008707e2b8412769070166112ee59a330bd4d671c891751dd131b59",
+    "architecture-before-generation.md": "86aa4eafb028bca16735c92889484fb3af2281c13710b0ffb220daa67fa435ef",
+    "center-legacy-plan.json": "b6067f4993790566581629ad0da6c5017fa1c31469d2276701036fec80929848",
+    "evaluated-legacy-plan.json": "5dcc10729ff71cbf62810e7df09b06917f41cba013f9ab3c68a0dc7856eedb38",
+    "format-validation.json": "e551d3aed0e33e53a6d59fefce1cbaec0e98fb96253a017f344393fd6a54dc02",
+    "front.png": "0f4775bc9ed9e4fb15fd1aedf17e90b011ff0a41181f6554d1b7986d0151df93",
+    "frozen-model-outline.json": "08ca123dd53be7ca8a3f75e69fa14cfcfdad7eeb104d4e9ac74d02cead3d84ad",
+    "frozen-model-semantic-anchors.json": "2aad6a466da5eb7041b0688ffc8296df17decad771dec1f8dec523e1a6eabd32",
+    "mesh-summary.json": "e117deb1ef39cfc82011e38749057bfb4f8148c6d9bf33b0ae5f088e0aee2cd5",
+    "model.glb": "722dbb430dec6384a2b0f3993b7cd699ed1c88b67daa64ad64949a1b55f10e8c",
+    "model.usdz": "32672da64bb82a05598f07208b6fedd72a77899622b2545453e76abfbf22c4ea",
+    "preflight.json": "6afe676f493a6c69de11b51201dfe8ba8794888dfe9a1834b4f4672bd40889f9",
+    "provenance.json": "0bbc125090e91d414d01b7999ec6067f2be2fe07b8280b20e581c0b0e1979a4a",
+    "request-before-generation.json": "1666b08f45a774ad572df86eac9fab0cbeb937021ef95f1a57fa7cbc1ead0267",
+    "results.json": "abae67b27e3aa3344e20cc4b492ec4e44a102d0c39934984531dbdc3ad9113a6",
+    "scene.json": "143eb0fd14d013c78cec205dc824d35a729f867abfa6169003f04d59e1f2a7fa",
+    "schema-diff-before-generation.json": "3ca671c5f6871ead66457a08d75aefa7af7055d7d1b8ee138e92fe378d0c572e",
+    "schema.json": "ea6fb9810a5833a7fcc6ccd2ce45bebd87acfcca62096d0d76cccc14bbc1b66e",
+    "stage3-model-response.json": "3577dd156c214f82dcb3beca3fc5f2b1f0b64ba559e48e8fb23eb0b2ba305e43",
+    "three-quarter.png": "e84fa4562478527a2341b049febf8d69b9e00cc6e07862b996bfd577aac4117c",
+    "verification-after-run.json": "64ce5503def9207d193bc943f0a43067a285fbfad817f07ab6c5258068464f85",
+    "visual-review.json": "4a45d882b4bf70c946d2048fd1a2a2380f1cb0e2c1a8dd604a13fe1ada3d0b47"
+  }
+}

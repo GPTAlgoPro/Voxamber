@@ -1,0 +1,9 @@
+{
+  "observedAt": "2026-11-05T13:10:55.946170+00:00",
+  "scope": "GET only existing internal tester states; no contacts persisted, no invitation/notification/install action",
+  "testerCount": 1,
+  "states": [
+    "INVITED"
+  ],
+  "exactBuildInstallVerified": false
+}

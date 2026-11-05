@@ -1,0 +1,21 @@
+{
+  "verifiedAfterInferenceUTC": "2026-11-05T13:26:57.720969+00:00",
+  "allSourceHashesUnchanged": true,
+  "sourceFiles": 26,
+  "allModelFileHashesReverified": true,
+  "modelFiles": 10,
+  "modelBytes": 3061129077,
+  "allOldQAArtifactsUnchanged": true,
+  "conditions": 2,
+  "attemptsPerCondition": 1,
+  "modelProcesses": 1,
+  "rawOutputRepair": false,
+  "geometryGenerated": false,
+  "phoneOperated": false,
+  "productionCodeModified": false,
+  "macReleaseBuildPassed": true,
+  "ignoredBuildLog": "Apple/.build/semantic-anchor-build-private.log",
+  "buildLogSHA256": "81c274d056c42399c91d22cca97d21bbd5f13ba2e96c5d3b5f06cced75f6fbba",
+  "executableSHA256": "05ba3bb875374b3c8d9d0f4f99fcaac3436885336f0f9de760855ca589740da4",
+  "inferenceProcessExitedAndModelUnloaded": true
+}

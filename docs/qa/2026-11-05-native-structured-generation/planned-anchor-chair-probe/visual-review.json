@@ -1,0 +1,112 @@
+{
+  "reviewedAtUTC": "2026-11-05T13:41:07.190424+00:00",
+  "decision": "placement_improved_full_request_not_accepted",
+  "reviewMethod": "Viewed exact exported USDZ Apple front and three-quarter PNGs individually using functions.view_image; inspected model raw protocol, typed evaluated legacy plan and canonical scene. No data or geometry edits.",
+  "images": [
+    "front.png",
+    "three-quarter.png"
+  ],
+  "positiveEvidence": {
+    "recognizableChairSilhouette": true,
+    "fourDistinctLegCenters": true,
+    "legCenters": {
+      "leg_1": [
+        -0.27,
+        0.22500001,
+        0.22
+      ],
+      "leg_2": [
+        0.27,
+        0.22500001,
+        0.22
+      ],
+      "leg_3": [
+        -0.27,
+        0.22500001,
+        -0.22
+      ],
+      "leg_4": [
+        0.27,
+        0.22500001,
+        -0.22
+      ]
+    },
+    "legMinimumYMetres": {
+      "leg_1": 9.999999994736442e-09,
+      "leg_2": 9.999999994736442e-09,
+      "leg_3": 9.999999994736442e-09,
+      "leg_4": 9.999999994736442e-09
+    },
+    "backrestRearCenterZMetres": -0.175,
+    "actualRawAnchorsExactlyEqualFrozenModelChoices": true,
+    "genericEvaluatorSourceUnchanged": true,
+    "scope": "Placement correctness for this one composed fixture only, not general modeling or full visual acceptance."
+  },
+  "unresolvedQualityCriteria": [
+    {
+      "finding": "Requested approximately 0.45m seat height is not met by this geometry output.",
+      "seatCenterYMetres": 0.514,
+      "seatTopYMetres": 0.534,
+      "requestedApproxMetres": 0.45,
+      "topDifferenceMetres": 0.08400000000000002,
+      "topRelativeDifferencePercent": 18.66666666666667,
+      "causeBoundary": "The model still chose 0.45m leg height plus positive frame/seat thickness. The generic evaluator did not alter dimensions to compensate."
+    },
+    {
+      "finding": "A full solid support slab remains below the separate seat.",
+      "modelAuthoredID": "base_frame",
+      "size": [
+        0.6,
+        0.05,
+        0.5
+      ],
+      "position": [
+        0,
+        0.472,
+        0
+      ],
+      "interpretation": "This came from the historical model outline. It is an additional broad solid box rather than an open frame; it is elevated, not a ground display pedestal. No human removal or replacement occurred."
+    },
+    {
+      "finding": "Backrest is visually thick and block-like.",
+      "dimensions": [
+        0.52,
+        0.55,
+        0.15
+      ],
+      "depthMetres": 0.15
+    },
+    {
+      "finding": "Material is uniform colored primitives, with no wood texture detail.",
+      "declaredColors": [
+        "#8B4513"
+      ],
+      "appearanceBoundary": "The fixed-lighting previews show bright yellow/orange tones despite a brown hex value. This records preview appearance, not a proven iPhone color defect."
+    }
+  ],
+  "comparison": {
+    "priorAnchorUniqueLegCenters": 1,
+    "newComposedUniqueLegCenters": 4,
+    "priorBackrestZ": 0,
+    "newBackrestZ": -0.175,
+    "seatTopStillMetres": 0.534,
+    "interpretation": "Locking earlier model-authored semantic choices improved visible assembly in this cached composition, while dimensional/body/material quality remained unaccepted."
+  },
+  "architectureBoundary": {
+    "freshStage1Calls": 0,
+    "freshSemanticCalls": 0,
+    "freshGeometryCalls": 1,
+    "frozenOutlineReused": true,
+    "frozenSemanticModelOutputReused": true,
+    "freshCompleteThreeStageAcceptance": false,
+    "completePipelineTimeMeasured": false,
+    "historicalTimesSummedAsNewCost": false
+  },
+  "acceptanceLimits": [
+    "One fixed chair with cached upstream outputs",
+    "No phone or App test",
+    "No fresh end-to-end three-stage run",
+    "No new organic/freeform generality evidence",
+    "Format/mesh validity does not establish the original request is fully satisfied"
+  ]
+}
