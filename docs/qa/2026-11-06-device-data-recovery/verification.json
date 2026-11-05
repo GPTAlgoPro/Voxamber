@@ -1,0 +1,185 @@
+{
+  "recordedAtUTC": "2026-11-05T23:45:15.365606+00:00",
+  "knownBackupReadbackMatched": true,
+  "verifiedFiles": 37,
+  "projectCount": 2,
+  "creationsIncludingDraftFiles": 9,
+  "measurementFiles": 17,
+  "originalModelCacheFiles": 11,
+  "totalBytes": 3061568558,
+  "files": {
+    "Creations/draft.json": {
+      "byteCount": 2806,
+      "sha256": "baa7b7c1ed4ebd48648bd7059672f88aeb641a7cb9ada6f0300a07e63443ae2b"
+    },
+    "Creations/C8E6E277-9DB0-4625-ACCA-921CE1906209/project.json": {
+      "byteCount": 3601,
+      "sha256": "eb7dbe3cfeac1679a28724c12284618251a8b45cfdca53bde3c88804a875a0e4"
+    },
+    "Creations/C8E6E277-9DB0-4625-ACCA-921CE1906209/28A00BA5-F666-47A0-9168-4CD2A2E51925/model.usdz": {
+      "byteCount": 40791,
+      "sha256": "99b5d1b38fce5e8fc01da28651ac7038f0e7e8b58812254a20edc4839bb41cc2"
+    },
+    "Creations/C8E6E277-9DB0-4625-ACCA-921CE1906209/28A00BA5-F666-47A0-9168-4CD2A2E51925/revision.json": {
+      "byteCount": 3601,
+      "sha256": "eb7dbe3cfeac1679a28724c12284618251a8b45cfdca53bde3c88804a875a0e4"
+    },
+    "Creations/C8E6E277-9DB0-4625-ACCA-921CE1906209/28A00BA5-F666-47A0-9168-4CD2A2E51925/model.glb": {
+      "byteCount": 29036,
+      "sha256": "65c5edc84fb4a088a6cf35f3344bcf61a88597dcabce147e88aec58086625501"
+    },
+    "Creations/B0B9CD0D-BDC1-4E80-9CD7-41D413223052/project.json": {
+      "byteCount": 5136,
+      "sha256": "c7d6fe3f87b1a8228c165e337426fa4d822c3bb77c42e5c9601c2e98a472d72f"
+    },
+    "Creations/B0B9CD0D-BDC1-4E80-9CD7-41D413223052/960B3F88-B9CA-4CDE-88A2-28654397340A/model.usdz": {
+      "byteCount": 195719,
+      "sha256": "21f10e1b01ad832610e42082e24789d8b177bf001f1a9fb8ff355ae4186a0373"
+    },
+    "Creations/B0B9CD0D-BDC1-4E80-9CD7-41D413223052/960B3F88-B9CA-4CDE-88A2-28654397340A/revision.json": {
+      "byteCount": 5136,
+      "sha256": "c7d6fe3f87b1a8228c165e337426fa4d822c3bb77c42e5c9601c2e98a472d72f"
+    },
+    "Creations/B0B9CD0D-BDC1-4E80-9CD7-41D413223052/960B3F88-B9CA-4CDE-88A2-28654397340A/model.glb": {
+      "byteCount": 106144,
+      "sha256": "88d908421441f0ee2cfa4efdc9dce4fdea119a524decab864beb014c094902c3"
+    },
+    "Measurements/direct-device-stages.json": {
+      "byteCount": 5700,
+      "sha256": "53cdca49b097b88a34758819ca52edaa7e36260d436f46cbdcb9d75f9adbeee4"
+    },
+    "Measurements/C70148F9-8593-4941-B0AE-5CC03DAF654B.json": {
+      "byteCount": 455,
+      "sha256": "533e9a79184f033e6734f21e0048b36811c7ea36357b295df3d175d33169d60c"
+    },
+    "Measurements/last-inference.json": {
+      "byteCount": 355,
+      "sha256": "387b857ef5b46382d71fb30473e06de540b5f6758f640f12d3712a8f22ff29b4"
+    },
+    "Measurements/F93D13FC-892E-407E-86E5-EB823D3F4AA0.json": {
+      "byteCount": 396,
+      "sha256": "00bee7ee5fc1751bad1ff242d243aba97def8e2ff1288d32dfa5c2400dd31918"
+    },
+    "Measurements/74BD783B-0E68-4101-95CB-DD9D8D8E8E39.json": {
+      "byteCount": 395,
+      "sha256": "839c78969f1191ee0960661944bca1fe08f14acad6b7c5ead66e3f5bcf165ecc"
+    },
+    "Measurements/31F56BA9-EB99-4BC7-B30F-A8C3A0D68144.json": {
+      "byteCount": 396,
+      "sha256": "8be7f36c1dea23a717d84024571f6478c07a4b1017e90d06dd4530c65fc92dd6"
+    },
+    "Measurements/9E7B3D08-A79C-4E00-B766-ED9E48403722.json": {
+      "byteCount": 395,
+      "sha256": "746eb704614e21e63d9dbe6c5fe64d76766f18a095657a8e5bc50dcfb9406dff"
+    },
+    "Measurements/25C5C4AA-38C4-4619-9DDC-A0118970E065.json": {
+      "byteCount": 396,
+      "sha256": "31e648955fa40e02a5c4627f83df334935a0085c605606c26e28141a72892432"
+    },
+    "Measurements/app-device-acceptance.json": {
+      "byteCount": 29699,
+      "sha256": "d1d83f1ef640ca7c28e3b389d1d51efdf0f4bb25e22ba8221ddbd29357d17236"
+    },
+    "Measurements/785D277C-89A3-4134-BD44-D4B5C231A337.json": {
+      "byteCount": 454,
+      "sha256": "5127bf148a1841d9e9dbd2ed80620e390970b9d0a6a2e10109d0c0695703a02e"
+    },
+    "Measurements/memory-budget.json": {
+      "byteCount": 2494,
+      "sha256": "f0773b925778820e9c92884f7c77ab435a1d53a1328d966c3a126f58323fa2b7"
+    },
+    "Measurements/1DA44C5E-9A6A-4B79-B998-10B20906815B.json": {
+      "byteCount": 394,
+      "sha256": "1cac39350213bfa87ffc2b13c595f2f541b59298c548338665e8203e47f54b2f"
+    },
+    "Measurements/28A00BA5-F666-47A0-9168-4CD2A2E51925.json": {
+      "byteCount": 454,
+      "sha256": "36023f7a225cdaf4431dda7166439d8bf6d5bba024ebe0d914fea5bb60a54556"
+    },
+    "Measurements/last-stop.json": {
+      "byteCount": 186,
+      "sha256": "7f5b1b181f920c47bf53bb2a3ed4ec5c54d81ea0dc97c7ac89537da9f7ff5166"
+    },
+    "Measurements/960B3F88-B9CA-4CDE-88A2-28654397340A.json": {
+      "byteCount": 394,
+      "sha256": "467393c8c4f42f1600033c2f4ab248f527f74d3ecd039cd8eddbf45bed34fc5c"
+    },
+    "Measurements/1A4CD05D-BA22-4692-973E-FA5EC4C6A5DC.json": {
+      "byteCount": 396,
+      "sha256": "d1ce1e40e9a567009f033dd00b04c91e3531227721ce28687831af0c2a2f2048"
+    },
+    "Measurements/95521DE1-3C9C-4E27-AA8B-82B169B97013.json": {
+      "byteCount": 394,
+      "sha256": "542e672d600c6abf8cc18a297a7db39ded434260ab041db6d97072f95f114638"
+    },
+    "Models/qwen3.5-4b-mlx-int4/model.safetensors": {
+      "byteCount": 3034300695,
+      "sha256": "5fb9acd0246866381cf8c5c354c6db1019f6498eec4ccb4f5edcc71ffeacb2db"
+    },
+    "Models/qwen3.5-4b-mlx-int4/.verified-model-manifest.json": {
+      "byteCount": 4158,
+      "sha256": "f32cfa05ee96fdd9bb685251bf7288cc1573f54c4592f7fbcb043fcad01e5dc7"
+    },
+    "Models/qwen3.5-4b-mlx-int4/tokenizer_config.json": {
+      "byteCount": 1139,
+      "sha256": "e98f1901ac6f0adff67b1d540bfa0c36ac1a0cf59eb72ed78146ef89aafa1182"
+    },
+    "Models/qwen3.5-4b-mlx-int4/config.json": {
+      "byteCount": 3366,
+      "sha256": "f3efc81b2ea8d96a45301037d3ccccbcccdef44a961845c87f286aaddbc6eaaa"
+    },
+    "Models/qwen3.5-4b-mlx-int4/tokenizer.json": {
+      "byteCount": 19989343,
+      "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4"
+    },
+    "Models/qwen3.5-4b-mlx-int4/processor_config.json": {
+      "byteCount": 1300,
+      "sha256": "14932921ca485d458a04dafd8069fbb0a4505622a48208d19ed247115801385b"
+    },
+    "Models/qwen3.5-4b-mlx-int4/chat_template.jinja": {
+      "byteCount": 7756,
+      "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715"
+    },
+    "Models/qwen3.5-4b-mlx-int4/vocab.json": {
+      "byteCount": 6722759,
+      "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+    },
+    "Models/qwen3.5-4b-mlx-int4/model.safetensors.index.json": {
+      "byteCount": 101944,
+      "sha256": "52e534c41f7b97708329c85f762e5882bf48bd5955a422c6ae74eba321e6048a"
+    },
+    "Models/qwen3.5-4b-mlx-int4/video_preprocessor_config.json": {
+      "byteCount": 385,
+      "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13"
+    },
+    "Models/qwen3.5-4b-mlx-int4/preprocessor_config.json": {
+      "byteCount": 390,
+      "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516"
+    }
+  },
+  "backupCreationsAndMeasurementsTimeLocal": "2026-11-06 02:32",
+  "laterUserChangesUnknown": true,
+  "earlierUserDeletedProjectsRestored": false,
+  "normalAppProcessRunningBeforeRestore": false,
+  "newCompanionResourcesPreserved": true,
+  "scope": "Latest known backed-up state restored; not a claim about unbacked changes after 02:32 or all Library preferences",
+  "incident": {
+    "operation": "devicectl device copy to with remove-existing-content=true, empty source, nested destination Documents/NeuralShapeQA",
+    "observedEffect": "Normal App Documents became empty; Creations node missing. Broader Library state was not verified.",
+    "responsibility": "Agent cleanup mistake; disclosed to user immediately after confirming missing Creations.",
+    "freshImmediatelyBeforeCleanupBackupTaken": false,
+    "unsafeFlagNowProhibitedInProjectAGENTS": true
+  },
+  "restore": {
+    "method": "Copy current revision artifacts first, then pointers and draft; restore matching model cache and Measurements; never use removal flag",
+    "creationsAndDraftBackup": "Apple/.build/Phone6LampFailureLive/Creations",
+    "measurementsBackup": "Apple/.build/Phone6LampFailureLive/Measurements",
+    "originalModelBackup": "Apple/.build/DeviceModelSeed/qwen3.5-4b-mlx-int4",
+    "deviceReadback": "Apple/.build/Phone6Recovery/DocumentsReadback",
+    "all37FilesByteCountAndSHA256Match": true,
+    "priorDeletedProjectsIncluded": false,
+    "normalPhoneAppBuildUnchanged": "6",
+    "laterUserChangesAfter0232PendingAnswer": true,
+    "LibraryPreferencesNotClaimedRestored": true
+  }
+}
