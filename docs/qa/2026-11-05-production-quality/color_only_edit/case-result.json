@@ -1,0 +1,246 @@
+{
+  "api": "QwenEngine.generateJSON",
+  "attemptCount": 1,
+  "decodeSeconds": 0.0003839731216430664,
+  "expectedColor": "#22B8A8",
+  "exported": true,
+  "exportSeconds": 0.002122044563293457,
+  "firstTokenSeconds": 2.5283791669999998,
+  "fixedPrompt": "仅把所有部件的color改为#22B8A8，保持作品名称、全部部件id、形状、位置、尺寸、旋转、metallic、roughness和自由轮廓/顶点/三角面数据完全不变，不增删部件。",
+  "generationSeconds": 19.81633698940277,
+  "geometrySeconds": 0.00017893314361572266,
+  "glbBytes": 64072,
+  "glbSHA256": "8a71b2c93f18b2a0c68094a4f4cc4db40430d85f90969e6809ba70e46271f813",
+  "id": "color_only_edit",
+  "jsonObjectAccepted": true,
+  "meshes": 9,
+  "meshSummary": {
+    "approximateAABBConnectedComponents": 1,
+    "boundsMaximum": [
+      0.12700000405311584,
+      0.847000002861023,
+      0.10000000149011612
+    ],
+    "boundsMinimum": [
+      -0.12700000405311584,
+      0,
+      -0.10000000149011612
+    ],
+    "connectionMetricLimit": "AABB proximity within 15mm is diagnostic only; not proof of actual surface attachment or visual quality",
+    "finiteBuffers": true,
+    "parts": [
+      {
+        "color": "#22B8A8",
+        "id": "base",
+        "position": [
+          0,
+          0.32499998807907104,
+          0
+        ],
+        "primitive": "box",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          0.20000000298023224,
+          0.05000000074505806,
+          0.20000000298023224
+        ]
+      },
+      {
+        "color": "#22B8A8",
+        "id": "torso",
+        "position": [
+          0,
+          0.5219999551773071,
+          0
+        ],
+        "primitive": "box",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          0.18000000715255737,
+          0.3499999940395355,
+          0.1599999964237213
+        ]
+      },
+      {
+        "color": "#22B8A8",
+        "id": "head",
+        "position": [
+          0,
+          0.7539999485015869,
+          0
+        ],
+        "primitive": "box",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          0.11999999731779099,
+          0.11999999731779099,
+          0.11999999731779099
+        ]
+      },
+      {
+        "color": "#22B8A8",
+        "id": "eye_left",
+        "position": [
+          -0.04500000178813934,
+          0.7539999485015869,
+          0.07199999690055847
+        ],
+        "primitive": "sphere",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          0.029999999329447746,
+          0.029999999329447746,
+          0.029999999329447746
+        ]
+      },
+      {
+        "color": "#22B8A8",
+        "id": "eye_right",
+        "position": [
+          0.04500000178813934,
+          0.7539999485015869,
+          0.07199999690055847
+        ],
+        "primitive": "sphere",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          0.029999999329447746,
+          0.029999999329447746,
+          0.029999999329447746
+        ]
+      },
+      {
+        "color": "#22B8A8",
+        "id": "arm_left",
+        "position": [
+          -0.10700000077486038,
+          0.6969999670982361,
+          0
+        ],
+        "primitive": "cylinder",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          0.03999999910593033,
+          0.30000001192092896,
+          0.03999999910593033
+        ]
+      },
+      {
+        "color": "#22B8A8",
+        "id": "arm_right",
+        "position": [
+          0.10700000077486038,
+          0.6969999670982361,
+          0
+        ],
+        "primitive": "cylinder",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          0.03999999910593033,
+          0.30000001192092896,
+          0.03999999910593033
+        ]
+      },
+      {
+        "color": "#22B8A8",
+        "id": "leg_left",
+        "position": [
+          -0.05000000074505806,
+          0.17499999701976776,
+          0
+        ],
+        "primitive": "cylinder",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          0.05000000074505806,
+          0.3499999940395355,
+          0.05000000074505806
+        ]
+      },
+      {
+        "color": "#22B8A8",
+        "id": "leg_right",
+        "position": [
+          0.05000000074505806,
+          0.17499999701976776,
+          0
+        ],
+        "primitive": "cylinder",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          0.05000000074505806,
+          0.3499999940395355,
+          0.05000000074505806
+        ]
+      }
+    ]
+  },
+  "nativeDecode": "SceneSpec.decodeModelResponse",
+  "nodes": 9,
+  "preservation": {
+    "allColorsExactlyRequested": true,
+    "allRequestedPreservationChecksPass": true,
+    "geometryBuffersExactlyEqual": true,
+    "maxPositionDeltaMetres": 0,
+    "maxSizeDeltaMetres": 0,
+    "nameExactlyEqual": true,
+    "nodeIDsExactlyEqual": true,
+    "otherPropertiesExactlyEqual": true,
+    "positionsExactlyEqual": true,
+    "rotationsExactlyEqual": true,
+    "sizesExactlyEqual": true,
+    "exportedGLBBINChunkExactlyEqual": true,
+    "sourceGLBBINSHA256": "dc5dce3e70b7c84d545e7793d8be8056439fd40316579d67f297955a5ca416d0",
+    "editedGLBBINSHA256": "dc5dce3e70b7c84d545e7793d8be8056439fd40316579d67f297955a5ca416d0"
+  },
+  "progressCallbacks": 162,
+  "rendered": true,
+  "renderSeconds": 0.03708302974700928,
+  "responseBytes": 2879,
+  "responseSHA256": "4f035266329d15dca177538fb4781f5895941eb58fa123d04fd823be0dc5c4d7",
+  "sceneAccepted": true,
+  "sourceCase": "robot",
+  "status": "exported_for_visual_review",
+  "totalSeconds": 19.858003973960876,
+  "triangles": 1988,
+  "truncationStatus": "not_observed: production API accepted a complete JSON object",
+  "usdzBytes": 111018,
+  "usdzSHA256": "8e4a671606c8f4848d04d239be350ffaca0aa8743045fab5ff90d8747b4495e8",
+  "vertices": 1316
+}

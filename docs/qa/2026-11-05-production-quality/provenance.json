@@ -1,0 +1,341 @@
+{
+  "checkedAtUTC": "2026-11-05T11:22:27.726574+00:00",
+  "releaseLabel": "Voxamber 1.0 (2)",
+  "releaseCodeCommit": "3d6622445b9f6740fdece391f360e1d88e1e8c36",
+  "checkoutCommit": "182fdd72940d9c9906a8c5ff712120301826d822",
+  "initialWorktreeClean": false,
+  "sourceFiles": [
+    {
+      "path": "Apple/Packages/CreationCore/Package.swift",
+      "sha256": "76483ca757b61255388105d2c914058e59606e7437f0dfd0230cb8faeecfd4c3",
+      "releaseSHA256": "76483ca757b61255388105d2c914058e59606e7437f0dfd0230cb8faeecfd4c3",
+      "matchesBuild2Commit": true
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/AttachmentResolver.swift",
+      "sha256": "3d156c1644fb84b6030728ba60ea3027592a7eca91e254daaf9bf91714e10f94",
+      "releaseSHA256": "3d156c1644fb84b6030728ba60ea3027592a7eca91e254daaf9bf91714e10f94",
+      "matchesBuild2Commit": true
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/BuildingGenerator.swift",
+      "sha256": "8a72052f967164f71d289826a6647deb540bb845df3c9314463b5fe4dc7e5180",
+      "releaseSHA256": "8a72052f967164f71d289826a6647deb540bb845df3c9314463b5fe4dc7e5180",
+      "matchesBuild2Commit": true
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/BuildingSpec.swift",
+      "sha256": "d6dcad6fb5cedcd3de441751692517ac5a08585d2cc8eca67f7b9991f6d021f9",
+      "releaseSHA256": "d6dcad6fb5cedcd3de441751692517ac5a08585d2cc8eca67f7b9991f6d021f9",
+      "matchesBuild2Commit": true
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/FreeformGeometry.swift",
+      "sha256": "aabb0be5dd83d1e248ee2bf8f9899d6200b3659bc5474c8b8b15984c018f0206",
+      "releaseSHA256": "aabb0be5dd83d1e248ee2bf8f9899d6200b3659bc5474c8b8b15984c018f0206",
+      "matchesBuild2Commit": true
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/SceneGenerator.swift",
+      "sha256": "1798cd672b99fad741e1c2325f0176a20a912e1e9e1549eb00a848e874516f19",
+      "releaseSHA256": "1798cd672b99fad741e1c2325f0176a20a912e1e9e1549eb00a848e874516f19",
+      "matchesBuild2Commit": true
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/ScenePlan.swift",
+      "sha256": "b2b31ccd0bce71dd6d0d3a6c30c15b713323b58314301a5030a7e324c45b3137",
+      "releaseSHA256": "b2b31ccd0bce71dd6d0d3a6c30c15b713323b58314301a5030a7e324c45b3137",
+      "matchesBuild2Commit": true
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/SceneSpec.swift",
+      "sha256": "3163e0b570843aead62b72df949721f26529cb19691c2fa96b39785a41a81ca4",
+      "releaseSHA256": "3163e0b570843aead62b72df949721f26529cb19691c2fa96b39785a41a81ca4",
+      "matchesBuild2Commit": true
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/StrictJSONObject.swift",
+      "sha256": "27b46fcfc3c1e6bbad423103b2d568e7c3840b124e5e3848990bed5ff59dcf24",
+      "releaseSHA256": "27b46fcfc3c1e6bbad423103b2d568e7c3840b124e5e3848990bed5ff59dcf24",
+      "matchesBuild2Commit": true
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Package.swift",
+      "sha256": "2a243e685bf5d44617704fd67c7b7ce11bb708331981d21f08c0978c35236262",
+      "releaseSHA256": "2a243e685bf5d44617704fd67c7b7ce11bb708331981d21f08c0978c35236262",
+      "matchesBuild2Commit": true
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Sources/QwenNative/LocalTokenizer.swift",
+      "sha256": "82988617a11bed0234181f904e214c2bdc0fc29c995b0b233f78ddf00ccc7937",
+      "releaseSHA256": "82988617a11bed0234181f904e214c2bdc0fc29c995b0b233f78ddf00ccc7937",
+      "matchesBuild2Commit": true
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift",
+      "sha256": "9e6a50bd152369226d13120b3187c06103ecef8440a5b3e6ad9ab88fb587391a",
+      "releaseSHA256": "9e6a50bd152369226d13120b3187c06103ecef8440a5b3e6ad9ab88fb587391a",
+      "matchesBuild2Commit": true
+    },
+    {
+      "path": "Apple/Packages/ThreeLiveNative/Package.swift",
+      "sha256": "2ea8b23e81a6d83e74fa949b99725b74b1371859e6c797a8d32c8e0b91a0b8e1",
+      "releaseSHA256": "2ea8b23e81a6d83e74fa949b99725b74b1371859e6c797a8d32c8e0b91a0b8e1",
+      "matchesBuild2Commit": true
+    },
+    {
+      "path": "Apple/Packages/ThreeLiveNative/Sources/ThreeLiveNative/ThreeLiveNative.swift",
+      "sha256": "1b9e3efc4471f8c5bbc2a3bb0332ab54595b3273fc18d4e645a48f56ede5f6c1",
+      "releaseSHA256": "1b9e3efc4471f8c5bbc2a3bb0332ab54595b3273fc18d4e645a48f56ede5f6c1",
+      "matchesBuild2Commit": true
+    },
+    {
+      "path": "Apple/ThreeLiveStudio/Resources/LanguageModel.json",
+      "sha256": "be9d82a513eaeb8381a3be1967f8f7d25931db8aa7b3ca9f21aa2881d7fd4604",
+      "releaseSHA256": "be9d82a513eaeb8381a3be1967f8f7d25931db8aa7b3ca9f21aa2881d7fd4604",
+      "matchesBuild2Commit": true
+    }
+  ],
+  "modelID": "qwen3.5-4b-mlx-int4",
+  "modelFiles": [
+    {
+      "path": "chat_template.jinja",
+      "byteCount": 7756,
+      "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+      "expectedSHA256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+      "matchesReleaseManifest": true
+    },
+    {
+      "path": "config.json",
+      "byteCount": 3366,
+      "sha256": "f3efc81b2ea8d96a45301037d3ccccbcccdef44a961845c87f286aaddbc6eaaa",
+      "expectedSHA256": "f3efc81b2ea8d96a45301037d3ccccbcccdef44a961845c87f286aaddbc6eaaa",
+      "matchesReleaseManifest": true
+    },
+    {
+      "path": "model.safetensors",
+      "byteCount": 3034300695,
+      "sha256": "5fb9acd0246866381cf8c5c354c6db1019f6498eec4ccb4f5edcc71ffeacb2db",
+      "expectedSHA256": "5fb9acd0246866381cf8c5c354c6db1019f6498eec4ccb4f5edcc71ffeacb2db",
+      "matchesReleaseManifest": true
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "byteCount": 101944,
+      "sha256": "52e534c41f7b97708329c85f762e5882bf48bd5955a422c6ae74eba321e6048a",
+      "expectedSHA256": "52e534c41f7b97708329c85f762e5882bf48bd5955a422c6ae74eba321e6048a",
+      "matchesReleaseManifest": true
+    },
+    {
+      "path": "preprocessor_config.json",
+      "byteCount": 390,
+      "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+      "expectedSHA256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+      "matchesReleaseManifest": true
+    },
+    {
+      "path": "processor_config.json",
+      "byteCount": 1300,
+      "sha256": "14932921ca485d458a04dafd8069fbb0a4505622a48208d19ed247115801385b",
+      "expectedSHA256": "14932921ca485d458a04dafd8069fbb0a4505622a48208d19ed247115801385b",
+      "matchesReleaseManifest": true
+    },
+    {
+      "path": "tokenizer.json",
+      "byteCount": 19989343,
+      "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+      "expectedSHA256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+      "matchesReleaseManifest": true
+    },
+    {
+      "path": "tokenizer_config.json",
+      "byteCount": 1139,
+      "sha256": "e98f1901ac6f0adff67b1d540bfa0c36ac1a0cf59eb72ed78146ef89aafa1182",
+      "expectedSHA256": "e98f1901ac6f0adff67b1d540bfa0c36ac1a0cf59eb72ed78146ef89aafa1182",
+      "matchesReleaseManifest": true
+    },
+    {
+      "path": "video_preprocessor_config.json",
+      "byteCount": 385,
+      "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+      "expectedSHA256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+      "matchesReleaseManifest": true
+    },
+    {
+      "path": "vocab.json",
+      "byteCount": 6722759,
+      "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003",
+      "expectedSHA256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003",
+      "matchesReleaseManifest": true
+    }
+  ],
+  "totalModelBytes": 3061129077,
+  "api": "QwenEngine.generateJSON(thinking:false,maxTokens:3072), production Direct implementation with prefillStepSize128; not ChatSession, sampled or guided adapters",
+  "sourceIdentityScope": "Production inference/ScenePrompt/ScenePlan/geometry/export files checked byte-for-byte against build-2 code commit. Current HEAD adds dependency-resolution metadata only.",
+  "hostCPU": "Apple M3 Max",
+  "swiftVersion": "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)\nTarget: arm64-apple-macosx27.2.0",
+  "xcodeVersion": "Xcode 27.2\nBuild version 27B52",
+  "renderer": {
+    "consumer": "Apple SceneKit importing exported USDZ",
+    "views": [
+      "front",
+      "three-quarter"
+    ],
+    "resolution": [
+      900,
+      900
+    ],
+    "cameraFOV": 42,
+    "distanceFactor": 4.2,
+    "HDR": true,
+    "exposureOffset": -0.5,
+    "keyLightIntensity": 500,
+    "ambientLightIntensity": 160,
+    "geometryOrMaterialOverrides": false
+  },
+  "fixedTestPromptsOnly": true,
+  "phoneOperationsPerformed": false,
+  "scope": "Mac production-code modeling-quality review; not iPhone UI, performance, flight-mode or universal quality acceptance.",
+  "productionDependencyPins": [
+    {
+      "identity": "eventsource",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/mattt/EventSource.git",
+      "state": {
+        "revision": "bb4b61273b5a976bb571859c17f903ebc3439df1",
+        "version": "1.6.0"
+      }
+    },
+    {
+      "identity": "mlx-swift",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/ml-explore/mlx-swift",
+      "state": {
+        "revision": "19601207e9a0de51e03ee6ec0c3c5f3784275075",
+        "version": "0.32.3"
+      }
+    },
+    {
+      "identity": "mlx-swift-lm",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/ml-explore/mlx-swift-lm",
+      "state": {
+        "revision": "3b339ad6e3b3f44c8121ecff5131c7fd55e075e6",
+        "version": "3.32.3"
+      }
+    },
+    {
+      "identity": "swift-asn1",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/apple/swift-asn1.git",
+      "state": {
+        "revision": "917b472dbe53ba699cbb0495f9a95a084bc6364d",
+        "version": "1.7.4"
+      }
+    },
+    {
+      "identity": "swift-collections",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/apple/swift-collections.git",
+      "state": {
+        "revision": "f96b909e1a9e469620bc5037c1e24e00153f376f",
+        "version": "1.7.5"
+      }
+    },
+    {
+      "identity": "swift-crypto",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/apple/swift-crypto.git",
+      "state": {
+        "revision": "da9d28d69ebe3894b18376c8f2395c2f37b8448f",
+        "version": "4.5.2"
+      }
+    },
+    {
+      "identity": "swift-huggingface",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/huggingface/swift-huggingface.git",
+      "state": {
+        "revision": "f0a0cb43cb1b402d2bbf6fb10d8981328c449c48",
+        "version": "0.13.0"
+      }
+    },
+    {
+      "identity": "swift-jinja",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/huggingface/swift-jinja.git",
+      "state": {
+        "revision": "1e4d0dc69f7ec1277131fb3853808229c5991825",
+        "version": "2.5.2"
+      }
+    },
+    {
+      "identity": "swift-numerics",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/apple/swift-numerics",
+      "state": {
+        "revision": "0c0290ff6b24942dadb83a929ffaaa1481df04a2",
+        "version": "1.1.1"
+      }
+    },
+    {
+      "identity": "swift-syntax",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/swiftlang/swift-syntax.git",
+      "state": {
+        "revision": "79e4b74a295b6eb74a8b585e3a39d29e70c1dbd1",
+        "version": "603.0.2"
+      }
+    },
+    {
+      "identity": "swift-transformers",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/huggingface/swift-transformers",
+      "state": {
+        "revision": "b38443e44d93eca770f2eb68e2a4d0fa100f9aa2",
+        "version": "1.3.0"
+      }
+    },
+    {
+      "identity": "yyjson",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/ibireme/yyjson.git",
+      "state": {
+        "revision": "8b4a38dc994a110abaec8a400615567bd996105f",
+        "version": "0.12.0"
+      }
+    }
+  ],
+  "productionPackageResolvedSHA256": "f786e22cb3052d8b2089ba0302de4c894708a5b44ebe30ec6a6592c1b1a5f6af",
+  "fixtureSource": "Apple/ThreeLiveStudio/Diagnostics/DeviceAcceptanceProbe.swift",
+  "fixtureSourceSHA256": "ef46203efc136a182dc6dbb4e2bd903dec6f874d2b71c4340cc1df3cadc98c56",
+  "reviewedPromptMethod": "ScenePrompt.userRequest(request,currentSpec:) unchanged, including native ScenePlan.snapshot for edits",
+  "runnerDependencyPinsMatchProduction": true,
+  "runnerPackageResolvedSHA256": "f786e22cb3052d8b2089ba0302de4c894708a5b44ebe30ec6a6592c1b1a5f6af",
+  "runnerSources": [
+    {
+      "path": "Apple/.build/production-quality-runner/Package.swift",
+      "sha256": "ced2fd4cd9ddf687fea17bc9adba638f7cdeba40461afcac9faee2ee5e2b3b9d"
+    },
+    {
+      "path": "Apple/.build/production-quality-runner/Sources/ProductionQuality/ModelPreview.swift",
+      "sha256": "41833cedafddfc579a0c30522934ac9faae629289e2b3aa6de8394b588148048"
+    },
+    {
+      "path": "Apple/.build/production-quality-runner/Sources/ProductionQuality/main.swift",
+      "sha256": "f2d3a976c490ac7d739ee378d3b1bbbb72118d801cd17e54bf5060922857cf5d"
+    }
+  ],
+  "runnerBuildCommand": "swift build -c release --skip-update --package-path Apple/.build/production-quality-runner",
+  "rendererNote": "Offscreen Mac Apple SceneKit renders of exact exported USDZ, not iPhone UI screenshots. Geometry and asset materials untouched; fixed neutral lighting and HDR camera only.",
+  "sourceFilesUnchangedAfterRun": true,
+  "changedSourcePathsAfterRun": [],
+  "completedAtUTC": "2026-11-05T11:34:37.448310+00:00",
+  "finalBusinessDiff": [
+    "Apple/ThreeLiveStudio/App/StudioModel.swift",
+    "Apple/ThreeLiveStudio/Creation/CreationWorkspace.swift",
+    "Apple/ThreeLiveStudio/Models/ModelManager.swift",
+    "Apple/ThreeLiveStudioTests/StudioCancellationTests.swift"
+  ],
+  "parallelWorkNote": "finalBusinessDiff lists App files changed by other parallel work; this runner only wrote ignored temporary tooling and this QA directory. The 15 tested production component/package files remained equal to their captured build-2 hashes."
+}

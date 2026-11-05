@@ -1,0 +1,228 @@
+{
+  "api" : "QwenEngine.generateJSON",
+  "attemptCount" : 1,
+  "decodeSeconds" : 0.0012509822845458984,
+  "exported" : true,
+  "exportSeconds" : 0.0024830102920532227,
+  "firstTokenSeconds" : 0.93619229199999998,
+  "fixedPrompt" : "做一个站立的蓝色玩具机器人，包含立方体头、躯干、左右两条手臂和两条腿，以及两个球形黄色眼睛，底部在Y=0。",
+  "generationSeconds" : 11.671999931335449,
+  "geometrySeconds" : 0.00018191337585449219,
+  "glbBytes" : 63904,
+  "glbSHA256" : "0be0511aad1334a38164aa807b26e85013230503967d54eb7253eb3a2042b251",
+  "id" : "robot",
+  "jsonObjectAccepted" : true,
+  "meshes" : 9,
+  "meshSummary" : {
+    "approximateAABBConnectedComponents" : 1,
+    "boundsMaximum" : [
+      0.12700000405311584,
+      0.84700000286102295,
+      0.10000000149011612
+    ],
+    "boundsMinimum" : [
+      -0.12700000405311584,
+      0,
+      -0.10000000149011612
+    ],
+    "connectionMetricLimit" : "AABB proximity within 15mm is diagnostic only; not proof of actual surface attachment or visual quality",
+    "finiteBuffers" : true,
+    "parts" : [
+      {
+        "color" : "#333333",
+        "id" : "base",
+        "position" : [
+          0,
+          0.32499998807907104,
+          0
+        ],
+        "primitive" : "box",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.20000000298023224,
+          0.05000000074505806,
+          0.20000000298023224
+        ]
+      },
+      {
+        "color" : "#1E90FF",
+        "id" : "torso",
+        "position" : [
+          0,
+          0.52199995517730713,
+          0
+        ],
+        "primitive" : "box",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.18000000715255737,
+          0.34999999403953552,
+          0.15999999642372131
+        ]
+      },
+      {
+        "color" : "#1E90FF",
+        "id" : "head",
+        "position" : [
+          0,
+          0.75399994850158691,
+          0
+        ],
+        "primitive" : "box",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.11999999731779099,
+          0.11999999731779099,
+          0.11999999731779099
+        ]
+      },
+      {
+        "color" : "#FFD700",
+        "id" : "eye_left",
+        "position" : [
+          -0.045000001788139343,
+          0.75399994850158691,
+          0.071999996900558472
+        ],
+        "primitive" : "sphere",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.029999999329447746,
+          0.029999999329447746,
+          0.029999999329447746
+        ]
+      },
+      {
+        "color" : "#FFD700",
+        "id" : "eye_right",
+        "position" : [
+          0.045000001788139343,
+          0.75399994850158691,
+          0.071999996900558472
+        ],
+        "primitive" : "sphere",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.029999999329447746,
+          0.029999999329447746,
+          0.029999999329447746
+        ]
+      },
+      {
+        "color" : "#1E90FF",
+        "id" : "arm_left",
+        "position" : [
+          -0.10700000077486038,
+          0.69699996709823608,
+          0
+        ],
+        "primitive" : "cylinder",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.039999999105930328,
+          0.30000001192092896,
+          0.039999999105930328
+        ]
+      },
+      {
+        "color" : "#1E90FF",
+        "id" : "arm_right",
+        "position" : [
+          0.10700000077486038,
+          0.69699996709823608,
+          0
+        ],
+        "primitive" : "cylinder",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.039999999105930328,
+          0.30000001192092896,
+          0.039999999105930328
+        ]
+      },
+      {
+        "color" : "#1E90FF",
+        "id" : "leg_left",
+        "position" : [
+          -0.05000000074505806,
+          0.17499999701976776,
+          0
+        ],
+        "primitive" : "cylinder",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.05000000074505806,
+          0.34999999403953552,
+          0.05000000074505806
+        ]
+      },
+      {
+        "color" : "#1E90FF",
+        "id" : "leg_right",
+        "position" : [
+          0.05000000074505806,
+          0.17499999701976776,
+          0
+        ],
+        "primitive" : "cylinder",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.05000000074505806,
+          0.34999999403953552,
+          0.05000000074505806
+        ]
+      }
+    ]
+  },
+  "nativeDecode" : "SceneSpec.decodeModelResponse",
+  "nodes" : 9,
+  "progressCallbacks" : 105,
+  "rendered" : true,
+  "renderSeconds" : 0.34307396411895752,
+  "responseBytes" : 2947,
+  "responseSHA256" : "95651594ef216f77997040733f10c184b2208a3ba55ea5aac54b2920e3398b30",
+  "sceneAccepted" : true,
+  "status" : "exported_for_visual_review",
+  "totalSeconds" : 12.020790934562683,
+  "triangles" : 1988,
+  "truncationStatus" : "not_observed: production API accepted a complete JSON object",
+  "usdzBytes" : 110944,
+  "usdzSHA256" : "dc3a984dcdcbf88a74c2d8de575b46bddafa2035adc2673aa6467facc97b9f56",
+  "vertices" : 1316
+}

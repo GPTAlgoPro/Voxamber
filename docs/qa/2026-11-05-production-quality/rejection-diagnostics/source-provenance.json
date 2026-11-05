@@ -1,0 +1,102 @@
+{
+  "recordedAtUTC": "2026-11-05T11:56:27.770998+00:00",
+  "checkoutCommit": "7939d3d369ef93b9a90d41fedb5c539ae8902f61",
+  "sourceFiles": [
+    {
+      "path": "Apple/Packages/CreationCore/Package.swift",
+      "sha256": "76483ca757b61255388105d2c914058e59606e7437f0dfd0230cb8faeecfd4c3",
+      "matchesOriginalProductionQualityRun": true
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/AttachmentResolver.swift",
+      "sha256": "3d156c1644fb84b6030728ba60ea3027592a7eca91e254daaf9bf91714e10f94",
+      "matchesOriginalProductionQualityRun": true
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/BuildingGenerator.swift",
+      "sha256": "8a72052f967164f71d289826a6647deb540bb845df3c9314463b5fe4dc7e5180",
+      "matchesOriginalProductionQualityRun": true
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/BuildingSpec.swift",
+      "sha256": "d6dcad6fb5cedcd3de441751692517ac5a08585d2cc8eca67f7b9991f6d021f9",
+      "matchesOriginalProductionQualityRun": true
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/FreeformGeometry.swift",
+      "sha256": "aabb0be5dd83d1e248ee2bf8f9899d6200b3659bc5474c8b8b15984c018f0206",
+      "matchesOriginalProductionQualityRun": true
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/SceneGenerator.swift",
+      "sha256": "1798cd672b99fad741e1c2325f0176a20a912e1e9e1549eb00a848e874516f19",
+      "matchesOriginalProductionQualityRun": true
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/ScenePlan.swift",
+      "sha256": "b2b31ccd0bce71dd6d0d3a6c30c15b713323b58314301a5030a7e324c45b3137",
+      "matchesOriginalProductionQualityRun": true
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/SceneSpec.swift",
+      "sha256": "3163e0b570843aead62b72df949721f26529cb19691c2fa96b39785a41a81ca4",
+      "matchesOriginalProductionQualityRun": true
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/StrictJSONObject.swift",
+      "sha256": "27b46fcfc3c1e6bbad423103b2d568e7c3840b124e5e3848990bed5ff59dcf24",
+      "matchesOriginalProductionQualityRun": true
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Package.swift",
+      "sha256": "2a243e685bf5d44617704fd67c7b7ce11bb708331981d21f08c0978c35236262",
+      "matchesOriginalProductionQualityRun": true
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Sources/QwenNative/LocalTokenizer.swift",
+      "sha256": "82988617a11bed0234181f904e214c2bdc0fc29c995b0b233f78ddf00ccc7937",
+      "matchesOriginalProductionQualityRun": true
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift",
+      "sha256": "9e6a50bd152369226d13120b3187c06103ecef8440a5b3e6ad9ab88fb587391a",
+      "matchesOriginalProductionQualityRun": true
+    },
+    {
+      "path": "Apple/Packages/ThreeLiveNative/Package.swift",
+      "sha256": "2ea8b23e81a6d83e74fa949b99725b74b1371859e6c797a8d32c8e0b91a0b8e1",
+      "matchesOriginalProductionQualityRun": true
+    },
+    {
+      "path": "Apple/Packages/ThreeLiveNative/Sources/ThreeLiveNative/ThreeLiveNative.swift",
+      "sha256": "1b9e3efc4471f8c5bbc2a3bb0332ab54595b3273fc18d4e645a48f56ede5f6c1",
+      "matchesOriginalProductionQualityRun": true
+    },
+    {
+      "path": "Apple/ThreeLiveStudio/Resources/LanguageModel.json",
+      "sha256": "be9d82a513eaeb8381a3be1967f8f7d25931db8aa7b3ca9f21aa2881d7fd4604",
+      "matchesOriginalProductionQualityRun": true
+    }
+  ],
+  "allTestedComponentSourcesUnchanged": true,
+  "modelIdentityReference": "../provenance.json: 10 original model files all matched the release manifest; no model downloads or modifications",
+  "runnerSources": [
+    {
+      "path": "Apple/.build/production-quality-runner/Package.swift",
+      "sha256": "ced2fd4cd9ddf687fea17bc9adba638f7cdeba40461afcac9faee2ee5e2b3b9d"
+    },
+    {
+      "path": "Apple/.build/production-quality-runner/Sources/ProductionQuality/ModelPreview.swift",
+      "sha256": "41833cedafddfc579a0c30522934ac9faae629289e2b3aa6de8394b588148048"
+    },
+    {
+      "path": "Apple/.build/production-quality-runner/Sources/ProductionQuality/RejectionDiagnostics.swift",
+      "sha256": "613112e8fcccca3b8459e82f80927d7b0226a316a5878dc75cddc0b1dff64f0b"
+    },
+    {
+      "path": "Apple/.build/production-quality-runner/Sources/ProductionQuality/main.swift",
+      "sha256": "5669e4dc767763af070b3203be37614c94e7086a37006062ce5097badad65b0a"
+    }
+  ],
+  "scope": "Independent raw-output diagnostic for the three fixed synthetic failures only. No business source, prompt, weight or phone changes; no exported replacement assets."
+}

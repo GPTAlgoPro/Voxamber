@@ -1,0 +1,70 @@
+{
+  "tool": "Khronos glTF Validator",
+  "version": "2.0.0-dev.3.10",
+  "scope": "Development format validation only; no generated script execution or model downloads",
+  "cases": [
+    {
+      "id": "robot",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "hints": 0,
+      "usdz": {
+        "crcPass": true,
+        "entries": [
+          {
+            "name": "scene.usda",
+            "bytes": 110802,
+            "compression": 0,
+            "payloadOffset": 64,
+            "aligned64": true
+          }
+        ],
+        "allEntriesStoredAndAligned64": true,
+        "appleSceneKitImportAndBothViewsRendered": true
+      }
+    },
+    {
+      "id": "lamp",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "hints": 0,
+      "usdz": {
+        "crcPass": true,
+        "entries": [
+          {
+            "name": "scene.usda",
+            "bytes": 53041,
+            "compression": 0,
+            "payloadOffset": 64,
+            "aligned64": true
+          }
+        ],
+        "allEntriesStoredAndAligned64": true,
+        "appleSceneKitImportAndBothViewsRendered": true
+      }
+    },
+    {
+      "id": "color_only_edit",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "hints": 0,
+      "usdz": {
+        "crcPass": true,
+        "entries": [
+          {
+            "name": "scene.usda",
+            "bytes": 110876,
+            "compression": 0,
+            "payloadOffset": 64,
+            "aligned64": true
+          }
+        ],
+        "allEntriesStoredAndAligned64": true,
+        "appleSceneKitImportAndBothViewsRendered": true
+      }
+    }
+  ]
+}

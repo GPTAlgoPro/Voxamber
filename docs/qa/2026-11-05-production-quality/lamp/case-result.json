@@ -1,0 +1,128 @@
+{
+  "api" : "QwenEngine.generateJSON",
+  "attemptCount" : 1,
+  "decodeSeconds" : 0.00033104419708251953,
+  "exported" : true,
+  "exportSeconds" : 0.0011749267578125,
+  "firstTokenSeconds" : 0.931111833,
+  "fixedPrompt" : "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地Y=0，整体高约0.8米。",
+  "generationSeconds" : 3.3970960378646851,
+  "geometrySeconds" : 7.4028968811035156e-05,
+  "glbBytes" : 29588,
+  "glbSHA256" : "9cee01b8b39b2458f8abc41485f61fdd462de6abdfa96aece2588ee73859b24f",
+  "id" : "lamp",
+  "jsonObjectAccepted" : true,
+  "meshes" : 4,
+  "meshSummary" : {
+    "approximateAABBConnectedComponents" : 1,
+    "boundsMaximum" : [
+      0.15000000596046448,
+      1.093999981880188,
+      0.16499999165534973
+    ],
+    "boundsMinimum" : [
+      -0.15000000596046448,
+      0,
+      -0.15000000596046448
+    ],
+    "connectionMetricLimit" : "AABB proximity within 15mm is diagnostic only; not proof of actual surface attachment or visual quality",
+    "finiteBuffers" : true,
+    "parts" : [
+      {
+        "color" : "#808080",
+        "id" : "base",
+        "position" : [
+          0,
+          0.05000000074505806,
+          0
+        ],
+        "primitive" : "box",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.30000001192092896,
+          0.10000000149011612,
+          0.30000001192092896
+        ]
+      },
+      {
+        "color" : "#808080",
+        "id" : "stem",
+        "position" : [
+          0,
+          0.42199999094009399,
+          0.019999999552965164
+        ],
+        "primitive" : "cylinder",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.05000000074505806,
+          0.64999997615814209,
+          0.05000000074505806
+        ]
+      },
+      {
+        "color" : "#FFD700",
+        "id" : "bulb",
+        "position" : [
+          0,
+          0.7839999794960022,
+          0.039999999105930328
+        ],
+        "primitive" : "sphere",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.079999998211860657,
+          0.079999998211860657,
+          0.079999998211860657
+        ]
+      },
+      {
+        "color" : "#FF0000",
+        "id" : "shade",
+        "position" : [
+          0,
+          0.91899996995925903,
+          0.039999999105930328
+        ],
+        "primitive" : "cone",
+        "rotation" : [
+          0,
+          0,
+          0
+        ],
+        "size" : [
+          0.25,
+          0.34999999403953552,
+          0.25
+        ]
+      }
+    ]
+  },
+  "nativeDecode" : "SceneSpec.decodeModelResponse",
+  "nodes" : 4,
+  "progressCallbacks" : 25,
+  "rendered" : true,
+  "renderSeconds" : 0.032164096832275391,
+  "responseBytes" : 701,
+  "responseSHA256" : "ae1642015590d1fa99abd0cba915b18d9fbc2d805449976c7a829dc072c26691",
+  "sceneAccepted" : true,
+  "status" : "exported_for_visual_review",
+  "totalSeconds" : 3.43208909034729,
+  "triangles" : 924,
+  "truncationStatus" : "not_observed: production API accepted a complete JSON object",
+  "usdzBytes" : 53183,
+  "usdzSHA256" : "0a2a9132b839343b69f6de9cd0e509dfabce9ed2ff0b48f3432f16426f941874",
+  "vertices" : 613
+}
