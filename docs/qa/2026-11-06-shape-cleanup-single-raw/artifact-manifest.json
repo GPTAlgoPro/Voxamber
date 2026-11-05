@@ -1,0 +1,80 @@
+{
+  "sealedAtUTC": "2026-11-05T23:22:04.789093+00:00",
+  "files": [
+    {
+      "path": "docs/qa/2026-11-06-shape-cleanup-single-raw/armed-source.json",
+      "byteCount": 13700,
+      "sha256": "e625eb1457245011ca43ef210d8c08a13648b8ef08db5f2d71957f739ed2ab7d"
+    },
+    {
+      "path": "docs/qa/2026-11-06-shape-cleanup-single-raw/comparison-report.json",
+      "byteCount": 4310,
+      "sha256": "2897cac54c38c7afe53ed4ba372507a53f0213c44bec383ffab9c63368d2888a"
+    },
+    {
+      "path": "docs/qa/2026-11-06-shape-cleanup-single-raw/legacy/render-bounds.json",
+      "byteCount": 313,
+      "sha256": "b0de4c32d504d80df48c24f51253bf825d8deb86c65681f4901e98669d3e3f7e"
+    },
+    {
+      "path": "docs/qa/2026-11-06-shape-cleanup-single-raw/legacy/vase-front.png",
+      "byteCount": 134939,
+      "sha256": "13a00f4f3cabfc3857d71697603e7fcf3a714c198d3352e69b81d0899d753f90"
+    },
+    {
+      "path": "docs/qa/2026-11-06-shape-cleanup-single-raw/legacy/vase-threequarter.png",
+      "byteCount": 132464,
+      "sha256": "0a7fb7e67e13e934996168948cd12a2b4a71648c60351184dfc18c9bb80eddde"
+    },
+    {
+      "path": "docs/qa/2026-11-06-shape-cleanup-single-raw/legacy-topology.json",
+      "byteCount": 321606,
+      "sha256": "1bb88e997d02710f0ee5076f8bfdff37ec790d127c40551689b29bcb73e386f8"
+    },
+    {
+      "path": "docs/qa/2026-11-06-shape-cleanup-single-raw/protocol-before-generation.md",
+      "byteCount": 4021,
+      "sha256": "b763de61f79886759176822f726a04d68c42390e7053e53603522279ac3a32fc"
+    },
+    {
+      "path": "docs/qa/2026-11-06-shape-cleanup-single-raw/raw-topology.json",
+      "byteCount": 15627,
+      "sha256": "e6e9e681e0e63bdf685b579a490d893eb0d5bd5cbb0ffe836eb5727c8161880f"
+    },
+    {
+      "path": "docs/qa/2026-11-06-shape-cleanup-single-raw/source-after.json",
+      "byteCount": 13851,
+      "sha256": "285cb424bf4ca1fc7dbc0c62dda01541913436aba4bd97e4b7226b61dfa28834"
+    },
+    {
+      "path": "docs/qa/2026-11-06-shape-cleanup-single-raw/source-before.json",
+      "byteCount": 13766,
+      "sha256": "ab6606d95bb89ef4fd518db93b328ff1b6bf7d7df764666bca1ce41985915642"
+    },
+    {
+      "path": "docs/qa/2026-11-06-shape-cleanup-single-raw/strict/render-bounds.json",
+      "byteCount": 313,
+      "sha256": "b0de4c32d504d80df48c24f51253bf825d8deb86c65681f4901e98669d3e3f7e"
+    },
+    {
+      "path": "docs/qa/2026-11-06-shape-cleanup-single-raw/strict/vase-front.png",
+      "byteCount": 135199,
+      "sha256": "6ab97410ca74aa42a932a9de84e3630a99421c07e4577f072bc4a95c701adc5a"
+    },
+    {
+      "path": "docs/qa/2026-11-06-shape-cleanup-single-raw/strict/vase-threequarter.png",
+      "byteCount": 132392,
+      "sha256": "12b11b657a5140a838f9e35a1171a6ab01fc2fd7cf51873e2469d84bfe0e136d"
+    },
+    {
+      "path": "docs/qa/2026-11-06-shape-cleanup-single-raw/strict-topology.json",
+      "byteCount": 15628,
+      "sha256": "9c8ff99720213234da3cdc1265886285132ac1a506cd146fd6be0ae4d32bf287"
+    },
+    {
+      "path": "docs/qa/2026-11-06-shape-cleanup-single-raw/verification.json",
+      "byteCount": 6911,
+      "sha256": "a7da7ec857844c098ac5f13725298055fd29cf55c88249fca0efc9b27dd92def"
+    }
+  ]
+}

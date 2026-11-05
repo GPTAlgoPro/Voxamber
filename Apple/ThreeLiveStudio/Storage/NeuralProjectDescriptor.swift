@@ -72,10 +72,22 @@ struct NeuralStageProvenance: Codable, Sendable, Equatable {
     let configurationSHA256: String
     let runtimeVersion: String
     let seed: UInt64
+    let geometryPostprocessID: String?
+
+    init(modelID: String, modelRevision: String, modelManifestSHA256: String,
+         configurationSHA256: String, runtimeVersion: String, seed: UInt64,
+         geometryPostprocessID: String? = nil) {
+        self.modelID = modelID; self.modelRevision = modelRevision
+        self.modelManifestSHA256 = modelManifestSHA256; self.configurationSHA256 = configurationSHA256
+        self.runtimeVersion = runtimeVersion; self.seed = seed; self.geometryPostprocessID = geometryPostprocessID
+    }
 
     func validate() throws {
         guard Self.identifier(modelID), Self.identifier(modelRevision), Self.identifier(runtimeVersion),
               ArtifactReference.isSHA256(modelManifestSHA256), ArtifactReference.isSHA256(configurationSHA256) else {
+            throw ProjectStorageError.invalidMetadata
+        }
+        if let geometryPostprocessID, !Self.identifier(geometryPostprocessID) {
             throw ProjectStorageError.invalidMetadata
         }
     }

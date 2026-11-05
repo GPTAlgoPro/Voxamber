@@ -1,4 +1,5 @@
 import Foundation
+import VoxamberHy3D
 
 /// Explicit container identities. The rebuilt candidate was verified against
 /// the fixed FP16 sources/MLX0.31.4 recipe; it is not claimed equal to legacy69.
@@ -34,6 +35,10 @@ public enum HunyuanShape21WeightProfile: String, Codable, Sendable, CaseIterable
     public var sourceRecipeTensorParityVerified: Bool { self == .rebuiltQ4Candidate }
     /// No profile has completed the current SDK's 12GB iPhone acceptance gate.
     public var deviceProfileValidated: Bool { false }
+    var geometryCleanupPolicy: MeshCleanupPolicy {
+        self == .rebuiltQ4Candidate ? .finitePositiveAreaFloat64 : .legacyThreshold
+    }
+    public var geometryPostprocessID: String { geometryCleanupPolicy.rawValue }
 
     func validateFingerprint(byteCount: Int64, sha256: String) throws {
         guard byteCount == modelPackBytes, sha256 == modelPackSHA256 else { throw ShapeError.modelMismatch }

@@ -12,6 +12,23 @@ import VoxamberShapeNative
 /// Positive origin-policy tests use explicitly simulated true metadata solely
 /// to exercise invariants. The actual edit receipt always remains false.
 @MainActor final class NeuralEditRecordTests: XCTestCase {
+    func testStagePostprocessIdentityPreservesOldJSONAndNewVersion() throws {
+        let legacy = NeuralStageProvenance(modelID: "shape", modelRevision: "fixed-source",
+            modelManifestSHA256: String(repeating: "a", count: 64),
+            configurationSHA256: String(repeating: "b", count: 64), runtimeVersion: "0.32.3", seed: 0)
+        let encoder = JSONEncoder()
+        let data = try encoder.encode(legacy)
+        let object = try XCTUnwrap(JSONSerialization.jsonObject(with: data) as? [String: Any])
+        XCTAssertNil(object["geometryPostprocessID"])
+        XCTAssertNil(try JSONDecoder().decode(NeuralStageProvenance.self, from: data).geometryPostprocessID)
+        let current = NeuralStageProvenance(modelID: legacy.modelID, modelRevision: legacy.modelRevision,
+            modelManifestSHA256: legacy.modelManifestSHA256, configurationSHA256: legacy.configurationSHA256,
+            runtimeVersion: legacy.runtimeVersion, seed: legacy.seed, geometryPostprocessID: "finite-positive-f64-v1")
+        try current.validate()
+        XCTAssertEqual(try JSONDecoder().decode(NeuralStageProvenance.self, from: encoder.encode(current)), current)
+        XCTAssertNotEqual(current, legacy)
+    }
+
     func testActualSDKDenseRecipeReceiptAndArtifactsMapWithoutFieldLoss() throws {
         let f = try fixture()
         try f.evidence.validate(recipe: f.recipe)

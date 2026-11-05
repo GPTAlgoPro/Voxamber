@@ -95,7 +95,8 @@ private enum ShapeBackend {
                 try token.check()
                 do {
                     try generator.generateGLB(image:image,to:glbURL,steps:10,guidance:5,seed:seed,
-                        resolution:192,octree:true,isCancelled:{token.isCancelled || Task.isCancelled},
+                        resolution:192,octree:true,cleanupPolicy:profile.geometryCleanupPolicy,
+                        isCancelled:{token.isCancelled || Task.isCancelled},
                         onProgress:{p in onProgress(.init(stage:p.stage,fraction:0.05+p.fraction*0.82))})
                 } catch {try token.check();throw error}
                 try token.check()
@@ -130,7 +131,8 @@ private enum ShapeBackend {
                 modelPackProfileID:profile.rawValue,modelPackRevision:profile.packRevision,
                 sourceTensorRevision:profile.sourceTensorRevision,
                 sourceRecipeTensorParityVerified:profile.sourceRecipeTensorParityVerified,
-                deviceProfileValidated:profile.deviceProfileValidated),
+                deviceProfileValidated:profile.deviceProfileValidated,
+                geometryPostprocessID:profile.geometryPostprocessID),
             validationReceipt:.init(version:1,baseMeshFormatID:ShapeMeshArchive.formatID,
                 baseMeshFormatVersion:ShapeMeshArchive.version,geometryLayoutVersion:ShapeMeshArchive.geometryLayoutVersion,
                 vertexCount:buffers.vertexCount,triangleCount:buffers.triangleCount,indexCount:buffers.indices.count,

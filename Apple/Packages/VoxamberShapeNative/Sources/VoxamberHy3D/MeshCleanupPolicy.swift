@@ -1,10 +1,11 @@
 import Foundation
 import simd
 
-/// Internal QA comparison. Production generation keeps its legacy default.
-enum MeshCleanupPolicy {
-    case legacyThreshold
-    case finitePositiveAreaFloat64
+/// Explicit geometry postprocess identity, separate from model/YAML identity.
+/// Existing low-level callers retain the legacy default.
+public enum MeshCleanupPolicy: String, Codable, Sendable {
+    case legacyThreshold = "legacy-eps1e-16-v1"
+    case finitePositiveAreaFloat64 = "finite-positive-f64-v1"
 }
 
 extension Mesh {
@@ -45,6 +46,11 @@ extension Mesh {
 /// Shared by both generateGLB paths. A nil sink performs no diagnostic I/O.
 /// The snapshot is a value: mutations of a caller's copy cannot edit generated.
 enum ShapeMeshFinalizer {
+    static func cleaned(_ generated: Mesh, policy: MeshCleanupPolicy = .legacyThreshold,
+                        onRawMesh: ((Mesh) throws -> Void)?) throws -> Mesh {
+        try onRawMesh?(generated)
+        return generated.removingDegenerateFaces(policy: policy)
+    }
     static func legacyCleaned(_ generated: Mesh, onRawMesh: ((Mesh) throws -> Void)?) throws -> Mesh {
         try onRawMesh?(generated)
         return generated.removingDegenerateFaces()

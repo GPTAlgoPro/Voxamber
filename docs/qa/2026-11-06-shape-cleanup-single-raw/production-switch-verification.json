@@ -1,0 +1,44 @@
+{
+  "frozenAtUTC": "2026-11-05T23:27:04.717857+00:00",
+  "scope": "Production candidate cleanup wiring after sealed single-raw causal experiment; no additional NN call",
+  "sourceSHA256": {
+    "Apple/Packages/VoxamberShapeNative/Package.swift": "4d1b0d618424c203aadbe445f2f7e059f822956388582cddac78493ca1f3b21c",
+    "Apple/Packages/VoxamberShapeNative/README.md": "2133b60f3e72529e359f3402e5c62d50501d5439f6256dc3f451a6550f22b61c",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/MeshCleanupPolicy.swift": "377446656b523f80fd3eade1ddb06d4d7ad2d070643f03d48ca1da3d4116373b",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeGenerator.swift": "5a6ccff98eb7c6cc26346da5121dac5d755520634fa193e5fdf1fea83d0be0c7",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeEngine.swift": "19717d8a53140f11bc6c100185edd826799a0cb2223c1ab91a0297dd2ab2d5c9",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeTypes.swift": "23a33c5277e2db1f9c13e481a8c6683bd3b66678251cb4a361dfe1b16b9fb486",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeWeightProfile.swift": "aef56e2241b6c1689ad5bb7f19a9c8ac07a592e1ea9bcba5ace1890a86f9482d",
+    "Apple/Packages/VoxamberShapeNative/Tests/VoxamberShapeNativeTests/MeshCleanupPolicyTests.swift": "f61fc09c2619f3780c93bb45d65c3a849b4c0e99d7a393bdd9caeaa5164d6772",
+    "Apple/Packages/VoxamberShapeNative/Tests/VoxamberShapeNativeTests/ShapeWeightProfileTests.swift": "411de4d8b46b37ed934e3ab821aa40f92fa00c0b3268fddcedd36121e1c29ee9",
+    "Apple/Packages/VoxamberShapeNative/Tests/VoxamberShapeNativeTests/Fixtures/CandidateBoundaryTriangles.json": "4c285f06746a1a47bcd45bed058bdb5bba2ef4eac951405664a0b179b4f1109e"
+  },
+  "mapping": {
+    "lowerLevelDefault": "legacy-eps1e-16-v1",
+    "legacy69ShapeBackend": "legacy-eps1e-16-v1",
+    "rebuilt30b93ShapeBackend": "finite-positive-f64-v1"
+  },
+  "metadata": {
+    "ShapeProvenance.geometryPostprocessID": "optional; oldJSON missing field decodes",
+    "YAMLConfigurationSHA256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e",
+    "profilePackPinsAndAppManifest": "unchanged",
+    "publicShapeEngineGenerateSignature": "unchanged"
+  },
+  "validation": {
+    "hostReleasePureTestsPassed": 24,
+    "failed": 0,
+    "actualBoundarySpanningTriangles": 509,
+    "nativeActualStrictUSDZTriangleCount": 400772,
+    "nativeActualStrictUSDZLines": 0,
+    "nativeActualStrictUSDZOtherPrimitives": 0,
+    "singleRawLegacyStrictNativeImports": "previously measured from same actual NN raw; no extra NN after production wiring",
+    "iOSReleaseBuild": "arm64 iOS26 Release passed7.73s"
+  },
+  "limits": [
+    "Strict retains raw mesh18 boundary loops/108 edges,6components andmain genus31; it is not watertight or full-quality accepted.",
+    "Changing only cleanup policy does not establish a quantization or0.31vs0.32 cause for remaining raw defects.",
+    "No phone or whole-App/inference/cancellation/thermal/repeat test performed by this production switch.",
+    "Immutable b22 source/evidence recorded before this patch remains separate."
+  ],
+  "finalizedAtUTC": "2026-11-05T23:27:47.349112+00:00"
+}

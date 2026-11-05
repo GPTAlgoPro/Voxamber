@@ -1,0 +1,577 @@
+{
+  "scope": "CPU-only actual generated mesh topology diagnostic; no repair/rewrite/NN",
+  "source": "Apple/.build/NativeShapeCleanupGate/VaseSingleRaw01/raw-preclean.glb",
+  "sourceSHA256": "42ea594bf5247fda74848ef2e958b27e09cee3d2d45529a61e0b0636ddcc2251",
+  "positionsFinite": true,
+  "indexDegenerateTriangles": 0,
+  "zeroAreaTrianglesFloat64FromActualFloat32Positions": 0,
+  "duplicateFacesIgnoringWinding": 0,
+  "minimumNonzeroDoubleAreaModelUnitsSquared": 1.4716985089938802e-13,
+  "diagnosticNearZeroAreaThresholdModelUnitsSquared": 3.97514306911313e-14,
+  "trianglesBelowDiagnosticAreaThreshold": 0,
+  "indexTopology": {
+    "mode": "original index topology; no welding/repair",
+    "vertices": 200370,
+    "referencedVertices": 200370,
+    "unreferencedVertices": 0,
+    "faces": 400772,
+    "uniqueUndirectedEdges": 601212,
+    "boundaryEdges": 108,
+    "twoFaceEdges": 601104,
+    "nonManifoldEdgesMoreThanTwoFaces": 0,
+    "maximumEdgeFaceIncidence": 2,
+    "selfEdges": 0,
+    "sameDirectionTwoFaceEdges": 0,
+    "faceEdgeConnectedComponentCount": 6,
+    "components": [
+      {
+        "faces": 400588,
+        "vertices": 200270,
+        "edges": 600936,
+        "boundaryEdges": 108,
+        "nonManifoldEdges": 0,
+        "sameDirectionSharedEdges": 0,
+        "eulerCharacteristic": -78,
+        "closedOrientableGenusIfEdgeManifold": null,
+        "minimum": [
+          -0.8181570768356323,
+          -1.000112771987915,
+          -0.8083462119102478
+        ],
+        "maximum": [
+          0.802570104598999,
+          0.9936633110046387,
+          0.79029381275177
+        ],
+        "orientableGenusWithBoundaryLoops": 31
+      },
+      {
+        "faces": 100,
+        "vertices": 50,
+        "edges": 150,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "sameDirectionSharedEdges": 0,
+        "eulerCharacteristic": 0,
+        "closedOrientableGenusIfEdgeManifold": 1,
+        "minimum": [
+          -0.44702452421188354,
+          0.8088159561157227,
+          -0.45300787687301636
+        ],
+        "maximum": [
+          -0.37899482250213623,
+          0.8364858627319336,
+          -0.4371218681335449
+        ]
+      },
+      {
+        "faces": 60,
+        "vertices": 32,
+        "edges": 90,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "sameDirectionSharedEdges": 0,
+        "eulerCharacteristic": 2,
+        "closedOrientableGenusIfEdgeManifold": 0,
+        "minimum": [
+          -0.26252031326293945,
+          -0.20022916793823242,
+          0.4833707809448242
+        ],
+        "maximum": [
+          -0.221885085105896,
+          -0.17835843563079834,
+          0.4994697570800781
+        ]
+      },
+      {
+        "faces": 8,
+        "vertices": 6,
+        "edges": 12,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "sameDirectionSharedEdges": 0,
+        "eulerCharacteristic": 2,
+        "closedOrientableGenusIfEdgeManifold": 0,
+        "minimum": [
+          0.2712419033050537,
+          -0.1587904691696167,
+          -0.579339861869812
+        ],
+        "maximum": [
+          0.27602076530456543,
+          -0.155445396900177,
+          -0.5782635807991028
+        ]
+      },
+      {
+        "faces": 8,
+        "vertices": 6,
+        "edges": 12,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "sameDirectionSharedEdges": 0,
+        "eulerCharacteristic": 2,
+        "closedOrientableGenusIfEdgeManifold": 0,
+        "minimum": [
+          0.279499888420105,
+          -0.1520100235939026,
+          -0.5807701349258423
+        ],
+        "maximum": [
+          0.2913776636123657,
+          -0.14317244291305542,
+          -0.5777386426925659
+        ]
+      },
+      {
+        "faces": 8,
+        "vertices": 6,
+        "edges": 12,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "sameDirectionSharedEdges": 0,
+        "eulerCharacteristic": 2,
+        "closedOrientableGenusIfEdgeManifold": 0,
+        "minimum": [
+          0.29137301445007324,
+          -0.14317786693572998,
+          -0.5803518295288086
+        ],
+        "maximum": [
+          0.2985420227050781,
+          -0.13385021686553955,
+          -0.578020453453064
+        ]
+      }
+    ],
+    "nonManifoldVertexLinks": 0,
+    "nonManifoldVertexIDsFirst20": [],
+    "boundaryCycleEdgeCountHistogram": {
+      "6": 18
+    },
+    "triangularBoundarySpanningAreaSquaredFloat32": {
+      "count": 0,
+      "minimum": null,
+      "maximum": null,
+      "atOrBelowExistingMeshFilterEpsilon1e16": 0
+    },
+    "boundaryConnectedComponents": 18,
+    "simpleBoundaryCycles": 18,
+    "boundaryVertexDegreeHistogram": {
+      "2": 108
+    },
+    "boundaryLoopsSortedByExtent": [
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.06469128712930504,
+        "maximumExtentModelUnits": 0.01052093505859375,
+        "minimum": [
+          0.22093749046325684,
+          0.24197924137115479,
+          0.7469792366027832
+        ],
+        "maximum": [
+          0.23145842552185059,
+          0.252500057220459,
+          0.7575000524520874
+        ],
+        "center": [
+          0.2261979579925537,
+          0.24723964929580688,
+          0.7522396445274353
+        ]
+      },
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.06083513644105395,
+        "maximumExtentModelUnits": 0.01052093505859375,
+        "minimum": [
+          0.2945833206176758,
+          0.1262500286102295,
+          0.6312500238418579
+        ],
+        "maximum": [
+          0.30510425567626953,
+          0.1367708444595337,
+          0.6417708396911621
+        ],
+        "center": [
+          0.29984378814697266,
+          0.1315104365348816,
+          0.63651043176651
+        ]
+      },
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.061785198646264625,
+        "maximumExtentModelUnits": 0.01052093505859375,
+        "minimum": [
+          0.3787500858306885,
+          0.3682291507720947,
+          0.6417708396911621
+        ],
+        "maximum": [
+          0.3892709016799927,
+          0.3787500858306885,
+          0.6522916555404663
+        ],
+        "center": [
+          0.3840104937553406,
+          0.3734896183013916,
+          0.6470312476158142
+        ]
+      },
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.05940097484694412,
+        "maximumExtentModelUnits": 0.010520875453948975,
+        "minimum": [
+          -0.2524999976158142,
+          0.2735416889190674,
+          -0.7785416841506958
+        ],
+        "maximum": [
+          -0.24197912216186523,
+          0.2840625047683716,
+          -0.7680208086967468
+        ],
+        "center": [
+          -0.24723955988883972,
+          0.2788020968437195,
+          -0.7732812464237213
+        ]
+      },
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.06268592669405684,
+        "maximumExtentModelUnits": 0.010520875453948975,
+        "minimum": [
+          0.19989585876464844,
+          -0.04208332300186157,
+          -0.6733332872390747
+        ],
+        "maximum": [
+          0.21041667461395264,
+          -0.0315624475479126,
+          -0.6628124713897705
+        ],
+        "center": [
+          0.20515626668930054,
+          -0.036822885274887085,
+          -0.6680728793144226
+        ]
+      },
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.06653243374999471,
+        "maximumExtentModelUnits": 0.010520875453948975,
+        "minimum": [
+          0.23145842552185059,
+          -0.08416664600372314,
+          -0.6312500238418579
+        ],
+        "maximum": [
+          0.24197924137115479,
+          -0.07364583015441895,
+          -0.6207291483879089
+        ],
+        "center": [
+          0.23671883344650269,
+          -0.07890623807907104,
+          -0.6259895861148834
+        ]
+      },
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.0695554909693002,
+        "maximumExtentModelUnits": 0.0105208158493042,
+        "minimum": [
+          -0.3156249523162842,
+          -0.13677078485488892,
+          0.5470833778381348
+        ],
+        "maximum": [
+          -0.30510413646698,
+          -0.12624996900558472,
+          0.557604193687439
+        ],
+        "center": [
+          -0.3103645443916321,
+          -0.13151037693023682,
+          0.5523437857627869
+        ]
+      },
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.06361791478729066,
+        "maximumExtentModelUnits": 0.0105208158493042,
+        "minimum": [
+          -0.21041661500930786,
+          0.252500057220459,
+          -0.7890625
+        ],
+        "maximum": [
+          -0.19989579916000366,
+          0.2630208730697632,
+          -0.7785416841506958
+        ],
+        "center": [
+          -0.20515620708465576,
+          0.2577604651451111,
+          -0.7838020920753479
+        ]
+      },
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.07047092255890575,
+        "maximumExtentModelUnits": 0.0105208158493042,
+        "minimum": [
+          0.23145842552185059,
+          -0.1683332920074463,
+          -0.5996874570846558
+        ],
+        "maximum": [
+          0.24197924137115479,
+          -0.1578124761581421,
+          -0.5891666412353516
+        ],
+        "center": [
+          0.23671883344650269,
+          -0.1630728840827942,
+          -0.5944270491600037
+        ]
+      },
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.06395509006891895,
+        "maximumExtentModelUnits": 0.0105208158493042,
+        "minimum": [
+          0.2735416889190674,
+          0.06312501430511475,
+          -0.6733332872390747
+        ],
+        "maximum": [
+          0.2840625047683716,
+          0.07364583015441895,
+          -0.6628124713897705
+        ],
+        "center": [
+          0.2788020968437195,
+          0.06838542222976685,
+          -0.6680728793144226
+        ]
+      },
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.07058882821467777,
+        "maximumExtentModelUnits": 0.0105208158493042,
+        "minimum": [
+          0.2840625047683716,
+          0.07364583015441895,
+          -0.6628124713897705
+        ],
+        "maximum": [
+          0.2945833206176758,
+          0.08416664600372314,
+          -0.6522916555404663
+        ],
+        "center": [
+          0.2893229126930237,
+          0.07890623807907104,
+          -0.6575520634651184
+        ]
+      },
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.07951271378353963,
+        "maximumExtentModelUnits": 0.0105208158493042,
+        "minimum": [
+          0.2840625047683716,
+          0.1367708444595337,
+          0.6417708396911621
+        ],
+        "maximum": [
+          0.2945833206176758,
+          0.1472916603088379,
+          0.6522916555404663
+        ],
+        "center": [
+          0.2893229126930237,
+          0.1420312523841858,
+          0.6470312476158142
+        ]
+      },
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.05742259223708741,
+        "maximumExtentModelUnits": 0.0105208158493042,
+        "minimum": [
+          0.30510425567626953,
+          0.05260419845581055,
+          -0.6522916555404663
+        ],
+        "maximum": [
+          0.31562507152557373,
+          0.06312501430511475,
+          -0.6417708396911621
+        ],
+        "center": [
+          0.31036466360092163,
+          0.057864606380462646,
+          -0.6470312476158142
+        ]
+      },
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.0625895275541046,
+        "maximumExtentModelUnits": 0.0105208158493042,
+        "minimum": [
+          0.30510425567626953,
+          0.05260419845581055,
+          0.6733334064483643
+        ],
+        "maximum": [
+          0.31562507152557373,
+          0.06312501430511475,
+          0.6838542222976685
+        ],
+        "center": [
+          0.31036466360092163,
+          0.057864606380462646,
+          0.6785938143730164
+        ]
+      },
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.06068334968262798,
+        "maximumExtentModelUnits": 0.0105208158493042,
+        "minimum": [
+          0.3892709016799927,
+          0.24197924137115479,
+          0.6312500238418579
+        ],
+        "maximum": [
+          0.3997917175292969,
+          0.252500057220459,
+          0.6417708396911621
+        ],
+        "center": [
+          0.3945313096046448,
+          0.24723964929580688,
+          0.63651043176651
+        ]
+      },
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.06081406260185674,
+        "maximumExtentModelUnits": 0.0105208158493042,
+        "minimum": [
+          0.3892709016799927,
+          0.2630208730697632,
+          0.6312500238418579
+        ],
+        "maximum": [
+          0.3997917175292969,
+          0.2735416889190674,
+          0.6417708396911621
+        ],
+        "center": [
+          0.3945313096046448,
+          0.2682812809944153,
+          0.63651043176651
+        ]
+      },
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.061681622202397104,
+        "maximumExtentModelUnits": 0.0105208158493042,
+        "minimum": [
+          0.3892709016799927,
+          0.33666670322418213,
+          0.6312500238418579
+        ],
+        "maximum": [
+          0.3997917175292969,
+          0.34718751907348633,
+          0.6417708396911621
+        ],
+        "center": [
+          0.3945313096046448,
+          0.34192711114883423,
+          0.63651043176651
+        ]
+      },
+      {
+        "vertices": 6,
+        "edges": 6,
+        "allDegreeTwoCycle": true,
+        "perimeterModelUnits": 0.06935416014548923,
+        "maximumExtentModelUnits": 0.0105208158493042,
+        "minimum": [
+          0.4208333492279053,
+          0.252500057220459,
+          0.6102083921432495
+        ],
+        "maximum": [
+          0.4313541650772095,
+          0.2630208730697632,
+          0.6207292079925537
+        ],
+        "center": [
+          0.4260937571525574,
+          0.2577604651451111,
+          0.6154688000679016
+        ]
+      }
+    ],
+    "seconds": 1.8635189533233643
+  },
+  "exactDuplicatePositionVertices": 0,
+  "exactPositionIdentificationTopology": {
+    "sameAsOriginalIndexTopology": true,
+    "exactDuplicatePositionVertices": 0
+  },
+  "seconds": 1.965254783630371,
+  "limits": [
+    "Exact-position identification is a diagnostic only, not a modification or epsilon weld.",
+    "No boundary edges does not exclude closed manifold handles/tunnels. A visible opening can be a manifold tunnel, a boundary, or occlusion.",
+    "Vertex links are checked for connected cycle/path structure; main genus with boundaries is reported separately when manifold.",
+    "Coordinates/perimeters are normalized model units, not physical metres."
+  ]
+}

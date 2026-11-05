@@ -19,6 +19,8 @@ final class ShapeWeightProfileTests: XCTestCase {
         XCTAssertFalse(legacy.sourceRecipeTensorParityVerified)
         XCTAssertTrue(candidate.sourceRecipeTensorParityVerified)
         XCTAssertTrue(HunyuanShape21WeightProfile.allCases.allSatisfy { !$0.deviceProfileValidated })
+        XCTAssertEqual(legacy.geometryPostprocessID,"legacy-eps1e-16-v1")
+        XCTAssertEqual(candidate.geometryPostprocessID,"finite-positive-f64-v1")
         XCTAssertEqual(HunyuanShape21Configuration.minimumAvailableProcessBytes, 11 * 1_073_741_824 / 2)
     }
 
@@ -44,5 +46,24 @@ final class ShapeWeightProfileTests: XCTestCase {
             XCTAssertThrowsError(try ShapePackVerifier.preflight(file, profile: profile))
             XCTAssertThrowsError(try ShapePackVerifier.verify(file, profile: profile, cancellation: .init()))
         }
+    }
+
+    func testPostprocessProvenanceIsSeparateFromYAMLAndOlderJSONStillDecodes() throws {
+        let profile=HunyuanShape21WeightProfile.rebuiltQ4Candidate
+        let value=ShapeProvenance(modelID:HunyuanShape21Configuration.modelID,
+            modelSourceRevision:HunyuanShape21Configuration.modelSourceRevision,
+            modelPackSHA256:profile.modelPackSHA256,configurationSHA256:HunyuanShape21Configuration.configurationSHA256,
+            inputPNG_SHA256:String(repeating:"0",count:64),seed:24301,steps:10,octreeResolution:192,latentCount:4096,
+            runtimeMLXVersion:"0.32.3",physicalScaleKnown:false,weightParityWithOriginalRuntimeVerified:false,
+            modelPackProfileID:profile.rawValue,modelPackRevision:profile.packRevision,
+            sourceTensorRevision:profile.sourceTensorRevision,sourceRecipeTensorParityVerified:true,deviceProfileValidated:false,
+            geometryPostprocessID:profile.geometryPostprocessID)
+        let data=try JSONEncoder().encode(value)
+        let restored=try JSONDecoder().decode(ShapeProvenance.self,from:data)
+        XCTAssertEqual(restored.geometryPostprocessID,"finite-positive-f64-v1")
+        XCTAssertEqual(restored.configurationSHA256,"a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e")
+        var old=try XCTUnwrap(JSONSerialization.jsonObject(with:data) as? [String:Any]);old.removeValue(forKey:"geometryPostprocessID")
+        let legacyJSON=try JSONSerialization.data(withJSONObject:old)
+        XCTAssertNil(try JSONDecoder().decode(ShapeProvenance.self,from:legacyJSON).geometryPostprocessID)
     }
 }

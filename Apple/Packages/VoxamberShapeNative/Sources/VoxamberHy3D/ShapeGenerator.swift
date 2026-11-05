@@ -759,6 +759,7 @@ public final class ShapeGenerator {
     @discardableResult
     public func generateGLB(image: CGImage, to url: URL, steps: Int = 30, guidance: Float = 5.0,
                             seed: UInt64 = 0, resolution: Int = 256, octree: Bool = true,
+                            cleanupPolicy: MeshCleanupPolicy = .legacyThreshold,
                             isCancelled: @escaping () -> Bool = { false },
                             onRawMesh: ((Mesh) throws -> Void)? = nil,
                             onProgress: ((Progress) -> Void)? = nil) throws -> (verts: Int, faces: Int) {
@@ -768,7 +769,7 @@ public final class ShapeGenerator {
             throw NSError(domain: "Hy3DMLX", code: 1,
                           userInfo: [NSLocalizedDescriptionKey: "generation cancelled or image preprocessing failed"])
         }
-        let mesh = try ShapeMeshFinalizer.legacyCleaned(generated,onRawMesh:onRawMesh)
+        let mesh = try ShapeMeshFinalizer.cleaned(generated,policy:cleanupPolicy,onRawMesh:onRawMesh)
         try GLB.write(mesh, to: url)
         return (mesh.vertices.count, mesh.faces.count)
     }
@@ -777,6 +778,7 @@ public final class ShapeGenerator {
     public func generateGLB(images: [View: CGImage], to url: URL, steps: Int = 30,
                             guidance: Float = 5.0, seed: UInt64 = 0,
                             resolution: Int = 256, octree: Bool = true,
+                            cleanupPolicy: MeshCleanupPolicy = .legacyThreshold,
                             isCancelled: @escaping () -> Bool = { false },
                             onRawMesh: ((Mesh) throws -> Void)? = nil,
                             onProgress: ((Progress) -> Void)? = nil) throws
@@ -787,7 +789,7 @@ public final class ShapeGenerator {
             throw NSError(domain: "Hy3DMLX", code: 2,
                           userInfo: [NSLocalizedDescriptionKey: "multi-view generation cancelled or preprocessing failed"])
         }
-        let mesh = try ShapeMeshFinalizer.legacyCleaned(generated,onRawMesh:onRawMesh)
+        let mesh = try ShapeMeshFinalizer.cleaned(generated,policy:cleanupPolicy,onRawMesh:onRawMesh)
         try GLB.write(mesh, to: url)
         return (mesh.vertices.count, mesh.faces.count)
     }

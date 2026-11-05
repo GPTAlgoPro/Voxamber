@@ -1,0 +1,173 @@
+{
+  "sealedAtUTC": "2026-11-05T23:22:04.782051+00:00",
+  "scope": "One new low-level host NN raw mesh, then two CPU policies. Not ordinary public ShapeEngine/API or phone acceptance.",
+  "exitCode": 0,
+  "neuralRequestCount": 1,
+  "retries": 0,
+  "inputExactBytesAndSHAExternallyConfirmed": true,
+  "watchdogTriggered": false,
+  "all58SourceBinaryBundleInputBeforeAfterUnchanged": true,
+  "runnerSHA256": "b22fde30407dca523dc596ba97665c51606ab8a13fc5937dcd8c621341d6231f",
+  "candidateWholeSHAAfter": "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7",
+  "candidateBytes": 2490378518,
+  "legacyGLBMatchesPriorPublicSDKGLB": true,
+  "legacyUSDZMatchesPriorPublicSDKUSDZ": true,
+  "rawAndStrictGLBSameSHA": true,
+  "predicateClassification": {
+    "keptBoth": 400211,
+    "strictRestoresPositiveFloat32AreaBelowThreshold": 561
+  },
+  "topologySummary": {
+    "raw": {
+      "vertices": 200370,
+      "faces": 400772,
+      "boundaryEdges": 108,
+      "boundaryConnectedComponents": 18,
+      "nonManifoldEdgesMoreThanTwoFaces": 0,
+      "nonManifoldVertexLinks": 0,
+      "faceEdgeConnectedComponentCount": 6
+    },
+    "legacy": {
+      "vertices": 200370,
+      "faces": 400211,
+      "boundaryEdges": 1731,
+      "boundaryConnectedComponents": 549,
+      "nonManifoldEdgesMoreThanTwoFaces": 0,
+      "nonManifoldVertexLinks": 0,
+      "faceEdgeConnectedComponentCount": 6
+    },
+    "strict": {
+      "vertices": 200370,
+      "faces": 400772,
+      "boundaryEdges": 108,
+      "boundaryConnectedComponents": 18,
+      "nonManifoldEdgesMoreThanTwoFaces": 0,
+      "nonManifoldVertexLinks": 0,
+      "faceEdgeConnectedComponentCount": 6
+    }
+  },
+  "causalConclusion": "On the identical neural raw, legacy epsilon deletes561 positive-Float32-area faces, increasing boundary loops18→549 and open edges108→1731. Float32 area underflow was not responsible in this raw. Strict preserves all original raw faces without repairs.",
+  "remainingDefects": [
+    "Raw and strict still have18 open loops/108 boundary edges,6 components,main genus31.",
+    "Surface wrinkles/jagged rim and prominent visible hole remain in both actual view pairs.",
+    "No watertight/CAD-clean/general-quality acceptance and no attribution to weight quantization."
+  ],
+  "nativeImport": [
+    {
+      "faces": 400211,
+      "glbSHA256": "8153667ca874a56aac9a2eef95fb28f470d5a9b68166fb7bcf35a728db9c18e4",
+      "kind": "CPU cleanup of the same single neural raw mesh, not another NN call",
+      "maximum": [
+        0.802570104598999,
+        0.9936633110046387,
+        0.79029381275177
+      ],
+      "minimum": [
+        -0.8181570768356323,
+        -1.000112771987915,
+        -0.8083462119102478
+      ],
+      "name": "legacy",
+      "nativeUSDZLines": 0,
+      "nativeUSDZOtherPrimitives": 0,
+      "nativeUSDZTriangles": 400211,
+      "usdzSHA256": "ddec6c21fdf74219effd5b8646f7b7ac8b70d5923d545dc9a8c9e9a515fab881",
+      "vertices": 200370
+    },
+    {
+      "faces": 400772,
+      "glbSHA256": "42ea594bf5247fda74848ef2e958b27e09cee3d2d45529a61e0b0636ddcc2251",
+      "kind": "CPU cleanup of the same single neural raw mesh, not another NN call",
+      "maximum": [
+        0.802570104598999,
+        0.9936633110046387,
+        0.79029381275177
+      ],
+      "minimum": [
+        -0.8181570768356323,
+        -1.000112771987915,
+        -0.8083462119102478
+      ],
+      "name": "strict",
+      "nativeUSDZLines": 0,
+      "nativeUSDZOtherPrimitives": 0,
+      "nativeUSDZTriangles": 400772,
+      "usdzSHA256": "e455afc91ff3baa79f57d5ae0037a2fe702f638cd479ed3dacbb683502549f7f",
+      "vertices": 200370
+    }
+  ],
+  "visualReview": {
+    "allFourActualViewsInspected": true,
+    "views": [
+      "legacy/vase-front.png",
+      "legacy/vase-threequarter.png",
+      "strict/vase-front.png",
+      "strict/vase-threequarter.png"
+    ],
+    "finding": "Overall curled silhouette/pedestal unchanged; tiny topology improves but prominent visible hole/ragged interior remain.",
+    "parentFinalQualityAcceptance": false
+  },
+  "hostObservations": {
+    "seconds": 100.890909075737,
+    "MLXPeakBytes": 4205861544,
+    "physicalPeakObservedBytes": 4429842928,
+    "physicalSampleCount": 949,
+    "physicalBytesAtEnd": 426772112
+  },
+  "reviewBoundary": {
+    "timing": "Read-only review arrived after this frozen binary began its sole NN call.",
+    "minorHostIssues": [
+      "Future host driver should assert fixed input inside executable as well as source-freeze wrapper.",
+      "Future driver should recheck token/Task cancellation after worker settlement and during CPU branches; this frozen driver lacks those extra gates."
+    ],
+    "actualCondition": "Exact copied input was checked externally, no cancellation was requested and watchdog=false. This record does not claim the future driver fixes were tested.",
+    "sourceWasNotChangedDuringRun": true
+  },
+  "artifacts": [
+    {
+      "path": "Apple/.build/NativeShapeCleanupGate/VaseSingleRaw01/comparison-report.json",
+      "byteCount": 4310,
+      "sha256": "2897cac54c38c7afe53ed4ba372507a53f0213c44bec383ffab9c63368d2888a"
+    },
+    {
+      "path": "Apple/.build/NativeShapeCleanupGate/VaseSingleRaw01/default-legacy-from-NN.glb",
+      "byteCount": 7207568,
+      "sha256": "8153667ca874a56aac9a2eef95fb28f470d5a9b68166fb7bcf35a728db9c18e4"
+    },
+    {
+      "path": "Apple/.build/NativeShapeCleanupGate/VaseSingleRaw01/input-512.png",
+      "byteCount": 249722,
+      "sha256": "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae"
+    },
+    {
+      "path": "Apple/.build/NativeShapeCleanupGate/VaseSingleRaw01/legacy/model.glb",
+      "byteCount": 7207568,
+      "sha256": "8153667ca874a56aac9a2eef95fb28f470d5a9b68166fb7bcf35a728db9c18e4"
+    },
+    {
+      "path": "Apple/.build/NativeShapeCleanupGate/VaseSingleRaw01/legacy/model.usdz",
+      "byteCount": 25670378,
+      "sha256": "ddec6c21fdf74219effd5b8646f7b7ac8b70d5923d545dc9a8c9e9a515fab881"
+    },
+    {
+      "path": "Apple/.build/NativeShapeCleanupGate/VaseSingleRaw01/raw-preclean.glb",
+      "byteCount": 7214300,
+      "sha256": "42ea594bf5247fda74848ef2e958b27e09cee3d2d45529a61e0b0636ddcc2251"
+    },
+    {
+      "path": "Apple/.build/NativeShapeCleanupGate/VaseSingleRaw01/strict/model.glb",
+      "byteCount": 7214300,
+      "sha256": "42ea594bf5247fda74848ef2e958b27e09cee3d2d45529a61e0b0636ddcc2251"
+    },
+    {
+      "path": "Apple/.build/NativeShapeCleanupGate/VaseSingleRaw01/strict/model.usdz",
+      "byteCount": 25684615,
+      "sha256": "e455afc91ff3baa79f57d5ae0037a2fe702f638cd479ed3dacbb683502549f7f"
+    }
+  ],
+  "limitations": [
+    "Mac48GiB result; iPhone12GB/6GiB whole-App memory, thermal/repeat behavior and cancellation bound not tested.",
+    "Production cleanup default was legacy for this run and not changed before sealing.",
+    "Raw/native artifacts are kept ignored and original earlier NN assets were not modified."
+  ]
+}

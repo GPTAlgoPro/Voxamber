@@ -66,6 +66,10 @@ final class MeshCleanupPolicyTests: XCTestCase {
         XCTAssertEqual(cleaned.faces.count,1);XCTAssertEqual(cleaned.vertices,raw.removingDegenerateFaces().vertices)
         let withoutSink=try ShapeMeshFinalizer.legacyCleaned(raw,onRawMesh:nil)
         XCTAssertEqual(withoutSink.vertices,cleaned.vertices);XCTAssertEqual(withoutSink.faces.count,cleaned.faces.count)
+        let defaultPolicy=try ShapeMeshFinalizer.cleaned(raw,onRawMesh:nil)
+        XCTAssertEqual(defaultPolicy.vertices,cleaned.vertices);XCTAssertEqual(defaultPolicy.faces.count,cleaned.faces.count)
+        let explicitStrict=try ShapeMeshFinalizer.cleaned(raw,policy:.finitePositiveAreaFloat64,onRawMesh:nil)
+        XCTAssertEqual(explicitStrict.vertices,raw.vertices);XCTAssertEqual(explicitStrict.faces.count,raw.faces.count)
         XCTAssertThrowsError(try ShapeMeshFinalizer.legacyCleaned(raw) { _ in throw CocoaError(.fileWriteUnknown) })
     }
 }

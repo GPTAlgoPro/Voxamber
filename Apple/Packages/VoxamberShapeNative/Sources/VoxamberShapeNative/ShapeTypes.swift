@@ -62,6 +62,7 @@ public struct ShapeProvenance: Codable, Sendable {
     public let sourceTensorRevision:String?
     public let sourceRecipeTensorParityVerified:Bool?
     public let deviceProfileValidated:Bool?
+    public let geometryPostprocessID:String?
 }
 
 /// Integrity/count evidence from the real backend's artifact boundary. This is
