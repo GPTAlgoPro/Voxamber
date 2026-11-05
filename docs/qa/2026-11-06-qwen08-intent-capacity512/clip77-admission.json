@@ -1,0 +1,35 @@
+{
+  "cases" : [
+    {
+      "bothPinnedCLIPEncodersHaveSameUnpaddedCount" : true,
+      "id" : "lamp",
+      "modelCalls" : 0,
+      "negativeCLIPTokensIncludingBOSandEOS" : 2,
+      "positiveCharacters" : 210,
+      "positiveCLIPTokensIncludingBOSandEOS" : 58,
+      "publicImageTokenizerAdmission" : true
+    },
+    {
+      "bothPinnedCLIPEncodersHaveSameUnpaddedCount" : true,
+      "id" : "spiral_shell_vase",
+      "modelCalls" : 0,
+      "negativeCLIPTokensIncludingBOSandEOS" : 2,
+      "positiveCharacters" : 72,
+      "positiveCLIPTokensIncludingBOSandEOS" : 18,
+      "publicImageTokenizerAdmission" : true
+    },
+    {
+      "bothPinnedCLIPEncodersHaveSameUnpaddedCount" : true,
+      "id" : "violin_and_bow",
+      "modelCalls" : 0,
+      "negativeCLIPTokensIncludingBOSandEOS" : 2,
+      "positiveCharacters" : 69,
+      "positiveCLIPTokensIncludingBOSandEOS" : 20,
+      "publicImageTokenizerAdmission" : true
+    }
+  ],
+  "characterCapacityDoesNotGuaranteeTokenCapacity" : true,
+  "CLIPTokenLimit" : 77,
+  "CoreMLModelInstantiated" : false,
+  "scope" : "Native tokenizer-only admission, no image\/Shape\/NN call"
+}

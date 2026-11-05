@@ -1,0 +1,151 @@
+{
+  "appID": "6831042755",
+  "bundleID": "com.kaisun.voxamber",
+  "deployedParameterCountConservative": 7911616876,
+  "packs": [
+    {
+      "assetPackID": "Voxamber-Qwen35-08B-INT4",
+      "group": "intent",
+      "legalFiles": [
+        {
+          "byteCount": 1067,
+          "relativePath": "Licenses/qwen3.5-0.8b-mlx-int4/MLX-Swift.txt",
+          "sha256": "44326a4ea062241ae6fc26ee2ec90bdc81af7eb7b9d3966181b733fa69d42057",
+          "source": "Apple/ThreeLiveStudio/Resources/Licenses/MLX-Swift.txt"
+        },
+        {
+          "byteCount": 1067,
+          "relativePath": "Licenses/qwen3.5-0.8b-mlx-int4/MLX-Swift-LM.txt",
+          "sha256": "7b1d86acac816ce8192209d7e01141c129b4d48d474c15cc5fb4af62f497c323",
+          "source": "Apple/ThreeLiveStudio/Resources/Licenses/MLX-Swift-LM.txt"
+        },
+        {
+          "byteCount": 11347,
+          "relativePath": "Licenses/qwen3.5-0.8b-mlx-int4/Swift-Transformers.txt",
+          "sha256": "648b81e6c6f9975c3b6cf6d630229b6c8d6f1ddaef55f5770f576adda19f3495",
+          "source": "Apple/ThreeLiveStudio/Resources/Licenses/Swift-Transformers.txt"
+        },
+        {
+          "byteCount": 11544,
+          "relativePath": "Licenses/qwen3.5-0.8b-mlx-int4/Qwen-Model.txt",
+          "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+          "source": "Apple/ThreeLiveStudio/Resources/Licenses/Qwen-Model.txt"
+        },
+        {
+          "byteCount": 11413,
+          "relativePath": "Licenses/qwen3.5-0.8b-mlx-int4/XGrammar.txt",
+          "sha256": "7416fb6978b1064db50b358e161804e0599afc317b7a5df42136edaa713e7bab",
+          "source": "Apple/ThreeLiveStudio/Resources/Licenses/XGrammar.txt"
+        },
+        {
+          "byteCount": 1414,
+          "relativePath": "Licenses/qwen3.5-0.8b-mlx-int4/PicoJSON.txt",
+          "sha256": "52a7da16781b4b899382c9ddfcf059235cdee73e2f45cfd7402c2ae9a2e9d28d",
+          "source": "Apple/ThreeLiveStudio/Resources/Licenses/PicoJSON.txt"
+        },
+        {
+          "byteCount": 11388,
+          "relativePath": "Licenses/qwen3.5-0.8b-mlx-int4/DLPack.txt",
+          "sha256": "6bbee1883f24c06770474e1d8c44cd8e021693798548eab83747a4c6e63cc579",
+          "source": "Apple/ThreeLiveStudio/Resources/Licenses/DLPack.txt"
+        }
+      ],
+      "modelByteCount": 645315928,
+      "modelFileCount": 10,
+      "modelID": "qwen3.5-0.8b-mlx-int4",
+      "parameterCount": 873438784,
+      "sourceManifest": "Apple/ThreeLiveStudio/Resources/NeuralModels/IntentQwen08.json",
+      "sourceManifestSHA256": "53ee064ef37769876fc5c0bfd71d5c29f365562cf421c2425a4124d49b82aa09",
+      "sourceRoot": "Apple/.build/NeuralModels/Qwen3.5-0.8B-4bit"
+    },
+    {
+      "assetPackID": "Voxamber-SDXL-CoreML",
+      "group": "image",
+      "legalFiles": [
+        {
+          "byteCount": 1067,
+          "relativePath": "Licenses/sdxl-base-ios-coreml/LICENSE.md",
+          "sha256": "4f7eae00de7a3b4ea1d6b3d26f64c113b999dda4e7d3269f3278caac66575fc3",
+          "source": "Apple/Packages/VoxamberImageNative/LICENSE.md"
+        },
+        {
+          "byteCount": 14109,
+          "relativePath": "Licenses/sdxl-base-ios-coreml/MODEL-LICENSE-SDXL.md",
+          "sha256": "19b6998b569b53ac1fc2158a8a3202c8699a9a4605b47075715d9c96be7fb6d0",
+          "source": "Apple/Packages/VoxamberImageNative/MODEL-LICENSE-SDXL.md"
+        }
+      ],
+      "modelByteCount": 3052951670,
+      "modelFileCount": 27,
+      "modelID": "sdxl-base-ios-coreml",
+      "parameterCount": 3468837867,
+      "sourceManifest": "Apple/ThreeLiveStudio/Resources/NeuralModels/ImageSDXL.json",
+      "sourceManifestSHA256": "c368d2ae9183096d986c921dec162f2f493759bbfbb9ce29e1d3fc24946d75a0",
+      "sourceRoot": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled"
+    },
+    {
+      "assetPackID": "Voxamber-Hunyuan21-Shape-Q4-30B93",
+      "group": "shape",
+      "legalFiles": [
+        {
+          "byteCount": 7575,
+          "relativePath": "Licenses/hunyuan-shape-2.1-q4-30b93/Snap3D-ThirdPartyNotices.txt",
+          "sha256": "679ddc10a7dbe0c3170c55dfd00dd2c6b40bab320c7927c6fe6ea22754023b8c",
+          "source": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Snap3D-ThirdPartyNotices.txt"
+        },
+        {
+          "byteCount": 16644,
+          "relativePath": "Licenses/hunyuan-shape-2.1-q4-30b93/Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt",
+          "sha256": "ffccf6b539a82e6084d14ff064dadd22d33384d6164b07c0c5a3141810df0350",
+          "source": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt"
+        },
+        {
+          "byteCount": 17915,
+          "relativePath": "Licenses/hunyuan-shape-2.1-q4-30b93/Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt",
+          "sha256": "5bd08f93b2d280bb26ff3eed5d3996fe47a9698b5f7785163928668d7fd578c6",
+          "source": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt"
+        },
+        {
+          "byteCount": 1069,
+          "relativePath": "Licenses/hunyuan-shape-2.1-q4-30b93/Hunyuan3D-Swift-MIT.txt",
+          "sha256": "e0485dc21868a42682cf1255af42d1bf038cf5e80608b2006b5c69d65d426d7f",
+          "source": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Hunyuan3D-Swift-MIT.txt"
+        },
+        {
+          "byteCount": 1426,
+          "relativePath": "Licenses/hunyuan-shape-2.1-q4-30b93/Hunyuan3D-Swift-ThirdParty.md",
+          "sha256": "abd4d61f1c0bf3dcfc6a399457f26254be74518dc53de8b69e2606e3a3a1d241",
+          "source": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Hunyuan3D-Swift-ThirdParty.md"
+        },
+        {
+          "byteCount": 17911,
+          "relativePath": "Licenses/hunyuan-shape-2.1-q4-30b93/Tencent-Hunyuan-3D-2.1-License.txt",
+          "sha256": "f60f9fdf0c40cdd3983123eb8181caac027a6f86d4ea3c827618e5e1e5adc6db",
+          "source": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Tencent-Hunyuan-3D-2.1-License.txt"
+        },
+        {
+          "byteCount": 1067,
+          "relativePath": "Licenses/hunyuan-shape-2.1-q4-30b93/MLX-Swift.txt",
+          "sha256": "44326a4ea062241ae6fc26ee2ec90bdc81af7eb7b9d3966181b733fa69d42057",
+          "source": "Apple/ThreeLiveStudio/Resources/Licenses/MLX-Swift.txt"
+        },
+        {
+          "byteCount": 11388,
+          "relativePath": "Licenses/hunyuan-shape-2.1-q4-30b93/DLPack.txt",
+          "sha256": "6bbee1883f24c06770474e1d8c44cd8e021693798548eab83747a4c6e63cc579",
+          "source": "Apple/ThreeLiveStudio/Resources/Licenses/DLPack.txt"
+        }
+      ],
+      "modelByteCount": 2490380596,
+      "modelFileCount": 2,
+      "modelID": "hunyuan-shape-2.1-q4-30b93",
+      "parameterCount": 3569340225,
+      "sourceManifest": "Apple/ThreeLiveStudio/Resources/NeuralModels/ShapeHunyuan21.json",
+      "sourceManifestSHA256": "7939b77b44905451f506c75b7f3bf71876258711d4f0ebd28d79b4fb7332d0eb",
+      "sourceRoot": "Apple/.build/NeuralModels/Shape21Q4"
+    }
+  ],
+  "parameterBudgetMaximum": 8000000000,
+  "publicationEnabled": false,
+  "schemaVersion": 1
+}

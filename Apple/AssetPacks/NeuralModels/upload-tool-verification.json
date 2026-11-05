@@ -1,0 +1,31 @@
+{
+  "actualDryRun": {
+    "archiveSHAAndOuterManifestVerified": true,
+    "extractedInnerContractAndLegalAllPinsVerified": true,
+    "passedPacks": 3,
+    "remoteGETTargetVerified": true,
+    "remotePOSTorPATCHAllowed": false
+  },
+  "appID": "6831042755",
+  "approvalSHA256": "35da7e7803a0a30a4db60e865d10f90d2988db2655f8f2a2de1cd97156760a13",
+  "bundleID": "com.kaisun.voxamber",
+  "legacyTransportMatchesApproval": true,
+  "newPackAllowlist": [
+    "Voxamber-Qwen35-08B-INT4",
+    "Voxamber-SDXL-CoreML",
+    "Voxamber-Hunyuan21-Shape-Q4-30B93"
+  ],
+  "schemaVersion": 1,
+  "scope": "Only approved model pack upload and processing; no client availability/TestFlight/review/release changes",
+  "sourceSHA256": {
+    "Scripts/apple-hosted-models/test_neural_upload.py": "15351a5e472aa0236af356bc127b41c937568d4a7974e19c7c7d7b98e762722c",
+    "Scripts/apple-hosted-models/upload_model.py": "f04e87d475c043551a6b395dda1001ce3716852c7ec2e7ebc8067a1d1f4f8089",
+    "Scripts/apple-hosted-models/upload_neural_packs.py": "ec27e20bc62bf1ccf96639a984657684ecbcf27964570b186a4fa139fadb5106"
+  },
+  "tests": {
+    "failed": 0,
+    "networkOrModelInitializedByTests": false,
+    "passed": 11
+  },
+  "uploadCompletionClaimedByThisReceipt": false
+}

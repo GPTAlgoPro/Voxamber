@@ -9,7 +9,7 @@ public actor NativeCreationEngine {
     private struct Job { let id: UUID; let task: Task<NativeCreationResult, Error> }
     private let intentEngine = QwenEngine()
     private let imageEngine = ImageEngine()
-    private let shapeEngine = ShapeEngine()
+    private let shapeEngine = ShapeEngine(weightProfile: .rebuiltQ4Candidate)
     private var job: Job?
     private var cleanupCount = 0
     public var isRunning: Bool { job != nil || cleanupCount > 0 }

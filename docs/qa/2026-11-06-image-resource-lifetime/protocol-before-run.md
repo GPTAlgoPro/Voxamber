@@ -1,0 +1,7 @@
+新资源生存期条件，保留旧native-image-vase全部图像/result不覆盖。唯一SDK行为变化为ImageEngine同步范围增加autoreleasepool；validation/tokenizer/driver/load/generate/PNG/defer卸载均在pool中，Data在pool外返回。数学、seed93、20DPM、guidance7.5、CPU&NE（VAE原CPU&GPU）、reduceMemory、同一真实vase raw与native空negative均不改。
+
+先11项单测与iOS26 generic编译通过并冻结，再唯一一次同图生成，不重跑、不换provider/seed/prompt，不清MLX缓存、不放松5.5GiB admission。不代表文字→3D、手机或完整内存验收。
+
+内存每250ms采样并立即持久化content-free JSONL；同步snapshot依次为beforeImage、afterImageReturn（pool已退出）、afterIdle1s、afterAdditional3sTotal4s、beforeVision、afterVision和strongFinal。等待总4s。停止timer并排空采样队列后再执行strongFinal，明确记录finalSnapshotBytes避免旧末样本竞争。
+
+图像成功后最多一次相同SubjectImagePreparer真实Vision；不伪造mask。逐阶段结果才能区分Image与Vision影响。旧模型/OS编译缓存已被前一gate预热，耗时差异不可单独归因于pool。Mac own-process footprint不含跨进程服务，不能当iPhone6GiB承诺。

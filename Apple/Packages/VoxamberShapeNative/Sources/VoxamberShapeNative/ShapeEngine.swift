@@ -11,12 +11,13 @@ public actor ShapeEngine {
     private struct Job {let id:UUID;let token:ShapeCancellationToken;let task:Task<ShapeResult,Error>}
     private var active:Job?
     private var unloadCount=0
+    public nonisolated let weightProfile:HunyuanShape21WeightProfile
     public var status:ShapeEngineStatus {
         if unloadCount>0{return .unloading}
         guard let job=active else{return .idle}
         return job.token.isCancelled ? .cancelling : .running
     }
-    public init() {}
+    public init(weightProfile:HunyuanShape21WeightProfile = .legacySnapQ4) { self.weightProfile=weightProfile }
 
     /// Input is a512² PNG preserving foreground alpha from image preparation.
     /// The original DINO preprocessor finds the alpha bbox, recenters with its
@@ -31,13 +32,13 @@ public actor ShapeEngine {
         #endif
         try HunyuanShape21Configuration.validate(configurationYAML)
         _ = try PreparedShapeInput.decode(pngData)
-        try ShapePackVerifier.preflight(shapePackURL)
+        try ShapePackVerifier.preflight(shapePackURL,profile:weightProfile)
         guard let lease=ShapeRuntimeLease.shared.acquire() else {throw ShapeError.busy}
-        let id=UUID(),token=ShapeCancellationToken()
+        let id=UUID(),token=ShapeCancellationToken(),profile=weightProfile
         let task=Task.detached(priority:.userInitiated) {
             defer {ShapeRuntimeLease.shared.release(lease)}
             return try ShapeBackend.run(pngData:pngData,url:shapePackURL,yaml:configurationYAML,
-                seed:seed,token:token,onProgress:onProgress)
+                seed:seed,profile:profile,token:token,onProgress:onProgress)
         }
         active=Job(id:id,token:token,task:task)
         defer {if active?.id==id{active=nil}}
@@ -65,13 +66,13 @@ public actor ShapeEngine {
 }
 
 private enum ShapeBackend {
-    static func run(pngData:Data,url:URL,yaml:String,seed:UInt64,token:ShapeCancellationToken,
+    static func run(pngData:Data,url:URL,yaml:String,seed:UInt64,profile:HunyuanShape21WeightProfile,token:ShapeCancellationToken,
                     onProgress:@escaping @Sendable(ShapeProgress)->Void)throws->ShapeResult {
         let began=Date();var hadRuntime=false
         defer {if hadRuntime{Stream.gpu.synchronize();Memory.clearCache()}}
         try token.check()
         onProgress(.init(stage:"Verifying shape model",fraction:0.01))
-        try ShapePackVerifier.verify(url,cancellation:token)
+        try ShapePackVerifier.verify(url,profile:profile,cancellation:token)
         let available:UInt64?
         #if os(iOS)
         available=UInt64(os_proc_available_memory())
@@ -121,11 +122,15 @@ private enum ShapeBackend {
                 availableProcessBytesAtAdmission:available),
             provenance:.init(modelID:HunyuanShape21Configuration.modelID,
                 modelSourceRevision:HunyuanShape21Configuration.modelSourceRevision,
-                modelPackSHA256:HunyuanShape21Configuration.modelPackSHA256,
+                modelPackSHA256:profile.modelPackSHA256,
                 configurationSHA256:HunyuanShape21Configuration.configurationSHA256,
                 inputPNG_SHA256:HunyuanShape21Configuration.digest(pngData),seed:seed,steps:10,
                 octreeResolution:192,latentCount:4096,runtimeMLXVersion:"0.32.3",physicalScaleKnown:false,
-                weightParityWithOriginalRuntimeVerified:false),
+                weightParityWithOriginalRuntimeVerified:false,
+                modelPackProfileID:profile.rawValue,modelPackRevision:profile.packRevision,
+                sourceTensorRevision:profile.sourceTensorRevision,
+                sourceRecipeTensorParityVerified:profile.sourceRecipeTensorParityVerified,
+                deviceProfileValidated:profile.deviceProfileValidated),
             validationReceipt:.init(version:1,baseMeshFormatID:ShapeMeshArchive.formatID,
                 baseMeshFormatVersion:ShapeMeshArchive.version,geometryLayoutVersion:ShapeMeshArchive.geometryLayoutVersion,
                 vertexCount:buffers.vertexCount,triangleCount:buffers.triangleCount,indexCount:buffers.indices.count,

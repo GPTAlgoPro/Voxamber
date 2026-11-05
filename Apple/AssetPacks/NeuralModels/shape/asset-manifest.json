@@ -1,0 +1,44 @@
+{
+  "assetPackID": "Voxamber-Hunyuan21-Shape-Q4-30B93",
+  "downloadPolicy": {
+    "onDemand": {}
+  },
+  "fileSelectors": [
+    {
+      "file": "models/hunyuan-shape-2.1-q4-30b93/model.q4.safetensors"
+    },
+    {
+      "file": "models/hunyuan-shape-2.1-q4-30b93/config.yaml"
+    },
+    {
+      "file": "Licenses/hunyuan-shape-2.1-q4-30b93/Snap3D-ThirdPartyNotices.txt"
+    },
+    {
+      "file": "Licenses/hunyuan-shape-2.1-q4-30b93/Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt"
+    },
+    {
+      "file": "Licenses/hunyuan-shape-2.1-q4-30b93/Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt"
+    },
+    {
+      "file": "Licenses/hunyuan-shape-2.1-q4-30b93/Hunyuan3D-Swift-MIT.txt"
+    },
+    {
+      "file": "Licenses/hunyuan-shape-2.1-q4-30b93/Hunyuan3D-Swift-ThirdParty.md"
+    },
+    {
+      "file": "Licenses/hunyuan-shape-2.1-q4-30b93/Tencent-Hunyuan-3D-2.1-License.txt"
+    },
+    {
+      "file": "Licenses/hunyuan-shape-2.1-q4-30b93/MLX-Swift.txt"
+    },
+    {
+      "file": "Licenses/hunyuan-shape-2.1-q4-30b93/DLPack.txt"
+    },
+    {
+      "file": "contracts/hunyuan-shape-2.1-q4-30b93.json"
+    }
+  ],
+  "platforms": [
+    "iOS"
+  ]
+}

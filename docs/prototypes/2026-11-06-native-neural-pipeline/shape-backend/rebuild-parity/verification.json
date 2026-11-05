@@ -1,0 +1,108 @@
+{
+  "recordedAtUTC": "2026-11-05T22:08:03.568441+00:00",
+  "candidate": {
+    "bytes": 2490378518,
+    "sha256": "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7",
+    "status": "NEW CANDIDATE SOURCE-RECIPE-TENSOR-VERIFIED; DEVICE/RUNTIME NN UNVERIFIED"
+  },
+  "legacy": {
+    "bytes": 2490378616,
+    "sha256": "69cd908e83bbf51200c63a2a163e2dfd34d2be0571c33b92f4a922489c564842",
+    "oldHeaderOrPayloadAvailable": false,
+    "tensorEquivalenceToCandidateProven": false
+  },
+  "checks": {
+    "allBeforeAfterWholeSHAAndFileIdentityUnchanged": true,
+    "files": [
+      {
+        "path": "Apple/.build/NeuralModels/Shape21Source/dit.safetensors",
+        "byteCount": 6101598440,
+        "sha256": "eea6662cc5e153e5e71150f96c3e0b7a8bbe68261b15f1225819b16d64a7337b"
+      },
+      {
+        "path": "Apple/.build/NeuralModels/Shape21Source/vae.safetensors",
+        "byteCount": 655540754,
+        "sha256": "4444711b3739806fb3755b0a5cf7e11e56922a6f862b147ef814d858e075624c"
+      },
+      {
+        "path": "Apple/.build/NeuralModels/Shape21Source/image_encoder.safetensors",
+        "byteCount": 608791514,
+        "sha256": "a15bafe34efdd009f950d3a1f08c89f37c57c41ebc06bf396e0b46e682380369"
+      },
+      {
+        "path": "Apple/.build/NeuralModels/Shape21Source/config.yaml",
+        "byteCount": 2078,
+        "sha256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e"
+      },
+      {
+        "path": "Apple/.build/NeuralModels/Shape21Q4/model.q4.safetensors",
+        "byteCount": 2490378518,
+        "sha256": "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7"
+      },
+      {
+        "path": "Apple/.build/NeuralModels/Shape21Q4/config.yaml",
+        "byteCount": 2078,
+        "sha256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e"
+      },
+      {
+        "path": "Apple/.build/NativeShapePackParity/ParityMain.swift",
+        "byteCount": 9039,
+        "sha256": "d0569b3e52ad453fcf3f7bf1257aea33e9d0899eae687d08ce84a2631c5c93ff"
+      },
+      {
+        "path": "Apple/.build/NativeShapePackParity/NativeShapePackParity",
+        "byteCount": 22023848,
+        "sha256": "a75bb1e09a5861f43ac46f7ad93527462466c8dd1782ca7ff7d81f73ce4a08a9"
+      },
+      {
+        "path": "Apple/.build/NativeShapePackParity/mlx-swift_Cmlx.bundle/Contents/Info.plist",
+        "byteCount": 1129,
+        "sha256": "58fad8d43c25c4bfad88ee710a74fe9d2ebe07ba1a9096a0ea3c76e072591508"
+      },
+      {
+        "path": "Apple/.build/NativeShapePackParity/mlx-swift_Cmlx.bundle/Contents/Resources/default.metallib",
+        "byteCount": 3836652,
+        "sha256": "46e7a9b39d8404957b176f443149b449f2eadc2a37147f62c576c6a543d2a9df"
+      }
+    ],
+    "sourceFP16Tensors": 1601,
+    "sourceFP16Kept": 1457,
+    "droppedVAEEncoderTensors": 144,
+    "droppedVAEEncoderParameters": 113533312,
+    "retainedF16RawByteExact": 1007,
+    "quantizedMatricesChecked": 450,
+    "quantizedOutputTensorsByteExact": 1350,
+    "totalPackedTensorsByteExact": 2357,
+    "mismatches": 0,
+    "quantizationRuntime": "original pinned MLX0.31.4 GPU affine 4bit/group64",
+    "seconds": 4.112715005874634,
+    "newLargePackWrittenDuringVerification": false,
+    "NNRun": false
+  },
+  "containerEvidence": {
+    "newHeaderBytes": 297612,
+    "newPayloadBytes": 2490080898,
+    "oldHeaderBytesImpliedByHistoricalArithmetic": 297710,
+    "oldHeaderBytesDirectlyRead": false,
+    "tinySameTensorValuesShapesMetadataDifferentWholeSHAObserved": true,
+    "virtualHeaderOnlyPermutationsMinimumBytes": 297324,
+    "virtualHeaderOnlyPermutationsMaximumBytes": 297916,
+    "exact98ByteCauseProven": false
+  },
+  "cacheSearch": {
+    "scope": "Snap-specific Mac model/BackgroundAssets caches and known Hunyuan3D support root only; no user project content or other App launched",
+    "legacyHeaderFound": false
+  },
+  "limits": [
+    "Exact recipe/source parity certifies a distinct new candidate only; old69 header/payload is absent, so old/new tensor identity is not claimed.",
+    "Container ordering is a demonstrated mechanism for SHA/header-length variation, not proof of which ordering or metadata old69 actually had.",
+    "No 0.32.3 neural loading/generation parity, iPhone physical-memory or <=6GiB/cancellation/quality acceptance is provided.",
+    "No SDK pin, App manifest, Apple asset, phone or published App was changed during this verification."
+  ],
+  "details": {
+    "layout-raw-parity.json": "0a23ce79ef282f7f2564656d885243a7c30ab88b4f5310ea51b16a034a2f3797",
+    "tiny-save-proof.json": "4de0ad7e2f4c8d875647d548b62090360a97bc53872a80c94bf3bd1088f1089f",
+    "header-permutation-proof.json": "dffc72c2a671f67f0a380814e1c81d6c23c0f8d3748656698817f7539afb94c4",
+    "gpu-exact-parity.json": "4d749b6eba964db17e12d279fefeec20043b638272dc83f208da21f73d9ee6a7"
+  }
+}

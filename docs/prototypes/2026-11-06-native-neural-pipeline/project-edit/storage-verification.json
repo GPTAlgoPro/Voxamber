@@ -1,0 +1,71 @@
+{
+  "recordedAtUTC": "2026-11-05T21:51:01.735821+00:00",
+  "scope": "Foundation-only neural edit DTO/descriptor contract, not inference, publication or phone acceptance",
+  "sourceSHA256": {
+    "Apple/ThreeLiveStudio/Storage/NeuralEditRecord.swift": "6d50c17735ddd3ab41024c1618ee64680e8be17fb4dc436107a4eb6a9a1adac3",
+    "Apple/ThreeLiveStudio/Storage/NeuralProjectDescriptor.swift": "20131c6c1366c8f522d8ccf0122c997a61588bb814be03a486f3e90c64434e16",
+    "Apple/ThreeLiveStudioTests/NeuralEditRecordTests.swift": "aab6b5cbaec6d3bba3812a4b153d64fdd0b2a0a3ca079cba25a6477bdc927311"
+  },
+  "hostRelease": {
+    "testsPassed": 7,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 0.131,
+    "realSDKCPUFixtureUsed": true,
+    "neuralModelRun": false,
+    "positiveOriginPolicyUsesExplicitSimulatedMetadata": true
+  },
+  "typechecks": {
+    "ios26arm64ProductionDTOAndDescriptor": true,
+    "productionStorageErrorEnumExtractedVerbatim": true,
+    "actualShapeSDKConditionalAppTestBranchMac": true,
+    "conditionalAppTestBranchExecuted": false
+  },
+  "sdkMirrors": {
+    "ShapeWholeMaterial": "NeuralWholeMaterial",
+    "ShapeEditRecipe": "NeuralEditRecipe",
+    "ShapeEditValidationReceipt": "NeuralEditEvidence",
+    "allFieldNamesAndTypesSame": true
+  },
+  "actualCPUFixture": {
+    "vertexCount": 154449,
+    "triangleCount": 307328,
+    "indexCount": 921984,
+    "actualNeuralWeightsUsed": false,
+    "files": {
+      "base.glb": {
+        "byteCount": 5541880,
+        "sha256": "58c3c024b419d15a60183a70a43d9a1004c31aca4442d4540e186ed792102d7b"
+      },
+      "edit-receipt.json": {
+        "byteCount": 977,
+        "sha256": "33d784cecff48752c40a13fda08c4b804eb7d8bf98d20eadcd8a32507cd1bebb"
+      },
+      "edited.glb": {
+        "byteCount": 7395720,
+        "sha256": "62f80959aae6acad4ed729178cc9a0562ead8d5597199e21c0fd126b3c8b7acc"
+      },
+      "edited.usdz": {
+        "byteCount": 19068181,
+        "sha256": "78d0b050ad813d957f4a68a06fbd1c1ef366227393adfec4d079c6eef60efb88"
+      },
+      "recipe.json": {
+        "byteCount": 332,
+        "sha256": "cb68468aace90e98202aedcfe31d06032aa49c4c567b2023561fc6e51447edaa"
+      }
+    }
+  },
+  "contract": {
+    "newPublicationRequiresEditRecord": true,
+    "legacyV2ReadDefaultsAllowBothFieldsMissing": true,
+    "presentRecordsAlwaysFullyValidated": true,
+    "generationEvidenceMustNotBeReplacedByCPUEditEvidence": true,
+    "rootOwnsValidatorStoreCASAndOldOriginConsistencyIntegration": true
+  },
+  "limits": [
+    "No neural inference, large model download, quantization, phone, TestFlight or Apple publication performed.",
+    "This receipt does not claim the parent-owned validator/Store publication wiring or cross-revision checks have run.",
+    "Raw synthetic SDK fixture artifacts remain ignored; no user files or deleted works were restored.",
+    "Full App/UI and actual phone edit/save/export require separate validation."
+  ]
+}

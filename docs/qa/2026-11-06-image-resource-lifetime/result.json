@@ -1,0 +1,101 @@
+{
+  "cancelTested" : false,
+  "foregroundBoundsCIBottomLeftXYWH" : [
+    106,
+    4,
+    553,
+    711
+  ],
+  "gate" : "completed English intent to one actual image, optional one Vision preparation",
+  "guidance" : 7.5,
+  "imageEngineCalls" : 1,
+  "imageSeconds" : 153.8041580915451,
+  "imageSucceeded" : true,
+  "memory" : {
+    "finalSnapshotBytes" : 1219659072,
+    "firstBytes" : 4063832,
+    "method" : "TASK_VM_INFO.phys_footprint, own Mac process, 250ms JSONL + synchronous phase snapshots",
+    "notCrossProcessPeak" : true,
+    "notIPhoneBudgetEvidence" : true,
+    "peakBytes" : 2001880336,
+    "samples" : 640,
+    "snapshots" : [
+      {
+        "kind" : "snapshot",
+        "label" : "beforeImage",
+        "phase" : "beforeImage",
+        "physFootprintBytes" : 4063832,
+        "seconds" : 0.00095510482788085938
+      },
+      {
+        "kind" : "snapshot",
+        "label" : "afterImageReturnPoolExited",
+        "phase" : "imageReturnedPoolExited",
+        "physFootprintBytes" : 1466991816,
+        "seconds" : 153.80498099327087
+      },
+      {
+        "kind" : "snapshot",
+        "label" : "afterImageIdle1s",
+        "phase" : "imageIdle",
+        "physFootprintBytes" : 995132616,
+        "seconds" : 154.82950901985168
+      },
+      {
+        "kind" : "snapshot",
+        "label" : "afterAdditional3sTotal4s",
+        "phase" : "imageIdle",
+        "physFootprintBytes" : 993035464,
+        "seconds" : 157.97245907783508
+      },
+      {
+        "kind" : "snapshot",
+        "label" : "beforeVision",
+        "phase" : "imageIdle",
+        "physFootprintBytes" : 993035464,
+        "seconds" : 157.97274303436279
+      },
+      {
+        "kind" : "snapshot",
+        "label" : "afterVision",
+        "phase" : "visionReturned",
+        "physFootprintBytes" : 1219659072,
+        "seconds" : 158.26090407371521
+      },
+      {
+        "kind" : "snapshot",
+        "label" : "strongFinalAfterVisionAndCleanup",
+        "phase" : "visionReturned",
+        "physFootprintBytes" : 1219659072,
+        "seconds" : 158.26096701622009
+      }
+    ],
+    "traceWriteFailed" : false
+  },
+  "originalPixels" : [
+    768,
+    768
+  ],
+  "originalPNGBytes" : 824376,
+  "originalPNGSHA256" : "3f9df13ed358adb0329d84d874b54b36356c23e0b7a3a3bc5d84b7eb6c4589ba",
+  "phoneAcceptance" : false,
+  "preparationMethod" : "apple-vision-all-foreground-alpha-512",
+  "preparationSourcePixels" : [
+    768,
+    768
+  ],
+  "preparedPNGBytes" : 249722,
+  "preparedPNGSHA256" : "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae",
+  "rawSHA256" : "59349e52748be8a144d92a15092ee3e9a682501af07cf32282c884892d2df122",
+  "reduceMemory" : true,
+  "scheduler" : "DPM-Solver++",
+  "seed" : 93,
+  "steps" : 20,
+  "TEAndUNetCompute" : "cpuAndNeuralEngine",
+  "textTo3DSuccess" : false,
+  "totalSeconds" : 158.26004910469055,
+  "VAECompute" : "cpuAndGPU upstream",
+  "VisionPreparationCalls" : 1,
+  "visionSeconds" : 0.28812193870544434,
+  "visionSucceeded" : true
+}

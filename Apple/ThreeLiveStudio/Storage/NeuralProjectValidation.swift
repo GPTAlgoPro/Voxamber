@@ -108,10 +108,12 @@ enum NeuralProjectValidator {
             references.append(.init(role: role, relativePath: path, byteCount: value.bytes,
                 sha256: value.sha256, formatID: format, formatVersion: version))
         }
+        try input.editRecord?.validate(parentRevision: input.provenance.parentRevision)
         let descriptor = NeuralProjectDescriptor(geometryLayoutVersion: 1, artifacts: references,
             statistics: input.statistics, baseStatistics: input.baseStatistics, provenance: input.provenance,
-            generationEvidence: input.generationEvidence, geometryContract: NeuralArtifactLimits.sourceContract)
-        try descriptor.validate()
+            generationEvidence: input.generationEvidence, geometryContract: NeuralArtifactLimits.sourceContract,
+            editRecipe: input.editRecord?.recipe, editEvidence: input.editRecord?.evidence)
+        try descriptor.validate(requireEditRecord: true)
         try compare(try inspectGLB(input.files.glb), input.statistics)
         try compare(try inspectGLB(input.files.baseMesh, baseGeometry: true), input.baseStatistics)
         try validateUSDZ(input.files.usdz); try validatePNG(input.files.sourcePNG)
@@ -233,6 +235,7 @@ enum NeuralProjectValidator {
         var positions: [SIMD3<Float>] = []; positions.reserveCapacity(vertices)
         var lower = [Float](repeating: .infinity, count: 3), upper = [Float](repeating: -.infinity, count: 3)
         while positions.count < vertices {
+            try Task.checkCancellation()
             let amount = min(16_384, vertices - positions.count), data = try ProjectFileIO.readExactly(file, count: amount * 12)
             for i in 0..<amount {
                 let values = try (0..<3).map { Float(bitPattern: try u32(data, i * 12 + $0 * 4)) }
@@ -246,6 +249,7 @@ enum NeuralProjectValidator {
             guard normalCount == vertices else { throw ProjectStorageError.invalidArtifact }
             try file.seek(toOffset: UInt64(normalOffset)); var remaining = normalCount * 3
             while remaining > 0 {
+                try Task.checkCancellation()
                 let amount = min(49_152, remaining), data = try ProjectFileIO.readExactly(file, count: amount * 4)
                 for i in 0..<amount {
                     guard try Float(bitPattern: u32(data, i * 4)).isFinite else { throw ProjectStorageError.invalidArtifact }
@@ -255,6 +259,7 @@ enum NeuralProjectValidator {
         }
         try file.seek(toOffset: UInt64(indexOffset)); var read = 0
         while read < count {
+            try Task.checkCancellation()
             let amount = min(65_536 * 3, count - read), data = try ProjectFileIO.readExactly(file, count: amount * 4)
             for i in stride(from: 0, to: amount, by: 3) {
                 let a = Int(try u32(data, i * 4)), b = Int(try u32(data, (i + 1) * 4)), c = Int(try u32(data, (i + 2) * 4))

@@ -33,3 +33,7 @@ The host harness compiles the same production `NeuralModelCatalog.swift` and unc
 ## Post-commit cancellation correction
 
 The follow-up `cleanup-verification.json` supersedes only the managed-copy ownership code evidence. After a successful private import, `NeuralManagedImport.perform` always awaits a new scoped cleanup task that does not inherit the cancelled caller flag. The manager keeps its operation busy until that helper settles. Only then can external cancellation finish; it never publishes readiness on a cancelled path or removes the private installation. Cleanup failure has its own visible, retryable error, preserved ahead of a caller-cancel message. Four additional scripted tests prove this seam without invoking Apple services; combined host file/ownership tests total 12. The initial verification receipt retains the earlier source hashes rather than being rewritten as though that defect never existed.
+
+## Current rebuilt Shape candidate contract
+
+The later explicitly verified rebuilt candidate supersedes the shape row above for current development: model ID/root `hunyuan-shape-2.1-q4-30b93`, pack ID `Voxamber-Hunyuan21-Shape-Q4-30B93`, contract `contracts/hunyuan-shape-2.1-q4-30b93.json`. Weight size2490378518/SHA30b93ce8…; sibling YAML remains2078bytes/a9e9b66f…. All new packs remain unavailable. See `../shape-backend/candidate-profile-admission.md` and the actual bundled manifest for the authoritative current snapshot. Original receipts retain the previous69 source identity for history; no legacy equivalence is claimed.

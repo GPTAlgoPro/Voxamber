@@ -1,0 +1,118 @@
+{
+  "actualNeuralWeightsUsed" : true,
+  "candidateSHA256" : "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7",
+  "deviceProfileValidated" : false,
+  "fallbacks" : 0,
+  "formatVersion" : 1,
+  "glbSHA256" : "8153667ca874a56aac9a2eef95fb28f470d5a9b68166fb7bcf35a728db9c18e4",
+  "inputPNG_SHA256" : "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae",
+  "latents" : 4096,
+  "mobileMinimumHeadroomBytes" : 5905580032,
+  "moeTokenChunkSize" : 512,
+  "observations" : {
+    "observedPhysicalPeakBytes" : 4431284720,
+    "physicalSampleCount" : 957,
+    "samplerIntervalSeconds" : 0.10000000000000001,
+    "stages" : [
+      {
+        "fraction" : 0.0099999997764825821,
+        "seconds" : 0.038789033889770508,
+        "stage" : "Verifying shape model"
+      },
+      {
+        "fraction" : 0.029999999329447746,
+        "seconds" : 1.5820020437240601,
+        "stage" : "Loading shape model"
+      },
+      {
+        "fraction" : 0.091000005602836609,
+        "seconds" : 1.6023750305175781,
+        "stage" : "Conditioning 1 view(s)"
+      },
+      {
+        "fraction" : 0.18119999766349792,
+        "seconds" : 14.670225977897644,
+        "stage" : "Denoising (1\/10)"
+      },
+      {
+        "fraction" : 0.23039999604225159,
+        "seconds" : 23.148190021514893,
+        "stage" : "Denoising (2\/10)"
+      },
+      {
+        "fraction" : 0.27959999442100525,
+        "seconds" : 32.504179954528809,
+        "stage" : "Denoising (3\/10)"
+      },
+      {
+        "fraction" : 0.3288000226020813,
+        "seconds" : 41.959965944290161,
+        "stage" : "Denoising (4\/10)"
+      },
+      {
+        "fraction" : 0.37800002098083496,
+        "seconds" : 50.974233984947205,
+        "stage" : "Denoising (5\/10)"
+      },
+      {
+        "fraction" : 0.42720001935958862,
+        "seconds" : 59.950378060340881,
+        "stage" : "Denoising (6\/10)"
+      },
+      {
+        "fraction" : 0.47640004754066467,
+        "seconds" : 68.968955039978027,
+        "stage" : "Denoising (7\/10)"
+      },
+      {
+        "fraction" : 0.52560001611709595,
+        "seconds" : 77.858576059341431,
+        "stage" : "Denoising (8\/10)"
+      },
+      {
+        "fraction" : 0.57480007410049438,
+        "seconds" : 86.64882504940033,
+        "stage" : "Denoising (9\/10)"
+      },
+      {
+        "fraction" : 0.64040005207061768,
+        "seconds" : 86.648892045021057,
+        "stage" : "Decoding shape"
+      },
+      {
+        "fraction" : 0.78799998760223389,
+        "seconds" : 100.22992599010468,
+        "stage" : "Building mesh"
+      },
+      {
+        "fraction" : 0.87000000476837158,
+        "seconds" : 100.4050840139389,
+        "stage" : "Done"
+      },
+      {
+        "fraction" : 0.89999997615814209,
+        "seconds" : 100.50072598457336,
+        "stage" : "Encoding shape artifacts"
+      },
+      {
+        "fraction" : 1,
+        "seconds" : 101.155228972435,
+        "stage" : "Shape artifacts complete"
+      }
+    ],
+    "watchdogTriggered" : false
+  },
+  "octreeResolution" : 192,
+  "physicalBytesAfterUnload" : 577701496,
+  "platform" : "host Mac, not iPhone",
+  "profile" : "native-rebuild-20261106-q4-30b93ce8",
+  "retries" : 0,
+  "seconds" : 101.17801904678345,
+  "seed" : 24301,
+  "shapeAPICallCount" : 1,
+  "status" : "native_shape_exported_pending_visual_review",
+  "steps" : 10,
+  "triangleCount" : 400211,
+  "usdzSHA256" : "ddec6c21fdf74219effd5b8646f7b7ac8b70d5923d545dc9a8c9e9a515fab881",
+  "vertexCount" : 200370
+}

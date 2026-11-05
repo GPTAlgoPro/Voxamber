@@ -131,10 +131,24 @@ struct NeuralProjectDescriptor: Codable, Sendable, Equatable {
     /// Geometry layout 1 contains source positions/indices. Normals are derived
     /// by the SDK; it does not promise storage of arbitrary custom normal edits.
     let geometryContract: String
+    let editRecipe: NeuralEditRecipe?
+    let editEvidence: NeuralEditEvidence?
+
+    init(geometryLayoutVersion: Int, artifacts: [ArtifactReference], statistics: NeuralMeshStatistics,
+         baseStatistics: NeuralMeshStatistics, provenance: NeuralPipelineProvenance,
+         generationEvidence: NeuralGenerationEvidence, geometryContract: String,
+         editRecipe: NeuralEditRecipe? = nil, editEvidence: NeuralEditEvidence? = nil) {
+        self.geometryLayoutVersion = geometryLayoutVersion; self.artifacts = artifacts
+        self.statistics = statistics; self.baseStatistics = baseStatistics; self.provenance = provenance
+        self.generationEvidence = generationEvidence; self.geometryContract = geometryContract
+        self.editRecipe = editRecipe; self.editEvidence = editEvidence
+    }
 
     func artifact(_ role: NeuralArtifactRole) -> ArtifactReference? { artifacts.first { $0.role == role } }
 
-    func validate() throws {
+    /// Existing V2 revisions without edit fields remain readable. New publication
+    /// must pass requireEditRecord:true; present records are always fully checked.
+    func validate(requireEditRecord: Bool = false) throws {
         let roles = Set(artifacts.map(\.role)), required: Set<NeuralArtifactRole> = [.glb, .usdz, .baseMesh, .sourcePNG]
         guard geometryLayoutVersion == 1, geometryContract == NeuralArtifactLimits.sourceContract,
               (4...5).contains(artifacts.count), roles.count == artifacts.count,
@@ -149,6 +163,10 @@ struct NeuralProjectDescriptor: Codable, Sendable, Equatable {
         }
         try statistics.validate(); try baseStatistics.validate(); try provenance.validate()
         try generationEvidence.validate()
+        guard (editRecipe == nil) == (editEvidence == nil),
+              provenance.method == .meshTransformOrMaterialEdit || editRecipe == nil else {
+            throw ProjectStorageError.invalidMetadata
+        }
         guard artifact(.sourcePNG)?.sha256 == provenance.preparedPNG_SHA256,
               generationEvidence.glbSHA256 == artifact(.baseMesh)?.sha256,
               generationEvidence.vertexCount == baseStatistics.vertexCount,
@@ -163,7 +181,13 @@ struct NeuralProjectDescriptor: Codable, Sendable, Equatable {
                   generationEvidence.usdzByteCount == artifact(.usdz)?.byteCount else {
                 throw ProjectStorageError.invalidMetadata
             }
-        } else if provenance.parentRevision == nil { throw ProjectStorageError.invalidMetadata }
+        } else {
+            guard provenance.parentRevision != nil else { throw ProjectStorageError.invalidMetadata }
+            if let editRecipe, let editEvidence {
+                try editEvidence.validate(recipe: editRecipe, artifacts: artifacts, statistics: statistics,
+                                          baseStatistics: baseStatistics, generationEvidence: generationEvidence)
+            } else if requireEditRecord { throw ProjectStorageError.invalidMetadata }
+        }
     }
 }
 
@@ -213,6 +237,15 @@ struct NeuralPublicationInput: Sendable {
     let baseStatistics: NeuralMeshStatistics
     let provenance: NeuralPipelineProvenance
     let generationEvidence: NeuralGenerationEvidence
+    let editRecord: NeuralEditRecord?
+
+    init(name: String, prompt: String, files: NeuralPublicationFiles, statistics: NeuralMeshStatistics,
+         baseStatistics: NeuralMeshStatistics, provenance: NeuralPipelineProvenance,
+         generationEvidence: NeuralGenerationEvidence, editRecord: NeuralEditRecord? = nil) {
+        self.name = name; self.prompt = prompt; self.files = files; self.statistics = statistics
+        self.baseStatistics = baseStatistics; self.provenance = provenance
+        self.generationEvidence = generationEvidence; self.editRecord = editRecord
+    }
 }
 
 /// Same serialized fields as the Shape SDK's actual ShapeValidationReceipt.

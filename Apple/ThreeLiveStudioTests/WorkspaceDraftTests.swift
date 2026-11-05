@@ -32,6 +32,31 @@ final class WorkspaceDraftTests: XCTestCase {
         XCTAssertEqual(actualID, id); XCTAssertEqual(actualRevision, revision); XCTAssertNil(restored.spec)
     }
 
+    func testUnsavedNeuralRecipeRoundtripsWithExactRevision() throws {
+        let id = UUID(), revision = UUID()
+        let recipe = try NeuralEditRecipe(translationXYZ: [0.123456789, -2, 3],
+            rotationXYZdegrees: [0, 45, 90], positiveScaleXYZ: [0.5, 1, 2])
+        let data = try JSONEncoder().encode(WorkspaceDraft(neuralProjectID: id, revision: revision,
+            prompt: "继续调整", neuralEditRecipe: recipe))
+        let draft = try JSONDecoder().decode(WorkspaceDraft.self, from: data)
+        try draft.validateForRestore()
+        XCTAssertEqual(draft.neuralEditRecipe, recipe)
+        guard case .neuralProject(let actualID, let actualRevision) = draft.content else { return XCTFail() }
+        XCTAssertEqual(actualID, id); XCTAssertEqual(actualRevision, revision)
+    }
+
+    func testRecipeCannotBeAttachedToTextOrLegacyProceduralDraft() throws {
+        let encoder = JSONEncoder()
+        let recipe = try JSONSerialization.jsonObject(with: encoder.encode(NeuralEditRecipe()))
+        for data in [try encoder.encode(WorkspaceDraft(prompt: "想象")),
+                     try encoder.encode(WorkspaceDraft(spec: .chair, prompt: "编辑"))] {
+            var object = try XCTUnwrap(JSONSerialization.jsonObject(with: data) as? [String: Any])
+            object["neuralEditRecipe"] = recipe
+            XCTAssertThrowsError(try JSONDecoder().decode(WorkspaceDraft.self,
+                from: JSONSerialization.data(withJSONObject: object)))
+        }
+    }
+
     func testMissingProjectCannotBeRevivedBySavingOrRestoringItsDraft() async throws {
         let root = FileManager.default.temporaryDirectory.appending(path: "DraftRef-" + UUID().uuidString)
         defer { try? FileManager.default.removeItem(at: root) }

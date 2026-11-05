@@ -18,12 +18,12 @@ import XCTest
         let manifests = try NeuralModelManifest.loadAll(bundle: bundle)
         XCTAssertEqual(manifests.map(\.group), [.intent, .image, .shape])
         XCTAssertEqual(manifests.map { $0.files.count }, [10, 27, 2])
-        XCTAssertEqual(manifests.map(\.byteCount), [645_315_928, 3_052_951_670, 2_490_380_694])
+        XCTAssertEqual(manifests.map(\.byteCount), [645_315_928, 3_052_951_670, 2_490_380_596])
         XCTAssertEqual(Set(manifests.map(\.apple.assetPackID)).count, 3)
         XCTAssertEqual(Set(manifests.map(\.apple.contractRelativePath)).count, 3)
         XCTAssertTrue(manifests.allSatisfy { !$0.apple.available })
         XCTAssertFalse(manifests.contains { $0.id == "qwen3.5-4b-mlx-int4" })
-        XCTAssertEqual(manifests[2].files.first?.sha256, "69cd908e83bbf51200c63a2a163e2dfd34d2be0571c33b92f4a922489c564842")
+        XCTAssertEqual(manifests[2].files.first?.sha256, "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7")
     }
 
     func testReadinessRequiresAllThreeExactPrivateGroups() async throws {

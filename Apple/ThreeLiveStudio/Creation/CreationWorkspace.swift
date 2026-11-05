@@ -46,6 +46,7 @@ struct CreationWorkspace: View {
         .sheet(item: $quickLook) { item in NativeQuickLook(url: item.url).ignoresSafeArea() }
         .onChange(of: studio.prompt) { _, _ in studio.persistDraft() }
         .onChange(of: studio.sceneSpec) { _, _ in studio.persistDraft() }
+        .onChange(of: studio.neuralEditRecipe) { _, _ in studio.persistDraft() }
         .duoVerificationProbe(studio)
     }
 
@@ -76,7 +77,7 @@ struct CreationWorkspace: View {
                 .accessibilityIdentifier("creationPrompt")
                 .accessibilityLabel(StudioCopy.text("创作描述", "Creation description"))
                 .disabled(studio.busy)
-            Text(StudioCopy.text("想做什么，就描述它。你也可以继续描述修改。", "Describe any idea, then keep refining it in your own words."))
+            Text(StudioCopy.text("描述外形、结构与材质，生成后继续调整。", "Describe the form, structure, and materials, then refine the result."))
                 .font(.footnote).foregroundStyle(.secondary)
             Text(StudioCopy.text("灵感起点", "Inspiration starters")).font(.caption.weight(.medium)).foregroundStyle(.secondary)
             presetButtons
@@ -86,6 +87,14 @@ struct CreationWorkspace: View {
                         if !studio.isNeuralCreation { studio.sceneSpec = $0 }
                     })).padding(.top, 14)
                 }.font(.subheadline.weight(.medium)).disabled(studio.busy)
+            }
+            if studio.isNeuralCreation {
+                DisclosureGroup(StudioCopy.text("编辑模型", "Edit model"), isExpanded: $studio.showParameters) {
+                    NeuralMeshControls(recipe: $studio.neuralEditRecipe, busy: studio.busy,
+                        onSave: { studio.saveNeuralEdits() }, onReset: { studio.resetNeuralEdits() })
+                        .id(studio.assets?.project.id)
+                        .padding(.top, 14)
+                }.font(.subheadline.weight(.medium))
             }
             if let notice = studio.notice {
                 Label(StudioCopy.status(notice), systemImage: "checkmark.circle.fill")

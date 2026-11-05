@@ -19,7 +19,7 @@ final class CreationIntentTests: XCTestCase {
     }
 
     func testOverlongVisualBriefIsRejectedWithoutSilentlyDroppingIntent() {
-        let raw = "{\"positivePrompt\":\"" + String(repeating: "a", count: 181) + "\"}"
+        let raw = "{\"positivePrompt\":\"" + String(repeating: "a", count: 513) + "\"}"
         XCTAssertThrowsError(try CreationIntentDecoder.decode(raw, sourcePrompt: "原描述"))
     }
 

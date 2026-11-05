@@ -1,0 +1,121 @@
+{
+  "afterUnload" : {
+    "activeBytes" : 3008,
+    "cacheBytes" : 0
+  },
+  "allTenFilesWholeSHAReverified" : true,
+  "cases" : [
+    {
+      "attempts" : 1,
+      "completion" : {
+        "generatedTokenCount" : 55,
+        "grammar" : {
+          "compiledSchemaSHA256" : "61093069cf010cc8ab1a7d715895f5d6e05e4d8343f09116a0e572e30af9f92a",
+          "floatBoundsRequireNativeValidation" : false,
+          "originalSchemaSHA256" : "eaeacdcb151be2a139dced6c58fd0e3761784a590d44560f31fc6c2d7e4ad1d0"
+        },
+        "grammarEnabled" : true,
+        "grammarTerminated" : true,
+        "inputTokenCount" : 125,
+        "reason" : "jsonComplete",
+        "tokenLimit" : 512
+      },
+      "firstTokenSeconds" : 18.430067583,
+      "id" : "lamp",
+      "imagesOrGeometryGenerated" : false,
+      "intentAccepted" : true,
+      "maxTokens" : 512,
+      "prefillStepSize" : 128,
+      "rawReturned" : true,
+      "rawSHA256" : "86839f8ef5e7b92eb3ce55cc8371063321c518ba1a0fa391258128501d9a2b17",
+      "rawUTF8Bytes" : 232,
+      "repair" : false,
+      "retry" : false,
+      "seconds" : 21.761729001998901,
+      "semanticReview" : "pending manual synthetic-case review",
+      "status" : "decoded_for_semantic_review",
+      "temperature" : 0,
+      "thinking" : false,
+      "user" : "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地Y=0，整体高约0.8米。"
+    },
+    {
+      "attempts" : 1,
+      "completion" : {
+        "generatedTokenCount" : 21,
+        "grammar" : {
+          "compiledSchemaSHA256" : "61093069cf010cc8ab1a7d715895f5d6e05e4d8343f09116a0e572e30af9f92a",
+          "floatBoundsRequireNativeValidation" : false,
+          "originalSchemaSHA256" : "eaeacdcb151be2a139dced6c58fd0e3761784a590d44560f31fc6c2d7e4ad1d0"
+        },
+        "grammarEnabled" : true,
+        "grammarTerminated" : true,
+        "inputTokenCount" : 102,
+        "reason" : "jsonComplete",
+        "tokenLimit" : 512
+      },
+      "firstTokenSeconds" : 15.127475125,
+      "id" : "spiral_shell_vase",
+      "imagesOrGeometryGenerated" : false,
+      "intentAccepted" : true,
+      "maxTokens" : 512,
+      "prefillStepSize" : 128,
+      "rawReturned" : true,
+      "rawSHA256" : "59349e52748be8a144d92a15092ee3e9a682501af07cf32282c884892d2df122",
+      "rawUTF8Bytes" : 93,
+      "repair" : false,
+      "retry" : false,
+      "seconds" : 16.529479026794434,
+      "semanticReview" : "pending manual synthetic-case review",
+      "status" : "decoded_for_semantic_review",
+      "temperature" : 0,
+      "thinking" : false,
+      "user" : "一个螺旋贝壳造型的蓝色花瓶，瓶口带金色细边。"
+    },
+    {
+      "attempts" : 1,
+      "completion" : {
+        "generatedTokenCount" : 22,
+        "grammar" : {
+          "compiledSchemaSHA256" : "61093069cf010cc8ab1a7d715895f5d6e05e4d8343f09116a0e572e30af9f92a",
+          "floatBoundsRequireNativeValidation" : false,
+          "originalSchemaSHA256" : "eaeacdcb151be2a139dced6c58fd0e3761784a590d44560f31fc6c2d7e4ad1d0"
+        },
+        "grammarEnabled" : true,
+        "grammarTerminated" : true,
+        "inputTokenCount" : 102,
+        "reason" : "jsonComplete",
+        "tokenLimit" : 512
+      },
+      "firstTokenSeconds" : 15.130017667000001,
+      "id" : "violin_and_bow",
+      "imagesOrGeometryGenerated" : false,
+      "intentAccepted" : true,
+      "maxTokens" : 512,
+      "prefillStepSize" : 128,
+      "rawReturned" : true,
+      "rawSHA256" : "678ccf00fb5f195aebccc33607bd296f2aa06ee60d44a38bdddef5ffcbe767f0",
+      "rawUTF8Bytes" : 90,
+      "repair" : false,
+      "retry" : false,
+      "seconds" : 16.659970998764038,
+      "semanticReview" : "pending manual synthetic-case review",
+      "status" : "decoded_for_semantic_review",
+      "temperature" : 0,
+      "thinking" : false,
+      "user" : "一把小提琴和一根琴弓，作为两个独立物体完整入镜。"
+    }
+  ],
+  "defaultModelChanged" : false,
+  "imageOr3DGeneration" : false,
+  "loadSeconds" : 2.0664060115814209,
+  "mlxPeakBytes" : 730812743,
+  "model" : "mlx-community\/Qwen3.5-0.8B-4bit@da28692b5f139cb0ec58a356b437486b7dac7462",
+  "modelCalls" : 3,
+  "modelLoads" : 1,
+  "originProof" : "see ..\/2026-11-06-qwen08-intent\/origin-normalized-norm-fingerprint.json; subset norms do not prove all matrices",
+  "phoneOperated" : false,
+  "processSeconds" : 57.340516924858093,
+  "sameSystemSchemaAsProduction" : true,
+  "semanticReview" : "pending separate review, not JSON-only acceptance",
+  "status" : "complete"
+}

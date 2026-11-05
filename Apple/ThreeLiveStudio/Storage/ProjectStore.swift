@@ -132,7 +132,31 @@ actor ProjectStore {
             guard parent == old?.revision else { throw ProjectStorageError.staleRevision }
         }
         let descriptor = try NeuralProjectValidator.inspect(input, permit: permit)
-        return try transaction(replacing: old, permit: permit) { id, revision, directory in
+        return try transaction(replacing: old, permit: permit, validateCurrent: { current in
+            guard input.provenance.method == .meshTransformOrMaterialEdit else { return }
+            // The caller supplies a revision token, not authority to rewrite its
+            // origin. Read and validate the current pointer while its directory
+            // lock is held, before accepting any new revision files.
+            guard let old, let current, current == old,
+                  case .neuralMesh(let original) = current.content,
+                  input.editRecord?.parentRevision == old.revision,
+                  input.prompt == current.prompt,
+                  input.generationEvidence == original.generationEvidence,
+                  input.baseStatistics == original.baseStatistics,
+                  descriptor.artifact(.baseMesh)?.sha256 == original.artifact(.baseMesh)?.sha256,
+                  descriptor.artifact(.sourcePNG)?.sha256 == original.artifact(.sourcePNG)?.sha256,
+                  descriptor.artifact(.referencePNG)?.sha256 == original.artifact(.referencePNG)?.sha256,
+                  input.provenance.pipelineID == original.provenance.pipelineID,
+                  input.provenance.imageStage == original.provenance.imageStage,
+                  input.provenance.shapeStage == original.provenance.shapeStage,
+                  input.provenance.intentStage == original.provenance.intentStage,
+                  input.provenance.intentBrief == original.provenance.intentBrief,
+                  input.provenance.generatedAt == original.provenance.generatedAt,
+                  input.provenance.physicalScaleKnown == original.provenance.physicalScaleKnown,
+                  input.provenance.preparedPNG_SHA256 == original.provenance.preparedPNG_SHA256 else {
+                throw ProjectStorageError.invalidMetadata
+            }
+        }) { id, revision, directory in
             var sources: [NeuralArtifactRole: URL] = [.glb: input.files.glb, .usdz: input.files.usdz,
                 .baseMesh: input.files.baseMesh, .sourcePNG: input.files.sourcePNG]
             sources[.referencePNG] = input.files.referencePNG
@@ -155,6 +179,7 @@ actor ProjectStore {
     /// All file work stays synchronous on the Store actor; no reentrant list can
     /// remove staging. The OS lock covers other Store instances on the same root.
     private func transaction(replacing old: CreationProject?, permit: PublicationPermit,
+                             validateCurrent: (CreationProject?) throws -> Void = { _ in },
                              stage: (UUID, UUID, URL) throws -> CreationProject) throws -> ProjectAssets {
         try permit.check(); try ensureRoot()
         let id = old?.id ?? UUID(), revision = UUID(), directory = root.appending(path: id.uuidString, directoryHint: .isDirectory)
@@ -165,7 +190,15 @@ actor ProjectStore {
         }
         let directoryLock = try ProjectDirectoryLock(directory: directory)
         defer { withExtendedLifetime(directoryLock) {} }
-        if let old { try requireCurrent(old) }
+        let current: CreationProject?
+        if let old {
+            let stored = try readProject(directory.appending(path: "project.json"))
+            guard stored.id == old.id, stored.revision == old.revision else {
+                throw ProjectStorageError.staleRevision
+            }
+            current = stored
+        } else { current = nil }
+        try validateCurrent(current)
         let pending = directory.appending(path: ".pending-" + revision.uuidString, directoryHint: .isDirectory)
         let destination = directory.appending(path: revision.uuidString, directoryHint: .isDirectory)
         var committed = false, preserveDestinationForUncertainCommit = false

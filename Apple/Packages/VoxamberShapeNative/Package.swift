@@ -8,5 +8,5 @@ let package = Package(name:"VoxamberShapeNative",platforms:[.iOS(.v26),.macOS(.v
         .product(name:"MLXRandom",package:"mlx-swift"),.product(name:"MLXFast",package:"mlx-swift")]),
     .target(name:"VoxamberShapeNative",dependencies:["VoxamberHy3D",.product(name:"MLX",package:"mlx-swift")],
         resources:[.copy("Resources/Legal"),.copy("Resources/hunyuan-shape-2.1.yaml")]),
-    .testTarget(name:"VoxamberShapeNativeTests",dependencies:["VoxamberShapeNative","VoxamberHy3D"])
+    .testTarget(name:"VoxamberShapeNativeTests",dependencies:["VoxamberShapeNative","VoxamberHy3D"],resources:[.copy("Fixtures")])
 ])

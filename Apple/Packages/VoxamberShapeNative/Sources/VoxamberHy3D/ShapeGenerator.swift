@@ -753,11 +753,14 @@ public final class ShapeGenerator {
         return mesh
     }
 
-    /// Generate and write a `.glb`; returns vertex/face counts.
+    /// Generate and write a `.glb`; returns vertex/face counts. `onRawMesh` is
+    /// for host QA: it receives a value snapshot before legacy cleanup. The
+    /// default nil performs no diagnostic I/O; the ordinary SDK passes nil.
     @discardableResult
     public func generateGLB(image: CGImage, to url: URL, steps: Int = 30, guidance: Float = 5.0,
                             seed: UInt64 = 0, resolution: Int = 256, octree: Bool = true,
                             isCancelled: @escaping () -> Bool = { false },
+                            onRawMesh: ((Mesh) throws -> Void)? = nil,
                             onProgress: ((Progress) -> Void)? = nil) throws -> (verts: Int, faces: Int) {
         guard let generated = generate(image: image, steps: steps, guidance: guidance, seed: seed,
                                        resolution: resolution, octree: octree,
@@ -765,7 +768,7 @@ public final class ShapeGenerator {
             throw NSError(domain: "Hy3DMLX", code: 1,
                           userInfo: [NSLocalizedDescriptionKey: "generation cancelled or image preprocessing failed"])
         }
-        let mesh = generated.removingDegenerateFaces()
+        let mesh = try ShapeMeshFinalizer.legacyCleaned(generated,onRawMesh:onRawMesh)
         try GLB.write(mesh, to: url)
         return (mesh.vertices.count, mesh.faces.count)
     }
@@ -775,6 +778,7 @@ public final class ShapeGenerator {
                             guidance: Float = 5.0, seed: UInt64 = 0,
                             resolution: Int = 256, octree: Bool = true,
                             isCancelled: @escaping () -> Bool = { false },
+                            onRawMesh: ((Mesh) throws -> Void)? = nil,
                             onProgress: ((Progress) -> Void)? = nil) throws
         -> (verts: Int, faces: Int) {
         guard let generated = generate(images: images, steps: steps, guidance: guidance,
@@ -783,7 +787,7 @@ public final class ShapeGenerator {
             throw NSError(domain: "Hy3DMLX", code: 2,
                           userInfo: [NSLocalizedDescriptionKey: "multi-view generation cancelled or preprocessing failed"])
         }
-        let mesh = generated.removingDegenerateFaces()
+        let mesh = try ShapeMeshFinalizer.legacyCleaned(generated,onRawMesh:onRawMesh)
         try GLB.write(mesh, to: url)
         return (mesh.vertices.count, mesh.faces.count)
     }

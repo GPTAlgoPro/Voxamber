@@ -1,0 +1,101 @@
+{
+  "assetPackID": "Voxamber-SDXL-CoreML",
+  "downloadPolicy": {
+    "onDemand": {}
+  },
+  "fileSelectors": [
+    {
+      "file": "models/sdxl-base-ios-coreml/TextEncoder.mlmodelc/analytics/coremldata.bin"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/TextEncoder.mlmodelc/coremldata.bin"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/TextEncoder.mlmodelc/metadata.json"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/TextEncoder.mlmodelc/model.mil"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/TextEncoder.mlmodelc/weights/weight.bin"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/TextEncoder2.mlmodelc/analytics/coremldata.bin"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/TextEncoder2.mlmodelc/coremldata.bin"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/TextEncoder2.mlmodelc/metadata.json"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/TextEncoder2.mlmodelc/model.mil"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/TextEncoder2.mlmodelc/weights/weight.bin"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/UnetChunk1.mlmodelc/analytics/coremldata.bin"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/UnetChunk1.mlmodelc/coremldata.bin"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/UnetChunk1.mlmodelc/metadata.json"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/UnetChunk1.mlmodelc/model.mil"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/UnetChunk1.mlmodelc/weights/weight.bin"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/UnetChunk2.mlmodelc/analytics/coremldata.bin"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/UnetChunk2.mlmodelc/coremldata.bin"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/UnetChunk2.mlmodelc/metadata.json"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/UnetChunk2.mlmodelc/model.mil"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/UnetChunk2.mlmodelc/weights/weight.bin"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/VAEDecoder.mlmodelc/analytics/coremldata.bin"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/VAEDecoder.mlmodelc/coremldata.bin"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/VAEDecoder.mlmodelc/metadata.json"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/VAEDecoder.mlmodelc/model.mil"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/VAEDecoder.mlmodelc/weights/weight.bin"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/merges.txt"
+    },
+    {
+      "file": "models/sdxl-base-ios-coreml/vocab.json"
+    },
+    {
+      "file": "Licenses/sdxl-base-ios-coreml/LICENSE.md"
+    },
+    {
+      "file": "Licenses/sdxl-base-ios-coreml/MODEL-LICENSE-SDXL.md"
+    },
+    {
+      "file": "contracts/sdxl-base-ios-coreml.json"
+    }
+  ],
+  "platforms": [
+    "iOS"
+  ]
+}

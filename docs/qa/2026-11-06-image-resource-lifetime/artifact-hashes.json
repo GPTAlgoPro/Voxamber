@@ -1,0 +1,13 @@
+{
+  "README.md": "36ea1a60855095f95e7e6501ab829e425f75351a4743126d7371c21937228d3a",
+  "memory-samples.jsonl": "b5e096c1ed4b825ff5c47e779730fbc9313522838c2580f9afe1ef99d421c828",
+  "pool-scope.txt": "b63d00202e532657af196cedbc5ff518a14fe3bd521629e6f527cb17505cab64",
+  "protocol-before-run.md": "f6f3173076decba12c10e303492271f5eac2fca03cb122ba26beeffb31e9b429",
+  "provenance-before-run.json": "41c0f312e719a660663fe96d056d15616aa9f569ee751db015545be23cca9aab",
+  "reference-original-768.png": "3f9df13ed358adb0329d84d874b54b36356c23e0b7a3a3bc5d84b7eb6c4589ba",
+  "reference-prepared-512-rgba.png": "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae",
+  "result.json": "6a82b19970e05a7257399f808519a57144a5384c92b14b34d5c0d7a7d08fd7f7",
+  "reused-intent-native.json": "1983acb56afccd375bfb395841d250cac181e51dfcbcfe8dc531e24fe4edba7d",
+  "source-freeze-and-unit-verification.json": "ac59c0d182ffe03eac5061f35d62b6fbb56d5b5ab7fe3dd6164268d7ec46f40c",
+  "verification-after-run.json": "2a69ac013d27ff396056f94357803f3d866a203230bfa3b1054f48d5f3cde6c9"
+}

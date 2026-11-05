@@ -1,0 +1,7 @@
+{
+  "recordedAtUTC": "2026-11-05T22:33:25.592144+00:00",
+  "decoderBeforeSHA256": "14ab334319a0914c3113932ddddf4d004b2bcc1f846a4b7a2983e4fe286e9608",
+  "NativeCreationEngineSHA256": "04b6fdb92ab39a666af68997cb48d4d77de8f9319503b50691845762ffc76c4d",
+  "productionIntentMaxTokens": 512,
+  "onlyCondition": "positivePrompt ASCII character capacity180->512; all semantics/other schema/native fields/sampling unchanged"
+}

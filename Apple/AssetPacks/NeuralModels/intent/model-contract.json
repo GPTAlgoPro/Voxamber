@@ -1,0 +1,137 @@
+{
+  "apple": {
+    "assetPackID": "Voxamber-Qwen35-08B-INT4",
+    "available": false,
+    "contractRelativePath": "contracts/qwen3.5-0.8b-mlx-int4.json",
+    "modelRootRelativePath": "models/qwen3.5-0.8b-mlx-int4"
+  },
+  "displayName": "中文理解 · 千问0.8B候选",
+  "files": [
+    {
+      "byteCount": 7755,
+      "path": "chat_template.jinja",
+      "sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+      "sourceURL": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/da28692b5f139cb0ec58a356b437486b7dac7462/chat_template.jinja"
+    },
+    {
+      "byteCount": 3112,
+      "path": "config.json",
+      "sha256": "ba7770da23eae5ebd6827571f086e331956b33f4442a9e876fb4aa10969a6772",
+      "sourceURL": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/da28692b5f139cb0ec58a356b437486b7dac7462/config.json"
+    },
+    {
+      "byteCount": 71473,
+      "path": "model.safetensors.index.json",
+      "sha256": "6e48f2fa5d6f033a6d77bf833abfa9698ca24d1715ecea4c67447bcfaee44650",
+      "sourceURL": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/da28692b5f139cb0ec58a356b437486b7dac7462/model.safetensors.index.json"
+    },
+    {
+      "byteCount": 390,
+      "path": "preprocessor_config.json",
+      "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+      "sourceURL": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/da28692b5f139cb0ec58a356b437486b7dac7462/preprocessor_config.json"
+    },
+    {
+      "byteCount": 1300,
+      "path": "processor_config.json",
+      "sha256": "14932921ca485d458a04dafd8069fbb0a4505622a48208d19ed247115801385b",
+      "sourceURL": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/da28692b5f139cb0ec58a356b437486b7dac7462/processor_config.json"
+    },
+    {
+      "byteCount": 1139,
+      "path": "tokenizer_config.json",
+      "sha256": "e98f1901ac6f0adff67b1d540bfa0c36ac1a0cf59eb72ed78146ef89aafa1182",
+      "sourceURL": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/da28692b5f139cb0ec58a356b437486b7dac7462/tokenizer_config.json"
+    },
+    {
+      "byteCount": 385,
+      "path": "video_preprocessor_config.json",
+      "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+      "sourceURL": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/da28692b5f139cb0ec58a356b437486b7dac7462/video_preprocessor_config.json"
+    },
+    {
+      "byteCount": 625229487,
+      "path": "model.safetensors",
+      "sha256": "f5a0d9dd3efa73510542a8023d610ff26be2b4b020d181cfc4bedaa1fcc5dd9e",
+      "sourceURL": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/da28692b5f139cb0ec58a356b437486b7dac7462/model.safetensors"
+    },
+    {
+      "byteCount": 19989343,
+      "path": "tokenizer.json",
+      "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+      "sourceURL": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/da28692b5f139cb0ec58a356b437486b7dac7462/tokenizer.json"
+    },
+    {
+      "byteCount": 11544,
+      "path": "LICENSE",
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+      "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-0.8B/resolve/2fc06364715b967f1860aea9cf38778875588b17/LICENSE"
+    }
+  ],
+  "formatVersion": 1,
+  "group": "intent",
+  "id": "qwen3.5-0.8b-mlx-int4",
+  "identityStatus": "candidate-origin-unconfirmed",
+  "packaging": {
+    "dataOnly": true,
+    "legalFiles": [
+      {
+        "byteCount": 1067,
+        "relativePath": "Licenses/qwen3.5-0.8b-mlx-int4/MLX-Swift.txt",
+        "sha256": "44326a4ea062241ae6fc26ee2ec90bdc81af7eb7b9d3966181b733fa69d42057",
+        "source": "Apple/ThreeLiveStudio/Resources/Licenses/MLX-Swift.txt"
+      },
+      {
+        "byteCount": 1067,
+        "relativePath": "Licenses/qwen3.5-0.8b-mlx-int4/MLX-Swift-LM.txt",
+        "sha256": "7b1d86acac816ce8192209d7e01141c129b4d48d474c15cc5fb4af62f497c323",
+        "source": "Apple/ThreeLiveStudio/Resources/Licenses/MLX-Swift-LM.txt"
+      },
+      {
+        "byteCount": 11347,
+        "relativePath": "Licenses/qwen3.5-0.8b-mlx-int4/Swift-Transformers.txt",
+        "sha256": "648b81e6c6f9975c3b6cf6d630229b6c8d6f1ddaef55f5770f576adda19f3495",
+        "source": "Apple/ThreeLiveStudio/Resources/Licenses/Swift-Transformers.txt"
+      },
+      {
+        "byteCount": 11544,
+        "relativePath": "Licenses/qwen3.5-0.8b-mlx-int4/Qwen-Model.txt",
+        "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+        "source": "Apple/ThreeLiveStudio/Resources/Licenses/Qwen-Model.txt"
+      },
+      {
+        "byteCount": 11413,
+        "relativePath": "Licenses/qwen3.5-0.8b-mlx-int4/XGrammar.txt",
+        "sha256": "7416fb6978b1064db50b358e161804e0599afc317b7a5df42136edaa713e7bab",
+        "source": "Apple/ThreeLiveStudio/Resources/Licenses/XGrammar.txt"
+      },
+      {
+        "byteCount": 1414,
+        "relativePath": "Licenses/qwen3.5-0.8b-mlx-int4/PicoJSON.txt",
+        "sha256": "52a7da16781b4b899382c9ddfcf059235cdee73e2f45cfd7402c2ae9a2e9d28d",
+        "source": "Apple/ThreeLiveStudio/Resources/Licenses/PicoJSON.txt"
+      },
+      {
+        "byteCount": 11388,
+        "relativePath": "Licenses/qwen3.5-0.8b-mlx-int4/DLPack.txt",
+        "sha256": "6bbee1883f24c06770474e1d8c44cd8e021693798548eab83747a4c6e63cc579",
+        "source": "Apple/ThreeLiveStudio/Resources/Licenses/DLPack.txt"
+      }
+    ],
+    "modelPinIdentitySHA256": "9604fc2e77a9fb1bbcdaded050bcc67977635bbf83a525f8591fb7378269c2df",
+    "neuralOrDeviceAcceptanceClaimed": false,
+    "publicationEnabled": false,
+    "schemaVersion": 1,
+    "sourceManifestSHA256": "53ee064ef37769876fc5c0bfd71d5c29f365562cf421c2425a4124d49b82aa09"
+  },
+  "source": {
+    "license": "Apache-2.0",
+    "originNote": "Pinned quantized card frontmatter says Base while prose says non-Base; origin and intent behavior require separate verification. Exact files do not prove instruct identity.",
+    "originalRepository": "Qwen/Qwen3.5-0.8B",
+    "originalRevision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "parameterCount": 873438784,
+    "repository": "mlx-community/Qwen3.5-0.8B-4bit",
+    "revision": "da28692b5f139cb0ec58a356b437486b7dac7462"
+  },
+  "sourceReferenceURL": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/tree/da28692b5f139cb0ec58a356b437486b7dac7462"
+}

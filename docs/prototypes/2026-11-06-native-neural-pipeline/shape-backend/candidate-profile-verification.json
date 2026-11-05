@@ -1,0 +1,42 @@
+{
+  "frozenAtUTC": "2026-11-05T22:18:44.788563+00:00",
+  "scope": "Explicit new candidate admission and pure build/tests only; separate NN gate record owns runtime outcomes",
+  "sourceSHA256": {
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeWeightProfile.swift": "9030bad8e640b664e5f6d211a1ee7df5a9b87b58f444036e52007d11600ba65e",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeTypes.swift": "505efcf0ae598a637cd5aff9c3280836f9562006045cadb4fe601e4e74c4b0ae",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeRuntimeSupport.swift": "266edfcf781f82306546ef865fe19a3776da8c75b128f56026de9f83e2150853",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeEngine.swift": "0f087146a8186f15c182540a2c9e775fb3ec7b2d192529d098488c429d22df6e",
+    "Apple/Packages/VoxamberShapeNative/Tests/VoxamberShapeNativeTests/ShapeWeightProfileTests.swift": "2c1f56f656136bfb3545fd1b7effdcf73bcaff95d130a5d995ca2cd9eb897b21",
+    "Apple/ThreeLiveStudio/Resources/NeuralModels/ShapeHunyuan21.json": "7939b77b44905451f506c75b7f3bf71876258711d4f0ebd28d79b4fb7332d0eb",
+    "Apple/ThreeLiveStudioTests/NeuralAssetStoreTests.swift": "14a44550aaedc7120ea551a80c5bcc531b0640fdd71b830fb8120559573e04eb"
+  },
+  "validation": {
+    "ShapeSDKHostReleaseTestsPassed": 18,
+    "failed": 0,
+    "FileStoreHostReleaseTestsPassed": 12,
+    "arm64iOS26ReleaseBuild": "passed3.76s",
+    "newProfileTests": [
+      "legacy exact identity retained/default legacy selection",
+      "candidate separately selected with independent packRevision vs real upstream sourceTensorRevision",
+      "legacy sourceTensorRevision absent; no retroactive new-source proof",
+      "cross-profile and mixed size/SHA reject",
+      "tiny non-model files reject both profiles without GPU/model work"
+    ]
+  },
+  "profile": {
+    "legacyDefault": "snap-q4-69cd908e",
+    "explicitCandidate": "native-rebuild-20261106-q4-30b93ce8",
+    "configurationSHAUnchanged": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e",
+    "minimumIOSHeadroomBytes": 5905580032,
+    "sourceRecipeTensorParityVerifiedForNewCandidate": true,
+    "deviceProfileValidated": false,
+    "runtime0323NNParityVerified": false,
+    "legacyTensorEquivalenceProven": false
+  },
+  "limits": [
+    "No tensor, sampler, geometry resolution, cancellation/math or iOS admission threshold changed by profile selection.",
+    "New App manifest is a separate ID/root/pack ID and available=false, not an Apple publication.",
+    "Root owns explicit NativeCreationEngine candidate selection; SDK remains default legacy for existing consumers.",
+    "This pure-test receipt does not claim any host/phone NN or generated-shape result; refer separately frozen single-vase gate."
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "reviewedAtUTC": "2026-11-05T22:52:26.893485+00:00",
+  "method": "Read every untouched same-call raw against the complete semantic rubric copied before RUN, including counts/colors/relations/numeric intent; no post-translation/repair/retry.",
+  "nativeDecoderAccepted": 3,
+  "nativeTitleAndEmptyNegativeNotModelCredit": true,
+  "observed": [
+    {
+      "id": "lamp",
+      "positiveCharacters": 210,
+      "positivePrompt": "A desk lamp with a red cone-shaped shade, a gray cylindrical base, a thin cylindrical stem, and a spherical bulb, all resting on a flat surface at height Y=0, with an overall height of approximately 0.8 meters.",
+      "nativeTitle": "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地",
+      "nativeNegativeEmpty": true,
+      "titleAndNegativeNotModelCredit": true,
+      "rawSHA256": "86839f8ef5e7b92eb3ce55cc8371063321c518ba1a0fa391258128501d9a2b17",
+      "generatedTokens": 55,
+      "inputTokens": 125,
+      "grammarTerminated": true,
+      "termination": "jsonComplete",
+      "seconds": 21.7617290019989,
+      "firstTokenSeconds": 18.430067583
+    },
+    {
+      "id": "spiral_shell_vase",
+      "positiveCharacters": 72,
+      "positivePrompt": "A blue vase shaped like a spiral shell with a golden rim on the opening.",
+      "nativeTitle": "一个螺旋贝壳造型的蓝色花瓶，瓶口带金色细边。",
+      "nativeNegativeEmpty": true,
+      "titleAndNegativeNotModelCredit": true,
+      "rawSHA256": "59349e52748be8a144d92a15092ee3e9a682501af07cf32282c884892d2df122",
+      "generatedTokens": 21,
+      "inputTokens": 102,
+      "grammarTerminated": true,
+      "termination": "jsonComplete",
+      "seconds": 16.529479026794434,
+      "firstTokenSeconds": 15.127475125
+    },
+    {
+      "id": "violin_and_bow",
+      "positiveCharacters": 69,
+      "positivePrompt": "A pair of a violin and a bow, fully in frame as two distinct objects.",
+      "nativeTitle": "一把小提琴和一根琴弓，作为两个独立物体完整入镜。",
+      "nativeNegativeEmpty": true,
+      "titleAndNegativeNotModelCredit": true,
+      "rawSHA256": "678ccf00fb5f195aebccc33607bd296f2aa06ee60d44a38bdddef5ffcbe767f0",
+      "generatedTokens": 22,
+      "inputTokens": 102,
+      "grammarTerminated": true,
+      "termination": "jsonComplete",
+      "seconds": 16.659970998764038,
+      "firstTokenSeconds": 15.130017667
+    }
+  ],
+  "cases": [
+    {
+      "id": "lamp",
+      "decision": "PASS textual brief under unchanged prior rubric",
+      "redConicalShade": true,
+      "grayCylindricalBase": true,
+      "thinCylindricalStem": true,
+      "optionalSphericalBulbIncluded": true,
+      "Y0GroundingRetained": true,
+      "groundingNote": "The all-resting flat-surface wording is less precise than explicitly grounded base; identical concern existed in the former prefix and no scoring rule is relaxed here.",
+      "overallApprox08mPreserved": true,
+      "oldRawNotRepairedOrRescored": true,
+      "meshMetreAccuracyClaimed": false,
+      "independentGroundingBindingAmbiguity": true,
+      "independentUnambiguousDecision": "Not accepted as a clean, unambiguous assembly-grounding statement."
+    },
+    {
+      "id": "spiral_shell_vase",
+      "decision": "PASS same prior positive semantic result",
+      "oneBlueShellFormVase": true,
+      "goldRimAtOpening": true,
+      "rawExactlyUnchangedFromPrior": true
+    },
+    {
+      "id": "violin_and_bow",
+      "decision": "PASS same prior positive semantic result",
+      "oneViolinAndOneMusicalBow": true,
+      "twoDistinctCompleteObjects": true,
+      "rawExactlyUnchangedFromPrior": true
+    }
+  ],
+  "CLIP77Admission": {
+    "cases": [
+      {
+        "bothPinnedCLIPEncodersHaveSameUnpaddedCount": true,
+        "id": "lamp",
+        "modelCalls": 0,
+        "negativeCLIPTokensIncludingBOSandEOS": 2,
+        "positiveCharacters": 210,
+        "positiveCLIPTokensIncludingBOSandEOS": 58,
+        "publicImageTokenizerAdmission": true
+      },
+      {
+        "bothPinnedCLIPEncodersHaveSameUnpaddedCount": true,
+        "id": "spiral_shell_vase",
+        "modelCalls": 0,
+        "negativeCLIPTokensIncludingBOSandEOS": 2,
+        "positiveCharacters": 72,
+        "positiveCLIPTokensIncludingBOSandEOS": 18,
+        "publicImageTokenizerAdmission": true
+      },
+      {
+        "bothPinnedCLIPEncodersHaveSameUnpaddedCount": true,
+        "id": "violin_and_bow",
+        "modelCalls": 0,
+        "negativeCLIPTokensIncludingBOSandEOS": 2,
+        "positiveCharacters": 69,
+        "positiveCLIPTokensIncludingBOSandEOS": 20,
+        "publicImageTokenizerAdmission": true
+      }
+    ],
+    "characterCapacityDoesNotGuaranteeTokenCapacity": true,
+    "CLIPTokenLimit": 77,
+    "CoreMLModelInstantiated": false,
+    "scope": "Native tokenizer-only admission, no image/Shape/NN call"
+  },
+  "latencyObservation": "Observed first-token18.43/15.13/15.13s and total57.34s. This condition is not a speed success, and no causal latency attribution or parameter change was made.",
+  "limits": [
+    "Three reused development fixtures, no all-topic or held-out reliability estimate.",
+    "512 ASCII chars is not a guarantee of <=77 CLIP tokens; these three actual strings pass native token admission only.",
+    "No Image/Shape generation or metric mesh accuracy.",
+    "No broader explicit-exclusion ability is established by these three prompts.",
+    "No quantization/checkpoint-origin conclusion.",
+    "No additional prompt tuning or inference in this task."
+  ],
+  "declaredRubricSemanticAccepted": 3,
+  "declaredRubricScoreScope": "The predeclared rubric allowed grounding wording/faithful Y0 translation. Preserve this declared3/3 without promoting it to an unambiguous assembly-semantic claim.",
+  "independentRootQualityReview": {
+    "unambiguousCasesAccepted": 2,
+    "unambiguousCases": [
+      "spiral_shell_vase",
+      "violin_and_bow"
+    ],
+    "groundingBindingAmbiguityCases": [
+      "lamp"
+    ],
+    "lampFinding": "All resting on a flat surface atY=0 generalizes the original base-grounded relation to all components. Overall0.8m/parts/materials are recovered, but assembly-ground binding remains ambiguous.",
+    "unqualifiedFullSemantic3of3Claimed": false,
+    "fullPipelineSuccessClaimed": false
+  }
+}

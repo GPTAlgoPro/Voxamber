@@ -1,0 +1,55 @@
+{
+  "recordedAtUTC": "2026-11-05T22:39:54.004058+00:00",
+  "appVersion": "0.1.0",
+  "developmentBuild": "7",
+  "scope": "Native mesh project editing, CPU export, persistence, controls and Simulator regression; not phone neural acceptance",
+  "tests": {
+    "result": "Passed",
+    "totalTestCount": 113,
+    "passedTests": 112,
+    "failedTests": 0,
+    "skippedTests": 1
+  },
+  "controlsSeparateIOS26TestCount": 5,
+  "controlsSeparateDuoTestCount": 5,
+  "actualDenseCPUFixtureVertices": 154449,
+  "actualDenseCPUFixtureTriangles": 307328,
+  "CPUFixtureNotNeuralGenerationProof": true,
+  "sourceSHA256": {
+    "ThreeLiveStudio/App/StudioModel.swift": "a5ba4b2bb57a864bcdd36092df775b08a63491058678d68e9039e3fa7f59cc81",
+    "ThreeLiveStudio/Creation/CreationWorkspace.swift": "5380cae021db84e0bac8a71195c42e6963c18a3c007bb049cb30b65fc16aeb99",
+    "ThreeLiveStudio/Creation/NeuralEditPreparation.swift": "a0fee0541fc327acdf6fa7b3dcb483a82c6ba56b26f4491c6d54d456ebe29b89",
+    "ThreeLiveStudio/Creation/NeuralMeshControls.swift": "2feb2cb20f6252242c753384cf8eac5486c55e65177f331b0a18cc08dbd3869b",
+    "ThreeLiveStudio/Storage/ProjectStore.swift": "0a2491a705ab5b99d773d5c54f27ffbebdcae0a35877c6cdf26a7048cfca2408",
+    "ThreeLiveStudio/Storage/WorkspaceDraft.swift": "4cc4428f8fb7963b429f56dc940d0408d5b6b958f0e2c4d232b78e8a7a8038fc",
+    "ThreeLiveStudio/Storage/NeuralEditRecord.swift": "6d50c17735ddd3ab41024c1618ee64680e8be17fb4dc436107a4eb6a9a1adac3",
+    "ThreeLiveStudio/Storage/NeuralProjectDescriptor.swift": "20131c6c1366c8f522d8ccf0122c997a61588bb814be03a486f3e90c64434e16",
+    "ThreeLiveStudio/Storage/NeuralProjectValidation.swift": "38f0a0bdd4de25dfcf56400ec46e0fc52e9e6d73fe9b48eff25745cc73c446bb",
+    "ThreeLiveStudioTests/NeuralEditRecordTests.swift": "aab6b5cbaec6d3bba3812a4b153d64fdd0b2a0a3ca079cba25a6477bdc927311",
+    "ThreeLiveStudioTests/NeuralMeshControlsTests.swift": "311a6dbdf7997713f1f6ef051f168d3a3e382a509a01d155eb273274e8f6a5e8",
+    "ThreeLiveStudioTests/ProjectStoreNeuralOriginTests.swift": "a08a5a38e10f9e8524e2d2d53beb1b8e316fa7c6d34d988ed35b7141a4c03568",
+    "ThreeLiveStudioTests/WorkspaceDraftTests.swift": "60bc8b80d012e8062a8a50967450af6b9eef391f250d37a44bdfde83122766e0",
+    "project.yml": "e15889748687dd3efc314c81cd77aad8218d1fc8d5546c79e4c94151ee0a47d0"
+  },
+  "verifiedBehavior": [
+    "Exact Double transform recipe and linear Rec709 whole material",
+    "Owned background export with cancellation joined before settling",
+    "Original base archive reused for every bake; repeated edits do not accumulate",
+    "Disk-authoritative origin guard inside publication lock",
+    "Current revision CAS rejects stale/deleted/forged snapshots",
+    "Original neural provenance/source/reference/scale flag/time retained",
+    "Separate CPU edit receipt never claims new neural inference",
+    "Typed unsaved edit draft bound to exact project and revision",
+    "Compact/wide/accessibility layout and busy/invalid-input guards"
+  ],
+  "limitations": [
+    "A host CPU fixture may simulate true origin metadata only to test storage invariants; it is never AI generation evidence",
+    "Physical phone shape-stage launch was denied because device Locked; no phone neural pass",
+    "Current normal phone App and TestFlight remain build6; build7 not uploaded",
+    "Learned shape Mac pass and texture/visual quality require their separate evidence",
+    "iOS26 simulator CJK font rendering is not Chinese visual acceptance"
+  ],
+  "normalPhoneAppReplaced": false,
+  "newTestFlightUploaded": false,
+  "mainBranchMerged": false
+}

@@ -1,0 +1,17 @@
+{
+  "triangularBoundaryCount": 509,
+  "float32SquaredAreasPositive": 509,
+  "float64SquaredAreasPositive": 509,
+  "float32SquaredAreaUnderflows": 0,
+  "oppositeFloat32Float64Orientation": 0,
+  "all509RejectedByExisting1e16Threshold": true,
+  "float32SquaredRange": [
+    1.746651640129672e-24,
+    9.959926245795846e-17
+  ],
+  "float64SquaredRange": [
+    1.746651640129672e-24,
+    9.959925900130882e-17
+  ],
+  "sourceGLBUnchanged": true
+}

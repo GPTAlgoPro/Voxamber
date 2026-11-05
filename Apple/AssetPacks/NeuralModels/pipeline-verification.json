@@ -1,0 +1,29 @@
+{
+  "allAppAvailabilityFlagsFalse": true,
+  "appSourceOrExtensionAllowlistModified": false,
+  "archiveBytes": 5825464609,
+  "hostGuardTests": {
+    "failed": 0,
+    "modelRuntimeInitialized": false,
+    "passed": 6
+  },
+  "legalFiles": 17,
+  "localPackagingOnly": true,
+  "modelBytes": 6188648194,
+  "modelFiles": 39,
+  "nativeSwiftCodableContractsAllMatched": true,
+  "neuralInferenceOrDeviceAcceptanceClaimed": false,
+  "newPackCount": 3,
+  "parameterMaximum": 8000000000,
+  "parametersConservative": 7911616876,
+  "payloadFiles": 59,
+  "protectedLegacyTrackedFilesMatchHEAD": true,
+  "schemaVersion": 1,
+  "sourceAndRoundtripAllSHA256Passed": true,
+  "toolSourcesSHA256": {
+    "Scripts/apple-hosted-models/prepare_neural_packs.py": "f96067ddc1eea4e9ce07fe9444cc424aff8194d387fcd731d941182f488aed4f",
+    "Scripts/apple-hosted-models/test_neural_packs.py": "2d08bfaf00666b9ee8e0f11bfbc572063dafc820e022127a0ad539ad2efd2cd0",
+    "Scripts/apple-hosted-models/verify_neural_contracts.swift": "5fb69925e87425a9eb77119fee4420dac5fc51aa356c37ecd2e28b95e19347a2"
+  },
+  "uploaded": false
+}

@@ -1,0 +1,25 @@
+--- capacity180
++++ capacity512
+@@ -4,11 +4,11 @@
+ enum CreationIntentDecoder {
+     static let systemPrompt = """
+     Translate the user's visual idea into concise English. Preserve the subjects, counts, relationships, colors, materials and explicit exclusions. Do not replace objects, invent features, write geometry or explain.
+-    Return only {"positivePrompt":"English translation"}. Use printable English ASCII, 1-180 characters. There are no other output fields.
++    Return only {"positivePrompt":"English translation"}. Use printable English ASCII, 1-512 characters. There are no other output fields.
+     """
+ 
+     static let schema = """
+-    {"type":"object","properties":{"positivePrompt":{"type":"string","pattern":"^[ -~]{1,180}$"}},"required":["positivePrompt"],"additionalProperties":false}
++    {"type":"object","properties":{"positivePrompt":{"type":"string","pattern":"^[ -~]{1,512}$"}},"required":["positivePrompt"],"additionalProperties":false}
+     """
+ 
+     static func decode(_ response: String, sourcePrompt: String) throws -> CreationIntent {
+@@ -24,7 +24,7 @@
+         guard (1...40).contains(intent.title.count),
+               !intent.title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
+               !intent.positivePrompt.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
+-              intent.positivePrompt.count <= 180, intent.negativePrompt.isEmpty,
++              intent.positivePrompt.count <= 512, intent.negativePrompt.isEmpty,
+               intent.positivePrompt.unicodeScalars.allSatisfy({ (32...126).contains($0.value) }),
+               ![intent.title, intent.positivePrompt, intent.negativePrompt].contains(where: {
+                   $0.unicodeScalars.contains(where: CharacterSet.controlCharacters.contains)

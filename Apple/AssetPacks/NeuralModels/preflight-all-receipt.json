@@ -1,0 +1,52 @@
+{
+  "appID": "6831042755",
+  "bundleID": "com.kaisun.voxamber",
+  "catalogSHA256": "649b3d0b18fe208b8c724e68e6d6f030ea8096b068da93653555361f287d5e96",
+  "checkedAtUTC": "2026-11-05T22:20:12+00:00",
+  "deployedParameterCountConservative": 7911616876,
+  "mode": "preflight",
+  "neuralOrDeviceAcceptanceClaimed": false,
+  "officialSources": [
+    "https://developer.apple.com/documentation/backgroundassets/creating-managed-asset-packs",
+    "https://developer.apple.com/help/app-store-connect/manage-asset-packs/upload-apple-hosted-asset-packs/"
+  ],
+  "packs": [
+    {
+      "contractSHA256": "cd3dc0d4a2fc4ea1aa8c0a85758c8bd5be93b5d19585d09f56d0b55f52e1b5ea",
+      "everySourceSHA256Verified": true,
+      "group": "intent",
+      "legalFileCount": 7,
+      "modelByteCount": 645315928,
+      "modelFileCount": 10,
+      "modelID": "qwen3.5-0.8b-mlx-int4",
+      "modelPinIdentitySHA256": "9604fc2e77a9fb1bbcdaded050bcc67977635bbf83a525f8591fb7378269c2df",
+      "sourceManifestSHA256": "53ee064ef37769876fc5c0bfd71d5c29f365562cf421c2425a4124d49b82aa09"
+    },
+    {
+      "contractSHA256": "59727a4d63e758d96a7b910f6b71e95e08d62613583ae74d0a4a7c11b93202be",
+      "everySourceSHA256Verified": true,
+      "group": "image",
+      "legalFileCount": 2,
+      "modelByteCount": 3052951670,
+      "modelFileCount": 27,
+      "modelID": "sdxl-base-ios-coreml",
+      "modelPinIdentitySHA256": "f54e19ee3497a13fc3a3eba4ae9cc680be2e899e6e1a1960b2c0231e854afcbd",
+      "sourceManifestSHA256": "c368d2ae9183096d986c921dec162f2f493759bbfbb9ce29e1d3fc24946d75a0"
+    },
+    {
+      "contractSHA256": "794edd95115c48b1591908da802b3c220dfe931ea3c654394dbde4c5ba982eb5",
+      "everySourceSHA256Verified": true,
+      "group": "shape",
+      "legalFileCount": 8,
+      "modelByteCount": 2490380596,
+      "modelFileCount": 2,
+      "modelID": "hunyuan-shape-2.1-q4-30b93",
+      "modelPinIdentitySHA256": "5e6c214c00030e401beaff077aa1082f3307e846b89fae8bf8ef0f1a2837d0e0",
+      "sourceManifestSHA256": "7939b77b44905451f506c75b7f3bf71876258711d4f0ebd28d79b4fb7332d0eb"
+    }
+  ],
+  "parameterBudgetMaximum": 8000000000,
+  "publicationEnabled": false,
+  "schemaVersion": 1,
+  "uploaded": false
+}

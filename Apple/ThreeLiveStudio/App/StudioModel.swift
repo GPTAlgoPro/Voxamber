@@ -31,6 +31,7 @@ final class StudioModel {
     var notice: String?
     var showParameters = false
     var referenceImagePNG: Data?
+    var neuralEditRecipe = try! NeuralEditRecipe()
     private(set) var stopReason: GenerationStopReason?
     private(set) var lastStopLatency: Double?
     let models: ModelManager
@@ -80,7 +81,19 @@ final class StudioModel {
             position: [0,0.25,0], size: [0.5,0.5,0.5], color: "#59D4C3", metallic: 0.25, roughness: 0.35)])
     }
 
-    var hasUnbuiltChanges: Bool { assets?.project.specification != sceneSpec }
+    var hasUnbuiltChanges: Bool {
+        isNeuralCreation ? neuralEditRecipe != savedNeuralEditRecipe : assets?.project.specification != sceneSpec
+    }
+    private var savedNeuralEditRecipe: NeuralEditRecipe {
+        if let content = assets?.project.content, case .neuralMesh(let mesh) = content,
+           let recipe = mesh.editRecipe { return recipe }
+        return try! NeuralEditRecipe()
+    }
+    func resetNeuralEdits() {
+        guard !busy else { return }
+        neuralEditRecipe = savedNeuralEditRecipe
+        persistDraft()
+    }
     var canExport: Bool { assets != nil && !hasUnbuiltChanges && !busy }
     var isNeuralCreation: Bool {
         guard let content = assets?.project.content else { return false }
@@ -104,6 +117,15 @@ final class StudioModel {
 
     func start() async {
         #if DEVICE_QA
+        if ProcessInfo.processInfo.arguments.contains("--qa-neural-shape") {
+            let id = UUID()
+            operationID = id; idleTimerLease.begin(for: id)
+            let task = Task { await NeuralShapeDeviceProbe.run(studio: self) }
+            work = task
+            await withTaskCancellationHandler { await task.value } onCancel: { task.cancel() }
+            finishOperation(id: id)
+            return
+        }
         if ProcessInfo.processInfo.arguments.contains("--qa-inference") {
             let id = UUID()
             operationID = id
@@ -124,7 +146,10 @@ final class StudioModel {
             case .textOnly: sceneSpec = nil
             case .neuralProject(let id, let revision):
                 if let project = projects.first(where: { $0.id == id && $0.revision == revision }) {
-                    do { assets = try await store.load(project); sceneSpec = nil }
+                    do {
+                        assets = try await store.load(project); sceneSpec = nil
+                        neuralEditRecipe = draft.neuralEditRecipe ?? savedNeuralEditRecipe
+                    }
                     catch { errorMessage = error.localizedDescription }
                 }
             }
@@ -142,6 +167,7 @@ final class StudioModel {
     func selectScenePreset(_ preset: SceneSpec) {
         guard !busy else { return }
         sceneSpec = preset; assets = nil; notice = nil; referenceImagePNG = nil
+        neuralEditRecipe = try! NeuralEditRecipe()
         prompt = "创建\(preset.name)，保持它的结构和材质。"
         persistDraft()
     }
@@ -149,6 +175,7 @@ final class StudioModel {
     func newCreation() {
         guard !busy else { return }
         assets = nil; sceneSpec = nil; prompt = ""; tab = .create; notice = nil; referenceImagePNG = nil
+        neuralEditRecipe = try! NeuralEditRecipe()
         persistDraft()
     }
 
@@ -326,6 +353,7 @@ final class StudioModel {
                 // Commit has won. A later cancellation cannot relabel the saved
                 // revision as an abandoned generation or delete it.
                 assets = saved; sceneSpec = nil; elapsed = Date().timeIntervalSince(began)
+                neuralEditRecipe = savedNeuralEditRecipe
                 try? await store.saveDraft(.init(neuralProjectID: saved.project.id, revision: saved.project.revision, prompt: request))
                 await refreshLibrary()
                 saveNeuralMeasurement(result: result, project: saved.project, total: elapsed)
@@ -337,6 +365,46 @@ final class StudioModel {
                 case .memoryPressure: notice = "设备内存紧张，本次生成已停止，之前的作品已保留。"
                 default: notice = "已取消，之前保存的作品仍在。"
                 }
+            } catch { stage = "未完成"; errorMessage = error.localizedDescription }
+        }
+    }
+
+    func saveNeuralEdits() {
+        guard !busy, isNeuralCreation, hasUnbuiltChanges, let original = assets else { return }
+        let recipe = neuralEditRecipe, id = UUID(), began = Date(), permit = PublicationPermit()
+        busy = true; operationID = id; publicationPermit = permit; idleTimerLease.begin(for: id)
+        errorMessage = nil; notice = nil; elapsed = 0; stopReason = nil; stopRequestedAt = nil; lastStopLatency = nil
+        stage = "正在更新三维模型"
+        timer = Task {
+            while !Task.isCancelled {
+                elapsed = Date().timeIntervalSince(began)
+                try? await Task.sleep(for: .milliseconds(200))
+            }
+        }
+        work = Task {
+            defer { finishOperation(id: id) }
+            let temporary = FileManager.default.temporaryDirectory.appending(path: "VoxamberEdit-" + id.uuidString)
+            defer { try? FileManager.default.removeItem(at: temporary) }
+            do {
+                draftTask?.cancel()
+                try await store.saveDraft(currentWorkspaceDraft())
+                let preparation = Task.detached(priority: .userInitiated) {
+                    try NeuralEditPreparation.prepare(assets: original, recipe: recipe,
+                                                      temporary: temporary, permit: permit)
+                }
+                let input = try await withTaskCancellationHandler {
+                    try await preparation.value
+                } onCancel: { preparation.cancel() }
+                try permit.check()
+                stage = "正在安全保存作品"
+                let saved = try await store.publishNeural(input, replacing: original.project, permit: permit)
+                assets = saved; neuralEditRecipe = savedNeuralEditRecipe; elapsed = Date().timeIntervalSince(began)
+                try? await store.saveDraft(currentWorkspaceDraft())
+                await refreshLibrary()
+                stage = "已完成"; notice = "已保存到作品库"
+            } catch is CancellationError {
+                stage = isCleaningUp ? "正在停止" : "已取消"
+                notice = "已取消，之前保存的作品仍在。"
             } catch { stage = "未完成"; errorMessage = error.localizedDescription }
         }
     }
@@ -518,7 +586,9 @@ final class StudioModel {
         do {
             let result = try await store.load(project)
             assets = result; sceneSpec = project.specification; prompt = project.prompt; tab = .create; notice = nil
+            neuralEditRecipe = savedNeuralEditRecipe
             referenceImagePNG = nil
+            persistDraft()
         } catch { errorMessage = error.localizedDescription }
     }
 
@@ -531,6 +601,7 @@ final class StudioModel {
                 assets = nil
                 referenceImagePNG = nil
                 sceneSpec = nil
+                neuralEditRecipe = try! NeuralEditRecipe()
                 prompt = ""
                 try await store.saveDraft(.init(prompt: ""))
             }
@@ -558,7 +629,8 @@ final class StudioModel {
 
     private func currentWorkspaceDraft() -> ProjectStore.Draft {
         if isNeuralCreation, let project = assets?.project {
-            return .init(neuralProjectID: project.id, revision: project.revision, prompt: prompt)
+            return .init(neuralProjectID: project.id, revision: project.revision, prompt: prompt,
+                         neuralEditRecipe: neuralEditRecipe)
         }
         if let sceneSpec { return .init(spec: sceneSpec, prompt: prompt) }
         return .init(prompt: prompt)
@@ -640,6 +712,10 @@ private struct InferenceCompletionRecord: Codable {
     let model: String
     let completion: QwenGenerationCompletion
 }
+
+#if DEVICE_QA
+extension StudioModel: NeuralShapeProbeState {}
+#endif
 
 private final class InferenceCompletionCapture: @unchecked Sendable {
     private let lock = NSLock()

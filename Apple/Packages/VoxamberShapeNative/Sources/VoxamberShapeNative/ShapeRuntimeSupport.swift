@@ -35,17 +35,19 @@ enum PreparedShapeInput {
 }
 
 enum ShapePackVerifier {
-    static func preflight(_ url:URL)throws {
+    static func preflight(_ url:URL,profile:HunyuanShape21WeightProfile = .legacySnapQ4)throws {
         guard url.isFileURL,
               let values=try? url.resourceValues(forKeys:[.isRegularFileKey,.isSymbolicLinkKey,.fileSizeKey]),
               values.isRegularFile==true,values.isSymbolicLink==false else {throw ShapeError.modelUnavailable}
-        guard Int64(values.fileSize ?? -1)==HunyuanShape21Configuration.modelPackBytes else {throw ShapeError.modelMismatch}
+        guard Int64(values.fileSize ?? -1)==profile.modelPackBytes else {throw ShapeError.modelMismatch}
     }
-    static func verify(_ url:URL,cancellation:ShapeCancellationToken)throws {
-        try verifyFile(url,bytes:HunyuanShape21Configuration.modelPackBytes,
-            expectedSHA256:HunyuanShape21Configuration.modelPackSHA256,cancellation:cancellation)
+    static func verify(_ url:URL,profile:HunyuanShape21WeightProfile = .legacySnapQ4,cancellation:ShapeCancellationToken)throws {
+        let fingerprint=try verifyFile(url,bytes:profile.modelPackBytes,
+            expectedSHA256:profile.modelPackSHA256,cancellation:cancellation)
+        try profile.validateFingerprint(byteCount:fingerprint.byteCount,sha256:fingerprint.sha256)
     }
-    static func verifyFile(_ url:URL,bytes:Int64,expectedSHA256:String,cancellation:ShapeCancellationToken)throws {
+    @discardableResult
+    static func verifyFile(_ url:URL,bytes:Int64,expectedSHA256:String,cancellation:ShapeCancellationToken)throws -> (byteCount:Int64,sha256:String) {
         try cancellation.check()
         let descriptor=Darwin.open(url.path,O_RDONLY|O_NOFOLLOW|O_CLOEXEC)
         guard descriptor>=0 else {throw ShapeError.modelUnavailable}
@@ -61,10 +63,12 @@ enum ShapePackVerifier {
                 if chunk.isEmpty{done=true}else{hash.update(data:chunk)}
             }
         }
+        let actualHash=hash.finalize().map({String(format:"%02x",$0)}).joined()
         var after=stat();guard fstat(descriptor,&after)==0,before.st_dev==after.st_dev,
             before.st_ino==after.st_ino,before.st_size==after.st_size,
             before.st_mtimespec.tv_sec==after.st_mtimespec.tv_sec,before.st_mtimespec.tv_nsec==after.st_mtimespec.tv_nsec,
             before.st_ctimespec.tv_sec==after.st_ctimespec.tv_sec,before.st_ctimespec.tv_nsec==after.st_ctimespec.tv_nsec,
-            hash.finalize().map({String(format:"%02x",$0)}).joined()==expectedSHA256 else {throw ShapeError.modelMismatch}
+            actualHash==expectedSHA256 else {throw ShapeError.modelMismatch}
+        return (Int64(after.st_size),actualHash)
     }
 }

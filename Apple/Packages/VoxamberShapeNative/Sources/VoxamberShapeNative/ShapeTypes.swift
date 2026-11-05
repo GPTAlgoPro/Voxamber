@@ -57,6 +57,11 @@ public struct ShapeProvenance: Codable, Sendable {
     public let runtimeMLXVersion:String
     public let physicalScaleKnown:Bool
     public let weightParityWithOriginalRuntimeVerified:Bool
+    public let modelPackProfileID:String?
+    public let modelPackRevision:String?
+    public let sourceTensorRevision:String?
+    public let sourceRecipeTensorParityVerified:Bool?
+    public let deviceProfileValidated:Bool?
 }
 
 /// Integrity/count evidence from the real backend's artifact boundary. This is
