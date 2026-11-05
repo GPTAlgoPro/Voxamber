@@ -3,6 +3,7 @@ import UIKit
 import Observation
 import CreationCore
 import ThreeLiveNative
+import QwenNative
 
 enum StudioTab: Hashable { case create, library, models }
 enum GenerationStopReason: String, Sendable { case user, background, memoryPressure }
@@ -30,6 +31,7 @@ final class StudioModel {
     let models: ModelManager
     @ObservationIgnored let store: ProjectStore
     @ObservationIgnored private let backgroundTasks: BackgroundTaskClient
+    @ObservationIgnored private let idleTimerLease: GenerationIdleTimerLease
     @ObservationIgnored private var work: Task<Void, Never>?
     @ObservationIgnored private var operationID: UUID?
     @ObservationIgnored private var timer: Task<Void, Never>?
@@ -41,10 +43,11 @@ final class StudioModel {
     @ObservationIgnored private var backgroundLease: BackgroundTaskLease?
 
     init(models: ModelManager = ModelManager(), store: ProjectStore = ProjectStore(),
-         backgroundTasks: BackgroundTaskClient = .system) {
+         backgroundTasks: BackgroundTaskClient = .system, idleTimer: IdleTimerClient = .system) {
         self.models = models
         self.store = store
         self.backgroundTasks = backgroundTasks
+        self.idleTimerLease = GenerationIdleTimerLease(client: idleTimer)
     }
 
     static var blankScene: SceneSpec {
@@ -58,9 +61,9 @@ final class StudioModel {
     func start() async {
         #if DEVICE_QA
         if ProcessInfo.processInfo.arguments.contains("--qa-inference") {
-            UIApplication.shared.isIdleTimerDisabled = true
             let id = UUID()
             operationID = id
+            idleTimerLease.begin(for: id)
             let task = Task { await DeviceAcceptanceProbe.run(studio: self) }
             work = task
             await withTaskCancellationHandler { await task.value } onCancel: { task.cancel() }
@@ -97,6 +100,7 @@ final class StudioModel {
         busy = true; errorMessage = nil; notice = nil; elapsed = 0; stopReason = nil; lastStopLatency = nil; stopRequestedAt = nil
         let id = UUID()
         operationID = id
+        if usingAI { idleTimerLease.begin(for: id) }
         let start = Date()
         let initialScene = sceneSpec ?? .chair
         let request = prompt.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -121,10 +125,17 @@ final class StudioModel {
                     try Task.checkCancellation()
                     let began = Date()
                     stage = "正在理解你的构想"
+                    let completion = InferenceCompletionCapture()
+                    defer {
+                        if let value = completion.value { saveInferenceCompletion(value, operationID: id) }
+                    }
                     let response = try await models.engine.generateJSON(
                         systemPrompt: ScenePrompt.system,
                         prompt: try ScenePrompt.userRequest(request, currentSpec: previous == nil ? nil : initialScene),
-                        maxTokens: 3072, onProgress: { _ in })
+                        maxTokens: 3072,
+                        // Keep the phone-verified single-turn protocol while staged assembly is evaluated.
+                        onProgress: { _ in },
+                        onCompletion: { completion.record($0) })
                     try Task.checkCancellation()
                     proposedScene = try SceneSpec.decodeModelResponse(response)
                     timings["interpretation"] = Date().timeIntervalSince(began)
@@ -184,6 +195,7 @@ final class StudioModel {
         operationID = nil
         operationBusy = false
         guard !isCleaningUp else { return }
+        idleTimerLease.end(for: id)
         stopTimer()
         recordStopLatency()
     }
@@ -260,13 +272,14 @@ final class StudioModel {
         let id = UUID()
         cleanupID = id
         let pending = work
+        let pendingOperationID = operationID
         cleanupOperation = pending
         cancel(reason: reason)
         if needsBackgroundLease { acquireBackgroundLease(for: id) }
         cleanupTask = Task {
             await pending?.value
             await models.unload()
-            finishCleanup(id: id)
+            finishCleanup(id: id, operationID: pendingOperationID)
         }
     }
 
@@ -276,7 +289,7 @@ final class StudioModel {
         backgroundLease = BackgroundTaskLease(client: backgroundTasks) { pending?.cancel() }
     }
 
-    private func finishCleanup(id: UUID) {
+    private func finishCleanup(id: UUID, operationID: UUID?) {
         guard cleanupID == id else { return }
         backgroundLease?.end()
         backgroundLease = nil
@@ -286,6 +299,7 @@ final class StudioModel {
         isCleaningUp = false
         if stage == "正在停止", stopReason != nil { stage = "已取消" }
         guard work == nil else { return }
+        if let operationID { idleTimerLease.end(for: operationID) }
         stopTimer()
         recordStopLatency()
     }
@@ -301,6 +315,68 @@ final class StudioModel {
             let encoder = JSONEncoder(); encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
             try encoder.encode(record).write(to: url.appending(path: project.revision.uuidString + ".json"), options: .atomic)
         } catch { /* Measurements must never invalidate an already-published user project. */ }
+    }
+
+    private func saveInferenceCompletion(_ value: QwenGenerationCompletion, operationID: UUID) {
+        let record = InferenceCompletionRecord(operationID: operationID, createdAt: Date(),
+            appBuild: Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? "unknown",
+            model: ModelManager.modelID, completion: value)
+        let url = URL.documentsDirectory.appending(path: "Measurements/last-inference.json")
+        do {
+            try FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
+            let encoder = JSONEncoder(); encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
+            try encoder.encode(record).write(to: url, options: .atomic)
+        } catch { /* Local counts and termination diagnostics never change the creation result. */ }
+    }
+}
+
+private struct InferenceCompletionRecord: Codable {
+    let operationID: UUID
+    let createdAt: Date
+    let appBuild: String
+    let model: String
+    let completion: QwenGenerationCompletion
+}
+
+private final class InferenceCompletionCapture: @unchecked Sendable {
+    private let lock = NSLock()
+    private var completion: QwenGenerationCompletion?
+    func record(_ value: QwenGenerationCompletion) { lock.withLock { completion = value } }
+    var value: QwenGenerationCompletion? { lock.withLock { completion } }
+}
+
+@MainActor
+struct IdleTimerClient {
+    var isDisabled: () -> Bool
+    var setDisabled: (Bool) -> Void
+
+    static var system: Self {
+        Self(isDisabled: { UIApplication.shared.isIdleTimerDisabled },
+             setDisabled: { UIApplication.shared.isIdleTimerDisabled = $0 })
+    }
+}
+
+/// One admitted AI operation owns this setting through inference and cleanup.
+/// A delayed completion carrying an old ID cannot release a newer lease.
+@MainActor
+final class GenerationIdleTimerLease {
+    private let client: IdleTimerClient
+    private var owner: UUID?
+    private var previousValue = false
+
+    init(client: IdleTimerClient) { self.client = client }
+
+    func begin(for operationID: UUID) {
+        guard owner == nil else { return }
+        owner = operationID
+        previousValue = client.isDisabled()
+        client.setDisabled(true)
+    }
+
+    func end(for operationID: UUID) {
+        guard owner == operationID else { return }
+        owner = nil
+        client.setDisabled(previousValue)
     }
 }
 

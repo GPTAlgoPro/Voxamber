@@ -1,0 +1,40 @@
+{
+  "name": "Red Cone Lamp",
+  "nodes": [
+    {
+      "id": "base",
+      "primitive": "cylinder",
+      "dimensions": { "width": 0.15, "height": 0.05, "depth": 0.15 },
+      "color": "#808080",
+      "metallic": 0.6,
+      "roughness": 0.5
+    },
+    {
+      "id": "stem",
+      "primitive": "cylinder",
+      "dimensions": { "width": 0.03, "height": 0.7, "depth": 0.03 },
+      "color": "#808080",
+      "attach": { "parent": "base", "face": "top", "anchor": "center" },
+      "metallic": 0.6,
+      "roughness": 0.5
+    },
+    {
+      "id": "bulb",
+      "primitive": "sphere",
+      "dimensions": { "width": 0.04, "height": 0.04, "depth": 0.04 },
+      "color": "#FFD700",
+      "attach": { "parent": "stem", "face": "top", "anchor": "center" },
+      "metallic": 0.3,
+      "roughness": 0.4
+    },
+    {
+      "id": "shade",
+      "primitive": "cone",
+      "dimensions": { "width": 0.12, "height": 0.25, "depth": 0.12 },
+      "color": "#CC0000",
+      "attach": { "parent": "stem", "face": "top", "anchor": "center" },
+      "metallic": 0.2,
+      "roughness": 0.6
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Future Sleek Aircraft",
+  "parts": [
+    {
+      "id": "p1",
+      "primitive": "lathe",
+      "purpose": "Main fuselage body, silver streamlined shape"
+    },
+    {
+      "id": "p2",
+      "primitive": "extrusion",
+      "purpose": "Left irregular swept wing, free profile"
+    ,
+      "parent": "p1",
+      "face": "top"
+    },
+    {
+      "id": "p3",
+      "primitive": "extrusion",
+      "purpose": "Right irregular swept wing, mirror of left"
+    ,
+      "parent": "p1",
+      "face": "top"
+    },
+    {
+      "id": "p4",
+      "primitive": "cylinder",
+      "purpose": "Left rear thruster nozzle"
+    ,
+      "parent": "p1",
+      "face": "bottom"
+    },
+    {
+      "id": "p5",
+      "primitive": "cylinder",
+      "purpose": "Right rear thruster nozzle"
+    ,
+      "parent": "p1",
+      "face": "bottom"
+    }
+  ]
+}

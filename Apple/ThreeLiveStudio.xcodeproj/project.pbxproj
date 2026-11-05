@@ -15,6 +15,7 @@
 		1FE359B0ED1674E9EF67DD9A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF45F9340525D2129B11DB5D /* StoreKit.framework */; };
 		211C5006D7CFB79182E6D414 /* MLX-Swift.txt in Resources */ = {isa = PBXBuildFile; fileRef = EFD1803395CA85AB24FAC799 /* MLX-Swift.txt */; };
 		2746C44FB805A29ED90622F0 /* ProjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280D56379EA5205075F096F /* ProjectStore.swift */; };
+		2B7B505AB4E87064276FD02D /* DLPack.txt in Resources */ = {isa = PBXBuildFile; fileRef = 201E3B61AC694BEFC803EA43 /* DLPack.txt */; };
 		2CBF57C9284B47815132E2A2 /* ModelViewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B69F79EBFC5147A7BF5DAF /* ModelViewport.swift */; };
 		2D41AA772C76BACC9E3F3392 /* OnDeviceInferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF508025F5FC777A4603B5 /* OnDeviceInferenceTests.swift */; };
 		3FB858C1D08847D663B1537C /* ProjectLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34368402DAEA02742BB382C /* ProjectLibrary.swift */; };
@@ -23,6 +24,7 @@
 		5C74AB977FB226D2FD8F1135 /* BackgroundAssets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B3F5ABD175835382C8AB6E /* BackgroundAssets.framework */; };
 		5E58539DF5B1BF2E88CA4DAA /* StudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D63FB8B9B5D0D5DC25D94 /* StudioModel.swift */; };
 		5F854FF5F1D21529FA212213 /* SceneParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D195F6009493FA872C580EA /* SceneParameters.swift */; };
+		60F343B870C49C73C31CBCF8 /* XGrammar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1955D6A60DD8510C3A25EE58 /* XGrammar.txt */; };
 		63D435164D2E16E30FF9F0ED /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087F76B9196AEABF7B73CAD6 /* Downloader.swift */; };
 		64DEB54A599505F19683FCD0 /* CreationJourneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01A6C0FE9282C7BEFC3EF2A /* CreationJourneyTests.swift */; };
 		65EEF26D5C36D93A91F3DE0B /* ModelLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4BBC0DC51B93B06AE03D6 /* ModelLibrary.swift */; };
@@ -30,6 +32,7 @@
 		7FAF09644149AB3C7ECB1E13 /* StudioCancellationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B56DE5197A148ECE286CEC /* StudioCancellationTests.swift */; };
 		81025439F11E499D01F19501 /* StudioStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68390729A630CD89992EA17 /* StudioStyle.swift */; };
 		8C0C7091D4FE41D5DC749778 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 975B09C8D199A3944E174C24 /* PrivacyInfo.xcprivacy */; };
+		914CACA573F3E0A5E722B772 /* PicoJSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6EC515AFC8DB6C3CEA578FF3 /* PicoJSON.txt */; };
 		94E62342437321B659976D08 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C871680D9158E22213C02D9F /* ModelManager.swift */; };
 		9CBDDE11846CEEA50A6B2735 /* ExtensionFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C22B15D6A16DD63FF2DC91 /* ExtensionFoundation.framework */; };
 		A390520CABCACFD8DA094AE2 /* ThreeLiveNative in Frameworks */ = {isa = PBXBuildFile; productRef = 89274F890EAFAF9F9FE95136 /* ThreeLiveNative */; };
@@ -87,6 +90,8 @@
 		0EAD657921267AD8370227EE /* VoxamberModelDownloader.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = VoxamberModelDownloader.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C22B15D6A16DD63FF2DC91 /* ExtensionFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExtensionFoundation.framework; path = System/Library/Frameworks/ExtensionFoundation.framework; sourceTree = SDKROOT; };
 		16DCFEE2C9F656B7E5212DB7 /* CreationCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CreationCore; path = Packages/CreationCore; sourceTree = SOURCE_ROOT; };
+		1955D6A60DD8510C3A25EE58 /* XGrammar.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = XGrammar.txt; sourceTree = "<group>"; };
+		201E3B61AC694BEFC803EA43 /* DLPack.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DLPack.txt; sourceTree = "<group>"; };
 		2280D56379EA5205075F096F /* ProjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStore.swift; sourceTree = "<group>"; };
 		2446471427102B8E94EF51A2 /* ThreeLiveNative */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ThreeLiveNative; path = Packages/ThreeLiveNative; sourceTree = SOURCE_ROOT; };
 		27282FCC542B59EC0FE1FD8B /* AppleHostedModelSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleHostedModelSource.swift; sourceTree = "<group>"; };
@@ -100,6 +105,7 @@
 		54CE96C85AFCA7B2690EF271 /* Qwen-Model.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Qwen-Model.txt"; sourceTree = "<group>"; };
 		557F2F9B24A98C6684073F84 /* ThreeLiveStudioTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ThreeLiveStudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A97004E3096CE718ABE9059 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		6EC515AFC8DB6C3CEA578FF3 /* PicoJSON.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PicoJSON.txt; sourceTree = "<group>"; };
 		70B6E574C3FDD00A59F91E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CE1E7CBBA34FB74E1C50541 /* CreationWorkspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationWorkspace.swift; sourceTree = "<group>"; };
 		901D7D08CA2F20683A8A2FFB /* LanguageModel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LanguageModel.json; sourceTree = "<group>"; };
@@ -188,10 +194,13 @@
 		3B245035FA8C2844E5AE75AB /* Licenses */ = {
 			isa = PBXGroup;
 			children = (
+				201E3B61AC694BEFC803EA43 /* DLPack.txt */,
 				DCDAA8EC28B0663BE162BF87 /* MLX-Swift-LM.txt */,
 				EFD1803395CA85AB24FAC799 /* MLX-Swift.txt */,
+				6EC515AFC8DB6C3CEA578FF3 /* PicoJSON.txt */,
 				54CE96C85AFCA7B2690EF271 /* Qwen-Model.txt */,
 				DDC64293A8C8A2D9F957F27B /* Swift-Transformers.txt */,
+				1955D6A60DD8510C3A25EE58 /* XGrammar.txt */,
 			);
 			path = Licenses;
 			sourceTree = "<group>";
@@ -472,13 +481,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				594462793CB30CCC44DADE8F /* Assets.xcassets in Resources */,
+				2B7B505AB4E87064276FD02D /* DLPack.txt in Resources */,
 				CB4B92B1D96C5E2C6E84A460 /* InfoPlist.strings in Resources */,
 				CE4BED8D13AE522EFDBB6349 /* LanguageModel.json in Resources */,
 				06642796E9722D1435EB8A1C /* MLX-Swift-LM.txt in Resources */,
 				211C5006D7CFB79182E6D414 /* MLX-Swift.txt in Resources */,
+				914CACA573F3E0A5E722B772 /* PicoJSON.txt in Resources */,
 				8C0C7091D4FE41D5DC749778 /* PrivacyInfo.xcprivacy in Resources */,
 				5067306AFCE364EAD77E0F66 /* Qwen-Model.txt in Resources */,
 				B13EE6CD109051E3229E21D6 /* Swift-Transformers.txt in Resources */,
+				60F343B870C49C73C31CBCF8 /* XGrammar.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,7 +646,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = M97RTV2PQG;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -768,7 +780,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = M97RTV2PQG;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -909,7 +921,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = M97RTV2PQG;
 				ENABLE_NS_ASSERTIONS = NO;

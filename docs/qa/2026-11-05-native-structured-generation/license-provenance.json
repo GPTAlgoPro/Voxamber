@@ -1,0 +1,17 @@
+{
+  "mlxSwiftLMVersion": "3.32.3",
+  "xgrammarVersion": "v0.1.30",
+  "xgrammarUpstreamRevision": "d476a48dcd8fa3b5afeddbe850e73bb3b1dcf505",
+  "sources": {
+    "XGrammar": "mlx-swift-lm/Libraries/MLXCXGrammar/xgrammar/{LICENSE,NOTICE}",
+    "PicoJSON": "mlx-swift-lm/Libraries/MLXCXGrammar/xgrammar/3rdparty/picojson/picojson.h opening notice",
+    "DLPack": "https://raw.githubusercontent.com/dmlc/dlpack/main/LICENSE (Apache-2.0); copyright from the vendored dlpack.h"
+  },
+  "bundledAppFiles": {
+    "XGrammar.txt": "7416fb6978b1064db50b358e161804e0599afc317b7a5df42136edaa713e7bab",
+    "PicoJSON.txt": "52a7da16781b4b899382c9ddfcf059235cdee73e2f45cfd7402c2ae9a2e9d28d",
+    "DLPack.txt": "6bbee1883f24c06770474e1d8c44cd8e021693798548eab83747a4c6e63cc579"
+  },
+  "nativeOnly": true,
+  "assetPackVersion1Unchanged": true
+}

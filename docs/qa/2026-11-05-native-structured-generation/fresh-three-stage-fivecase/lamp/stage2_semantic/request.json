@@ -1,0 +1,9 @@
+{
+  "api" : "QwenEngine.generateJSONDirect",
+  "maxTokens" : 3072,
+  "prefillStepSize" : 128,
+  "remainingSharedCaseSeconds" : 175.88473403453827,
+  "schemaSHA256" : "3174d07878ea2e92b5a9d51a2c6871eb769376be0cf755cd07ba2159813165c8",
+  "system" : "Classify semantic placement anchors only. For each input row choose the anchor matching its stated purpose on the given face. If the purpose states no tangential direction, choose center. Directions are world directions; a back face does not mirror left and right.\nExact allowed anchor labels:\ntop/bottom faces: center,left,right,front,back,frontLeft,frontRight,backLeft,backRight.\nfront/back faces: center,left,right,top,bottom,topLeft,topRight,bottomLeft,bottomRight.\nleft/right faces: center,front,back,top,bottom,frontTop,frontBottom,backTop,backBottom.\ninside face: center.\nReturn only this JSON format: {\"anchors\":[{\"id\":\"same input id\",\"anchor\":\"one allowed label\"}]}. Include each input id exactly once, keep input order, and include no extra keys or explanations.",
+  "user" : "{\"rows\":[{\"face\":\"top\",\"id\":\"stem\",\"purpose\":\"Vertical support connecting base to lampshade\"},{\"face\":\"top\",\"id\":\"bulb\",\"purpose\":\"Light source located at the top of the stem\"},{\"face\":\"top\",\"id\":\"shade\",\"purpose\":\"Light diffuser positioned above the bulb\"}]}"
+}

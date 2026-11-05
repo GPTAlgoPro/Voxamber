@@ -1,0 +1,62 @@
+{
+  "api" : "QwenEngine.generateJSON (formal single-turn Direct)",
+  "attemptsPerStage" : 1,
+  "currentStage" : "stage2_fixed_graph_generation",
+  "fixedOriginalRequest" : "一把简洁的棕色木椅，必须包含坐面、靠背和四条腿，地面Y=0，坐面高度约0.45米，不要增加底部平台。",
+  "glbSHA256" : "8120d37c6b28a6971382754f18dd064e66f84b511c04def4cfe834b86cfdd0f9",
+  "graphCompilation" : false,
+  "loadSeconds" : 0.91790509223937988,
+  "maxTokensPerStage" : 3072,
+  "meshes" : 7,
+  "mlxAfterUnload" : {
+    "activeBytes" : 4000,
+    "cacheBytes" : 0,
+    "peakBytes" : 3034562212
+  },
+  "mlxBeforeUnload" : {
+    "activeBytes" : 2367679904,
+    "cacheBytes" : 34113154,
+    "peakBytes" : 3034562212
+  },
+  "modelAuthoredParts" : 7,
+  "nativeSceneAccepted" : true,
+  "outline" : {
+    "childrenPerParent" : {
+      "base_frame" : 6
+    },
+    "maximumParentDepth" : 1,
+    "nativeTopology" : "unique identifiers, supported primitives/faces, one first root, existing parents and acyclic connected graph",
+    "parts" : 7,
+    "qualityLimit" : "Topology checks do not establish that parts or geometry match the requested object."
+  },
+  "outlineScope" : "Single-chair probe only: one first root plus connected children. This does not establish a final restriction for arbitrary multi-object scenes.",
+  "phoneOperated" : false,
+  "prefillStepSize" : 128,
+  "probe" : "One model-authored outline followed by one graph-fixed full ScenePlan generation",
+  "productionSourcesModified" : false,
+  "schemaBuilderPreflight" : {
+    "allEightPrimitivesRetained" : true,
+    "exactPrefixItemsAndGraphBindings" : true,
+    "fullDefinitionsUnchanged" : true,
+    "modelLoaded" : false,
+    "passed" : true,
+    "rootOriginalTwoVariants" : true,
+    "syntheticGraphNotUsedForInference" : true
+  },
+  "schemaConstruction" : {
+    "arrayContract" : "prefixItems exactly outline N, minItems=maxItems=N, items=false",
+    "authoritativeFullSchemaSHA256" : "fad4c0e9225540310c4eec80ee03a88ddd9a91bb94f8e7b6ef82d40103eeafc2",
+    "fixedBy" : "Unmodified first-stage model output, never human-authored part roles or coordinates",
+    "freeGeometryLimits" : "Original profile64/mesh1024vertices2048triangles and all numeric/material/rotation fields preserved",
+    "narrowedSchemaSHA256" : "679d6788f5dd28c25634074e31d0d0ffd8dddbd6c0665e56b336e04b0c7da9b9"
+  },
+  "scope" : "Synthetic Mac architecture probe only. Schema/topology/native mesh/export validity is not visual or general-modeling acceptance. No retry or output repair.",
+  "status" : "exported_for_visual_review",
+  "temperature" : 0,
+  "thinking" : false,
+  "totalSeconds" : 22.426408052444458,
+  "triangles" : 548,
+  "usdzSHA256" : "f6a6975442ae276c6801c063cdd8d9aa9ab2d3c0bfc340c76132bc42364d3522",
+  "vertices" : 592,
+  "visualQualityAccepted" : false
+}

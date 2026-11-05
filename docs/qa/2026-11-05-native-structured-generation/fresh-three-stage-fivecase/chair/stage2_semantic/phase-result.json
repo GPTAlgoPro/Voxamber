@@ -1,0 +1,22 @@
+{
+  "firstTokenSeconds" : 0.34378479200000001,
+  "nativeCompletion" : {
+    "generatedTokenCount" : 65,
+    "grammar" : {
+      "compiledSchemaSHA256" : "83367f82d11b8bf7068a16f4cf27edb76db217c9ef16627a9a069cfb32894e1c",
+      "floatBoundsRequireNativeValidation" : false,
+      "originalSchemaSHA256" : "d2a94691441bc08887e26fc09aa130c26db9c7ba15a03a149dc5af3f77f8a488"
+    },
+    "grammarEnabled" : true,
+    "grammarTerminated" : true,
+    "inputTokenCount" : 339,
+    "reason" : "stop",
+    "tokenLimit" : 3072
+  },
+  "rawScope" : "Direct decoded raw buffer saved unchanged; caller performs strict contract decoding.",
+  "responseBytes" : 223,
+  "responseSHA256" : "2aad6a466da5eb7041b0688ffc8296df17decad771dec1f8dec523e1a6eabd32",
+  "seconds" : 1.1665250062942505,
+  "sharedCaseDeadlineTriggered" : false,
+  "status" : "returned"
+}

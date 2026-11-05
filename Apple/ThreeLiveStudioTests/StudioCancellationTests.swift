@@ -6,6 +6,57 @@ import ThreeLiveNative
 
 @MainActor
 final class StudioCancellationTests: XCTestCase {
+    func testAIIdleTimerLeaseRestoresSettingAndRejectsStaleCompletion() {
+        let timer = FakeIdleTimer(disabled: false)
+        let lease = GenerationIdleTimerLease(client: timer.client)
+        let first = UUID(), second = UUID()
+        lease.begin(for: first)
+        XCTAssertTrue(timer.disabled)
+        lease.begin(for: second)
+        lease.end(for: second)
+        XCTAssertTrue(timer.disabled, "A different operation cannot steal or end the admitted lease")
+        lease.end(for: first)
+        XCTAssertFalse(timer.disabled)
+        lease.begin(for: second)
+        lease.end(for: first)
+        XCTAssertTrue(timer.disabled, "A delayed old completion must not restore a newer operation's idle timer")
+        lease.end(for: second)
+        lease.end(for: second)
+        XCTAssertFalse(timer.disabled)
+        XCTAssertEqual(timer.writes, [true, false, true, false])
+    }
+
+    func testAIIdleTimerLeasePreservesPreviouslyDisabledSetting() {
+        let timer = FakeIdleTimer(disabled: true)
+        let lease = GenerationIdleTimerLease(client: timer.client)
+        let id = UUID()
+        lease.begin(for: id)
+        lease.end(for: id)
+        XCTAssertTrue(timer.disabled, "Finish must restore the setting that existed before generation")
+        XCTAssertEqual(timer.writes, [true, true])
+    }
+
+    func testManualGenerationAndUninstalledAIDoNotAcquireIdleTimer() async throws {
+        let root = FileManager.default.temporaryDirectory.appending(path: "StudioIdleTimer-" + UUID().uuidString)
+        defer { try? FileManager.default.removeItem(at: root) }
+        let timer = FakeIdleTimer(disabled: false)
+        let model = StudioModel(store: ProjectStore(root: root), idleTimer: timer.client)
+        model.generate(usingAI: true)
+        XCTAssertFalse(model.busy)
+        XCTAssertEqual(model.tab, .models)
+        XCTAssertTrue(timer.writes.isEmpty, "Opening model installation does not start an AI operation")
+        model.generate(usingAI: false)
+        try await waitUntil { !model.busy }
+        XCTAssertEqual(model.stage, "已完成")
+        XCTAssertTrue(timer.writes.isEmpty, "Fast native parameter generation does not change auto-lock")
+        model.generate(usingAI: false)
+        model.cancel()
+        try await waitUntil { !model.busy }
+        XCTAssertEqual(model.stage, "已取消")
+        XCTAssertFalse(timer.disabled)
+        XCTAssertTrue(timer.writes.isEmpty)
+    }
+
     func testIdleStopDoesNotInventAStoppingState() {
         let model = StudioModel()
         model.stage = "已完成"
@@ -208,6 +259,21 @@ final class StudioCancellationTests: XCTestCase {
 }
 
 private enum LifecycleTestError: Error { case timeout }
+
+@MainActor
+private final class FakeIdleTimer {
+    private(set) var disabled: Bool
+    private(set) var writes: [Bool] = []
+
+    init(disabled: Bool) { self.disabled = disabled }
+
+    var client: IdleTimerClient {
+        IdleTimerClient(isDisabled: { [self] in disabled }, setDisabled: { [self] value in
+            disabled = value
+            writes.append(value)
+        })
+    }
+}
 
 @MainActor
 private final class ControlledUnload {

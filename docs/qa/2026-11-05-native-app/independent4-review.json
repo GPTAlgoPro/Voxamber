@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "reviewedAtUTC": "2026-11-05T14:43:17.922312+00:00",
+  "reviewer": "duo_verification independent child agent",
+  "result": "PASS",
+  "scope": "Read-only exact IPA4 static distribution review, independent commands and ZIP member hashing; only this sanitized receipt was written. No rebuild, upload, account, model generation, simulator or phone operations.",
+  "artifact": {
+    "ipa": "Apple/.build/Distribution/0.1.0-4/ThreeLiveStudio.ipa",
+    "bytes": 25914546,
+    "sha256": "ec2eb26d6eedd5501e3888f3155d0116e92be7af06d582f8a6c4cb08eb71e77c",
+    "archive": "Apple/.build/Archives/Voxamber-0.1.0-4.xcarchive",
+    "zipFileMembersIndependentlyCompared": 32,
+    "zipOrExtractionMismatches": []
+  },
+  "checks": {
+    "exactIPABytesAndSHA256": true,
+    "independentZipMemberMatchesExistingExtraction": true,
+    "noWeightsScriptsOrTestBundles": true,
+    "oneAppOneExpectedExtension": true,
+    "bothSignedDistributionDeviceARM64WithCorrectTeamAndGroups": true,
+    "bothVersionBuild4": true,
+    "mainBAFlagsAndEmbeddedDownloader": true,
+    "bothArchiveUUIDsMatch": true,
+    "noForbiddenNativeDependenciesOrQATestCandidateMarkers": true,
+    "AppContainsOwnedIdleTimerLeaseAndCompletionDiagnosticMarker": true,
+    "sevenLicensesMatchCurrentSourceAndFourPriorLicenses": true,
+    "tenModelFilePinsAndManifestMatchPack1AndBuild2": true,
+    "privacyParsesMatchesSourceAndNoTracking": true,
+    "sourceCallKeepsSingleTurnNoSchemaNoCandidate": true,
+    "engineHashMatchesIndependentGrammarFreezeEvidence": true,
+    "engineGraphCompilationRemainsDisabled": true,
+    "archiveNonSigningResourcesIndependentlyMatch": true,
+    "IPAUnchangedDuringReview": true
+  },
+  "bundles": [
+    {
+      "bundleID": "com.kaisun.voxamber",
+      "version": "0.1.0",
+      "build": "4",
+      "minimumOS": "26.0",
+      "strictSignatureVerified": true,
+      "authorityClass": "Apple Distribution",
+      "team": "M97RTV2PQG",
+      "appGroup": "group.com.kaisun.voxamber.background-assets",
+      "debuggerEntitlement": false,
+      "betaReportsActive": true,
+      "profileContainsDevices": false,
+      "profileExpiryUTC": "2027-09-05T09:51:23Z",
+      "architecture": "arm64",
+      "platform": "IOS device",
+      "uuid": "99F4BF4C-4705-3FB3-9B98-8B67A13DD176",
+      "matchesArchiveUUID": true,
+      "binarySHA256": "b2817e2686ad1319afbbba4ffa845eaf251580e0da0bc7c2d2ca2fdb6da62277",
+      "noForbiddenQAScriptTestOrCandidateMarkers": true
+    },
+    {
+      "bundleID": "com.kaisun.voxamber.model-downloader",
+      "version": "0.1.0",
+      "build": "4",
+      "minimumOS": "26.0",
+      "strictSignatureVerified": true,
+      "authorityClass": "Apple Distribution",
+      "team": "M97RTV2PQG",
+      "appGroup": "group.com.kaisun.voxamber.background-assets",
+      "debuggerEntitlement": false,
+      "betaReportsActive": true,
+      "profileContainsDevices": false,
+      "profileExpiryUTC": "2027-09-05T09:51:23Z",
+      "architecture": "arm64",
+      "platform": "IOS device",
+      "uuid": "6EAB855A-1A46-3533-B41B-EA8BD0B6BDFA",
+      "matchesArchiveUUID": true,
+      "binarySHA256": "cd068255cab41fbe917189ad33c8c8d8cac67b68c40dac606e9c45741346eb7e",
+      "noForbiddenQAScriptTestOrCandidateMarkers": true
+    }
+  ],
+  "licenses": [
+    {
+      "file": "DLPack.txt",
+      "sha256": "6bbee1883f24c06770474e1d8c44cd8e021693798548eab83747a4c6e63cc579",
+      "matchesCurrentSource": true,
+      "matchesPriorBuild2": null
+    },
+    {
+      "file": "MLX-Swift-LM.txt",
+      "sha256": "7b1d86acac816ce8192209d7e01141c129b4d48d474c15cc5fb4af62f497c323",
+      "matchesCurrentSource": true,
+      "matchesPriorBuild2": true
+    },
+    {
+      "file": "MLX-Swift.txt",
+      "sha256": "44326a4ea062241ae6fc26ee2ec90bdc81af7eb7b9d3966181b733fa69d42057",
+      "matchesCurrentSource": true,
+      "matchesPriorBuild2": true
+    },
+    {
+      "file": "PicoJSON.txt",
+      "sha256": "52a7da16781b4b899382c9ddfcf059235cdee73e2f45cfd7402c2ae9a2e9d28d",
+      "matchesCurrentSource": true,
+      "matchesPriorBuild2": null
+    },
+    {
+      "file": "Qwen-Model.txt",
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+      "matchesCurrentSource": true,
+      "matchesPriorBuild2": true
+    },
+    {
+      "file": "Swift-Transformers.txt",
+      "sha256": "648b81e6c6f9975c3b6cf6d630229b6c8d6f1ddaef55f5770f576adda19f3495",
+      "matchesCurrentSource": true,
+      "matchesPriorBuild2": true
+    },
+    {
+      "file": "XGrammar.txt",
+      "sha256": "7416fb6978b1064db50b358e161804e0599afc317b7a5df42136edaa713e7bab",
+      "matchesCurrentSource": true,
+      "matchesPriorBuild2": null
+    }
+  ],
+  "model": {
+    "fileCount": 10,
+    "totalPinnedBytes": 3061129077,
+    "manifestSHA256": "be9d82a513eaeb8381a3be1967f8f7d25931db8aa7b3ca9f21aa2881d7fd4604",
+    "matchesBuild2AndApplePack1": true
+  },
+  "source": {
+    "StudioModelSHA256": "d548417614396a660deecbababb6a15ceca82387f31b40ab1503b3293fe2d932",
+    "QwenEngineSHA256": "9323d1ab24c58e1e8a40d22a6f65f3686fe00e7fcea7361405f3beef76bbe595",
+    "engineFreezeEvidence": "docs/qa/2026-11-05-native-structured-generation/grammar-order-tests.json",
+    "engineFreezeRecordedAt": "2026-11-05T12:39:49.838185+00:00",
+    "preparationRecordWasCreatedAfterExport": true,
+    "grammarArgumentAtAppCall": false,
+    "engineDefaultGrammar": null,
+    "candidateAssemblyActivated": false,
+    "activeModelChanged": false,
+    "sourceIdentityLimit": "Source hash continuity and archive UUID/resource linkage do not constitute a separately recoverable statically-linked engine binary hash."
+  },
+  "archiveResourceComparisonCount": 19,
+  "limits": [
+    "Static release-artifact review only. Apple validation/upload/processing/TestFlight availability are separate states.",
+    "No build4 physical-device AI success, stop latency, automatic-lock, cold hosted download, offline operation or content-quality acceptance was performed.",
+    "Grammar library is linked with licenses, but the App generation call omits jsonSchema and the engine default is nil. Three-stage SceneAssemblyCoreCandidate and new foundation models remain unactivated.",
+    "All source and model/asset-pack manifests were left untouched."
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "reviewedAtUTC": "2026-11-05T12:56:37.182221+00:00",
+  "decision": "quality_fail_do_not_ship_this_architecture_as_validated",
+  "method": "Viewed both exact exported USDZ Apple SceneKit snapshots with functions.view_image; inspected original model JSON and canonical native SceneSpec. No output edits or retries.",
+  "reviewedImages": [
+    "stage2-scene/front.png",
+    "stage2-scene/three-quarter.png"
+  ],
+  "baselineImageAlsoViewed": "../chair-order-probe/chair/three-quarter.png",
+  "improvementObserved": {
+    "oldRequiredOrderProbe": {
+      "nodes": 32,
+      "maximumParentDepth": 7
+    },
+    "twoStageOutline": {
+      "nodes": 7,
+      "maximumParentDepth": 1,
+      "singleModelChosenParent": "base_frame",
+      "children": 6
+    },
+    "interpretation": "Separating assembly structure bounded the runaway part graph in this one attempt and produced a more chair-like silhouette. This does not establish visual correctness or generalization."
+  },
+  "failures": [
+    {
+      "finding": "Four named legs occupy only two distinct physical centers.",
+      "evidence": {
+        "leg_1": [
+          -0.25,
+          0.22500001,
+          0
+        ],
+        "leg_3": [
+          -0.25,
+          0.22500001,
+          0
+        ],
+        "leg_2": [
+          0.25,
+          0.22500001,
+          0
+        ],
+        "leg_4": [
+          0.25,
+          0.22500001,
+          0
+        ],
+        "equalPairs": [
+          [
+            "leg_1",
+            "leg_3"
+          ],
+          [
+            "leg_2",
+            "leg_4"
+          ]
+        ]
+      },
+      "causeBoundary": "The stage-two model supplied yOffset +/-0.02 for front/back legs and omitted zOffset. Under the unchanged, explicitly documented bottom-face solver, normal Y offset is ignored; front/back centers collapse. No solver or output repair was applied."
+    },
+    {
+      "finding": "Backrest is centered through the seating depth instead of placed at the rear.",
+      "evidence": {
+        "seatCenter": [
+          0,
+          0.514,
+          0
+        ],
+        "seatSize": [
+          0.55,
+          0.04,
+          0.35
+        ],
+        "backrestCenter": [
+          0,
+          0.744,
+          0
+        ],
+        "backrestSize": [
+          0.5,
+          0.5,
+          0.08
+        ]
+      },
+      "causeBoundary": "Actual stage-one purpose says behind the seat, but stage two omitted a Z displacement. The fixed graph alone did not preserve that spatial meaning."
+    },
+    {
+      "finding": "Seating surface is higher than the approximately 0.45m request.",
+      "evidence": {
+        "seatCenterYMetres": 0.514,
+        "seatTopYMetres": 0.534,
+        "requestedApproxHeightMetres": 0.45,
+        "topDifferenceMetres": 0.08400000000000002
+      }
+    },
+    {
+      "finding": "The outline adds a separate full box base_frame under the seat.",
+      "evidence": {
+        "baseFrameCenter": [
+          0,
+          0.472,
+          0
+        ],
+        "baseFrameSize": [
+          0.6,
+          0.05,
+          0.4
+        ]
+      },
+      "interpretation": "The model chose a broad solid support plate rather than a sparse frame. It is an additional visible horizontal slab; it is not a human-authored fallback. Do not infer a ground platform violation solely from its name because the resolved plate is elevated."
+    }
+  ],
+  "appearanceNote": "Both fixed-lighting previews show pale surfaces although the model specified dark brown #5D4037. This is recorded as preview appearance, not an established iPhone color-rendering defect.",
+  "outlineScopeDeviation": "The outline had no typed dimensions/coordinates, but its free purpose strings echoed Y=0 and Y=0.45m despite the instruction to omit coordinates. Those actual strings were retained verbatim in stage two; no semantic text filter or repair was applied.",
+  "formatEvidence": "format-validation.json: GLB validator zero errors/warnings; USDZ CRC/stored/alignment and exact Apple import/two renders passed. Format success is separate from this visual failure.",
+  "limits": [
+    "One fixed synthetic chair only",
+    "Single-root connected structure is a prototype restriction, not an adopted multi-object product contract",
+    "No phone or App acceptance",
+    "No claim that a different object or repeated request will show the same improvement",
+    "No accepted retry or result repair"
+  ]
+}

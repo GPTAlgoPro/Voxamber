@@ -1,0 +1,9 @@
+{
+  "api" : "QwenEngine.generateJSONDirect",
+  "maxTokens" : 3072,
+  "prefillStepSize" : 128,
+  "remainingSharedCaseSeconds" : 172.9903290271759,
+  "schemaSHA256" : "d2a94691441bc08887e26fc09aa130c26db9c7ba15a03a149dc5af3f77f8a488",
+  "system" : "Classify semantic placement anchors only. For each input row choose the anchor matching its stated purpose on the given face. If the purpose states no tangential direction, choose center. Directions are world directions; a back face does not mirror left and right.\nExact allowed anchor labels:\ntop/bottom faces: center,left,right,front,back,frontLeft,frontRight,backLeft,backRight.\nfront/back faces: center,left,right,top,bottom,topLeft,topRight,bottomLeft,bottomRight.\nleft/right faces: center,front,back,top,bottom,frontTop,frontBottom,backTop,backBottom.\ninside face: center.\nReturn only this JSON format: {\"anchors\":[{\"id\":\"same input id\",\"anchor\":\"one allowed label\"}]}. Include each input id exactly once, keep input order, and include no extra keys or explanations.",
+  "user" : "{\"rows\":[{\"face\":\"top\",\"id\":\"seat\",\"purpose\":\"Sitting surface located at Y=0.45m, resting on base_frame\"},{\"face\":\"top\",\"id\":\"backrest\",\"purpose\":\"Back support positioned behind the seat, resting on base_frame\"},{\"face\":\"bottom\",\"id\":\"leg_1\",\"purpose\":\"Front-left leg extending from base_frame to ground\"},{\"face\":\"bottom\",\"id\":\"leg_2\",\"purpose\":\"Front-right leg extending from base_frame to ground\"},{\"face\":\"bottom\",\"id\":\"leg_3\",\"purpose\":\"Back-left leg extending from base_frame to ground\"},{\"face\":\"bottom\",\"id\":\"leg_4\",\"purpose\":\"Back-right leg extending from base_frame to ground\"}]}"
+}

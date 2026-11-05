@@ -1,0 +1,159 @@
+{
+  "name" : "BrownWoodChair",
+  "nodes" : [
+    {
+      "color" : "#5D4037",
+      "id" : "base_frame",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.472,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.6,
+      "size" : [
+        0.5,
+        0.05,
+        0.4
+      ]
+    },
+    {
+      "color" : "#5D4037",
+      "id" : "seat",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.514,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.48,
+        0.04,
+        0.38
+      ]
+    },
+    {
+      "color" : "#5D4037",
+      "id" : "backrest",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.794,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.4,
+        0.6,
+        0.15
+      ]
+    },
+    {
+      "color" : "#5D4037",
+      "id" : "leg_1",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.22500001,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.06,
+        0.45,
+        0.06
+      ]
+    },
+    {
+      "color" : "#5D4037",
+      "id" : "leg_2",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.22500001,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.06,
+        0.45,
+        0.06
+      ]
+    },
+    {
+      "color" : "#5D4037",
+      "id" : "leg_3",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.22500001,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.06,
+        0.45,
+        0.06
+      ]
+    },
+    {
+      "color" : "#5D4037",
+      "id" : "leg_4",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.22500001,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.06,
+        0.45,
+        0.06
+      ]
+    }
+  ]
+}

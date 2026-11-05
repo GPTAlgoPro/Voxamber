@@ -1,0 +1,74 @@
+{
+  "name": "Standing Blue Toy Robot",
+  "parts": [
+    {
+      "id": "base",
+      "primitive": "box",
+      "purpose": "Main body chassis standing on Y=0 plane"
+    },
+    {
+      "id": "head",
+      "primitive": "box",
+      "purpose": "Cubic head mounted on top of torso"
+    ,
+    "parent": "torso",
+    "face": "top"
+    },
+    {
+      "id": "torso",
+      "primitive": "box",
+      "purpose": "Central trunk connecting head and legs"
+    ,
+    "parent": "base",
+    "face": "top"
+    },
+    {
+      "id": "left_arm",
+      "primitive": "cylinder",
+      "purpose": "Left arm extending from left side of torso"
+    ,
+    "parent": "torso",
+    "face": "left"
+    },
+    {
+      "id": "right_arm",
+      "primitive": "cylinder",
+      "purpose": "Right arm extending from right side of torso"
+    ,
+    "parent": "torso",
+    "face": "right"
+    },
+    {
+      "id": "left_leg",
+      "primitive": "cylinder",
+      "purpose": "Left leg extending from bottom left of torso"
+    ,
+    "parent": "base",
+    "face": "bottom"
+    },
+    {
+      "id": "right_leg",
+      "primitive": "cylinder",
+      "purpose": "Right leg extending from bottom right of torso"
+    ,
+    "parent": "base",
+    "face": "bottom"
+    },
+    {
+      "id": "left_eye",
+      "primitive": "sphere",
+      "purpose": "Left yellow eye on front of head"
+    ,
+    "parent": "head",
+    "face": "front"
+    },
+    {
+      "id": "right_eye",
+      "primitive": "sphere",
+      "purpose": "Right yellow eye on front of head"
+    ,
+    "parent": "head",
+    "face": "front"
+    }
+  ]
+}

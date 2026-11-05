@@ -1,0 +1,34 @@
+{
+  "name": "Red Cone Lamp",
+  "parts": [
+    {
+      "id": "base",
+      "primitive": "cylinder",
+      "purpose": "Support the lamp structure on the ground at Y=0"
+    },
+    {
+      "id": "stem",
+      "primitive": "cylinder",
+      "purpose": "Vertical support connecting base to lampshade"
+    ,
+    "parent": "base",
+    "face": "top"
+    },
+    {
+      "id": "bulb",
+      "primitive": "sphere",
+      "purpose": "Light source located at the top of the stem"
+    ,
+    "parent": "stem",
+    "face": "top"
+    },
+    {
+      "id": "shade",
+      "primitive": "cone",
+      "purpose": "Light diffuser positioned above the bulb"
+    ,
+    "parent": "stem",
+    "face": "top"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "frozenAtUTC": "2026-11-05T13:16:04.851019+00:00",
+  "modelAttempts": 1,
+  "stage1Rerun": false,
+  "qualityAccepted": false,
+  "files": {
+    "README.md": "c664e60abbad9e91659ce40bc69ee1e2cde95a9c4d9f2d4063e4938f976f3abd",
+    "anchor-evaluation.json": "1e53f71143aec0f9498b9f241a3b8726fa1aacc9e1e70f2b8a0d4f93f78664af",
+    "anchor-response.json": "7690b9315fc1457fb02ff8ff7e66f07854a3b124bb550eefc7d502e40fe9a3bb",
+    "center-legacy-plan.json": "215ef162fc5add2a93f05e351dddf92119ece45fe7fff5d759787b6338cfa10c",
+    "evaluated-legacy-plan.json": "f1aabdd06bb106ba702842dfa933436214b60a9fcfc13f9e2715f2452b4e1d4f",
+    "format-validation.json": "05cb08a10f9a6e222ff4a7aa1b53a072982b7d6866746eb7b9a7199177052af4",
+    "front.png": "cb96cf3e0b6a396be57ee20366561d19fc3279e5411bbb89692c45e16fa5a552",
+    "frozen-outline.json": "08ca123dd53be7ca8a3f75e69fa14cfcfdad7eeb104d4e9ac74d02cead3d84ad",
+    "independent-review-before-generation.json": "8da129eb04736e68f4d82421a787304e92c749cce6a16bca4d4eab2b89426b2e",
+    "mesh-summary.json": "d71eb45e0587aa7560d6ee9f896aff0174b062b741249845ece6e52231e4d777",
+    "model.glb": "ed5394558b5e21dae6ba65f032d1a96a7b2463c88b5e6ebd39db85a0fa8e1597",
+    "model.usdz": "8ec08edd309d89ca0c525e040f0f2b4fcf3d1e200b83a78ba924ac12c6818cf0",
+    "protocol-before-generation.md": "5ebe619f3617d011476e4361ffe6d9af99c33eccb4df0b41ac46bb69641edce8",
+    "protocol-declared-at.json": "e72091f00deea9f1fe65a0109c8937c23a8e54356ecd0dde28bbcb92e2957acd",
+    "protocol-self-check.json": "b3b94c99fabc045ad0c117b64ddd4ca0e602f487452998d812edd2749595b99d",
+    "provenance.json": "4688c1eeea9929d4d74ccc95e8b7fe1f656c97499c950baaf28691379541ef36",
+    "request.json": "56619749497d7ba92e9a43b965cde35d12c6bcfbd25f1ee4cdbd9e0df95698e6",
+    "results.json": "4928a3b66d85fa64859ddc41266adae584253cb1aab619df433c6bfb6b31979d",
+    "scene.json": "d3d18e6bddecdd9fed8b992bd9bcd1299e093e9f628282e89d9d95d452d07f04",
+    "schema.json": "47fba88d556199b52fe4e3ec38deff2534f08904303de68c4ad40cbe3354df36",
+    "three-quarter.png": "0223cfa16a52f1e303e556bfb6ff4239143112b29abec1a132176b3bd096f6ef",
+    "verification-after-run.json": "45fc0fe66e4f30844f27a12ca041476f2571d77a5808a400bffd8c6985a0d78f",
+    "visual-review.json": "bb41dd112d95a77c0557c192ad882c64d96a02b48f1edc74326918cbf00aadc1"
+  }
+}

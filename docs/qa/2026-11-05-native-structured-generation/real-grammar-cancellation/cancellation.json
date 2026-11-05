@@ -1,0 +1,44 @@
+{
+  "cancellationSettleSeconds": 0.017399041,
+  "cancelledAfterFirstToken": true,
+  "completion": {
+    "generatedTokenCount": 1,
+    "grammar": {
+      "compiledSchemaSHA256": "b4149ac625541c2e2035a576f2b7db2c806c485bf7446fc5f301e69fd9d4a8cc",
+      "floatBoundsRequireNativeValidation": true,
+      "originalSchemaSHA256": "fad4c0e9225540310c4eec80ee03a88ddd9a91bb94f8e7b6ef82d40103eeafc2"
+    },
+    "grammarEnabled": true,
+    "grammarTerminated": false,
+    "inputTokenCount": 1045,
+    "reason": "cancelled",
+    "tokenLimit": 3072
+  },
+  "elapsedSeconds": 4.021534958,
+  "firstTokenSeconds": 1.488075792,
+  "host": "Mac, actual pinned Qwen3.5 4B INT4 weights",
+  "mlxAfterFinalUnload": {
+    "activeBytes": 7992,
+    "cacheBytes": 0,
+    "peakBytes": 3034566204
+  },
+  "mlxAfterUnload": {
+    "activeBytes": 4000,
+    "cacheBytes": 0,
+    "peakBytes": 3034562212
+  },
+  "mlxBeforeUnload": {
+    "activeBytes": 2367679904,
+    "cacheBytes": 35459436,
+    "peakBytes": 3034562212
+  },
+  "reloadAndTinyJSONSeconds": 1.395082583,
+  "reloadThenConstrainedJSONPassed": true,
+  "result": "PASS",
+  "scope": "Formal Direct API with full native ScenePlan grammar; cancellation requested by first real generated-token callback. Engine evidence, not iPhone App UI timing.",
+  "unloadSeconds": 0.055899416,
+  "sourceProvenance": "../provenance-order-r2.json",
+  "runnerSourceSHA256": "296e089c422ee879db4caa2038f66c5595fba0eae02a74899fd2baf272c08f33",
+  "appUIStopLatencyVerified": false,
+  "physicalPhoneOperated": false
+}

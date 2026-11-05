@@ -1,0 +1,74 @@
+{
+  "attempts" : 1,
+  "condition" : "unconstrained",
+  "contract" : {
+    "idSetExactlyMatches" : true,
+    "notSemanticAcceptance" : "This verifies syntax/IDs/labels only. Human purpose matching is recorded separately without modifying output.",
+    "noUnknownLabels" : true,
+    "observed" : [
+      {
+        "anchor" : "center",
+        "id" : "seat"
+      },
+      {
+        "anchor" : "back",
+        "id" : "backrest"
+      },
+      {
+        "anchor" : "frontLeft",
+        "id" : "leg_1"
+      },
+      {
+        "anchor" : "frontRight",
+        "id" : "leg_2"
+      },
+      {
+        "anchor" : "backLeft",
+        "id" : "leg_3"
+      },
+      {
+        "anchor" : "backRight",
+        "id" : "leg_4"
+      }
+    ],
+    "preservesInputOrder" : true,
+    "valid" : true
+  },
+  "firstTokenSeconds" : 0.32367979200000002,
+  "jsonSchemaSHA256" : null,
+  "nativeCompletion" : {
+    "generatedTokenCount" : 65,
+    "grammarEnabled" : false,
+    "grammarTerminated" : false,
+    "inputTokenCount" : 339,
+    "reason" : "stop",
+    "tokenLimit" : 768
+  },
+  "rawBytes" : 223,
+  "rawSHA256" : "2aad6a466da5eb7041b0688ffc8296df17decad771dec1f8dec523e1a6eabd32",
+  "schemaEnabled" : false,
+  "seconds" : 0.94634592533111572,
+  "stages" : [
+    "direct_begin elapsed=0.000 inputTokenCount=0 generatedTokenCount=0",
+    "tokenizer_prepare_begin elapsed=0.000 inputTokenCount=0 generatedTokenCount=0",
+    "tokenizer_prepare_done elapsed=0.004 inputTokenCount=339 generatedTokenCount=0",
+    "kv_cache_begin elapsed=0.004 inputTokenCount=339 generatedTokenCount=0",
+    "kv_cache_ready elapsed=0.004 inputTokenCount=339 generatedTokenCount=0",
+    "prefill_begin elapsed=0.004 inputTokenCount=339 generatedTokenCount=0",
+    "prefill_submitted processed=113 elapsed=0.071 inputTokenCount=339 generatedTokenCount=0",
+    "prefill_submitted processed=226 elapsed=0.164 inputTokenCount=339 generatedTokenCount=0",
+    "prefill_submitted processed=338 elapsed=0.260 inputTokenCount=339 generatedTokenCount=0",
+    "prefill_submitted processed=339 elapsed=0.312 inputTokenCount=339 generatedTokenCount=0",
+    "prefill_ready elapsed=0.312 inputTokenCount=339 generatedTokenCount=0",
+    "raw_stream_ready elapsed=0.312 inputTokenCount=339 generatedTokenCount=0",
+    "first_raw_token elapsed=0.324 inputTokenCount=339 generatedTokenCount=1",
+    "native_generation_complete elapsed=0.941 inputTokenCount=339 generatedTokenCount=65",
+    "raw_stream_finished elapsed=0.945 inputTokenCount=339 generatedTokenCount=65",
+    "direct_termination reason=stop elapsed=0.945 inputTokenCount=339 generatedTokenCount=65",
+    "direct_finished elapsed=0.945 inputTokenCount=339 generatedTokenCount=65"
+  ],
+  "status" : "contract_valid",
+  "systemSHA256" : "b4a54840c4effe975f751b90316f2adfff3984fec2e8f5992ab3a1230948f620",
+  "timeout180Seconds" : false,
+  "userSHA256" : "2e63421368ced41f60048a49d3c44bde109e06068130fc7babfbfe3d093b7568"
+}

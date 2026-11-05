@@ -1,0 +1,26 @@
+{
+  "frozenAtUTC": "2026-11-05T12:57:09.294996+00:00",
+  "files": {
+    "README.md": "a1cdd6c9bd4ccd0a75678cd6d768bbb27d2d43542439b92586bbd8dd1149faa5",
+    "format-validation.json": "0d42c88766e4c6a977cdfdae3b1b31a96c01fd5e690f9dbccfc264f08cd31170",
+    "provenance.json": "f7bb44a5dfb1a7ab0ba3f3ae3c77adf994d803049547741d9335e6e1c51e9fa5",
+    "results.json": "cf8ac813d57c32451770a425ecb81f74afd2e20d46caadf21593ce4f7accae32",
+    "stage1-outline/request.json": "9633e16c1312d4869e74d43f08123e76045421f25b8ac295b784f4fa18d953d5",
+    "stage1-outline/response.json": "08ca123dd53be7ca8a3f75e69fa14cfcfdad7eeb104d4e9ac74d02cead3d84ad",
+    "stage1-outline/schema.json": "552825b1103e4090ac12a4666f90e3c7f15114fe7b85106d712137c464019b70",
+    "stage1-outline/stage-result.json": "1fd30006207599ac3f012ba3881a34cf4aee425178a27a314e163c7da3d415d4",
+    "stage1-outline/topology.json": "b51d3d8ba1cc3963c770461f462acf6327e39556949a323f22113207453ce917",
+    "stage2-scene/front.png": "8eb6aaf6ca5988767d56104408c551bd5ca1cf08d40411d2723dd2f64c1af862",
+    "stage2-scene/mesh-summary.json": "b9cfbdda3b1b3bf58ed9301451b2d5ba56968f3b25dca4804f46df731eb5265a",
+    "stage2-scene/model.glb": "8120d37c6b28a6971382754f18dd064e66f84b511c04def4cfe834b86cfdd0f9",
+    "stage2-scene/model.usdz": "f6a6975442ae276c6801c063cdd8d9aa9ab2d3c0bfc340c76132bc42364d3522",
+    "stage2-scene/request.json": "83b0e20da1a92ef4dc368b1abaec675386bb9b6cd959795b0f8fa309d4d7c18e",
+    "stage2-scene/response.json": "e08c268a32f757728862c08ced4973b163b0bcc1d2b8c3f93507e04a9fb790ea",
+    "stage2-scene/scene.json": "cfe092061518814a9e8ae2e3fe56c15e0ff68ae39356de3e617668323b4650ca",
+    "stage2-scene/schema.json": "679d6788f5dd28c25634074e31d0d0ffd8dddbd6c0665e56b336e04b0c7da9b9",
+    "stage2-scene/stage-result.json": "0e620e8c1c4b715340b203092601cff11aa3f258454891712d3d063820b32a47",
+    "stage2-scene/three-quarter.png": "553b8c289d24a0c6817c6681e9ea6b376f70cdefb62a19a212477076141f3861",
+    "verification.json": "43cf63bcfa170b3484979154cd4292d092aba08d3f159489bc6c151186f4dac0",
+    "visual-review.json": "1a725b29cdef141378b8f7806c139477421fbb3769bbb43ddefef768a4031bcf"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "idSetExactlyMatches" : true,
+  "notSemanticAcceptance" : "This verifies syntax/IDs/labels only. Human purpose matching is recorded separately without modifying output.",
+  "noUnknownLabels" : true,
+  "observed" : [
+    {
+      "anchor" : "center",
+      "id" : "seat"
+    },
+    {
+      "anchor" : "back",
+      "id" : "backrest"
+    },
+    {
+      "anchor" : "frontLeft",
+      "id" : "leg_1"
+    },
+    {
+      "anchor" : "frontRight",
+      "id" : "leg_2"
+    },
+    {
+      "anchor" : "backLeft",
+      "id" : "leg_3"
+    },
+    {
+      "anchor" : "backRight",
+      "id" : "leg_4"
+    }
+  ],
+  "preservesInputOrder" : true,
+  "valid" : true
+}

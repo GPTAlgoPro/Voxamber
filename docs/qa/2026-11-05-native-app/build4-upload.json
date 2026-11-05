@@ -1,0 +1,25 @@
+{
+  "observedAt": "2026-11-05T14:51:59.429326+00:00",
+  "version": "0.1.0",
+  "build": "4",
+  "sourceCodeCommit": "9e22b3f",
+  "ipaBytes": 25914546,
+  "ipaSHA256": "ec2eb26d6eedd5501e3888f3155d0116e92be7af06d582f8a6c4cb08eb71e77c",
+  "finalArchive": "Apple/.build/Archives/Voxamber-0.1.0-4.xcarchive",
+  "altoolValidation": {
+    "processExitCode": 0,
+    "successTextVerified": true
+  },
+  "altoolUpload": {
+    "processExitCode": 0,
+    "successTextVerified": true,
+    "nonFatalDiagnostic": "Optional uploader resume-state file missing; exited 0 and server independently reports VALID/IN_BETA_TESTING."
+  },
+  "modelPack": "Voxamber-Qwen35-4B-INT4",
+  "modelPackVersion": "1",
+  "modelManifestUnchangedFromBuild2": true,
+  "experimentalStagedAssemblyActivated": false,
+  "newModelActivated": false,
+  "actualPhoneBuild4InstallOrStoppingAcceptance": false,
+  "appStoreReviewOrPublicReleasePerformed": false
+}

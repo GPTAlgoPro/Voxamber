@@ -1,0 +1,33 @@
+{
+  "actualCaseSeconds" : 17.815412044525146,
+  "cachedResponsesUsed" : false,
+  "caseDeadlineExceeded" : false,
+  "caseSharedDeadlineSeconds" : 180,
+  "error" : "部件中心须在 ±3 米内，尺寸须为 0.02–2.5 米，旋转须为 ±360 度内。",
+  "errorType" : "CreationCore.CreationError",
+  "exported" : false,
+  "failureStage" : "native_anchor_and_core_geometry",
+  "id" : "aircraft",
+  "mlxAfterCase" : {
+    "activeBytes" : 2367679904,
+    "cacheBytes" : 34198078,
+    "peakBytes" : 3034562212
+  },
+  "nativeSceneAccepted" : false,
+  "originalRequest" : "带后掠机翼的未来飞行器，银色流线机身、左右对称不规则机翼、两个推进器，机翼至少一个用extrusion自由轮廓，机身可用lathe。做一个整体，不要平台。",
+  "outlineDiagnostics" : {
+    "childrenPerParent" : {
+      "p1" : 4
+    },
+    "maximumParentDepth" : 1,
+    "nativeTopology" : "unique identifiers, supported primitives/faces, one first root, existing parents and acyclic connected graph",
+    "parts" : 5,
+    "qualityLimit" : "Topology checks do not establish that parts or geometry match the requested object."
+  },
+  "outputRepair" : false,
+  "phaseCalls" : 3,
+  "rendered" : false,
+  "retries" : 0,
+  "status" : "rejected_or_failed",
+  "visualQualityAccepted" : false
+}

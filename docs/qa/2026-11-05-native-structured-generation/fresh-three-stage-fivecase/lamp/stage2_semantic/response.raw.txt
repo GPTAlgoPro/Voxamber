@@ -1,0 +1,1 @@
+{"anchors":[{"id":"stem","anchor":"center"},{"id":"bulb","anchor":"center"},{"id":"shade","anchor":"center"}]}

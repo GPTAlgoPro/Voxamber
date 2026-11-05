@@ -1,0 +1,192 @@
+{
+  "recordedAtUTC": "2026-11-05T14:17:53.379124+00:00",
+  "scope": "Read-only post-run diagnosis of the actual one-attempt fresh batch. No model replay, new weights, output repair or source changes.",
+  "aircraft": {
+    "rawAvailable": true,
+    "rawFile": "aircraft/stage3_geometry/accepted-model-json.json",
+    "firstObservedCoreGate": "Node size/position/rotation range validation",
+    "explicitRangeViolations": [
+      {
+        "id": "p1",
+        "primitive": "lathe",
+        "jsonPath": "nodes[id=p1].dimensions.height",
+        "rawValue": 3.5,
+        "coreRule": "Each size Float must be in 0.02...2.5 metres",
+        "coreSource": "Apple/Packages/CreationCore/Sources/CreationCore/SceneSpec.swift:68",
+        "observedReject": "Native Core invalidParameter; no scaling or repaired replay"
+      }
+    ],
+    "observedArrayCounts": [
+      {
+        "id": "p1",
+        "primitive": "lathe",
+        "profileCount": 12
+      },
+      {
+        "id": "p2",
+        "primitive": "extrusion",
+        "profileCount": 7
+      },
+      {
+        "id": "p3",
+        "primitive": "extrusion",
+        "profileCount": 7
+      },
+      {
+        "id": "p4",
+        "primitive": "cylinder"
+      },
+      {
+        "id": "p5",
+        "primitive": "cylinder"
+      }
+    ],
+    "limits": "Only the first actual gate is established. Passing later freeform topology after hypothetical repair has not been tested."
+  },
+  "robot": {
+    "rawFiles": [
+      "robot/stage1_outline/accepted-model-json.json",
+      "robot/stage2_semantic/response.raw.txt",
+      "robot/stage3_geometry/accepted-model-json.json",
+      "robot/scene.json"
+    ],
+    "eyes": [
+      {
+        "id": "left_eye",
+        "outlinePurpose": "Left yellow eye on front of head",
+        "outlineParent": "head",
+        "outlineFace": "front",
+        "semanticAnchor": "center",
+        "geometryDimensions": {
+          "width": 0.04,
+          "height": 0.04,
+          "depth": 0.04
+        },
+        "geometryAnchor": "center",
+        "canonicalPosition": [
+          0,
+          1.016,
+          0.192
+        ],
+        "availableTangentSpread": {
+          "x": 0.155,
+          "y": 0.105
+        }
+      },
+      {
+        "id": "right_eye",
+        "outlinePurpose": "Right yellow eye on front of head",
+        "outlineParent": "head",
+        "outlineFace": "front",
+        "semanticAnchor": "center",
+        "geometryDimensions": {
+          "width": 0.04,
+          "height": 0.04,
+          "depth": 0.04
+        },
+        "geometryAnchor": "center",
+        "canonicalPosition": [
+          0,
+          1.016,
+          0.192
+        ],
+        "availableTangentSpread": {
+          "x": 0.155,
+          "y": 0.105
+        }
+      }
+    ],
+    "bothEyeCentersExactlyEqual": true,
+    "diagnosis": "The actual outline explicitly says Left/Right. The fresh semantic pass chose center for both; geometry was constrained to preserve those choices. Positive available X/Y spread rules out zero-spread collapse. The two sphere meshes overlap, explaining the single visible yellow eye without a renderer assumption.",
+    "otherObservedErrors": {
+      "headDimensions": {
+        "width": 0.35,
+        "height": 0.25,
+        "depth": 0.35
+      },
+      "cubicHeadRequestedButNonuniformSize": true,
+      "leftArmSemantic": "front",
+      "rightArmSemantic": "back",
+      "armsPurposeHasNoForeAftRequirement": true
+    }
+  },
+  "whale": {
+    "rawGeometryAvailable": false,
+    "whyUnavailable": "QwenEngine.generateJSON calls Direct internally, then throws QwenError.outputLimit on SDK length termination before returning its local decoded buffer. The runner received the error and metadata only; no token/content callback was enabled. Process exited and no replay is authorized.",
+    "nativeCompletion": {
+      "generatedTokenCount": 3072,
+      "grammar": {
+        "compiledSchemaSHA256": "d9dec3b8b214c2d75eed359e3f88ca10659bd824a4a632692d078509a043c13c",
+        "floatBoundsRequireNativeValidation": true,
+        "originalSchemaSHA256": "a93cf0532ebdf2569d815ffbea1e663bf8bc322f22ef67b603466a79e25c175c"
+      },
+      "grammarEnabled": true,
+      "grammarTerminated": false,
+      "inputTokenCount": 1857,
+      "reason": "outputLimit",
+      "tokenLimit": 3072
+    },
+    "seconds": 42.111093044281006,
+    "sharedDeadlineTriggered": false,
+    "observedCutoffNode": null,
+    "observedCutoffPrimitive": null,
+    "observedProfileCount": null,
+    "observedVerticesCount": null,
+    "observedTrianglesCount": null,
+    "actualStage1PrimitiveOrder": [
+      {
+        "id": "whale_body",
+        "primitive": "mesh"
+      },
+      {
+        "id": "tail_base",
+        "primitive": "extrusion"
+      },
+      {
+        "id": "left_fin",
+        "primitive": "extrusion"
+      },
+      {
+        "id": "right_fin",
+        "primitive": "extrusion"
+      },
+      {
+        "id": "tail_flukes",
+        "primitive": "mesh"
+      },
+      {
+        "id": "eye_left",
+        "primitive": "sphere"
+      },
+      {
+        "id": "eye_right",
+        "primitive": "sphere"
+      }
+    ],
+    "declaredFreeformBudgetsNotObservedCounts": {
+      "meshVertices": [
+        3,
+        1024
+      ],
+      "meshTriangles": [
+        1,
+        2048
+      ],
+      "extrusionProfile": [
+        3,
+        64
+      ]
+    },
+    "dataBoundary": "The first planned node is whale_body mesh and the plan has another mesh plus three extrusions, but the final open array/node is unobservable. Do not label declared maxima as actual generated counts.",
+    "actualTextCompletionAlsoUnknown": "No rejected buffer was returned. Length termination and grammarTerminated=false do not alone distinguish an open/truncated array from a complete JSON object followed by whitespace without accepted EOS."
+  },
+  "nextContractAssessment": {
+    "freeformCountsBeforeFloats": "A model-authored exact profile/vertex/triangle-count plan is a reasonable next contract to investigate and may prevent array over-expansion. This batch does not prove which whale array caused its cap; all original maxima can remain admission bounds. Because the whale text is unavailable, this is not proof that an observed array ran to its maximum; exact-count schema also does not by itself bound numeric literal length or whitespace.",
+    "notSufficientForOtherObservedFailures": [
+      "Aircraft scalar height3.5 violates2.5 before freeform geometry acceptance",
+      "Robot semantic choices collapse distinct eyes despite explicit purposes",
+      "Chair and lamp global height targets are not maintained by independently generated component dimensions"
+    ],
+    "futureDiagnosticRequirement": "Before any future authorized geometry experiment, preserve Direct raw output even on length termination and separately apply the same formal validation. This would be a declared single-call harness change, not a replay/accepted retry. No such new call or production edit was made here."
+  }
+}

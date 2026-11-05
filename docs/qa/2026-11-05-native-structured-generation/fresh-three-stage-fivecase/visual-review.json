@@ -1,0 +1,354 @@
+{
+  "reviewedAtUTC": "2026-11-05T14:22:37.872564+00:00",
+  "overallDecision": "fresh_fivecase_not_ready_for_production_port",
+  "actualFreshPhaseCalls": 15,
+  "actualCaseCount": 5,
+  "exportedCases": 3,
+  "fullyAcceptedRequests": 0,
+  "reviewedPNGCount": 6,
+  "geometryOrFormatSuccessIsNotVisualPass": true,
+  "cases": [
+    {
+      "id": "robot",
+      "originalRequest": "做一个站立的蓝色玩具机器人，包含立方体头、躯干、左右两条手臂和两条腿，以及两个球形黄色眼睛，底部在Y=0。",
+      "status": "exported_for_visual_review",
+      "actualFreshPhaseCalls": 3,
+      "actualCaseSeconds": 26.955522060394287,
+      "nativeSceneAccepted": true,
+      "exported": true,
+      "rendered": true,
+      "fullRequestAccepted": false,
+      "imagesViewed": [
+        "robot/front.png",
+        "robot/three-quarter.png"
+      ],
+      "viewMethod": "functions.view_image, individually labeled exact actual USDZ renders",
+      "boundsMinimum": [
+        -0.3070000112056732,
+        0,
+        -0.17499999701976776
+      ],
+      "boundsMaximum": [
+        0.3070000112056732,
+        1.1410000324249268,
+        0.21199999749660492
+      ],
+      "decision": "visual_fail",
+      "observations": [
+        "Recognizable block robot with two side arms and two separate legs, but only one visible yellow eye because the two eye meshes exactly overlap.",
+        "Head is box-shaped but not cubic: width/depth0.35m vs height0.25m.",
+        "Unrequested front/back arm asymmetry comes from the actual semantic choices; native solver did not repair it."
+      ],
+      "evidence": {
+        "eyePositions": [
+          [
+            0,
+            1.016,
+            0.192
+          ],
+          [
+            0,
+            1.016,
+            0.192
+          ]
+        ],
+        "eyeCentersEqual": true,
+        "eyeDimensions": [
+          0.04,
+          0.04,
+          0.04
+        ],
+        "headDimensions": [
+          0.35,
+          0.25,
+          0.35
+        ],
+        "eyeAvailableXSpread": 0.155,
+        "bodyColors": [
+          "#1a1a2e"
+        ]
+      },
+      "phaseMetrics": [
+        {
+          "phase": "stage1_outline",
+          "status": "returned",
+          "seconds": 10.19302499294281,
+          "firstTokenSeconds": 3.533141709,
+          "inputTokens": 242,
+          "generatedTokens": 519,
+          "reason": "stop"
+        },
+        {
+          "phase": "stage2_semantic",
+          "status": "returned",
+          "seconds": 1.3023979663848877,
+          "firstTokenSeconds": 0.332805833,
+          "inputTokens": 355,
+          "generatedTokens": 77,
+          "reason": "stop"
+        },
+        {
+          "phase": "stage3_geometry",
+          "status": "returned",
+          "seconds": 15.235591053962708,
+          "firstTokenSeconds": 1.6912700840000001,
+          "inputTokens": 1972,
+          "generatedTokens": 1033,
+          "reason": "stop"
+        }
+      ]
+    },
+    {
+      "id": "lamp",
+      "originalRequest": "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地Y=0，整体高约0.8米。",
+      "status": "exported_for_visual_review",
+      "actualFreshPhaseCalls": 3,
+      "actualCaseSeconds": 11.929579973220825,
+      "nativeSceneAccepted": true,
+      "exported": true,
+      "rendered": true,
+      "fullRequestAccepted": false,
+      "imagesViewed": [
+        "lamp/front.png",
+        "lamp/three-quarter.png"
+      ],
+      "viewMethod": "functions.view_image, individually labeled exact actual USDZ renders",
+      "boundsMinimum": [
+        -0.07500000298023224,
+        0,
+        -0.07500000298023224
+      ],
+      "boundsMaximum": [
+        0.07500000298023224,
+        0.9939999580383301,
+        0.07500000298023224
+      ],
+      "decision": "parameter_and_proportion_fail",
+      "observations": [
+        "Actual requested primitives/colors are present: gray cylindrical base and stem, red cone shade, internal spherical bulb.",
+        "The lamp is approximately0.994m tall rather than approximately0.8m; the narrow12cm-wide,25cm-high shade reads like a pointed spike.",
+        "Material highlights make gray appear pale in this fixed renderer; this is not a proven phone rendering defect."
+      ],
+      "evidence": {
+        "actualHeightMetres": 0.9939999580383301,
+        "requestedApproxHeightMetres": 0.8,
+        "differenceMetres": 0.19399995803833003,
+        "relativeDifferencePercent": 24.249994754791253,
+        "shadeSize": [
+          0.12,
+          0.25,
+          0.12
+        ],
+        "stemSize": [
+          0.03,
+          0.7,
+          0.03
+        ],
+        "basePrimitive": "cylinder",
+        "baseColor": "#808080",
+        "shadePrimitive": "cone",
+        "shadeColor": "#CC0000"
+      },
+      "phaseMetrics": [
+        {
+          "phase": "stage1_outline",
+          "status": "returned",
+          "seconds": 4.113883018493652,
+          "firstTokenSeconds": 1.139152584,
+          "inputTokens": 246,
+          "generatedTokens": 232,
+          "reason": "stop"
+        },
+        {
+          "phase": "stage2_semantic",
+          "status": "returned",
+          "seconds": 0.5921969413757324,
+          "firstTokenSeconds": 0.228734042,
+          "inputTokens": 257,
+          "generatedTokens": 29,
+          "reason": "stop"
+        },
+        {
+          "phase": "stage3_geometry",
+          "status": "returned",
+          "seconds": 7.1796910762786865,
+          "firstTokenSeconds": 1.3879755,
+          "inputTokens": 1641,
+          "generatedTokens": 453,
+          "reason": "stop"
+        }
+      ]
+    },
+    {
+      "id": "whale",
+      "originalRequest": "一条弯曲尾巴的蓝色小鲸鱼，流线型椭圆身体，左右鳍和分叉尾鳍，两个可见眼睛；尾鳍或侧鳍至少用一个extrusion自由轮廓。是独立海洋动物造型，不要平台。",
+      "status": "rejected_or_failed",
+      "actualFreshPhaseCalls": 3,
+      "actualCaseSeconds": 49.54715394973755,
+      "nativeSceneAccepted": false,
+      "exported": false,
+      "rendered": false,
+      "fullRequestAccepted": false,
+      "imagesViewed": [],
+      "decision": "rejected_without_asset",
+      "failureStage": "stage3_geometry",
+      "error": "造型参数超过本次生成长度，请简化描述后重试。",
+      "observations": [
+        "No PNG or asset replacement was produced. See failure-diagnostics.json for exact raw/error observability boundaries."
+      ],
+      "phaseMetrics": [
+        {
+          "phase": "stage1_outline",
+          "status": "returned",
+          "seconds": 6.3463228940963745,
+          "firstTokenSeconds": 1.125324333,
+          "inputTokens": 255,
+          "generatedTokens": 409,
+          "reason": "stop"
+        },
+        {
+          "phase": "stage2_semantic",
+          "status": "returned",
+          "seconds": 1.0808149576187134,
+          "firstTokenSeconds": 0.332339959,
+          "inputTokens": 310,
+          "generatedTokens": 59,
+          "reason": "stop"
+        },
+        {
+          "phase": "stage3_geometry",
+          "status": "rejected_or_failed",
+          "seconds": 42.111093044281006,
+          "firstTokenSeconds": 1.625805208,
+          "inputTokens": 1857,
+          "generatedTokens": 3072,
+          "reason": "outputLimit"
+        }
+      ]
+    },
+    {
+      "id": "aircraft",
+      "originalRequest": "带后掠机翼的未来飞行器，银色流线机身、左右对称不规则机翼、两个推进器，机翼至少一个用extrusion自由轮廓，机身可用lathe。做一个整体，不要平台。",
+      "status": "rejected_or_failed",
+      "actualFreshPhaseCalls": 3,
+      "actualCaseSeconds": 17.815412044525146,
+      "nativeSceneAccepted": false,
+      "exported": false,
+      "rendered": false,
+      "fullRequestAccepted": false,
+      "imagesViewed": [],
+      "decision": "rejected_without_asset",
+      "failureStage": "native_anchor_and_core_geometry",
+      "error": "部件中心须在 ±3 米内，尺寸须为 0.02–2.5 米，旋转须为 ±360 度内。",
+      "observations": [
+        "No PNG or asset replacement was produced. See failure-diagnostics.json for exact raw/error observability boundaries."
+      ],
+      "phaseMetrics": [
+        {
+          "phase": "stage1_outline",
+          "status": "returned",
+          "seconds": 5.16654098033905,
+          "firstTokenSeconds": 1.46131375,
+          "inputTokens": 251,
+          "generatedTokens": 291,
+          "reason": "stop"
+        },
+        {
+          "phase": "stage2_semantic",
+          "status": "returned",
+          "seconds": 0.7710180282592773,
+          "firstTokenSeconds": 0.270175916,
+          "inputTokens": 273,
+          "generatedTokens": 40,
+          "reason": "stop"
+        },
+        {
+          "phase": "stage3_geometry",
+          "status": "returned",
+          "seconds": 11.869374990463257,
+          "firstTokenSeconds": 1.678705167,
+          "inputTokens": 1716,
+          "generatedTokens": 797,
+          "reason": "stop"
+        }
+      ]
+    },
+    {
+      "id": "chair",
+      "originalRequest": "一把简洁的棕色木椅，必须包含坐面、靠背和四条腿，地面Y=0，坐面高度约0.45米，不要增加底部平台。",
+      "status": "exported_for_visual_review",
+      "actualFreshPhaseCalls": 3,
+      "actualCaseSeconds": 20.619686007499695,
+      "nativeSceneAccepted": true,
+      "exported": true,
+      "rendered": true,
+      "fullRequestAccepted": false,
+      "imagesViewed": [
+        "chair/front.png",
+        "chair/three-quarter.png"
+      ],
+      "viewMethod": "functions.view_image, individually labeled exact actual USDZ renders",
+      "boundsMinimum": [
+        -0.30000001192092896,
+        2.9802322387695312e-08,
+        -0.20000000298023224
+      ],
+      "boundsMaximum": [
+        0.30000001192092896,
+        1.3440001010894775,
+        0.20000000298023224
+      ],
+      "decision": "major_dimension_and_body_fail",
+      "observations": [
+        "Four legs are separated and the backrest is at the rear, but a huge solid base_frame turns the under-seat space into a box.",
+        "Seat top is approximately0.994m rather than approximately0.45m, more than twice the target.",
+        "Cached upstream outputs were not used even though the fresh chair outline/semantic text can equal earlier deterministic outputs; phase metadata records three new calls."
+      ],
+      "evidence": {
+        "seatTopMetres": 0.99400004,
+        "requestedApproxSeatHeightMetres": 0.45,
+        "differenceMetres": 0.54400004,
+        "relativeDifferencePercent": 120.88889777777779,
+        "frameSize": [
+          0.6,
+          0.5,
+          0.4
+        ],
+        "uniqueLegCenters": 4,
+        "backrestZ": -0.125
+      },
+      "phaseMetrics": [
+        {
+          "phase": "stage1_outline",
+          "status": "returned",
+          "seconds": 7.008015990257263,
+          "firstTokenSeconds": 1.442649417,
+          "inputTokens": 246,
+          "generatedTokens": 435,
+          "reason": "stop"
+        },
+        {
+          "phase": "stage2_semantic",
+          "status": "returned",
+          "seconds": 1.1665250062942505,
+          "firstTokenSeconds": 0.343784792,
+          "inputTokens": 339,
+          "generatedTokens": 65,
+          "reason": "stop"
+        },
+        {
+          "phase": "stage3_geometry",
+          "status": "returned",
+          "seconds": 12.39846408367157,
+          "firstTokenSeconds": 1.7789827919999999,
+          "inputTokens": 1880,
+          "generatedTokens": 814,
+          "reason": "stop"
+        }
+      ]
+    }
+  ],
+  "generalizationBoundary": "Fresh assets accepted by Core are all primitive combinations. Whale and aircraft, the explicit freeform/organic subjects, produced no accepted native asset in this batch. No general free-modeling acceptance is established.",
+  "scope": "One attempt per fixed fixture, fresh model outputs in each reached phase, same4B/3072 caps, no output repair, preset or retry. Single-root object prototype only.",
+  "appearanceBoundary": "Renderer/color appearance is reported as observed under the unchanged Apple offscreen preview, not as established phone color behavior."
+}

@@ -1,0 +1,16 @@
+{
+  "recordedAtUTC": "2026-11-05T12:56:37.183777+00:00",
+  "allRecordedSourceHashesUnchangedAfterRun": true,
+  "modelProcesses": 1,
+  "stage1Attempts": 1,
+  "stage2Attempts": 1,
+  "outputRepair": false,
+  "presetFallback": false,
+  "productionChangesByThisAgent": false,
+  "buildLog": "Apple/.build/outline-quality-build-final-private.log",
+  "buildLogSHA256": "263bc67aa5e2d5d71265cb0999df22906eb9ade75a513f16dbe294e18cd17207",
+  "macReleaseBuildPassed": true,
+  "executableSHA256": "4c1f6cfbf670941be24e56a8eb608da44edfba4470be652c00464f5cab695b99",
+  "runnerFiles": "Ignored runner only; no .build directory copied from the prior runner",
+  "inferenceEndedAndModelUnloaded": true
+}

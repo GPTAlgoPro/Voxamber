@@ -1,0 +1,22 @@
+{
+  "bufferUnavailable" : "API threw; no additional diagnostic generation or repair.",
+  "error" : "造型参数超过本次生成长度，请简化描述后重试。",
+  "errorType" : "QwenNative.QwenError",
+  "firstTokenSeconds" : 1.6258052080000001,
+  "nativeCompletion" : {
+    "generatedTokenCount" : 3072,
+    "grammar" : {
+      "compiledSchemaSHA256" : "d9dec3b8b214c2d75eed359e3f88ca10659bd824a4a632692d078509a043c13c",
+      "floatBoundsRequireNativeValidation" : true,
+      "originalSchemaSHA256" : "a93cf0532ebdf2569d815ffbea1e663bf8bc322f22ef67b603466a79e25c175c"
+    },
+    "grammarEnabled" : true,
+    "grammarTerminated" : false,
+    "inputTokenCount" : 1857,
+    "reason" : "outputLimit",
+    "tokenLimit" : 3072
+  },
+  "seconds" : 42.111093044281006,
+  "sharedCaseDeadlineTriggered" : false,
+  "status" : "rejected_or_failed"
+}

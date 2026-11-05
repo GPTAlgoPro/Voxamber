@@ -1,0 +1,23 @@
+{
+  "declaredBeforeInferenceUTC": "2026-11-05T13:21:14.177934+00:00",
+  "conditionOrder": [
+    "structured",
+    "unconstrained"
+  ],
+  "attemptsPerCondition": 1,
+  "sameSystemAndUser": true,
+  "apiForBoth": "QwenEngine.generateJSONDirect",
+  "onlyGenerationDifference": "jsonSchema supplied vs nil",
+  "maxTokens": 768,
+  "prefillStepSize": 128,
+  "temperature": 0,
+  "thinking": false,
+  "input": "Unmodified frozen model-authored child id/face/purpose rows, no original request/ScenePrompt/dimensions table",
+  "coordinateScopeNote": "Frozen seat purpose itself contains Y=0.45m, retained verbatim rather than hand-editing the source. No new coordinates are supplied.",
+  "expectedValuesInGenerationPrompt": false,
+  "postGenerationPolicy": "Raw buffers saved; strict JSON/id/label validation only, no fence removal/repair/coercion. Human purpose comparison is QA only.",
+  "geometryGenerated": false,
+  "newModel": false,
+  "productionChanges": false,
+  "scope": "Two declared diagnostic conditions, not retries or 3D acceptance"
+}

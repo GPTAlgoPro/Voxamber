@@ -1,0 +1,133 @@
+{
+  "schemaDifferences": [
+    {
+      "path": "$.properties.name.const",
+      "change": "added",
+      "value": "BrownWoodChair"
+    },
+    {
+      "path": "$.properties.nodes.prefixItems[1].properties.attach.properties.anchor.const",
+      "change": "added",
+      "value": "center"
+    },
+    {
+      "path": "$.properties.nodes.prefixItems[1].properties.attach.properties.anchor.enum",
+      "change": "removed",
+      "value": [
+        "center",
+        "left",
+        "right",
+        "front",
+        "back",
+        "frontLeft",
+        "frontRight",
+        "backLeft",
+        "backRight"
+      ]
+    },
+    {
+      "path": "$.properties.nodes.prefixItems[2].properties.attach.properties.anchor.const",
+      "change": "added",
+      "value": "back"
+    },
+    {
+      "path": "$.properties.nodes.prefixItems[2].properties.attach.properties.anchor.enum",
+      "change": "removed",
+      "value": [
+        "center",
+        "left",
+        "right",
+        "front",
+        "back",
+        "frontLeft",
+        "frontRight",
+        "backLeft",
+        "backRight"
+      ]
+    },
+    {
+      "path": "$.properties.nodes.prefixItems[3].properties.attach.properties.anchor.const",
+      "change": "added",
+      "value": "frontLeft"
+    },
+    {
+      "path": "$.properties.nodes.prefixItems[3].properties.attach.properties.anchor.enum",
+      "change": "removed",
+      "value": [
+        "center",
+        "left",
+        "right",
+        "front",
+        "back",
+        "frontLeft",
+        "frontRight",
+        "backLeft",
+        "backRight"
+      ]
+    },
+    {
+      "path": "$.properties.nodes.prefixItems[4].properties.attach.properties.anchor.const",
+      "change": "added",
+      "value": "frontRight"
+    },
+    {
+      "path": "$.properties.nodes.prefixItems[4].properties.attach.properties.anchor.enum",
+      "change": "removed",
+      "value": [
+        "center",
+        "left",
+        "right",
+        "front",
+        "back",
+        "frontLeft",
+        "frontRight",
+        "backLeft",
+        "backRight"
+      ]
+    },
+    {
+      "path": "$.properties.nodes.prefixItems[5].properties.attach.properties.anchor.const",
+      "change": "added",
+      "value": "backLeft"
+    },
+    {
+      "path": "$.properties.nodes.prefixItems[5].properties.attach.properties.anchor.enum",
+      "change": "removed",
+      "value": [
+        "center",
+        "left",
+        "right",
+        "front",
+        "back",
+        "frontLeft",
+        "frontRight",
+        "backLeft",
+        "backRight"
+      ]
+    },
+    {
+      "path": "$.properties.nodes.prefixItems[6].properties.attach.properties.anchor.const",
+      "change": "added",
+      "value": "backRight"
+    },
+    {
+      "path": "$.properties.nodes.prefixItems[6].properties.attach.properties.anchor.enum",
+      "change": "removed",
+      "value": [
+        "center",
+        "left",
+        "right",
+        "front",
+        "back",
+        "frontLeft",
+        "frontRight",
+        "backLeft",
+        "backRight"
+      ]
+    }
+  ],
+  "onlyAnchorEnumToModelConstAndModelNameConst": true,
+  "baseSystemExact": true,
+  "baseUserPreservedAsPrefix": true,
+  "rootVariantsAndAllOtherSchemaValuesUnchanged": true
+}

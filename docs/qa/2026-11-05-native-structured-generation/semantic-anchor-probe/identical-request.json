@@ -1,0 +1,15 @@
+{
+  "conditions" : {
+    "structured" : "same direct API with exact-N JSON Schema",
+    "unconstrained" : "identical system/user and direct API, jsonSchema=nil"
+  },
+  "inputScope" : "Only frozen model-authored child id/face/purpose rows. No original chair request, dimensions table or ScenePrompt. The actual seat purpose contains its original Y=0.45m echo and is retained verbatim.",
+  "maxTokens" : 768,
+  "prefillStepSize" : 128,
+  "system" : "Classify semantic placement anchors only. For each input row choose the anchor matching its stated purpose on the given face. If the purpose states no tangential direction, choose center. Directions are world directions; a back face does not mirror left and right.\nExact allowed anchor labels:\ntop/bottom faces: center,left,right,front,back,frontLeft,frontRight,backLeft,backRight.\nfront/back faces: center,left,right,top,bottom,topLeft,topRight,bottomLeft,bottomRight.\nleft/right faces: center,front,back,top,bottom,frontTop,frontBottom,backTop,backBottom.\ninside face: center.\nReturn only this JSON format: {\"anchors\":[{\"id\":\"same input id\",\"anchor\":\"one allowed label\"}]}. Include each input id exactly once, keep input order, and include no extra keys or explanations.",
+  "systemSHA256" : "b4a54840c4effe975f751b90316f2adfff3984fec2e8f5992ab3a1230948f620",
+  "temperature" : 0,
+  "thinking" : false,
+  "user" : "{\"rows\":[{\"face\":\"top\",\"id\":\"seat\",\"purpose\":\"Sitting surface located at Y=0.45m, resting on base_frame\"},{\"face\":\"top\",\"id\":\"backrest\",\"purpose\":\"Back support positioned behind the seat, resting on base_frame\"},{\"face\":\"bottom\",\"id\":\"leg_1\",\"purpose\":\"Front-left leg extending from base_frame to ground\"},{\"face\":\"bottom\",\"id\":\"leg_2\",\"purpose\":\"Front-right leg extending from base_frame to ground\"},{\"face\":\"bottom\",\"id\":\"leg_3\",\"purpose\":\"Back-left leg extending from base_frame to ground\"},{\"face\":\"bottom\",\"id\":\"leg_4\",\"purpose\":\"Back-right leg extending from base_frame to ground\"}]}",
+  "userSHA256" : "2e63421368ced41f60048a49d3c44bde109e06068130fc7babfbfe3d093b7568"
+}

@@ -1,0 +1,23 @@
+{
+  "reviewedBeforeInferenceUTC": "2026-11-05T13:11:28.503245+00:00",
+  "reviewer": "independent product_audit agent",
+  "mode": "read-only source and saved self-check review; no build/model execution or edits",
+  "decision": "GO for one conditionally authorized Stage2 prototype",
+  "blockingFindings": [],
+  "checked": [
+    "World-axis face-specific sign mapping, including no back-face mirroring",
+    "Strict face/anchor combinations and exact attach fields; obsolete numeric offsets rejected",
+    "Actual rotated mesh AABB tangent extents; no duplicate center/normal translation",
+    "IDs used only as dictionary keys, no purpose or ID-role parsing",
+    "Pinned previous model outline/schema, exact previous user request",
+    "Full $defs and all geometry/material/rotation fields preserved",
+    "New raw protocol response to typed legacy plan to unchanged Core; no old-response repair",
+    "13 positive self-checks passed, source SHA matched, new results.json absent"
+  ],
+  "declaredLimits": [
+    "Center-pass global-position gate for deeper graphs",
+    "Zero-spread anchor collapse is a quality failure, no scaling/nudging",
+    "AABB placement does not guarantee actual surface contact",
+    "Seat height, extra frame and visual fidelity remain independent acceptance conditions"
+  ]
+}

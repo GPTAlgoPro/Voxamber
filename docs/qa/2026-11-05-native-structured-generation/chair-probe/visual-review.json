@@ -1,0 +1,34 @@
+{
+  "reviewedAt": "2026-11-05T12:36:59.703606+00:00",
+  "method": "Actual exported USDZ imported through Apple SceneKit and two rendered PNGs visually inspected; no geometry/image correction.",
+  "result": "visual_quality_failed",
+  "filesInspected": [
+    "chair/three-quarter.png",
+    "chair/front.png"
+  ],
+  "schemaAndExportPassed": true,
+  "generationSeconds": 16.56563401222229,
+  "generatedTokens": 1015,
+  "findings": [
+    "The result does not have a recognizable usable chair silhouette.",
+    "The seat is a vertical thin plate: dimensions width=0.45,height=0.45,depth=0.02 instead of a thin horizontal seat.",
+    "Four named legs share the same position and size; they are not four separated supports.",
+    "The model emitted extra backrest_attach/leg*_attach/attach2 geometry nodes instead of consistently using placement relationships.",
+    "Actual height is 2.316m; the requested seat height is about0.45m."
+  ],
+  "nextControlledProbe": "Change only grammar property order to required-first so node id/primitive precede dimensions and dimensions follow width,height,depth. Same model, prompt, limits and authoritative schema. This is a hypothesis, not an accepted quality fix.",
+  "colorEditPreservation": {
+    "allColorsExactlyRequested": true,
+    "allRequestedPreservationChecksPass": true,
+    "geometryBuffersExactlyEqual": true,
+    "maxPositionDeltaMetres": 0,
+    "maxSizeDeltaMetres": 0,
+    "nameExactlyEqual": true,
+    "nodeIDsExactlyEqual": true,
+    "otherPropertiesExactlyEqual": true,
+    "positionsExactlyEqual": true,
+    "rotationsExactlyEqual": true,
+    "sizesExactlyEqual": true
+  },
+  "scope": "Improved syntax/completeness does not count as general modeling acceptance."
+}

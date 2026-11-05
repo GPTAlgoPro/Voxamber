@@ -1,0 +1,14 @@
+{
+  "allGeometryDefinitionsUnchanged" : true,
+  "helperSourceSHA256" : "e641b7499e8a91c02aa61e4b41e57c8219f4d123e8e94bea9248b454e02a5575",
+  "modelAuthoredAnchors" : 6,
+  "modelLoaded" : false,
+  "orchestrationSourceSHA256" : "e93e982bb046cbb4e9fc810f00ee578d37ee85c4f5241ef69e762a43bafb10df",
+  "parts" : 7,
+  "passed" : true,
+  "previousAnchorSourceSHA256" : "fdd39db2ee3f536fb8263b456d3325d644c40f9c684ec657f4f7313228b233af",
+  "rootTwoVariantsUnchanged" : true,
+  "schemaSHA256" : "ea6fb9810a5833a7fcc6ccd2ce45bebd87acfcca62096d0d76cccc14bbc1b66e",
+  "semanticFaceCompatibility" : true,
+  "semanticIDSetExact" : true
+}

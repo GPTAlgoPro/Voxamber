@@ -1,0 +1,1 @@
+{"anchors":[{"id":"tail_base","anchor":"center"},{"id":"left_fin","anchor":"center"},{"id":"right_fin","anchor":"center"},{"id":"tail_flukes","anchor":"center"},{"id":"eye_left","anchor":"center"},{"id":"eye_right","anchor":"center"}]}

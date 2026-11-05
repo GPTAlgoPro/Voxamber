@@ -1,0 +1,27 @@
+{
+  "declaredBeforeInferenceUTC": "2026-11-05T13:34:11.777548+00:00",
+  "architecture": "New declared three-stage factorization using two frozen historical model outputs and one new geometry call",
+  "freshStage1Calls": 0,
+  "freshSemanticCalls": 0,
+  "plannedFreshGeometryCalls": 1,
+  "frozenOutlineSHA256": "08ca123dd53be7ca8a3f75e69fa14cfcfdad7eeb104d4e9ac74d02cead3d84ad",
+  "frozenSemanticModelResponseSHA256": "2aad6a466da5eb7041b0688ffc8296df17decad771dec1f8dec523e1a6eabd32",
+  "humanAssignedAnchors": false,
+  "oldOutputsModified": false,
+  "sameAnchorProbeBaseSystemAndUser": true,
+  "addedUserContext": "Actual model semantic anchor table plus instruction to respect fixed placements",
+  "schemaDelta": "Anchor enum becomes const actual model choice by ID; target name is const frozen model name. Existing exact seven parts/types/parent/face, root two variants, full geometry definitions/material/rotation fields remain.",
+  "maxTokens": 3072,
+  "api": "QwenEngine.generateJSON formal single-turn Direct",
+  "genericAnchorEvaluatorUnchanged": true,
+  "freshCompleteThreeStageAcceptance": false,
+  "fullFlowTimingClaimed": false,
+  "qualityCriteriaRemain": [
+    "actual four distinct connected legs",
+    "backrest at rear",
+    "seat height approximately0.45m",
+    "extra base_frame/body proportions",
+    "material/appearance"
+  ],
+  "scope": "One new declared geometry composition prototype, not retry or repair of old responses; no production/App/prompt/model changes"
+}

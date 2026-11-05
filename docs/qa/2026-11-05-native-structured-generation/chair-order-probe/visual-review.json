@@ -1,0 +1,19 @@
+{
+  "reviewedAt": "2026-11-05T12:46:44.026042+00:00",
+  "filesInspected": [
+    "chair/three-quarter.png",
+    "chair/front.png"
+  ],
+  "result": "visual_quality_failed",
+  "controlledChange": "Only required-first compiler property ordering (metadata field name clarified). Original model, original ScenePrompt, full authoritative schema and 3072 limit unchanged.",
+  "syntaxAndExportAccepted": true,
+  "generationSeconds": 31.052232027053833,
+  "nodes": 32,
+  "partialImprovement": "Seat and backrest dimensions now follow the intended axes; this does not make the whole object correct.",
+  "remainingFindings": [
+    "Four legs were connected serially, leg2 to leg1.bottom, leg3 to leg2.bottom, leg4 to leg3.bottom; they are not four sibling supports.",
+    "Model filled all32node slots with redundant leg_top/mid/bottom, seat edges and backrest corner caps.",
+    "Rendered object is a tall vertical chain with a small chair-like center, not an accepted chair."
+  ],
+  "nextProbe": "Independent two-stage prototype: model first plans essential semantic parts/graph, then emits geometry for that exact model-chosen outline. No hand-authored chair template, field repair or preset substitution."
+}

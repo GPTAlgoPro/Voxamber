@@ -1,0 +1,110 @@
+{
+  "reviewedAtUTC": "2026-11-05T13:15:46.211908+00:00",
+  "decision": "quality_fail_new_anchor_protocol_not_validated",
+  "reviewMethod": "Viewed both actual exported-USDZ Apple SceneKit PNGs using functions.view_image; inspected frozen outline, new raw protocol output, evaluated legacy plan and canonical scene; no generated content was edited.",
+  "reviewedImages": [
+    "front.png",
+    "three-quarter.png"
+  ],
+  "observedSelection": {
+    "attachmentCount": 6,
+    "anchorValues": [
+      "center",
+      "center",
+      "center",
+      "center",
+      "center",
+      "center"
+    ],
+    "allCenter": true,
+    "oldNumericOffsetsUsedByModel": false
+  },
+  "failures": [
+    {
+      "finding": "All four named legs overlap at exactly one physical center.",
+      "legCenters": {
+        "leg_1": [
+          0,
+          0.22500001,
+          0
+        ],
+        "leg_2": [
+          0,
+          0.22500001,
+          0
+        ],
+        "leg_3": [
+          0,
+          0.22500001,
+          0
+        ],
+        "leg_4": [
+          0,
+          0.22500001,
+          0
+        ]
+      },
+      "uniqueLegCenters": 1,
+      "availableTangentSpreadForLeg": {
+        "x": 0.22000000067055225,
+        "z": 0.1700000036507845
+      },
+      "boundary": "The model explicitly chose center for each leg. Available X/Z spreads are positive, so this observation is not zero-spread collapse. The evaluator faithfully emitted zero tangent offsets and did not infer replacements from names or purposes."
+    },
+    {
+      "finding": "Backrest remains through the middle of the seating depth instead of at the rear.",
+      "seatCenter": [
+        0,
+        0.514,
+        0
+      ],
+      "backrestCenter": [
+        0,
+        0.794,
+        0
+      ],
+      "backrestSize": [
+        0.4,
+        0.6,
+        0.15
+      ],
+      "selectedAnchor": "center"
+    },
+    {
+      "finding": "Seating height remains above the approximately 0.45m target.",
+      "seatCenterYMetres": 0.514,
+      "seatTopYMetres": 0.534,
+      "requestedApproxMetres": 0.45,
+      "seatTopDifferenceMetres": 0.08400000000000002
+    },
+    {
+      "finding": "The reused model outline still includes a separate broad solid base_frame.",
+      "baseFrameSize": [
+        0.5,
+        0.05,
+        0.4
+      ],
+      "baseFrameCenter": [
+        0,
+        0.472,
+        0
+      ],
+      "interpretation": "Visible additional slab under the seat; not a human-authored preset or patched node. Root height and intended frame form remain independent semantic issues."
+    }
+  ],
+  "comparison": {
+    "previousTwoStageDistinctLegCenters": 2,
+    "newAnchorDistinctLegCenters": 1,
+    "interpretation": "This one new protocol attempt did not improve the actual chair. It reduced the visible leg positions further. The test does not prove a universal model inability or identify an internal logit cause."
+  },
+  "format": "GLB zero validator errors/warnings; exact USDZ Apple import and PNG rendering succeeded. None of those counters override this visual failure.",
+  "protocolBoundary": [
+    "New protocol declared and independently reviewed before inference",
+    "Frozen Stage1 bytes reused unchanged; no Stage1 rerun",
+    "Only one new Stage2 call; no retry, enum reordering, resampling or output repair",
+    "Helper selfchecks exercised non-center anchors, actual rotated/freeform AABBs, all eight primitives and translation invariance",
+    "Actual response contains only center choices; this record does not claim quality from the helper tests",
+    "World-axis AABB positioning does not prove surface contact or general nested scene support"
+  ],
+  "appearanceNote": "Fixed-lighting previews again show pale surfaces despite declared brown #5D4037. This does not establish a phone rendering defect."
+}

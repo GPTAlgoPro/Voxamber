@@ -1,0 +1,21 @@
+{
+  "firstTokenSeconds" : 1.438880167,
+  "nativeCompletion" : {
+    "generatedTokenCount" : 843,
+    "grammar" : {
+      "compiledSchemaSHA256" : "29faa2a87033a96493bf93db63c3eb7ff7d5891e7a755589ef28e290884592ec",
+      "floatBoundsRequireNativeValidation" : true,
+      "originalSchemaSHA256" : "679d6788f5dd28c25634074e31d0d0ffd8dddbd6c0665e56b336e04b0c7da9b9"
+    },
+    "grammarEnabled" : true,
+    "grammarTerminated" : true,
+    "inputTokenCount" : 1556,
+    "reason" : "stop",
+    "tokenLimit" : 3072
+  },
+  "responseBytes" : 2139,
+  "responseSHA256" : "e08c268a32f757728862c08ced4973b163b0bcc1d2b8c3f93507e04a9fb790ea",
+  "seconds" : 12.267882943153381,
+  "status" : "formal_json_accepted",
+  "timeout180Seconds" : false
+}

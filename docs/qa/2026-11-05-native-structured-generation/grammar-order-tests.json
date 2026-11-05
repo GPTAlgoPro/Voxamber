@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "recordType": "native_grammar_required_first_order_verification",
+  "recordedAtUTC": "2026-11-05T12:39:49.838185+00:00",
+  "frozen": true,
+  "scope": "A controlled compiler-key-order correction and truthful metadata rename. Synthetic native grammar tests and iOS package compilation only; no model generation, rendering or phone operation.",
+  "baselineReceipt": {
+    "path": "docs/qa/2026-11-05-native-structured-generation/grammar-tests.json",
+    "sha256": "ebe178198c4385cc7c7414f273defc55643c5834052536cc364e56304da302c6",
+    "preservedUnchanged": true
+  },
+  "sourceSHA256": {
+    "Apple/Packages/QwenNative/Package.swift": "ff2e120cdf828d7031db77207770caf3ac2933d4e62297d0b67cf0c94315caef",
+    "Apple/Packages/QwenNative/Package.resolved": "f786e22cb3052d8b2089ba0302de4c894708a5b44ebe30ec6a6592c1b1a5f6af",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift": "9323d1ab24c58e1e8a40d22a6f65f3686fe00e7fcea7361405f3beef76bbe595",
+    "Apple/Packages/QwenNative/Sources/QwenNative/NativeJSONGrammar.swift": "7dbc4cf98e9c6d414cc3d9e6230c20955997efb682b11c8476173bd74eeeb016",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenGenerationCompletion.swift": "c27c479d13c2de07ba1e5920947bd0f9cff7c7354ec6ae73aa5ea552fc722fba",
+    "Apple/Packages/QwenNative/Tests/QwenNativeTests/NativeJSONGrammarTests.swift": "5f6bbf1b89f03e60683f3adc523c2d45bd30da64b2b65dd5a7f72ad95ed9ac66",
+    "Apple/Packages/QwenNative/Tests/QwenNativeTests/SceneGrammarContractTests.swift": "35a3463a70a1f43779e7602f14975d2af0bccf71183941e3897dd6d38a31ff3f",
+    "Apple/Packages/CreationCore/Sources/CreationCore/SceneGenerationSchema.swift": "c7207a9c83a345370c80a51e0d608be3c1ebdfc58ee195de339bab744cc26d52"
+  },
+  "sourceDeltaFromInitialReceipt": {
+    "Apple/Packages/QwenNative/Sources/QwenNative/NativeJSONGrammar.swift": {
+      "before": "b09ec6aff3a50ec9d7dd2c06f85117247cc7f87da4e7a74f874c759da869baf5",
+      "after": "7dbc4cf98e9c6d414cc3d9e6230c20955997efb682b11c8476173bd74eeeb016"
+    },
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenGenerationCompletion.swift": {
+      "before": "d36a72f89c970930d674a7706a066cba7021c4c348e9729507c36707c25f68be",
+      "after": "c27c479d13c2de07ba1e5920947bd0f9cff7c7354ec6ae73aa5ea552fc722fba"
+    },
+    "Apple/Packages/QwenNative/Tests/QwenNativeTests/NativeJSONGrammarTests.swift": {
+      "before": "165983ab0ddf0befc00ba89977de4d0198a105441d7ac80bfb7de79c02ac5971",
+      "after": "5f6bbf1b89f03e60683f3adc523c2d45bd30da64b2b65dd5a7f72ad95ed9ac66"
+    },
+    "Apple/Packages/QwenNative/Tests/QwenNativeTests/SceneGrammarContractTests.swift": {
+      "before": "2a1eff51077d654850a0df64955042c7fb17163801a4ebb8e6eeb4f23ac1b84b",
+      "after": "35a3463a70a1f43779e7602f14975d2af0bccf71183941e3897dd6d38a31ff3f"
+    }
+  },
+  "unchangedSourcesVerifiedAgainstInitialReceipt": [
+    "Apple/Packages/QwenNative/Package.swift",
+    "Apple/Packages/QwenNative/Package.resolved",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift",
+    "Apple/Packages/CreationCore/Sources/CreationCore/SceneGenerationSchema.swift"
+  ],
+  "dependencies": {
+    "mlx-swift": {
+      "revision": "19601207e9a0de51e03ee6ec0c3c5f3784275075",
+      "version": "0.32.3"
+    },
+    "mlx-swift-lm": {
+      "revision": "3b339ad6e3b3f44c8121ecff5131c7fd55e075e6",
+      "version": "3.32.3"
+    },
+    "swift-transformers": {
+      "revision": "b38443e44d93eca770f2eb68e2a4d0fa100f9aa2",
+      "version": "1.3.0"
+    }
+  },
+  "implementationDelta": {
+    "compilerPropertyOrder": "Within each schema object, serialize properties in required[] listed order first, followed by sorted optional keys. Preserve required[] arrays and all schema values/types.",
+    "traversal": "Recurse only through schema-bearing keyword positions. const/enum/default/examples and annotation objects remain literal JSON even when they contain type/properties/required keys.",
+    "nodePrefix": [
+      "id",
+      "primitive",
+      "dimensions",
+      "color"
+    ],
+    "dimensionsOrder": [
+      "width",
+      "height",
+      "depth"
+    ],
+    "attachmentOrder": [
+      "parent",
+      "face"
+    ],
+    "variantRequiredFields": "Primitive geometry and selected origin/attach fields also occur in their authoritative required[] positions before optional fields.",
+    "numericCompatibility": "Unchanged: only type:number minimum/maximum/exclusiveMinimum/exclusiveMaximum are deferred at compile boundary; Core must strictly validate decoded numeric bounds.",
+    "metadataRename": {
+      "old": "floatBoundsCheckedAfterDecoding",
+      "new": "floatBoundsRequireNativeValidation",
+      "reason": "Completion precedes Core validation and Direct callers may never validate; the field states a requirement, not an already-performed check."
+    },
+    "identity": "originalSchemaSHA256 hashes the original supplied schema. compiledSchemaSHA256 hashes the actual required-first serialized compiler input, including the unchanged numeric compatibility conversion."
+  },
+  "hostTests": {
+    "command": "swift test --package-path Apple/Packages/QwenNative -c release --disable-automatic-resolution",
+    "configuration": "release",
+    "host": "Apple Silicon Mac",
+    "count": 16,
+    "failures": 0,
+    "unexpectedFailures": 0,
+    "testSeconds": 1.053,
+    "suiteWallSeconds": 1.056,
+    "tests": [
+      {
+        "suite": "NativeJSONGrammarTests",
+        "name": "testActualTokenIteratorComponentsHandleOneTokenLookahead",
+        "status": "passed",
+        "seconds": 0.03
+      },
+      {
+        "suite": "NativeJSONGrammarTests",
+        "name": "testCacheReusesTemplateButResetReleasesNativeOwners",
+        "status": "passed",
+        "seconds": 0.001
+      },
+      {
+        "suite": "NativeJSONGrammarTests",
+        "name": "testCompilerOrderUsesRequiredThenSortedOptionalWithoutInterpretingLiterals",
+        "status": "passed",
+        "seconds": 0.002
+      },
+      {
+        "suite": "NativeJSONGrammarTests",
+        "name": "testCopyAndNewRequestHaveIndependentMatcherAndFailureState",
+        "status": "passed",
+        "seconds": 0.008
+      },
+      {
+        "suite": "NativeJSONGrammarTests",
+        "name": "testEOSLookaheadIsIdempotentAndOnlyEOSRemainsAllowed",
+        "status": "passed",
+        "seconds": 0.005
+      },
+      {
+        "suite": "NativeJSONGrammarTests",
+        "name": "testFloatCompatibilityChangesOnlySchemaNumberBounds",
+        "status": "passed",
+        "seconds": 0.001
+      },
+      {
+        "suite": "NativeJSONGrammarTests",
+        "name": "testInvalidSchemaFailsClosedAndDropsPreviousTemplate",
+        "status": "passed",
+        "seconds": 0.002
+      },
+      {
+        "suite": "NativeJSONGrammarTests",
+        "name": "testPackedMaskSignedBoundaryPaddingAndMalformedMasks",
+        "status": "passed",
+        "seconds": 0.0
+      },
+      {
+        "suite": "NativeJSONGrammarTests",
+        "name": "testPublicRawProducerCancellationSettlesWithGrammar",
+        "status": "passed",
+        "seconds": 0.004
+      },
+      {
+        "suite": "NativeJSONGrammarTests",
+        "name": "testPublicRawProducerReportsStopVersusLengthWithGrammar",
+        "status": "passed",
+        "seconds": 0.004
+      },
+      {
+        "suite": "NativeJSONGrammarTests",
+        "name": "testRealGrammarMasksInvalidAndPaddedTokens",
+        "status": "passed",
+        "seconds": 0.002
+      },
+      {
+        "suite": "NativeJSONGrammarTests",
+        "name": "testRejectedCommitFailsClosedAndPreservesFailure",
+        "status": "passed",
+        "seconds": 0.001
+      },
+      {
+        "suite": "NativeJSONGrammarTests",
+        "name": "testRepeatedNativeCacheCyclesReleaseAllTemplates",
+        "status": "passed",
+        "seconds": 0.057
+      },
+      {
+        "suite": "SceneGrammarContractTests",
+        "name": "testFullSchemaCompilesAndAcceptsCanonicalSnapshotsAndFreeGeometryLimits",
+        "status": "passed",
+        "seconds": 0.495
+      },
+      {
+        "suite": "SceneGrammarContractTests",
+        "name": "testNativeGrammarAcceptsIDPrimitiveAndWidthHeightDepthFirstButRejectsOtherOrders",
+        "status": "passed",
+        "seconds": 0.133
+      },
+      {
+        "suite": "SceneGrammarContractTests",
+        "name": "testSyntaxCountsAndIntegerBoundsStayConstrainedWhileCoreChecksFloatBounds",
+        "status": "passed",
+        "seconds": 0.309
+      }
+    ],
+    "ignoredLog": "Apple/.build/qwen-grammar-required-first-tests.log",
+    "ignoredLogSHA256": "4a80930db9d09edbfd5a4a163d72429b8bf0d1b2d42dfc9e2d1c8464067fa122"
+  },
+  "iOSPackageCompile": {
+    "command": "swift build --package-path Apple/Packages/QwenNative -c release --disable-automatic-resolution --triple arm64-apple-ios26.0 --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.sdk --target QwenNative",
+    "result": "passed",
+    "target": "QwenNative",
+    "triple": "arm64-apple-ios26.0",
+    "configuration": "release",
+    "buildSeconds": 2.64,
+    "buildDirectory": "Apple/Packages/QwenNative/.build",
+    "sharedAppDerivedDataUsed": false,
+    "ignoredLog": "Apple/.build/qwen-grammar-required-first-ios-release-build.log",
+    "ignoredLogSHA256": "b0f78011a1972deac01c60069123c9cf524dd7acb794c41407874101a1df535f"
+  },
+  "testedEvidence": [
+    "Actual native matcher accepts id then primitive then dimensions containing width,height,depth then color.",
+    "Actual native matcher rejects depth,height,width order and canonical sorted-key JSON when their keys do not match compiler order; arbitrary JSON key order is explicitly not claimed.",
+    "Test fixtures alone are explicitly reordered before matcher input. ScenePlan decoded values equal untouched original snapshots, including full node/freeform budgets, Float boundaries, long decimals, scientific notation, attachments and Unicode names.",
+    "Nested schema serialization changes order without changing parsed schema values/types. Literal objects containing properties/required/type:number are neither interpreted nor float-normalized.",
+    "Integer bounds, cardinalities, malformed quote and unknown-property rejection tests still pass; native Core continues rejecting deferred invalid float ranges.",
+    "Existing failure closure, clone/replay isolation, EOS lookahead, padding, public producer cancellation/length and 30-cycle weak-owner lifetime tests still pass."
+  ],
+  "preservedRuntime": {
+    "engineUnchanged": true,
+    "tokenLimit": 3072,
+    "defaultPrefillStepSize": 128,
+    "directTokenIteratorProducer": true,
+    "cancelAwaitSynchronize": true,
+    "compileGraphsDisabled": true,
+    "newModelWeights": false,
+    "promptChanged": false,
+    "authoritativeCoreSchemaChanged": false,
+    "appSourceChangedByThisAgent": false
+  },
+  "completionBoundary": {
+    "totalCallback": false,
+    "observedByCodeReview": "onCompletion covers completed producer handling and explicit grammar failures. Tokenizer/input preparation errors or cancellation before producer creation (including chunked prefill) may throw without invoking onCompletion.",
+    "cleanup": "The stream synchronization defer remains active on pre-producer exits.",
+    "counts": "Do not infer zero counts or absence of cancellation from a missing callback. No unknown counts are fabricated.",
+    "testCoverage": "The cancellation test exercises an existing public producer, not pre-producer cancellation."
+  },
+  "notEstablished": [
+    "That field order was the sole cause of the previous poor chair geometry",
+    "That this key-order change improves model output or visual quality",
+    "Full-model grammar generation performance or memory",
+    "App build/test or real-device behavior by this agent",
+    "A complete plan fitting the unchanged token budget"
+  ],
+  "interpretation": "This is a discriminating field-order probe. Earlier guided id-first experiments also had poor geometry; syntax/order tests are not quality acceptance. Parent-owned before/after model runs and original bad output remain separate evidence.",
+  "sanitization": "Source hashes, fixed synthetic test names/counts/timings and documented limitations only. No prompts, model responses, user content, credentials or device identifiers. Ignored logs remain outside Git."
+}
