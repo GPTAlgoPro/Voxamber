@@ -1,0 +1,84 @@
+{
+  "observedAt": "2026-11-05T14:50:19.660440+00:00",
+  "appID": "6831042755",
+  "bundleID": "com.kaisun.voxamber",
+  "version": "0.1.0",
+  "build": "4",
+  "buildID": "dc9052bb-57ff-4c76-b6b5-8cf9596dfe5c",
+  "processingState": "VALID",
+  "internalBeta": {
+    "autoNotifyEnabled": true,
+    "internalBuildState": "IN_BETA_TESTING",
+    "externalBuildState": "READY_FOR_BETA_SUBMISSION"
+  },
+  "checks": {
+    "exactAppBuildVersion": true,
+    "processingVALID": true,
+    "selfInternalGroupOnly": true,
+    "groupIncludesBuild4": true,
+    "localizedNotesMatch": true,
+    "internalIN_BETA_TESTING": true,
+    "noExternalReview": true,
+    "production1StillPrepare": true
+  },
+  "result": "PASS",
+  "selfMembershipVerifiedOnlyInMemory": true,
+  "testerCount": 1,
+  "testerStates": [
+    "INVITED"
+  ],
+  "groupBuildIDs": [
+    "dc9052bb-57ff-4c76-b6b5-8cf9596dfe5c",
+    "3cf16290-baeb-470a-980e-25f197923346",
+    "165057ba-889c-4ad8-839f-0980744742d1"
+  ],
+  "notes": {
+    "zh-Hans": "维珀 0.1.0（4）内部测试\n\n本机AI生成期间保持屏幕亮起，任务结束、取消或清理完成后恢复原设置，避免自动锁屏中断生成。\n本地记录生成计数和结束原因，帮助区分长度上限、取消与格式失败；不记录描述或生成正文到这份诊断中。\n\n请重点测试：超过30秒的正常生成、取消后再次生成、切出后返回、保存并重新打开作品。此前超过100秒的停止场景仍待新版实机复测。\n\n使用同一份Qwen3.5 4B INT4素材，本机AI需要12GB或以上内存。首次从Apple下载并校验约3.1GB素材后可离线使用。复杂造型的结构、细节与成功率仍处于早期阶段，可能生成失败或需要手动编辑。",
+    "en-US": "Voxamber 0.1.0 (4), internal test\n\nKeeps the display awake during on-device AI work and restores the previous setting after completion, cancellation or cleanup, preventing auto-lock from interrupting generation.\nRecords local token counts and termination categories to distinguish output limits, cancellation and format failures. This diagnostic contains no descriptions or generated text.\n\nPlease test normal generation lasting over 30 seconds, cancellation/retry, returning from background, and saving/reopening work. The reported stop exceeding 100 seconds still requires a phone retest.\n\nUses the same Qwen3.5 4B INT4 assets. On-device AI requires at least 12 GB RAM. Download and verify about 3.1 GB from Apple once, then work offline. Complex shape structure, detail and success rate are still early; generation can fail or require manual editing."
+  },
+  "actions": [
+    {
+      "operation": "setExactBuildNotes",
+      "locale": "zh-Hans"
+    },
+    {
+      "operation": "setExactBuildNotes",
+      "locale": "en-US"
+    },
+    {
+      "operation": "bindExactBuildToExistingSelfInternalGroup"
+    }
+  ],
+  "noManualInvitationOrOtherTesterAdded": true,
+  "actualBuild4InstallVerified": false,
+  "actualNewDeviceStopLatencyVerified": false,
+  "appleHostedColdDownloadVerified": false,
+  "notPerformed": [
+    "AppStoreReviewSubmission",
+    "externalBetaReview",
+    "publicLinkCreation",
+    "otherTesters",
+    "phoneOperation"
+  ],
+  "independentReadback": {
+    "observedAt": "2026-11-05T14:51:59.427920+00:00",
+    "result": "PASS",
+    "checks": {
+      "exactBuild4Valid": true,
+      "rightApp": true,
+      "rightMarketingVersion": true,
+      "onlyExistingSelfGroup": true,
+      "reverseGroupContainsExactlyBuilds2and3and4": true,
+      "internalBetaReady": true,
+      "encryptionAlreadyExempt": true
+    },
+    "methods": [
+      "GET build/app/prerelease/group/direct-tester relationships",
+      "GET buildBetaDetail",
+      "GET reverse group build relationships"
+    ],
+    "noMutationPerformed": true
+  },
+  "sourceCodeCommit": "9e22b3f",
+  "ipaSHA256": "ec2eb26d6eedd5501e3888f3155d0116e92be7af06d582f8a6c4cb08eb71e77c"
+}
