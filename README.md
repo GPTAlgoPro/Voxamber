@@ -10,7 +10,7 @@
 
 新目标工程：[Apple/ThreeLiveStudio.xcodeproj](Apple/ThreeLiveStudio.xcodeproj)，选择 **Voxamber-SceneStudio**；独立手机验收选择 **Voxamber-SceneQA**。`ThreeLiveStudio` 和此前图像／混元实验保留为历史源码，不是本次发布目标。用户已明确允许官方 SDK 内置的受限场景引擎；App 不使用 Python、Node 或 WebView 来替代它。
 
-开发版本为 **0.2.0 (8)**，正在完成手机、签名和 TestFlight 验收；最近已核验可供本人内部测试的旧版仍为 **0.1.0 (6)**。编译通过、模拟器、实机、Apple 处理和可下载测试分别记录，未通过的阶段不算完成。
+**0.2.0 (8) 已进入本人内部 TestFlight 测试**。Apple 独立回读为 `VALID / IN_BETA_TESTING`，已关联既有本人测试组（1 人），中英文测试说明已核验。手机上的官方原生流程已生成、保存并预览机器人和原宫殿 PoC；后者 GLB 与原 Mac 成品逐字节一致。TestFlight 就绪不等于已确认用户安装或完成全部人工交互验收。
 
 [通用 AI 创作说明](docs/source-authoring-instructions.md) · [官方编译器回归证据](docs/qa/2026-11-06-three-live-native-return) · [本次发布证据](docs/qa/2026-11-06-scene-studio-release)
 

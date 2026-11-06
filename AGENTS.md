@@ -14,3 +14,5 @@
 - Keep package tests, Simulator checks, real-device inference, offline acceptance, archive/upload, Apple processing, and TestFlight availability as separately evidenced states. Do not report one as proof of another.
 - Never use `devicectl device copy to --remove-existing-content true` for a real app data container. In this environment it cleared the app data domain even with a nested destination. Omit that option for all transfers; do not use it for cleanup.
 - Before removing device test files, take and verify a fresh backup of current user projects and draft. Restore only the latest known current project IDs; never merge older snapshots or resurrect the user's deleted projects. Verify restored files by copying them back and comparing every hash.
+
+- Preserve `/Users/kaisun/Library/Application Support/Voxamber/Signing`: it contains persistent signing credentials, profiles and the dedicated signing keychain. Never treat it as an experiment cache or copy its secrets into Git.

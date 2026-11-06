@@ -1,0 +1,27 @@
+{
+  "appID": "6831042755",
+  "marketingVersion": "0.2.0",
+  "buildNumber": "8",
+  "remoteMutations": 0,
+  "boundBuildID": "a93ee229-0510-432b-a995-07f1b66ee2a1",
+  "observations": [
+    {
+      "alreadyInGroup": false,
+      "appID": "6831042755",
+      "buildID": "a93ee229-0510-432b-a995-07f1b66ee2a1",
+      "buildNumber": "8",
+      "groupID": "7d4c4aba-14b9-423e-b1ae-d50ce983d527",
+      "internalBuildState": "READY_FOR_BETA_TESTING",
+      "internalTesterCount": 1,
+      "marketingVersion": "0.2.0",
+      "mutationCount": 0,
+      "processingState": "VALID",
+      "status": "READY",
+      "observedAtUTC": "2026-11-06T06:40:17.709312+00:00",
+      "attempt": 1
+    }
+  ],
+  "finalStatus": "READY",
+  "pollerExitCode": 0,
+  "attempts": 1
+}
