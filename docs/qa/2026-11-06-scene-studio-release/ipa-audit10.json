@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "appID": "6831042755",
+  "bundleID": "com.kaisun.voxamber",
+  "marketingVersion": "0.2.0",
+  "buildNumber": "10",
+  "ipaPath": "/Users/kaisun/Three-Live/Apple/.build/ThreeLiveReturn/Export-0.2.0-10/VoxamberSceneStudio.ipa",
+  "ipaByteCount": 8993605,
+  "ipaSHA256": "62e73c61dd92b869cfef5d01a795316acee491289ec15494a35b3c2566d1f2da",
+  "checkedAtUTC": "2026-11-06T08:11:22.369572+00:00",
+  "bundles": [
+    {
+      "bundleID": "com.kaisun.voxamber",
+      "version": "0.2.0",
+      "build": "10",
+      "signatureStrictValid": true,
+      "appGroupAndProfileIdentityVerified": true,
+      "getTaskAllowFalse": true,
+      "distributionProfileWithoutDeviceList": true,
+      "executableSHA256": "3abea7fe9faa728612f66f85d08fce1a67608a73e549c3e949cd5f4f8f7bce52"
+    },
+    {
+      "bundleID": "com.kaisun.voxamber.scene-import",
+      "version": "0.2.0",
+      "build": "10",
+      "signatureStrictValid": true,
+      "appGroupAndProfileIdentityVerified": true,
+      "getTaskAllowFalse": true,
+      "distributionProfileWithoutDeviceList": true,
+      "executableSHA256": "75facfcc9ccd3f8531a6bc16b2ac526e70a2cdba0ec90ed8b57c7777eb1ec539"
+    }
+  ],
+  "appBinaryUUID": "55B8FDE4-44C8-3FE3-8F73-159DEBCA326D",
+  "scope": "Actual exported IPA signature/entitlement/payload/core-compiler audit only, not Apple processing or TestFlight readiness",
+  "checks": {
+    "signaturesProfilesGroups": true,
+    "officialNativeCompilerInUUIDMatchedDSYM": true,
+    "noLocalModelDiffusionOrQAEngine": true,
+    "noTestBundlesWeightsPythonOrPrivateKeys": true,
+    "SDKCameraSpeechMicrophoneUsageStrings": true,
+    "shareExtensionPoint": true
+  },
+  "productionFix": "Registered content UTI read before URL metadata; foreground inbox directory events refresh pending imports without relaunch"
+}

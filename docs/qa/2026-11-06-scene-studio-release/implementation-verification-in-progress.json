@@ -1,6 +1,6 @@
 {
-  "checkedAtUTC": "2026-11-06T05:47:59.407543+00:00",
-  "releaseCandidate": "0.2.0 (8)",
+  "checkedAtUTC": "2026-11-06T08:22:40.537288+00:00",
+  "releaseCandidate": "0.2.0 (10)",
   "flow": "User-owned LLM scene import; official local native compiler; preview/save/export. No mandatory local model.",
   "evidence": {
     "CreationCoreTests": {
@@ -22,7 +22,8 @@
       "passed": 17
     },
     "programStoreSimulatorTests": {
-      "passed": 10
+      "passed": 10,
+      "currentBuild10FullSuite": true
     },
     "realUITestExampleSaveColdRelaunch": {
       "passed": true,
@@ -33,12 +34,20 @@
       "passed": true,
       "retestReason": "Expected normalized title after whitespace trim; actual compile/store succeeded before assertion fix",
       "runtime": "iOS26 iPhone17Pro Simulator"
+    },
+    "realUITestSystemShareCompileSave": {
+      "passed": true,
+      "exactProviderBytesChecked": true,
+      "foregroundRefreshWithoutRelaunch": true,
+      "savedArtifactsIndependentlyHashed": true
+    },
+    "currentFinalUISuite": {
+      "passed": 3,
+      "failures": 0
     }
   },
   "notYetProven": [
-    "Physical iPhone native-import controller flow and actual thumbnail/preview",
-    "Real ShareSheet-to-AppGroup-to-main-App delivery",
-    "Current candidate archive, processing and TestFlight distribution"
+    "Physical Duo hinge-pose transitions and every third-party AI app provider; not claimed as tested"
   ],
   "runtimeCaveats": [
     "iOS26 simulator system Chinese font fallback observed; iOS27.1 Duo display has proper Chinese glyphs.",
@@ -47,14 +56,16 @@
   "sourcePins": {
     "Apple/Packages/CreationCore/Sources/CreationCore/SceneSourceImport.swift": "33a1163d58871dc23a92ca5c0b1f081ec2b66a23634837577d9c62f40c261a63",
     "Apple/Packages/GoogleThreeLiveNative/Sources/GoogleThreeLiveNative/GoogleThreeLiveEngine.swift": "16827b1543e12afe053c31d9487a0a3f20cc683076b0d2b05c24b39f3b83301c",
-    "Apple/SceneStudio/App/SceneStudioModel.swift": "502d91f425e059f94bc884b203a71807eceb66ecf9a8a609273d6e64098cb11e",
+    "Apple/SceneStudio/App/SceneStudioModel.swift": "f059852f49dd0df46618d10f9724efbcb6e076b19f15c223dc49cefa1f372249",
     "Apple/SceneStudio/Storage/ProgramProjectStore.swift": "c7144f1c46167667374be2625b35e8d080069e818b99d16911dd5fe450e7d45e",
     "Apple/SceneStudio/Storage/LegacyProjectReader.swift": "efa21278879f13e65593bc59245c6e5113f5786017fb5415042f85b87bdd80dc",
     "Apple/SceneStudio/Import/SceneImportInbox.swift": "53d6942532fe9efa595f8d9478676adf509ae77e7f2410d70467d6c575cda637",
-    "Apple/SceneStudio/Views/SceneStudioWorkspace.swift": "1551f61399bfa627ca719757329bba540777b00ae5bcb37d5d97d0f9e2bd1a08",
-    "Apple/SceneShareExtension/SceneShareViewController.swift": "2fe2a356a578ddc7d83a396e4bb2f7bef0c7f7bf945ad561f6e54d44518d079c"
+    "Apple/SceneStudio/Views/SceneStudioWorkspace.swift": "366018e3c2443bf2f5c47aed7a468eaab2919af10d7aa944087d5781bd4e35ad",
+    "Apple/SceneShareExtension/SceneShareViewController.swift": "c077399cddd25181e710950ce30c38a627444e08ae7403db4051c9216fb6062e",
+    "Apple/SceneStudio/App/SceneStudioApp.swift": "f09c91e7ce5a91cb0af5b0bc884a28a0f8fc2a4d039c4b51b4fde724fe02bbe1",
+    "Apple/SceneStudio/Import/SceneImportMonitor.swift": "e3217b411e4e91edc913f57d26902e44d21da8eeb7f1f264f2f9f07b61f2cf91"
   },
-  "newTestFlightUploaded": false,
+  "newTestFlightUploaded": true,
   "normalPhoneDataMutated": false,
   "rejectedBuild7": "Apple ingestion90683 required NSSpeechRecognitionUsageDescription; fixed both SDK voice purpose strings for build8",
   "physicalPhoneControllerCases": {
@@ -64,5 +75,15 @@
     "realQuickLookThumbnailsReviewedNormal": true,
     "productionSharedAppGroupInboxToControllerPassed": true,
     "systemShareSheetProviderUIExercised": false
-  }
+  },
+  "latestAuthoritativeEvidence": [
+    "publication10.json",
+    "testflight10-final-fresh-readback.json",
+    "system-share10-acceptance.json",
+    "phone-native-import/build10-robot/verification.json",
+    "duo-build10/verification.json"
+  ],
+  "testFlightStatus": "VALID / IN_BETA_TESTING; exact build10 independently read back",
+  "status": "Released to existing internal TestFlight group",
+  "systemShareSheetProviderUIExercisedOnSimulator": true
 }

@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "appID": "6831042755",
+  "bundleID": "com.kaisun.voxamber",
+  "marketingVersion": "0.2.0",
+  "buildNumber": "9",
+  "ipaPath": "/Users/kaisun/Three-Live/Apple/.build/ThreeLiveReturn/Export-0.2.0-9/VoxamberSceneStudio.ipa",
+  "ipaByteCount": 8976998,
+  "ipaSHA256": "a939631545ec3009d9977424c788b64262eefc7a5b2d7e439f7e96486d001215",
+  "checkedAtUTC": "2026-11-06T07:28:33.362253+00:00",
+  "bundles": [
+    {
+      "bundleID": "com.kaisun.voxamber",
+      "version": "0.2.0",
+      "build": "9",
+      "signatureStrictValid": true,
+      "appGroupAndProfileIdentityVerified": true,
+      "getTaskAllowFalse": true,
+      "distributionProfileWithoutDeviceList": true,
+      "executableSHA256": "05197392bf8f008a47f922f089a198b26065be0b925263bb6a18a8293e694cdd"
+    },
+    {
+      "bundleID": "com.kaisun.voxamber.scene-import",
+      "version": "0.2.0",
+      "build": "9",
+      "signatureStrictValid": true,
+      "appGroupAndProfileIdentityVerified": true,
+      "getTaskAllowFalse": true,
+      "distributionProfileWithoutDeviceList": true,
+      "executableSHA256": "1ebfdd3aafba5a4ad60cae1b1d126ad74230d77dc62bf9198d120e4c4ffb4e52"
+    }
+  ],
+  "appBinaryUUID": "07E85DC3-C86A-3246-930F-398FD6DDC13A",
+  "scope": "Actual exported IPA signature/entitlement/payload/core-compiler audit only, not Apple processing or TestFlight readiness",
+  "checks": {
+    "signaturesProfilesGroups": true,
+    "officialNativeCompilerInUUIDMatchedDSYM": true,
+    "noLocalModelDiffusionOrQAEngine": true,
+    "noTestBundlesWeightsPythonOrPrivateKeys": true,
+    "SDKCameraSpeechMicrophoneUsageStrings": true,
+    "shareExtensionPoint": true
+  },
+  "productionFix": "Registered content UTI takes precedence over URL representation; URL-only read through NSURL with coordinated bounded file access"
+}

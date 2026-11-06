@@ -1,0 +1,16 @@
+{
+  "checkedAtUTC": "2026-11-06T08:20:53.705911+00:00",
+  "version": "0.2.0",
+  "build": "10",
+  "runtime": "com.apple.CoreSimulator.SimRuntime.iOS-27-1",
+  "deviceType": "com.apple.CoreSimulator.SimDeviceType.iPhone-Duo",
+  "observedDisplay": "Active inner display3, 2853x2007 landscape",
+  "nativeSplitViewVisuallyVerified": true,
+  "nativeGlassControlsVisuallyVerified": true,
+  "foregroundInboxUnavailableNoticeAbsent": true,
+  "layoutOwner": "SwiftUI NavigationSplitView for regular horizontal size class; TabView for compact",
+  "layoutSourceSHA256": "366018e3c2443bf2f5c47aed7a468eaab2919af10d7aa944087d5781bd4e35ad",
+  "screenshotSHA256": "270fcec0da488b6e18ece3d718b363c9b7ea884170debf6f5542cc13e3dbeddf",
+  "foldAngleTransitionsExercised": false,
+  "limitation": "Available headless Simulator runtime does not expose an observed public hinge-pose transition control; actual fold transitions are not claimed."
+}

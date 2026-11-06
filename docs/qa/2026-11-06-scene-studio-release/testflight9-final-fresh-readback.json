@@ -1,0 +1,28 @@
+{
+  "appID": "6831042755",
+  "marketingVersion": "0.2.0",
+  "buildNumber": "9",
+  "groupID": "7d4c4aba-14b9-423e-b1ae-d50ce983d527",
+  "internalTesterCount": 1,
+  "mutationCount": 0,
+  "status": "READY",
+  "buildID": "11d34005-8c2b-49f3-989e-25289a4d0042",
+  "processingState": "VALID",
+  "internalBuildState": "IN_BETA_TESTING",
+  "alreadyInGroup": true,
+  "observedAtUTC": "2026-11-06T07:45:26.945075+00:00",
+  "independentFreshGET": true,
+  "notesExactMatch": {
+    "zh-Hans": true,
+    "en-US": true
+  },
+  "notesSHA256": {
+    "zh-Hans": "93854e62ce7bc71e45b9a9fe2e675304f98a6e1de45db898041d939ff451bd4a",
+    "en-US": "6460f995dd03ce89ad6b7e4c48547c295fa888a0a7f93052f8fbfa4581bea7e1"
+  },
+  "remoteMutations": 0,
+  "newTesterInvitations": 0,
+  "publicReviewOrReleaseChanged": false,
+  "phoneInstallAcceptanceClaimed": false,
+  "TestFlightReady": true
+}

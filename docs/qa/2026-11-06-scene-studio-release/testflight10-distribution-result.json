@@ -1,0 +1,23 @@
+{
+  "alreadyInGroup": true,
+  "appID": "6831042755",
+  "buildID": "764759e5-68a9-4fba-8e6f-50cf2234035f",
+  "buildNumber": "10",
+  "groupID": "7d4c4aba-14b9-423e-b1ae-d50ce983d527",
+  "internalBuildState": "READY_FOR_BETA_TESTING",
+  "internalTesterCount": 1,
+  "localesVerified": [
+    "zh-Hans",
+    "en-US"
+  ],
+  "marketingVersion": "0.2.0",
+  "mutationCount": 3,
+  "processingState": "VALID",
+  "status": "DISTRIBUTED_INTERNAL",
+  "observedAtUTC": "2026-11-06T08:19:13.925612+00:00",
+  "exitCode": 0,
+  "journalOperationsVerified": 3,
+  "pendingJournalOperations": 0,
+  "scope": "Actual helper terminal result; fixed notes and existing self group association only. Independent fresh beta-state GET remains required.",
+  "invitationsReviewOrPublicRelease": false
+}
