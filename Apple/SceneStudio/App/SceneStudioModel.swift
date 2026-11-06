@@ -23,6 +23,7 @@ final class SceneStudioModel {
     @ObservationIgnored private var operation: Task<Void, Never>?
     @ObservationIgnored private var owner: UUID?
     @ObservationIgnored private var mutationEpoch = UUID()
+    @ObservationIgnored private var incomingEpoch = UUID()
 
     func refresh() async {
         guard !busy else { return }
@@ -36,13 +37,18 @@ final class SceneStudioModel {
             legacyProjects = legacy.projects
             if legacy.unreadableCount > 0 { notice = "部分历史作品尚无法读取，原文件已保留。" }
         } catch { if epoch == mutationEpoch, !Task.isCancelled { errorMessage = error.localizedDescription } }
+        await refreshIncoming()
+    }
+
+    func refreshIncoming() async {
+        let epoch = UUID(); incomingEpoch = epoch
         do {
             let inbox = try SceneImportInbox.openShared()
             let incoming = try await inbox.list().pending
-            guard epoch == mutationEpoch, !Task.isCancelled else { return }
+            guard epoch == incomingEpoch, !Task.isCancelled else { return }
             pendingShares = incoming
         } catch {
-            if epoch == mutationEpoch, !Task.isCancelled { notice = "系统分享收件箱暂不可用，仍可粘贴代码或导入文件。" }
+            if epoch == incomingEpoch, !Task.isCancelled { notice = "系统分享收件箱暂不可用，仍可粘贴代码或导入文件。" }
         }
     }
 
@@ -54,7 +60,11 @@ final class SceneStudioModel {
             try await accept(payload.bytes, fileName: item.originalFilename)
             do {
                 try await inbox.acknowledge(entryID: item.id)
+                incomingEpoch = UUID()
                 pendingShares.removeAll { $0.id == item.id }
+                // Replace any watcher read invalidated by acknowledgement so
+                // a concurrently committed share remains visible as well.
+                await refreshIncoming()
             } catch { notice = "场景已导入；分享收件记录暂未归档，可稍后重试。" }
         }
     }

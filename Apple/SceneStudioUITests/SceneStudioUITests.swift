@@ -79,6 +79,154 @@ import XCTest
         capture("02-pasted-source-library")
     }
 
+    /// Focused system-share acceptance, independent of the source editor's
+    /// scrolling geometry. The bundled file is expected input only: the App
+    /// receives it exclusively from its explicit example button, and the
+    /// extension receives the App's actual saved source via NSItemProvider.
+    func test04ExplicitSavedExampleSharesThroughSystemAndCompilesReceivedSource() throws {
+        guard let fixtureURL = Bundle(for: SceneStudioUITests.self).url(forResource: "RobotScene", withExtension: "js") else {
+            XCTFail("Copy the same production RobotScene.js into the UI-test resource bundle")
+            throw UIAcceptanceError.missingControl
+        }
+        let expectedBytes = try Data(contentsOf: fixtureURL)
+        guard let expectedSource = String(data: expectedBytes, encoding: .utf8), !expectedSource.isEmpty else {
+            XCTFail("The expected scene resource must contain real UTF8 source")
+            throw UIAcceptanceError.missingControl
+        }
+        XCTAssertEqual(Data(expectedSource.utf8), expectedBytes)
+        XCTAssertLessThanOrEqual(expectedSource.count, 12_000, "This test requires the extension's full preview, not a truncated prefix")
+
+        app.launch()
+        try startNewWorkingSceneIfNeeded()
+        try tapVisible(button(identifier: "importExample", label: "看看示例场景"))
+        try waitForImportedSource()
+        let originalTitle = try makeUniqueTitle(marker: "UI分享源")
+        try compileAndSaveOnce(title: originalTitle)
+        capture("04-explicit-example-really-compiled-and-saved")
+        let pendingBefore = pendingSourceButtons().count
+        let share = app.buttons["场景代码"]
+        XCTAssertTrue(share.waitForExistence(timeout: 10))
+        try tapVisible(share)
+        capture("04-actual-source-system-share-sheet")
+
+        var activity = systemShareControl(label: "存入维珀")
+        if activity == nil,
+           let more = systemShareControl(label: "更多") ?? systemShareControl(label: "More") {
+            more.tap()
+            activity = systemShareControl(label: "存入维珀")
+        }
+        guard let activity else {
+            capture("04-system-share-activity-missing")
+            XCTFail("The real system share activity must be available; no Inbox fixture replaces it")
+            throw UIAcceptanceError.missingControl
+        }
+        activity.tap()
+
+        var extensionRoot: XCUIApplication?
+        let receiveDeadline = Date().addingTimeInterval(15)
+        while extensionRoot == nil, Date() < receiveDeadline {
+            extensionRoot = shareUIRoots().first { root in
+                root.textViews.matching(NSPredicate(format: "value == %@", expectedSource)).firstMatch.exists
+            }
+            if extensionRoot == nil { RunLoop.current.run(until: Date().addingTimeInterval(0.1)) }
+        }
+        guard let extensionRoot else {
+            capture("04-extension-full-source-mismatch-or-not-received")
+            XCTFail("The actual extension preview must equal the complete bundled expected source")
+            throw UIAcceptanceError.timeout
+        }
+        capture("04-extension-received-complete-source-awaits-confirmation")
+        let saveInExtension = extensionRoot.buttons["存入维珀"]
+        XCTAssertTrue(saveInExtension.waitForExistence(timeout: 5) && saveInExtension.isEnabled)
+        saveInExtension.tap()
+        let hostSavedAlert = app.alerts["已存入维珀"]
+        let savedAlert = hostSavedAlert.waitForExistence(timeout: 15) ? hostSavedAlert
+            : XCUIApplication(bundleIdentifier: "com.apple.springboard").alerts["已存入维珀"]
+        XCTAssertTrue(savedAlert.waitForExistence(timeout: 5), "The extension's real atomic commit must succeed")
+        capture("04-extension-commit-confirmed")
+        let done = savedAlert.buttons["完成"]
+        XCTAssertTrue(done.exists && done.isEnabled)
+        done.tap()
+
+        app.activate()  // A relaunch must not conceal a broken foreground refresh.
+        let create = app.tabBars.buttons["创作"]
+        if create.exists, create.isHittable { create.tap() }
+        scrollCreatorToTop()
+        let pendingDeadline = Date().addingTimeInterval(15)
+        while pendingSourceButtons().count <= pendingBefore, Date() < pendingDeadline {
+            RunLoop.current.run(until: Date().addingTimeInterval(0.1))
+        }
+        guard pendingSourceButtons().count > pendingBefore else {
+            capture("04-main-app-new-pending-share-not-visible")
+            XCTFail("The just-saved system share must appear as a new pending entry without relaunch or injected data")
+            throw UIAcceptanceError.timeout
+        }
+        XCTAssertTrue(app.staticTexts["收到分享"].exists)
+        capture("04-main-app-received-new-system-share")
+
+        // New is a visible working-draft action; no saved project or earlier
+        // pending item is deleted. The newly committed share sorts first.
+        let fresh = app.buttons["新建"]
+        XCTAssertTrue(fresh.exists && fresh.isEnabled)
+        fresh.tap()
+        scrollCreatorToTop()
+        let incoming = pendingSourceButtons().firstMatch
+        XCTAssertTrue(incoming.waitForExistence(timeout: 5))
+        try tapVisible(incoming)
+        try waitForImportedSource()
+        let expectedDisplayCount = ByteCountFormatter.string(fromByteCount: Int64(expectedBytes.count), countStyle: .file)
+        XCTAssertTrue(app.staticTexts["已导入 \(expectedDisplayCount) 场景代码"].waitForExistence(timeout: 10),
+                      "The imported source must report the same displayed byte count; exact file SHA is checked separately by host readback")
+        let receivedTitle = try makeUniqueTitle(marker: "UI分享回收")
+        try compileAndSaveOnce(title: receivedTitle)
+        capture("04-received-system-share-really-recompiled-and-saved")
+        try openLibrary()
+        XCTAssertTrue(projectRow(title: originalTitle).waitForExistence(timeout: 10), "The original saved program must remain")
+        XCTAssertTrue(projectRow(title: receivedTitle).waitForExistence(timeout: 10), "The reimported source must produce a second saved program")
+        assertNoOperationError()
+        capture("04-original-and-reimported-projects-in-library")
+
+        let readback = XCTAttachment(string: "originalProjectTitle=\(originalTitle)\nreceivedProjectTitle=\(receivedTitle)\nexpectedResource=RobotScene.js\nexpectedSourceByteCount=\(expectedBytes.count)\nexactSourceAndInboxSHARequiresIndependentHostReadback=true")
+        readback.name = "04-actual-project-titles-for-readonly-source-and-inbox-SHA-verification"
+        readback.lifetime = .keepAlways
+        add(readback)
+    }
+
+    private func pendingSourceButtons() -> XCUIElementQuery {
+        app.buttons.matching(NSPredicate(format: "label == %@", "source.js"))
+    }
+
+    private func scrollCreatorToTop() {
+        for _ in 0..<5 {
+            let paste = button(identifier: "importCode", label: "粘贴代码")
+            if paste.exists && paste.isHittable { return }
+            app.swipeDown()
+        }
+    }
+
+    private func shareUIRoots() -> [XCUIApplication] {
+        let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")
+        let extensionApp = XCUIApplication(bundleIdentifier: "com.kaisun.voxamber.scene-import")
+        return [app, springboard] + (extensionApp.state == .notRunning ? [] : [extensionApp])
+    }
+
+    private func systemShareControl(label: String) -> XCUIElement? {
+        // iOS may show the containing App's display name in its activity list,
+        // while the actual extension's explicit save button is 存入维珀.
+        let labels = label == "存入维珀" ? ["存入维珀", "维珀", "Voxamber"] : [label]
+        let deadline = Date().addingTimeInterval(5)
+        repeat {
+            for root in shareUIRoots() {
+                let button = root.buttons.matching(NSPredicate(format: "label IN %@", labels)).firstMatch
+                if button.exists && button.isHittable { return button }
+                let cell = root.cells.matching(NSPredicate(format: "label IN %@", labels)).firstMatch
+                if cell.exists && cell.isHittable { return cell }
+            }
+            RunLoop.current.run(until: Date().addingTimeInterval(0.1))
+        } while Date() < deadline
+        return nil
+    }
+
     private func startNewWorkingSceneIfNeeded() throws {
         let create = app.tabBars.buttons["创作"]
         if create.exists, create.isHittable { create.tap() }
@@ -174,13 +322,54 @@ import XCTest
     }
 
     private func tapVisible(_ element: XCUIElement) throws {
-        for _ in 0..<5 {
-            if element.exists, element.isHittable { element.tap(); return }
-            app.swipeUp()
-        }
+        let deadline = Date().addingTimeInterval(15)
+        var scrollCount = 0
+        repeat {
+            if !element.exists || !element.isEnabled {
+                // Wait on the actual disabled/busy state; do not tap or scroll
+                // while an open/import operation still owns the controls.
+                RunLoop.current.run(until: Date().addingTimeInterval(0.1))
+                continue
+            }
+            if element.isHittable && safelyAbovePersistentBars(element) { element.tap(); return }
+            guard scrollCount < 8 else { break }
+            let navigation = app.navigationBars.firstMatch
+            let downward = navigation.exists && element.frame.minY < navigation.frame.maxY + 4
+            if app.scrollViews.firstMatch.exists && app.scrollViews.firstMatch.isHittable {
+                let scroll = app.scrollViews.firstMatch
+                // The center contains RealityView, which correctly consumes
+                // drags for orbiting. Scroll the real page at its outer margin.
+                let from = scroll.coordinate(withNormalizedOffset: CGVector(dx: 0.02, dy: downward ? 0.4 : 0.65))
+                let to = scroll.coordinate(withNormalizedOffset: CGVector(dx: 0.02, dy: downward ? 0.65 : 0.4))
+                from.press(forDuration: 0.05, thenDragTo: to)
+            } else if downward { app.swipeDown() }
+            else { app.swipeUp() }
+            scrollCount += 1
+        } while Date() < deadline
         capture("control-not-hittable")
-        XCTFail("The intended visible UI control could not be reached")
+        XCTFail("The intended control did not become enabled, hittable, and visibly clear of persistent bars")
         throw UIAcceptanceError.missingControl
+    }
+
+    private func safelyAbovePersistentBars(_ element: XCUIElement) -> Bool {
+        // The observed overlap belongs to the creator's code control. A
+        // generation button retained in another tab's accessibility tree must
+        // not impose its geometry on library rows or modal navigation buttons.
+        guard ["codeEditor", "sourceTitle"].contains(element.identifier) || element.label == "场景代码" else { return true }
+        let frame = element.frame
+        guard frame.width > 0, frame.height > 0 else { return false }
+        let navigation = app.navigationBars.firstMatch
+        if navigation.exists && frame.minY < navigation.frame.maxY + 4 { return false }
+        let tabs = app.tabBars.firstMatch
+        var bottom = tabs.exists ? tabs.frame.minY : app.frame.maxY
+        let generate = app.buttons["generateScene"]
+        if element.identifier != "generateScene", generate.exists, generate.isHittable {
+            // In the recorded failure, AX called codeEditor hittable at y718.5
+            // while the persistent generation backdrop obscured it. Scroll its
+            // full frame above the bar, including its surrounding hit area.
+            bottom = min(bottom, generate.frame.minY - 24)
+        }
+        return frame.maxY <= bottom
     }
 
     private func assertNoOperationError(file: StaticString = #filePath, line: UInt = #line) {

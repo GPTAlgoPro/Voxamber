@@ -1,0 +1,21 @@
+{
+  "appID": "6831042755",
+  "marketingVersion": "0.2.0",
+  "buildNumber": "10",
+  "groupID": "7d4c4aba-14b9-423e-b1ae-d50ce983d527",
+  "internalTesterCount": 1,
+  "mutationCount": 0,
+  "status": "READY",
+  "buildID": "764759e5-68a9-4fba-8e6f-50cf2234035f",
+  "processingState": "VALID",
+  "internalBuildState": "IN_BETA_TESTING",
+  "alreadyInGroup": true,
+  "checkedAtUTC": "2026-11-06T08:21:07.626177+00:00",
+  "localizedNotesFreshReadback": true,
+  "localesVerified": [
+    "zh-Hans",
+    "en-US"
+  ],
+  "mode": "Independent final GET-only build10 readback",
+  "remoteMutations": 0
+}

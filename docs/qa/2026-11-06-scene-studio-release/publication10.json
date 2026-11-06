@@ -1,0 +1,51 @@
+{
+  "checkedAtUTC": "2026-11-06T08:22:40.537288+00:00",
+  "version": "0.2.0",
+  "build": "10",
+  "appID": "6831042755",
+  "bundleID": "com.kaisun.voxamber",
+  "buildID": "764759e5-68a9-4fba-8e6f-50cf2234035f",
+  "sourceCommit": "9b0438d00bd95a40fa02bb79a5a8f505a253c5a2",
+  "ipaBytes": 8993605,
+  "ipaSHA256": "62e73c61dd92b869cfef5d01a795316acee491289ec15494a35b3c2566d1f2da",
+  "appleValidationExitCode": 0,
+  "singleUploadExitCode": 0,
+  "appleProcessing": "VALID",
+  "internalBeta": "IN_BETA_TESTING",
+  "existingSelfGroupMembers": 1,
+  "exactBuildInExistingSelfGroup": true,
+  "localizedNotesFreshReadback": true,
+  "testFlightReady": true,
+  "humanTestFlightInstallationVerified": false,
+  "publicAppStoreRelease": false,
+  "newTesterInvitationOrContactsAccess": false,
+  "workflow": "User-owned external LLM source import; Google Three-Live native local compile, preview, immutable save and source/GLB/USDZ export; no mandatory model download",
+  "shareFixes": [
+    "Read actual registered JavaScript file content instead of binary file-URL metadata",
+    "Prefer available source/plain text over rich representations",
+    "Watch atomic inbox commits while active without relaunch",
+    "Refresh after acknowledgement to retain concurrently arriving entries"
+  ],
+  "acceptance": {
+    "programStoreTests": 10,
+    "uiJourneys": 3,
+    "uiJourneysZeroFailures": true,
+    "realSystemShareFullSourceAndCompile": true,
+    "physicalPhoneCompileSaveSeconds": 0.617595911026001,
+    "physicalPhoneViewportReadyAndAttached": true,
+    "physicalPhoneThumbnailNormal": true,
+    "currentDuoInnerNativeSplitView": true
+  },
+  "knownValidationLimits": [
+    "Full physical Duo hinge-pose transitions not exercised; current native inner layout and compact iPhone layout are verified",
+    "Individual third-party AI apps may share conversation URLs rather than source; links are not fetched; paste or export source instead",
+    "Complex scene support is limited by the official compiler API and published scene budgets"
+  ],
+  "evidence": [
+    "ipa-audit10.json",
+    "testflight10-final-fresh-readback.json",
+    "system-share10-acceptance.json",
+    "phone-native-import/build10-robot/verification.json",
+    "duo-build10/verification.json"
+  ]
+}

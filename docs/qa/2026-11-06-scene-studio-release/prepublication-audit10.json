@@ -1,0 +1,97 @@
+{
+  "checkedAtUTC": "2026-11-06T08:22:40.537288+00:00",
+  "scope": "Prepublication requirement audit for the final user-approved import-first deliverable; release branch finishing is independently checked after Git push",
+  "sourceCommit": "9b0438d00bd95a40fa02bb79a5a8f505a253c5a2",
+  "requirements": [
+    {
+      "requirement": "External user-owned LLM scene authoring and general subject modeling",
+      "status": "verified",
+      "evidence": [
+        "AGENTS.md",
+        "Apple/SceneStudio/Resources/SceneAuthoringInstructions.txt",
+        "Apple/Packages/CreationCore/Sources/CreationCore/SceneSourceImport.swift"
+      ]
+    },
+    {
+      "requirement": "Actual Google official native compiler locally on iPhone, no unrelated runtime or mandatory downloaded model",
+      "status": "verified",
+      "evidence": [
+        "ipa-audit10.json",
+        "phone-native-import/build10-robot/verification.json",
+        "phone-native-import/palace-viewport/report.json"
+      ]
+    },
+    {
+      "requirement": "Paste, file and system share import; exact source preservation; active inbox refresh",
+      "status": "verified",
+      "evidence": [
+        "system-share10-acceptance.json"
+      ]
+    },
+    {
+      "requirement": "Native preview and thumbnails; saving, editing and immutable revisions; GLB, USDZ and source sharing; native AR",
+      "status": "verified",
+      "evidence": [
+        "phone-native-import/build10-robot/report.json",
+        "Apple/SceneStudio/Views/SceneStudioWorkspace.swift",
+        "Apple/SceneStudio/Storage/ProgramProjectStore.swift",
+        "system-share10-acceptance.json"
+      ]
+    },
+    {
+      "requirement": "12GB iPhone performance target",
+      "status": "verified",
+      "evidence": [
+        "phone-native-import/build10-robot/report.json"
+      ],
+      "scope": "Real iPhone17ProMax native code import/compile/save 0.6176 seconds for robot; original palace0.7883 seconds in earlier same-compiler check. Does not imply arbitrary scene timing."
+    },
+    {
+      "requirement": "Liquid Glass and native adaptive Duo interface",
+      "status": "verified-with-explicit-validation-limit",
+      "evidence": [
+        "duo-build10/verification.json",
+        "Apple/SceneStudio/Views/SceneStudioWorkspace.swift"
+      ],
+      "scope": "Current Duo inner split layout and compact iPhone journeys proven; physical hinge-angle transitions not claimed."
+    },
+    {
+      "requirement": "Private GitHub, dev default; main once per verified release",
+      "status": "release-finishing",
+      "evidence": [
+        "https://github.com/GPTAlgoPro/Voxamber"
+      ],
+      "next": "After this receipt commit, push dev and merge/push main once; independently confirm refs."
+    },
+    {
+      "requirement": "Review support website on GitHub",
+      "status": "verified",
+      "evidence": [
+        "https://gptalgopro.github.io/Voxamber-Website/"
+      ],
+      "scope": "Separate public website, Pages run42173704646 atd266252; all six canonical source bodies independently rechecked by audit agent."
+    },
+    {
+      "requirement": "Clean experimental100GB storage while preserving current works and signing",
+      "status": "verified",
+      "evidence": [
+        "../2026-11-06-experiment-cleanup/verification.json"
+      ],
+      "scope": "116243660800 bytes released in completed cleanup; protected backup/signing data retained."
+    },
+    {
+      "requirement": "TestFlight ready for user device testing",
+      "status": "verified",
+      "evidence": [
+        "testflight10-final-fresh-readback.json",
+        "ipa-audit10.json"
+      ],
+      "scope": "Exact build10 VALID/IN_BETA_TESTING in existing self group; user installation is not represented as already done."
+    }
+  ],
+  "supersededRequirements": [
+    "Mandatory selection/download/hosting of <=8B on-device LLM replaced by explicit user-approved external LLM import-first flow; no new model hosting needed for this release",
+    "Diffusion to Hunyuan route rejected; not included in released IPA"
+  ],
+  "publicAppStoreReviewSubmissionRequestedForThisRelease": false
+}

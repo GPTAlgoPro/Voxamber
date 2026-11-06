@@ -1,0 +1,111 @@
+{
+  "checkedAtUTC": "2026-11-06T08:17:14.564799+00:00",
+  "candidate": "0.2.0 (10)",
+  "status": "PASS",
+  "actualSystemShareProviderUI": true,
+  "extensionFullSourceEquality": true,
+  "explicitSaveAndCommitAlert": true,
+  "foregroundNewPendingWithoutRelaunch": true,
+  "reimportActuallyCompiledAndSaved": true,
+  "originalProjectPreserved": true,
+  "sourceAuthor": "Explicit Codex-authored RobotScene.js fixture, not model inference",
+  "expectedSourceBytes": 1481,
+  "expectedSourceSHA256": "105acc2b3938785c9a8faced97a0f7c63cbcff40db6ddd6a34598f54b46e2c2e",
+  "projects": [
+    {
+      "id": "A8AC4BCF-5DF6-459A-A707-B5DCCC7502AD",
+      "revision": "C91350A4-DCEC-4D47-9EEC-B97B386D7595",
+      "title": "几何旅行者 ·  · UI分享源-6A55E839示例",
+      "files": [
+        {
+          "kind": "glb",
+          "bytes": 111188,
+          "sha256": "ed5b8a58fd6e2c45a42ea6403d879604da0deaa491c3d063ffeefa2d37945313"
+        },
+        {
+          "kind": "originalImport",
+          "bytes": 1481,
+          "sha256": "105acc2b3938785c9a8faced97a0f7c63cbcff40db6ddd6a34598f54b46e2c2e"
+        },
+        {
+          "kind": "source",
+          "bytes": 1481,
+          "sha256": "105acc2b3938785c9a8faced97a0f7c63cbcff40db6ddd6a34598f54b46e2c2e"
+        },
+        {
+          "kind": "usdz",
+          "bytes": 192375,
+          "sha256": "739c05f165af84d4c65271e6f11071d00291c41f3f266c0db406a714689a3655"
+        }
+      ],
+      "compilerVersion": "1.2.3",
+      "compilerRevision": "c0ff24b628795286a175f1a71611673df5dbc05d"
+    },
+    {
+      "id": "91D8E900-B3D6-489C-869F-D15B58A92E8B",
+      "revision": "5CD6FAAD-7CDD-4733-A3AC-A133D1ADEF44",
+      "title": "source · UI分享回收-FEEF9802",
+      "files": [
+        {
+          "kind": "glb",
+          "bytes": 111188,
+          "sha256": "ed5b8a58fd6e2c45a42ea6403d879604da0deaa491c3d063ffeefa2d37945313"
+        },
+        {
+          "kind": "originalImport",
+          "bytes": 1481,
+          "sha256": "105acc2b3938785c9a8faced97a0f7c63cbcff40db6ddd6a34598f54b46e2c2e"
+        },
+        {
+          "kind": "source",
+          "bytes": 1481,
+          "sha256": "105acc2b3938785c9a8faced97a0f7c63cbcff40db6ddd6a34598f54b46e2c2e"
+        },
+        {
+          "kind": "usdz",
+          "bytes": 192375,
+          "sha256": "739c05f165af84d4c65271e6f11071d00291c41f3f266c0db406a714689a3655"
+        }
+      ],
+      "compilerVersion": "1.2.3",
+      "compilerRevision": "c0ff24b628795286a175f1a71611673df5dbc05d"
+    }
+  ],
+  "matchingProcessedInboxEntries": [
+    {
+      "id": "349FDD3C-3B24-4F04-8016-2AB6588DE9F2",
+      "payloadBytes": 1481,
+      "payloadSHA256": "105acc2b3938785c9a8faced97a0f7c63cbcff40db6ddd6a34598f54b46e2c2e"
+    },
+    {
+      "id": "45F0FFAA-325C-43E4-9349-C19FBAB1952B",
+      "payloadBytes": 1481,
+      "payloadSHA256": "105acc2b3938785c9a8faced97a0f7c63cbcff40db6ddd6a34598f54b46e2c2e"
+    },
+    {
+      "id": "FBB2D4E5-6CA4-4921-83F3-B27E2F6A3AC3",
+      "payloadBytes": 1481,
+      "payloadSHA256": "105acc2b3938785c9a8faced97a0f7c63cbcff40db6ddd6a34598f54b46e2c2e"
+    }
+  ],
+  "testSeconds": 65.587,
+  "xcresult": "Apple/.build/ThreeLiveReturn/Build/Logs/Test/Test-Voxamber-SceneStudio-2026.11.06_16-14-02-+0800.xcresult",
+  "sourcePins": {
+    "Apple/SceneShareExtension/SceneShareViewController.swift": "c077399cddd25181e710950ce30c38a627444e08ae7403db4051c9216fb6062e",
+    "Apple/SceneStudio/Import/SceneImportMonitor.swift": "e3217b411e4e91edc913f57d26902e44d21da8eeb7f1f264f2f9f07b61f2cf91",
+    "Apple/SceneStudio/App/SceneStudioApp.swift": "f09c91e7ce5a91cb0af5b0bc884a28a0f8fc2a4d039c4b51b4fde724fe02bbe1",
+    "Apple/SceneStudio/App/SceneStudioModel.swift": "f059852f49dd0df46618d10f9724efbcb6e076b19f15c223dc49cefa1f372249",
+    "Apple/SceneStudioUITests/SceneStudioUITests.swift": "ca6a5a9a5d47ac6b3b0d4c51f27eb5ca6f04752338bfea28172291c71e6e9ab0"
+  },
+  "scope": "iOS26 simulator system share, actual extension and official compiler. Not a claim of every third-party LLM provider or physical Duo folding.",
+  "finalFullSuite": {
+    "programStorePassed": 10,
+    "uiCasesPassed": 3,
+    "uiCaseSeconds": [
+      40.054,
+      38.709,
+      65.587
+    ],
+    "zeroFailures": true
+  }
+}

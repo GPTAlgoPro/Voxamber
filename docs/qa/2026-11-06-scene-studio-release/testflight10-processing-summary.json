@@ -1,0 +1,42 @@
+{
+  "appID": "6831042755",
+  "marketingVersion": "0.2.0",
+  "buildNumber": "10",
+  "mode": "GET-only processing after root confirmed one successful upload",
+  "remoteMutations": 0,
+  "reuploads": 0,
+  "observations": [
+    {
+      "appID": "6831042755",
+      "buildNumber": "10",
+      "groupID": "7d4c4aba-14b9-423e-b1ae-d50ce983d527",
+      "internalTesterCount": 1,
+      "marketingVersion": "0.2.0",
+      "mutationCount": 0,
+      "status": "BUILD_NOT_FOUND",
+      "observedAtUTC": "2026-11-06T08:17:01.634027+00:00",
+      "exitCode": 0,
+      "mode": "GET-only exact build10 processing observation",
+      "remoteMutations": 0
+    },
+    {
+      "alreadyInGroup": false,
+      "appID": "6831042755",
+      "buildID": "764759e5-68a9-4fba-8e6f-50cf2234035f",
+      "buildNumber": "10",
+      "groupID": "7d4c4aba-14b9-423e-b1ae-d50ce983d527",
+      "internalBuildState": "READY_FOR_BETA_TESTING",
+      "internalTesterCount": 1,
+      "marketingVersion": "0.2.0",
+      "mutationCount": 0,
+      "processingState": "VALID",
+      "status": "READY",
+      "observedAtUTC": "2026-11-06T08:17:44.769371+00:00",
+      "exitCode": 0,
+      "mode": "GET-only exact build10 processing observation",
+      "remoteMutations": 0
+    }
+  ],
+  "finalStatus": "READY",
+  "elapsedSeconds": 52.753
+}

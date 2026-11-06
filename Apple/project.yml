@@ -76,7 +76,7 @@ targets:
         PRODUCT_MODULE_NAME: SceneStudio
         APP_DISPLAY_NAME: "维珀"
         MARKETING_VERSION: "0.2.0"
-        CURRENT_PROJECT_VERSION: "8"
+        CURRENT_PROJECT_VERSION: "10"
         TARGETED_DEVICE_FAMILY: "1,2"
         GENERATE_INFOPLIST_FILE: NO
         INFOPLIST_FILE: SceneStudio/Resources/Info.plist
@@ -110,7 +110,7 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.kaisun.voxamber.scene-import
         MARKETING_VERSION: "0.2.0"
-        CURRENT_PROJECT_VERSION: "8"
+        CURRENT_PROJECT_VERSION: "10"
         GENERATE_INFOPLIST_FILE: NO
         INFOPLIST_FILE: SceneShareExtension/Info.plist
         CODE_SIGN_ENTITLEMENTS: SceneShareExtension/SceneShare.entitlements
@@ -138,7 +138,9 @@ targets:
   VoxamberSceneStudioUITests:
     type: bundle.ui-testing
     platform: iOS
-    sources: [SceneStudioUITests]
+    sources:
+      - path: SceneStudioUITests
+      - path: SceneStudio/Resources/RobotScene.js
     dependencies:
       - target: VoxamberSceneStudio
     settings:

@@ -21,6 +21,7 @@
 		24BF5563B1FDC863A31BD4F8 /* ImageSDXL.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CC0329B84603F17C4F5F969 /* ImageSDXL.json */; };
 		2746C44FB805A29ED90622F0 /* ProjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280D56379EA5205075F096F /* ProjectStore.swift */; };
 		298FAA1BF51F257AFAFB1D61 /* Snap3D-ThirdPartyNotices.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6A3D93B295607BA07E2A541D /* Snap3D-ThirdPartyNotices.txt */; };
+		2ACA1B0E4C06E3AB5D421855 /* SceneImportMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F890D8B6D14FF677CBDAAEC7 /* SceneImportMonitor.swift */; };
 		2B795DDB1AB3B1C7719D4A67 /* ProjectThumbnailServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AAC929D64DEC63EBDEB54F /* ProjectThumbnailServiceTests.swift */; };
 		2B7B505AB4E87064276FD02D /* DLPack.txt in Resources */ = {isa = PBXBuildFile; fileRef = 201E3B61AC694BEFC803EA43 /* DLPack.txt */; };
 		2CBF57C9284B47815132E2A2 /* ModelViewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B69F79EBFC5147A7BF5DAF /* ModelViewport.swift */; };
@@ -78,6 +79,7 @@
 		8DFA42B4B9F7F2F215FC6063 /* IntentQwen08.json in Resources */ = {isa = PBXBuildFile; fileRef = 527ECF28CBF6B9C65A94E0D7 /* IntentQwen08.json */; };
 		8EC7FF49F040C0FAE5B6380F /* NeuralEditRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C66C6B02FB9F50D614008A /* NeuralEditRecord.swift */; };
 		914CACA573F3E0A5E722B772 /* PicoJSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6EC515AFC8DB6C3CEA578FF3 /* PicoJSON.txt */; };
+		92210C0538AAC5973EF00BBF /* RobotScene.js in Resources */ = {isa = PBXBuildFile; fileRef = AD1485E5FB75503A86FF23B8 /* RobotScene.js */; };
 		94E62342437321B659976D08 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C871680D9158E22213C02D9F /* ModelManager.swift */; };
 		959F7428A9E3D3AD2DA308FD /* Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4DD2AB436EBBE0E8E5A1FD23 /* Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt */; };
 		9A5603654A74977D3D02081B /* NeuralModelDelivery.json in Resources */ = {isa = PBXBuildFile; fileRef = 66CA0CB4E0F0C2D46D6C3C4C /* NeuralModelDelivery.json */; };
@@ -302,6 +304,7 @@
 		F0E9B0EBE49D58F96207B8A9 /* NeuralEditRecordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralEditRecordTests.swift; sourceTree = "<group>"; };
 		F219C87A8357666AA46CF84D /* IntentQwen08.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IntentQwen08.json; sourceTree = "<group>"; };
 		F755D1A17B7ECAB1B37D678A /* NeuralEditPreparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralEditPreparation.swift; sourceTree = "<group>"; };
+		F890D8B6D14FF677CBDAAEC7 /* SceneImportMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneImportMonitor.swift; sourceTree = "<group>"; };
 		F9244A189648B2365B4444D0 /* VoxamberShapeQA.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = VoxamberShapeQA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1641729C96C9B70C0D7152 /* Google-Three-Live-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Google-Three-Live-LICENSE.txt"; sourceTree = "<group>"; };
 		FF49C8BFACDCD76E45376FCB /* SceneStudioDeviceProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneStudioDeviceProbe.swift; sourceTree = "<group>"; };
@@ -460,6 +463,7 @@
 			isa = PBXGroup;
 			children = (
 				17A6AD281490239A3F6D8087 /* SceneImportInbox.swift */,
+				F890D8B6D14FF677CBDAAEC7 /* SceneImportMonitor.swift */,
 			);
 			path = Import;
 			sourceTree = "<group>";
@@ -866,6 +870,7 @@
 			buildConfigurationList = 80F2A6BD40D752D31D90C300 /* Build configuration list for PBXNativeTarget "VoxamberSceneStudioUITests" */;
 			buildPhases = (
 				D320DB0E6DB346B142008A40 /* Sources */,
+				EFED16F65383689BD509B82F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1002,6 +1007,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFED16F65383689BD509B82F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92210C0538AAC5973EF00BBF /* RobotScene.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC98A39C1F8180BF92531A38 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1124,6 +1137,7 @@
 				B9636D96DA8AF812DE70D41F /* ProgramProjectStore.swift in Sources */,
 				16EC55CF8AC9DC71C795681E /* ProjectThumbnailService.swift in Sources */,
 				3D5C1A6CCEE9F571D6479079 /* SceneImportInbox.swift in Sources */,
+				2ACA1B0E4C06E3AB5D421855 /* SceneImportMonitor.swift in Sources */,
 				8B053DF77D64C11E37D8E0DF /* SceneStudioApp.swift in Sources */,
 				6C17E8C7D725F810259398F7 /* SceneStudioDeviceProbe.swift in Sources */,
 				03A5CDA9AFE66C1ADB61B176 /* SceneStudioModel.swift in Sources */,
@@ -1200,7 +1214,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SceneShareExtension/SceneShare.entitlements;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 10;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = SceneShareExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1223,7 +1237,7 @@
 				CODE_SIGN_ENTITLEMENTS = SceneShareExtension/SceneShare.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 10;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = SceneShareExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1247,7 +1261,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SceneStudio/Resources/SceneStudio.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 10;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = SceneStudio/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1422,7 +1436,7 @@
 				CODE_SIGN_ENTITLEMENTS = SceneStudio/Resources/SceneStudio.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 10;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = SceneStudio/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1693,7 +1707,7 @@
 				CODE_SIGN_ENTITLEMENTS = SceneShareExtension/SceneShare.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 10;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = SceneShareExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1718,7 +1732,7 @@
 				CODE_SIGN_ENTITLEMENTS = SceneStudio/Resources/SceneStudio.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 10;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = SceneStudio/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

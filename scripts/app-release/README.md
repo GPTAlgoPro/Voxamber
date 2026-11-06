@@ -1,7 +1,7 @@
-# Scene-source TestFlight 8 helper
+# Scene-source TestFlight 10 helper
 
 This host-only helper is restricted to Voxamber `com.kaisun.voxamber`, App Store
-Connect app `6831042755`, iOS `0.2.0 (8)`, and the existing private internal group
+Connect app `6831042755`, iOS `0.2.0 (10)`, and the existing private internal group
 `7d4c4aba-14b9-423e-b1ae-d50ce983d527`. It does not upload an IPA, invite a tester,
 submit beta/App Store review, change app metadata, or release a public version.
 No helper action changes Git branches.
@@ -48,7 +48,7 @@ provenance fields are allowed):
   "appID": "6831042755",
   "bundleID": "com.kaisun.voxamber",
   "marketingVersion": "0.2.0",
-  "buildNumber": "8",
+  "buildNumber": "10",
   "ipaPath": "/absolute/path/to/the-actual-audited.ipa",
   "ipaByteCount": 123,
   "ipaSHA256": "actual-lowercase-64-hex-sha256"
@@ -66,7 +66,7 @@ not an approval:
   "appID": "6831042755",
   "bundleID": "com.kaisun.voxamber",
   "marketingVersion": "0.2.0",
-  "buildNumber": "8",
+  "buildNumber": "10",
   "buildID": "actual-ASC-build-ID",
   "groupID": "7d4c4aba-14b9-423e-b1ae-d50ce983d527",
   "ipaSHA256": "actual-lowercase-64-hex-sha256"
@@ -78,8 +78,8 @@ Only after approval:
 ```sh
 python3 scripts/app-release/scene_testflight.py \
   --distribute --build-id ACTUAL_ASC_BUILD_ID \
-  --audit Apple/.build/scene-testflight8/ipa-audit.private.json \
-  --approval Apple/.build/scene-testflight8/distribution-approval.private.json
+  --audit Apple/.build/scene-testflight10/ipa-audit.private.json \
+  --approval Apple/.build/scene-testflight10/distribution-approval.private.json
 ```
 
 Before authenticating, the helper hashes the actual IPA, checks its byte count,
@@ -118,4 +118,6 @@ These tests use fake ASC responses, block real HTTP opening, and create small
 synthetic ZIP/plist fixtures only to exercise evidence guards. They are not a
 real IPA audit, Apple processing check, or TestFlight distribution receipt.
 
-The existing scene-testflight7 authentication pointer is build-independent. Build8 distribution uses a separate scene-testflight8 journal and fresh actual audit/approval; it cannot resume build7 distribution.
+The existing scene-testflight7 authentication pointer is build-independent. Build10 distribution uses a separate scene-testflight10 journal and fresh actual audit/approval; it cannot resume build7, build8, or build9 distribution.
+
+Build10 preparation follows the share provider-loading fix and a foreground incoming-file refresh fix. Build9 remains available in its existing internal group; this helper neither revokes it nor uploads or replaces it. Build10 requires its own actual IPA audit, Apple processing, build ID, and explicit distribution approval before any mutation. Preparation does not claim the complete share UI flow has passed.

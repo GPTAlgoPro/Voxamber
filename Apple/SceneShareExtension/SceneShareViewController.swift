@@ -122,21 +122,40 @@ import Darwin
             return SharePayload(bytes: bytes, filename: nil)
         }
         guard attachments.count == 1, let item = attachments.first else { throw ShareInputError.oneItemOnly }
-        // Conversation links are not fetched or converted into content.
-        if item.hasItemConformingToTypeIdentifier(UTType.url.identifier),
-           !item.hasItemConformingToTypeIdentifier(UTType.fileURL.identifier) { throw ShareInputError.linkOnly }
-        if item.hasItemConformingToTypeIdentifier(UTType.fileURL.identifier) {
-            return try await loadFile(item, type: UTType.fileURL.identifier)
-        }
-        let textTypes = [UTType.utf8PlainText.identifier, UTType.plainText.identifier]
-        if let type = textTypes.first(where: { item.hasItemConformingToTypeIdentifier($0) }) {
-            return try await loadText(item, type: type)
-        }
-        guard let type = item.registeredTypeIdentifiers.first(where: { identifier in
+        #if DEBUG
+        NSLog("VOX_SHARE_QA types=%@", item.registeredTypeIdentifiers.joined(separator: ","))
+        #endif
+        // A URL representation is not the contents of the file it points at.
+        // Prefer an explicitly registered content UTI, not a generic supertype
+        // inferred by hasItemConformingToTypeIdentifier.
+        let genericTypes: Set<String> = [UTType.item.identifier, UTType.content.identifier, UTType.data.identifier,
+            UTType.text.identifier, UTType.plainText.identifier, UTType.utf8PlainText.identifier,
+            UTType.utf16PlainText.identifier, UTType.utf16ExternalPlainText.identifier]
+        let contentTypes = item.registeredTypeIdentifiers.filter { identifier in
             guard let type = UTType(identifier), !type.conforms(to: .url) else { return false }
-            return type.conforms(to: .data) || type.conforms(to: .item)
-        }) else { throw ShareInputError.unsupported }
-        return try await loadFile(item, type: type)
+            return type.conforms(to: .data)
+        }
+        if let type = contentTypes.first(where: { UTType($0)?.conforms(to: .sourceCode) == true
+            || $0 == "com.netscape.javascript-source" }) {
+            return try await loadFile(item, type: type)
+        }
+        if contentTypes.contains(UTType.utf8PlainText.identifier) {
+            return try await loadText(item, type: UTType.utf8PlainText.identifier)
+        }
+        if contentTypes.contains(where: { UTType($0)?.conforms(to: .plainText) == true }),
+           item.canLoadObject(ofClass: NSString.self) {
+            return try await loadPlainTextObject(item)
+        }
+        if let type = contentTypes.first(where: { !genericTypes.contains($0) }) {
+            return try await loadFile(item, type: type)
+        }
+        if item.hasItemConformingToTypeIdentifier(UTType.fileURL.identifier) {
+            return try await loadFileURLObject(item)
+        }
+        if let type = contentTypes.first { return try await loadFile(item, type: type) }
+        // Remote conversation links are never fetched.
+        if item.hasItemConformingToTypeIdentifier(UTType.url.identifier) { throw ShareInputError.linkOnly }
+        throw ShareInputError.unsupported
     }
 
     private func loadText(_ item: NSItemProvider, type: String) async throws -> SharePayload {
@@ -147,7 +166,10 @@ import Darwin
                 if state.isCancelled { completion.finish(.failure(CancellationError())); return }
                 if let error { completion.finish(.failure(error)); return }
                 guard let data else { completion.finish(.failure(ShareInputError.unsupported)); return }
-                do { _ = try Self.validatedText(data); completion.finish(.success(.init(bytes: data, filename: nil))) }
+                do {
+                    Self.debugRepresentation(route: "data", type: type, bytes: data)
+                    _ = try Self.validatedText(data); completion.finish(.success(.init(bytes: data, filename: nil)))
+                }
                 catch { completion.finish(.failure(error)) }
             }
             state.install(progress)
@@ -166,12 +188,80 @@ import Darwin
                     // Provider temporary URLs are only valid during this
                     // callback. Read the bounded regular file here, not later.
                     let bytes = try Self.readProviderFile(url, cancellation: state)
+                    Self.debugRepresentation(route: "file-content", type: type, bytes: bytes)
                     _ = try Self.validatedText(bytes)
                     completion.finish(.success(.init(bytes: bytes, filename: url.lastPathComponent)))
                 } catch { completion.finish(.failure(error)) }
             }
             state.install(progress)
         }
+    }
+
+    private func loadFileURLObject(_ item: NSItemProvider) async throws -> SharePayload {
+        guard item.canLoadObject(ofClass: NSURL.self) else { throw ShareInputError.unsupported }
+        let state = provider
+        return try await withCheckedThrowingContinuation { continuation in
+            let completion = ShareCompletion(continuation)
+            let progress = item.loadObject(ofClass: NSURL.self) { object, error in
+                if state.isCancelled { completion.finish(.failure(CancellationError())); return }
+                if let error { completion.finish(.failure(error)); return }
+                guard let object = object as? NSURL, object.isFileURL else {
+                    completion.finish(.failure(ShareInputError.linkOnly)); return
+                }
+                let url = object as URL
+                do {
+                    let bytes = try Self.readCoordinatedFileURL(url, cancellation: state)
+                    Self.debugRepresentation(route: "file-url-object", type: UTType.fileURL.identifier, bytes: bytes)
+                    _ = try Self.validatedText(bytes)
+                    completion.finish(.success(.init(bytes: bytes, filename: url.lastPathComponent)))
+                } catch { completion.finish(.failure(error)) }
+            }
+            state.install(progress)
+        }
+    }
+
+    private func loadPlainTextObject(_ item: NSItemProvider) async throws -> SharePayload {
+        let state = provider
+        return try await withCheckedThrowingContinuation { continuation in
+            let completion = ShareCompletion(continuation)
+            let progress = item.loadObject(ofClass: NSString.self) { object, error in
+                if state.isCancelled { completion.finish(.failure(CancellationError())); return }
+                if let error { completion.finish(.failure(error)); return }
+                guard let object = object as? NSString else { completion.finish(.failure(ShareInputError.unsupported)); return }
+                let text = object as String
+                guard text.utf8.count <= SceneImportInbox.maximumBytes else { completion.finish(.failure(ShareInputError.tooLarge)); return }
+                let bytes = Data(text.utf8)
+                do {
+                    Self.debugRepresentation(route: "string-object", type: UTType.plainText.identifier, bytes: bytes)
+                    _ = try Self.validatedText(bytes)
+                    completion.finish(.success(.init(bytes: bytes, filename: nil)))
+                } catch { completion.finish(.failure(error)) }
+            }
+            state.install(progress)
+        }
+    }
+
+    private nonisolated static func readCoordinatedFileURL(_ url: URL, cancellation: ShareProviderProgress) throws -> Data {
+        guard url.isFileURL else { throw ShareInputError.linkOnly }
+        if cancellation.isCancelled { throw CancellationError() }
+        let scoped = url.startAccessingSecurityScopedResource()
+        defer { if scoped { url.stopAccessingSecurityScopedResource() } }
+        var coordinationError: NSError?, result: Result<Data, Error>?
+        NSFileCoordinator().coordinate(readingItemAt: url, options: .withoutChanges, error: &coordinationError) { localURL in
+            result = Result { try readProviderFile(localURL, cancellation: cancellation) }
+        }
+        if let coordinationError { throw coordinationError }
+        guard let result else { throw ShareInputError.unsafeFile }
+        return try result.get()
+    }
+
+    private nonisolated static func debugRepresentation(route: String, type: String, bytes: Data) {
+        #if DEBUG
+        NSLog("VOX_SHARE_QA route=%@ type=%@ bytes=%ld utf8=%d binaryPlist=%d utf16BOM=%d", route, type, bytes.count,
+              String(data: bytes, encoding: .utf8) != nil ? 1 : 0,
+              bytes.starts(with: Data("bplist00".utf8)) ? 1 : 0,
+              (bytes.starts(with: [0xff, 0xfe]) || bytes.starts(with: [0xfe, 0xff])) ? 1 : 0)
+        #endif
     }
 
     private nonisolated static func validatedText(_ bytes: Data) throws -> String {

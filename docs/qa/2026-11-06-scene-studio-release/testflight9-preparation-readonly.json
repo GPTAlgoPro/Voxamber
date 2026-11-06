@@ -1,0 +1,29 @@
+{
+  "appID": "6831042755",
+  "buildNumber": "9",
+  "groupID": "7d4c4aba-14b9-423e-b1ae-d50ce983d527",
+  "internalTesterCount": 1,
+  "marketingVersion": "0.2.0",
+  "mutationCount": 0,
+  "status": "BUILD_NOT_FOUND",
+  "observedAtUTC": "2026-11-06T07:12:16.314365+00:00",
+  "exitCode": 0,
+  "mode": "GET-only preflight; no distribution",
+  "remoteMutations": 0,
+  "sourceSHA256": {
+    "scripts/app-release/scene_testflight.py": "b94ef0aa2cd73104343c8b8419656177bdd935eef0eab67fc6a4f6d91a0167c4",
+    "scripts/app-release/test_scene_testflight.py": "2d7a67d97ce856766694a44fb1e0384234bd16fcfbbd7c2f91d44375715910a3",
+    "scripts/app-release/README.md": "70d75a122d7ebf66448f276ec7e3426fea4b72642122e4f69c7874e36fb6331f"
+  },
+  "offlineGuardTests": {
+    "passed": 16,
+    "failures": 0,
+    "seconds": 0.021,
+    "oldBuild7And8QueriesAuditApprovalRejected": true,
+    "actualAppleOperations": false
+  },
+  "authConfigurationReusedFromBuild7": true,
+  "journalScope": "scene-testflight9",
+  "distributionAttempted": false,
+  "build8RevokedOrModified": false
+}
