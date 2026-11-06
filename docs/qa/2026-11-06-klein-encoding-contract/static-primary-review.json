@@ -1,0 +1,98 @@
+{
+  "LPStaticEncodingBlockerFound": false,
+  "candidateConfigBytesMatchOfficialFP8": false,
+  "candidateTokenizerConfigSHA256": "8e7dd4250db58b2a29792562d727b2715dc0fe79a94b446caa4c07db39eceba6",
+  "completeLPTokenIDsCompared": false,
+  "fixedIntentJSONSHA256": "b90098e80c8fc2b07e2a617a00197f63317d20273109fc79e702da138fd390c4",
+  "hiddenStatePrimaryDocumentation": "https://huggingface.co/docs/transformers/model_doc/qwen3",
+  "hostReview": {
+    "PNGAndReportIOFailureNonzero": true,
+    "engineUnloadedAndNotRunningChecked": true,
+    "noOldImageReplayOrSecondaryModelCall": true,
+    "owned900sWatchCancelsActualGenerationAndAwaits": true,
+    "singlePublicImageOnlyCall": true,
+    "visualQualityStillPending": true,
+    "watchAndSamplerJoined": true
+  },
+  "nativeSourceSHA256": {
+    "Apple/.build/Flux2Candidate/SDK/Sources/FluxTextEncoders/Embeddings/KleinConfig.swift": "7d198cb1a41b2a8d5cf80ab3e228066523d6309ac41b4625b328d955a34f8fbc",
+    "Apple/.build/Flux2Candidate/SDK/Sources/FluxTextEncoders/Embeddings/KleinEmbeddingExtractor.swift": "5b2d6fa501bff041ed33cfefc0c05cf3a2fe836891a843d49f7ae6176c13fd3b",
+    "Apple/.build/Flux2Candidate/SDK/Sources/FluxTextEncoders/Model/Qwen3/Qwen3Model.swift": "2a5778234842e788bd23e33a561d7dd8b2f2982970679ba1bb5e9f4e988fff7f"
+  },
+  "nonLPDifference": "Native removes literal [IMG]; official Qwen3Embedder does not. The fixed LP has none.",
+  "notEstablished": [
+    "Complete token-ID equality against an independent HF tokenizer runtime.",
+    "Q4 embedding tensor numerical parity with official FP8/PyTorch.",
+    "Actual image quality, full pipeline or iPhone behavior."
+  ],
+  "officialBFL": {
+    "bytes": 14981,
+    "commit": "50fe5162777813d869182b139e83b10743caef15",
+    "path": "src/flux2/text_encoder.py",
+    "repository": "black-forest-labs/flux2",
+    "sha256": "72b1f9aa95dbefac5a0fdd2217d7be5b7e7a42966a4c9370ba4adb00c89b4761",
+    "sourceURL": "https://raw.githubusercontent.com/black-forest-labs/flux2/50fe5162777813d869182b139e83b10743caef15/src/flux2/text_encoder.py"
+  },
+  "officialBFLLineEvidence": {
+    "attentionMaskNoCacheAndHiddenStack": [
+      411,
+      419
+    ],
+    "layerConstants": [
+      27,
+      28
+    ],
+    "paddingAndTruncationMaxLength": [
+      397,
+      402
+    ],
+    "userOnlyAndThinkingFalse": [
+      388,
+      395
+    ]
+  },
+  "officialQwenTokenizerConfiguration": {
+    "bytes": 9732,
+    "fields": {
+      "add_bos_token": false,
+      "bos_token": null,
+      "eos_token": "<|im_end|>",
+      "pad_token": "<|endoftext|>",
+      "padding_side": "ABSENT",
+      "tokenizer_class": "Qwen2Tokenizer",
+      "truncation_side": "ABSENT"
+    },
+    "file": "tokenizer_config.json",
+    "repository": "Qwen/Qwen3-4B-FP8",
+    "revision": "96b30dc13593a244a5e59e84687309f53c375cfa",
+    "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+  },
+  "officialVsCandidateTokenizerConfig": {
+    "differenceScope": "Tool-response prefix detection, assistant reasoning parsing and non-string handling differ; none is exercised by this one user-only plain-string LP.",
+    "differingTopLevelKeys": [
+      "chat_template",
+      "extra_special_tokens"
+    ],
+    "generationPromptThinkingFalseSuffixSame": true,
+    "singlePlainStringUserNoToolsBranchEquivalentByStaticDiff": true,
+    "wholeChatTemplateEqual": false,
+    "wholeFileEqual": false
+  },
+  "reasonNoExactIDClaim": "No HF transformers/tokenizers package in current Python environment; no extra large tool or model was constructed to delay the authorized trial.",
+  "reviewedAtUTC": "2026-11-06T02:19:08.889830+00:00",
+  "schemaVersion": 1,
+  "scope": "Read-only static primary-source encoding contract and public image-only Host lifecycle; no model construction/eval/NN or SDK edits",
+  "staticChecks": {
+    "fixedLPCharacters": 210,
+    "fixedLPContainsIMG": false,
+    "fixedLPPrintableASCII": true,
+    "generationPromptAndEmptyThinkBlock": true,
+    "hiddenLayer9_18_27EmbeddingZeroThenIPlusOne": true,
+    "localAutoTokenizerModelFolder": true,
+    "maskValidOnePaddingZero": true,
+    "middleStatesNotFinalNorm36": true,
+    "noObservedOffByOne": true,
+    "rightPad151643AndPrefixTruncation512": true,
+    "userOnlyNoSystem": true
+  }
+}

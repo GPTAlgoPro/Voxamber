@@ -1,0 +1,19 @@
+{
+  "reviewer": "model_research; actual PNG viewed with view_image, Root independently confirmed same visible attributes by message",
+  "state": "requested2DMainAttributesVisible_notFull3DAcceptance",
+  "redConeOrFrustumShadeVisible": true,
+  "grayCylindricalBaseVisible": true,
+  "thinCylindricalStemVisible": true,
+  "whiteSphericalBulbVisible": true,
+  "extraContent": [
+    "Black cable extends toward both sides; not removed, masked or repaired."
+  ],
+  "notEstablished": [
+    "physical Y=0 or0.8m",
+    "3D topology or thin stem/connectivity",
+    "general prompt success rate",
+    "iPhone12GB6GiB peak",
+    "actual user cancellation latency"
+  ],
+  "comparisonBoundary": "Different whole image-model route, precision/resolution/steps/guidance; no single-variable speed/quality causal claim. No second generation or seed search."
+}

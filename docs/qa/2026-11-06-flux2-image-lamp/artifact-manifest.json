@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "path": "docs/qa/2026-11-06-flux2-image-lamp/condition.json",
+      "bytes": 806,
+      "sha256": "d3e65c4fc7a91a35f1950a55870bee6ba5eb8b1efca30cc4a13b5625ddb25f4f"
+    },
+    {
+      "path": "docs/qa/2026-11-06-flux2-image-lamp/reference-512.png",
+      "bytes": 156364,
+      "sha256": "d47d9561a0a08cfc64fad51ecefd531f571e9894cb7a5d09ea5225a5eef9a69d"
+    },
+    {
+      "path": "docs/qa/2026-11-06-flux2-image-lamp/report.json",
+      "bytes": 20583,
+      "sha256": "66fb0dbadb7d3d22c7542e5393f698b6f664d168cf1546ec6bcd62f029bd071f"
+    },
+    {
+      "path": "docs/qa/2026-11-06-flux2-image-lamp/resources-after.json",
+      "bytes": 9680,
+      "sha256": "697f5e319443b99d050c0885b067e085fca2e9c67ab44aa5e492883cce050fcc"
+    },
+    {
+      "path": "docs/qa/2026-11-06-flux2-image-lamp/source-after.json",
+      "bytes": 23912,
+      "sha256": "6a85dca8ebd3414792401e06c736ee19f46216953e0587bbefbd8a634637239c"
+    },
+    {
+      "path": "docs/qa/2026-11-06-flux2-image-lamp/source-before.json",
+      "bytes": 23901,
+      "sha256": "a3638fe76d1335312435ef07f946a8fb4349a8786f8ed05e3ffa280d3ffc83aa"
+    },
+    {
+      "path": "docs/qa/2026-11-06-flux2-image-lamp/swift-resource-after.json",
+      "bytes": 180,
+      "sha256": "52eb4084973d62945ced613537314b540d2151780a196e181ce2e96c565292d7"
+    },
+    {
+      "path": "docs/qa/2026-11-06-flux2-image-lamp/verification.json",
+      "bytes": 1341,
+      "sha256": "adc091469c6ea8f9aa359a61ab8b0d3d3ae75ed302b7258cab601bc57020a2c1"
+    },
+    {
+      "path": "docs/qa/2026-11-06-flux2-image-lamp/visual-review.json",
+      "bytes": 841,
+      "sha256": "0ab23c3e8d2089e99adc05437c7bff4150520e2543fc87af26f322e3c5ebd940"
+    }
+  ]
+}
