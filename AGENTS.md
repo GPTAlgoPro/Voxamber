@@ -1,5 +1,8 @@
 # Voxamber repository workflow
 
+- The user clarified on 2026-11-06 that the goal is Google Three-Live's programmatic scene-building workflow running locally through a native iPhone integration. Image diffusion followed by Hunyuan mesh generation was an agent-selected detour, rejected as the primary product architecture. Do not resume its downloads, uploads, default selection or release work automatically.
+- The existing `ThreeLiveNative` package is a Swift geometry serializer, not Google's compiler. The palace PoC used an agent-authored host geometry generator followed by the actual Google compiler; it does not prove that an on-device small model can independently author the same scene. Preserve that distinction when planning or reporting results.
+- Preserve `Apple/.build/Phone6Recovery` and `Apple/.build/Preserved-2026-11-06`: they contain the latest confirmed user-project backup, one verified Qwen model copy, the released build-6 IPA, and incomplete-upload state. They are retained data, not disposable build caches. Use one shared dependency/build location for further work; do not recreate many complete experimental build trees.
 - This project is a general on-device 3D modeling app. Do not constrain creation to buildings, furniture, or a fixed object category list. Examples are inspiration only.
 - Product names: 维珀 / Voxamber. Bundle: `com.kaisun.voxamber`. Category: Productivity.
 - Use native Swift, MLX, Metal, and Apple frameworks. Do not embed Python, JavaScript interpreters, or external script runtimes in the App.

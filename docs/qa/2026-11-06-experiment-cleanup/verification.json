@@ -1,0 +1,17 @@
+{
+  "finishedAtUTC": "2026-11-06T04:07:55Z",
+  "removedPathCount": 468,
+  "freeBeforeBytes": 187620196352,
+  "freeAfterBytes": 303863857152,
+  "freeIncreaseBytes": 116243660800,
+  "projectBeforeAllocatedBytes": 151365627904,
+  "projectAfterAllocatedBytes": 3280490496,
+  "phoneOperations": 0,
+  "remoteDeletion": false,
+  "preservedLatestUserBackup": "Apple/.build/Phone6Recovery",
+  "preservedRoot": "Apple/.build/Preserved-2026-11-06",
+  "sourceFilesVerifiedUnchanged": 1677,
+  "preservedFilesVerified": 72,
+  "preserved": "Original Three-Live PoC/scripts/artifacts/tools/upstream, all tracked source, two latest current projects/draft, one verified Qwen4B copy, TestFlight build6 IPA, small native phone evidence, incomplete upload state",
+  "stoppedExperimentalArchitecture": "Image diffusion to Hunyuan mesh is not the user Three-Live goal; no further model upload or release along that route."
+}
