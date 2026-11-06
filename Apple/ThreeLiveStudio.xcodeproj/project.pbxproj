@@ -7,53 +7,126 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03A5CDA9AFE66C1ADB61B176 /* SceneStudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED77DD9C3B8E9AABF83AC8E /* SceneStudioModel.swift */; };
 		06642796E9722D1435EB8A1C /* MLX-Swift-LM.txt in Resources */ = {isa = PBXBuildFile; fileRef = DCDAA8EC28B0663BE162BF87 /* MLX-Swift-LM.txt */; };
 		0B6F8B57109A9853B0E4F4C4 /* DeviceAcceptanceProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4819A57BEA70E1C4985E4C /* DeviceAcceptanceProbe.swift */; };
+		0C93EEE14458AB9D175011FE /* RobotScene.js in Resources */ = {isa = PBXBuildFile; fileRef = AD1485E5FB75503A86FF23B8 /* RobotScene.js */; };
 		0D0F8F0CB1D09818DB8874C8 /* CreationWorkspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE1E7CBBA34FB74E1C50541 /* CreationWorkspace.swift */; };
 		10C43C21352AC0E3223B69E4 /* AppleHostedModelSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27282FCC542B59EC0FE1FD8B /* AppleHostedModelSource.swift */; };
+		1359E6E05A564F64EEBB6972 /* Google-Three-Live-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB1641729C96C9B70C0D7152 /* Google-Three-Live-LICENSE.txt */; };
+		16EC55CF8AC9DC71C795681E /* ProjectThumbnailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4203EAD386C2C9D72522CF0 /* ProjectThumbnailService.swift */; };
 		1B60E779EEBB540AE66D716C /* ProjectStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04C8B33AF3D96C0D4535C00 /* ProjectStoreTests.swift */; };
 		1FE359B0ED1674E9EF67DD9A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF45F9340525D2129B11DB5D /* StoreKit.framework */; };
 		211C5006D7CFB79182E6D414 /* MLX-Swift.txt in Resources */ = {isa = PBXBuildFile; fileRef = EFD1803395CA85AB24FAC799 /* MLX-Swift.txt */; };
+		24BF5563B1FDC863A31BD4F8 /* ImageSDXL.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CC0329B84603F17C4F5F969 /* ImageSDXL.json */; };
 		2746C44FB805A29ED90622F0 /* ProjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280D56379EA5205075F096F /* ProjectStore.swift */; };
+		298FAA1BF51F257AFAFB1D61 /* Snap3D-ThirdPartyNotices.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6A3D93B295607BA07E2A541D /* Snap3D-ThirdPartyNotices.txt */; };
 		2B795DDB1AB3B1C7719D4A67 /* ProjectThumbnailServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AAC929D64DEC63EBDEB54F /* ProjectThumbnailServiceTests.swift */; };
 		2B7B505AB4E87064276FD02D /* DLPack.txt in Resources */ = {isa = PBXBuildFile; fileRef = 201E3B61AC694BEFC803EA43 /* DLPack.txt */; };
 		2CBF57C9284B47815132E2A2 /* ModelViewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B69F79EBFC5147A7BF5DAF /* ModelViewport.swift */; };
 		2D41AA772C76BACC9E3F3392 /* OnDeviceInferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF508025F5FC777A4603B5 /* OnDeviceInferenceTests.swift */; };
 		350C9B2938283B0D820FBC51 /* ProjectThumbnailStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E3E1C2725FDB4B478CB0DB /* ProjectThumbnailStoreTests.swift */; };
+		367B2876F375A5EE8753985F /* Apple-SDXL.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB6C4F92FE7BBCFA6004DB72 /* Apple-SDXL.txt */; };
+		3BE4B4701A62C2DAE8717CC8 /* NeuralModelCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E3D7A71C52E0E682A3487 /* NeuralModelCatalog.swift */; };
+		3D5C1A6CCEE9F571D6479079 /* SceneImportInbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6AD281490239A3F6D8087 /* SceneImportInbox.swift */; };
 		3FB858C1D08847D663B1537C /* ProjectLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34368402DAEA02742BB382C /* ProjectLibrary.swift */; };
+		47171915DD45B0540313A15E /* NeuralProjectValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889DF29060A43FC9531BF594 /* NeuralProjectValidation.swift */; };
+		4AEFFC2585D146AA4623BAAA /* ProjectContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904C2D0A9B188BEA0111A5A6 /* ProjectContent.swift */; };
+		4AF8B2C58ED742A84B829307 /* NeuralShapeDeviceProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F8459A70D091F4780AFF0 /* NeuralShapeDeviceProbe.swift */; };
+		4C6C277B3997577111CECC6E /* SceneImportInbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6AD281490239A3F6D8087 /* SceneImportInbox.swift */; };
+		4CF1B20E413B1D7AAA2D8EF8 /* NeuralModelLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07940B7E82FAEB28A3F4B0C1 /* NeuralModelLibrary.swift */; };
 		5067306AFCE364EAD77E0F66 /* Qwen-Model.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54CE96C85AFCA7B2690EF271 /* Qwen-Model.txt */; };
+		54489A6C0D10E0F478AA88CF /* ShapeHunyuan21.json in Resources */ = {isa = PBXBuildFile; fileRef = 23672F2F8A59ABA1F5082B65 /* ShapeHunyuan21.json */; };
 		594462793CB30CCC44DADE8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70B6E574C3FDD00A59F91E55 /* Assets.xcassets */; };
+		5980B03B4BA644283F9A6FFC /* LegacyProjectReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E622D0EF8407D1ACCAEB58 /* LegacyProjectReader.swift */; };
+		5B207B507713301F4153DAE1 /* WorkspaceDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1AA11060C63F3976587DE7 /* WorkspaceDraft.swift */; };
+		5B616543FD43C3D4338CA444 /* IntentQwen08.json in Resources */ = {isa = PBXBuildFile; fileRef = F219C87A8357666AA46CF84D /* IntentQwen08.json */; };
 		5C74AB977FB226D2FD8F1135 /* BackgroundAssets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B3F5ABD175835382C8AB6E /* BackgroundAssets.framework */; };
 		5E58539DF5B1BF2E88CA4DAA /* StudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D63FB8B9B5D0D5DC25D94 /* StudioModel.swift */; };
 		5F854FF5F1D21529FA212213 /* SceneParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D195F6009493FA872C580EA /* SceneParameters.swift */; };
 		60F343B870C49C73C31CBCF8 /* XGrammar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1955D6A60DD8510C3A25EE58 /* XGrammar.txt */; };
+		62BB4ECCD3699CD69ED3F285 /* NeuralMeshControlsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8953600C7788269776BC6095 /* NeuralMeshControlsTests.swift */; };
 		63D435164D2E16E30FF9F0ED /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087F76B9196AEABF7B73CAD6 /* Downloader.swift */; };
+		6471B149B9130ECD6873E481 /* PublicationPermit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD57ED2F970561A24D555F0 /* PublicationPermit.swift */; };
 		64DEB54A599505F19683FCD0 /* CreationJourneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01A6C0FE9282C7BEFC3EF2A /* CreationJourneyTests.swift */; };
+		656A035BEC45EA66D9C43C73 /* NeuralManagedImportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C33D655F3789DE141117537 /* NeuralManagedImportTests.swift */; };
 		65EEF26D5C36D93A91F3DE0B /* ModelLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4BBC0DC51B93B06AE03D6 /* ModelLibrary.swift */; };
+		66286C60F89F2C405C78B031 /* GoogleThreeLiveNative in Frameworks */ = {isa = PBXBuildFile; productRef = 2E3C2C66B8C9FCDD5F30B7DD /* GoogleThreeLiveNative */; };
+		677AA77C99AC26D4B4534E0E /* PhoneNativePreviewPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92BE41AED8B4F44175F77B6 /* PhoneNativePreviewPanel.swift */; };
+		688786B6F00F5A495BC64FAA /* NeuralShapeDeviceProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F8459A70D091F4780AFF0 /* NeuralShapeDeviceProbe.swift */; };
+		69390D0ED9EFE283E3431996 /* SceneShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03F50BA96267E915D66B548 /* SceneShareViewController.swift */; };
+		6C17E8C7D725F810259398F7 /* SceneStudioDeviceProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF49C8BFACDCD76E45376FCB /* SceneStudioDeviceProbe.swift */; };
+		7124EF2022D63EA61E777215 /* Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 250104355F0B46AB7921DA5B /* Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt */; };
+		721221BF590EAA79C166C4E3 /* SceneStudioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6D5936AB4B45A447AF2749 /* SceneStudioUITests.swift */; };
+		730719E60645971640BC88DD /* WorkspaceDraftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73FC96D36544E8ED391D00B /* WorkspaceDraftTests.swift */; };
 		7307B3A56DF646399D609104 /* ProjectThumbnailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4203EAD386C2C9D72522CF0 /* ProjectThumbnailService.swift */; };
+		730D4A498B153D830155B5D3 /* NeuralMeshControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD53AB966136DAFF4BA9F39 /* NeuralMeshControls.swift */; };
+		73B1B2426B99E9EA3B9B9396 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 975B09C8D199A3944E174C24 /* PrivacyInfo.xcprivacy */; };
 		7A7CA8A9D0FABB865CE882A2 /* VerifiedModelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582011CB7CCE0BA1CAB7C70 /* VerifiedModelStore.swift */; };
+		7BA91410DC7D238B6643ADE8 /* VoxamberCreationNative in Frameworks */ = {isa = PBXBuildFile; productRef = F7708368FFF192F251EE2EE1 /* VoxamberCreationNative */; };
 		7C98C4BC2CB6CBCE3DF4DED6 /* AIContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE8C7197DFA072A45BE55A2 /* AIContextTests.swift */; };
+		7CFD82240F806784ECFFD389 /* NeuralEditRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E9B0EBE49D58F96207B8A9 /* NeuralEditRecordTests.swift */; };
+		7FA4E45DE6F3199E77FE581E /* ProjectThumbnailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4203EAD386C2C9D72522CF0 /* ProjectThumbnailService.swift */; };
 		7FAF09644149AB3C7ECB1E13 /* StudioCancellationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B56DE5197A148ECE286CEC /* StudioCancellationTests.swift */; };
 		81025439F11E499D01F19501 /* StudioStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68390729A630CD89992EA17 /* StudioStyle.swift */; };
+		8573C733BAEC41B8991F3499 /* NeuralManagedImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0B5C6A0A5C1A7D6312167B /* NeuralManagedImport.swift */; };
+		8A34C498BC47F5D4BABEAA16 /* NeuralAssetStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535E82838875B5059A45166E /* NeuralAssetStoreTests.swift */; };
+		8B053DF77D64C11E37D8E0DF /* SceneStudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2477991728AE2FBB229469C2 /* SceneStudioApp.swift */; };
+		8B89494EC3FBD60136E5CA18 /* VoxamberCreationNative in Frameworks */ = {isa = PBXBuildFile; productRef = DFF203BDFB70E002BA21C23E /* VoxamberCreationNative */; };
 		8C0C7091D4FE41D5DC749778 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 975B09C8D199A3944E174C24 /* PrivacyInfo.xcprivacy */; };
 		8C154C2B0E7B23AA39C1B829 /* MemoryPressureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54942D64E68D3C8B05A2B16F /* MemoryPressureTests.swift */; };
+		8DFA42B4B9F7F2F215FC6063 /* IntentQwen08.json in Resources */ = {isa = PBXBuildFile; fileRef = 527ECF28CBF6B9C65A94E0D7 /* IntentQwen08.json */; };
+		8EC7FF49F040C0FAE5B6380F /* NeuralEditRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C66C6B02FB9F50D614008A /* NeuralEditRecord.swift */; };
 		914CACA573F3E0A5E722B772 /* PicoJSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6EC515AFC8DB6C3CEA578FF3 /* PicoJSON.txt */; };
 		94E62342437321B659976D08 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C871680D9158E22213C02D9F /* ModelManager.swift */; };
+		959F7428A9E3D3AD2DA308FD /* Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4DD2AB436EBBE0E8E5A1FD23 /* Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt */; };
+		9A5603654A74977D3D02081B /* NeuralModelDelivery.json in Resources */ = {isa = PBXBuildFile; fileRef = 66CA0CB4E0F0C2D46D6C3C4C /* NeuralModelDelivery.json */; };
 		9CBDDE11846CEEA50A6B2735 /* ExtensionFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C22B15D6A16DD63FF2DC91 /* ExtensionFoundation.framework */; };
+		A3562E178B1C3F4B828CB163 /* ProjectStoreV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FF5091270B0BF47D6722E7 /* ProjectStoreV2Tests.swift */; };
+		A380DE47D57FA892901DC8C9 /* NeuralModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC712F41FE2331EBA52F33 /* NeuralModelManager.swift */; };
 		A390520CABCACFD8DA094AE2 /* ThreeLiveNative in Frameworks */ = {isa = PBXBuildFile; productRef = 89274F890EAFAF9F9FE95136 /* ThreeLiveNative */; };
 		A437FC6A5A769E7879A90452 /* CreationCore in Frameworks */ = {isa = PBXBuildFile; productRef = F902F70628D1416BE2E9119D /* CreationCore */; };
 		A4C6B1067A39FCD9C5D0DAD0 /* QwenNative in Frameworks */ = {isa = PBXBuildFile; productRef = 9C74310C7B87863D0601DF9A /* QwenNative */; };
 		A9B33B1E666BB6B4F139F1A3 /* MemoryPressurePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8AC5A8198F4814A9949AB8 /* MemoryPressurePolicy.swift */; };
+		AC99CB9AB90ED5A9C6F1B453 /* CreationCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2741DDB36FCCEEABE01696E6 /* CreationCore */; };
+		AE99C0F06F102784EA48FFD6 /* Hunyuan3D-Swift-ThirdParty.txt in Resources */ = {isa = PBXBuildFile; fileRef = ADDC2BDAC56E5EC02E2DC792 /* Hunyuan3D-Swift-ThirdParty.txt */; };
 		B13EE6CD109051E3229E21D6 /* Swift-Transformers.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDC64293A8C8A2D9F957F27B /* Swift-Transformers.txt */; };
+		B302DC52592EAC5782D05C88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70B6E574C3FDD00A59F91E55 /* Assets.xcassets */; };
+		B41F458521767BFA9400AA9B /* Google-Three-Live-Source.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B571EC35EE4C9B0848E737F /* Google-Three-Live-Source.json */; };
 		B765183968903F1CB5CE5542 /* VoxamberModelDownloader.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 0EAD657921267AD8370227EE /* VoxamberModelDownloader.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B76F37E8F10F2DC84512C81C /* Tencent-Hunyuan-3D-2.1-License.txt in Resources */ = {isa = PBXBuildFile; fileRef = B24D197ED9BAD976C905854F /* Tencent-Hunyuan-3D-2.1-License.txt */; };
+		B897C1F7DC37593836D6BFF7 /* NeuralEditPreparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F755D1A17B7ECAB1B37D678A /* NeuralEditPreparation.swift */; };
+		B8F4F7FFE00316CFA52A687B /* ImageFluxKlein.json in Resources */ = {isa = PBXBuildFile; fileRef = 744C471C4A232867A9BCCA1A /* ImageFluxKlein.json */; };
+		B9636D96DA8AF812DE70D41F /* ProgramProjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE55BC08256F7A1368BD4852 /* ProgramProjectStore.swift */; };
+		C3920F94F845C3B99BA49FE2 /* SceneStudioWorkspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10C404F2469623E26243369 /* SceneStudioWorkspace.swift */; };
+		C96FCE5EE391368D1E5DA5B3 /* ModelViewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B69F79EBFC5147A7BF5DAF /* ModelViewport.swift */; };
 		CB4B92B1D96C5E2C6E84A460 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 415912223D05F8300A862C2F /* InfoPlist.strings */; };
+		CC8AE34ADBA051E6B33E4BED /* NeuralAppleHostedModelSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F9CE922BABB7730D08B10 /* NeuralAppleHostedModelSource.swift */; };
+		CCA13D89FEA8B9336E8219D5 /* SceneAuthoringInstructions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 818A3E649EBAA0284B1D1F82 /* SceneAuthoringInstructions.txt */; };
+		CDCC7A9412A7B0451ECFEBFF /* NativePipelineDeviceProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225353CAE4FA7567E8191C89 /* NativePipelineDeviceProbe.swift */; };
 		CE1927D0FECD6406261835DE /* ThreeLiveStudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D8F9C3D35EA6D90EB4F36B /* ThreeLiveStudioApp.swift */; };
 		CE4BED8D13AE522EFDBB6349 /* LanguageModel.json in Resources */ = {isa = PBXBuildFile; fileRef = 901D7D08CA2F20683A8A2FFB /* LanguageModel.json */; };
+		D4FA5505C16336020D71A882 /* ProjectStoreNeuralOriginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA30D72294D9D6C01B8AC5 /* ProjectStoreNeuralOriginTests.swift */; };
 		D7234CADC39EEFE68675A427 /* ModelViewportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF83FC98660B58DFE692E98 /* ModelViewportTests.swift */; };
+		DDE939E03A01575388319E92 /* ModelViewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B69F79EBFC5147A7BF5DAF /* ModelViewport.swift */; };
+		DE0D1BCDEF545A1669D3EE66 /* SDXL-Model.txt in Resources */ = {isa = PBXBuildFile; fileRef = 400ED8933775CE8971BC2B53 /* SDXL-Model.txt */; };
+		E2DD00CF608A9DCC274DFD5A /* VoxamberSceneShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 38F5827745A86B54E5F72517 /* VoxamberSceneShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E4255E75F77FF533A67C4010 /* OpenAI-CLIP.txt in Resources */ = {isa = PBXBuildFile; fileRef = B82665F54895D405C582C40A /* OpenAI-CLIP.txt */; };
+		E5ACF66F999518EAE76ECC67 /* NeuralProjectDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E13FD86B9D338927D458CF6 /* NeuralProjectDescriptor.swift */; };
+		E6A95F3C49E158D9B2AC2F3C /* ShapeDeviceQAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3199A8B5FA09FBC81FE43C95 /* ShapeDeviceQAApp.swift */; };
+		F01C5B3448E3F388242157F0 /* ProgramProjectStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301D3FDBE5F7C638A1D0D603 /* ProgramProjectStoreTests.swift */; };
+		F13B5A9D1E28C623B812F953 /* Hunyuan3D-Swift-MIT.txt in Resources */ = {isa = PBXBuildFile; fileRef = 75A5D1AB964D6FBA3C9E2A64 /* Hunyuan3D-Swift-MIT.txt */; };
 		F9F2C66F5F46F1B3E1E36B18 /* VerifiedModelStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A9A18EB6AE211BFC62B0F /* VerifiedModelStoreTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		451906C0D244DB270BF62DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 779BBD25C28B658BE540B8D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37D69FB7A293E6FF91E534A7;
+			remoteInfo = VoxamberSceneShare;
+		};
 		645DF5572B473E98BD204D7F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 779BBD25C28B658BE540B8D3 /* Project object */;
@@ -68,6 +141,20 @@
 			remoteGlobalIDString = E768C906EF941D87D1D5B5A3;
 			remoteInfo = ThreeLiveStudio;
 		};
+		D46E450CFD2071822A62C492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 779BBD25C28B658BE540B8D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B88CF4F55DF72E3DD3A0DB60;
+			remoteInfo = VoxamberSceneStudio;
+		};
+		D5437619FBBD6AA54FD8B5EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 779BBD25C28B658BE540B8D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B88CF4F55DF72E3DD3A0DB60;
+			remoteInfo = VoxamberSceneStudio;
+		};
 		D6B773F8B0847208AD3DEF75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 779BBD25C28B658BE540B8D3 /* Project object */;
@@ -78,6 +165,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		01A92D4E2BF1B3D5470415E0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E2DD00CF608A9DCC274DFD5A /* VoxamberSceneShare.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C62706CDC80460C4E14692C /* Embed ExtensionKit Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,56 +190,121 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07940B7E82FAEB28A3F4B0C1 /* NeuralModelLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralModelLibrary.swift; sourceTree = "<group>"; };
 		087F76B9196AEABF7B73CAD6 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		0A4819A57BEA70E1C4985E4C /* DeviceAcceptanceProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAcceptanceProbe.swift; sourceTree = "<group>"; };
 		0D8AC5A8198F4814A9949AB8 /* MemoryPressurePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryPressurePolicy.swift; sourceTree = "<group>"; };
 		0EAD657921267AD8370227EE /* VoxamberModelDownloader.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = VoxamberModelDownloader.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C22B15D6A16DD63FF2DC91 /* ExtensionFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExtensionFoundation.framework; path = System/Library/Frameworks/ExtensionFoundation.framework; sourceTree = SDKROOT; };
+		1340A9D2364C4544D1988880 /* SceneStudio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SceneStudio.entitlements; sourceTree = "<group>"; };
 		16DCFEE2C9F656B7E5212DB7 /* CreationCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CreationCore; path = Packages/CreationCore; sourceTree = SOURCE_ROOT; };
+		17494FAC1F9F1DF84F75EA36 /* VoxamberSceneStudioUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = VoxamberSceneStudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17A6AD281490239A3F6D8087 /* SceneImportInbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneImportInbox.swift; sourceTree = "<group>"; };
 		1955D6A60DD8510C3A25EE58 /* XGrammar.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = XGrammar.txt; sourceTree = "<group>"; };
+		1C33D655F3789DE141117537 /* NeuralManagedImportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralManagedImportTests.swift; sourceTree = "<group>"; };
+		1E0B5C6A0A5C1A7D6312167B /* NeuralManagedImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralManagedImport.swift; sourceTree = "<group>"; };
 		201E3B61AC694BEFC803EA43 /* DLPack.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DLPack.txt; sourceTree = "<group>"; };
+		225353CAE4FA7567E8191C89 /* NativePipelineDeviceProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativePipelineDeviceProbe.swift; sourceTree = "<group>"; };
 		2280D56379EA5205075F096F /* ProjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStore.swift; sourceTree = "<group>"; };
+		23672F2F8A59ABA1F5082B65 /* ShapeHunyuan21.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ShapeHunyuan21.json; sourceTree = "<group>"; };
 		2446471427102B8E94EF51A2 /* ThreeLiveNative */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ThreeLiveNative; path = Packages/ThreeLiveNative; sourceTree = SOURCE_ROOT; };
+		2477991728AE2FBB229469C2 /* SceneStudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneStudioApp.swift; sourceTree = "<group>"; };
+		250104355F0B46AB7921DA5B /* Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt"; sourceTree = "<group>"; };
 		27282FCC542B59EC0FE1FD8B /* AppleHostedModelSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleHostedModelSource.swift; sourceTree = "<group>"; };
 		2AF83FC98660B58DFE692E98 /* ModelViewportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewportTests.swift; sourceTree = "<group>"; };
+		301D3FDBE5F7C638A1D0D603 /* ProgramProjectStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramProjectStoreTests.swift; sourceTree = "<group>"; };
+		3199A8B5FA09FBC81FE43C95 /* ShapeDeviceQAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeDeviceQAApp.swift; sourceTree = "<group>"; };
+		38F5827745A86B54E5F72517 /* VoxamberSceneShare.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = VoxamberSceneShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B56DE5197A148ECE286CEC /* StudioCancellationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioCancellationTests.swift; sourceTree = "<group>"; };
+		3B1AA11060C63F3976587DE7 /* WorkspaceDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceDraft.swift; sourceTree = "<group>"; };
 		3B930A8796D87852112F0CD7 /* ThreeLiveStudio.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ThreeLiveStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BD53AB966136DAFF4BA9F39 /* NeuralMeshControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralMeshControls.swift; sourceTree = "<group>"; };
+		3CC0329B84603F17C4F5F969 /* ImageSDXL.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ImageSDXL.json; sourceTree = "<group>"; };
+		3EBA30D72294D9D6C01B8AC5 /* ProjectStoreNeuralOriginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStoreNeuralOriginTests.swift; sourceTree = "<group>"; };
+		400ED8933775CE8971BC2B53 /* SDXL-Model.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SDXL-Model.txt"; sourceTree = "<group>"; };
 		424D60B49063FF2F7F5CB3CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		48EF508025F5FC777A4603B5 /* OnDeviceInferenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDeviceInferenceTests.swift; sourceTree = "<group>"; };
+		4A4629E92B214B0A68953FBD /* VoxamberSceneStudio.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = VoxamberSceneStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CD57ED2F970561A24D555F0 /* PublicationPermit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationPermit.swift; sourceTree = "<group>"; };
 		4D195F6009493FA872C580EA /* SceneParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneParameters.swift; sourceTree = "<group>"; };
 		4D8D198FFAF4F324434D941E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4DD2AB436EBBE0E8E5A1FD23 /* Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt"; sourceTree = "<group>"; };
 		503BB8675A553EB2AA32D2B7 /* QwenNative */ = {isa = PBXFileReference; lastKnownFileType = folder; name = QwenNative; path = Packages/QwenNative; sourceTree = SOURCE_ROOT; };
+		527ECF28CBF6B9C65A94E0D7 /* IntentQwen08.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IntentQwen08.json; sourceTree = "<group>"; };
+		535E82838875B5059A45166E /* NeuralAssetStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralAssetStoreTests.swift; sourceTree = "<group>"; };
 		54942D64E68D3C8B05A2B16F /* MemoryPressureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryPressureTests.swift; sourceTree = "<group>"; };
 		54CE96C85AFCA7B2690EF271 /* Qwen-Model.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Qwen-Model.txt"; sourceTree = "<group>"; };
 		557F2F9B24A98C6684073F84 /* ThreeLiveStudioTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ThreeLiveStudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55AAC929D64DEC63EBDEB54F /* ProjectThumbnailServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectThumbnailServiceTests.swift; sourceTree = "<group>"; };
+		5A6D5936AB4B45A447AF2749 /* SceneStudioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneStudioUITests.swift; sourceTree = "<group>"; };
+		5BC59E9383D221904090FFF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		61E622D0EF8407D1ACCAEB58 /* LegacyProjectReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyProjectReader.swift; sourceTree = "<group>"; };
+		66CA0CB4E0F0C2D46D6C3C4C /* NeuralModelDelivery.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NeuralModelDelivery.json; sourceTree = "<group>"; };
+		6A3D93B295607BA07E2A541D /* Snap3D-ThirdPartyNotices.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Snap3D-ThirdPartyNotices.txt"; sourceTree = "<group>"; };
 		6A97004E3096CE718ABE9059 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		6DF00D06E2AAD5FEC32BC075 /* VoxamberCreationNative */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VoxamberCreationNative; path = Packages/VoxamberCreationNative; sourceTree = SOURCE_ROOT; };
+		6E13FD86B9D338927D458CF6 /* NeuralProjectDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralProjectDescriptor.swift; sourceTree = "<group>"; };
 		6EC515AFC8DB6C3CEA578FF3 /* PicoJSON.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PicoJSON.txt; sourceTree = "<group>"; };
+		707F8459A70D091F4780AFF0 /* NeuralShapeDeviceProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralShapeDeviceProbe.swift; sourceTree = "<group>"; };
 		70B6E574C3FDD00A59F91E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		724E3D7A71C52E0E682A3487 /* NeuralModelCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralModelCatalog.swift; sourceTree = "<group>"; };
+		744C471C4A232867A9BCCA1A /* ImageFluxKlein.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ImageFluxKlein.json; sourceTree = "<group>"; };
+		75A5D1AB964D6FBA3C9E2A64 /* Hunyuan3D-Swift-MIT.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Hunyuan3D-Swift-MIT.txt"; sourceTree = "<group>"; };
+		7B571EC35EE4C9B0848E737F /* Google-Three-Live-Source.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Google-Three-Live-Source.json"; sourceTree = "<group>"; };
+		80551E914D257EF624A406E7 /* SceneShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SceneShare.entitlements; sourceTree = "<group>"; };
+		818A3E649EBAA0284B1D1F82 /* SceneAuthoringInstructions.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = SceneAuthoringInstructions.txt; sourceTree = "<group>"; };
+		889DF29060A43FC9531BF594 /* NeuralProjectValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralProjectValidation.swift; sourceTree = "<group>"; };
+		8953600C7788269776BC6095 /* NeuralMeshControlsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralMeshControlsTests.swift; sourceTree = "<group>"; };
+		8AF8A267B76FF171DE425332 /* VoxamberSceneStudioTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = VoxamberSceneStudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE1E7CBBA34FB74E1C50541 /* CreationWorkspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationWorkspace.swift; sourceTree = "<group>"; };
 		901D7D08CA2F20683A8A2FFB /* LanguageModel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LanguageModel.json; sourceTree = "<group>"; };
+		904C2D0A9B188BEA0111A5A6 /* ProjectContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectContent.swift; sourceTree = "<group>"; };
 		975B09C8D199A3944E174C24 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		9F596AD3B0F0A9AF33029D37 /* ThreeLiveStudioUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ThreeLiveStudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63D63FB8B9B5D0D5DC25D94 /* StudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioModel.swift; sourceTree = "<group>"; };
 		A68390729A630CD89992EA17 /* StudioStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioStyle.swift; sourceTree = "<group>"; };
+		AD1485E5FB75503A86FF23B8 /* RobotScene.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = RobotScene.js; sourceTree = "<group>"; };
+		ADDC2BDAC56E5EC02E2DC792 /* Hunyuan3D-Swift-ThirdParty.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Hunyuan3D-Swift-ThirdParty.txt"; sourceTree = "<group>"; };
 		B1F4BBC0DC51B93B06AE03D6 /* ModelLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLibrary.swift; sourceTree = "<group>"; };
+		B1FF5091270B0BF47D6722E7 /* ProjectStoreV2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStoreV2Tests.swift; sourceTree = "<group>"; };
+		B24D197ED9BAD976C905854F /* Tencent-Hunyuan-3D-2.1-License.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Tencent-Hunyuan-3D-2.1-License.txt"; sourceTree = "<group>"; };
 		B32A9A18EB6AE211BFC62B0F /* VerifiedModelStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedModelStoreTests.swift; sourceTree = "<group>"; };
+		B82665F54895D405C582C40A /* OpenAI-CLIP.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OpenAI-CLIP.txt"; sourceTree = "<group>"; };
+		B92BE41AED8B4F44175F77B6 /* PhoneNativePreviewPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNativePreviewPanel.swift; sourceTree = "<group>"; };
+		BB6C4F92FE7BBCFA6004DB72 /* Apple-SDXL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Apple-SDXL.txt"; sourceTree = "<group>"; };
 		BDE8C7197DFA072A45BE55A2 /* AIContextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIContextTests.swift; sourceTree = "<group>"; };
+		BE55BC08256F7A1368BD4852 /* ProgramProjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramProjectStore.swift; sourceTree = "<group>"; };
 		C04C8B33AF3D96C0D4535C00 /* ProjectStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStoreTests.swift; sourceTree = "<group>"; };
 		C2B69F79EBFC5147A7BF5DAF /* ModelViewport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewport.swift; sourceTree = "<group>"; };
 		C2E3E1C2725FDB4B478CB0DB /* ProjectThumbnailStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectThumbnailStoreTests.swift; sourceTree = "<group>"; };
 		C34368402DAEA02742BB382C /* ProjectLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectLibrary.swift; sourceTree = "<group>"; };
 		C582011CB7CCE0BA1CAB7C70 /* VerifiedModelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedModelStore.swift; sourceTree = "<group>"; };
+		C67F9CE922BABB7730D08B10 /* NeuralAppleHostedModelSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralAppleHostedModelSource.swift; sourceTree = "<group>"; };
 		C871680D9158E22213C02D9F /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		CAD7F413DC54B7C7B397AC08 /* GoogleThreeLiveNative */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GoogleThreeLiveNative; path = Packages/GoogleThreeLiveNative; sourceTree = SOURCE_ROOT; };
+		CB1D74F12548BB8D1D314E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D01A6C0FE9282C7BEFC3EF2A /* CreationJourneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationJourneyTests.swift; sourceTree = "<group>"; };
 		D0B3F5ABD175835382C8AB6E /* BackgroundAssets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BackgroundAssets.framework; path = System/Library/Frameworks/BackgroundAssets.framework; sourceTree = SDKROOT; };
+		D73FC96D36544E8ED391D00B /* WorkspaceDraftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceDraftTests.swift; sourceTree = "<group>"; };
 		D8D8F9C3D35EA6D90EB4F36B /* ThreeLiveStudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeLiveStudioApp.swift; sourceTree = "<group>"; };
 		DCDAA8EC28B0663BE162BF87 /* MLX-Swift-LM.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MLX-Swift-LM.txt"; sourceTree = "<group>"; };
 		DDC64293A8C8A2D9F957F27B /* Swift-Transformers.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Swift-Transformers.txt"; sourceTree = "<group>"; };
+		E03F50BA96267E915D66B548 /* SceneShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneShareViewController.swift; sourceTree = "<group>"; };
+		E087FAFB12796517E1B2A943 /* ShapeDeviceQA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShapeDeviceQA.entitlements; sourceTree = "<group>"; };
+		E10C404F2469623E26243369 /* SceneStudioWorkspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneStudioWorkspace.swift; sourceTree = "<group>"; };
 		E418C14C1F145540291DD947 /* Voxamber.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Voxamber.entitlements; sourceTree = "<group>"; };
 		E4203EAD386C2C9D72522CF0 /* ProjectThumbnailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectThumbnailService.swift; sourceTree = "<group>"; };
+		E4DC712F41FE2331EBA52F33 /* NeuralModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralModelManager.swift; sourceTree = "<group>"; };
+		E6C66C6B02FB9F50D614008A /* NeuralEditRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralEditRecord.swift; sourceTree = "<group>"; };
+		EED77DD9C3B8E9AABF83AC8E /* SceneStudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneStudioModel.swift; sourceTree = "<group>"; };
 		EF45F9340525D2129B11DB5D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		EFD1803395CA85AB24FAC799 /* MLX-Swift.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MLX-Swift.txt"; sourceTree = "<group>"; };
+		F0E9B0EBE49D58F96207B8A9 /* NeuralEditRecordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralEditRecordTests.swift; sourceTree = "<group>"; };
+		F219C87A8357666AA46CF84D /* IntentQwen08.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IntentQwen08.json; sourceTree = "<group>"; };
+		F755D1A17B7ECAB1B37D678A /* NeuralEditPreparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralEditPreparation.swift; sourceTree = "<group>"; };
+		F9244A189648B2365B4444D0 /* VoxamberShapeQA.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = VoxamberShapeQA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB1641729C96C9B70C0D7152 /* Google-Three-Live-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Google-Three-Live-LICENSE.txt"; sourceTree = "<group>"; };
+		FF49C8BFACDCD76E45376FCB /* SceneStudioDeviceProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneStudioDeviceProbe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +318,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		580D7CD65292AB198859251F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC99CB9AB90ED5A9C6F1B453 /* CreationCore in Frameworks */,
+				66286C60F89F2C405C78B031 /* GoogleThreeLiveNative in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9E9B18E7B93691B7F098462B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,6 +334,15 @@
 				A437FC6A5A769E7879A90452 /* CreationCore in Frameworks */,
 				A4C6B1067A39FCD9C5D0DAD0 /* QwenNative in Frameworks */,
 				A390520CABCACFD8DA094AE2 /* ThreeLiveNative in Frameworks */,
+				7BA91410DC7D238B6643ADE8 /* VoxamberCreationNative in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFFD17BD0A82F39546F7A44C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B89494EC3FBD60136E5CA18 /* VoxamberCreationNative in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +356,11 @@
 				557F2F9B24A98C6684073F84 /* ThreeLiveStudioTests.xctest */,
 				9F596AD3B0F0A9AF33029D37 /* ThreeLiveStudioUITests.xctest */,
 				0EAD657921267AD8370227EE /* VoxamberModelDownloader.appex */,
+				38F5827745A86B54E5F72517 /* VoxamberSceneShare.appex */,
+				4A4629E92B214B0A68953FBD /* VoxamberSceneStudio.app */,
+				8AF8A267B76FF171DE425332 /* VoxamberSceneStudioTests.xctest */,
+				17494FAC1F9F1DF84F75EA36 /* VoxamberSceneStudioUITests.xctest */,
+				F9244A189648B2365B4444D0 /* VoxamberShapeQA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,12 +373,34 @@
 			path = ThreeLiveStudioUITests;
 			sourceTree = "<group>";
 		};
+		0D31027626324E4264CADEC8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				527ECF28CBF6B9C65A94E0D7 /* IntentQwen08.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0E0C998D9B39B7148042AFDA /* ShapeDeviceQA */ = {
+			isa = PBXGroup;
+			children = (
+				225353CAE4FA7567E8191C89 /* NativePipelineDeviceProbe.swift */,
+				B92BE41AED8B4F44175F77B6 /* PhoneNativePreviewPanel.swift */,
+				E087FAFB12796517E1B2A943 /* ShapeDeviceQA.entitlements */,
+				3199A8B5FA09FBC81FE43C95 /* ShapeDeviceQAApp.swift */,
+				0D31027626324E4264CADEC8 /* Resources */,
+			);
+			path = ShapeDeviceQA;
+			sourceTree = "<group>";
+		};
 		15BD1B51CBE5B541B022E2D7 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
 				16DCFEE2C9F656B7E5212DB7 /* CreationCore */,
+				CAD7F413DC54B7C7B397AC08 /* GoogleThreeLiveNative */,
 				503BB8675A553EB2AA32D2B7 /* QwenNative */,
 				2446471427102B8E94EF51A2 /* ThreeLiveNative */,
+				6DF00D06E2AAD5FEC32BC075 /* VoxamberCreationNative */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -201,28 +409,67 @@
 			isa = PBXGroup;
 			children = (
 				0A4819A57BEA70E1C4985E4C /* DeviceAcceptanceProbe.swift */,
+				707F8459A70D091F4780AFF0 /* NeuralShapeDeviceProbe.swift */,
 			);
 			path = Diagnostics;
+			sourceTree = "<group>";
+		};
+		2F5C4A7F85199CD563FA401D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E10C404F2469623E26243369 /* SceneStudioWorkspace.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3463D9F69738FA58508C1278 /* NeuralModels */ = {
+			isa = PBXGroup;
+			children = (
+				744C471C4A232867A9BCCA1A /* ImageFluxKlein.json */,
+				3CC0329B84603F17C4F5F969 /* ImageSDXL.json */,
+				F219C87A8357666AA46CF84D /* IntentQwen08.json */,
+				23672F2F8A59ABA1F5082B65 /* ShapeHunyuan21.json */,
+			);
+			path = NeuralModels;
 			sourceTree = "<group>";
 		};
 		3B245035FA8C2844E5AE75AB /* Licenses */ = {
 			isa = PBXGroup;
 			children = (
+				BB6C4F92FE7BBCFA6004DB72 /* Apple-SDXL.txt */,
 				201E3B61AC694BEFC803EA43 /* DLPack.txt */,
+				75A5D1AB964D6FBA3C9E2A64 /* Hunyuan3D-Swift-MIT.txt */,
+				ADDC2BDAC56E5EC02E2DC792 /* Hunyuan3D-Swift-ThirdParty.txt */,
 				DCDAA8EC28B0663BE162BF87 /* MLX-Swift-LM.txt */,
 				EFD1803395CA85AB24FAC799 /* MLX-Swift.txt */,
+				B82665F54895D405C582C40A /* OpenAI-CLIP.txt */,
 				6EC515AFC8DB6C3CEA578FF3 /* PicoJSON.txt */,
 				54CE96C85AFCA7B2690EF271 /* Qwen-Model.txt */,
+				400ED8933775CE8971BC2B53 /* SDXL-Model.txt */,
+				6A3D93B295607BA07E2A541D /* Snap3D-ThirdPartyNotices.txt */,
 				DDC64293A8C8A2D9F957F27B /* Swift-Transformers.txt */,
+				B24D197ED9BAD976C905854F /* Tencent-Hunyuan-3D-2.1-License.txt */,
+				4DD2AB436EBBE0E8E5A1FD23 /* Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt */,
+				250104355F0B46AB7921DA5B /* Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt */,
 				1955D6A60DD8510C3A25EE58 /* XGrammar.txt */,
 			);
 			path = Licenses;
+			sourceTree = "<group>";
+		};
+		48AFE9E543D4174358DA8959 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				17A6AD281490239A3F6D8087 /* SceneImportInbox.swift */,
+			);
+			path = Import;
 			sourceTree = "<group>";
 		};
 		4A73CE926A3B84AA2CE98237 /* Creation */ = {
 			isa = PBXGroup;
 			children = (
 				8CE1E7CBBA34FB74E1C50541 /* CreationWorkspace.swift */,
+				F755D1A17B7ECAB1B37D678A /* NeuralEditPreparation.swift */,
+				3BD53AB966136DAFF4BA9F39 /* NeuralMeshControls.swift */,
 				4D195F6009493FA872C580EA /* SceneParameters.swift */,
 			);
 			path = Creation;
@@ -244,12 +491,22 @@
 				70B6E574C3FDD00A59F91E55 /* Assets.xcassets */,
 				4D8D198FFAF4F324434D941E /* Info.plist */,
 				901D7D08CA2F20683A8A2FFB /* LanguageModel.json */,
+				66CA0CB4E0F0C2D46D6C3C4C /* NeuralModelDelivery.json */,
 				975B09C8D199A3944E174C24 /* PrivacyInfo.xcprivacy */,
 				E418C14C1F145540291DD947 /* Voxamber.entitlements */,
 				415912223D05F8300A862C2F /* InfoPlist.strings */,
 				3B245035FA8C2844E5AE75AB /* Licenses */,
+				3463D9F69738FA58508C1278 /* NeuralModels */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		6488F66CDA8F64BA29EB6D7D /* SceneStudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				301D3FDBE5F7C638A1D0D603 /* ProgramProjectStoreTests.swift */,
+			);
+			path = SceneStudioTests;
 			sourceTree = "<group>";
 		};
 		65D96186D292E2F5006CC7C8 /* ThreeLiveStudio */ = {
@@ -276,6 +533,16 @@
 			path = ModelDownloader;
 			sourceTree = "<group>";
 		};
+		6C19A7B161B6C5F506059D58 /* SceneShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5BC59E9383D221904090FFF8 /* Info.plist */,
+				80551E914D257EF624A406E7 /* SceneShare.entitlements */,
+				E03F50BA96267E915D66B548 /* SceneShareViewController.swift */,
+			);
+			path = SceneShareExtension;
+			sourceTree = "<group>";
+		};
 		6D6B8339709A9778EE4699DD /* Design */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,10 +551,33 @@
 			path = Design;
 			sourceTree = "<group>";
 		};
+		7BAEB9140A429589999E8A12 /* SceneStudioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5A6D5936AB4B45A447AF2749 /* SceneStudioUITests.swift */,
+			);
+			path = SceneStudioUITests;
+			sourceTree = "<group>";
+		};
+		A211B24A844DCC36A87290D5 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				61E622D0EF8407D1ACCAEB58 /* LegacyProjectReader.swift */,
+				BE55BC08256F7A1368BD4852 /* ProgramProjectStore.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		A77E792544021DB506BBD882 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				E6C66C6B02FB9F50D614008A /* NeuralEditRecord.swift */,
+				6E13FD86B9D338927D458CF6 /* NeuralProjectDescriptor.swift */,
+				889DF29060A43FC9531BF594 /* NeuralProjectValidation.swift */,
+				904C2D0A9B188BEA0111A5A6 /* ProjectContent.swift */,
 				2280D56379EA5205075F096F /* ProjectStore.swift */,
+				4CD57ED2F970561A24D555F0 /* PublicationPermit.swift */,
+				3B1AA11060C63F3976587DE7 /* WorkspaceDraft.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -297,6 +587,11 @@
 			children = (
 				6B874116B0D92FB34B4A2248 /* ModelDownloader */,
 				15BD1B51CBE5B541B022E2D7 /* Packages */,
+				6C19A7B161B6C5F506059D58 /* SceneShareExtension */,
+				C31A8196BB8402C752262E6D /* SceneStudio */,
+				6488F66CDA8F64BA29EB6D7D /* SceneStudioTests */,
+				7BAEB9140A429589999E8A12 /* SceneStudioUITests */,
+				0E0C998D9B39B7148042AFDA /* ShapeDeviceQA */,
 				65D96186D292E2F5006CC7C8 /* ThreeLiveStudio */,
 				CB65A2360EA0967D9C29F169 /* ThreeLiveStudioTests */,
 				0BB672E43A2232C4BBE9C922 /* ThreeLiveStudioUITests */,
@@ -315,12 +610,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BB2E0794180E1CA7D8015E4D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2477991728AE2FBB229469C2 /* SceneStudioApp.swift */,
+				FF49C8BFACDCD76E45376FCB /* SceneStudioDeviceProbe.swift */,
+				EED77DD9C3B8E9AABF83AC8E /* SceneStudioModel.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C31A8196BB8402C752262E6D /* SceneStudio */ = {
+			isa = PBXGroup;
+			children = (
+				BB2E0794180E1CA7D8015E4D /* App */,
+				48AFE9E543D4174358DA8959 /* Import */,
+				E36F037FA48D552EC1957CE1 /* Resources */,
+				A211B24A844DCC36A87290D5 /* Storage */,
+				2F5C4A7F85199CD563FA401D /* Views */,
+			);
+			path = SceneStudio;
+			sourceTree = "<group>";
+		};
 		C4A3D81CED9AC9DD07C10BEF /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				27282FCC542B59EC0FE1FD8B /* AppleHostedModelSource.swift */,
 				B1F4BBC0DC51B93B06AE03D6 /* ModelLibrary.swift */,
 				C871680D9158E22213C02D9F /* ModelManager.swift */,
+				C67F9CE922BABB7730D08B10 /* NeuralAppleHostedModelSource.swift */,
+				1E0B5C6A0A5C1A7D6312167B /* NeuralManagedImport.swift */,
+				724E3D7A71C52E0E682A3487 /* NeuralModelCatalog.swift */,
+				07940B7E82FAEB28A3F4B0C1 /* NeuralModelLibrary.swift */,
+				E4DC712F41FE2331EBA52F33 /* NeuralModelManager.swift */,
 				C582011CB7CCE0BA1CAB7C70 /* VerifiedModelStore.swift */,
 			);
 			path = Models;
@@ -341,12 +663,19 @@
 				BDE8C7197DFA072A45BE55A2 /* AIContextTests.swift */,
 				54942D64E68D3C8B05A2B16F /* MemoryPressureTests.swift */,
 				2AF83FC98660B58DFE692E98 /* ModelViewportTests.swift */,
+				535E82838875B5059A45166E /* NeuralAssetStoreTests.swift */,
+				F0E9B0EBE49D58F96207B8A9 /* NeuralEditRecordTests.swift */,
+				1C33D655F3789DE141117537 /* NeuralManagedImportTests.swift */,
+				8953600C7788269776BC6095 /* NeuralMeshControlsTests.swift */,
 				48EF508025F5FC777A4603B5 /* OnDeviceInferenceTests.swift */,
+				3EBA30D72294D9D6C01B8AC5 /* ProjectStoreNeuralOriginTests.swift */,
 				C04C8B33AF3D96C0D4535C00 /* ProjectStoreTests.swift */,
+				B1FF5091270B0BF47D6722E7 /* ProjectStoreV2Tests.swift */,
 				55AAC929D64DEC63EBDEB54F /* ProjectThumbnailServiceTests.swift */,
 				C2E3E1C2725FDB4B478CB0DB /* ProjectThumbnailStoreTests.swift */,
 				39B56DE5197A148ECE286CEC /* StudioCancellationTests.swift */,
 				B32A9A18EB6AE211BFC62B0F /* VerifiedModelStoreTests.swift */,
+				D73FC96D36544E8ED391D00B /* WorkspaceDraftTests.swift */,
 			);
 			path = ThreeLiveStudioTests;
 			sourceTree = "<group>";
@@ -359,9 +688,82 @@
 			path = Preview;
 			sourceTree = "<group>";
 		};
+		E36F037FA48D552EC1957CE1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB1641729C96C9B70C0D7152 /* Google-Three-Live-LICENSE.txt */,
+				7B571EC35EE4C9B0848E737F /* Google-Three-Live-Source.json */,
+				CB1D74F12548BB8D1D314E9D /* Info.plist */,
+				AD1485E5FB75503A86FF23B8 /* RobotScene.js */,
+				818A3E649EBAA0284B1D1F82 /* SceneAuthoringInstructions.txt */,
+				1340A9D2364C4544D1988880 /* SceneStudio.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		03824A75755823C1E72B5FC5 /* VoxamberShapeQA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47E731FB3C21B66A7FBD9AEE /* Build configuration list for PBXNativeTarget "VoxamberShapeQA" */;
+			buildPhases = (
+				8132BF125265F0D27BBC9A78 /* Sources */,
+				2DF0D834BC6CBC88824111D8 /* Resources */,
+				EFFD17BD0A82F39546F7A44C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoxamberShapeQA;
+			packageProductDependencies = (
+				DFF203BDFB70E002BA21C23E /* VoxamberCreationNative */,
+			);
+			productName = VoxamberShapeQA;
+			productReference = F9244A189648B2365B4444D0 /* VoxamberShapeQA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37D69FB7A293E6FF91E534A7 /* VoxamberSceneShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A640008D5D80103F2088BC /* Build configuration list for PBXNativeTarget "VoxamberSceneShare" */;
+			buildPhases = (
+				50B8C4BED4FA417367A84CC8 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoxamberSceneShare;
+			packageProductDependencies = (
+			);
+			productName = VoxamberSceneShare;
+			productReference = 38F5827745A86B54E5F72517 /* VoxamberSceneShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B88CF4F55DF72E3DD3A0DB60 /* VoxamberSceneStudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 727C17972D1F82877EFB29BA /* Build configuration list for PBXNativeTarget "VoxamberSceneStudio" */;
+			buildPhases = (
+				B9CD1DC528F84D255DB822DF /* Sources */,
+				FC98A39C1F8180BF92531A38 /* Resources */,
+				580D7CD65292AB198859251F /* Frameworks */,
+				01A92D4E2BF1B3D5470415E0 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEACDC88115DAB7084009096 /* PBXTargetDependency */,
+			);
+			name = VoxamberSceneStudio;
+			packageProductDependencies = (
+				2741DDB36FCCEEABE01696E6 /* CreationCore */,
+				2E3C2C66B8C9FCDD5F30B7DD /* GoogleThreeLiveNative */,
+			);
+			productName = VoxamberSceneStudio;
+			productReference = 4A4629E92B214B0A68953FBD /* VoxamberSceneStudio.app */;
+			productType = "com.apple.product-type.application";
+		};
 		BA5CE5C10401FD95A6867F55 /* VoxamberModelDownloader */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE6C0D266B8CF34074AB77B4 /* Build configuration list for PBXNativeTarget "VoxamberModelDownloader" */;
@@ -379,6 +781,24 @@
 			productName = VoxamberModelDownloader;
 			productReference = 0EAD657921267AD8370227EE /* VoxamberModelDownloader.appex */;
 			productType = "com.apple.product-type.extensionkit-extension";
+		};
+		BAA626B5AE375299081F7800 /* VoxamberSceneStudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B296E028EE5D11737D8EDE66 /* Build configuration list for PBXNativeTarget "VoxamberSceneStudioTests" */;
+			buildPhases = (
+				39F77845AE3DAF2CAF9D99AE /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EA11E66142C397D64FDD1F3 /* PBXTargetDependency */,
+			);
+			name = VoxamberSceneStudioTests;
+			packageProductDependencies = (
+			);
+			productName = VoxamberSceneStudioTests;
+			productReference = 8AF8A267B76FF171DE425332 /* VoxamberSceneStudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		C9701FFCB1DAB734F899ED31 /* ThreeLiveStudioTests */ = {
 			isa = PBXNativeTarget;
@@ -417,6 +837,7 @@
 				F902F70628D1416BE2E9119D /* CreationCore */,
 				9C74310C7B87863D0601DF9A /* QwenNative */,
 				89274F890EAFAF9F9FE95136 /* ThreeLiveNative */,
+				F7708368FFF192F251EE2EE1 /* VoxamberCreationNative */,
 			);
 			productName = ThreeLiveStudio;
 			productReference = 3B930A8796D87852112F0CD7 /* ThreeLiveStudio.app */;
@@ -440,6 +861,24 @@
 			productReference = 9F596AD3B0F0A9AF33029D37 /* ThreeLiveStudioUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		F84D62259F81D94B2E41ED90 /* VoxamberSceneStudioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80F2A6BD40D752D31D90C300 /* Build configuration list for PBXNativeTarget "VoxamberSceneStudioUITests" */;
+			buildPhases = (
+				D320DB0E6DB346B142008A40 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FB65D24B20C39F1EE562E79 /* PBXTargetDependency */,
+			);
+			name = VoxamberSceneStudioUITests;
+			packageProductDependencies = (
+			);
+			productName = VoxamberSceneStudioUITests;
+			productReference = 17494FAC1F9F1DF84F75EA36 /* VoxamberSceneStudioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -449,7 +888,21 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					03824A75755823C1E72B5FC5 = {
+						DevelopmentTeam = M97RTV2PQG;
+						ProvisioningStyle = Automatic;
+					};
+					37D69FB7A293E6FF91E534A7 = {
+						DevelopmentTeam = M97RTV2PQG;
+					};
+					B88CF4F55DF72E3DD3A0DB60 = {
+						DevelopmentTeam = M97RTV2PQG;
+					};
 					BA5CE5C10401FD95A6867F55 = {
+						DevelopmentTeam = M97RTV2PQG;
+						ProvisioningStyle = Automatic;
+					};
+					BAA626B5AE375299081F7800 = {
 						DevelopmentTeam = M97RTV2PQG;
 						ProvisioningStyle = Automatic;
 					};
@@ -466,6 +919,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = E768C906EF941D87D1D5B5A3;
 					};
+					F84D62259F81D94B2E41ED90 = {
+						DevelopmentTeam = M97RTV2PQG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B88CF4F55DF72E3DD3A0DB60;
+					};
 				};
 			};
 			buildConfigurationList = D6C0E9A2CA53A2A9D95A9E6F /* Build configuration list for PBXProject "ThreeLiveStudio" */;
@@ -480,8 +938,10 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				845B85A6AF7B4B2BE751BC57 /* XCLocalSwiftPackageReference "Packages/CreationCore" */,
+				08C7380E0967C73707B42A75 /* XCLocalSwiftPackageReference "Packages/GoogleThreeLiveNative" */,
 				9059AE68BD9A716FA3922C43 /* XCLocalSwiftPackageReference "Packages/QwenNative" */,
 				F48D28FA0A70C5DAE285EC38 /* XCLocalSwiftPackageReference "Packages/ThreeLiveNative" */,
+				039D0D9183E967550B3DB2C0 /* XCLocalSwiftPackageReference "Packages/VoxamberCreationNative" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0A140EF6FFA7D6B6B1A5F387 /* Products */;
@@ -492,26 +952,66 @@
 				C9701FFCB1DAB734F899ED31 /* ThreeLiveStudioTests */,
 				ED13F54A1098801BC8ECDF75 /* ThreeLiveStudioUITests */,
 				BA5CE5C10401FD95A6867F55 /* VoxamberModelDownloader */,
+				37D69FB7A293E6FF91E534A7 /* VoxamberSceneShare */,
+				B88CF4F55DF72E3DD3A0DB60 /* VoxamberSceneStudio */,
+				BAA626B5AE375299081F7800 /* VoxamberSceneStudioTests */,
+				F84D62259F81D94B2E41ED90 /* VoxamberSceneStudioUITests */,
+				03824A75755823C1E72B5FC5 /* VoxamberShapeQA */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2DF0D834BC6CBC88824111D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DFA42B4B9F7F2F215FC6063 /* IntentQwen08.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3C66241DDD817738312A18C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				367B2876F375A5EE8753985F /* Apple-SDXL.txt in Resources */,
 				594462793CB30CCC44DADE8F /* Assets.xcassets in Resources */,
 				2B7B505AB4E87064276FD02D /* DLPack.txt in Resources */,
+				F13B5A9D1E28C623B812F953 /* Hunyuan3D-Swift-MIT.txt in Resources */,
+				AE99C0F06F102784EA48FFD6 /* Hunyuan3D-Swift-ThirdParty.txt in Resources */,
+				B8F4F7FFE00316CFA52A687B /* ImageFluxKlein.json in Resources */,
+				24BF5563B1FDC863A31BD4F8 /* ImageSDXL.json in Resources */,
 				CB4B92B1D96C5E2C6E84A460 /* InfoPlist.strings in Resources */,
+				5B616543FD43C3D4338CA444 /* IntentQwen08.json in Resources */,
 				CE4BED8D13AE522EFDBB6349 /* LanguageModel.json in Resources */,
 				06642796E9722D1435EB8A1C /* MLX-Swift-LM.txt in Resources */,
 				211C5006D7CFB79182E6D414 /* MLX-Swift.txt in Resources */,
+				9A5603654A74977D3D02081B /* NeuralModelDelivery.json in Resources */,
+				E4255E75F77FF533A67C4010 /* OpenAI-CLIP.txt in Resources */,
 				914CACA573F3E0A5E722B772 /* PicoJSON.txt in Resources */,
 				8C0C7091D4FE41D5DC749778 /* PrivacyInfo.xcprivacy in Resources */,
 				5067306AFCE364EAD77E0F66 /* Qwen-Model.txt in Resources */,
+				DE0D1BCDEF545A1669D3EE66 /* SDXL-Model.txt in Resources */,
+				54489A6C0D10E0F478AA88CF /* ShapeHunyuan21.json in Resources */,
+				298FAA1BF51F257AFAFB1D61 /* Snap3D-ThirdPartyNotices.txt in Resources */,
 				B13EE6CD109051E3229E21D6 /* Swift-Transformers.txt in Resources */,
+				B76F37E8F10F2DC84512C81C /* Tencent-Hunyuan-3D-2.1-License.txt in Resources */,
+				959F7428A9E3D3AD2DA308FD /* Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt in Resources */,
+				7124EF2022D63EA61E777215 /* Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt in Resources */,
 				60F343B870C49C73C31CBCF8 /* XGrammar.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC98A39C1F8180BF92531A38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B302DC52592EAC5782D05C88 /* Assets.xcassets in Resources */,
+				1359E6E05A564F64EEBB6972 /* Google-Three-Live-LICENSE.txt in Resources */,
+				B41F458521767BFA9400AA9B /* Google-Three-Live-Source.json in Resources */,
+				73B1B2426B99E9EA3B9B9396 /* PrivacyInfo.xcprivacy in Resources */,
+				0C93EEE14458AB9D175011FE /* RobotScene.js in Resources */,
+				CCA13D89FEA8B9336E8219D5 /* SceneAuthoringInstructions.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,14 +1029,28 @@
 				65EEF26D5C36D93A91F3DE0B /* ModelLibrary.swift in Sources */,
 				94E62342437321B659976D08 /* ModelManager.swift in Sources */,
 				2CBF57C9284B47815132E2A2 /* ModelViewport.swift in Sources */,
+				CC8AE34ADBA051E6B33E4BED /* NeuralAppleHostedModelSource.swift in Sources */,
+				B897C1F7DC37593836D6BFF7 /* NeuralEditPreparation.swift in Sources */,
+				8EC7FF49F040C0FAE5B6380F /* NeuralEditRecord.swift in Sources */,
+				8573C733BAEC41B8991F3499 /* NeuralManagedImport.swift in Sources */,
+				730D4A498B153D830155B5D3 /* NeuralMeshControls.swift in Sources */,
+				3BE4B4701A62C2DAE8717CC8 /* NeuralModelCatalog.swift in Sources */,
+				4CF1B20E413B1D7AAA2D8EF8 /* NeuralModelLibrary.swift in Sources */,
+				A380DE47D57FA892901DC8C9 /* NeuralModelManager.swift in Sources */,
+				E5ACF66F999518EAE76ECC67 /* NeuralProjectDescriptor.swift in Sources */,
+				47171915DD45B0540313A15E /* NeuralProjectValidation.swift in Sources */,
+				4AF8B2C58ED742A84B829307 /* NeuralShapeDeviceProbe.swift in Sources */,
+				4AEFFC2585D146AA4623BAAA /* ProjectContent.swift in Sources */,
 				3FB858C1D08847D663B1537C /* ProjectLibrary.swift in Sources */,
 				2746C44FB805A29ED90622F0 /* ProjectStore.swift in Sources */,
 				7307B3A56DF646399D609104 /* ProjectThumbnailService.swift in Sources */,
+				6471B149B9130ECD6873E481 /* PublicationPermit.swift in Sources */,
 				5F854FF5F1D21529FA212213 /* SceneParameters.swift in Sources */,
 				5E58539DF5B1BF2E88CA4DAA /* StudioModel.swift in Sources */,
 				81025439F11E499D01F19501 /* StudioStyle.swift in Sources */,
 				CE1927D0FECD6406261835DE /* ThreeLiveStudioApp.swift in Sources */,
 				7A7CA8A9D0FABB865CE882A2 /* VerifiedModelStore.swift in Sources */,
+				5B207B507713301F4153DAE1 /* WorkspaceDraft.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +1062,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		39F77845AE3DAF2CAF9D99AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01C5B3448E3F388242157F0 /* ProgramProjectStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B8C4BED4FA417367A84CC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6C277B3997577111CECC6E /* SceneImportInbox.swift in Sources */,
+				69390D0ED9EFE283E3431996 /* SceneShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8132BF125265F0D27BBC9A78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE939E03A01575388319E92 /* ModelViewport.swift in Sources */,
+				CDCC7A9412A7B0451ECFEBFF /* NativePipelineDeviceProbe.swift in Sources */,
+				688786B6F00F5A495BC64FAA /* NeuralShapeDeviceProbe.swift in Sources */,
+				677AA77C99AC26D4B4534E0E /* PhoneNativePreviewPanel.swift in Sources */,
+				7FA4E45DE6F3199E77FE581E /* ProjectThumbnailService.swift in Sources */,
+				E6A95F3C49E158D9B2AC2F3C /* ShapeDeviceQAApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B99D211235ED51331FC39846 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -555,12 +1099,43 @@
 				7C98C4BC2CB6CBCE3DF4DED6 /* AIContextTests.swift in Sources */,
 				8C154C2B0E7B23AA39C1B829 /* MemoryPressureTests.swift in Sources */,
 				D7234CADC39EEFE68675A427 /* ModelViewportTests.swift in Sources */,
+				8A34C498BC47F5D4BABEAA16 /* NeuralAssetStoreTests.swift in Sources */,
+				7CFD82240F806784ECFFD389 /* NeuralEditRecordTests.swift in Sources */,
+				656A035BEC45EA66D9C43C73 /* NeuralManagedImportTests.swift in Sources */,
+				62BB4ECCD3699CD69ED3F285 /* NeuralMeshControlsTests.swift in Sources */,
 				2D41AA772C76BACC9E3F3392 /* OnDeviceInferenceTests.swift in Sources */,
+				D4FA5505C16336020D71A882 /* ProjectStoreNeuralOriginTests.swift in Sources */,
 				1B60E779EEBB540AE66D716C /* ProjectStoreTests.swift in Sources */,
+				A3562E178B1C3F4B828CB163 /* ProjectStoreV2Tests.swift in Sources */,
 				2B795DDB1AB3B1C7719D4A67 /* ProjectThumbnailServiceTests.swift in Sources */,
 				350C9B2938283B0D820FBC51 /* ProjectThumbnailStoreTests.swift in Sources */,
 				7FAF09644149AB3C7ECB1E13 /* StudioCancellationTests.swift in Sources */,
 				F9F2C66F5F46F1B3E1E36B18 /* VerifiedModelStoreTests.swift in Sources */,
+				730719E60645971640BC88DD /* WorkspaceDraftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9CD1DC528F84D255DB822DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5980B03B4BA644283F9A6FFC /* LegacyProjectReader.swift in Sources */,
+				C96FCE5EE391368D1E5DA5B3 /* ModelViewport.swift in Sources */,
+				B9636D96DA8AF812DE70D41F /* ProgramProjectStore.swift in Sources */,
+				16EC55CF8AC9DC71C795681E /* ProjectThumbnailService.swift in Sources */,
+				3D5C1A6CCEE9F571D6479079 /* SceneImportInbox.swift in Sources */,
+				8B053DF77D64C11E37D8E0DF /* SceneStudioApp.swift in Sources */,
+				6C17E8C7D725F810259398F7 /* SceneStudioDeviceProbe.swift in Sources */,
+				03A5CDA9AFE66C1ADB61B176 /* SceneStudioModel.swift in Sources */,
+				C3920F94F845C3B99BA49FE2 /* SceneStudioWorkspace.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D320DB0E6DB346B142008A40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721221BF590EAA79C166C4E3 /* SceneStudioUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,15 +1155,30 @@
 			target = E768C906EF941D87D1D5B5A3 /* ThreeLiveStudio */;
 			targetProxy = D6B773F8B0847208AD3DEF75 /* PBXContainerItemProxy */;
 		};
+		3FB65D24B20C39F1EE562E79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B88CF4F55DF72E3DD3A0DB60 /* VoxamberSceneStudio */;
+			targetProxy = D46E450CFD2071822A62C492 /* PBXContainerItemProxy */;
+		};
 		645AFFB978BBC3CD05C4E6F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E768C906EF941D87D1D5B5A3 /* ThreeLiveStudio */;
 			targetProxy = B1A4EDDEF90E49B33170A662 /* PBXContainerItemProxy */;
 		};
+		7EA11E66142C397D64FDD1F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B88CF4F55DF72E3DD3A0DB60 /* VoxamberSceneStudio */;
+			targetProxy = D5437619FBBD6AA54FD8B5EF /* PBXContainerItemProxy */;
+		};
 		A6F6D00877E297B3A10A0598 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BA5CE5C10401FD95A6867F55 /* VoxamberModelDownloader */;
 			targetProxy = 645DF5572B473E98BD204D7F /* PBXContainerItemProxy */;
+		};
+		BEACDC88115DAB7084009096 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37D69FB7A293E6FF91E534A7 /* VoxamberSceneShare */;
+			targetProxy = 451906C0D244DB270BF62DE2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -605,6 +1195,94 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		10EC1AC1CCF4B9DB0914D403 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = SceneShareExtension/SceneShare.entitlements;
+				CURRENT_PROJECT_VERSION = 8;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SceneShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaisun.voxamber.scene-import";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14182647C3E30CEF5882B615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = SceneShareExtension/SceneShare.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 8;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SceneShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaisun.voxamber.scene-import";
+				PROVISIONING_PROFILE_SPECIFIER = "Voxamber Scene Import App Store 20261106";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1968F926975423ACAC99BC8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_DISPLAY_NAME = "维珀";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SceneStudio/Resources/SceneStudio.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 8;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SceneStudio/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaisun.voxamber;
+				PRODUCT_MODULE_NAME = SceneStudio;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BCF5FAF40F873ED3D11CA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShapeDeviceQA/ShapeDeviceQA.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "维珀·三维验收";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaisun.voxamber.shape-qa";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEVICE_QA";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		2B5C0058767FBCED495BC6F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -638,6 +1316,23 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeLiveStudio.app/ThreeLiveStudio";
 			};
 			name = Debug;
+		};
+		4197E438B4FC036CBB300208 /* Release-QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaisun.VoxamberSceneStudioTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoxamberSceneStudio.app/VoxamberSceneStudio";
+			};
+			name = "Release-QA";
 		};
 		4A4C9F278C133439362BFE6D /* Release-QA */ = {
 			isa = XCBuildConfiguration;
@@ -674,7 +1369,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = M97RTV2PQG;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -718,6 +1413,31 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		635E6E4EC0A597177A73D26F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_DISPLAY_NAME = "维珀";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SceneStudio/Resources/SceneStudio.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 8;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SceneStudio/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaisun.voxamber;
+				PRODUCT_MODULE_NAME = SceneStudio;
+				PROVISIONING_PROFILE_SPECIFIER = "Voxamber SceneStudio App Store 20261106";
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
 		};
 		8A9533540C386CA67C923412 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -773,6 +1493,23 @@
 			};
 			name = Release;
 		};
+		9D7CAD97A37D2A2386BE1BDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaisun.VoxamberSceneStudioTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoxamberSceneStudio.app/VoxamberSceneStudio";
+			};
+			name = Release;
+		};
 		9FCD6458E90D3CCAF477BE06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -808,7 +1545,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = M97RTV2PQG;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -839,6 +1576,80 @@
 				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
+		};
+		A483C920A6AA489C8FC00AF9 /* Release-QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShapeDeviceQA/ShapeDeviceQA.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "维珀·三维验收";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaisun.voxamber.shape-qa";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEVICE_QA";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release-QA";
+		};
+		A62A5A1DDEA3360218D1E1BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShapeDeviceQA/ShapeDeviceQA.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "维珀·三维验收";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaisun.voxamber.shape-qa";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEVICE_QA";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEFFE8EEF3EF52ECAC5BA88C /* Release-QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaisun.VoxamberSceneStudioUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoxamberSceneStudio;
+			};
+			name = "Release-QA";
+		};
+		B5DAE6C2B95554FC4B84BC5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaisun.VoxamberSceneStudioUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoxamberSceneStudio;
+			};
+			name = Release;
 		};
 		B869A42B3D19A0F40D559F29 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -874,6 +1685,56 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
+		};
+		C7AE0F6081A49A862D401AF0 /* Release-QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = SceneShareExtension/SceneShare.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 8;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SceneShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaisun.voxamber.scene-qa.scene-import";
+				PROVISIONING_PROFILE_SPECIFIER = "Voxamber Scene QA Import Dev 20261106";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release-QA";
+		};
+		CA034F8A355258575079BE16 /* Release-QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_DISPLAY_NAME = "维珀·场景验收";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SceneStudio/Resources/SceneStudio.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 8;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SceneStudio/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaisun.voxamber.scene-qa";
+				PRODUCT_MODULE_NAME = SceneStudio;
+				PROVISIONING_PROFILE_SPECIFIER = "Voxamber Scene QA Dev 20261106";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SCENE_QA";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release-QA";
 		};
 		CAC8CEECFA5048C31C0CA92D /* Release-QA */ = {
 			isa = XCBuildConfiguration;
@@ -949,7 +1810,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = M97RTV2PQG;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -991,6 +1852,23 @@
 			};
 			name = "Release-QA";
 		};
+		F8F928B8AD26F661F1C9B98D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaisun.VoxamberSceneStudioTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoxamberSceneStudio.app/VoxamberSceneStudio";
+			};
+			name = Debug;
+		};
 		FE2AFCE4B047CC48C1D8C68E /* Release-QA */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1009,6 +1887,23 @@
 			};
 			name = "Release-QA";
 		};
+		FF9046A515F9528A673C2FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaisun.VoxamberSceneStudioUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoxamberSceneStudio;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1022,12 +1917,62 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		47E731FB3C21B66A7FBD9AEE /* Build configuration list for PBXNativeTarget "VoxamberShapeQA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62A5A1DDEA3360218D1E1BF /* Debug */,
+				1BCF5FAF40F873ED3D11CA55 /* Release */,
+				A483C920A6AA489C8FC00AF9 /* Release-QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		727C17972D1F82877EFB29BA /* Build configuration list for PBXNativeTarget "VoxamberSceneStudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1968F926975423ACAC99BC8B /* Debug */,
+				635E6E4EC0A597177A73D26F /* Release */,
+				CA034F8A355258575079BE16 /* Release-QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		80F2A6BD40D752D31D90C300 /* Build configuration list for PBXNativeTarget "VoxamberSceneStudioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF9046A515F9528A673C2FDE /* Debug */,
+				B5DAE6C2B95554FC4B84BC5B /* Release */,
+				AEFFE8EEF3EF52ECAC5BA88C /* Release-QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		960CBCB5D76F6B521C6F0070 /* Build configuration list for PBXNativeTarget "ThreeLiveStudioTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				355CBBBF418501787DD83F7F /* Debug */,
 				2B5C0058767FBCED495BC6F3 /* Release */,
 				9725D1072F45BA5A664C7443 /* Release-QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A4A640008D5D80103F2088BC /* Build configuration list for PBXNativeTarget "VoxamberSceneShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10EC1AC1CCF4B9DB0914D403 /* Debug */,
+				14182647C3E30CEF5882B615 /* Release */,
+				C7AE0F6081A49A862D401AF0 /* Release-QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B296E028EE5D11737D8EDE66 /* Build configuration list for PBXNativeTarget "VoxamberSceneStudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8F928B8AD26F661F1C9B98D /* Debug */,
+				9D7CAD97A37D2A2386BE1BDF /* Release */,
+				4197E438B4FC036CBB300208 /* Release-QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -1065,6 +2010,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
+		039D0D9183E967550B3DB2C0 /* XCLocalSwiftPackageReference "Packages/VoxamberCreationNative" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/VoxamberCreationNative;
+		};
+		08C7380E0967C73707B42A75 /* XCLocalSwiftPackageReference "Packages/GoogleThreeLiveNative" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/GoogleThreeLiveNative;
+		};
 		845B85A6AF7B4B2BE751BC57 /* XCLocalSwiftPackageReference "Packages/CreationCore" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Packages/CreationCore;
@@ -1080,6 +2033,14 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2741DDB36FCCEEABE01696E6 /* CreationCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CreationCore;
+		};
+		2E3C2C66B8C9FCDD5F30B7DD /* GoogleThreeLiveNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GoogleThreeLiveNative;
+		};
 		89274F890EAFAF9F9FE95136 /* ThreeLiveNative */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ThreeLiveNative;
@@ -1087,6 +2048,14 @@
 		9C74310C7B87863D0601DF9A /* QwenNative */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = QwenNative;
+		};
+		DFF203BDFB70E002BA21C23E /* VoxamberCreationNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VoxamberCreationNative;
+		};
+		F7708368FFF192F251EE2EE1 /* VoxamberCreationNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VoxamberCreationNative;
 		};
 		F902F70628D1416BE2E9119D /* CreationCore */ = {
 			isa = XCSwiftPackageProductDependency;

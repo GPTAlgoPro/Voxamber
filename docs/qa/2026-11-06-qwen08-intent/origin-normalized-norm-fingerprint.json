@@ -1,0 +1,219 @@
+{
+  "checkedAtUTC": "2026-11-05T20:22:57.067540+00:00",
+  "scope": "Same five floating norm tensors with the documented Qwen35 MLX standard-RMSNorm +1 BF16 conversion considered. No quantized matrix reconstruction or full official weights.",
+  "comparison": [
+    {
+      "source": "instruct",
+      "status": "compared",
+      "rows": [
+        {
+          "source": "instruct",
+          "canonicalKey": "language_model.model.layers.0.input_layernorm.weight",
+          "tensorElements": 1024,
+          "documentedTransform": "BF16 round-to-nearest-even(source + 1)",
+          "exactTransformedNumericEqual": true,
+          "matchingElementCount": 1024,
+          "maxAbsoluteDifferenceAfterTransform": 0.0,
+          "transformedOfficialSHA256": "d9d245a1158170b7082d5c5d5049f387d47ec293cb8647387dd9476311257a49",
+          "localAsFloat32SHA256": "d9d245a1158170b7082d5c5d5049f387d47ec293cb8647387dd9476311257a49"
+        },
+        {
+          "source": "instruct",
+          "canonicalKey": "language_model.model.layers.12.post_attention_layernorm.weight",
+          "tensorElements": 1024,
+          "documentedTransform": "BF16 round-to-nearest-even(source + 1)",
+          "exactTransformedNumericEqual": true,
+          "matchingElementCount": 1024,
+          "maxAbsoluteDifferenceAfterTransform": 0.0,
+          "transformedOfficialSHA256": "592c63ce4d20e409d4b005937b5de3e2476dd4c5a7794b36939f28c151351653",
+          "localAsFloat32SHA256": "592c63ce4d20e409d4b005937b5de3e2476dd4c5a7794b36939f28c151351653"
+        },
+        {
+          "source": "instruct",
+          "canonicalKey": "language_model.model.layers.23.input_layernorm.weight",
+          "tensorElements": 1024,
+          "documentedTransform": "BF16 round-to-nearest-even(source + 1)",
+          "exactTransformedNumericEqual": true,
+          "matchingElementCount": 1024,
+          "maxAbsoluteDifferenceAfterTransform": 0.0,
+          "transformedOfficialSHA256": "5d4a054407f915827c68b79df87c7d8c6d3d435997f4bf0bf4677642351c5480",
+          "localAsFloat32SHA256": "5d4a054407f915827c68b79df87c7d8c6d3d435997f4bf0bf4677642351c5480"
+        },
+        {
+          "source": "instruct",
+          "canonicalKey": "language_model.model.layers.23.self_attn.q_norm.weight",
+          "tensorElements": 256,
+          "documentedTransform": "BF16 round-to-nearest-even(source + 1)",
+          "exactTransformedNumericEqual": true,
+          "matchingElementCount": 256,
+          "maxAbsoluteDifferenceAfterTransform": 0.0,
+          "transformedOfficialSHA256": "fe26eb2bc368a19f484f88cd7ece86171fcf3d53ff0f7864312ce510cd93d379",
+          "localAsFloat32SHA256": "fe26eb2bc368a19f484f88cd7ece86171fcf3d53ff0f7864312ce510cd93d379"
+        },
+        {
+          "source": "instruct",
+          "canonicalKey": "language_model.model.norm.weight",
+          "tensorElements": 1024,
+          "documentedTransform": "BF16 round-to-nearest-even(source + 1)",
+          "exactTransformedNumericEqual": true,
+          "matchingElementCount": 1024,
+          "maxAbsoluteDifferenceAfterTransform": 0.0,
+          "transformedOfficialSHA256": "ec9b8ac245a450d6938170c2e26ec817fa45d00b322b5bdb57926f139d3fdc33",
+          "localAsFloat32SHA256": "ec9b8ac245a450d6938170c2e26ec817fa45d00b322b5bdb57926f139d3fdc33"
+        }
+      ]
+    },
+    {
+      "source": "base",
+      "status": "compared",
+      "rows": [
+        {
+          "source": "base",
+          "canonicalKey": "language_model.model.layers.0.input_layernorm.weight",
+          "tensorElements": 1024,
+          "documentedTransform": "BF16 round-to-nearest-even(source + 1)",
+          "exactTransformedNumericEqual": false,
+          "matchingElementCount": 922,
+          "maxAbsoluteDifferenceAfterTransform": 0.0078125,
+          "transformedOfficialSHA256": "31635f06a970c829203eb8698229ba5f05e9062975ca62f90ce11cafbb16b1b1",
+          "localAsFloat32SHA256": "d9d245a1158170b7082d5c5d5049f387d47ec293cb8647387dd9476311257a49"
+        },
+        {
+          "source": "base",
+          "canonicalKey": "language_model.model.layers.12.post_attention_layernorm.weight",
+          "tensorElements": 1024,
+          "documentedTransform": "BF16 round-to-nearest-even(source + 1)",
+          "exactTransformedNumericEqual": false,
+          "matchingElementCount": 917,
+          "maxAbsoluteDifferenceAfterTransform": 0.0078125,
+          "transformedOfficialSHA256": "6446ceaa1b362f22b98644a0833a3a20f11e149310765388bb2e6c1e01562c13",
+          "localAsFloat32SHA256": "592c63ce4d20e409d4b005937b5de3e2476dd4c5a7794b36939f28c151351653"
+        },
+        {
+          "source": "base",
+          "canonicalKey": "language_model.model.layers.23.input_layernorm.weight",
+          "tensorElements": 1024,
+          "documentedTransform": "BF16 round-to-nearest-even(source + 1)",
+          "exactTransformedNumericEqual": false,
+          "matchingElementCount": 920,
+          "maxAbsoluteDifferenceAfterTransform": 0.0078125,
+          "transformedOfficialSHA256": "717cb4ce9227a1d919178164ce72f8a89621aa1c59e592bcdb9096676d4d8e87",
+          "localAsFloat32SHA256": "5d4a054407f915827c68b79df87c7d8c6d3d435997f4bf0bf4677642351c5480"
+        },
+        {
+          "source": "base",
+          "canonicalKey": "language_model.model.layers.23.self_attn.q_norm.weight",
+          "tensorElements": 256,
+          "documentedTransform": "BF16 round-to-nearest-even(source + 1)",
+          "exactTransformedNumericEqual": false,
+          "matchingElementCount": 215,
+          "maxAbsoluteDifferenceAfterTransform": 0.0078125,
+          "transformedOfficialSHA256": "f34b041fac39e6d3b412089417a469ee46df2cb626d465c526cd0fe3fdf04272",
+          "localAsFloat32SHA256": "fe26eb2bc368a19f484f88cd7ece86171fcf3d53ff0f7864312ce510cd93d379"
+        },
+        {
+          "source": "base",
+          "canonicalKey": "language_model.model.norm.weight",
+          "tensorElements": 1024,
+          "documentedTransform": "BF16 round-to-nearest-even(source + 1)",
+          "exactTransformedNumericEqual": false,
+          "matchingElementCount": 1023,
+          "maxAbsoluteDifferenceAfterTransform": 0.0078125,
+          "transformedOfficialSHA256": "4c8409c40c9a627758a2bfaf857fc6306b28acb43d470aefef4090eb98a1562f",
+          "localAsFloat32SHA256": "ec9b8ac245a450d6938170c2e26ec817fa45d00b322b5bdb57926f139d3fdc33"
+        }
+      ]
+    }
+  ],
+  "rangeRequests": [
+    {
+      "source": "instruct",
+      "start": 0,
+      "end": 59847,
+      "status": 206,
+      "bytes": 59848
+    },
+    {
+      "source": "base",
+      "start": 0,
+      "end": 59847,
+      "status": 206,
+      "bytes": 59848
+    },
+    {
+      "source": "instruct",
+      "start": 508629576,
+      "end": 508631623,
+      "status": 206,
+      "bytes": 2048
+    },
+    {
+      "source": "base",
+      "start": 508629576,
+      "end": 508631623,
+      "status": 206,
+      "bytes": 2048
+    },
+    {
+      "source": "instruct",
+      "start": 717774536,
+      "end": 717776583,
+      "status": 206,
+      "bytes": 2048
+    },
+    {
+      "source": "base",
+      "start": 717774536,
+      "end": 717776583,
+      "status": 206,
+      "bytes": 2048
+    },
+    {
+      "source": "instruct",
+      "start": 1179181032,
+      "end": 1179183079,
+      "status": 206,
+      "bytes": 2048
+    },
+    {
+      "source": "base",
+      "start": 1179181032,
+      "end": 1179183079,
+      "status": 206,
+      "bytes": 2048
+    },
+    {
+      "source": "instruct",
+      "start": 1206448616,
+      "end": 1206449127,
+      "status": 206,
+      "bytes": 512
+    },
+    {
+      "source": "base",
+      "start": 1206448616,
+      "end": 1206449127,
+      "status": 206,
+      "bytes": 512
+    },
+    {
+      "source": "instruct",
+      "start": 1504849032,
+      "end": 1504851079,
+      "status": 206,
+      "bytes": 2048
+    },
+    {
+      "source": "base",
+      "start": 1504849032,
+      "end": 1504851079,
+      "status": 206,
+      "bytes": 2048
+    }
+  ],
+  "totalAdditionalOfficialRangeBytes": 137104,
+  "priorRangeBytes": 137104,
+  "wholeOfficialWeightsDownloaded": false,
+  "allModelMatrixOriginProved": false,
+  "caveat": "Exclusive matches are evidence about sampled norms only, not proof that every packed quantized matrix came from that checkpoint."
+}

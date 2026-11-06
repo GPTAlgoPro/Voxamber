@@ -1,0 +1,180 @@
+{
+  "recordedAtUTC": "2026-11-06T01:24:46.998578+00:00",
+  "kind": "readOnlyPrimarySourceModelAssessment",
+  "recommendedNextComparison": "FLUX.2-klein-4B prequantized int4 / resident512 / smallVAE",
+  "state": "researchFrozen_notBuilt_notDownloaded_notRun_notSelectedInApp",
+  "perModelLimitParameters": 8000000000,
+  "imageComponentParameters": {
+    "transformer": 3875544576,
+    "qwen3TextEncoder": 4022468096,
+    "smallFullVAEConservative": 62373347
+  },
+  "imageAggregateParameters": 7960386019,
+  "proposedSelfDistributedPipelineAggregateParameters": 12403165028,
+  "visionSystemModelParameterCount": "unknown/excluded",
+  "proposedPayloadBytes": 4692595250,
+  "proposedFileCount": 14,
+  "resourceSHAEvidence": "public revision/LFS metadata and small-file whole SHA; no local tensor payload validation",
+  "nativeDependencies": [
+    {
+      "repository": "nanguoyu/flux-2-swift-mlx",
+      "revision": "57ad4818ecaa4367616d0c046a24e4694bb07779",
+      "license": "MIT"
+    },
+    {
+      "repository": "VincentGourbin/flux-2-swift-mlx",
+      "revision": "315c27e83187909bc5e1f880b4850918342d891b",
+      "license": "MIT"
+    },
+    {
+      "repository": "nanguoyu/swift-mlx-profiler",
+      "revision": "82eb03f594d8a4f691d1ad5ed50e52c72cbf0ff3",
+      "license": "MIT"
+    },
+    {
+      "repository": "TWWinde/MobileDiffuser",
+      "revision": "0f56c18ccf545e7532c8e0231671714b471c88f0",
+      "license": "MPL-2.0; inspect only"
+    },
+    {
+      "repository": "nanguoyu/swift-diffusion-core",
+      "revision": "80d7b8b9415c1a0f3d4f51ec9d377b9cdddcb9f9",
+      "license": "Apache-2.0; inspect only"
+    }
+  ],
+  "nativeCompatibilityEvidence": "SwiftPM range/platform and source inspection only; no Mac/iOS compilation or numerical parity test",
+  "authorPhoneEvidence": {
+    "device": "iPhone16Pro8GB",
+    "resolution": 512,
+    "steps": 4,
+    "approxPhysFootprintGB": 4.3,
+    "approxSeconds": 71,
+    "status": "firstPartyAuthorReported; raw device receipt not present in inspected tree; not our phone measurement"
+  },
+  "nextCondition": {
+    "originalLampEnglishPromptSHA256": "b90098e80c8fc2b07e2a617a00197f63317d20273109fc79e702da138fd390c4",
+    "promptSHAExplanation": "SHA of prior intent.json artifact, not bare prompt bytes; use exact prior 210-character prompt field",
+    "width": 512,
+    "height": 512,
+    "steps": 4,
+    "guidance": 1.0,
+    "seed": 24301,
+    "upsamplePrompt": false,
+    "negativePrompt": "not supported/unused by distilled Klein g1; do not silently feed current SDXL negative conditioning",
+    "retries": 0
+  },
+  "materialRisks": [
+    "No strict caller-pinned local-only resource seam in current pipeline; automatic download/cache discovery must be disabled before App integration.",
+    "Explicit .klein4B_4bit override required; .int4 alone chooses BF16 on-load quantization.",
+    "Mac transformer lifetime differs from iOS before VAE decode.",
+    "MLX0.32.3/Transformers1.3.0 are declared-range-compatible only.",
+    "Phys-footprint/repeat/cancel/6GiB full-App admission unverified.",
+    "No LP quality evidence for this candidate; original red cone/gray cylinder base/thin stem rubric remains."
+  ],
+  "activities": {
+    "modelPayloadDownloads": 0,
+    "neuralGenerations": 0,
+    "SDKBuilds": 0,
+    "phoneOperations": 0,
+    "currentPipelineChanges": 0
+  },
+  "inspectedSourceFiles": [
+    {
+      "path": "Apple/.build/ImageModelResearch/nanguoyu--flux-2-swift-mlx/Package.swift",
+      "bytes": 3477,
+      "sha256": "3dc8add20e25efb53efbbad87dfea5104c26c134f124934d10eeb1b331d1f763"
+    },
+    {
+      "path": "Apple/.build/ImageModelResearch/nanguoyu--flux-2-swift-mlx/LICENSE",
+      "bytes": 1072,
+      "sha256": "82d2c537c449843bc00af7467d8fb1628151fa263c246aa5d769deb946b52773"
+    },
+    {
+      "path": "Apple/.build/ImageModelResearch/nanguoyu--flux-2-swift-mlx/Sources--Flux2Core--Pipeline--Flux2Pipeline.swift",
+      "bytes": 86141,
+      "sha256": "6ec734f86ce917e3ac99dfb1526da0c18009fb52a3e9f301fdd175cf61c8a1d2"
+    },
+    {
+      "path": "Apple/.build/ImageModelResearch/nanguoyu--flux-2-swift-mlx/Sources--Flux2Core--Loading--KleinTextEncoder.swift",
+      "bytes": 7267,
+      "sha256": "aa4ff904687a21fe57197505b87f7585a29dd0cecc9c78f9a81b402d77fc6877"
+    },
+    {
+      "path": "Apple/.build/ImageModelResearch/nanguoyu--flux-2-swift-mlx/Sources--Flux2Core--Configuration--ModelRegistry.swift",
+      "bytes": 22272,
+      "sha256": "1654d32e77c01b6abaf224b5d3cb92d4c9ca22cc5ba370b26569479d1c39c2a3"
+    },
+    {
+      "path": "Apple/.build/ImageModelResearch/nanguoyu--flux-2-swift-mlx/Sources--Flux2Core--Loading--WeightLoader.swift",
+      "bytes": 55577,
+      "sha256": "658df4c759f9bbf76d81058b2174e17f68cfa902b117a4788e4363bc49826974"
+    },
+    {
+      "path": "Apple/.build/ImageModelResearch/nanguoyu--flux-2-swift-mlx/Sources--FluxTextEncoders--Configuration--TextEncoderModelRegistry.swift",
+      "bytes": 23223,
+      "sha256": "de0f8e0a7be7585be5a3e39cea09e5171a7db4572c11f62f1d870ee27f05ada9"
+    },
+    {
+      "path": "Apple/.build/ImageModelResearch/VincentGourbin--flux-2-swift-mlx/LICENSE",
+      "bytes": 1072,
+      "sha256": "82d2c537c449843bc00af7467d8fb1628151fa263c246aa5d769deb946b52773"
+    },
+    {
+      "path": "Apple/.build/ImageModelResearch/nanguoyu--swift-mlx-profiler/LICENSE",
+      "bytes": 1071,
+      "sha256": "f31869a869df77c7f5f79e004c64d489337aa2a20489c540d8573aaf87ff2206"
+    },
+    {
+      "path": "Apple/.build/ImageModelResearch/nanguoyu--swift-mlx-profiler/Package.swift",
+      "bytes": 672,
+      "sha256": "a8f2d1e27f16195e7ecaa2bca8bf4f1a0ffb7e974e05b57b64e473b04c4913f8"
+    },
+    {
+      "path": "Apple/.build/ImageModelResearch/TWWinde--MobileDiffuser/docs--IPHONE_OOM_DEBUG.md",
+      "bytes": 9025,
+      "sha256": "a247a3c6fe8218ab547431de875461607fe98ef992897c168a36d64daca45be1"
+    },
+    {
+      "path": "Apple/.build/ImageModelResearch/nanguoyu--swift-diffusion-core/Sources--DiffusionCore--Memory--MemoryProbe.swift",
+      "bytes": 1622,
+      "sha256": "78985fb688c6ee59844c1d8ec8e5a7ba862125fa29b186c5830b454a95cd43ae"
+    },
+    {
+      "path": "Apple/.build/ImageModelResearch/black-forest-labs--FLUX.2-klein-4B/metadata.json",
+      "bytes": 10202,
+      "sha256": "93e5d6d033e8611844a01983409b0abbecb7ef34abfa9a21e0c66a7f093b8e9f"
+    },
+    {
+      "path": "Apple/.build/ImageModelResearch/Qwen--Qwen3-4B/metadata.json",
+      "bytes": 12129,
+      "sha256": "3fe768b976af88be26348f9a227ed015c5ac61d467359447440226107e436955"
+    },
+    {
+      "path": "Apple/.build/ImageModelResearch/black-forest-labs--FLUX.2-small-decoder/metadata.json",
+      "bytes": 4062,
+      "sha256": "54cf673bba648e2bdc0b1bb1409155ec9edb68934f424f5017bfa5a8d4437363"
+    },
+    {
+      "path": "Apple/.build/ImageModelResearch/mlx-community--flux2-klein-4b-4bit/metadata.json",
+      "bytes": 3959,
+      "sha256": "6cc9afb072058e53b69282ba96bed7df99f6a541243eb44b1b69e09f174ea243"
+    },
+    {
+      "path": "Apple/.build/ImageModelResearch/lmstudio-community--Qwen3-4B-MLX-4bit/metadata.json",
+      "bytes": 8361,
+      "sha256": "3c2bc07d871aaa6a6a1db1d1c343f0427cf1c22017feb8cbc6973afb726a3539"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/prototypes/2026-11-06-image-model-recheck/README.md",
+      "bytes": 11492,
+      "sha256": "21c82cb246f7b7436b8845232b985ba9488808a7c83cea106aefc9cd2e50a03c"
+    },
+    {
+      "path": "docs/prototypes/2026-11-06-image-model-recheck/proposed-flux2-assets.json",
+      "bytes": 9261,
+      "sha256": "314c5105a019dcd1aca7d1c95d374fa36b01c1d28b0f346fc40bf87b1e1c1b4e"
+    }
+  ]
+}

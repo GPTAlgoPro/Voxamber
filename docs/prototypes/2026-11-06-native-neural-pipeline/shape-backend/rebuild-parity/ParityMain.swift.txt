@@ -1,0 +1,131 @@
+import Foundation
+import CryptoKit
+import MLX
+import NativeShapePackLayout
+
+struct Tensor: Codable { let dtype: String; let shape: [Int]; let data_offsets: [Int] }
+struct Container {
+    let url: URL; let file: FileHandle; let headerBytes: Int; let size: Int
+    let tensors: [String: Tensor]; let metadata: [String: String]
+    init(_ url: URL) throws {
+        self.url = url; file = try FileHandle(forReadingFrom: url)
+        let prefix = try file.read(upToCount: 8)!
+        let count = prefix.withUnsafeBytes { $0.loadUnaligned(as: UInt64.self).littleEndian }
+        guard count < 2_000_000 else { throw Check("header length") }
+        headerBytes = Int(count); size = try url.resourceValues(forKeys: [.fileSizeKey]).fileSize!
+        let raw = try file.read(upToCount: headerBytes)!
+        var object = try JSONSerialization.jsonObject(with: raw) as! [String: Any]
+        metadata = object.removeValue(forKey: "__metadata__") as? [String: String] ?? [:]
+        tensors = try JSONDecoder().decode([String: Tensor].self, from: JSONSerialization.data(withJSONObject: object))
+        for (_, tensor) in tensors {
+            guard tensor.data_offsets.count == 2, tensor.data_offsets[0] >= 0,
+                  tensor.data_offsets[1] >= tensor.data_offsets[0], tensor.data_offsets[1] <= size - headerBytes - 8 else { throw Check("offset") }
+        }
+    }
+    func bytes(_ key: String) throws -> Data {
+        guard let t = tensors[key] else { throw Check("missing tensor " + key) }
+        try file.seek(toOffset: UInt64(8 + headerBytes + t.data_offsets[0]))
+        let n = t.data_offsets[1] - t.data_offsets[0]
+        let result = try file.read(upToCount: n)!
+        guard result.count == n else { throw Check("short tensor " + key) }
+        return result
+    }
+}
+struct Check: Error { let message: String; init(_ message: String) { self.message = message } }
+func hash(_ data: Data) -> String { SHA256.hash(data: data).map { String(format: "%02x", $0) }.joined() }
+func write(_ object: [String: Any], _ path: String) throws {
+    try JSONSerialization.data(withJSONObject: object, options: [.sortedKeys, .prettyPrinted]).write(to: URL(fileURLWithPath: path), options: .atomic)
+}
+@main struct ParityMain {
+    static func main() {
+        do { try run() } catch let e as Check { print("PARITY_FAILURE " + e.message); exit(1) }
+        catch { print("PARITY_FAILURE native IO/runtime failed"); exit(1) }
+    }
+    static func run() throws {
+        Device.setDefault(device: .cpu)
+        let args = Array(CommandLine.arguments.dropFirst())
+        if args.first == "tiny" {
+            guard args.count == 2 else { throw Check("usage") }
+            let folder = URL(fileURLWithPath: args[1]); try FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
+            var receipts = [[String: Any]](); var tensorMaps = [[String: String]]()
+            for run in 0..<4 {
+                let sequence = run.isMultiple(of: 2) ? Array(0..<129) : Array((0..<129).reversed())
+                var arrays = [String: MLXArray]()
+                for i in sequence {
+                    let count = (i % 17 + 1) * 64
+                    arrays[String(format: "fixed.tensor.%03d", i)] = MLXArray([Float](repeating: Float(i) / 17, count: count)).asType(.float16, stream: .cpu)
+                }
+                let output = folder.appending(path: "tiny-\(run).safetensors")
+                try save(arrays: arrays, metadata: ["bits":"4", "format":"Snap3D Hy3DMLX", "group_size":"64"], url: output, stream: .cpu)
+                let container = try Container(output)
+                var hashes = [String: String]()
+                for key in container.tensors.keys.sorted() { hashes[key] = hash(try container.bytes(key)) }
+                tensorMaps.append(hashes)
+                receipts.append(["file":output.lastPathComponent, "byteCount":container.size,"headerBytes":container.headerBytes,
+                    "sha256":hash(try Data(contentsOf:output)),"tensorCount":hashes.count])
+            }
+            try write(["MLX":"0.31.4", "device":"CPU only", "sameValuesShapesAndMetadata":true,
+                       "allPerTensorHashesEqual":tensorMaps.dropFirst().allSatisfy{$0 == tensorMaps[0]},
+                       "files":receipts], folder.appending(path:"tiny-proof.json").path)
+            print("tiny proof complete")
+            return
+        }
+        guard args.count == 5, args[0] == "verify", ["layout", "cpu", "gpu"].contains(args[1]) else { throw Check("usage verify layout|cpu|gpu sourceRoot pack outputJSON") }
+        let mode = args[1], sourceRoot = URL(fileURLWithPath: args[2]), packed = try Container(URL(fileURLWithPath: args[3]))
+        guard packed.metadata == ["bits":"4", "format":"Snap3D Hy3DMLX", "group_size":"64"] else { throw Check("metadata") }
+        let began = Date(); var plain = 0, quant = 0, dropped = 0, actual = Set<String>()
+        var perTensor = [[String: Any]](); var mismatch = [String]()
+        for name in ["dit.safetensors", "vae.safetensors", "image_encoder.safetensors"] {
+            let source = try Container(sourceRoot.appending(path:name))
+            for sourceKey in source.tensors.keys.sorted() {
+                guard let spec = source.tensors[sourceKey], spec.dtype == "F16" else { throw Check("source dtype") }
+                let key: String
+                switch try ShapePackLayout.mergedKey(for:sourceKey) {
+                case .dropUnusedVAEEncoder: dropped += 1; continue
+                case .keep(let mapped): key = mapped
+                }
+                let isQuant = ShapePackLayout.isQuantizable(packedKey:key, rank:spec.shape.count,
+                    innerDimension:spec.shape.count == 2 ? spec.shape[1] : 0, groupSize:64, skips:ShapePackLayout.plainQuantizationSkips)
+                if !isQuant {
+                    guard let target = packed.tensors[key], target.dtype == spec.dtype, target.shape == spec.shape else { throw Check("plain layout " + key) }
+                    let bytes = try packed.bytes(key), reference = try source.bytes(sourceKey)
+                    if bytes != reference { mismatch.append(key) }
+                    actual.insert(key); plain += 1
+                    perTensor.append(["key":key,"dtype":target.dtype,"shape":target.shape,"sha256":hash(bytes),"check":"source-raw-byte-comparison","equal":bytes == reference])
+                } else {
+                    quant += 1
+                    let triples:[(String,[Int],String)] = [(key,[spec.shape[0],spec.shape[1]/8],"U32"),
+                        (key+".scales",[spec.shape[0],spec.shape[1]/64],"F16"),(key+".biases",[spec.shape[0],spec.shape[1]/64],"F16")]
+                    for (k, shape, dtype) in triples {
+                        guard let target = packed.tensors[k], target.dtype == dtype, target.shape == shape else { throw Check("quant layout " + k) }
+                        actual.insert(k)
+                    }
+                    if mode != "layout" {
+                        try autoreleasepool {
+                            let reference = MLXArray(try source.bytes(sourceKey), spec.shape, dtype:.float16)
+                            let q = MLX.quantized(reference,groupSize:64,bits:4,stream:mode == "gpu" ? .gpu : .cpu)
+                            guard let biases = q.biases else { throw Check("missing affine bias") }
+                            for (k, array) in [(key,q.wq),(key+".scales",q.scales),(key+".biases",biases)] {
+                                let bytes = array.asData(access:.copy).data, target = try packed.bytes(k)
+                                if bytes != target { mismatch.append(k) }
+                                perTensor.append(["key":k,"dtype":packed.tensors[k]!.dtype,"shape":packed.tensors[k]!.shape,
+                                                  "sha256":hash(target),"check":"native-0.31.4-affine-q4-"+mode,"equal":bytes == target])
+                            }
+                        }
+                        Memory.clearCache()
+                    }
+                }
+                if (plain+quant).isMultiple(of:100) { print("checked \(plain) plain + \(quant) quantized of source-kept; mismatches \(mismatch.count)") }
+            }
+            try source.file.close()
+        }
+        guard actual == Set(packed.tensors.keys) else { throw Check("extra/missing packed keys") }
+        try write(["MLX":"0.31.4", "mode":mode, "packedSHA256":"30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7",
+            "headerBytes":packed.headerBytes,"payloadBytes":packed.size-packed.headerBytes-8,"packedTensorCount":packed.tensors.count,
+            "sourcePlainTensors":plain,"sourceQuantizedTensors":quant,"droppedVAEEncoderTensors":dropped,
+            "allKeysShapesDtypesMatched":true,"allQuantizedValuesChecked":mode != "layout", "mismatches":mismatch,
+            "seconds":Date().timeIntervalSince(began),"perTensor":perTensor],args[4])
+        print("complete mode \(mode), mismatches \(mismatch.count)")
+        if !mismatch.isEmpty { exit(1) }
+    }
+}

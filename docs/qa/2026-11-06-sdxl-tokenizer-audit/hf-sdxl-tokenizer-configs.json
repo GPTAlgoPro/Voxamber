@@ -1,0 +1,80 @@
+[
+  {
+    "path": "tokenizer/tokenizer_config.json",
+    "revision": "462165984030d82259a11f4367a4eed129e94a7b",
+    "sourceURL": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/462165984030d82259a11f4367a4eed129e94a7b/tokenizer/tokenizer_config.json",
+    "sha256": "19d7b034cb0cc3ce9766c2231373ab8aa8991fc72e2c8f76558bfaae3de0d563",
+    "config": {
+      "add_prefix_space": false,
+      "bos_token": {
+        "__type": "AddedToken",
+        "content": "<|startoftext|>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      },
+      "clean_up_tokenization_spaces": true,
+      "do_lower_case": true,
+      "eos_token": {
+        "__type": "AddedToken",
+        "content": "<|endoftext|>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      },
+      "errors": "replace",
+      "model_max_length": 77,
+      "pad_token": "<|endoftext|>",
+      "tokenizer_class": "CLIPTokenizer",
+      "unk_token": {
+        "__type": "AddedToken",
+        "content": "<|endoftext|>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      }
+    }
+  },
+  {
+    "path": "tokenizer_2/tokenizer_config.json",
+    "revision": "462165984030d82259a11f4367a4eed129e94a7b",
+    "sourceURL": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/462165984030d82259a11f4367a4eed129e94a7b/tokenizer_2/tokenizer_config.json",
+    "sha256": "c9d23941f76a41cbd50eda9290f57be7828f0a7a677939e9ef181f7e12bd1bdf",
+    "config": {
+      "add_prefix_space": false,
+      "bos_token": {
+        "__type": "AddedToken",
+        "content": "<|startoftext|>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      },
+      "clean_up_tokenization_spaces": true,
+      "do_lower_case": true,
+      "eos_token": {
+        "__type": "AddedToken",
+        "content": "<|endoftext|>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      },
+      "errors": "replace",
+      "model_max_length": 77,
+      "pad_token": "!",
+      "tokenizer_class": "CLIPTokenizer",
+      "unk_token": {
+        "__type": "AddedToken",
+        "content": "<|endoftext|>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      }
+    }
+  }
+]

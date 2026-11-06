@@ -1,0 +1,27 @@
+{
+  "scope": "synthetic CPU controls for topology algorithm only, not NN acceptance",
+  "checks": [
+    {
+      "case": "triangle",
+      "boundaryEdges": 3,
+      "components": 1,
+      "nonManifoldVertexLinks": 0,
+      "passed": true
+    },
+    {
+      "case": "tetrahedron",
+      "boundaryEdges": 0,
+      "components": 1,
+      "nonManifoldVertexLinks": 0,
+      "passed": true
+    },
+    {
+      "case": "bowtie",
+      "boundaryEdges": 6,
+      "components": 2,
+      "nonManifoldVertexLinks": 1,
+      "passed": true
+    }
+  ],
+  "diagnosticSourceSHA256": "09d90b02a29663b35fb9e1fd782b8af4f6c7f39aa05d03f4889eba8cebbf3cd1"
+}

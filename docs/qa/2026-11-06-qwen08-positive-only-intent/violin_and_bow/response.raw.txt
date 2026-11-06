@@ -1,0 +1,5 @@
+{
+  "title": "Violin and Bow",
+  "positivePrompt": "A single violin and a single bow, fully in frame as two distinct objects.",
+  "negativePrompt": ""
+}

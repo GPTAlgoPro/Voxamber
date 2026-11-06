@@ -1,0 +1,343 @@
+{
+  "verifiedAtUTC": "2026-11-05T23:57:56.014550+00:00",
+  "scope": "Whole SHA/size of existing39 runtime resource files before the sole public pipeline request; no download/import/model started",
+  "all39Passed": true,
+  "totalBytes": 6188648194,
+  "manifests": [
+    {
+      "path": "Apple/ThreeLiveStudio/Resources/NeuralModels/IntentQwen08.json",
+      "sha256": "53ee064ef37769876fc5c0bfd71d5c29f365562cf421c2425a4124d49b82aa09",
+      "group": "intent",
+      "id": "qwen3.5-0.8b-mlx-int4",
+      "files": 10
+    },
+    {
+      "path": "Apple/ThreeLiveStudio/Resources/NeuralModels/ImageSDXL.json",
+      "sha256": "c368d2ae9183096d986c921dec162f2f493759bbfbb9ce29e1d3fc24946d75a0",
+      "group": "image",
+      "id": "sdxl-base-ios-coreml",
+      "files": 27
+    },
+    {
+      "path": "Apple/ThreeLiveStudio/Resources/NeuralModels/ShapeHunyuan21.json",
+      "sha256": "7939b77b44905451f506c75b7f3bf71876258711d4f0ebd28d79b4fb7332d0eb",
+      "group": "shape",
+      "id": "hunyuan-shape-2.1-q4-30b93",
+      "files": 2
+    }
+  ],
+  "files": [
+    {
+      "group": "intent",
+      "path": "Apple/.build/NeuralModels/Qwen3.5-0.8B-4bit/chat_template.jinja",
+      "byteCount": 7755,
+      "sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+      "inode": 269286454,
+      "mtime_ns": 1793906327108951519
+    },
+    {
+      "group": "intent",
+      "path": "Apple/.build/NeuralModels/Qwen3.5-0.8B-4bit/config.json",
+      "byteCount": 3112,
+      "sha256": "ba7770da23eae5ebd6827571f086e331956b33f4442a9e876fb4aa10969a6772",
+      "inode": 269286461,
+      "mtime_ns": 1793906329165020219
+    },
+    {
+      "group": "intent",
+      "path": "Apple/.build/NeuralModels/Qwen3.5-0.8B-4bit/model.safetensors.index.json",
+      "byteCount": 71473,
+      "sha256": "6e48f2fa5d6f033a6d77bf833abfa9698ca24d1715ecea4c67447bcfaee44650",
+      "inode": 269286467,
+      "mtime_ns": 1793906331574646584
+    },
+    {
+      "group": "intent",
+      "path": "Apple/.build/NeuralModels/Qwen3.5-0.8B-4bit/preprocessor_config.json",
+      "byteCount": 390,
+      "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+      "inode": 269286472,
+      "mtime_ns": 1793906333669423006
+    },
+    {
+      "group": "intent",
+      "path": "Apple/.build/NeuralModels/Qwen3.5-0.8B-4bit/processor_config.json",
+      "byteCount": 1300,
+      "sha256": "14932921ca485d458a04dafd8069fbb0a4505622a48208d19ed247115801385b",
+      "inode": 269286480,
+      "mtime_ns": 1793906335620678196
+    },
+    {
+      "group": "intent",
+      "path": "Apple/.build/NeuralModels/Qwen3.5-0.8B-4bit/tokenizer_config.json",
+      "byteCount": 1139,
+      "sha256": "e98f1901ac6f0adff67b1d540bfa0c36ac1a0cf59eb72ed78146ef89aafa1182",
+      "inode": 269286488,
+      "mtime_ns": 1793906337711302690
+    },
+    {
+      "group": "intent",
+      "path": "Apple/.build/NeuralModels/Qwen3.5-0.8B-4bit/video_preprocessor_config.json",
+      "byteCount": 385,
+      "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+      "inode": 269286512,
+      "mtime_ns": 1793906339712217837
+    },
+    {
+      "group": "intent",
+      "path": "Apple/.build/NeuralModels/Qwen3.5-0.8B-4bit/model.safetensors",
+      "byteCount": 625229487,
+      "sha256": "f5a0d9dd3efa73510542a8023d610ff26be2b4b020d181cfc4bedaa1fcc5dd9e",
+      "inode": 269320659,
+      "mtime_ns": 1793908838919737359
+    },
+    {
+      "group": "intent",
+      "path": "Apple/.build/NeuralModels/Qwen3.5-0.8B-4bit/tokenizer.json",
+      "byteCount": 19989343,
+      "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+      "inode": 269286335,
+      "mtime_ns": 1793906202221933273
+    },
+    {
+      "group": "intent",
+      "path": "Apple/.build/NeuralModels/Qwen3.5-0.8B-4bit/LICENSE",
+      "byteCount": 11544,
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+      "inode": 269320688,
+      "mtime_ns": 1793908843936620892
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder.mlmodelc/analytics/coremldata.bin",
+      "byteCount": 243,
+      "sha256": "ba0cd4cdb851a15a59e0610f198aeb8dbe24cc758d99922e65955a44f79dfc9f",
+      "inode": 269321078,
+      "mtime_ns": 1793909019328622546
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder.mlmodelc/coremldata.bin",
+      "byteCount": 860,
+      "sha256": "dce008301b82a1598022040d02303a414be207b0b12cd4510432281b6678a5f5",
+      "inode": 269321076,
+      "mtime_ns": 1793909019328476337
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder.mlmodelc/metadata.json",
+      "byteCount": 2804,
+      "sha256": "19ecdd8f6afc15bf9c04b070125991a4c7c4959e5943a8c103517f1eab1756f2",
+      "inode": 269321074,
+      "mtime_ns": 1793909019328131378
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder.mlmodelc/model.mil",
+      "byteCount": 187532,
+      "sha256": "6b4c14a5bbddc902dba92a31d1775caf74a6f51f9cb63e0a180335fc9ffd2d10",
+      "inode": 269321075,
+      "mtime_ns": 1793909019328290670
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder.mlmodelc/weights/weight.bin",
+      "byteCount": 246145536,
+      "sha256": "72a0d48befc2a65462b0c320927d31b4b0c8bdcae383d357f4209de9bbc4d6d5",
+      "inode": 269321073,
+      "mtime_ns": 1793909019326724293
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder2.mlmodelc/analytics/coremldata.bin",
+      "byteCount": 243,
+      "sha256": "a6c5f66dbbbb69b15ab440424185a2775026f6661723158140531d0a8caf11a2",
+      "inode": 269321094,
+      "mtime_ns": 1793909020702696472
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder2.mlmodelc/coremldata.bin",
+      "byteCount": 860,
+      "sha256": "70b1249456151731abd5a48006cd0d08a424172fdeb104e59099e182882d13d0",
+      "inode": 269321092,
+      "mtime_ns": 1793909020702569055
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder2.mlmodelc/metadata.json",
+      "byteCount": 2809,
+      "sha256": "df3dc15d7f12f891e38fb23f71a0ab4391cad50250afa16f6c6251ec59973121",
+      "inode": 269321090,
+      "mtime_ns": 1793909020702087888
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder2.mlmodelc/model.mil",
+      "byteCount": 490294,
+      "sha256": "0661f53966ea164e08564165edf3a6aca41b87029df92eb31bb2c2b341734f5e",
+      "inode": 269321091,
+      "mtime_ns": 1793909020702288013
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder2.mlmodelc/weights/weight.bin",
+      "byteCount": 1389367424,
+      "sha256": "73ade7c979ddd33a1af71ecc581bdf4c5a5695f4c6adf6450ad0a914930d1459",
+      "inode": 269321089,
+      "mtime_ns": 1793909020701376137
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk1.mlmodelc/analytics/coremldata.bin",
+      "byteCount": 243,
+      "sha256": "b6911510036e3a9f3df8544d6f451625e8faa8dc9f9f4c024ae5e88cf9b170c5",
+      "inode": 269321112,
+      "mtime_ns": 1793909021224808375
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk1.mlmodelc/coremldata.bin",
+      "byteCount": 743,
+      "sha256": "4544dad1a05973f5c9298509782061ae5a6ccedf1cfce1dbf18e46735906863e",
+      "inode": 269321110,
+      "mtime_ns": 1793909021224674291
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk1.mlmodelc/metadata.json",
+      "byteCount": 6996,
+      "sha256": "d99765739d63a3e257d6402b329f8e4d974cbe09c5e6b3bf1bc838a583c3bd22",
+      "inode": 269321108,
+      "mtime_ns": 1793909021219595493
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk1.mlmodelc/model.mil",
+      "byteCount": 6353892,
+      "sha256": "0cfe5ccf4f905b14b08fecde4d8d9184ad0c0205d3d3bcc4869e8702d8ab3b83",
+      "inode": 269321109,
+      "mtime_ns": 1793909021222222622
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk1.mlmodelc/weights/weight.bin",
+      "byteCount": 653930048,
+      "sha256": "c3157612374be1fdf8e5e61dbf6b8c2138fdc81dd70c8ed08e785e62657d85fa",
+      "inode": 269321107,
+      "mtime_ns": 1793909021217874366
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk2.mlmodelc/analytics/coremldata.bin",
+      "byteCount": 243,
+      "sha256": "338113769e38ebc471eb63a83b2a3a2497b8f0cc059a08c10cb3e6852896c75f",
+      "inode": 269321086,
+      "mtime_ns": 1793909019764557257
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk2.mlmodelc/coremldata.bin",
+      "byteCount": 672,
+      "sha256": "1301537bd8ad0f89575f8c2b1398664df2d05032d38113bc3e85288b645ab466",
+      "inode": 269321084,
+      "mtime_ns": 1793909019764422757
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk2.mlmodelc/metadata.json",
+      "byteCount": 6092,
+      "sha256": "7bd5d2375cdfd14095ecc23976af46d36ca3066be141bed5ead493b49e5d995e",
+      "inode": 269321082,
+      "mtime_ns": 1793909019761952796
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk2.mlmodelc/model.mil",
+      "byteCount": 4107584,
+      "sha256": "9b206cbd3eb0145eeb985728f21fe91c89c728f82e23666b49290d6cf6196d89",
+      "inode": 269321083,
+      "mtime_ns": 1793909019762759755
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk2.mlmodelc/weights/weight.bin",
+      "byteCount": 651783424,
+      "sha256": "3187aa81e7258dae2d80e0cb1060416f25265ea920e9be72642c24970caf9c52",
+      "inode": 269321081,
+      "mtime_ns": 1793909019758109541
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/VAEDecoder.mlmodelc/analytics/coremldata.bin",
+      "byteCount": 243,
+      "sha256": "055c412933973d54894c58716cd08be44f50057a7f37e17be97b2e93b64b6321",
+      "inode": 269321103,
+      "mtime_ns": 1793909020767550303
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/VAEDecoder.mlmodelc/coremldata.bin",
+      "byteCount": 809,
+      "sha256": "4492ee202d19fc3ed370a137f408e887fcf7ccf1fe957da9ed97bb7c9f9cab22",
+      "inode": 269321101,
+      "mtime_ns": 1793909020767409970
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/VAEDecoder.mlmodelc/metadata.json",
+      "byteCount": 2591,
+      "sha256": "921bc8c0bc25db5a9a84a3fb0e3a987b3a267499e2ed457abdc03866945131a2",
+      "inode": 269321099,
+      "mtime_ns": 1793909020767069511
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/VAEDecoder.mlmodelc/model.mil",
+      "byteCount": 179220,
+      "sha256": "88d929e7c115c69dfa6411107ad332ac1179a1b86b15552dfd578101fc586b58",
+      "inode": 269321100,
+      "mtime_ns": 1793909020767222053
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/VAEDecoder.mlmodelc/weights/weight.bin",
+      "byteCount": 98993280,
+      "sha256": "9de777d8a5be28417a49a2a284749105d97d2a1eb56d2bdb448d511c82061b3e",
+      "inode": 269321098,
+      "mtime_ns": 1793909020764575591
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/merges.txt",
+      "byteCount": 524657,
+      "sha256": "f526393189112391ce6f9795d4695f704121ce452c3aad1f5335cc41337eba85",
+      "inode": 269321095,
+      "mtime_ns": 1793909020702857972
+    },
+    {
+      "group": "image",
+      "path": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/vocab.json",
+      "byteCount": 862328,
+      "sha256": "5047b556ce86ccaf6aa22b3ffccfc52d391ea4accdab9c2f2407da5b742d4363",
+      "inode": 269321104,
+      "mtime_ns": 1793909020767823678
+    },
+    {
+      "group": "shape",
+      "path": "Apple/.build/NeuralModels/Shape21Q4/model.q4.safetensors",
+      "byteCount": 2490378518,
+      "sha256": "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7",
+      "inode": 269472122,
+      "mtime_ns": 1793915528309506246
+    },
+    {
+      "group": "shape",
+      "path": "Apple/.build/NeuralModels/Shape21Q4/config.yaml",
+      "byteCount": 2078,
+      "sha256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e",
+      "inode": 269472123,
+      "mtime_ns": 1793915108036187383
+    }
+  ]
+}

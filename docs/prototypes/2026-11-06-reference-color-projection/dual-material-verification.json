@@ -1,0 +1,464 @@
+{
+  "createdAtUTC": "2026-11-06T01:29:40.626314+00:00",
+  "status": "actual_large_CPU_two_material_texture_format_and_native_Mac_display_passed_with_partial_appearance",
+  "scope": "Single-view color projection using existing NN geometry and reference PNG; not new NN, multi-view, full PBR, production integration, phone or semantic appearance acceptance.",
+  "sourceFreeze": "protocol-before-dual-material-corrected-run.json",
+  "sourceSHA256": {
+    "Package.swift": "18eda22936f404f1ebbc9d0c8c56c8d9f401a0b286ca544ccbd68567100a4e77",
+    "Sources/ReferenceColorProjection/ColorProjection.swift": "f2befbc083d3663a645f4c993e246f7415d0c6fd5db98032bcbdb8567512294e",
+    "Sources/ReferenceColorProjection/DualMaterialNativeProbe.swift": "9551995c415ad0ca165ffffe0d9c1ee664d624b48d06c643adff9a9c579cbc89",
+    "Sources/ReferenceColorProjection/DualMaterialTextureExporter.swift": "f6c239fd876479ed6705b2821e33091b1868cb6253133b9c142259b8a4c43e49",
+    "Sources/ReferenceColorProjection/FaceTextureSelection.swift": "394d42b47ba5489c5072ea99819f898d5a242d49475db8942769a6a6737b0503",
+    "Sources/ReferenceColorProjection/GLBMesh.swift": "138a474dcb9b9af231770e5f295a75e467b3cd9f6914c9a6e1d5b1f7acf49641",
+    "Sources/ReferenceColorProjection/NativeReadback.swift": "021dea332df7ed3781f2eaa8fda6e88b2b771a727e18d6a85345a98c6b2ddb86",
+    "Sources/ReferenceColorProjection/ProjectionCLI.swift": "49f48d1562d1aa9f1dd076b11d3885a53534aceb966e907030841faa88c3ae63",
+    "Sources/ReferenceColorProjection/QuickLookColorProbe.swift": "39d9312f2d8d03a0658814b396c9daa0a6f081de785ba9a303a05f722adf8aa8",
+    "Sources/ReferenceColorProjection/TextureCompatibilityProbe.swift": "67eb5a6dd53f566a5daf653c193413930a91de7039f673b8ef396857a90f8ab4",
+    "Sources/ReferenceColorProjection/USDZArchiveWriter.swift": "cc9de8b29060927390c8989cdf33afd08c74ad1259be5dd43798bc825d68bb1a",
+    "Sources/ReferenceColorProjection/VertexColorUSDZ.swift": "6fab8e9105633617656289dea002970728748c689d7aa71aaba04abc0ad2f53d",
+    "Tests/ReferenceColorProjectionTests/DualMaterialTextureTests.swift": "13708ac3e0693f34149f9d14baf39397643aa432bf4e624265909f9a13775649",
+    "Tests/ReferenceColorProjectionTests/FaceTextureSelectionTests.swift": "f7d67c1f2fb302106c7dc61c3f279d65b444e0732903a5bab5489e26f259f9ed",
+    "Tests/ReferenceColorProjectionTests/ProjectionTests.swift": "a3162671aef6c57085f58bcbc092c7c9df1a2bf131afca881403c04cf25e17b1"
+  },
+  "tests": {
+    "all": 21,
+    "passed": 21,
+    "failed": 0,
+    "seconds": 0.097,
+    "log": "Apple/.build/ReferenceColorProjection-all21-tests.log",
+    "newCPUOnlyTests": 13,
+    "newCPUNativeParserRegression": true
+  },
+  "smallTwoMaterialProof": {
+    "result": {
+      "atlasUsed": false,
+      "GLBReadback": {
+        "activePrimitiveCount": 2,
+        "embeddedPNGExact": true,
+        "everyOriginalTriangleWorldCoordinatesOrderWindingExact": true,
+        "originalPositionBufferBytesIdentical": true,
+        "originalTriangleMapOneToOne": true,
+        "sourceVertexMap": "identity, no expansion needed for this projection",
+        "wholeActiveIndexBufferBytesUnchangedClaimed": false
+      },
+      "GLBSHA256": "97f18e13185279dba0425cc34ddb5b715f4d5bc06e10df6d115e5c10cd3ab7f8",
+      "imageFaces": 1,
+      "kind": "synthetic-dual-material-two-triangle-rectangle",
+      "limits": {
+        "maximumGLBBytes": 256000000,
+        "maximumTriangles": 4000000,
+        "maximumUSDZBytes": 512000000,
+        "maximumVertices": 2000000
+      },
+      "nativeUSDZReadback": {
+        "everyOriginalFaceAccountedForExactlyOnce": true,
+        "nativeDirectSCNURLWorldCoordinatesOrderWindingExact": true,
+        "nativeFacePartitionCounts": {
+          "ReferenceImage": 1,
+          "UnknownNeutral": 1
+        },
+        "nativeMaterialRecords": [
+          {
+            "diffuseContentType": "NSURL",
+            "indicesChannelCount": 2,
+            "interleavedIndexChannels": true,
+            "name": "ReferenceImage",
+            "positionIndexChannel": 0,
+            "role": "ReferenceImage",
+            "triangles": 1
+          },
+          {
+            "diffuseContentType": "NSColorSpaceColor",
+            "indicesChannelCount": 2,
+            "interleavedIndexChannels": true,
+            "name": "UnknownNeutral",
+            "positionIndexChannel": 0,
+            "role": "UnknownNeutral",
+            "triangles": 1
+          }
+        ],
+        "rendererMaterialOverrides": false
+      },
+      "nativeViews": [
+        "projected-front.png",
+        "projected-threequarter.png"
+      ],
+      "neutralFaces": 1,
+      "NNCalls": 0,
+      "PBRReconstruction": false,
+      "productionOrPhoneTested": false,
+      "referencePNGSHA256": "323ae239e3eb14ebc6647acec2347a1c59a363b06ee6841543b68105c38e7534",
+      "secondsBeforeQuickLook": 0.2569619417190552,
+      "sourceTriangleMapLocation": "GLB each primitive extras.sourceTriangleMap",
+      "sourceVertexMap": "identity, original positions shared, no expansion",
+      "triangles": 2,
+      "unknownMaterialSamplesImageOrAtlas": false,
+      "USDZSHA256": "8e70cf7b03df069414b20c8ce76f0df31f734befc24657bbda625f1e362e0ae4",
+      "vertices": 4
+    },
+    "actualMacQuickLook": {
+      "actualRepresentationType": "thumbnail",
+      "attemptCount": 1,
+      "chromaticColorObserved": true,
+      "chromaticPixels": 9958,
+      "inputUSDZSHA256": "8e70cf7b03df069414b20c8ce76f0df31f734befc24657bbda625f1e362e0ae4",
+      "nonChromaticOpaquePixels": 10468,
+      "opaquePixels": 20426,
+      "phoneTest": false,
+      "PNGHeight": 256,
+      "PNGSHA256": "5924436c6724f1840ae4349dc2f9e7b56898d0ff3fd003150ccbc5f25c305090",
+      "PNGWidth": 256,
+      "productRealityKitCompatibilityEstablished": false,
+      "seconds": 0.19127202033996582,
+      "sourceKind": "synthetic-dual-material-two-triangle-rectangle",
+      "thumbnailReturned": true,
+      "usesSystemFileIconAsSuccess": false
+    },
+    "artifactManifest": [
+      {
+        "path": "Apple/.build/ReferenceColorProjection/DualMaterialTiny02/DualMaterial.usda",
+        "bytes": 2487,
+        "sha256": "8bf3ad15af8989bb9ce20eeac37d40916f7d3be50e7f74a749a3365f07014c4f"
+      },
+      {
+        "path": "Apple/.build/ReferenceColorProjection/DualMaterialTiny02/dual-material-result.json",
+        "bytes": 2262,
+        "sha256": "daf66b22110ac4b61bccbbc4c4ed39e82ab8e41a71f188690bed038c9c4fd34f"
+      },
+      {
+        "path": "Apple/.build/ReferenceColorProjection/DualMaterialTiny02/dual-material.glb",
+        "bytes": 2632,
+        "sha256": "97f18e13185279dba0425cc34ddb5b715f4d5bc06e10df6d115e5c10cd3ab7f8"
+      },
+      {
+        "path": "Apple/.build/ReferenceColorProjection/DualMaterialTiny02/dual-material.usdz",
+        "bytes": 3119,
+        "sha256": "8e70cf7b03df069414b20c8ce76f0df31f734befc24657bbda625f1e362e0ae4"
+      },
+      {
+        "path": "Apple/.build/ReferenceColorProjection/DualMaterialTiny02/projected-front.png",
+        "bytes": 38909,
+        "sha256": "e8e5667274281897dc5301e307a771dcdfab6c650abc4200abe98026cbd1a456"
+      },
+      {
+        "path": "Apple/.build/ReferenceColorProjection/DualMaterialTiny02/projected-threequarter.png",
+        "bytes": 33593,
+        "sha256": "24e2ed1ed718751aa3df294c30a4c93fa312f4c4f5ae0d777101088c424f4485"
+      },
+      {
+        "path": "Apple/.build/ReferenceColorProjection/DualMaterialTiny02/quicklook/quicklook-result.json",
+        "bytes": 661,
+        "sha256": "b5698e2f1fa7a9cf846fbb50dff305662b1ecff50c12da128080aade85b83849"
+      },
+      {
+        "path": "Apple/.build/ReferenceColorProjection/DualMaterialTiny02/quicklook/quicklook.png",
+        "bytes": 18818,
+        "sha256": "5924436c6724f1840ae4349dc2f9e7b56898d0ff3fd003150ccbc5f25c305090"
+      },
+      {
+        "path": "Apple/.build/ReferenceColorProjection/DualMaterialTiny02/reference.png",
+        "bytes": 304,
+        "sha256": "323ae239e3eb14ebc6647acec2347a1c59a363b06ee6841543b68105c38e7534"
+      }
+    ],
+    "embeddedUSDZReferencePNGExactSHA256": "323ae239e3eb14ebc6647acec2347a1c59a363b06ee6841543b68105c38e7534",
+    "USDZArchiveAlignment": [
+      {
+        "entry": "DualMaterial.usda",
+        "stored": true,
+        "dataOffset": 64,
+        "aligned64": true
+      },
+      {
+        "entry": "reference.png",
+        "stored": true,
+        "dataOffset": 2624,
+        "aligned64": true
+      }
+    ],
+    "fileBudgetsPassed": true
+  },
+  "largeSingleActualRun": {
+    "result": {
+      "allWorldSurfaceArea": 15.945366851373265,
+      "atlasUsed": false,
+      "baseStrictGLBSHA256": "42ea594bf5247fda74848ef2e958b27e09cee3d2d45529a61e0b0636ddcc2251",
+      "cameraDirectionAssumed": "+Z toward bbox center, Y up; uncalibrated",
+      "continuousOverlapPairTests": 26375353,
+      "GLBReadback": {
+        "activePrimitiveCount": 2,
+        "embeddedPNGExact": true,
+        "everyOriginalTriangleWorldCoordinatesOrderWindingExact": true,
+        "originalPositionBufferBytesIdentical": true,
+        "originalTriangleMapOneToOne": true,
+        "sourceVertexMap": "identity, no expansion needed for this projection",
+        "wholeActiveIndexBufferBytesUnchangedClaimed": false
+      },
+      "GLBSHA256": "d91f825b276a249fd98ac0cc12eaf48093733e66cd31b0b854d1ae22149814dc",
+      "imageFaceFraction": 0.2542018903516214,
+      "imageFaces": 101877,
+      "imageWorldSurfaceArea": 4.125028161991777,
+      "imageWorldSurfaceAreaFraction": 0.2586976016570303,
+      "kind": "actual-strict-neural-mesh-single-reference-dual-material",
+      "limits": {
+        "maximumGLBBytes": 256000000,
+        "maximumTriangles": 4000000,
+        "maximumUSDZBytes": 512000000,
+        "maximumVertices": 2000000
+      },
+      "maskCriterion": "Entire projected bounding rectangle plus bilinear footprint has alpha>=254; conservative false negatives allowed",
+      "maskRejectedFaces": 19860,
+      "nativeUSDZReadback": {
+        "everyOriginalFaceAccountedForExactlyOnce": true,
+        "nativeDirectSCNURLWorldCoordinatesOrderWindingExact": true,
+        "nativeFacePartitionCounts": {
+          "ReferenceImage": 101877,
+          "UnknownNeutral": 298895
+        },
+        "nativeMaterialRecords": [
+          {
+            "diffuseContentType": "NSURL",
+            "indicesChannelCount": 2,
+            "interleavedIndexChannels": true,
+            "name": "ReferenceImage",
+            "positionIndexChannel": 0,
+            "role": "ReferenceImage",
+            "triangles": 101877
+          },
+          {
+            "diffuseContentType": "NSColorSpaceColor",
+            "indicesChannelCount": 2,
+            "interleavedIndexChannels": true,
+            "name": "UnknownNeutral",
+            "positionIndexChannel": 0,
+            "role": "UnknownNeutral",
+            "triangles": 298895
+          }
+        ],
+        "rendererMaterialOverrides": false
+      },
+      "nativeViews": [
+        "projected-front.png",
+        "projected-threequarter.png"
+      ],
+      "neutralFaces": 298895,
+      "newFoundationModels": 0,
+      "NNCalls": 0,
+      "occludedFaces": 279035,
+      "occlusionCriterion": "Projected triangle intersection and inverse-depth extrema, numerical tolerances only; internal blockers reject the whole face",
+      "PBRReconstruction": false,
+      "photographyLightingBakedIntoRGB": true,
+      "productionOrPhoneTested": false,
+      "projectedDegenerateFaces": 0,
+      "referencePNGSHA256": "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae",
+      "secondsBeforeQuickLook": 6.268942952156067,
+      "selectionSeconds": 38.18592894077301,
+      "sourceReferencePNGSHA256": "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae",
+      "sourceTriangleMapLocation": "GLB each primitive extras.sourceTriangleMap",
+      "sourceVertexMap": "identity, original positions shared, no expansion",
+      "triangles": 400772,
+      "unknownBackReconstructed": false,
+      "unknownMaterialSamplesImageOrAtlas": false,
+      "USDZSHA256": "9f59bd2320ab01584a4a7532e444c2edaa095a6d7f44f8eedbd32c406c4eb1c9",
+      "vertices": 200370
+    },
+    "actualMacQuickLook": {
+      "actualRepresentationType": "thumbnail",
+      "attemptCount": 1,
+      "chromaticColorObserved": true,
+      "chromaticPixels": 9582,
+      "inputUSDZSHA256": "9f59bd2320ab01584a4a7532e444c2edaa095a6d7f44f8eedbd32c406c4eb1c9",
+      "nonChromaticOpaquePixels": 8530,
+      "opaquePixels": 18112,
+      "phoneTest": false,
+      "PNGHeight": 256,
+      "PNGSHA256": "c787fb96cc816b8ef4c9d0e81b9a17b211fa9f059b67e8110944309af42bec8d",
+      "PNGWidth": 256,
+      "productRealityKitCompatibilityEstablished": false,
+      "seconds": 2.20661997795105,
+      "sourceKind": "actual-strict-neural-mesh-single-reference-dual-material",
+      "thumbnailReturned": true,
+      "usesSystemFileIconAsSuccess": false
+    },
+    "artifactManifest": [
+      {
+        "path": "Apple/.build/ReferenceColorProjection/VaseDualMaterial01/DualMaterial.usda",
+        "bytes": 53236043,
+        "sha256": "50a149091f662cf7108ee6171ebdcab0e28b3d1a6926de7c520ed31207c6ec7b"
+      },
+      {
+        "path": "Apple/.build/ReferenceColorProjection/VaseDualMaterial01/dual-material-result.json",
+        "bytes": 3353,
+        "sha256": "b26c909461cae4cbd278c9028b541ece69f1809911f8e7790d15491804e9afd7"
+      },
+      {
+        "path": "Apple/.build/ReferenceColorProjection/VaseDualMaterial01/dual-material.glb",
+        "bytes": 18976736,
+        "sha256": "d91f825b276a249fd98ac0cc12eaf48093733e66cd31b0b854d1ae22149814dc"
+      },
+      {
+        "path": "Apple/.build/ReferenceColorProjection/VaseDualMaterial01/dual-material.usdz",
+        "bytes": 53486053,
+        "sha256": "9f59bd2320ab01584a4a7532e444c2edaa095a6d7f44f8eedbd32c406c4eb1c9"
+      },
+      {
+        "path": "Apple/.build/ReferenceColorProjection/VaseDualMaterial01/projected-front.png",
+        "bytes": 377861,
+        "sha256": "6f5e5123cf0418917c222e5bc08d1221eec7c447ea60476d2bfa4e6de4f6025a"
+      },
+      {
+        "path": "Apple/.build/ReferenceColorProjection/VaseDualMaterial01/projected-threequarter.png",
+        "bytes": 309263,
+        "sha256": "43f9afeabb85b7746f4d5f0c3c27ef7227af514e453ca6fe8ff3ea78e7629cee"
+      },
+      {
+        "path": "Apple/.build/ReferenceColorProjection/VaseDualMaterial01/quicklook/quicklook-result.json",
+        "bytes": 669,
+        "sha256": "eefc26f6d4a1ae9fd3ccdf17d7cf3405619a8283ffc08d0d6c6a2e399a7bf799"
+      },
+      {
+        "path": "Apple/.build/ReferenceColorProjection/VaseDualMaterial01/quicklook/quicklook.png",
+        "bytes": 46699,
+        "sha256": "c787fb96cc816b8ef4c9d0e81b9a17b211fa9f059b67e8110944309af42bec8d"
+      },
+      {
+        "path": "Apple/.build/ReferenceColorProjection/VaseDualMaterial01/reference.png",
+        "bytes": 249722,
+        "sha256": "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae"
+      }
+    ],
+    "embeddedUSDZReferencePNGExactSHA256": "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae",
+    "USDZArchiveAlignment": [
+      {
+        "entry": "DualMaterial.usda",
+        "stored": true,
+        "dataOffset": 64,
+        "aligned64": true
+      },
+      {
+        "entry": "reference.png",
+        "stored": true,
+        "dataOffset": 53236160,
+        "aligned64": true
+      }
+    ],
+    "fileBudgetsPassed": true
+  },
+  "attemptAccounting": {
+    "largeRunCount": 1,
+    "largeQuickLookRequests": 1,
+    "smallCorrectedRunCount": 1,
+    "smallCorrectedQuickLookRequests": 1,
+    "smallFailedBeforeFix": {
+      "path": "Apple/.build/ReferenceColorProjection/DualMaterialTiny01",
+      "renderedViews": 0,
+      "QuickLookRequests": 0,
+      "failure": "New exporter terminal closing braces same line were rejected by Apple USD parser; file retained, only corrected formatting then native CPU parsing regression before rerun."
+    }
+  },
+  "visualReview": {
+    "nativeFrontReviewed": true,
+    "nativeThreequarterReviewed": true,
+    "actualQuickLookReviewed": true,
+    "largeActualBlueGoldOnFrontObserved": true,
+    "sideBackNeutralGrayClearlyVisible": true,
+    "rootIndependentlyReviewedTheseThreeImages": true,
+    "limitationsObserved": [
+      "Hard transitions along known/unknown face boundaries.",
+      "White bright bands and projection/camera mismatch; image illumination is baked.",
+      "Only 25.42% of all faces and 25.87% of original surface area receive image material; no unseen-back reconstruction.",
+      "Source still has existing open boundaries, holes and disconnected components; no topology repair."
+    ],
+    "completeAppearanceAccepted": false
+  },
+  "geometryProof": {
+    "originalVertexCount": 200370,
+    "originalTriangleCount": 400772,
+    "originalPositionBufferBytesIdentical": true,
+    "GLBActiveIndexGroupingChangesWholeIndexBytes": true,
+    "perPrimitiveSourceTriangleMapOneToOne": true,
+    "sourceVertexMapIdentityNoExpansion": true,
+    "eachOriginalWorldTriangleCornerOrderAndWindingExactInGLB": true,
+    "nativeUSDZEachOriginalWorldTriangleCornerOrderAndWindingExact": true,
+    "USDZOriginalPointsAndFaceIndicesPlusFaceVaryingUVAndGeomSubset": true,
+    "noRendererMaterialOverrides": true,
+    "unknownFacesUseConstantMaterialNotImageOrAtlas": true
+  },
+  "elapsedMacSeconds": {
+    "projectionSelectionAndArea": 38.18592894077301,
+    "exportNativeReadbackAndTwoViews": 6.268942952156067,
+    "QuickLook": 2.20661997795105,
+    "sumApproximate": 46.66149187088013
+  },
+  "immutableBaseInputsAfterRun": [
+    {
+      "path": "Apple/.build/NativeShapeCleanupGate/VaseSingleRaw01/strict/model.glb",
+      "bytes": 7214300,
+      "sha256": "42ea594bf5247fda74848ef2e958b27e09cee3d2d45529a61e0b0636ddcc2251"
+    },
+    {
+      "path": "docs/qa/2026-11-06-native-image-vase/reference-prepared-512-rgba.png",
+      "bytes": 249722,
+      "sha256": "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae"
+    }
+  ],
+  "allPriorConditionsArtifactSHAsStillMatch": true,
+  "exactPNGEvidenceCopies": [
+    {
+      "source": "Apple/.build/ReferenceColorProjection/VaseStrict01/projected-front.png",
+      "evidenceCopy": "docs/prototypes/2026-11-06-reference-color-projection/evidence/01-vertex-color-large-front-gray.png",
+      "bytes": 131796,
+      "sha256": "3e89531218d37f65a63329f4a680d3ecd9fdc7fdd004c7ae83aaef45be15ce61",
+      "unmodifiedOriginalPNG": true
+    },
+    {
+      "source": "Apple/.build/ReferenceColorProjection/WhiteBaseTiny01/quicklook/quicklook.png",
+      "evidenceCopy": "docs/prototypes/2026-11-06-reference-color-projection/evidence/02-white-base-vertex-quicklook-gray.png",
+      "bytes": 7211,
+      "sha256": "33d9b3e7b2bbd41ea30e5cc7a32291c49eabd5426fc02620cb5483c8657a5dc9",
+      "unmodifiedOriginalPNG": true
+    },
+    {
+      "source": "Apple/.build/ReferenceColorProjection/TexturedTiny03/quicklook/quicklook.png",
+      "evidenceCopy": "docs/prototypes/2026-11-06-reference-color-projection/evidence/03-small-uv-quicklook-rgb.png",
+      "bytes": 10800,
+      "sha256": "96a1a3b9fe5d139513455a64b287e862b2d3c7052c7cfc7f14122fe396ff53d9",
+      "unmodifiedOriginalPNG": true
+    },
+    {
+      "source": "Apple/.build/ReferenceColorProjection/DualMaterialTiny02/quicklook/quicklook.png",
+      "evidenceCopy": "docs/prototypes/2026-11-06-reference-color-projection/evidence/04-small-dual-quicklook-rgb-neutral.png",
+      "bytes": 18818,
+      "sha256": "5924436c6724f1840ae4349dc2f9e7b56898d0ff3fd003150ccbc5f25c305090",
+      "unmodifiedOriginalPNG": true
+    },
+    {
+      "source": "Apple/.build/ReferenceColorProjection/VaseDualMaterial01/projected-front.png",
+      "evidenceCopy": "docs/prototypes/2026-11-06-reference-color-projection/evidence/05-large-dual-front.png",
+      "bytes": 377861,
+      "sha256": "6f5e5123cf0418917c222e5bc08d1221eec7c447ea60476d2bfa4e6de4f6025a",
+      "unmodifiedOriginalPNG": true
+    },
+    {
+      "source": "Apple/.build/ReferenceColorProjection/VaseDualMaterial01/projected-threequarter.png",
+      "evidenceCopy": "docs/prototypes/2026-11-06-reference-color-projection/evidence/05-large-dual-threequarter.png",
+      "bytes": 309263,
+      "sha256": "43f9afeabb85b7746f4d5f0c3c27ef7227af514e453ca6fe8ff3ea78e7629cee",
+      "unmodifiedOriginalPNG": true
+    },
+    {
+      "source": "Apple/.build/ReferenceColorProjection/VaseDualMaterial01/quicklook/quicklook.png",
+      "evidenceCopy": "docs/prototypes/2026-11-06-reference-color-projection/evidence/05-large-dual-quicklook.png",
+      "bytes": 46699,
+      "sha256": "c787fb96cc816b8ef4c9d0e81b9a17b211fa9f059b67e8110944309af42bec8d",
+      "unmodifiedOriginalPNG": true
+    }
+  ],
+  "productionFilesChangedByThisAgent": false,
+  "phoneOperations": 0,
+  "NNCalls": 0,
+  "newFoundationModels": 0,
+  "RealityKitEntityContentsOfOrIPhoneAccepted": false,
+  "postRunGPURenderingOrNNPlanned": false,
+  "nextScope": "Freeze; root review only. No automatic additional projection scheme, App integration or more inference."
+}

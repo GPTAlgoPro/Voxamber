@@ -1,0 +1,35 @@
+{
+  "snapshotCompletedAtUTC": "2026-11-05T17:44:35.935949+00:00",
+  "scope": "One read-only phone data snapshot after the manual retest request; not an automation run or a model invocation.",
+  "copyOutcomes": {
+    "Creations": "success",
+    "Measurements": "success"
+  },
+  "currentPublishedProjects": 0,
+  "currentCreationFiles": 1,
+  "latestInference": {
+    "appBuild": "5",
+    "completion": {
+      "generatedTokenCount": 3072,
+      "grammarEnabled": false,
+      "grammarTerminated": false,
+      "inputTokenCount": 1038,
+      "reason": "outputLimit",
+      "tokenLimit": 3072
+    }
+  },
+  "latestBudget": {
+    "appBuild": "6",
+    "phase": "startup",
+    "physicalMemoryBytes": 12263407616,
+    "availableProcessBytes": 6405437576,
+    "physicalFootprintBytes": 37013368,
+    "derivedLimitBytes": 6442450944
+  },
+  "App6NewAIGenerationAccepted": false,
+  "currentPreviewAccepted": false,
+  "currentThumbnailAccepted": false,
+  "historicalApp5InferenceNotCountedAsApp6": true,
+  "deletedWorksRestored": false,
+  "noPhoneUIAction": true
+}

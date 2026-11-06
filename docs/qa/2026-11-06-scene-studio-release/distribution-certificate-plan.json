@@ -1,0 +1,10 @@
+{
+  "certificateType": "DISTRIBUTION",
+  "existingServerDistributionCount": 0,
+  "existingLocalMatchedIOSDistributionCount": 0,
+  "CSR_SHA256": "e5edef5519b2e88639c2dea65d8bcddea65f54ce91ed726d9bd425eb843fc74c",
+  "publicKeySHA256": "cf1ce21baf9f364990fc677138f7a458d57b3ae0e364026ae1cc268ed074d130",
+  "securePersistentDirectory": "/Users/kaisun/Library/Application Support/Voxamber/Signing",
+  "privateMaterialOutput": false,
+  "newCertificatesMaximum": 1
+}

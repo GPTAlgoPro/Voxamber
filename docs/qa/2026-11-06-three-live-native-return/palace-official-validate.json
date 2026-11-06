@@ -1,0 +1,9 @@
+{
+  "exitCode": 0,
+  "seconds": 0.22865545802051201,
+  "compilerSHA256": "70dbe721a1fc00f6c169b16d2ef4fd8a16d765ff0aaab1f6c9165241e00eac6c",
+  "scriptSHA256": "5d6a492a4b4ca6df05beb2d9c6a2da471aa4042ac8825cefb07d7f3e2ea8e41a",
+  "hostOnly": true,
+  "modelInference": false,
+  "embeddedInApp": false
+}

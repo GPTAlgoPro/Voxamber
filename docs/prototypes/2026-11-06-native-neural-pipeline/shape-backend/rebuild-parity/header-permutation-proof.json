@@ -1,0 +1,106 @@
+{
+  "scope": "header-only virtual offset permutations; no tensor values/data/file rewriting",
+  "originalHeaderBytes": 297612,
+  "sameKeysShapesDtypesMetadataAndLengths": true,
+  "permutations": [
+    {
+      "seed": 0,
+      "headerBytes": 297796
+    },
+    {
+      "seed": 1,
+      "headerBytes": 297798
+    },
+    {
+      "seed": 2,
+      "headerBytes": 297548
+    },
+    {
+      "seed": 3,
+      "headerBytes": 297324
+    },
+    {
+      "seed": 4,
+      "headerBytes": 297550
+    },
+    {
+      "seed": 5,
+      "headerBytes": 297630
+    },
+    {
+      "seed": 6,
+      "headerBytes": 297780
+    },
+    {
+      "seed": 7,
+      "headerBytes": 297756
+    },
+    {
+      "seed": 8,
+      "headerBytes": 297526
+    },
+    {
+      "seed": 9,
+      "headerBytes": 297916
+    },
+    {
+      "seed": 10,
+      "headerBytes": 297590
+    },
+    {
+      "seed": 11,
+      "headerBytes": 297782
+    },
+    {
+      "seed": 12,
+      "headerBytes": 297912
+    },
+    {
+      "seed": 13,
+      "headerBytes": 297884
+    },
+    {
+      "seed": 14,
+      "headerBytes": 297688
+    },
+    {
+      "seed": 15,
+      "headerBytes": 297690
+    },
+    {
+      "seed": 16,
+      "headerBytes": 297452
+    },
+    {
+      "seed": 17,
+      "headerBytes": 297616
+    },
+    {
+      "seed": 18,
+      "headerBytes": 297610
+    },
+    {
+      "seed": 19,
+      "headerBytes": 297452
+    },
+    {
+      "seed": 20,
+      "headerBytes": 297586
+    },
+    {
+      "seed": 21,
+      "headerBytes": 297662
+    },
+    {
+      "seed": 22,
+      "headerBytes": 297726
+    },
+    {
+      "seed": 23,
+      "headerBytes": 297570
+    }
+  ],
+  "minimum": 297324,
+  "maximum": 297916,
+  "legacyHeaderUnknown": true
+}

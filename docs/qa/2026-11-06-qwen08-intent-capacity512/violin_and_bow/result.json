@@ -1,0 +1,33 @@
+{
+  "attempts" : 1,
+  "completion" : {
+    "generatedTokenCount" : 22,
+    "grammar" : {
+      "compiledSchemaSHA256" : "61093069cf010cc8ab1a7d715895f5d6e05e4d8343f09116a0e572e30af9f92a",
+      "floatBoundsRequireNativeValidation" : false,
+      "originalSchemaSHA256" : "eaeacdcb151be2a139dced6c58fd0e3761784a590d44560f31fc6c2d7e4ad1d0"
+    },
+    "grammarEnabled" : true,
+    "grammarTerminated" : true,
+    "inputTokenCount" : 102,
+    "reason" : "jsonComplete",
+    "tokenLimit" : 512
+  },
+  "firstTokenSeconds" : 15.130017667000001,
+  "id" : "violin_and_bow",
+  "imagesOrGeometryGenerated" : false,
+  "intentAccepted" : true,
+  "maxTokens" : 512,
+  "prefillStepSize" : 128,
+  "rawReturned" : true,
+  "rawSHA256" : "678ccf00fb5f195aebccc33607bd296f2aa06ee60d44a38bdddef5ffcbe767f0",
+  "rawUTF8Bytes" : 90,
+  "repair" : false,
+  "retry" : false,
+  "seconds" : 16.659970998764038,
+  "semanticReview" : "pending manual synthetic-case review",
+  "status" : "decoded_for_semantic_review",
+  "temperature" : 0,
+  "thinking" : false,
+  "user" : "一把小提琴和一根琴弓，作为两个独立物体完整入镜。"
+}

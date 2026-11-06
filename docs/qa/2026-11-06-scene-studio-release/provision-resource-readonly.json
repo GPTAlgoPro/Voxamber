@@ -1,0 +1,69 @@
+{
+  "readOnly": true,
+  "remoteMutations": 0,
+  "checks": {
+    "com.kaisun.voxamber": {
+      "HTTPStatus": 200,
+      "exactMatchingCount": 1,
+      "records": [
+        {
+          "id": "TK9NCA3M7W",
+          "identifier": "com.kaisun.voxamber",
+          "platform": "UNIVERSAL",
+          "seedID": "M97RTV2PQG"
+        }
+      ]
+    },
+    "com.kaisun.voxamber.scene-qa": {
+      "HTTPStatus": 200,
+      "exactMatchingCount": 0,
+      "records": []
+    },
+    "com.kaisun.voxamber.scene-qa.scene-import": {
+      "HTTPStatus": 200,
+      "exactMatchingCount": 0,
+      "records": []
+    },
+    "com.kaisun.voxamber.scene-import": {
+      "HTTPStatus": 200,
+      "exactMatchingCount": 1,
+      "records": [
+        {
+          "id": "P6Q247R8RH",
+          "identifier": "com.kaisun.voxamber.scene-import",
+          "platform": "UNIVERSAL",
+          "seedID": "M97RTV2PQG"
+        }
+      ]
+    },
+    "normalMainCapabilities": {
+      "HTTPStatus": 200,
+      "capabilityTypes": [
+        "IN_APP_PURCHASE",
+        "INCREASED_MEMORY_LIMIT",
+        "APP_GROUPS"
+      ]
+    },
+    "existingAppGroupAPI": {
+      "HTTPStatus": 404
+    },
+    "certificates": {
+      "HTTPStatus": 200,
+      "countsByType": {
+        "DEVELOPMENT": 1,
+        "DEVELOPER_ID_APPLICATION": 1
+      },
+      "localSigningIdentityMatchesByType": {
+        "DEVELOPMENT": 1,
+        "DEVELOPER_ID_APPLICATION": 1
+      },
+      "privateKeyMaterialRead": false
+    },
+    "registeredDevices": {
+      "HTTPStatus": 200,
+      "registeredCount": 7,
+      "enabledIOSCount": 5,
+      "contactDetailsRead": false
+    }
+  }
+}

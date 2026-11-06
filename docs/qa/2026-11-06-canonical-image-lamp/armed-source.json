@@ -1,0 +1,273 @@
+{
+  "armedAtUTC": "2026-11-06T00:50:22.155893+00:00",
+  "status": "ARMED ONLY; no binary or image model invocation; parent GO required",
+  "sourceFiles": [
+    {
+      "path": "Apple/.build/CanonicalImageLampGate/GateMain.swift",
+      "byteCount": 8272,
+      "sha256": "e67c8ffc4681214a2b788e1307faba32a27db30aa80a97e454e489fdac54e9b2"
+    },
+    {
+      "path": "Apple/.build/CanonicalImageLampGate/CanonicalImageLampGate",
+      "byteCount": 673448,
+      "sha256": "b85e98cb58c478e4dddbb1ab01f86fd79dcbec820a76f7921de7249392928183"
+    },
+    {
+      "path": "docs/qa/2026-11-06-canonical-image-lamp/protocol-before-generation.md",
+      "byteCount": 3784,
+      "sha256": "acae59929104d4a61cf50ebcfc808fd5b5f540a3c6773c6f3f3b93bf761c419a"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/intent.json",
+      "byteCount": 398,
+      "sha256": "b90098e80c8fc2b07e2a617a00197f63317d20273109fc79e702da138fd390c4"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/.gitignore",
+      "byteCount": 28,
+      "sha256": "0127b47d29f25aa72765aeae42b027a0ef39344d8917cebcc56ffcc8494076b3"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/ACKNOWLEDGEMENTS-APPLE",
+      "byteCount": 31679,
+      "sha256": "38105900a75ce50ca27f3484e9115b4e15690300c33527e8e3fed62c88620399"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/LICENSE-OPENAI-CLIP",
+      "byteCount": 1064,
+      "sha256": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/LICENSE.md",
+      "byteCount": 1067,
+      "sha256": "4f7eae00de7a3b4ea1d6b3d26f64c113b999dda4e7d3269f3278caac66575fc3"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/MODEL-LICENSE-SDXL.md",
+      "byteCount": 14109,
+      "sha256": "19b6998b569b53ac1fc2158a8a3202c8699a9a4605b47075715d9c96be7fb6d0"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Package.swift",
+      "byteCount": 761,
+      "sha256": "e54226bcc98ad1539d40e12e4f3aeed6c3965896ab3f0df8f6f090be6c1b065c"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/README.md",
+      "byteCount": 4915,
+      "sha256": "133d4a526e4ad78e09b906c1ff1c01d848e725881adb6cc0adc2984a1f48c46f"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/CGImage+vImage.swift",
+      "byteCount": 9085,
+      "sha256": "1a705171079dc8f71909804f38c2f47d3240f5d5a5b4c4b771f48ec26b4fc18d"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/DPMSolverMultistepScheduler.swift",
+      "byteCount": 11877,
+      "sha256": "935b57f0b632a9e166b7c46f8dfa18b5b24f1d3e70c261e87ffde9b89a24cdc3"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/Decoder.swift",
+      "byteCount": 2772,
+      "sha256": "6ace6ca382998b486ed7de37ee720e81217eea957ef6a057efd4e80b05a666b7"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/DiscreteFlowScheduler.swift",
+      "byteCount": 4894,
+      "sha256": "24a07120cb033a080100045b4d4efb9a73151b941c812be455d3ac83db64bae0"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/Encoder.swift",
+      "byteCount": 3851,
+      "sha256": "50f34834d4122dcdbec8f87f5c8ec8df38df9dd760e458359622e435b3eeca01"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/ManagedMLModel.swift",
+      "byteCount": 4447,
+      "sha256": "50294be55b4bec01796d9a8a4f61c45092482567f708c509de242ee3b45bd3dd"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/NumPyRandomSource.swift",
+      "byteCount": 4172,
+      "sha256": "72d94364c28b66ddfc2b82e61591286eeddc9b505004ac009aff8f4e99b678d6"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/NvRandomSource.swift",
+      "byteCount": 3392,
+      "sha256": "509ee5424533408f0a3bb2af6fcfcec248d44e042bbdd84a345c35ea00efdc3a"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/RandomSource.swift",
+      "byteCount": 263,
+      "sha256": "ddbc5f36a51986473d7b90183ddaae130f9e67de8896977f4d9cfee85d52c1d8"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/ResourceManaging.swift",
+      "byteCount": 577,
+      "sha256": "d534f14e4d7a9660a2efacf3220f74fdb9698b08247c9c57ed902d733793dccb"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/Scheduler.swift",
+      "byteCount": 13506,
+      "sha256": "8a0fe6568bc89aa04def364dcddaef479875b8cb95628a94a1420dddf7e01b70"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/StableDiffusionPipeline.Configuration.swift",
+      "byteCount": 4204,
+      "sha256": "97156ca93fbfdd7555b0fe9b53ef9472706bc79869624dc3a09afc64ecb2d61e"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/StableDiffusionPipeline.swift",
+      "byteCount": 4382,
+      "sha256": "79b86817aa8b8c37727e4dd1f1097c7be690317df0dcbbdcd7924c9a40e6bb84"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/StableDiffusionXL+Resources.swift",
+      "byteCount": 4974,
+      "sha256": "c547460a6e3c09852e65570e3d9579623a2f93b3a374627a88321b98b44cde39"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/StableDiffusionXLPipeline.swift",
+      "byteCount": 15954,
+      "sha256": "1dec109f5b54987e196500e6f2539449957394e06d6779b2c320cd968c140884"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/TextEncoderXL.swift",
+      "byteCount": 3587,
+      "sha256": "7af760be14516e4f3f68d1cf9bf80f05893e05d9f435c2514431e92b538baa78"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/TorchRandomSource.swift",
+      "byteCount": 5530,
+      "sha256": "e45eddd61857793176c1f0accfd41537a6bac012d6ee1d3abce2db1a7e0f3b51"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/Unet.swift",
+      "byteCount": 7514,
+      "sha256": "2f22d726c1f6aa942ebffab8e26ceffa443def8970b6e99602795cce815c7962"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/tokenizer/BPETokenizer+Reading.swift",
+      "byteCount": 2250,
+      "sha256": "8f96f356f2ac5b3a316dbd18b2c1f38ac6a1de57f7b11a5f7d000310e6504f5c"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/tokenizer/BPETokenizer.swift",
+      "byteCount": 8379,
+      "sha256": "48c02b2951262c0af74d6017a301ca07d42e900c52d0dacf22ea8b0065926408"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/VoxamberImageNative/ImageEngine.swift",
+      "byteCount": 5559,
+      "sha256": "cf43f6a599ce38aff0c368a7fc0f4dac1b1867c01b2e728ac44af8a78170aa88"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/VoxamberImageNative/ImageRequest.swift",
+      "byteCount": 2245,
+      "sha256": "5b59f9f95543f911ce02e56ed3fe7d3eae9b2cb516de0b9a66336f7ac6d7c6df"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/VoxamberImageNative/SDXLResources.swift",
+      "byteCount": 3996,
+      "sha256": "522b0c8f705494dc3786bb70eb703700f68119f22a91ceff7c2fece450ad6cd1"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Tests/VoxamberImageNativeTests/CLIPCanonicalTokenizerTests.swift",
+      "byteCount": 4095,
+      "sha256": "daf0ad13e75bd70828031f11ab5496dac43118d7081bb8d8e2610260108ec086"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Tests/VoxamberImageNativeTests/Fixtures/CLIPCanonical/README.txt",
+      "byteCount": 672,
+      "sha256": "f639f9ff008244a60861645f2646edf617215df7ce541ddf631a734689e528e9"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Tests/VoxamberImageNativeTests/Fixtures/CLIPCanonical/merges.txt",
+      "byteCount": 1644,
+      "sha256": "973d4468e6e9ad83450dc5aee17789c20b4cc29abdea96f4503b74db6644505e"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Tests/VoxamberImageNativeTests/Fixtures/CLIPCanonical/vectors.json",
+      "byteCount": 27440,
+      "sha256": "4b75a451fde9cead85ae7e6c4191b7e4b9ce52b7f32b272b1345b1f30d839007"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Tests/VoxamberImageNativeTests/Fixtures/CLIPCanonical/vocab.json",
+      "byteCount": 8402,
+      "sha256": "1c9ca2fd48da1e11e9e98db5aed52bee7d0311eaeaa5684461c25193f6dda63b"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Tests/VoxamberImageNativeTests/ImageBackendTests.swift",
+      "byteCount": 11941,
+      "sha256": "000318519c42d9a83f3290a75b78cda9f627468c9f2946ed27ce0618da6736ab"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/canonical-tokenizer-provenance.json",
+      "byteCount": 2137,
+      "sha256": "3e2ec511369f26369cabf6a96de8f15d23fe08cdf2c5a906c574e508dab4146f"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/upstream-provenance.json",
+      "byteCount": 13800,
+      "sha256": "6d92d3b8012506cb5f9c7e2d9b290b6a0311d202e1c38e290636daba40344c1d"
+    }
+  ],
+  "resources": "resources-before.json;27 wholeSHA unchanged",
+  "pureValidation": {
+    "XCTestCanonicalPassed": 4,
+    "previousSwiftTestingPassed": 11,
+    "fullActualAssetExactIDs": 22,
+    "failed": 0,
+    "iOS26arm64ReleaseBuild": "passed8.29s",
+    "hostImageOnlyRunnerBuild": "passed",
+    "noNN": true
+  },
+  "unchangedProductionNonTokenizerSwiftSource": [
+    "Apple/Packages/VoxamberImageNative/Sources/VoxamberImageNative/ImageEngine.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/VoxamberImageNative/ImageRequest.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/VoxamberImageNative/SDXLResources.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/DiscreteFlowScheduler.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/DPMSolverMultistepScheduler.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/ResourceManaging.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/Decoder.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/TorchRandomSource.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/NvRandomSource.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/CGImage+vImage.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/Encoder.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/Unet.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/RandomSource.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/StableDiffusionXLPipeline.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/NumPyRandomSource.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/Scheduler.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/StableDiffusionPipeline.Configuration.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/ManagedMLModel.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/TextEncoderXL.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/StableDiffusionXL+Resources.swift",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/StableDiffusionPipeline.swift"
+  ],
+  "configuration": {
+    "entry": "public ImageEngine.generate image-only; baseline publicNativeCreationEngine full",
+    "QwenCalls": 0,
+    "VisionCalls": 0,
+    "ShapeCalls": 0,
+    "ImageCalls": 1,
+    "positiveChars": 210,
+    "negative": "",
+    "seed": 24301,
+    "width": 768,
+    "height": 768,
+    "steps": 20,
+    "guidance": 7.5,
+    "computeUnits": "cpuAndNeuralEngine",
+    "reduceMemory": true,
+    "scheduler": "DPM Solver Multistep",
+    "watchdogSeconds": 900,
+    "nominalSampleSeconds": 0.2
+  },
+  "limits": [
+    "Only canonical tokenizer differs within Image SDK production source; entry/process context differs from the original full-pipeline image.",
+    "No unqualified sole-cause or generalquality/phone claim will be made.",
+    "Malformed Unicode/HTML ftfy repair is not implemented; tested normalized inputs andactualASCII condition match reference."
+  ]
+}

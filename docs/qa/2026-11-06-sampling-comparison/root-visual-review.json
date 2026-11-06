@@ -1,0 +1,110 @@
+{
+  "reviewedAtUTC": "2026-11-05T18:14:27.622111+00:00",
+  "scope": "One-seed, five fixed Mac subjects; whole native sampling bundle versus frozen earlier greedy control. Not an isolated presence-penalty causal experiment, general success rate or phone test.",
+  "method": "Root individually viewed both exact actual USDZ robot PNGs, then checked canonical scene dimensions. Four rejected responses were not repaired or rendered.",
+  "fullFixedRequestsAccepted": 0,
+  "nativeExports": 1,
+  "imagesViewed": [
+    {
+      "path": "robot/front.png",
+      "sha256": "83af9459960bf464efcbc5f09d8b2a38183a4d9ef239cb1845790a366eef1542"
+    },
+    {
+      "path": "robot/three-quarter.png",
+      "sha256": "bafe5cbf8e8ec41416e028b213439c478faaf6ea9c8c871739af6bafa4b2ad23"
+    }
+  ],
+  "cases": [
+    {
+      "id": "robot",
+      "nativeSceneAccepted": true,
+      "rendered": true,
+      "fullRequestAccepted": false,
+      "decision": "explicit_cubic_head_requirement_failed",
+      "evidence": {
+        "headPrimitive": "box",
+        "headDimensions": [
+          0.36,
+          0.25,
+          0.18
+        ],
+        "headLargestToSmallestDimensionRatio": 2.0,
+        "predeclaredMaximumHeadRatio": 1.05,
+        "eyeCenters": [
+          [
+            -0.025,
+            1.1185,
+            0.087000005
+          ],
+          [
+            0.025,
+            1.1185,
+            0.087000005
+          ]
+        ],
+        "eyeDiameters": [
+          0.05,
+          0.05
+        ],
+        "minimumY": -3.725290298461914e-09
+      },
+      "observations": [
+        "Both exact views show the actual blue model with a wide shallow rectangular head rather than a cube.",
+        "The two yellow balls touch; feet overlap into a common lower block. These are noted without relying on them to establish the unambiguous head-dimension failure.",
+        "The arm assemblies sit above the head like antennae. No new unrequested pose rule was added to the acceptance gate."
+      ]
+    },
+    {
+      "id": "lamp",
+      "nativeSceneAccepted": false,
+      "rendered": false,
+      "fullRequestAccepted": false,
+      "decision": "strict_native_contract_rejection",
+      "sameCallRawPreserved": true,
+      "actualError": "计划必须使用命名宽高深，不得混用渲染坐标或未知字段。"
+    },
+    {
+      "id": "whale",
+      "nativeSceneAccepted": false,
+      "rendered": false,
+      "fullRequestAccepted": false,
+      "decision": "strict_native_contract_rejection",
+      "sameCallRawPreserved": true,
+      "actualError": "rotation 必须为包含 x、y、z 的命名坐标。"
+    },
+    {
+      "id": "aircraft",
+      "nativeSceneAccepted": false,
+      "rendered": false,
+      "fullRequestAccepted": false,
+      "decision": "strict_native_contract_rejection",
+      "sameCallRawPreserved": true,
+      "actualError": "计划必须使用命名宽高深，不得混用渲染坐标或未知字段。"
+    },
+    {
+      "id": "chair",
+      "nativeSceneAccepted": false,
+      "rendered": false,
+      "fullRequestAccepted": false,
+      "decision": "strict_native_contract_rejection",
+      "sameCallRawPreserved": true,
+      "actualError": "计划必须使用命名宽高深，不得混用渲染坐标或未知字段。"
+    }
+  ],
+  "comparison": {
+    "controlFullRequestAccepted": 1,
+    "candidateFullRequestAccepted": 0,
+    "controlExports": 2,
+    "candidateExports": 1,
+    "controlCompleteJSONObjects": 2,
+    "candidateCompleteJSONObjects": 5,
+    "controlOutputLimits": 2,
+    "candidateOutputLimits": 0
+  },
+  "decision": "do_not_promote_this_candidate_based_on_JSON_completeness",
+  "limits": [
+    "Only seed24301 and one attempt per subject; no seed robustness or generalization established.",
+    "Sampling and generated-only presence changed together; effects are not attributed to one parameter.",
+    "A separate UIKit simulator task could overlap the start; timing is observational and cannot establish speedup."
+  ]
+}

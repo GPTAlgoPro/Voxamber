@@ -1,0 +1,101 @@
+{
+  "recordedUTC": "2026-11-05T20:34:36.041020+00:00",
+  "scope": "Source/CPU/build preparation and CPU edit artifacts; no new NN/packing/phone acceptance",
+  "files": [
+    {
+      "path": "adaptation-GLB.swift.diff",
+      "bytes": 773,
+      "sha256": "98c7ea90c1e83d0ee978c02661555b9acb6cdee6174bb9f6cc71fc386663ff0e"
+    },
+    {
+      "path": "adaptation-ShapeGenerator.swift.diff",
+      "bytes": 2011,
+      "sha256": "3957b57cb1406a724982b17b309955f24f7520c0f0cf0aa40cd16af0afff6957"
+    },
+    {
+      "path": "default-generation-wire-reference.json",
+      "bytes": 354,
+      "sha256": "4d792afc65ced1e155193937eb19f9ab159c0f7ff2add35efbf8ec0b8073c3f6"
+    },
+    {
+      "path": "exporter-source-provenance.json",
+      "bytes": 970,
+      "sha256": "32dc3ba3b10e359aedb254ecf3cd66e60931c6bf46f5e06fc13963f9bfcaa692"
+    },
+    {
+      "path": "host-builder-dependency-pins.json",
+      "bytes": 635,
+      "sha256": "2c26cb7b7fb3f97ff45e28ac456a3514c63abba7c536d474c4583fe4d72233fc"
+    },
+    {
+      "path": "host-pack-builder-preparation.md",
+      "bytes": 1687,
+      "sha256": "13581b7ac488aefff001bee70901f96542d862f443bfee045f88e1494acab4d2"
+    },
+    {
+      "path": "host-pack-builder-provenance.json",
+      "bytes": 3013,
+      "sha256": "2ce4da4184f5cc2590fc9da790a94148dc43064ae1c1364713b915532b0c90ed"
+    },
+    {
+      "path": "large-mesh-format-verification.json",
+      "bytes": 301,
+      "sha256": "10bdfa6e8291f02eeabac9a6726d521a748820fcbd7c2a7df37155b1c529599d"
+    },
+    {
+      "path": "mesh-edit-api.md",
+      "bytes": 3824,
+      "sha256": "c516eb443425c034daee57d259b5b088584b59b66215f0f3456fae3a8d7acd78"
+    },
+    {
+      "path": "mesh-edit-artifact-readback.json",
+      "bytes": 2051,
+      "sha256": "83302c11cbc95b3d63a5b9001e616bdf26f8552da38e025809b6883983149a8f"
+    },
+    {
+      "path": "mesh-edit-gltf-verification.json",
+      "bytes": 264,
+      "sha256": "1b5cffe83927e6b386754a033f1c93cb165a9b764f43024a8408d6bb212c2500"
+    },
+    {
+      "path": "mesh-edit-verification.json",
+      "bytes": 11882,
+      "sha256": "f5271c418530d65813f717e40bbc9965ade883e4aa76dcf24229475fca7fc748"
+    },
+    {
+      "path": "parameter-header-audit.json",
+      "bytes": 1540,
+      "sha256": "ddd96060a73eaf99408512cd36ba6273de52599134da61ff9f062bf7a5e38339"
+    },
+    {
+      "path": "pinned-model-legal.json",
+      "bytes": 583,
+      "sha256": "4a09fe5e6aa5801dc1b5c36f4b3ef426e2e81babdb16ed08dd1e27b7f9af6622"
+    },
+    {
+      "path": "qwen08-pinned-manifest.json",
+      "bytes": 3768,
+      "sha256": "bbc6248923105b339064a8d785328329bd91a955324a485305a286c61c90a927"
+    },
+    {
+      "path": "route-audit.md",
+      "bytes": 5874,
+      "sha256": "1bc8a734b9f9ada0873ca3362222e7497a7b19aa361225eaa057a5e524147b78"
+    },
+    {
+      "path": "sdk-verification-before-alpha-review.json",
+      "bytes": 9430,
+      "sha256": "19eadba84c908f535174c0aee5ec3ae061ddcf23123a607e025f24a02e98c2fa"
+    },
+    {
+      "path": "sdk-verification.json",
+      "bytes": 9702,
+      "sha256": "c0f7208e8ae90a189847602d9649e19f274d4d8576fdd106c98066e640028fc1"
+    },
+    {
+      "path": "source-provenance.json",
+      "bytes": 12283,
+      "sha256": "9975aa63fe46e98ff1791a80414e833b4555c8f1dd333d2e78655ef07f79143c"
+    }
+  ]
+}

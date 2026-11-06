@@ -1,0 +1,148 @@
+{
+  "recordedAtUTC": "2026-11-05T18:25:26.690479+00:00",
+  "state": "isolated_native_sdk_prototype_tested_not_integrated",
+  "designWrittenBeforeImplementation": "design.md",
+  "sourceAndTestSHA256": {
+    "Package.swift": "a591dad85445d40f4b98b6add9cd57cb31d4c8776c6564bfe5e9629942dd1397",
+    "Sources/SceneMeasurementKernel/MeasurementDraft.swift": "baa14b3a872524d003cd377a338266c08c0fcd80c1be6aa10e76224184249254",
+    "Sources/SceneMeasurementKernel/SceneMeasurementSolver.swift": "9e6069d2cdca74e3eb87a5a3a0009e122d3cf6c21048f93e6b3282f61c1b179d",
+    "Tests/SceneMeasurementKernelTests/SceneMeasurementKernelTests.swift": "46505af5c9f47d187c4166ecaf0e84b878473e8b24dcf4bf83295496c5b3bd87"
+  },
+  "designSHA256": "8339dbfeedb14b1c0bbb64b9129830b152e24eb7391d8410325d3095e69fbdb2",
+  "packageRelativeDependency": "../../../Apple/Packages/CreationCore",
+  "productionCoreProvenance": "production-core-provenance.json",
+  "productionCoreProvenanceSHA256": "14d5aeb2dbe3ec627a379b1114482be9e2bc25950f0980ef0844c554d4621b6c",
+  "productionCore17StillUnchanged": true,
+  "solverContract": {
+    "dimensionTerms": [
+      "literal(Float)",
+      "variable(String)"
+    ],
+    "declaredVariables": 1,
+    "measurementConstraints": 1,
+    "measurements": [
+      "node world-space maximum XYZ coordinate",
+      "scene AABB XYZ extent"
+    ],
+    "otherVariableNamesRejected": true,
+    "noUnreferencedVariable": true,
+    "sameVariableCanHaveMultipleDimensionReferences": true,
+    "noNaturalLanguageOrRawResponseParsing": true,
+    "noExpressionsOrScriptInterpreter": true,
+    "rootSearch": "Opposite-sign endpoint bracketing or one already-matching endpoint; find one validated root, without global monotonicity/uniqueness/completeness claims.",
+    "noBracketRejectsEvenIfInteriorRootsMayExist": true,
+    "bothEndpointsWithinToleranceRejectedAsUnderconstrained": true,
+    "fixedToleranceMetres": 0.001,
+    "defaultMaximumBisections": 32,
+    "allowedIterationBudget": [
+      1,
+      64
+    ],
+    "everyEvaluationUses": [
+      "SceneAttachmentResolver.resolve",
+      "SceneGenerator.generate",
+      "actual Float mesh positions for AABB"
+    ],
+    "finalCandidateIndependentlyRemeasured": true,
+    "declaredAndCanonicalScenesReturnedSeparately": true,
+    "allCoreErrorsAndCancellationPropagated": true,
+    "noGlobalScaleRepairFallbackOrLiteralChange": true
+  },
+  "productionContractPreserved": {
+    "dimensionMetres": [
+      0.02,
+      2.5
+    ],
+    "positionAndOffsetMagnitudeMetres": 3,
+    "nodes": 32,
+    "renderedVertices": 20000,
+    "renderedIndices": 80000,
+    "profilePoints": 64,
+    "freeformVertices": 1024,
+    "freeformTriangles": 2048
+  },
+  "actualTests": {
+    "command": "swift test --package-path docs/prototypes/2026-11-06-scene-measurement-kernel --scratch-path <new ignored build path> -c debug",
+    "initial": {
+      "passed": 15,
+      "failed": 0,
+      "exitCode": 0,
+      "buildSeconds": 6.27,
+      "suiteSeconds": 0.053,
+      "totalSeconds": 9.437573207949754,
+      "logSHA256": "80cf43668c55c46d1a6bca36779e6ffbf07f660ecdfbfbfd9579d2f5054b20b5"
+    },
+    "final": {
+      "testsPassed": 17,
+      "failed": 0,
+      "parameterizedAxisCases": 2,
+      "totalCaseExecutions": 18,
+      "exitCode": 0,
+      "buildSeconds": 1.56,
+      "suiteSeconds": 0.054,
+      "totalSeconds": 4.199907541973516,
+      "logSHA256": "6b87d8953a119b5c9f99d59d7c0be4c4592819ce5a071076d55abdf58059e435"
+    },
+    "testNames": [
+      "variablesAndTargetsMustBeExplicitUnambiguousAndReferenced()",
+      "duplicateIDsMissingParentsCyclesAndInvalidMeshAreRejected()",
+      "badIntervalsAndOutOfCoreDimensionBoundsAreNeverClipped()",
+      "cancellationReturnsNoSyntheticSolution()",
+      "unbracketedInteriorRootsAreConservativelyRejected()",
+      "constantMeasurementCannotInventAnUnrelatedDimensionChange()",
+      "nonAxisAlignedBoundsUseActualRotationRatherThanHeightField()",
+      "unreachableTargetAndInsufficientIterationBudgetThrow()",
+      "explicitHorizontalAxesUseTheirOwnDimensions(axis:) with 2 test cases",
+      "onlyExplicitlyNamedNodeSurfaceIsMeasured()",
+      "freeformMeasurementUsesTheRealAsymmetricRotatedMesh()",
+      "aContinuousNonmonotonicBracketReturnsOneVerifiedRootOnly()",
+      "multipleAbsoluteRootsAndEveryUnspecifiedFieldRemainUnchanged()",
+      "totalHeightUsesNativeAttachmentOverlapAndGrounding()",
+      "multipleRootsWithRelationsKeepCoreWholeForestGrounding()",
+      "multipleDimensionsExplicitlyShareOneUnknownWithoutIDHeuristics()",
+      "nodeAndActualAggregateGeometryBudgetsRemainEnforced()",
+      "run with 17 tests in 1 suite"
+    ],
+    "testSourceFrozenAfterFinalRun": true,
+    "dependentCoreWasCompiled": true,
+    "dependentCoreOwnTestSuiteRerun": false,
+    "host": "Apple Silicon Mac",
+    "Swift": "6.4.2",
+    "target": "arm64e-apple-macos14.0"
+  },
+  "coverage": [
+    "Total grounded height with native attachment overlap",
+    "Only explicitly referenced node maximum, independent of higher unrelated node",
+    "Four shared dimension references stay exactly equal",
+    "Actual rotated box AABB against analytic rotated dimensions",
+    "Asymmetric rotated extrusion bounds",
+    "All unbound literal/position/rotation/material/freeform fields and multiple absolute roots unchanged",
+    "Whole-forest native grounding with two roots and relations",
+    "X and Z scene extents",
+    "Nonmonotonic rotated triangle with bracketing returns one remeasured root",
+    "Unbracketed nonmonotonic interval rejected despite possible interior roots",
+    "Constant matching/unsatisfied measurement rejected",
+    "Bad finite/nonfinite intervals and out-of-production dimension bounds rejected without clipping",
+    "Unreferenced/conflicting variables, missing target, duplicate IDs, missing/cyclic parents, invalid mesh rejected",
+    "Actual aggregate mesh and node budgets enforced",
+    "Precancelled Task throws CancellationError without a scene"
+  ],
+  "verificationLimits": [
+    "Synthetic typed geometry tests do not prove AI intent extraction, general modeling quality, or user acceptance.",
+    "Finite evaluations do not prove the entire declared interval is valid or globally monotonic. Every evaluated candidate and returned final candidate are validated.",
+    "No claim of unique or all roots; no bracket is a conservative failure, including some solvable intervals.",
+    "One millimetre refers to final measured geometry error, not scalar accuracy or engineering measurement precision.",
+    "Cancellation test covers pre-cancelled task; checks exist through evaluation/Core loops, but no device latency acceptance was run.",
+    "No NN/App integration or multiple-variable solving."
+  ],
+  "actionsNotPerformed": [
+    "Production App/Core/source changes",
+    "Changes to previously frozen scale prototype or QA",
+    "Model inference/download",
+    "GPU inference",
+    "Simulator or physical-phone operation",
+    "Archive/upload/release",
+    "Git commit/push"
+  ],
+  "rawLogsOrBuildProductsIncluded": false
+}

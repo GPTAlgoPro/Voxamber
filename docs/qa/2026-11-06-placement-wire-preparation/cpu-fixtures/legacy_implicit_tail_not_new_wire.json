@@ -1,0 +1,1 @@
+{"name":"ground","nodes":[{"color":"#336699","dimensions":{"depth":0.40000000000000002,"height":0.59999999999999998,"width":0.40000000000000002},"id":"arbitrary_a","primitive":"box"},{"color":"#CC9966","dimensions":{"depth":0.20000000000000001,"height":0.20000000000000001,"width":0.20000000000000001},"id":"arbitrary_b","primitive":"sphere"}]}

@@ -1,17 +1,22 @@
-# 维珀 Voxamber · 原生离线 3D 创作
+# 维珀 Voxamber · 把你的 AI 创意带进三维世界
 
-iPhone / iPhone Duo 通用建模测试版 App，应用类别为生产力。用户自由描述创作内容，不设建筑、家具等题材白名单；示例只作灵感起点。
+通用 3D 建模生产力 App。用户在自己的 ChatGPT、Gemini、Grok、Claude、Qwen、GLM、Kimi、DeepSeek 等 AI 应用中创作 Three-Live 场景代码，再由 iPhone 本机生成、预览、保存并分享模型。创作题材由用户决定，示例不构成类别白名单。
 
-- 中文描述 → 本地模型理解 → 原生几何生成 → RealityKit 预览 → 逐部件编辑 → 本地保存 / 恢复 → GLB、USDZ 导出和系统 AR 预览。
-- 正式端侧模型上限 **8B**，目标设备 **12GB 及以上内存**。当前使用 Qwen3.5 4B INT4 / Swift MLX / Metal；官方当前 Qwen3.8 最小公开模型为 27B，不能误称存在官方 3.8 4B。
-- App 不包含 Python、JavaScript 解释器或外部脚本环境。原生 Swift 几何与导出包直接产出模型文件；Mac 开发工具不进入 App。
-- 当前测试版 **0.1.0 (2)** 已完成 Apple 处理并进入仅本人参与的内部 TestFlight；bundle 为 `com.kaisun.voxamber`。这不代表 App Store 已审核或公开上架。
+- 粘贴代码、导入文件；系统分享扩展接收代码文本／文件，用户在主 App 中确认后生成。
+- 真正的 Google Three-Live 官方原生 SDK `v1.2.3`，固定提交 `c0ff24b628795286a175f1a71611673df5dbc05d`。源程序只执行一次生成 GLB，再从同一 GLB 转 USDZ；使用纯 Swift 修复 Apple 所需的材质元数据。
+- 保留原始导入内容、实际场景代码和每次不可变修订；SHA 校验、原子保存、并发版本检查。历史 `Documents/Creations` 只读保留，新作品使用独立 `Documents/ScenePrograms`。
+- 本机生成不要求先下载语言模型，也不把提示词或场景代码发送到我们的服务器。用户使用其他 AI 服务的过程发生在其自行选择的应用中。
+- SwiftUI 原生 Liquid Glass、紧凑导航与大屏 `NavigationSplitView`；RealityKit 预览、真实 Quick Look 缩略图、USDZ／GLB／场景源文件分享与系统 AR 预览。
 
-工程：[Apple/ThreeLiveStudio.xcodeproj](Apple/ThreeLiveStudio.xcodeproj)。实施与当前边界：[实施记录](docs/plans/2026-11-05-native-minicpm-app.md)。核验回执与测试证据：[原生 App 验证目录](docs/qa/2026-11-05-native-app)。
+新目标工程：[Apple/ThreeLiveStudio.xcodeproj](Apple/ThreeLiveStudio.xcodeproj)，选择 **Voxamber-SceneStudio**；独立手机验收选择 **Voxamber-SceneQA**。`ThreeLiveStudio` 和此前图像／混元实验保留为历史源码，不是本次发布目标。用户已明确允许官方 SDK 内置的受限场景引擎；App 不使用 Python、Node 或 WebView 来替代它。
 
-官网：[维珀](https://gptalgopro.github.io/Voxamber-Website/) · [支持](https://gptalgopro.github.io/Voxamber-Website/support/) · [隐私政策](https://gptalgopro.github.io/Voxamber-Website/privacy/)。千问素材包版本 1 已上传 Apple 托管并处理完成；TestFlight 实机首次冷下载仍待验证。
+**0.2.0 (8) 已进入本人内部 TestFlight 测试**。Apple 独立回读为 `VALID / IN_BETA_TESTING`，已关联既有本人测试组（1 人），中英文测试说明已核验。手机上的官方原生流程已生成、保存并预览机器人和原宫殿 PoC；后者 GLB 与原 Mac 成品逐字节一致。TestFlight 就绪不等于已确认用户安装或完成全部人工交互验收。
 
-原有 Three-Live Mac 几何实验保留在下方，属于研发历史和导出对照，不限定 App 的创作题材。
+[通用 AI 创作说明](docs/source-authoring-instructions.md) · [官方编译器回归证据](docs/qa/2026-11-06-three-live-native-return) · [本次发布证据](docs/qa/2026-11-06-scene-studio-release)
+
+官网：[维珀](https://gptalgopro.github.io/Voxamber-Website/) · [支持](https://gptalgopro.github.io/Voxamber-Website/support/) · [隐私政策](https://gptalgopro.github.io/Voxamber-Website/privacy/)。
+
+原有 Three-Live Mac 宫殿实验是官方编译的回归基线。场景由 Codex 会话与宿主参数程序创作；它不是端侧小模型自主生成能力的证明。
 
 ---
 

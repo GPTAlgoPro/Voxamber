@@ -1,0 +1,23 @@
+{
+  "APIRequests" : 1,
+  "binarySHA256" : "7b287c420a6aa852fcd2725a53f5186d8aede5a6dd49c00f7095f31e90a3adb6",
+  "caseID" : "LP_original_public_klein",
+  "entryPoint" : "public NativeCreationEngine.generate",
+  "fallbacks" : 0,
+  "imageBackend" : "flux2-klein4b-q4",
+  "imageConfigurationSHA256" : "c12e0f5e820ac8b0cd014a1aed71bb6b904d2a0beea5d61ba0a41614a768f083",
+  "inferencePerformedByPrepare" : false,
+  "observationBoundary" : "Fresh actual helper\/image\/Vision\/Shape in one public call. Failed result exposes only public progress\/reference callbacks, not hidden intent\/prepared data.",
+  "platform" : "host Mac; not phone",
+  "requestedSeed" : 24301,
+  "requestSHA256" : "5efee41d264758fcbb370cb89b31cd1e3be9f8b668ada1375e69d6079cbe0013",
+  "resourcePinsSHA256" : "b45fbf77b515a5d0db86da7f43cc313ff836089b65e318a86dc9687e3a6ba022",
+  "retries" : 0,
+  "shapeConfigurationSHA256" : "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e",
+  "shapeGeometryPostprocess" : "finite-positive-f64-v1",
+  "shapePackSHA256" : "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7",
+  "snapshotFileCount" : 251,
+  "snapshotSHA256" : "397d984bf76b69a451c34f068ca2941496a8c4b321f0e56c3e788b253bc399dc",
+  "verifiedResourceFiles" : 25,
+  "watchdogSeconds" : 900
+}

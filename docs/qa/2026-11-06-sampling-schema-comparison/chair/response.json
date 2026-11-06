@@ -1,0 +1,200 @@
+{
+  "name": "简约棕色木椅",
+  "nodes": [
+    {
+      "id": "frame_base",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.45,
+        "height": 0.02,
+        "depth": 0.18
+      },
+      "color": "#5D4037"
+    },
+    {
+      "id": "leg_01",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.45,
+        "depth": 0.06
+      },
+      "color": "#5D4037",
+      "attach": {
+        "parent": "frame_base",
+        "face": "bottom",
+        "xOffset": -0.1125,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "leg_02",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.45,
+        "depth": 0.06
+      },
+      "color": "#5D4037",
+      "attach": {
+        "parent": "frame_base",
+        "face": "bottom",
+        "xOffset": 0.1125,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "leg_03",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.45,
+        "depth": 0.06
+      },
+      "color": "#5D4037",
+      "attach": {
+        "parent": "frame_base",
+        "face": "bottom",
+        "xOffset": 0,
+        "zOffset": -0.09
+      }
+    },
+    {
+      "id": "leg_04",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.45,
+        "depth": 0.06
+      },
+      "color": "#5D4037",
+      "attach": {
+        "parent": "frame_base",
+        "face": "bottom",
+        "xOffset": 0,
+        "zOffset": 0.09
+      }
+    },
+    {
+      "id": "seat_core",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.48,
+        "height": 0.05,
+        "depth": 0.2
+      },
+      "color": "#5D4037"
+    },
+    {
+      "id": "seat_surface",
+      "primitive": "mesh",
+      "dimensions": {
+        "width": 0.5,
+        "height": 0.05,
+        "depth": 0.22
+      },
+      "color": "#8D6E63",
+      "vertices": [
+        [-0.24, 0.45, -0.1], [-0.24, 0.45, 0.1], [-0.24, 0.5, -0.1], [-0.24, 0.5, 0.1],
+        [0.24, 0.45, -0.1], [0.24, 0.45, 0.1], [0.24, 0.5, -0.1], [0.24, 0.5, 0.1]
+      ],
+      "triangles": [
+        [0, 1, 2], [0, 2, 3], [4, 1, 5], [4, 5, 7], [0, 5, 1], [2, 7, 3],
+        [0, 3, 2], [1, 5, 4], [3, 7, 6], [5, 1, 0], [7, 3, 6]
+      ]
+    },
+    {
+      "id": "backrest_left",
+      "primitive": "lathe",
+      "dimensions": {
+        "width": 0.04,
+        "height": 0.3,
+        "depth": 0.04
+      },
+      "color": "#5D4037",
+      "profile": [[0.02, 0], [0.02, 0.1], [0.035, 0.2], [0.04, 0.25], [0.04, 0.3]]
+    },
+    {
+      "id": "backrest_right",
+      "primitive": "lathe",
+      "dimensions": {
+        "width": 0.04,
+        "height": 0.3,
+        "depth": 0.04
+      },
+      "color": "#5D4037",
+      "profile": [[0.02, 0], [0.02, 0.1], [0.035, 0.2], [0.04, 0.25], [0.04, 0.3]],
+      "rotation": {
+        "x": 90,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "id": "backrest_back",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.08,
+        "height": 0.3,
+        "depth": 0.04
+      },
+      "color": "#5D4037",
+      "attach": {
+        "parent": "seat_core",
+        "face": "back",
+        "xOffset": 0,
+        "yOffset": 0.15,
+        "zOffset": -0.02
+      }
+    },
+    {
+      "id": "backrest_front",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.08,
+        "height": 0.3,
+        "depth": 0.04
+      },
+      "color": "#5D4037",
+      "attach": {
+        "parent": "seat_core",
+        "face": "front",
+        "xOffset": 0,
+        "yOffset": 0.15,
+        "zOffset": 0.02
+      }
+    },
+    {
+      "id": "armrest_l",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.05,
+        "height": 0.08,
+        "depth": 0.05
+      },
+      "color": "#5D4037",
+      "attach": {
+        "parent": "seat_core",
+        "face": "left",
+        "yOffset": 0.02,
+        "zOffset": -0.05
+      }
+    },
+    {
+      "id": "armrest_r",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.05,
+        "height": 0.08,
+        "depth": 0.05
+      },
+      "color": "#5D4037",
+      "attach": {
+        "parent": "seat_core",
+        "face": "right",
+        "yOffset": 0.02,
+        "zOffset": 0.05
+      }
+    }
+  ]
+}

@@ -1,0 +1,762 @@
+{
+  "armedAtUTC": "2026-11-06T00:04:20.620648+00:00",
+  "status": "ARMED ONLY; no engine/model/API invocation yet; parent GO required",
+  "sourceFiles": [
+    {
+      "path": "Apple/.build/NativeCreationLampGate/Package.swift",
+      "byteCount": 375,
+      "sha256": "69c7dab2937607e96a9a2cc802776e1d3ee873b89db5174e08c44089268dde3c"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGate/Package.resolved",
+      "byteCount": 3384,
+      "sha256": "59867d9f6dfcc164ecc0f4509f42516caf504279bb9909d0091b7e5d8d30766b"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGate/Sources/NativeCreationLampGate/main.swift",
+      "byteCount": 9916,
+      "sha256": "fa3aced94775a58e83e35bfa00de68ccfa2bd3b06185508ee752226b4db42615"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/NativeCreationLampGate",
+      "byteCount": 47331144,
+      "sha256": "1749ae8750094d44f58d5a6fef5e5a16216315160742274275f993e641032d5b"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/protocol-before-generation.md",
+      "byteCount": 6791,
+      "sha256": "28762e1257eda659db06f47f3d2e275eebaf9fad5978956c64c6bf5631cb6912"
+    },
+    {
+      "path": "Apple/Packages/VoxamberCreationNative/Package.resolved",
+      "byteCount": 3384,
+      "sha256": "59867d9f6dfcc164ecc0f4509f42516caf504279bb9909d0091b7e5d8d30766b"
+    },
+    {
+      "path": "Apple/Packages/VoxamberCreationNative/Package.swift",
+      "byteCount": 747,
+      "sha256": "b440c5d70b14b3731d9cf4152940a7fdea8eff60117846fd3868faa72fc87404"
+    },
+    {
+      "path": "Apple/Packages/VoxamberCreationNative/Sources/VoxamberCreationNative/CreationIntentDecoder.swift",
+      "byteCount": 2060,
+      "sha256": "4b07b444d08e6a3c43091ec413e5af455a064354ba9c2e901f549e8a21b8e794"
+    },
+    {
+      "path": "Apple/Packages/VoxamberCreationNative/Sources/VoxamberCreationNative/CreationTypes.swift",
+      "byteCount": 2807,
+      "sha256": "8afec7386de63309b88e4b409210a203576a8cba9ffb77c0584f8afa975756ab"
+    },
+    {
+      "path": "Apple/Packages/VoxamberCreationNative/Sources/VoxamberCreationNative/NativeCreationEngine.swift",
+      "byteCount": 8251,
+      "sha256": "04b6fdb92ab39a666af68997cb48d4d77de8f9319503b50691845762ffc76c4d"
+    },
+    {
+      "path": "Apple/Packages/VoxamberCreationNative/Sources/VoxamberCreationNative/SubjectImagePreparer.swift",
+      "byteCount": 9455,
+      "sha256": "b2a3632364a4cd6d425323b0715b418b434fae3105cb2fdf92c6b7c7318d1691"
+    },
+    {
+      "path": "Apple/Packages/VoxamberCreationNative/Tests/VoxamberCreationNativeTests/CreationIntentCapacityTests.swift",
+      "byteCount": 3354,
+      "sha256": "8f1d9a426e1740bbcbe733b0b5bd765da26f5f69bbbd16f517496933906c5718"
+    },
+    {
+      "path": "Apple/Packages/VoxamberCreationNative/Tests/VoxamberCreationNativeTests/CreationIntentTests.swift",
+      "byteCount": 2343,
+      "sha256": "1df215b84d9c5115c8812a9641ce594f833883efb07cb88d2b4d6fd080657aca"
+    },
+    {
+      "path": "Apple/Packages/VoxamberCreationNative/Tests/VoxamberCreationNativeTests/SubjectImagePreparerTests.swift",
+      "byteCount": 9838,
+      "sha256": "99f0e5cbcbfb1e028e5bc3daa4fa6b3b17595810f4f696057f2b8ab867fbab15"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/LICENSE.md",
+      "byteCount": 1067,
+      "sha256": "4f7eae00de7a3b4ea1d6b3d26f64c113b999dda4e7d3269f3278caac66575fc3"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/MODEL-LICENSE-SDXL.md",
+      "byteCount": 14109,
+      "sha256": "19b6998b569b53ac1fc2158a8a3202c8699a9a4605b47075715d9c96be7fb6d0"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Package.swift",
+      "byteCount": 729,
+      "sha256": "3dff1bdbd5ef1e7ca5115cae4c7cc89d85dc914fd642f68aedfbdb90ffbc2f94"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/README.md",
+      "byteCount": 3760,
+      "sha256": "c2fb9e568020d26ac1d14cf53d721ba086b53c1beb395e3e86c710f2db00f3c5"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/CGImage+vImage.swift",
+      "byteCount": 9085,
+      "sha256": "1a705171079dc8f71909804f38c2f47d3240f5d5a5b4c4b771f48ec26b4fc18d"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/DPMSolverMultistepScheduler.swift",
+      "byteCount": 11877,
+      "sha256": "935b57f0b632a9e166b7c46f8dfa18b5b24f1d3e70c261e87ffde9b89a24cdc3"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/Decoder.swift",
+      "byteCount": 2772,
+      "sha256": "6ace6ca382998b486ed7de37ee720e81217eea957ef6a057efd4e80b05a666b7"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/DiscreteFlowScheduler.swift",
+      "byteCount": 4894,
+      "sha256": "24a07120cb033a080100045b4d4efb9a73151b941c812be455d3ac83db64bae0"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/Encoder.swift",
+      "byteCount": 3851,
+      "sha256": "50f34834d4122dcdbec8f87f5c8ec8df38df9dd760e458359622e435b3eeca01"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/ManagedMLModel.swift",
+      "byteCount": 4447,
+      "sha256": "50294be55b4bec01796d9a8a4f61c45092482567f708c509de242ee3b45bd3dd"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/NumPyRandomSource.swift",
+      "byteCount": 4172,
+      "sha256": "72d94364c28b66ddfc2b82e61591286eeddc9b505004ac009aff8f4e99b678d6"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/NvRandomSource.swift",
+      "byteCount": 3392,
+      "sha256": "509ee5424533408f0a3bb2af6fcfcec248d44e042bbdd84a345c35ea00efdc3a"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/RandomSource.swift",
+      "byteCount": 263,
+      "sha256": "ddbc5f36a51986473d7b90183ddaae130f9e67de8896977f4d9cfee85d52c1d8"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/ResourceManaging.swift",
+      "byteCount": 577,
+      "sha256": "d534f14e4d7a9660a2efacf3220f74fdb9698b08247c9c57ed902d733793dccb"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/Scheduler.swift",
+      "byteCount": 13506,
+      "sha256": "8a0fe6568bc89aa04def364dcddaef479875b8cb95628a94a1420dddf7e01b70"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/StableDiffusionPipeline.Configuration.swift",
+      "byteCount": 4204,
+      "sha256": "97156ca93fbfdd7555b0fe9b53ef9472706bc79869624dc3a09afc64ecb2d61e"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/StableDiffusionPipeline.swift",
+      "byteCount": 4382,
+      "sha256": "79b86817aa8b8c37727e4dd1f1097c7be690317df0dcbbdcd7924c9a40e6bb84"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/StableDiffusionXL+Resources.swift",
+      "byteCount": 4974,
+      "sha256": "c547460a6e3c09852e65570e3d9579623a2f93b3a374627a88321b98b44cde39"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/StableDiffusionXLPipeline.swift",
+      "byteCount": 15954,
+      "sha256": "1dec109f5b54987e196500e6f2539449957394e06d6779b2c320cd968c140884"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/TextEncoderXL.swift",
+      "byteCount": 3587,
+      "sha256": "7af760be14516e4f3f68d1cf9bf80f05893e05d9f435c2514431e92b538baa78"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/TorchRandomSource.swift",
+      "byteCount": 5530,
+      "sha256": "e45eddd61857793176c1f0accfd41537a6bac012d6ee1d3abce2db1a7e0f3b51"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/pipeline/Unet.swift",
+      "byteCount": 7514,
+      "sha256": "2f22d726c1f6aa942ebffab8e26ceffa443def8970b6e99602795cce815c7962"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/tokenizer/BPETokenizer+Reading.swift",
+      "byteCount": 1914,
+      "sha256": "0a27e1ade18f20ab0d61c439deb0c383210e5994e6d792c588a5dbf1aededf96"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/tokenizer/BPETokenizer.swift",
+      "byteCount": 6444,
+      "sha256": "64b8f4bbbfa6bfba1c6d4789b65d868cf0c0e1fe3ccc8c8f2b4aa19475c6fe3c"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/VoxamberImageNative/ImageEngine.swift",
+      "byteCount": 5559,
+      "sha256": "cf43f6a599ce38aff0c368a7fc0f4dac1b1867c01b2e728ac44af8a78170aa88"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/VoxamberImageNative/ImageRequest.swift",
+      "byteCount": 2245,
+      "sha256": "5b59f9f95543f911ce02e56ed3fe7d3eae9b2cb516de0b9a66336f7ac6d7c6df"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Sources/VoxamberImageNative/SDXLResources.swift",
+      "byteCount": 3996,
+      "sha256": "522b0c8f705494dc3786bb70eb703700f68119f22a91ceff7c2fece450ad6cd1"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/Tests/VoxamberImageNativeTests/ImageBackendTests.swift",
+      "byteCount": 11941,
+      "sha256": "000318519c42d9a83f3290a75b78cda9f627468c9f2946ed27ce0618da6736ab"
+    },
+    {
+      "path": "Apple/Packages/VoxamberImageNative/upstream-provenance.json",
+      "byteCount": 13800,
+      "sha256": "6d92d3b8012506cb5f9c7e2d9b290b6a0311d202e1c38e290636daba40344c1d"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Package.resolved",
+      "byteCount": 656,
+      "sha256": "54d80c781855d6667f33fb896994e01e800dcf7e33e2ff167925e522fda8c16e"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Package.swift",
+      "byteCount": 898,
+      "sha256": "4d1b0d618424c203aadbe445f2f7e059f822956388582cddac78493ca1f3b21c"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/README.md",
+      "byteCount": 8516,
+      "sha256": "2133b60f3e72529e359f3402e5c62d50501d5439f6256dc3f451a6550f22b61c"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/DINOv2.swift",
+      "byteCount": 8530,
+      "sha256": "041d410c5c07e1f154c4ca0f9650f0a47e1452df87b5c595974a4f75f9995af9"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/DiT.swift",
+      "byteCount": 6296,
+      "sha256": "d81076464f85a571f85e2bc69a7944f7fffd41415e6dd7e6cc6fdba67f8333f8"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/DiTPlain.swift",
+      "byteCount": 13832,
+      "sha256": "9a634d2eb36cf7f6981281b959f87e737fd7ee434befd917fb262d76e0fd3a43"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/GLB.swift",
+      "byteCount": 10831,
+      "sha256": "352c0b582215bf647a5eb9819466386ebab9aaef9a6a5c796243f69a61b8c183"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Layers.swift",
+      "byteCount": 3414,
+      "sha256": "947d09a19e49b04ea2710ecc0f132fe0143e184e0881cede8c77a493319c2a5d"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/MCTables.swift",
+      "byteCount": 8848,
+      "sha256": "73cf18dee2e30d5e8703db7792db6856d792345cee9bac349f9764ac70d9b0b9"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/MarchingCubes.swift",
+      "byteCount": 7428,
+      "sha256": "f4d9e1fc138ed798ef2c740e6b4d00b94ab323a917196e1d8032c55735071b39"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/MeshCleanupPolicy.swift",
+      "byteCount": 2995,
+      "sha256": "377446656b523f80fd3eade1ddb06d4d7ad2d070643f03d48ca1da3d4116373b"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Pipeline.swift",
+      "byteCount": 15042,
+      "sha256": "3774aa0c216c870cf626d89eb6d8dec1398904732e5a8bafb127b7c134f1c7ba"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Preprocess.swift",
+      "byteCount": 5834,
+      "sha256": "a97ce60087d1aafc70f47007a0f22e0d0fdb9481314a7a131e7c7787aa9b0568"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Sampler.swift",
+      "byteCount": 2661,
+      "sha256": "72e5272fd603a164718fc500462d2a3904dfd351c173683d46fa9e573f088ad2"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeDenoiser.swift",
+      "byteCount": 1076,
+      "sha256": "c3629b746530f4fd2f200ceb5c08f761699aa7d6d8ab452a563ac247e662a73c"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeExecutionStrategy.swift",
+      "byteCount": 2444,
+      "sha256": "529364d722588ffc202a027c9b332147c17d5a36e249166875fc223cc2535c32"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeGenerator.swift",
+      "byteCount": 36528,
+      "sha256": "5a6ccff98eb7c6cc26346da5121dac5d755520634fa193e5fdf1fea83d0be0c7"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapePackLayout.swift",
+      "byteCount": 4161,
+      "sha256": "95b6d54ba50efaa3624a7b83098b4b007cdcc035b3a27931c791e61acd178c5e"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/VAE.swift",
+      "byteCount": 4187,
+      "sha256": "df06b82b5c75f558dcadca8b317c21294973cbcf14d74fccaadbc1f49ef8e557"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Version.swift",
+      "byteCount": 36,
+      "sha256": "961a7675dde1ae6c859411dff3a8b86114cf87d0538cc0a085da07a34ac532ef"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Module.swift",
+      "byteCount": 234,
+      "sha256": "b63ae8318b66a3a70d511a401d3ff95d2d36a767f6471631e2ee7fb5b968d426"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Hunyuan3D-Swift-MIT.txt",
+      "byteCount": 1069,
+      "sha256": "e0485dc21868a42682cf1255af42d1bf038cf5e80608b2006b5c69d65d426d7f"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Hunyuan3D-Swift-ThirdParty.md",
+      "byteCount": 1426,
+      "sha256": "abd4d61f1c0bf3dcfc6a399457f26254be74518dc53de8b69e2606e3a3a1d241"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Snap3D-ThirdPartyNotices.txt",
+      "byteCount": 7575,
+      "sha256": "679ddc10a7dbe0c3170c55dfd00dd2c6b40bab320c7927c6fe6ea22754023b8c"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Tencent-Hunyuan-3D-2.1-License.txt",
+      "byteCount": 17911,
+      "sha256": "f60f9fdf0c40cdd3983123eb8181caac027a6f86d4ea3c827618e5e1e5adc6db"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt",
+      "byteCount": 17915,
+      "sha256": "5bd08f93b2d280bb26ff3eed5d3996fe47a9698b5f7785163928668d7fd578c6"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt",
+      "byteCount": 16644,
+      "sha256": "ffccf6b539a82e6084d14ff064dadd22d33384d6164b07c0c5a3141810df0350"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/hunyuan-shape-2.1.yaml",
+      "byteCount": 2078,
+      "sha256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeAssetExporter.swift",
+      "byteCount": 12576,
+      "sha256": "fab1e5f6988d8fd5ba252e5c47e5cc5cb367d815d8bd2980532b115cfe716c64"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeEditRecipe.swift",
+      "byteCount": 4553,
+      "sha256": "f287437575160178103fdd6783cfd7a0234f13b2226d247beb44c2ae8f683d0a"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeEngine.swift",
+      "byteCount": 8534,
+      "sha256": "19717d8a53140f11bc6c100185edd826799a0cb2223c1ab91a0297dd2ab2d5c9"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeMeshArchive.swift",
+      "byteCount": 3422,
+      "sha256": "6a17380137da51ea6f9e0f9f83eeab8d2f0887e6511f658eb3a27dcbbf5a7a04"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeMeshEditor.swift",
+      "byteCount": 8366,
+      "sha256": "b2d6c58fa7a85b0c3fd0c8ba05db289d2f20298e7bc37d5480bcba475d984795"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeRuntimeSupport.swift",
+      "byteCount": 3899,
+      "sha256": "266edfcf781f82306546ef865fe19a3776da8c75b128f56026de9f83e2150853"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeTypes.swift",
+      "byteCount": 6141,
+      "sha256": "23a33c5277e2db1f9c13e481a8c6683bd3b66678251cb4a361dfe1b16b9fb486"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeWeightProfile.swift",
+      "byteCount": 2018,
+      "sha256": "aef56e2241b6c1689ad5bb7f19a9c8ac07a592e1ea9bcba5ace1890a86f9482d"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/USDZArchiveWriter.swift",
+      "byteCount": 14414,
+      "sha256": "cc9de8b29060927390c8989cdf33afd08c74ad1259be5dd43798bc825d68bb1a"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Tests/VoxamberShapeNativeTests/Fixtures/CandidateBoundaryTriangles.json",
+      "byteCount": 194784,
+      "sha256": "4c285f06746a1a47bcd45bed058bdb5bba2ef4eac951405664a0b179b4f1109e"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Tests/VoxamberShapeNativeTests/MeshCleanupPolicyTests.swift",
+      "byteCount": 4892,
+      "sha256": "f61fc09c2619f3780c93bb45d65c3a849b4c0e99d7a393bdd9caeaa5164d6772"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Tests/VoxamberShapeNativeTests/ShapeMeshEditTests.swift",
+      "byteCount": 11919,
+      "sha256": "2340b56a2d2d60b33c4a3a83a0f9a830bdcc3ac08373efcb09bb6baa35f4d3de"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Tests/VoxamberShapeNativeTests/ShapeSDKTests.swift",
+      "byteCount": 9531,
+      "sha256": "5d1c182726da88c7cec153f87d6cd505c3d9e1f32f49b6bdecb18798e6abfdc9"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Tests/VoxamberShapeNativeTests/ShapeWeightProfileTests.swift",
+      "byteCount": 4879,
+      "sha256": "411de4d8b46b37ed934e3ab821aa40f92fa00c0b3268fddcedd36121e1c29ee9"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Licenses/Qwen3.5-Apache-2.0.txt",
+      "byteCount": 11544,
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Licenses/mlx-swift-MIT.txt",
+      "byteCount": 1067,
+      "sha256": "44326a4ea062241ae6fc26ee2ec90bdc81af7eb7b9d3966181b733fa69d42057"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Licenses/mlx-swift-lm-MIT.txt",
+      "byteCount": 1067,
+      "sha256": "7b1d86acac816ce8192209d7e01141c129b4d48d474c15cc5fb4af62f497c323"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Licenses/swift-transformers-LICENSE.txt",
+      "byteCount": 11347,
+      "sha256": "648b81e6c6f9975c3b6cf6d630229b6c8d6f1ddaef55f5770f576adda19f3495"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Package.resolved",
+      "byteCount": 3384,
+      "sha256": "f786e22cb3052d8b2089ba0302de4c894708a5b44ebe30ec6a6592c1b1a5f6af"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Package.swift",
+      "byteCount": 1687,
+      "sha256": "ff2e120cdf828d7031db77207770caf3ac2933d4e62297d0b67cf0c94315caef"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/README.md",
+      "byteCount": 4240,
+      "sha256": "4b9ae4cf347263c5a8d93b6b9dc8c5ffa2575244cc30954c5ac48c33a62487f4"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Sources/QwenBench/AttachmentBenchmark.swift",
+      "byteCount": 12615,
+      "sha256": "dc52a0e6dda7743c0f570467478699756f3697a6ff1895fb07b1d2911f9b9abf"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Sources/QwenBench/CancellationProbe.swift",
+      "byteCount": 4548,
+      "sha256": "3f616e81c5086d0e490bb2a266f78e92aefbf8ce6a8e1727a2928010d6ac4ad7"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Sources/QwenBench/GuidedModel.swift",
+      "byteCount": 3446,
+      "sha256": "ca8cba73fc63a85756e0745a45d8f68e5df9adc6b3bd19595e29adb7a384bb18"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Sources/QwenBench/ModelPreview.swift",
+      "byteCount": 2686,
+      "sha256": "1656a0e2a9e597a9ed1b7ac6c5719fd7e5567aa5f56e941914d0651c0e83da0a"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Sources/QwenBench/SampledModel.swift",
+      "byteCount": 5318,
+      "sha256": "978ea3857bf6fed693e9b538b826dffadc3dda01df1f145338cc6bf70e0bf025"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Sources/QwenBench/main.swift",
+      "byteCount": 23137,
+      "sha256": "d1e27f7227805380308e221fe80987d122c8bc1954dc2c990d58ffc3b91e2986"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Sources/QwenBench/plan-schema.json",
+      "byteCount": 54379,
+      "sha256": "85eb8cd387506e9718f44d26caf3303c863bc2035585c3bcaa1902962f91483f"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Sources/QwenNative/LocalTokenizer.swift",
+      "byteCount": 1709,
+      "sha256": "82988617a11bed0234181f904e214c2bdc0fc29c995b0b233f78ddf00ccc7937"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Sources/QwenNative/NativeJSONGrammar.swift",
+      "byteCount": 16499,
+      "sha256": "7dbc4cf98e9c6d414cc3d9e6230c20955997efb682b11c8476173bd74eeeb016"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift",
+      "byteCount": 13787,
+      "sha256": "1e1a33f77a8f052d26ebbbd211b35942d0c6a8cb2469e5872ecf992ffd7d7fa3"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Sources/QwenNative/QwenGenerationCompletion.swift",
+      "byteCount": 2333,
+      "sha256": "f2a762906ec689b55a5687703e040e3bb11df5891b1267af515204c337ba3896"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Sources/QwenNative/QwenTokenStream.swift",
+      "byteCount": 5159,
+      "sha256": "074714e201c3fec4ec97307428d95f9a3b8ae3ddc207398e114d6a60c1fa234f"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Tests/QwenNativeTests/JSONCompletionTests.swift",
+      "byteCount": 10261,
+      "sha256": "284ced52b4791959d89c9012f54995d307233e240658380aa972d644ad7edaa3"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Tests/QwenNativeTests/NativeJSONGrammarTests.swift",
+      "byteCount": 17322,
+      "sha256": "5f6bbf1b89f03e60683f3adc523c2d45bd30da64b2b65dd5a7f72ad95ed9ac66"
+    },
+    {
+      "path": "Apple/Packages/QwenNative/Tests/QwenNativeTests/SceneGrammarContractTests.swift",
+      "byteCount": 12002,
+      "sha256": "35a3463a70a1f43779e7602f14975d2af0bccf71183941e3897dd6d38a31ff3f"
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Package.swift",
+      "byteCount": 363,
+      "sha256": "76483ca757b61255388105d2c914058e59606e7437f0dfd0230cb8faeecfd4c3"
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/AttachmentResolver.swift",
+      "byteCount": 4853,
+      "sha256": "3d156c1644fb84b6030728ba60ea3027592a7eca91e254daaf9bf91714e10f94"
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/BuildingGenerator.swift",
+      "byteCount": 19339,
+      "sha256": "8a72052f967164f71d289826a6647deb540bb845df3c9314463b5fe4dc7e5180"
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/BuildingSpec.swift",
+      "byteCount": 8181,
+      "sha256": "d6dcad6fb5cedcd3de441751692517ac5a08585d2cc8eca67f7b9991f6d021f9"
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/FreeformGeometry.swift",
+      "byteCount": 15040,
+      "sha256": "aabb0be5dd83d1e248ee2bf8f9899d6200b3659bc5474c8b8b15984c018f0206"
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/SceneGenerationSchema.swift",
+      "byteCount": 7138,
+      "sha256": "c7207a9c83a345370c80a51e0d608be3c1ebdfc58ee195de339bab744cc26d52"
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/SceneGenerator.swift",
+      "byteCount": 10165,
+      "sha256": "1798cd672b99fad741e1c2325f0176a20a912e1e9e1549eb00a848e874516f19"
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/ScenePlan.swift",
+      "byteCount": 6896,
+      "sha256": "b2b31ccd0bce71dd6d0d3a6c30c15b713323b58314301a5030a7e324c45b3137"
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/SceneSpec.swift",
+      "byteCount": 16798,
+      "sha256": "3163e0b570843aead62b72df949721f26529cb19691c2fa96b39785a41a81ca4"
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Sources/CreationCore/StrictJSONObject.swift",
+      "byteCount": 3404,
+      "sha256": "27b46fcfc3c1e6bbad423103b2d568e7c3840b124e5e3848990bed5ff59dcf24"
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Tests/CreationCoreTests/AttachmentResolverTests.swift",
+      "byteCount": 5202,
+      "sha256": "6a81507bc9dfe7d6185fbef3a045e588729e1a977ae8c3467aa7cf72700b24fb"
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Tests/CreationCoreTests/CreationCoreTests.swift",
+      "byteCount": 7307,
+      "sha256": "aa4d7157692f17db8d637931e367af06a675e16141cce8c3ac2a97bb3f352f26"
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Tests/CreationCoreTests/FreeformGeometryTests.swift",
+      "byteCount": 10252,
+      "sha256": "48815518bfaee5439544cef328968f09dcb06f9f510db3e72c99acfc949cf013"
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Tests/CreationCoreTests/SceneCoreTests.swift",
+      "byteCount": 8491,
+      "sha256": "ea7d7172e9e700fb413ba77be45e78b1f3d5d8ea7add0c58872185cf4d23803d"
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Tests/CreationCoreTests/SceneGenerationSchemaTests.swift",
+      "byteCount": 13364,
+      "sha256": "2aadc19717699728986efcc458d9b4052a540e34a0c001bb72f6b370c8a03442"
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Tests/CreationCoreTests/ScenePlanTests.swift",
+      "byteCount": 6836,
+      "sha256": "301ec1781524364ea0b86561335e0162f976e16fc115808d7f5e8fbbea697f29"
+    },
+    {
+      "path": "Apple/Packages/CreationCore/Tests/CreationCoreTests/StrictJSONObjectTests.swift",
+      "byteCount": 1034,
+      "sha256": "9e067e272c550f89f1d32d434c6325ea2ded8faa0ac7e7b48548f9b8aa6339d8"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/QwenNative_QwenBench.bundle/Contents/Info.plist",
+      "byteCount": 1134,
+      "sha256": "64ed20cb52861a02f4d7cf22bce4237ae353af646c8a9b2e53103b7331571bfe"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/QwenNative_QwenBench.bundle/Contents/Resources/plan-schema.json",
+      "byteCount": 54379,
+      "sha256": "85eb8cd387506e9718f44d26caf3303c863bc2035585c3bcaa1902962f91483f"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/VoxamberShapeNative_VoxamberShapeNative.bundle/Contents/Info.plist",
+      "byteCount": 1172,
+      "sha256": "f408b474a3c32ae6bbc8bceef2e4695e6c635452d043715b4ddb6c8224a6b82d"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/VoxamberShapeNative_VoxamberShapeNative.bundle/Contents/Resources/Legal/Hunyuan3D-Swift-MIT.txt",
+      "byteCount": 1069,
+      "sha256": "e0485dc21868a42682cf1255af42d1bf038cf5e80608b2006b5c69d65d426d7f"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/VoxamberShapeNative_VoxamberShapeNative.bundle/Contents/Resources/Legal/Hunyuan3D-Swift-ThirdParty.md",
+      "byteCount": 1426,
+      "sha256": "abd4d61f1c0bf3dcfc6a399457f26254be74518dc53de8b69e2606e3a3a1d241"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/VoxamberShapeNative_VoxamberShapeNative.bundle/Contents/Resources/Legal/Snap3D-ThirdPartyNotices.txt",
+      "byteCount": 7575,
+      "sha256": "679ddc10a7dbe0c3170c55dfd00dd2c6b40bab320c7927c6fe6ea22754023b8c"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/VoxamberShapeNative_VoxamberShapeNative.bundle/Contents/Resources/Legal/Tencent-Hunyuan-3D-2.1-License.txt",
+      "byteCount": 17911,
+      "sha256": "f60f9fdf0c40cdd3983123eb8181caac027a6f86d4ea3c827618e5e1e5adc6db"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/VoxamberShapeNative_VoxamberShapeNative.bundle/Contents/Resources/Legal/Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt",
+      "byteCount": 17915,
+      "sha256": "5bd08f93b2d280bb26ff3eed5d3996fe47a9698b5f7785163928668d7fd578c6"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/VoxamberShapeNative_VoxamberShapeNative.bundle/Contents/Resources/Legal/Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt",
+      "byteCount": 16644,
+      "sha256": "ffccf6b539a82e6084d14ff064dadd22d33384d6164b07c0c5a3141810df0350"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/VoxamberShapeNative_VoxamberShapeNative.bundle/Contents/Resources/hunyuan-shape-2.1.yaml",
+      "byteCount": 2078,
+      "sha256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/mlx-swift_Cmlx.bundle/Contents/Info.plist",
+      "byteCount": 1122,
+      "sha256": "386c5221c42d4d1988d04227dffa3ae58c18cf8c9a05850c082e847b79b75e35"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/mlx-swift_Cmlx.bundle/Contents/Resources/default.metallib",
+      "byteCount": 2401016,
+      "sha256": "cc3fc4850eb72caa36e9db2640b421f1ac2bfda2174dd58f8c15b52233ec154c"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/swift-crypto_Crypto.bundle/Contents/Info.plist",
+      "byteCount": 1132,
+      "sha256": "55af3485b25e4553fc10db6dc7bc7c86d31c6c56c11940f1835fdaedafa84be8"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/swift-crypto_Crypto.bundle/Contents/Resources/PrivacyInfo.xcprivacy",
+      "byteCount": 398,
+      "sha256": "42fb8a30dd8d7ba0900e1bf17fe64ed8c12cfdb8a9c791ab6b4e1eceb0f299c0"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/swift-transformers_Hub.bundle/Contents/Info.plist",
+      "byteCount": 1138,
+      "sha256": "8edcb3d28842b1e1b3e85a0e5b8e91e2aa16ce782e941f915be6317ffedbe638"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/swift-transformers_Hub.bundle/Contents/Resources/gpt2_tokenizer_config.json",
+      "byteCount": 234,
+      "sha256": "551e26ec611d8d0c8edc3ef72e518a38418cb71f40de1347dd486a595e1557d7"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGateBuild/out/Products/Release/swift-transformers_Hub.bundle/Contents/Resources/t5_tokenizer_config.json",
+      "byteCount": 20746,
+      "sha256": "e0aff0b1de9071e30d9a60a199303b6abe916a64a19932bd1c46992279b41a1f"
+    }
+  ],
+  "resource39Pins": {
+    "receipt": "resources-before.json",
+    "receiptSHA256": "426382353cdee9019e3bdf304fcf84fa287c0335d220dfb3aaa4c27332ac6224",
+    "count": 39,
+    "totalBytes": 6188648194,
+    "wholeHashesVerified": true,
+    "statIdentityStillMatchesAfterBuild": true
+  },
+  "configuration": {
+    "API": "NativeCreationEngine.generate",
+    "publicCalls": 1,
+    "caseID": "LP_lamp_original",
+    "prompt": "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地Y=0，整体高约0.8米。",
+    "seed": 24301,
+    "intentOutputTokens": 512,
+    "intentPositiveASCIICharsMaximum": 512,
+    "imageDimensions": [
+      768,
+      768
+    ],
+    "imageSteps": 20,
+    "imageGuidance": 7.5,
+    "imageComputeUnits": "cpuAndNeuralEngine",
+    "imageReduceMemory": true,
+    "visionOutputDimensions": [
+      512,
+      512
+    ],
+    "shapeSteps": 10,
+    "shapeLatents": 4096,
+    "shapeOctree": 192,
+    "shapeMoEChunk": 512,
+    "shapeCacheMiB": 64,
+    "shapeGeometryPostprocess": "finite-positive-f64-v1",
+    "iOSMinimumAvailableProcessBytesUnchanged": 5905580032,
+    "sampleNominalSeconds": 0.2,
+    "watchdogSeconds": 900
+  },
+  "build": {
+    "sourceFirstBuild": "Release passed99.67s (all current local SDK targets rebuilt)",
+    "finalRunnerBuild": "Release passed8.24s",
+    "ranBinary": false,
+    "modelOrNNStarted": false,
+    "productionSourcesModified": false
+  },
+  "observationBoundary": "reference/progress observable during call; intent/prepared/full artifacts only after successful public result; failure never replays missing stages",
+  "limitations": [
+    "Host Mac is not iPhone6GiB whole-App proof.",
+    "Physical0.8m/Y0 not established by normalized Shape output; untextured gray does not meet requested part colors.",
+    "Single fixture/seed cannot prove all-subject quality."
+  ]
+}

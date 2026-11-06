@@ -15,14 +15,43 @@ packages:
     path: Packages/QwenNative
   ThreeLiveNative:
     path: Packages/ThreeLiveNative
+  GoogleThreeLiveNative:
+    path: Packages/GoogleThreeLiveNative
+  VoxamberCreationNative:
+    path: Packages/VoxamberCreationNative
 settings:
   base:
     SWIFT_VERSION: "6.0"
     DEVELOPMENT_TEAM: M97RTV2PQG
     CODE_SIGN_STYLE: Automatic
     MARKETING_VERSION: "0.1.0"
-    CURRENT_PROJECT_VERSION: "6"
+    CURRENT_PROJECT_VERSION: "7"
 schemes:
+  Voxamber-SceneStudio:
+    build:
+      targets:
+        VoxamberSceneStudio: [run, test, profile, analyze, archive]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets: [VoxamberSceneStudioTests, VoxamberSceneStudioUITests]
+    archive:
+      config: Release
+  Voxamber-SceneQA:
+    build:
+      targets:
+        VoxamberSceneStudio: [run]
+    run:
+      config: Release-QA
+  Voxamber-ShapeQA:
+    build:
+      targets:
+        VoxamberShapeQA: [run]
+    run:
+      config: Release-QA
+      commandLineArguments:
+        --qa-neural-shape: true
   Voxamber-DeviceQA:
     build:
       targets:
@@ -32,6 +61,108 @@ schemes:
       commandLineArguments:
         --qa-inference: true
 targets:
+  VoxamberSceneStudio:
+    type: application
+    platform: iOS
+    sources:
+      - path: SceneStudio
+      - path: ThreeLiveStudio/Preview/ModelViewport.swift
+      - path: ThreeLiveStudio/Library/ProjectThumbnailService.swift
+      - path: ThreeLiveStudio/Resources/Assets.xcassets
+      - path: ThreeLiveStudio/Resources/PrivacyInfo.xcprivacy
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kaisun.voxamber
+        PRODUCT_MODULE_NAME: SceneStudio
+        APP_DISPLAY_NAME: "维珀"
+        MARKETING_VERSION: "0.2.0"
+        CURRENT_PROJECT_VERSION: "8"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: SceneStudio/Resources/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SWIFT_STRICT_CONCURRENCY: complete
+        CODE_SIGN_ENTITLEMENTS: SceneStudio/Resources/SceneStudio.entitlements
+      configs:
+        Release:
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: Apple Distribution
+          PROVISIONING_PROFILE_SPECIFIER: Voxamber SceneStudio App Store 20261106
+        Release-QA:
+          PRODUCT_BUNDLE_IDENTIFIER: com.kaisun.voxamber.scene-qa
+          APP_DISPLAY_NAME: "维珀·场景验收"
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) SCENE_QA"
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: Apple Development
+          PROVISIONING_PROFILE_SPECIFIER: Voxamber Scene QA Dev 20261106
+    dependencies:
+      - package: CreationCore
+      - package: GoogleThreeLiveNative
+      - target: VoxamberSceneShare
+        embed: true
+  VoxamberSceneShare:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: SceneShareExtension
+      - path: SceneStudio/Import/SceneImportInbox.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kaisun.voxamber.scene-import
+        MARKETING_VERSION: "0.2.0"
+        CURRENT_PROJECT_VERSION: "8"
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: SceneShareExtension/Info.plist
+        CODE_SIGN_ENTITLEMENTS: SceneShareExtension/SceneShare.entitlements
+        APPLICATION_EXTENSION_API_ONLY: YES
+        SKIP_INSTALL: YES
+      configs:
+        Release:
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: Apple Distribution
+          PROVISIONING_PROFILE_SPECIFIER: Voxamber Scene Import App Store 20261106
+        Release-QA:
+          PRODUCT_BUNDLE_IDENTIFIER: com.kaisun.voxamber.scene-qa.scene-import
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: Apple Development
+          PROVISIONING_PROFILE_SPECIFIER: Voxamber Scene QA Import Dev 20261106
+  VoxamberSceneStudioTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [SceneStudioTests]
+    dependencies:
+      - target: VoxamberSceneStudio
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+  VoxamberSceneStudioUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [SceneStudioUITests]
+    dependencies:
+      - target: VoxamberSceneStudio
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+  VoxamberShapeQA:
+    type: application
+    platform: iOS
+    sources:
+      - path: ShapeDeviceQA
+      - path: ThreeLiveStudio/Diagnostics/NeuralShapeDeviceProbe.swift
+      - path: ThreeLiveStudio/Preview/ModelViewport.swift
+      - path: ThreeLiveStudio/Library/ProjectThumbnailService.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kaisun.voxamber.shape-qa
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: "维珀·三维验收"
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) DEVICE_QA"
+        CODE_SIGN_ENTITLEMENTS: ShapeDeviceQA/ShapeDeviceQA.entitlements
+    dependencies:
+      - package: VoxamberCreationNative
   ThreeLiveStudio:
     type: application
     platform: iOS
@@ -54,6 +185,7 @@ targets:
       - package: CreationCore
       - package: QwenNative
       - package: ThreeLiveNative
+      - package: VoxamberCreationNative
       - target: VoxamberModelDownloader
         embed: true
     scheme:

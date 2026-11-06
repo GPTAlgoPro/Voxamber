@@ -1,0 +1,68 @@
+{
+  "condition": "Single-view CPU reference-color projection; no NN, PBR, geometry editing or new model",
+  "preparedAtUTC": "2026-11-06T00:16:03.512737+00:00",
+  "sourceFiles": {
+    ".gitignore": "0127b47d29f25aa72765aeae42b027a0ef39344d8917cebcc56ffcc8494076b3",
+    "Package.swift": "18eda22936f404f1ebbc9d0c8c56c8d9f401a0b286ca544ccbd68567100a4e77",
+    "Sources/ReferenceColorProjection/ColorProjection.swift": "47edb4ea276859f8e5646ee7987fbc652077e2bb01b97e5dffc5a5afd58d06fb",
+    "Sources/ReferenceColorProjection/GLBMesh.swift": "f2dff7a73cf21a2317f268d9c57db461fff8622154673c1d64338138f167d015",
+    "Sources/ReferenceColorProjection/NativeReadback.swift": "ff7fab00446a0f5a1ee5b51914afae88efc3c3660040de85966487245eaa0b58",
+    "Sources/ReferenceColorProjection/ProjectionCLI.swift": "2a2fd54ea1a4c0c6fa3d97f01c4b252b08f7c5668d4e81902debbcd2f66b28e7",
+    "Sources/ReferenceColorProjection/USDZArchiveWriter.swift": "cc9de8b29060927390c8989cdf33afd08c74ad1259be5dd43798bc825d68bb1a",
+    "Sources/ReferenceColorProjection/VertexColorUSDZ.swift": "a6b0e9ae2fc4b8b66798d62335366f16a392da33f289776aa900cd72b2e2242a",
+    "Tests/ReferenceColorProjectionTests/ProjectionTests.swift": "c5a0af1587ab4a577221b155c66a177098c0be71408df319526dbd602083a25e",
+    "design.md": "5086d6207a61f496c515fef75937a86c17a87796f668a10e3b8600d472701232",
+    "source-provenance.json": "e92f808be616dfeee0121282ca8cebdedec7a20b59a123ba9743be967d182a38"
+  },
+  "inputs": [
+    {
+      "path": "Apple/.build/NativeShapeCleanupGate/VaseSingleRaw01/strict/model.glb",
+      "bytes": 7214300,
+      "sha256": "42ea594bf5247fda74848ef2e958b27e09cee3d2d45529a61e0b0636ddcc2251"
+    },
+    {
+      "path": "docs/qa/2026-11-06-native-image-vase/reference-prepared-512-rgba.png",
+      "bytes": 249722,
+      "sha256": "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae"
+    }
+  ],
+  "expectedGeometry": {
+    "vertices": 200370,
+    "triangles": 400772,
+    "preservePositionAndIndexBytes": true
+  },
+  "fixedConfiguration": {
+    "cameraDirection": "+Z",
+    "up": "Y",
+    "perspectiveFOVDegrees": 42,
+    "cameraDistanceMaxExtentFactor": 2.1,
+    "referenceFrame": "512RGBA, alpha bbox uniform fit, inset 1 pixel",
+    "depthNeighborPixels": 3,
+    "depthToleranceMaxExtentFactor": 0.005,
+    "unknownLinearRec709RGBA": [
+      0.18,
+      0.18,
+      0.18,
+      1
+    ],
+    "newMaterial": {
+      "metallic": 0,
+      "roughness": 0.7
+    },
+    "USDZColorSpace": "lin_p3d65_scene, converted from linear Rec709"
+  },
+  "pureTests": {
+    "passed": 5,
+    "failed": 0,
+    "buildSeconds": 1.58,
+    "testSeconds": 0.092,
+    "log": "Apple/.build/ReferenceColorProjection-pure-tests.log"
+  },
+  "actualLargeMeshProjectionRun": false,
+  "actualNativeColorReadback": false,
+  "actualNativeViewsRendered": false,
+  "NNCalls": 0,
+  "phoneOperations": 0,
+  "productionFilesChangedByThisPrototype": false,
+  "executionCoordination": "Waiting for root lamp NN to finish before actual 200k-mesh CPU export and native SceneKit graphics render."
+}

@@ -1,0 +1,68 @@
+{
+  "scope": "Same-invocation original objects and native rejection; grammar float bounds were explicitly deferred and still checked natively",
+  "cases": [
+    {
+      "id": "robot",
+      "sameCallRawSHA256": "e29630cc91bd1c26da9ab37fdf88651f6b2d0cc57713f9d304def5fd93c2d221",
+      "entireJSONAccepted": true,
+      "nodeCount": 11,
+      "nativeSceneAccepted": true,
+      "nativeError": null,
+      "numericBoundViolations": [],
+      "floatBoundsRequireNativeValidation": true,
+      "diagnosticOnlyNoRepair": true
+    },
+    {
+      "id": "lamp",
+      "sameCallRawSHA256": "4d5f7db9191e451aa637831417aecbdafc6ffa013423b14ddfddd9b76dc48cf6",
+      "entireJSONAccepted": true,
+      "nodeCount": 4,
+      "nativeSceneAccepted": true,
+      "nativeError": null,
+      "numericBoundViolations": [],
+      "floatBoundsRequireNativeValidation": true,
+      "diagnosticOnlyNoRepair": true
+    },
+    {
+      "id": "whale",
+      "sameCallRawSHA256": "dc8b7832139c3ff0ed19ca43e9402b71e48e92c225377cd16f984eb8ff9932d8",
+      "entireJSONAccepted": true,
+      "nodeCount": 11,
+      "nativeSceneAccepted": true,
+      "nativeError": null,
+      "numericBoundViolations": [],
+      "floatBoundsRequireNativeValidation": true,
+      "diagnosticOnlyNoRepair": true
+    },
+    {
+      "id": "aircraft",
+      "sameCallRawSHA256": "f522b21b5d2db08c9793d1ea3e9356be17f4224c6188fbdcb55eca3279c609e1",
+      "entireJSONAccepted": true,
+      "nodeCount": 8,
+      "nativeSceneAccepted": false,
+      "nativeError": "部件中心须在 ±3 米内，尺寸须为 0.02–2.5 米，旋转须为 ±360 度内。",
+      "numericBoundViolations": [
+        {
+          "field": "nodes[0].dimensions.height",
+          "actualArbitraryID": "fuselage_root",
+          "value": 3.5,
+          "nativeMinimum": 0.019999999552965164,
+          "nativeMaximum": 2.5
+        }
+      ],
+      "floatBoundsRequireNativeValidation": true,
+      "diagnosticOnlyNoRepair": true
+    },
+    {
+      "id": "chair",
+      "sameCallRawSHA256": "6a41f9a8a0b3ab82db690c90f866fcd41f68f25d988a3cf0dc81e79767183af4",
+      "entireJSONAccepted": true,
+      "nodeCount": 13,
+      "nativeSceneAccepted": true,
+      "nativeError": null,
+      "numericBoundViolations": [],
+      "floatBoundsRequireNativeValidation": true,
+      "diagnosticOnlyNoRepair": true
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "name": "蓝色流线小鲸鱼",
+  "nodes": [
+    {
+      "id": "body_main",
+      "primitive": "lathe",
+      "dimensions": {
+        "width": 0.6,
+        "height": 2.5,
+        "depth": 0.6
+      },
+      "color": "#1E90FF"
+    ,
+    "profile": [
+      [0.3, 0],
+      [0.45, 0.5],
+      [0.6, 1.2],
+      [0.7, 1.8],
+      [0.65, 2.2],
+      [0.5, 2.3]
+    ]
+    },
+    {
+      "id": "head_top",
+      "primitive": "sphere",
+      "dimensions": {
+        "width": 0.25,
+        "height": 0.25,
+        "depth": 0.25
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "body_main",
+        "face": "front",
+        "xOffset": -0.08,
+        "yOffset": -0.1
+      }
+    },
+    {
+      "id": "eye_l",
+      "primitive": "sphere",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.06,
+        "depth": 0.06
+      },
+      "color": "#FFFFFF",
+      "attach": {
+        "parent": "head_top",
+        "face": "front",
+        "xOffset": 0.01,
+        "yOffset": -0.02
+      }
+    },
+    {
+      "id": "eye_r",
+      "primitive": "sphere",
+      "dimensions": {
+        "width": 0.06,
+        "height": 0.06,
+        "depth": 0.06
+      },
+      "color": "#FFFFFF",
+      "attach": {
+        "parent": "head_top",
+        "face": "front",
+        "xOffset": -0.01,
+        "yOffset": -0.02
+      }
+    },
+    {
+      "id": "fin_left",
+      "primitive": "extrusion",
+      "dimensions": {
+        "width": 0.3,
+        "height": 0.15,
+        "depth": 0.02
+      },
+      "color": "#1E90FF",
+      "profile": [
+        [-0.15, 0],
+        [-0.1, 0.05],
+        [-0.15, 0.12],
+        [-0.2, 0.1],
+        [-0.15, 0.08]
+      ],
+      "rotation": {
+        "x": 90
+      ,
+      "y": 0,
+      "z": 0
+    }
+    },
+    {
+      "id": "fin_right",
+      "primitive": "extrusion",
+      "dimensions": {
+        "width": 0.3,
+        "height": 0.15,
+        "depth": 0.02
+      },
+      "color": "#1E90FF",
+      "profile": [
+        [0.15, 0],
+        [0.1, 0.05],
+        [0.15, 0.12],
+        [0.2, 0.1],
+        [0.15, 0.08]
+      ],
+      "rotation": {
+        "x": 90
+      ,
+      "y": 0,
+      "z": 0
+    }
+    },
+    {
+      "id": "tail_base",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.15,
+        "height": 0.4,
+        "depth": 0.15
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "body_main",
+        "face": "bottom",
+        "xOffset": 0,
+        "yOffset": -0.2
+      }
+    },
+    {
+      "id": "tail_split_1",
+      "primitive": "cone",
+      "dimensions": {
+        "width": 0.1,
+        "height": 0.35,
+        "depth": 0.1
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "tail_base",
+        "face": "bottom",
+        "xOffset": -0.05,
+        "yOffset": 0.05
+      }
+    },
+    {
+      "id": "tail_split_2",
+      "primitive": "cone",
+      "dimensions": {
+        "width": 0.1,
+        "height": 0.35,
+        "depth": 0.1
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "tail_base",
+        "face": "bottom",
+        "xOffset": 0.05,
+        "yOffset": 0.05
+      }
+    },
+    {
+      "id": "body_curve_sides",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.65,
+        "height": 0.3,
+        "depth": 0.04
+      },
+      "color": "#00BFFF",
+      "attach": {
+        "parent": "body_main",
+        "face": "left",
+        "xOffset": 0.32,
+        "yOffset": 0,
+        "zOffset": 0.1
+      }
+    },
+    {
+      "id": "body_curve_back",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.5,
+        "height": 0.25,
+        "depth": 0.04
+      },
+      "color": "#00BFFF",
+      "attach": {
+        "parent": "body_main",
+        "face": "back",
+        "xOffset": 0,
+        "yOffset": 0,
+        "zOffset": -0.1
+      }
+    }
+  ]
+}

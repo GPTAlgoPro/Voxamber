@@ -1,0 +1,48 @@
+{
+  "appID": "6831042755",
+  "assetPackID": "Voxamber-Hunyuan21-Shape-Q4-30B93",
+  "assetRecordID": "13b232f6-ad33-47e1-8afa-0f2e0bb3b92d",
+  "availabilityEnabledByThisTask": false,
+  "bundleID": "com.kaisun.voxamber",
+  "contractSHA256": "794edd95115c48b1591908da802b3c220dfe931ea3c654394dbde4c5ba982eb5",
+  "downloadOrNeuralDeviceAcceptanceClaimed": false,
+  "errorCodes": [],
+  "files": [
+    {
+      "appleDeliveryChecksumMatched": true,
+      "approvedSHA256": "9f55af42c4189ce5b4868307a642e691b4e8484c30fa4571b42dadb95bcf82ed",
+      "assetType": "ASSET",
+      "byteCount": 2359487920,
+      "id": "236bc4f7-21d4-4eef-8874-a2686f502e4b",
+      "serverFileChecksum": {
+        "algorithm": "MD5",
+        "hash": "2a93efdfd8c17ede0cd6bd7d0a475163"
+      },
+      "state": "COMPLETE"
+    },
+    {
+      "appleDeliveryChecksumMatched": true,
+      "approvedSHA256": "6465b86bd7683e1ce3b3adb8d52a57ce822bf1356e36f0d7ac68b2d9545fe71b",
+      "assetType": "MANIFEST",
+      "byteCount": 1255,
+      "id": "71516684-afcd-4c60-9c90-11bb7e0c16dc",
+      "serverFileChecksum": {
+        "algorithm": "MD5",
+        "hash": "0b4168a006ab02c690cfe7be7f391299"
+      },
+      "state": "COMPLETE"
+    }
+  ],
+  "group": "shape",
+  "legalFileCount": 8,
+  "modelFileCount": 2,
+  "modelID": "hunyuan-shape-2.1-q4-30b93",
+  "modelPinIdentitySHA256": "5e6c214c00030e401beaff077aa1082f3307e846b89fae8bf8ef0f1a2837d0e0",
+  "platform": "IOS",
+  "schemaVersion": 1,
+  "scope": "Only new asset upload/processing; no client activation, TestFlight, review or release changes",
+  "serverState": "COMPLETE",
+  "version": "1",
+  "versionID": "d00ab3d6-f20c-4355-957d-bba3ba9a07e5",
+  "warningCodes": []
+}

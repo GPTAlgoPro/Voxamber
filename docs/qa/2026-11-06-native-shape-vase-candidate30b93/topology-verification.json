@@ -1,0 +1,36 @@
+{
+  "recordedAtUTC": "2026-11-05T23:13:06.713365+00:00",
+  "scope": "CPU unchanged actual old NN artifact only; no new inference or repair",
+  "sourceGLBSHA256": "8153667ca874a56aac9a2eef95fb28f470d5a9b68166fb7bcf35a728db9c18e4",
+  "vertices": 200370,
+  "triangles": 400211,
+  "boundaryEdges": 1731,
+  "simpleBoundaryLoops": 549,
+  "loopLengths": {
+    "3": 509,
+    "4": 17,
+    "6": 21,
+    "5": 2
+  },
+  "nonManifoldEdges": 0,
+  "nonManifoldVertexLinks": 0,
+  "faceConnectedComponents": 6,
+  "mainFaces": 400027,
+  "smallIslandFacesTotal": 184,
+  "zeroAreaFaces": 0,
+  "repeatedIndexFaces": 0,
+  "duplicateFaces": 0,
+  "duplicateCoordinates": 0,
+  "unreferencedVertices": 0,
+  "mainOrientableGenusWith549BoundaryLoops": 31,
+  "evidenceInterpretation": [
+    "There are genuine open boundaries, not only a lighting artifact.",
+    "The 549 boundary cycles are small; the largest spans about0.02104 model units.",
+    "A particular visible hole may be an open boundary or a closed manifold tunnel; no per-pixel occlusion attribution was performed.",
+    "All509 triangular boundary-spanning faces have positive Float32 and Float64 area and would fail current legacy1e-16 cutoff.",
+    "Pre-clean mesh was not retained in that old run, so missing-face causal provenance cannot yet be proven from these gap spans alone.",
+    "No measurement attributes defects to Q4 quantization. The newly armed same-raw CPU policy comparison is the narrower causal experiment."
+  ],
+  "topologyAlgorithmControls": "3 CPU selfchecks: triangle, closed tetrahedron, bowtie vertex; all passed",
+  "sourceAssetUnchanged": true
+}

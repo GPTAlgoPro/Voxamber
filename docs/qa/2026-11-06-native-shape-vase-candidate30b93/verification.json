@@ -1,0 +1,101 @@
+{
+  "recordedAtUTC": "2026-11-05T22:26:20.078968+00:00",
+  "scope": "One actual host-Mac Shape NN API call; separate from App/phone/whole-pipeline acceptance",
+  "result": "native_actual_nn_mesh_exported; silhouette recognizable against actual complex source vessel, visible quality limitations",
+  "shapeAPICallCount": 1,
+  "retryCount": 0,
+  "fallbackCount": 0,
+  "processExitCode": 0,
+  "watchdogTriggered": false,
+  "neuralSeconds": 98.91871500015259,
+  "SDKSeconds": 101.10409700870514,
+  "wholeGateSeconds": 101.17801904678345,
+  "MLXPeakBytes": 4205861544,
+  "observedPhysicalPeakBytes": 4431284720,
+  "physicalSampleCount": 957,
+  "nominalSampleIntervalSeconds": 0.1,
+  "physicalBytesAfterUnload": 577701496,
+  "vertexCount": 200370,
+  "triangleCount": 400211,
+  "indexCount": 1200633,
+  "sourceBinaryBundlesInputAll55SHAUnchanged": true,
+  "candidateWholeSHAAfterNNMatchesPreflight": true,
+  "knownWeightFilesystemMetadataChange": {
+    "reportedBy": "parent Root",
+    "event": "Parent created a hardlink to stage the same candidate for future phone QA during this NN interval. No model bytes written.",
+    "path": "Apple/.build/PhoneNeuralShapeQA/model.q4.safetensors",
+    "nlinkOrCtimeMayDiffer": true,
+    "allWeightMetadataUnchangedClaimed": false,
+    "wholeCandidateBytesAndSHAUnchanged": true
+  },
+  "visualReview": {
+    "reviewer": "model_research",
+    "actualRenderedViewsSeen": [
+      "vase-front.png",
+      "vase-threequarter.png"
+    ],
+    "actualInputSeen": true,
+    "meshSource": "actual generated unmodified USDZ; GLB vertices used for camera framing only",
+    "findings": [
+      "Actual source is an asymmetrical blue/gold curled decorative vessel with circular pedestal, not a plain bottle-shaped vase.",
+      "Generated silhouette, curled opening and pedestal are recognizable relative to that exact input.",
+      "Thin rims/interior show rough folds, local gaps/small holes and jagged details; this is not a clean CAD surface.",
+      "Gray untextured shape export does not reproduce blue/gold appearance; no learned texture or material generation is claimed."
+    ],
+    "generalQualityAcceptance": false,
+    "parentReviewPending": true
+  },
+  "artifacts": [
+    {
+      "path": "Apple/.build/NativeShapeGate/VaseCandidate30b93/base.glb",
+      "byteCount": 7207568,
+      "sha256": "8153667ca874a56aac9a2eef95fb28f470d5a9b68166fb7bcf35a728db9c18e4"
+    },
+    {
+      "path": "Apple/.build/NativeShapeGate/VaseCandidate30b93/gate-report.json",
+      "byteCount": 3476,
+      "sha256": "d1f207912a925d0bff5f23719813ffbd232967c3910415370c89f98a91ba05d4"
+    },
+    {
+      "path": "Apple/.build/NativeShapeGate/VaseCandidate30b93/input-512.png",
+      "byteCount": 249722,
+      "sha256": "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae"
+    },
+    {
+      "path": "Apple/.build/NativeShapeGate/VaseCandidate30b93/model.glb",
+      "byteCount": 7207568,
+      "sha256": "8153667ca874a56aac9a2eef95fb28f470d5a9b68166fb7bcf35a728db9c18e4"
+    },
+    {
+      "path": "Apple/.build/NativeShapeGate/VaseCandidate30b93/model.usdz",
+      "byteCount": 25670378,
+      "sha256": "ddec6c21fdf74219effd5b8646f7b7ac8b70d5923d545dc9a8c9e9a515fab881"
+    },
+    {
+      "path": "Apple/.build/NativeShapeGate/VaseCandidate30b93/provenance.json",
+      "byteCount": 892,
+      "sha256": "e44d5dcffc50ebc02232b701dcc589fdf344213212e1ddeb67260d60fb6011b5"
+    },
+    {
+      "path": "Apple/.build/NativeShapeGate/VaseCandidate30b93/statistics.json",
+      "byteCount": 161,
+      "sha256": "e62f329245097f1c0427be59edee14a8b78fd7407f928cdd9508b60057bc63f0"
+    },
+    {
+      "path": "Apple/.build/NativeShapeGate/VaseCandidate30b93/validation-receipt.json",
+      "byteCount": 583,
+      "sha256": "542855f4ff3cceeb1bb9b7fc465f1fb88362d92f10a86375b6461d9c79fe7b41"
+    }
+  ],
+  "renderer": {
+    "sourceSHA256": "6a83a0f8a45c6adef3330b3cfbf634b3057f78024b0c03917ee4b6fde4425557",
+    "binarySHA256": "e655466d7d3deb0a74a1e5846394922c7cc4473b261f02a8f17fd4dab936d8c3"
+  },
+  "limits": [
+    "Host has48GiB RAM; current 12GB iPhone /6GiB whole-App admission, physical peak, cancellation bound and thermal/repeat behavior remain unverified.",
+    "This one fixed-image run does not establish broad object quality or old0.31.4 forward/mesh parity.",
+    "Tensor source-recipe parity and this current0.32.3 NN success are separately evidenced; legacy69 container/tensor equivalence remains unproven.",
+    "No model weights, sampler, latent count, steps, resolution, CFG/MoE strategy or mobile5.5GiB threshold changed during this run.",
+    "Full generated GLB/USDZ/base remain ignored local QA assets; no user project or deleted work was restored or published."
+  ]
+}

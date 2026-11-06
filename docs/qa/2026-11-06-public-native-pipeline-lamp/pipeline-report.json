@@ -1,0 +1,355 @@
+{
+  "actualNeuralWeightsUsed" : true,
+  "actualStageSeconds" : {
+    "drawingReference" : 151.9157110452652,
+    "generatingShape" : 95.229993104934692,
+    "interpreting" : 4.5537339448928833,
+    "preparingSubject" : 0.21994495391845703,
+    "total" : 251.92033195495605
+  },
+  "APIRequests" : 1,
+  "caseID" : "LP_lamp_original",
+  "engineRunningAfterUnload" : false,
+  "entryPoint" : "public NativeCreationEngine.generate",
+  "fallbacks" : 0,
+  "observability" : "intent\/prepared only from successful NativeCreationResult; failed calls retain only public progress\/reference callbacks",
+  "observations" : {
+    "nominalSampleIntervalSeconds" : 0.20000000000000001,
+    "observedPhysicalPeakBytes" : 5665524928,
+    "phaseObservedPeaks" : {
+      "beforeAPI" : 2605608,
+      "complete" : 1632339840,
+      "drawingReference" : 2137900616,
+      "generatingShape" : 5665524928,
+      "interpreting" : 971392536,
+      "preparingSubject" : 1842873928
+    },
+    "physicalSampleCount" : 1216,
+    "stages" : [
+      {
+        "phase" : "interpreting",
+        "phaseChanged" : true,
+        "physicalBytes" : 3523184,
+        "seconds" : 0.0044980049133300781
+      },
+      {
+        "phase" : "drawingReference",
+        "phaseChanged" : true,
+        "physicalBytes" : 440518024,
+        "seconds" : 4.5564200878143311
+      },
+      {
+        "completedSteps" : 1,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 539182664,
+        "seconds" : 140.73104202747345,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 2,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 539199048,
+        "seconds" : 141.52260708808899,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 3,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 539199048,
+        "seconds" : 142.30604410171509,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 4,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 539199048,
+        "seconds" : 143.09616410732269,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 5,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 539199048,
+        "seconds" : 143.88874709606171,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 6,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 539805256,
+        "seconds" : 144.69753110408783,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 7,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 540477000,
+        "seconds" : 145.5235470533371,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 8,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 540935752,
+        "seconds" : 146.34063708782196,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 9,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 540935752,
+        "seconds" : 147.14121305942535,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 10,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 540935752,
+        "seconds" : 147.92867302894592,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 11,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 540952136,
+        "seconds" : 148.72724807262421,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 12,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 541247048,
+        "seconds" : 149.54098403453827,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 13,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 541247048,
+        "seconds" : 150.34258306026459,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 14,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 541247048,
+        "seconds" : 151.13232207298279,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 15,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 541263432,
+        "seconds" : 151.92004501819611,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 16,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 541263432,
+        "seconds" : 152.70638000965118,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 17,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 541263432,
+        "seconds" : 153.49574208259583,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 18,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 541263432,
+        "seconds" : 154.27897107601166,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 19,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 541427272,
+        "seconds" : 155.06736207008362,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 20,
+        "phase" : "drawingReference",
+        "phaseChanged" : false,
+        "physicalBytes" : 541722184,
+        "seconds" : 155.85214805603027,
+        "totalSteps" : 20
+      },
+      {
+        "phase" : "preparingSubject",
+        "phaseChanged" : true,
+        "physicalBytes" : 1789265408,
+        "seconds" : 156.47306203842163
+      },
+      {
+        "phase" : "generatingShape",
+        "phaseChanged" : true,
+        "physicalBytes" : 1837647432,
+        "seconds" : 156.69300806522369
+      },
+      {
+        "fraction" : 0.0099999997764825821,
+        "phase" : "generatingShape",
+        "phaseChanged" : false,
+        "physicalBytes" : 1827407432,
+        "seconds" : 156.69454908370972
+      },
+      {
+        "fraction" : 0.029999999329447746,
+        "phase" : "generatingShape",
+        "phaseChanged" : false,
+        "physicalBytes" : 1154926152,
+        "seconds" : 157.85197007656097
+      },
+      {
+        "fraction" : 0.091000005602836609,
+        "phase" : "generatingShape",
+        "phaseChanged" : false,
+        "physicalBytes" : 1159415368,
+        "seconds" : 157.86173701286316
+      },
+      {
+        "fraction" : 0.18119999766349792,
+        "phase" : "generatingShape",
+        "phaseChanged" : false,
+        "physicalBytes" : 3772189888,
+        "seconds" : 169.2416980266571
+      },
+      {
+        "fraction" : 0.23039999604225159,
+        "phase" : "generatingShape",
+        "phaseChanged" : false,
+        "physicalBytes" : 3769175232,
+        "seconds" : 177.8616681098938
+      },
+      {
+        "fraction" : 0.27959999442100525,
+        "phase" : "generatingShape",
+        "phaseChanged" : false,
+        "physicalBytes" : 3773385920,
+        "seconds" : 186.38095104694366
+      },
+      {
+        "fraction" : 0.3288000226020813,
+        "phase" : "generatingShape",
+        "phaseChanged" : false,
+        "physicalBytes" : 3773467840,
+        "seconds" : 195.45799911022186
+      },
+      {
+        "fraction" : 0.37800002098083496,
+        "phase" : "generatingShape",
+        "phaseChanged" : false,
+        "physicalBytes" : 3777760448,
+        "seconds" : 204.85273909568787
+      },
+      {
+        "fraction" : 0.42720001935958862,
+        "phase" : "generatingShape",
+        "phaseChanged" : false,
+        "physicalBytes" : 3775696064,
+        "seconds" : 214.14543402194977
+      },
+      {
+        "fraction" : 0.47640004754066467,
+        "phase" : "generatingShape",
+        "phaseChanged" : false,
+        "physicalBytes" : 3773631680,
+        "seconds" : 223.25600206851959
+      },
+      {
+        "fraction" : 0.52560001611709595,
+        "phase" : "generatingShape",
+        "phaseChanged" : false,
+        "physicalBytes" : 3773615296,
+        "seconds" : 232.36876404285431
+      },
+      {
+        "fraction" : 0.57480007410049438,
+        "phase" : "generatingShape",
+        "phaseChanged" : false,
+        "physicalBytes" : 3769453760,
+        "seconds" : 241.35440003871918
+      },
+      {
+        "fraction" : 0.64040005207061768,
+        "phase" : "generatingShape",
+        "phaseChanged" : false,
+        "physicalBytes" : 3756870848,
+        "seconds" : 241.35456001758575
+      },
+      {
+        "fraction" : 0.78799998760223389,
+        "phase" : "generatingShape",
+        "phaseChanged" : false,
+        "physicalBytes" : 4918267648,
+        "seconds" : 251.37139403820038
+      },
+      {
+        "fraction" : 0.87000000476837158,
+        "phase" : "generatingShape",
+        "phaseChanged" : false,
+        "physicalBytes" : 4054355712,
+        "seconds" : 251.51975309848785
+      },
+      {
+        "fraction" : 0.89999997615814209,
+        "phase" : "generatingShape",
+        "phaseChanged" : false,
+        "physicalBytes" : 1541179144,
+        "seconds" : 251.59246003627777
+      },
+      {
+        "fraction" : 1,
+        "phase" : "generatingShape",
+        "phaseChanged" : false,
+        "physicalBytes" : 1632339840,
+        "seconds" : 251.92227709293365
+      },
+      {
+        "fraction" : 1,
+        "phase" : "complete",
+        "phaseChanged" : true,
+        "physicalBytes" : 1632339840,
+        "seconds" : 251.92299711704254
+      }
+    ],
+    "watchdogTriggered" : false
+  },
+  "operationCancelledBeforeFinalCleanup" : false,
+  "physicalBytesAfterUnload" : 1632339840,
+  "physicalScaleKnown" : false,
+  "platform" : "host Mac; not phone",
+  "prompt" : "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地Y=0，整体高约0.8米。",
+  "retries" : 0,
+  "returnedSeed" : 24301,
+  "seconds" : 251.92897808551788,
+  "seed" : 24301,
+  "status" : "actual_public_pipeline_returned_pending_semantic_visual_native_format_acceptance",
+  "triangles" : 201804,
+  "vertices" : 100904,
+  "watchdogSeconds" : 900
+}

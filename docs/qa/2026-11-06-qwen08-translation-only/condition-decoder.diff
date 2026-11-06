@@ -1,0 +1,35 @@
+--- frozen positive-only multi-field condition
++++ current one-field translation contract
+@@ -3,23 +3,24 @@
+ 
+ enum CreationIntentDecoder {
+     static let systemPrompt = """
+-    Translate the user's visual idea into compact English for an image generator.
+-    Preserve the subjects, counts, relationships, colors and materials. Do not invent objects or substitute a template. Express any requested exclusions in that same English description. Frame the complete subject clearly.
+-    Return exactly these JSON fields: title in the user's language (1-40 characters), positivePrompt in English ASCII (1-180 characters), negativePrompt as the empty string. The negativePrompt is always empty: do not infer a negative list from the user's desired features. Do not output geometry, scripts, coordinates, explanations or Markdown.
++    Translate the user's visual idea into concise English. Preserve the subjects, counts, relationships, colors, materials and explicit exclusions. Do not replace objects, invent features, write geometry or explain.
++    Return only {"positivePrompt":"English translation"}. Use printable English ASCII, 1-180 characters. There are no other output fields.
+     """
+ 
+     static let schema = """
+-    {"type":"object","properties":{"title":{"type":"string","minLength":1,"maxLength":40},"positivePrompt":{"type":"string","minLength":1,"maxLength":180,"pattern":"^[ -~]+$"},"negativePrompt":{"type":"string","const":""}},"required":["title","positivePrompt","negativePrompt"],"additionalProperties":false}
++    {"type":"object","properties":{"positivePrompt":{"type":"string","pattern":"^[ -~]{1,180}$"}},"required":["positivePrompt"],"additionalProperties":false}
+     """
+ 
+-    static func decode(_ response: String) throws -> CreationIntent {
++    static func decode(_ response: String, sourcePrompt: String) throws -> CreationIntent {
+         guard response.utf8.count <= 4096,
+-              let data = response.data(using: .utf8),
+               let object = try? StrictJSONObject.decode(response, maximumBytes: 4096),
+-              Set(object.keys) == ["title", "positivePrompt", "negativePrompt"],
+-              let intent = try? JSONDecoder().decode(CreationIntent.self, from: data) else {
++              Set(object.keys) == ["positivePrompt"],
++              let positive = object["positivePrompt"] as? String else {
+             throw CreationError.invalidIntent
+         }
++        let firstLine = sourcePrompt.split(whereSeparator: \.isNewline).first.map(String.init) ?? ""
++        let title = String(firstLine.split(whereSeparator: \.isWhitespace).joined(separator: " ").prefix(40))
++        let intent = CreationIntent(title: title, positivePrompt: positive, negativePrompt: "")
+         guard (1...40).contains(intent.title.count),
+               !intent.title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
+               !intent.positivePrompt.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,

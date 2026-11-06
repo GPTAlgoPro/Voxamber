@@ -1,0 +1,39 @@
+{
+  "recordedAtUTC": "2026-11-06T02:23:53.914080+00:00",
+  "state": "singlePublicImageCallSettled_imageQualityReviewed",
+  "actualSession": 64207,
+  "processExitCode": 0,
+  "NNCalls": 1,
+  "Qwen08Calls": 0,
+  "VisionCalls": 0,
+  "ShapeCalls": 0,
+  "retries": 0,
+  "seconds": 13.987832833314314,
+  "PNG": {
+    "path": "docs/qa/2026-11-06-flux2-image-lamp/reference-512.png",
+    "bytes": 156364,
+    "sha256": "d47d9561a0a08cfc64fad51ecefd531f571e9894cb7a5d09ea5225a5eef9a69d"
+  },
+  "sampledOSFootprintPeakBytes": 4014115816,
+  "sampleCount": 69,
+  "nominalSamplingSeconds": 0.2,
+  "actualMaxGapSeconds": 0.21341287501854822,
+  "afterUnload": {
+    "elapsed": 13.987825333315413,
+    "mlxActiveBytes": 5808,
+    "mlxCacheBytes": 0,
+    "mlxPeakBytes": 3763977196,
+    "physFootprintBytes": 466650672,
+    "stage": "complete"
+  },
+  "watchdogTriggered": false,
+  "engineRunningAfterUnload": false,
+  "allSDK128Host3Bundle9WholeSHAMatch": true,
+  "all14ResourcesWholeSHAMatch": true,
+  "resourceIdentitiesUnchanged": true,
+  "officialEncodingContract": "Product checked BFL50fe5162777813d869182b139e83b10743caef15/text_encoder.py against template/padding/mask/layers; complete LP token ID parity not performed.",
+  "device": "Mac host; not an iPhone run",
+  "AppPipelineChanges": 0,
+  "PhoneOperations": 0,
+  "SDKSourceEditsAfterFreeze": 0
+}

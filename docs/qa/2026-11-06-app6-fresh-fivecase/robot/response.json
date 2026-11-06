@@ -1,0 +1,151 @@
+{
+  "name": "蓝色立方体机器人",
+  "nodes": [
+    {
+      "id": "base",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.2,
+        "height": 0.05,
+        "depth": 0.2
+      },
+      "color": "#333333"
+    },
+    {
+      "id": "torso",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.18,
+        "height": 0.35,
+        "depth": 0.16
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "base",
+        "face": "top",
+        "xOffset": 0,
+        "yOffset": 0.05,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "head",
+      "primitive": "box",
+      "dimensions": {
+        "width": 0.12,
+        "height": 0.12,
+        "depth": 0.12
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "torso",
+        "face": "top",
+        "xOffset": 0,
+        "yOffset": 0.175,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "eye_left",
+      "primitive": "sphere",
+      "dimensions": {
+        "width": 0.03,
+        "height": 0.03,
+        "depth": 0.03
+      },
+      "color": "#FFD700",
+      "attach": {
+        "parent": "head",
+        "face": "front",
+        "xOffset": -0.045,
+        "yOffset": 0,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "eye_right",
+      "primitive": "sphere",
+      "dimensions": {
+        "width": 0.03,
+        "height": 0.03,
+        "depth": 0.03
+      },
+      "color": "#FFD700",
+      "attach": {
+        "parent": "head",
+        "face": "front",
+        "xOffset": 0.045,
+        "yOffset": 0,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "arm_left",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.04,
+        "height": 0.3,
+        "depth": 0.04
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "torso",
+        "face": "left",
+        "xOffset": -0.09,
+        "yOffset": 0.175,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "arm_right",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.04,
+        "height": 0.3,
+        "depth": 0.04
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "torso",
+        "face": "right",
+        "xOffset": 0.09,
+        "yOffset": 0.175,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "leg_left",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.05,
+        "height": 0.35,
+        "depth": 0.05
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "torso",
+        "face": "bottom",
+        "xOffset": -0.05,
+        "yOffset": 0,
+        "zOffset": 0
+      }
+    },
+    {
+      "id": "leg_right",
+      "primitive": "cylinder",
+      "dimensions": {
+        "width": 0.05,
+        "height": 0.35,
+        "depth": 0.05
+      },
+      "color": "#1E90FF",
+      "attach": {
+        "parent": "torso",
+        "face": "bottom",
+        "xOffset": 0.05,
+        "yOffset": 0,
+        "zOffset": 0
+      }
+    }
+  ]
+}

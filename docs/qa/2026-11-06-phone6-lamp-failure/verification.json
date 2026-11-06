@@ -1,0 +1,96 @@
+{
+  "observedAtUTC": "2026-11-05T18:58:04.348399+00:00",
+  "source": "Read-only normal phone App container plus user supplied lamp error screenshot; no UI automation, regeneration or user-data restoration.",
+  "appBuild": "6",
+  "model": "qwen3.5-4b-mlx-int4",
+  "completion": {
+    "generatedTokenCount": 1161,
+    "grammarEnabled": false,
+    "grammarTerminated": false,
+    "inputTokenCount": 2327,
+    "reason": "jsonComplete",
+    "tokenLimit": 3072
+  },
+  "userVisibleError": "场景计划中的形状类型无效。",
+  "failedGate": {
+    "path": "Apple/Packages/CreationCore/Sources/CreationCore/ScenePlan.swift",
+    "line": 47,
+    "condition": "primitive must be a String exactly matching SceneNode.Primitive rawValue",
+    "validValues": [
+      "box",
+      "sphere",
+      "cylinder",
+      "cone",
+      "torus",
+      "mesh",
+      "lathe",
+      "extrusion"
+    ],
+    "specificOffendingValue": "Unknown: the rejected generated raw is not stored by the production diagnostics. Do not infer a particular alias from this message."
+  },
+  "interpretation": "The complete JSON response reached native scene validation. This is not an output-limit termination or the stale build4 memory-pressure cancellation. A valid JSON object does not prove valid shape types or usable 3D modeling quality.",
+  "afterLoadMemorySnapshot": {
+    "appBuild": "6",
+    "availableProcessBytes": 3756797712,
+    "physicalFootprintBytes": 2685653232,
+    "derivedLimitBytes": 6442450944,
+    "scope": "Snapshot after model load, not an inference peak memory trace."
+  },
+  "currentPublishedProjects": [
+    {
+      "projectID": "C8E6E277-9DB0-4625-ACCA-921CE1906209",
+      "revision": "28A00BA5-F666-47A0-9168-4CD2A2E51925",
+      "nodes": 8,
+      "modelMeasurement": "千问 Qwen3.5 · 4B INT4",
+      "timings": {
+        "export": 0.0054399967193603516,
+        "geometry": 0.006084084510803223,
+        "interpretation": 32.10264706611633,
+        "total": 32.16356098651886
+      },
+      "files": {
+        "model.glb": {
+          "bytes": 29036,
+          "shaMatchesPointer": true
+        },
+        "model.usdz": {
+          "bytes": 40791,
+          "shaMatchesPointer": true
+        }
+      },
+      "notFromScratchQualityAcceptance": true
+    },
+    {
+      "projectID": "B0B9CD0D-BDC1-4E80-9CD7-41D413223052",
+      "revision": "960B3F88-B9CA-4CDE-88A2-28654397340A",
+      "nodes": 12,
+      "modelMeasurement": "manual",
+      "timings": {
+        "export": 0.004456996917724609,
+        "geometry": 0.002072930335998535,
+        "total": 0.05651700496673584
+      },
+      "files": {
+        "model.glb": {
+          "bytes": 106144,
+          "shaMatchesPointer": true
+        },
+        "model.usdz": {
+          "bytes": 195719,
+          "shaMatchesPointer": true
+        }
+      },
+      "notFromScratchQualityAcceptance": true
+    }
+  ],
+  "manualWorkCountedAsAI": false,
+  "newModelQualityAccepted": false,
+  "INT4CausalDegradationProven": false,
+  "previouslyDeletedProjectsRestored": false,
+  "scopeLimits": [
+    "No model raw replay or repair",
+    "No inference output field name/value invented",
+    "No numerical FP16-versus-INT4 parity comparison",
+    "Saving a template-preserving AI revision does not establish free-form shape generation quality"
+  ]
+}

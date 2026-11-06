@@ -1,0 +1,65 @@
+{
+  "assetPackID": "Voxamber-Qwen35-08B-INT4",
+  "downloadPolicy": {
+    "onDemand": {}
+  },
+  "fileSelectors": [
+    {
+      "file": "models/qwen3.5-0.8b-mlx-int4/chat_template.jinja"
+    },
+    {
+      "file": "models/qwen3.5-0.8b-mlx-int4/config.json"
+    },
+    {
+      "file": "models/qwen3.5-0.8b-mlx-int4/model.safetensors.index.json"
+    },
+    {
+      "file": "models/qwen3.5-0.8b-mlx-int4/preprocessor_config.json"
+    },
+    {
+      "file": "models/qwen3.5-0.8b-mlx-int4/processor_config.json"
+    },
+    {
+      "file": "models/qwen3.5-0.8b-mlx-int4/tokenizer_config.json"
+    },
+    {
+      "file": "models/qwen3.5-0.8b-mlx-int4/video_preprocessor_config.json"
+    },
+    {
+      "file": "models/qwen3.5-0.8b-mlx-int4/model.safetensors"
+    },
+    {
+      "file": "models/qwen3.5-0.8b-mlx-int4/tokenizer.json"
+    },
+    {
+      "file": "models/qwen3.5-0.8b-mlx-int4/LICENSE"
+    },
+    {
+      "file": "Licenses/qwen3.5-0.8b-mlx-int4/MLX-Swift.txt"
+    },
+    {
+      "file": "Licenses/qwen3.5-0.8b-mlx-int4/MLX-Swift-LM.txt"
+    },
+    {
+      "file": "Licenses/qwen3.5-0.8b-mlx-int4/Swift-Transformers.txt"
+    },
+    {
+      "file": "Licenses/qwen3.5-0.8b-mlx-int4/Qwen-Model.txt"
+    },
+    {
+      "file": "Licenses/qwen3.5-0.8b-mlx-int4/XGrammar.txt"
+    },
+    {
+      "file": "Licenses/qwen3.5-0.8b-mlx-int4/PicoJSON.txt"
+    },
+    {
+      "file": "Licenses/qwen3.5-0.8b-mlx-int4/DLPack.txt"
+    },
+    {
+      "file": "contracts/qwen3.5-0.8b-mlx-int4.json"
+    }
+  ],
+  "platforms": [
+    "iOS"
+  ]
+}

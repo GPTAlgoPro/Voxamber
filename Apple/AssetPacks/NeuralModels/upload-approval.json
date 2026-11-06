@@ -1,0 +1,62 @@
+{
+  "appID": "6831042755",
+  "bundleID": "com.kaisun.voxamber",
+  "catalogSHA256": "649b3d0b18fe208b8c724e68e6d6f030ea8096b068da93653555361f287d5e96",
+  "legacyTransportSHA256": "f04e87d475c043551a6b395dda1001ce3716852c7ec2e7ebc8067a1d1f4f8089",
+  "packs": [
+    {
+      "archiveByteCount": 562436331,
+      "archivePath": "Apple/.build/apple-hosted-neural-models/intent/Voxamber-Qwen35-08B-INT4.aar",
+      "archiveSHA256": "36f268016783d28ff1c7375021d3e4ab3f82da2d78ca329467874b21212ef249",
+      "assetPackID": "Voxamber-Qwen35-08B-INT4",
+      "contractSHA256": "cd3dc0d4a2fc4ea1aa8c0a85758c8bd5be93b5d19585d09f56d0b55f52e1b5ea",
+      "group": "intent",
+      "legalFileCount": 7,
+      "manifestByteCount": 1651,
+      "manifestPath": "Apple/.build/apple-hosted-neural-models/intent/Manifest.json",
+      "manifestSHA256": "951df1c45b55a0ff21c0d199bbaf8297a9a0c2abca1c8ff967894534505539ac",
+      "modelFileCount": 10,
+      "modelID": "qwen3.5-0.8b-mlx-int4",
+      "modelPinIdentitySHA256": "9604fc2e77a9fb1bbcdaded050bcc67977635bbf83a525f8591fb7378269c2df",
+      "payloadFileCount": 18,
+      "sourceManifestSHA256": "53ee064ef37769876fc5c0bfd71d5c29f365562cf421c2425a4124d49b82aa09"
+    },
+    {
+      "archiveByteCount": 2903540358,
+      "archivePath": "Apple/.build/apple-hosted-neural-models/image/Voxamber-SDXL-CoreML.aar",
+      "archiveSHA256": "0dbba7221aad1254f4ac9861bdfaf52b0f4d99cdbffb15188c22ac3c2d07c90b",
+      "assetPackID": "Voxamber-SDXL-CoreML",
+      "contractSHA256": "59727a4d63e758d96a7b910f6b71e95e08d62613583ae74d0a4a7c11b93202be",
+      "group": "image",
+      "legalFileCount": 2,
+      "manifestByteCount": 2992,
+      "manifestPath": "Apple/.build/apple-hosted-neural-models/image/Manifest.json",
+      "manifestSHA256": "5279aa84921fc6d8415b9b809d6fd32dfb3e2e4b5c74ac737331635de9810b3e",
+      "modelFileCount": 27,
+      "modelID": "sdxl-base-ios-coreml",
+      "modelPinIdentitySHA256": "f54e19ee3497a13fc3a3eba4ae9cc680be2e899e6e1a1960b2c0231e854afcbd",
+      "payloadFileCount": 30,
+      "sourceManifestSHA256": "c368d2ae9183096d986c921dec162f2f493759bbfbb9ce29e1d3fc24946d75a0"
+    },
+    {
+      "archiveByteCount": 2359487920,
+      "archivePath": "Apple/.build/apple-hosted-neural-models/shape/Voxamber-Hunyuan21-Shape-Q4-30B93.aar",
+      "archiveSHA256": "9f55af42c4189ce5b4868307a642e691b4e8484c30fa4571b42dadb95bcf82ed",
+      "assetPackID": "Voxamber-Hunyuan21-Shape-Q4-30B93",
+      "contractSHA256": "794edd95115c48b1591908da802b3c220dfe931ea3c654394dbde4c5ba982eb5",
+      "group": "shape",
+      "legalFileCount": 8,
+      "manifestByteCount": 1255,
+      "manifestPath": "Apple/.build/apple-hosted-neural-models/shape/Manifest.json",
+      "manifestSHA256": "6465b86bd7683e1ce3b3adb8d52a57ce822bf1356e36f0d7ac68b2d9545fe71b",
+      "modelFileCount": 2,
+      "modelID": "hunyuan-shape-2.1-q4-30b93",
+      "modelPinIdentitySHA256": "5e6c214c00030e401beaff077aa1082f3307e846b89fae8bf8ef0f1a2837d0e0",
+      "payloadFileCount": 11,
+      "sourceManifestSHA256": "7939b77b44905451f506c75b7f3bf71876258711d4f0ebd28d79b4fb7332d0eb"
+    }
+  ],
+  "platform": "IOS",
+  "schemaVersion": 1,
+  "scope": "Only upload and processing these three new model packs; no availability/review/release/tester changes"
+}

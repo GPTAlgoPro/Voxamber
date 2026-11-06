@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUTC": "2026-11-05T17:41:02.912865+00:00",
+  "state": "draft_review_package_not_promoted",
+  "activityThisTurn": "Read-only source/test/result/PNG inspection plus README/receipt writing. No test execution, build, UI, simulator, phone, GPU, model, website, account or release action.",
+  "sourceRoot": "docs/prototypes/2026-11-06-scene-scale-ui",
+  "productionAppActivated": false,
+  "productionScaleCoreActivated": false,
+  "packageDependency": "../../../Apple/.build/SceneScaleCoreCandidate (ignored local-only candidate; not self-contained on a fresh clone)",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 54,
+      "sha256": "fc3b7ae5581426dcec2612e9b92fe7dbe9ba945d93e1b547306b71dd11d7bf1d"
+    },
+    {
+      "path": "App/ScaleUIPrototypeApp.swift",
+      "bytes": 151,
+      "sha256": "aa8d79ca7e361e4416ae5a32c1a9de9cf4336f0f964cec33575b04f09bd2d05e"
+    },
+    {
+      "path": "Package.swift",
+      "bytes": 608,
+      "sha256": "8b20b8e06a56c43bad88035cfd2cdaf30c3b15daead5e1288f08a9e4041c08db"
+    },
+    {
+      "path": "RenderingTests/ScaleUIRenderingTests.swift",
+      "bytes": 7376,
+      "sha256": "a38180c6e359df076e87f4b9e271069e8399d7c6e2d6c6b3cf51116df92677d3"
+    },
+    {
+      "path": "Sources/SceneScaleUIPrototype/NumericAxisControl.swift",
+      "bytes": 6636,
+      "sha256": "dc2b521ba4197a877781e961b966dd654227d113e6447d1c6c4f693dce03d93f"
+    },
+    {
+      "path": "Sources/SceneScaleUIPrototype/NumericAxisMath.swift",
+      "bytes": 4764,
+      "sha256": "472a830b8723e085f101f56735d127f17cfe44f742a55fae9d2ee7a990561b3c"
+    },
+    {
+      "path": "Sources/SceneScaleUIPrototype/ScaleControlDemo.swift",
+      "bytes": 3598,
+      "sha256": "602a5ae74f62593726dbd5934527b3162dac96d5f7c19d3c639c0ca131bdb94a"
+    },
+    {
+      "path": "Sources/SceneScaleUIPrototype/SceneParameters.swift",
+      "bytes": 19004,
+      "sha256": "bf5cb30b98ccd33d818c8d8c00b8c63c69a391edc3030ec3b19d122d499fd5e1"
+    },
+    {
+      "path": "Tests/SceneScaleUIPrototypeTests/NumericAxisMathTests.swift",
+      "bytes": 3362,
+      "sha256": "302aa319846000651e6f34bdeeaf8ec47ac5a1b984091ac8ddeba8a25b088d50"
+    },
+    {
+      "path": "project.yml",
+      "bytes": 1432,
+      "sha256": "d67b75a1c7fe1a4da4b3b801030a33438c8d08a825e10a12b92ca44508461f7f"
+    },
+    {
+      "path": "proof/accessibility-position.png",
+      "bytes": 174269,
+      "sha256": "a1ca8ce27afc233acbb4c293291ffde533fe965fbc6477e35913145466d86bcd"
+    },
+    {
+      "path": "proof/accessibility.png",
+      "bytes": 210549,
+      "sha256": "48d84216963f68c7a82ebf3419bde887771220dfab9bdba1e27dfcf5bb3635d7"
+    },
+    {
+      "path": "proof/standard-position.png",
+      "bytes": 162152,
+      "sha256": "54385e10eddd6f6f25dde0956cb20344d1954b9782f81e3cbe332e56cca22f06"
+    },
+    {
+      "path": "proof/standard.png",
+      "bytes": 175251,
+      "sha256": "404883346595c1e5fb5002043844d1da6145194caf203e07637ae21360ce1cda"
+    }
+  ],
+  "driftAssessment": {
+    "coreCandidateRecordedAt": "2026-11-05T15:26:55.108224+00:00",
+    "coreCandidateReceiptSHA256": "c57338e734f3bce5d6fbeb95d573b1ba14944f1052981efdb56189da597b0e02",
+    "recordedCoreFilesChecked": 21,
+    "coreCandidateHashMismatches": [],
+    "productionCoreVsOriginalCopyFilesChecked": 17,
+    "productionCoreVsOriginalCopyHashMismatches": [],
+    "uiHistoricalPerFileHashManifestAvailable": false,
+    "uiSourcesModifiedAfterLatestRenderingTestStart": [],
+    "uiEvidenceLimit": "Current UI hashes are captured now. Absence of later mtimes supports continuity with the saved tests, but is not a cryptographic source freeze from their execution time. No new validation was run.",
+    "freeformEditorBodyMatchesCurrentProductionSourceExactly": true
+  },
+  "recordedTests": {
+    "scaleCore": {
+      "owner": "product_audit",
+      "record": "Apple/.build/SceneScaleCoreCandidate/candidate-validation.json",
+      "passed": 57,
+      "failed": 0,
+      "inherited": 47,
+      "new": 10,
+      "buildSeconds": 1.4,
+      "testSeconds": 0.416,
+      "sourceHashesMatchCurrent": true,
+      "notRerunThisTurn": true
+    },
+    "uiMath": {
+      "command": "swift test --package-path docs/prototypes/2026-11-06-scene-scale-ui -c debug",
+      "recordedHistoricalPasses": 6,
+      "failures": 0,
+      "lastObservedBuildSeconds": 1.79,
+      "lastObservedSuiteSeconds": 0.004,
+      "evidenceType": "Prior tool execution output; no separately saved raw log/source-hash manifest",
+      "notRerunThisTurn": true
+    },
+    "iOSRendering": {
+      "tool": "XcodeBuildMCP test_sim",
+      "scheme": "SceneScaleUIPrototype",
+      "configuration": "Debug",
+      "selectedSuite": "SceneScaleUIRenderingTests",
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "buildAndTestSeconds": 10.2,
+      "warningsReported": 0,
+      "errorsReported": 0,
+      "device": {
+        "architecture": "arm64",
+        "deviceId": "44F69398-0D10-403D-B3BB-037C75C23B15",
+        "deviceName": "Lilt StoreKit QA 29",
+        "modelName": "iPhone 17 Pro",
+        "osBuildNumber": "23A343",
+        "osVersion": "26.0",
+        "platform": "iOS Simulator"
+      },
+      "runnerStartUTC": "2026-11-05T15:40:43.545000+00:00",
+      "runnerFinishUTC": "2026-11-05T15:40:48.875000+00:00",
+      "resultBundle": "/Users/kaisun/Library/Developer/XcodeBuildMCP/workspaces/Three-Live-a778a850dbab/result-bundles/test_sim_2026-11-05T15-40-38-731Z_pid89126_3f8573c4.xcresult",
+      "resultSummaryIndependentlyReadBackThisTurn": true,
+      "checks": [
+        "Actually appeared UITextFields hold 0.001, 3.5, 1000 and out-of-range 5000 without any model-binding write or clamp.",
+        "Native numbersAndPunctuation keyboard is configured.",
+        "Invalid typed 101 preserves original 3.5; valid 2 mm writes 0.002 exactly once on blur.",
+        "390×844 large/accessibility3 render and horizontal text-field bounds checks pass; real 1000 value remains present after scrolling."
+      ],
+      "notRerunThisTurn": true
+    }
+  },
+  "images": [
+    {
+      "path": "proof/accessibility-position.png",
+      "bytes": 174269,
+      "sha256": "a1ca8ce27afc233acbb4c293291ffde533fe965fbc6477e35913145466d86bcd",
+      "pixels": [
+        390,
+        844
+      ],
+      "locale": "en_US",
+      "dynamicType": "accessibility3",
+      "position": "scrolled to large position",
+      "inspectedPreviously": true
+    },
+    {
+      "path": "proof/accessibility.png",
+      "bytes": 210549,
+      "sha256": "48d84216963f68c7a82ebf3419bde887771220dfab9bdba1e27dfcf5bb3635d7",
+      "pixels": [
+        390,
+        844
+      ],
+      "locale": "en_US",
+      "dynamicType": "accessibility3",
+      "position": "top of editor",
+      "inspectedPreviously": true
+    },
+    {
+      "path": "proof/standard-position.png",
+      "bytes": 162152,
+      "sha256": "54385e10eddd6f6f25dde0956cb20344d1954b9782f81e3cbe332e56cca22f06",
+      "pixels": [
+        390,
+        844
+      ],
+      "locale": "en_US",
+      "dynamicType": "large",
+      "position": "scrolled to large position",
+      "inspectedPreviously": true
+    },
+    {
+      "path": "proof/standard.png",
+      "bytes": 175251,
+      "sha256": "404883346595c1e5fb5002043844d1da6145194caf203e07637ae21360ce1cda",
+      "pixels": [
+        390,
+        844
+      ],
+      "locale": "en_US",
+      "dynamicType": "large",
+      "position": "top of editor",
+      "inspectedPreviously": true
+    }
+  ],
+  "fontLimit": {
+    "ChineseAcceptance": false,
+    "observedRuntimeIssue": "iOS 26.0 Simulator reported unavailable PingFangUI.ttc and fallback to LastResort; Chinese glyphs rendered as boxes.",
+    "englishScreenshotsAreNotChineseEvidence": true,
+    "systemFontCopiedOrDownloaded": false
+  },
+  "numericContract": {
+    "dimensionMetres": [
+      0.001,
+      100
+    ],
+    "positionMetres": [
+      -1000,
+      1000
+    ],
+    "offsetMetres": [
+      -1000,
+      1000
+    ],
+    "rotationDegrees": [
+      -360,
+      360
+    ],
+    "materials": [
+      0,
+      1
+    ],
+    "maximumNodes": 32,
+    "maximumProfilePoints": 64,
+    "maximumMeshVertices": 1024,
+    "maximumMeshTriangles": 2048,
+    "maximumRenderedVertices": 20000,
+    "maximumRenderedIndices": 80000,
+    "wireFormatAndSchemaVersionChanged": false
+  },
+  "floatPrecision": {
+    "redCollapsedSphereFaces": 64,
+    "sphereTriangleCount": 720,
+    "unsafeFarOneMillimetreSphereRejected": true,
+    "nearOriginOneMillimetreSpherePassed": true,
+    "representableFarOneMillimetreBoxPassed": true,
+    "principle": "World-space Float representability/topology check applies to every primitive, independent of subject category, part name or semantic role. No automatic rescale, clamp, output repair or fallback.",
+    "notEngineeringAccuracyCertification": true
+  },
+  "gitSaveScope": {
+    "untrackedVisibleFilesBeforeREADMEReceipt": 14,
+    "visibleContentBytesBeforeREADMEReceipt": 769206,
+    "uiBuildDirectoryApproxMiB": 146,
+    "uiBuildDirectoryIgnored": true,
+    "allAppleBuildCandidatesIgnoredByRootRule": true,
+    "doNotForceAddIgnoredBuildProducts": true
+  },
+  "integrationGaps": [
+    "Promote/rebase the lightweight SceneLimits/WorldMeshValidation Core source changes and boundary tests in a separate reviewed dev change; leave current production Core unchanged until then.",
+    "The local ignored Core dependency is missing on fresh clones. Vendor a reviewed source snapshot or point the UI package at the promoted version before claiming reproducibility.",
+    "Port NumericAxisMath/Control and the small SceneParameters axis-row changes; keep freeform/material/rotation behavior.",
+    "Wire onNumericValidityChanged into CreationWorkspace generation actions: invalid uncommitted text must disable both AI and parameter generation. The callback default is compatibility only; it is not wired into the production App.",
+    "Verify old documents, color-only edit snapshots, native GLB/USDZ metre units, preview/AR and extreme size/location failures end-to-end after integration.",
+    "Replace fixed zFar100 only in scale evidence render tooling when testing large models; do not change saved physical scale merely to fit previews.",
+    "Validate Chinese standard/accessibility typography on a runtime/device with the proper system fonts; English proof cannot satisfy this.",
+    "Physical-device performance, arbitrary model content quality, download/offline behavior and release/TestFlight acceptance remain separate."
+  ],
+  "nonGoals": [
+    "No production App/Core source change or activation.",
+    "No neural model generation/quality acceptance or historical aircraft output repair.",
+    "No phone UI runner or device operations."
+  ]
+}

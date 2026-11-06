@@ -1,0 +1,32 @@
+{
+  "recordedAtUTC": "2026-11-05T23:46:52.375723+00:00",
+  "scope": "App metadata bridge and Simulator regression after candidate-only mesh cleanup change",
+  "tests": {
+    "result": "Passed",
+    "totalTestCount": 114,
+    "passedTests": 113,
+    "failedTests": 0,
+    "skippedTests": 1
+  },
+  "candidateGeometryPostprocessID": "finite-positive-f64-v1",
+  "legacyGeometryPostprocessID": "legacy-eps1e-16-v1",
+  "YAMLConfigurationHashIsStillFileIdentity": true,
+  "oldProjectMissingOptionalPostprocessFieldAccepted": true,
+  "SDKPureTestsPassed": 24,
+  "rawVsStrictFaces": 400772,
+  "legacyFaces": 400211,
+  "rawAndStrictOpenLoops": 18,
+  "legacyOpenLoops": 549,
+  "nativeWatertightnessOrFullQualityAccepted": false,
+  "phoneNativePipelineAccepted": false,
+  "newTestFlightUploaded": false,
+  "sourceSHA256": {
+    "ThreeLiveStudio/App/StudioModel.swift": "81cc54d0500f90e9c4e957347338ae0018d0ced44dbb23e17d44979a368833df",
+    "ThreeLiveStudio/Storage/NeuralProjectDescriptor.swift": "3a0c9cdae027642fd690119e3f7bf6e04c173375a7ae90ad7b581db89311292b",
+    "ThreeLiveStudioTests/NeuralEditRecordTests.swift": "46e924a1035b556d824c11ba85c2be7c0dc75bf9a19a1bead495504bdea8ac6b",
+    "Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeEngine.swift": "19717d8a53140f11bc6c100185edd826799a0cb2223c1ab91a0297dd2ab2d5c9",
+    "Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/ShapeTypes.swift": "23a33c5277e2db1f9c13e481a8c6683bd3b66678251cb4a361dfe1b16b9fb486",
+    "Packages/VoxamberShapeNative/Sources/VoxamberHy3D/MeshCleanupPolicy.swift": "377446656b523f80fd3eade1ddb06d4d7ad2d070643f03d48ca1da3d4116373b",
+    "Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeGenerator.swift": "5a6ccff98eb7c6cc26346da5121dac5d755520634fa193e5fdf1fea83d0be0c7"
+  }
+}

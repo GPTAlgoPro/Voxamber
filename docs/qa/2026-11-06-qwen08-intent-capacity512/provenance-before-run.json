@@ -1,0 +1,120 @@
+{
+  "frozenAtUTC": "2026-11-05T22:40:42.140574+00:00",
+  "sourceSHA256": {
+    "Apple/.build/qwen08-capacity512-intent-runner/Sources/Qwen08Capacity512IntentProbe/CreationIntentDecoder.swift": "4b07b444d08e6a3c43091ec413e5af455a064354ba9c2e901f549e8a21b8e794",
+    "Apple/.build/qwen08-capacity512-intent-runner/Sources/Qwen08Capacity512IntentProbe/FormalJSONObject.swift": "619e7b62d6acd050ada64a704f6d8837fd9d19b986ec222deacbd43afe970a35",
+    "Apple/.build/qwen08-capacity512-intent-runner/Sources/Qwen08Capacity512IntentProbe/IntentTypes.swift": "6000718d5a8f489d40d99c4b9c9904054c9ff07b9f72211c8776b60fdeccea44",
+    "Apple/.build/qwen08-capacity512-intent-runner/Sources/Qwen08Capacity512IntentProbe/main.swift": "c2e1638b18ce9980033dcb8b55cd3c69f86f0648b9bb83418031b45ae4402094",
+    "Apple/.build/qwen08-capacity512-intent-runner/Package.swift": "df201196d65f244a1faef72b44221113cf1c073c8a9280d28b356478b7eea78a",
+    "Apple/Packages/QwenNative/Sources/QwenNative/LocalTokenizer.swift": "82988617a11bed0234181f904e214c2bdc0fc29c995b0b233f78ddf00ccc7937",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenTokenStream.swift": "074714e201c3fec4ec97307428d95f9a3b8ae3ddc207398e114d6a60c1fa234f",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift": "1e1a33f77a8f052d26ebbbd211b35942d0c6a8cb2469e5872ecf992ffd7d7fa3",
+    "Apple/Packages/QwenNative/Sources/QwenNative/NativeJSONGrammar.swift": "7dbc4cf98e9c6d414cc3d9e6230c20955997efb682b11c8476173bd74eeeb016",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenGenerationCompletion.swift": "f2a762906ec689b55a5687703e040e3bb11df5891b1267af515204c337ba3896",
+    "Apple/Packages/QwenNative/Package.swift": "ff2e120cdf828d7031db77207770caf3ac2933d4e62297d0b67cf0c94315caef",
+    "Apple/Packages/QwenNative/Package.resolved": "f786e22cb3052d8b2089ba0302de4c894708a5b44ebe30ec6a6592c1b1a5f6af",
+    "Apple/Packages/VoxamberCreationNative/Sources/VoxamberCreationNative/CreationIntentDecoder.swift": "4b07b444d08e6a3c43091ec413e5af455a064354ba9c2e901f549e8a21b8e794",
+    "Apple/Packages/VoxamberCreationNative/Tests/VoxamberCreationNativeTests/CreationIntentTests.swift": "1df215b84d9c5115c8812a9641ce594f833883efb07cb88d2b4d6fd080657aca",
+    "Apple/Packages/VoxamberCreationNative/Tests/VoxamberCreationNativeTests/CreationIntentCapacityTests.swift": "8f1d9a426e1740bbcbe733b0b5bd765da26f5f69bbbd16f517496933906c5718"
+  },
+  "binary": "Apple/.build/production-quality-runner/.build/debug/Qwen08Capacity512IntentProbe",
+  "binarySHA256": "7408b309e61786d0ba7ed1d1145422537f169ba6f436c992be6e29bd6f87d0b8",
+  "exactDecoderBytesMatch": true,
+  "onlyProductionDecoderChanges": "Three numeric180->512 occurrences",
+  "NativeCreationEngineUnchangedSHA256": "04b6fdb92ab39a666af68997cb48d4d77de8f9319503b50691845762ffc76c4d",
+  "sameOldThreeCasesAndSampling": true,
+  "maxTokens": 512,
+  "prefillStepSize": 128,
+  "temperature": 0,
+  "thinking": false,
+  "explicitSeedOperationAdded": false,
+  "fixedRequestsSHA256": "e0bbf26b90131aa5cd52a2c6dfef2a287db304b44b4cf1dd71a7790b31be74d7",
+  "protocolSHA256": "a6e438ba7c4ba034eaacb35629bb960ef0b940b25c338a0af1105f21ff8cf99c",
+  "resourcesFiles": [
+    {
+      "name": "chat_template.jinja",
+      "bytes": 7755,
+      "sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80"
+    },
+    {
+      "name": "config.json",
+      "bytes": 3112,
+      "sha256": "ba7770da23eae5ebd6827571f086e331956b33f4442a9e876fb4aa10969a6772"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "bytes": 71473,
+      "sha256": "6e48f2fa5d6f033a6d77bf833abfa9698ca24d1715ecea4c67447bcfaee44650"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "bytes": 390,
+      "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516"
+    },
+    {
+      "name": "processor_config.json",
+      "bytes": 1300,
+      "sha256": "14932921ca485d458a04dafd8069fbb0a4505622a48208d19ed247115801385b"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 1139,
+      "sha256": "e98f1901ac6f0adff67b1d540bfa0c36ac1a0cf59eb72ed78146ef89aafa1182"
+    },
+    {
+      "name": "video_preprocessor_config.json",
+      "bytes": 385,
+      "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13"
+    },
+    {
+      "name": "model.safetensors",
+      "bytes": 625229487,
+      "sha256": "f5a0d9dd3efa73510542a8023d610ff26be2b4b020d181cfc4bedaa1fcc5dd9e"
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 19989343,
+      "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4"
+    },
+    {
+      "name": "LICENSE",
+      "bytes": 11544,
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a"
+    }
+  ],
+  "oldTranslationOnlyArtifactsSHA256": {
+    "README.md": "5b61a97d35c92e6a74dcc07f2ca68fe060ea210f570cf5cd8ca7fca05a34e2de",
+    "batch-started.txt": "9ec6676274ac780320ed76ca5bdb91d07256015e40b59dc279512f5a890404b1",
+    "condition-decoder.diff": "836a2561a9ee1323760d63175e689538d1fd005e9abc4e1bf2190c579735ceda",
+    "expected-local-files.json": "2268e58b7922742dd276fd4aa19f65f82934b04e65aa2ddf10178a4b2e9aa805",
+    "fixed-requests.json": "ef0213b73113871748ef400fd4973ae60e2c4f37f79a306f324946453a118ffa",
+    "lamp/intent.json": "b6a72317527fbe68573526bd1b511f0f0947aa4f2b66204c5260b685ed9c16a0",
+    "lamp/response.raw.txt": "58070d8a32e6f17005edb92acde29fa0062a69e25d73280b680a60b3d9abeb59",
+    "lamp/result.json": "9e3cd49c9f8caafcc2e9950d618e7b7ec7b79fcab3b0e63b2c97dfecc7b34ed0",
+    "protocol-before-run.md": "3c7976cc31c4368d35becf469c8525721a14f40646166800add9c099c4e09512",
+    "provenance-before-run.json": "39e3f1dd74419b4175cfabd2ecbf076b06391c34921c77d8137fe4ca19ce1ff1",
+    "results.json": "2e15b59f6199ff9e324002bffa7b16fa90f14c316a5566d1fae78a1ca4de1d1c",
+    "semantic-review.json": "db799f86b3b00399bdf689b339386ed25a4157ec021bed863e6b01543ea4482a",
+    "spiral_shell_vase/intent.json": "1983acb56afccd375bfb395841d250cac181e51dfcbcfe8dc531e24fe4edba7d",
+    "spiral_shell_vase/response.raw.txt": "59349e52748be8a144d92a15092ee3e9a682501af07cf32282c884892d2df122",
+    "spiral_shell_vase/result.json": "37f696e07cb3ecf8a99bf070ea49dbd516a5a012dda0200f8c9c443e6f1ae8e5",
+    "verification-after-run.json": "795d7afe400b94ab69056cc4c2a867ff0ccd0e88e8ef52ab4b34fa14c2b0d979",
+    "violin_and_bow/intent.json": "a3c6c0341bf7915bac80e3310c2f20240d7af0c6c870b13fe43c64649c5047e2",
+    "violin_and_bow/response.raw.txt": "678ccf00fb5f195aebccc33607bd296f2aa06ee60d44a38bdddef5ffcbe767f0",
+    "violin_and_bow/result.json": "8b707c89237e6a373fc35dd5d0becf1f73f86e0b0d5f15735bffa11da45d1d01"
+  },
+  "plannedModelLoads": 1,
+  "plannedFreshModelCalls": 3,
+  "modelCallsBeforeRun": 0,
+  "modelLoadsBeforeRun": 0,
+  "imageOrShapeCalls": 0,
+  "fullSemanticCriteriaPreserved": true,
+  "CLIP77TokenAdmissionSeparateFrom512CharacterCapacity": true,
+  "pureTests": {
+    "XCTestPassed": 8,
+    "SwiftTestingPassed": 7,
+    "failed": 0,
+    "logSHA256": "ef63fd4539d7943122fdb634f6aac8901c2a0549c8918f88f9ba759a4b9643e3",
+    "initialNewTestCorrection": "NSRegularExpression dollar-anchor can match before final newline; retained existing schema and tested authoritative decoder controls separately."
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "scope": "CPU inspection of exact first returned GLB; no inference, geometry edits, component deletion or repair",
+  "vertexCount": 39416,
+  "triangleCount": 78812,
+  "indexCount": 236436,
+  "connectedComponentsBySharedVertex": 7,
+  "components": [
+    {
+      "vertexCount": 38018,
+      "triangleCount": 76040,
+      "boundsMinimum": [
+        -0.4507262110710144,
+        -0.9364069700241089,
+        -0.43354910612106323
+      ],
+      "boundsMaximum": [
+        0.4477379322052002,
+        0.9345358610153198,
+        0.9949896335601807
+      ]
+    },
+    {
+      "vertexCount": 512,
+      "triangleCount": 1020,
+      "boundsMinimum": [
+        -0.22075200080871582,
+        -0.928115725517273,
+        -0.9967008829116821
+      ],
+      "boundsMaximum": [
+        0.08564889430999756,
+        -0.882238507270813,
+        -0.4145037531852722
+      ]
+    },
+    {
+      "vertexCount": 254,
+      "triangleCount": 504,
+      "boundsMinimum": [
+        -0.4060515761375427,
+        -0.9256051182746887,
+        -0.7190954089164734
+      ],
+      "boundsMaximum": [
+        -0.17923057079315186,
+        -0.9006075859069824,
+        -0.5084743499755859
+      ]
+    },
+    {
+      "vertexCount": 242,
+      "triangleCount": 480,
+      "boundsMinimum": [
+        0.019124865531921387,
+        -0.9236951470375061,
+        -0.4388729929924011
+      ],
+      "boundsMaximum": [
+        0.2829707860946655,
+        -0.8729581832885742,
+        -0.30591249465942383
+      ]
+    },
+    {
+      "vertexCount": 172,
+      "triangleCount": 340,
+      "boundsMinimum": [
+        0.24092066287994385,
+        -0.9272404909133911,
+        -0.3477954864501953
+      ],
+      "boundsMaximum": [
+        0.44785428047180176,
+        -0.9040195345878601,
+        -0.2803727984428406
+      ]
+    },
+    {
+      "vertexCount": 116,
+      "triangleCount": 228,
+      "boundsMinimum": [
+        -0.3242705464363098,
+        -0.9244365096092224,
+        -0.4827083945274353
+      ],
+      "boundsMaximum": [
+        -0.19192707538604736,
+        -0.8991227149963379,
+        -0.3982692360877991
+      ]
+    },
+    {
+      "vertexCount": 102,
+      "triangleCount": 200,
+      "boundsMinimum": [
+        0.11090207099914551,
+        -0.9240856170654297,
+        -0.4671710133552551
+      ],
+      "boundsMaximum": [
+        0.24346387386322021,
+        -0.8982783555984497,
+        -0.4390321969985962
+      ]
+    }
+  ],
+  "nonFiniteOrZeroAreaTrianglesDoubleFromStoredFloat": 0,
+  "boundaryEdges": 6,
+  "nonManifoldEdgesOverTwoFaces": 0,
+  "unusedVertices": 0
+}

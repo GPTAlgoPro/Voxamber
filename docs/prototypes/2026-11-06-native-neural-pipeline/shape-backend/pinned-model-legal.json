@@ -1,0 +1,14 @@
+[
+  {
+    "sourceURL": "https://huggingface.co/tencent/Hunyuan3D-2.1/resolve/0b94677654c57bb9a6b6845cd7b704ccf551d327/LICENSE",
+    "file": "Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt",
+    "bytes": 17915,
+    "sha256": "5bd08f93b2d280bb26ff3eed5d3996fe47a9698b5f7785163928668d7fd578c6"
+  },
+  {
+    "sourceURL": "https://huggingface.co/tencent/Hunyuan3D-2.1/resolve/0b94677654c57bb9a6b6845cd7b704ccf551d327/Notice.txt",
+    "file": "Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt",
+    "bytes": 16644,
+    "sha256": "ffccf6b539a82e6084d14ff064dadd22d33384d6164b07c0c5a3141810df0350"
+  }
+]

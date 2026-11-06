@@ -1,0 +1,54 @@
+
+Validation Result with no explicit variants set
+Error: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/courtyard_basalt>.
+	Possible Fixes which can be applied:
+	- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..
+Error: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/paving_sandstone>.
+	Possible Fixes which can be applied:
+	- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..
+Error: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/cinnabar_columns>.
+	Possible Fixes which can be applied:
+	- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..
+Error: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/rail_carved_marble>.
+	Possible Fixes which can be applied:
+	- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..
+Error: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/vermilion_joinery>.
+	Possible Fixes which can be applied:
+	- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..
+Error: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/terrace_warm_marble>.
+	Possible Fixes which can be applied:
+	- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..
+Error: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/plinth_shadow>.
+	Possible Fixes which can be applied:
+	- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..
+Error: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/shadowed_rosewood>.
+	Possible Fixes which can be applied:
+	- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..
+Error: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/bracket_jade>.
+	Possible Fixes which can be applied:
+	- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..
+Error: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/lattice_goldwood>.
+	Possible Fixes which can be applied:
+	- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..
+Error: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/bracket_lapis>.
+	Possible Fixes which can be applied:
+	- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..
+Error: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/roof_honey_glaze>.
+	Possible Fixes which can be applied:
+	- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..
+Error: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/ridge_imperial_gold>.
+	Possible Fixes which can be applied:
+	- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..
+Error: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/painted_cream>.
+	Possible Fixes which can be applied:
+	- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..
+Error: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/roof_tile_light>.
+	Possible Fixes which can be applied:
+	- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..
+Error: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/roof_tile_shadow>.
+	Possible Fixes which can be applied:
+	- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..
+Error: (usdShadeValidators:MaterialBindingApiAppliedValidator.MissingMaterialBindingAPI) Found material bindings but no MaterialBindingAPI applied on the prim </Root/Meshes/lantern_silk>.
+	Possible Fixes which can be applied:
+	- ApplyMaterialBindingAPI: Applies the MaterialBindingAPI to the prim..
+Failed!

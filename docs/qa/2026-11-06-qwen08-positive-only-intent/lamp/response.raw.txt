@@ -1,0 +1,1 @@
+{"title": "LED Desk Lamp", "positivePrompt": "A desk lamp featuring a red cone-shaped shade, a gray cylindrical base, a thin cylindrical stem, and a spherical bulb. The base rests on the floor at a height of 0.8 meters, with all components arranged to form a functional lighting fixture."}

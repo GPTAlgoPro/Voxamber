@@ -1,0 +1,71 @@
+{
+  "preparedAtUTC": "2026-11-05T18:31:28.135862+00:00",
+  "scope": "Preparation only, frozen at Root new steer: no model batch or GPU inference. Synthetic CPU fixtures are not model outputs or restored user projects.",
+  "helperSHA256": {},
+  "runnerSHA256": {
+    "Apple/.build/placement-wire-five-runner/Package.resolved": "f786e22cb3052d8b2089ba0302de4c894708a5b44ebe30ec6a6592c1b1a5f6af",
+    "Apple/.build/placement-wire-five-runner/Package.swift": "79ca108b6d7408910f0c3e761265e9d54d1da5ee0535d32033003bad7941b27f",
+    "Apple/.build/placement-wire-five-runner/Sources/PlacementWireFive/FormalJSONObject.swift": "619e7b62d6acd050ada64a704f6d8837fd9d19b986ec222deacbd43afe970a35",
+    "Apple/.build/placement-wire-five-runner/Sources/PlacementWireFive/MeshSummary.swift": "a2d88646c807994845a3c595c2cbc78a9f68e2e84d4a228bc7d8efbdcbbe9bf5",
+    "Apple/.build/placement-wire-five-runner/Sources/PlacementWireFive/ModelPreview.swift": "41833cedafddfc579a0c30522934ac9faae629289e2b3aa6de8394b588148048",
+    "Apple/.build/placement-wire-five-runner/Sources/PlacementWireFive/main.swift": "467ebacce3099562344e4e4c986cc8a643d6c61a191108d16f5d9955a7df0bbe"
+  },
+  "binary": {
+    "path": "Apple/.build/production-quality-runner/.build/out/Products/Release/PlacementWireFive",
+    "sha256": "4996a9f233e171e07ad856c7fc8cf02c9a25c315fbd97507172ac5c06cddaaac"
+  },
+  "tests": {
+    "CPUCorePassed": 7,
+    "failed": 0,
+    "cases": [
+      {
+        "name": "testBlindZeroOriginRewriteIsNotClaimedGroundingEquivalent",
+        "seconds": 0.009,
+        "result": "passed"
+      },
+      {
+        "name": "testCanonicalSnapshotsPreserveAllEightShapesAndMultipleRoots",
+        "seconds": 0.009,
+        "result": "passed"
+      },
+      {
+        "name": "testFirstKeepsAll24AndTailKeepsAll16ExplicitChoices",
+        "seconds": 0.002,
+        "result": "passed"
+      },
+      {
+        "name": "testFullFreeGeometryCapsRemainExpressible",
+        "seconds": 0.014,
+        "result": "passed"
+      },
+      {
+        "name": "testOnlyTailPlacementAlternativesChangeAndAllResourcesStayIdentical",
+        "seconds": 0.004,
+        "result": "passed"
+      },
+      {
+        "name": "testUnexpectedSourceSchemaFailsClosed",
+        "seconds": 0.002,
+        "result": "passed"
+      },
+      {
+        "name": "testZeroOriginTailPreservesGeometryWhenFirstImplicitRootKeepsGrounding",
+        "seconds": 0.006,
+        "result": "passed"
+      }
+    ],
+    "standardDraft202012FixtureCases": 7,
+    "allExpectedSchemaResultsPassed": true,
+    "nativeXGrammarMatcherNewTransition": "not executed; pinned source supports prefixItems+items, but CPU standard-schema tests are not native matcher acceptance"
+  },
+  "build": "Mac Release helper tests and runner passed; runner11.63s",
+  "prepareMode": "passed without QwenEngine construction/model load",
+  "modelCalls": 0,
+  "modelLoads": 0,
+  "batchStarted": false,
+  "productionAndCandidateSourcesUnchanged": true,
+  "sameSamplingPromptAndFiveCases": true,
+  "schemaChange": "First24 original variants, later16 explicit origin/attach variants; full resources/caps unchanged",
+  "legacyBoundary": "Not every old wire is accepted by new schema. Core legacy decoder unchanged. Conditional zero-origin equality and grounding counterexample tested; canonical actual-position snapshots preserve expression/meshes.",
+  "rootSteer": "Do not start new parameter-geometry GPU experiments; preparation retained only."
+}

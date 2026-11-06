@@ -1,0 +1,33 @@
+{
+  "attempts" : 1,
+  "completion" : {
+    "generatedTokenCount" : 55,
+    "grammar" : {
+      "compiledSchemaSHA256" : "61093069cf010cc8ab1a7d715895f5d6e05e4d8343f09116a0e572e30af9f92a",
+      "floatBoundsRequireNativeValidation" : false,
+      "originalSchemaSHA256" : "eaeacdcb151be2a139dced6c58fd0e3761784a590d44560f31fc6c2d7e4ad1d0"
+    },
+    "grammarEnabled" : true,
+    "grammarTerminated" : true,
+    "inputTokenCount" : 125,
+    "reason" : "jsonComplete",
+    "tokenLimit" : 512
+  },
+  "firstTokenSeconds" : 18.430067583,
+  "id" : "lamp",
+  "imagesOrGeometryGenerated" : false,
+  "intentAccepted" : true,
+  "maxTokens" : 512,
+  "prefillStepSize" : 128,
+  "rawReturned" : true,
+  "rawSHA256" : "86839f8ef5e7b92eb3ce55cc8371063321c518ba1a0fa391258128501d9a2b17",
+  "rawUTF8Bytes" : 232,
+  "repair" : false,
+  "retry" : false,
+  "seconds" : 21.761729001998901,
+  "semanticReview" : "pending manual synthetic-case review",
+  "status" : "decoded_for_semantic_review",
+  "temperature" : 0,
+  "thinking" : false,
+  "user" : "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地Y=0，整体高约0.8米。"
+}

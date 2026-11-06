@@ -1,0 +1,17 @@
+{
+  "actualNeuralWeightsUsed" : true,
+  "baseMeshFormatID" : "org.khronos.gltf.binary",
+  "baseMeshFormatVersion" : 2,
+  "baseMeshUsesUnchangedGLB" : true,
+  "geometryLayoutVersion" : 1,
+  "glbByteCount" : 1419332,
+  "glbSHA256" : "367177cd30ace1f3192aedd9026e9accd5ef554dbed7df64fd2224199a81119b",
+  "indexCount" : 236436,
+  "nativeGeometryValidated" : true,
+  "triangleCount" : 78812,
+  "usdNativeImporterOpened" : true,
+  "usdzByteCount" : 4830318,
+  "usdzSHA256" : "4eb3bc4f112edcfabe2d791552a8d9bd7c2171409c9132350292783b6a94f834",
+  "version" : 1,
+  "vertexCount" : 39416
+}

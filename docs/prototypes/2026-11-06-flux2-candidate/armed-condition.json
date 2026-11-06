@@ -1,0 +1,17 @@
+{
+  "barePromptSHA256": "9e9508b19e9118c56f739ea9dcb0a80f516ce24e3ef1420a26a00f44a78afe02",
+  "binarySHA256": "6ec540ec787ff593cfec64239d5073a584ffd325d5c1e606688e834e2d50f45b",
+  "guidance": 1,
+  "height": 512,
+  "intentJSONSHA256": "b90098e80c8fc2b07e2a617a00197f63317d20273109fc79e702da138fd390c4",
+  "mode": "Klein4B direct affine4bit/group64 +Qwen3-4B affine4bit/group64 +small VAE; no negative CFG",
+  "promptCharacters": 210,
+  "resourcePreflightFile": "Apple/.build/Flux2Candidate/swift-resource-preflight.json",
+  "resourcePreflightSHA256": "0722934903bd1afa1ba46ae0c24682dbaa240dc790f939695fe961d8ae4b41d1",
+  "scope": "image-only public FluxImageEngine; zero Qwen0.8/Vision/Shape calls; no NN until explicit --run authorization",
+  "SDKFreezeSHA256": "a3638fe76d1335312435ef07f946a8fb4349a8786f8ed05e3ffa280d3ffc83aa",
+  "seed": 24301,
+  "status": "prepared_not_neurally_run",
+  "steps": 4,
+  "width": 512
+}

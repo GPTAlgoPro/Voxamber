@@ -1,0 +1,33 @@
+{
+  "beforeProductionCancellationChanges" : true,
+  "cases" : [
+    {
+      "byteCount" : 56,
+      "case" : "denseUnchunked",
+      "sha256" : "f5557c6db9d984ba8ac8afca9437a806999b6e3813181dac701ef9e69748ff4f"
+    },
+    {
+      "byteCount" : 56,
+      "case" : "denseChunked",
+      "sha256" : "34677db8312bebfc29f1a0c4ca949ad76b23a00b57eb0c69fb594398efefbdd4"
+    },
+    {
+      "byteCount" : 56,
+      "case" : "sparseChunked",
+      "sha256" : "34677db8312bebfc29f1a0c4ca949ad76b23a00b57eb0c69fb594398efefbdd4"
+    },
+    {
+      "byteCount" : 56,
+      "case" : "batchedCFG",
+      "sha256" : "e6262fa821ec61eb6e9d05170abcdb8acf8feb942e42b057c1b011eb61c4ff47"
+    },
+    {
+      "byteCount" : 56,
+      "case" : "serializedCFG",
+      "sha256" : "992e3bf8396433f0253b9a8ebce0aba4de0fce301d2f757decaf70c8394ebea6"
+    }
+  ],
+  "device" : "CPU",
+  "schemaVersion" : 1,
+  "trainedWeightsUsed" : false
+}

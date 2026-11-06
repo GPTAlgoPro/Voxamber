@@ -1,0 +1,11 @@
+{
+  "recordedAtUTC": "2026-11-05T21:24:20.966994+00:00",
+  "liveHandle": 50877,
+  "authorizedRunSent": true,
+  "observedImageCallBegin": true,
+  "observedImagePreparingResources": true,
+  "maximumImageCalls": 1,
+  "retryPerformed": false,
+  "providerChanged": false,
+  "gate": "image-only intermediate, not text-to-3D or phone acceptance"
+}

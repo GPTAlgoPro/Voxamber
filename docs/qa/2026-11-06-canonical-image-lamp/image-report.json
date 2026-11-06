@@ -1,0 +1,190 @@
+{
+  "computeUnits" : "cpuAndNeuralEngine",
+  "entryPoint" : "public ImageEngine.generate image-only; baseline was NativeCreationEngine full pipeline",
+  "fallbacks" : 0,
+  "guidance" : 7.5,
+  "height" : 768,
+  "imageAPIRequests" : 1,
+  "loadTimeBoundary" : "Public preparingResources→firstdenoise includes load+CLIP+firststep, not isolated model-load time",
+  "negativePrompt" : "",
+  "observations" : {
+    "nominalIntervalSeconds" : 0.20000000000000001,
+    "observedPhysicalPeakBytes" : 2187461880,
+    "physicalSampleCount" : 779,
+    "progress" : [
+      {
+        "phase" : "preparingResources",
+        "physicalBytes" : 32883336,
+        "seconds" : 0.084539055824279785
+      },
+      {
+        "completedSteps" : 1,
+        "phase" : "denoising",
+        "physicalBytes" : 587744552,
+        "seconds" : 145.84658002853394,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 2,
+        "phase" : "denoising",
+        "physicalBytes" : 588547368,
+        "seconds" : 146.68393003940582,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 3,
+        "phase" : "denoising",
+        "physicalBytes" : 588547368,
+        "seconds" : 147.48010098934174,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 4,
+        "phase" : "denoising",
+        "physicalBytes" : 588563752,
+        "seconds" : 148.26775598526001,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 5,
+        "phase" : "denoising",
+        "physicalBytes" : 588563752,
+        "seconds" : 149.05424702167511,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 6,
+        "phase" : "denoising",
+        "physicalBytes" : 588498216,
+        "seconds" : 149.84222400188446,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 7,
+        "phase" : "denoising",
+        "physicalBytes" : 588514600,
+        "seconds" : 150.62916398048401,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 8,
+        "phase" : "denoising",
+        "physicalBytes" : 588530984,
+        "seconds" : 151.41446304321289,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 9,
+        "phase" : "denoising",
+        "physicalBytes" : 588530984,
+        "seconds" : 152.20500600337982,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 10,
+        "phase" : "denoising",
+        "physicalBytes" : 588875048,
+        "seconds" : 153.00139105319977,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 11,
+        "phase" : "denoising",
+        "physicalBytes" : 589333800,
+        "seconds" : 153.81913495063782,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 12,
+        "phase" : "denoising",
+        "physicalBytes" : 589350184,
+        "seconds" : 154.63125205039978,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 13,
+        "phase" : "denoising",
+        "physicalBytes" : 589350184,
+        "seconds" : 155.41731297969818,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 14,
+        "phase" : "denoising",
+        "physicalBytes" : 589514024,
+        "seconds" : 156.20662498474121,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 15,
+        "phase" : "denoising",
+        "physicalBytes" : 589808936,
+        "seconds" : 156.99156999588013,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 16,
+        "phase" : "denoising",
+        "physicalBytes" : 590120232,
+        "seconds" : 157.78049397468567,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 17,
+        "phase" : "denoising",
+        "physicalBytes" : 590415144,
+        "seconds" : 158.56694304943085,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 18,
+        "phase" : "denoising",
+        "physicalBytes" : 590431528,
+        "seconds" : 159.35775005817413,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 19,
+        "phase" : "denoising",
+        "physicalBytes" : 590431528,
+        "seconds" : 160.14503705501556,
+        "totalSteps" : 20
+      },
+      {
+        "completedSteps" : 20,
+        "phase" : "denoising",
+        "physicalBytes" : 590447912,
+        "seconds" : 160.93076300621033,
+        "totalSteps" : 20
+      },
+      {
+        "phase" : "encodingPNG",
+        "physicalBytes" : 1770783920,
+        "seconds" : 161.49674105644226
+      }
+    ],
+    "telemetryIOFailure" : false,
+    "watchdogTriggered" : false
+  },
+  "operationCancelledBeforeCleanup" : false,
+  "physicalBytesAfterPublicReturn" : 1640678552,
+  "PNG_SHA256" : "965c97f57fe9677b16606c3228c86abf246aa11f84fe1e5a43afaa1034917ec3",
+  "PNGBytes" : 554108,
+  "positivePrompt" : "A desk lamp with a red cone-shaped shade, a gray cylindrical base, a thin cylindrical stem, and a spherical bulb, all resting on a flat surface at height Y=0, with an overall height of approximately 0.8 meters.",
+  "prewarmRequestedByHost" : false,
+  "priorIntentJSON_SHA256" : "b90098e80c8fc2b07e2a617a00197f63317d20273109fc79e702da138fd390c4",
+  "QwenRequests" : 0,
+  "reduceMemory" : true,
+  "resourceCleanupBoundary" : "ImageEngine source unloads its model driver in defer\/autoreleasepool before returning; no separate public unload API\/prewarm invoked",
+  "retries" : 0,
+  "scheduler" : "DPM Solver Multistep",
+  "seconds" : 161.52709400653839,
+  "seed" : 24301,
+  "ShapeRequests" : 0,
+  "status" : "image_returned_pending_visual_quality_review",
+  "steps" : 20,
+  "tokenizer" : "canonical regex\/UTF8 byte BPE adaptation",
+  "VisionRequests" : 0,
+  "watchdogSeconds" : 900,
+  "width" : 768
+}

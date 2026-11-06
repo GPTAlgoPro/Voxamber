@@ -1,0 +1,434 @@
+{
+  "name" : "简约棕色木椅",
+  "nodes" : [
+    {
+      "color" : "#5D4037",
+      "id" : "frame_base",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.458,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.45,
+        0.02,
+        0.18
+      ]
+    },
+    {
+      "color" : "#5D4037",
+      "id" : "leg_01",
+      "metallic" : 0.1,
+      "position" : [
+        -0.1125,
+        0.22500001,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.06,
+        0.45,
+        0.06
+      ]
+    },
+    {
+      "color" : "#5D4037",
+      "id" : "leg_02",
+      "metallic" : 0.1,
+      "position" : [
+        0.1125,
+        0.22500001,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.06,
+        0.45,
+        0.06
+      ]
+    },
+    {
+      "color" : "#5D4037",
+      "id" : "leg_03",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.22500001,
+        -0.09
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.06,
+        0.45,
+        0.06
+      ]
+    },
+    {
+      "color" : "#5D4037",
+      "id" : "leg_04",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.22500001,
+        0.09
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.06,
+        0.45,
+        0.06
+      ]
+    },
+    {
+      "color" : "#5D4037",
+      "id" : "seat_core",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.458,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.48,
+        0.05,
+        0.2
+      ]
+    },
+    {
+      "color" : "#8D6E63",
+      "id" : "seat_surface",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.458,
+        0
+      ],
+      "primitive" : "mesh",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.5,
+        0.05,
+        0.22
+      ],
+      "triangles" : [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          4,
+          1,
+          5
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          0,
+          5,
+          1
+        ],
+        [
+          2,
+          7,
+          3
+        ],
+        [
+          0,
+          3,
+          2
+        ],
+        [
+          1,
+          5,
+          4
+        ],
+        [
+          3,
+          7,
+          6
+        ],
+        [
+          5,
+          1,
+          0
+        ],
+        [
+          7,
+          3,
+          6
+        ]
+      ],
+      "vertices" : [
+        [
+          -0.24,
+          0.45,
+          -0.1
+        ],
+        [
+          -0.24,
+          0.45,
+          0.1
+        ],
+        [
+          -0.24,
+          0.5,
+          -0.1
+        ],
+        [
+          -0.24,
+          0.5,
+          0.1
+        ],
+        [
+          0.24,
+          0.45,
+          -0.1
+        ],
+        [
+          0.24,
+          0.45,
+          0.1
+        ],
+        [
+          0.24,
+          0.5,
+          -0.1
+        ],
+        [
+          0.24,
+          0.5,
+          0.1
+        ]
+      ]
+    },
+    {
+      "color" : "#5D4037",
+      "id" : "backrest_left",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.458,
+        0
+      ],
+      "primitive" : "lathe",
+      "profile" : [
+        [
+          0.02,
+          0
+        ],
+        [
+          0.02,
+          0.1
+        ],
+        [
+          0.035,
+          0.2
+        ],
+        [
+          0.04,
+          0.25
+        ],
+        [
+          0.04,
+          0.3
+        ]
+      ],
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.04,
+        0.3,
+        0.04
+      ]
+    },
+    {
+      "color" : "#5D4037",
+      "id" : "backrest_right",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.458,
+        0
+      ],
+      "primitive" : "lathe",
+      "profile" : [
+        [
+          0.02,
+          0
+        ],
+        [
+          0.02,
+          0.1
+        ],
+        [
+          0.035,
+          0.2
+        ],
+        [
+          0.04,
+          0.25
+        ],
+        [
+          0.04,
+          0.3
+        ]
+      ],
+      "rotation" : [
+        90,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.04,
+        0.3,
+        0.04
+      ]
+    },
+    {
+      "color" : "#5D4037",
+      "id" : "backrest_back",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.60800004,
+        -0.117
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.08,
+        0.3,
+        0.04
+      ]
+    },
+    {
+      "color" : "#5D4037",
+      "id" : "backrest_front",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.60800004,
+        0.117
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.08,
+        0.3,
+        0.04
+      ]
+    },
+    {
+      "color" : "#5D4037",
+      "id" : "armrest_l",
+      "metallic" : 0.1,
+      "position" : [
+        -0.262,
+        0.47800002,
+        -0.05
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.05,
+        0.08,
+        0.05
+      ]
+    },
+    {
+      "color" : "#5D4037",
+      "id" : "armrest_r",
+      "metallic" : 0.1,
+      "position" : [
+        0.262,
+        0.47800002,
+        0.05
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.05,
+        0.08,
+        0.05
+      ]
+    }
+  ]
+}

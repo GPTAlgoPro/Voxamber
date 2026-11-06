@@ -1,0 +1,349 @@
+{
+  "preparedAtUTC": "2026-11-06T02:02:12.757952+00:00",
+  "auditScope": "Independent local actual safetensors headers/config/index audit, no model construction or inference",
+  "manifestReference": {
+    "path": "docs/prototypes/2026-11-06-image-model-recheck/proposed-flux2-assets.json",
+    "SHA256": "314c5105a019dcd1aca7d1c95d374fa36b01c1d28b0f346fc40bf87b1e1c1b4e",
+    "modified": false
+  },
+  "countingRules": [
+    "Original int4 quantized matrix parameters = product(U32 packed shape)*8, checked against4bit/group64 metadata/config and every scales/biases shape.",
+    "Quantization scales and plural biases tensors are stored numerical auxiliaries, excluded from original learned parameter counts. Singular learned .bias tensors count normally.",
+    "Ordinary unquantized learned tensor count = product(shape), independent of dtype storage bytes.",
+    "Empty shape[] is a scalar with one element, not zero. All BN running mean/variance/counter buffers are listed separately.",
+    "Qwen3 tied vocabulary head is not double-counted; tie_word_embeddings true, no lm_head tensor stored.",
+    "Whole selected VAE checkpoint is counted conservatively, including encoder and decoder; no hypothetical unused-weight pruning."
+  ],
+  "components": {
+    "transformer": {
+      "tensorCount": 387,
+      "dtypeTensorCounts": {
+        "BF16": 278,
+        "U32": 109
+      },
+      "files": [
+        {
+          "path": "Apple/.build/Flux2Candidate/Models/Transformer/transformer/0.safetensors",
+          "fileBytes": 2145323732,
+          "headerJSONBytes": 45260,
+          "headerJSONSHA256": "a61c02c33732bacaa416299336b6704a16d0ca4cc14c61532cb7e9ce5dea6f05",
+          "headerMetadata": {
+            "mflux_version": "0.17.5",
+            "quantization_group_size": "64",
+            "quantization_level": "4"
+          },
+          "tensorCount": 375,
+          "tensorOffsetsContiguousNonOverlapping": true,
+          "allShapeDtypeByteLengthsValid": true,
+          "dataEndExactlyFileEnd": true,
+          "completedWholeFileSHAReference": {
+            "source": "Apple/.build/Flux2Candidate/states/asset-0.json",
+            "actualSHA256": "3a75fc123a9ceb583b0d0202cc37166da3e1fc0ac8cd4a430987ceaf8e845b27",
+            "wholeSHA256VerifiedBytes": 2145323732,
+            "independentlyWholeFileRehashedInThisAudit": false
+          }
+        },
+        {
+          "path": "Apple/.build/Flux2Candidate/Models/Transformer/transformer/1.safetensors",
+          "fileBytes": 34727761,
+          "headerJSONBytes": 1353,
+          "headerJSONSHA256": "a582b0da823b8a8295fd76391c43e0409763954e1f5911ed9d9326abf1b849be",
+          "headerMetadata": {
+            "mflux_version": "0.17.5",
+            "quantization_group_size": "64",
+            "quantization_level": "4"
+          },
+          "tensorCount": 12,
+          "tensorOffsetsContiguousNonOverlapping": true,
+          "allShapeDtypeByteLengthsValid": true,
+          "dataEndExactlyFileEnd": true,
+          "completedWholeFileSHAReference": {
+            "source": "Apple/.build/Flux2Candidate/states/asset-1.json",
+            "actualSHA256": "06998c075c1d9543f17f1cc7ae7170c365cdb3c09a1f78056804a252bb168fd5",
+            "wholeSHA256VerifiedBytes": 34727761,
+            "independentlyWholeFileRehashedInThisAudit": false
+          }
+        }
+      ],
+      "packedU32MatrixCount": 109,
+      "packedU32ElementCount": 484442112,
+      "int4ReconstructedOriginalMatrixParameters": 3875536896,
+      "packedMultiplier": 8,
+      "quantizationBits": 4,
+      "quantizationGroupSize": 64,
+      "allPackedMatrixScaleAndBiasShapesVerified": true,
+      "quantizationAuxiliaryTensorCount": 218,
+      "quantizationAuxiliaryStoredElementsExcludedFromOriginalParameterCount": 121110528,
+      "ordinaryLearnedTensorCount": 60,
+      "ordinaryLearnedParameters": 7680,
+      "ordinaryLearnedParameterCountsByNamespace": {
+        "single_transformer_blocks": 5120,
+        "transformer_blocks": 2560
+      },
+      "learnedParameterCount": 3875544576,
+      "bufferTensorCount": 0,
+      "bufferElements": 0,
+      "buffers": [],
+      "conservativeLearnedPlusAllBuffers": 3875544576,
+      "allSerializedNumericStateElementCountBeforeUnpacking": 605560320,
+      "eachLearnedComponentUnder8B": true,
+      "evenConservativeOriginalParametersPlusBuffersUnder8B": true,
+      "allTensorsClassifiedExactlyOnce": true,
+      "fileStatUnchangedDuringAudit": true,
+      "indexCrossCheck": {
+        "path": "Apple/.build/Flux2Candidate/Models/Transformer/transformer/model.safetensors.index.json",
+        "SHA256": "dc46409ae5d1a10ad3c5b87c615efd1d23e4b9f1c5caf46b8d92e459dadc48b9",
+        "tensorNamesExactlyMatchHeaders": true,
+        "mappedTensorCount": 387,
+        "metadata": {
+          "quantization_level": "4",
+          "quantization_group_size": "64",
+          "mflux_version": "0.17.5"
+        },
+        "everyTensorMappedToItsActualShardExactly": true
+      },
+      "headerQuantizationMetadataChecks": [
+        {
+          "file": "0.safetensors",
+          "bits": 4,
+          "groupSize": 64
+        },
+        {
+          "file": "1.safetensors",
+          "bits": 4,
+          "groupSize": 64
+        }
+      ]
+    },
+    "qwen3TextEncoder": {
+      "tensorCount": 904,
+      "dtypeTensorCounts": {
+        "BF16": 651,
+        "U32": 253
+      },
+      "files": [
+        {
+          "path": "Apple/.build/Flux2Candidate/Models/Qwen3/model.safetensors",
+          "fileBytes": 2263022417,
+          "headerJSONBytes": 102217,
+          "headerJSONSHA256": "bd7bf55914a3968d3abcdd5fdfb2cb93ad406a8174d2676e9d9ade02f5c781a9",
+          "headerMetadata": {
+            "format": "mlx"
+          },
+          "tensorCount": 904,
+          "tensorOffsetsContiguousNonOverlapping": true,
+          "allShapeDtypeByteLengthsValid": true,
+          "dataEndExactlyFileEnd": true,
+          "completedWholeFileSHAReference": {
+            "source": "Apple/.build/Flux2Candidate/states/asset-6.json",
+            "actualSHA256": "365a6fff57490ca4e89e354c3295b7f2f60ac3fcb0a8a3fa06e21b80bb4d19ca",
+            "wholeSHA256VerifiedBytes": 2263022417,
+            "independentlyWholeFileRehashedInThisAudit": false
+          }
+        }
+      ],
+      "packedU32MatrixCount": 253,
+      "packedU32ElementCount": 502784000,
+      "int4ReconstructedOriginalMatrixParameters": 4022272000,
+      "packedMultiplier": 8,
+      "quantizationBits": 4,
+      "quantizationGroupSize": 64,
+      "allPackedMatrixScaleAndBiasShapesVerified": true,
+      "quantizationAuxiliaryTensorCount": 506,
+      "quantizationAuxiliaryStoredElementsExcludedFromOriginalParameterCount": 125696000,
+      "ordinaryLearnedTensorCount": 145,
+      "ordinaryLearnedParameters": 196096,
+      "ordinaryLearnedParameterCountsByNamespace": {
+        "model": 196096
+      },
+      "learnedParameterCount": 4022468096,
+      "bufferTensorCount": 0,
+      "bufferElements": 0,
+      "buffers": [],
+      "conservativeLearnedPlusAllBuffers": 4022468096,
+      "allSerializedNumericStateElementCountBeforeUnpacking": 628676096,
+      "eachLearnedComponentUnder8B": true,
+      "evenConservativeOriginalParametersPlusBuffersUnder8B": true,
+      "allTensorsClassifiedExactlyOnce": true,
+      "fileStatUnchangedDuringAudit": true,
+      "configCrossCheck": {
+        "path": "Apple/.build/Flux2Candidate/Models/Qwen3/config.json",
+        "SHA256": "b5efdcf3b0035a3638e7228dad4d85f5c4a23f156eb7cdb0b44c8366a5d34d9b",
+        "tieWordEmbeddings": true,
+        "lmHeadTensorPresent": false,
+        "tiedHeadCountedAgain": false,
+        "all36LayerMatrixShapesMatchActualConfig": true,
+        "formula": {
+          "tokenEmbedding": 388956160,
+          "eachLayerQueryProjection": 10485760,
+          "eachLayerKeyProjection": 2621440,
+          "eachLayerValueProjection": 2621440,
+          "eachLayerOutputProjection": 10485760,
+          "eachLayerThreeMLPProjections": 74711040,
+          "eachLayerInputAndPostRMSNorm": 5120,
+          "eachLayerQueryAndKeyNorm": 256,
+          "finalRMSNorm": 2560,
+          "layers": 36
+        },
+        "formulaLearnedTotal": 4022468096
+      },
+      "indexCrossCheck": {
+        "path": "Apple/.build/Flux2Candidate/Models/Qwen3/model.safetensors.index.json",
+        "SHA256": "f7825defe5865d179c3b593173d37056be5f202dcb7153985cf74e75ecf1628b",
+        "tensorNamesExactlyMatchHeaders": true,
+        "mappedTensorCount": 904,
+        "metadata": {
+          "total_size": 2262920192
+        },
+        "everyTensorMappedToItsActualShardExactly": true
+      }
+    },
+    "smallFullVAE": {
+      "tensorCount": 251,
+      "dtypeTensorCounts": {
+        "I64": 1,
+        "F32": 250
+      },
+      "files": [
+        {
+          "path": "Apple/.build/Flux2Candidate/Models/VAE/diffusion_pytorch_model.safetensors",
+          "fileBytes": 249521340,
+          "headerJSONBytes": 27936,
+          "headerJSONSHA256": "ad80cb771d27563befab429fa04e4429d6a9d02930c1e751d19beb5e2fa2836a",
+          "headerMetadata": null,
+          "tensorCount": 251,
+          "tensorOffsetsContiguousNonOverlapping": true,
+          "allShapeDtypeByteLengthsValid": true,
+          "dataEndExactlyFileEnd": true,
+          "completedWholeFileSHAReference": {
+            "source": "Apple/.build/Flux2Candidate/states/asset-13.json",
+            "actualSHA256": "d8d52ba036475f5fb07c8b435e176d3d97ebfa82f0d1a1c317f9cc1e25bd013b",
+            "wholeSHA256VerifiedBytes": 249521340,
+            "independentlyWholeFileRehashedInThisAudit": false
+          }
+        }
+      ],
+      "packedU32MatrixCount": 0,
+      "packedU32ElementCount": 0,
+      "int4ReconstructedOriginalMatrixParameters": 0,
+      "packedMultiplier": null,
+      "quantizationBits": null,
+      "quantizationGroupSize": null,
+      "allPackedMatrixScaleAndBiasShapesVerified": true,
+      "quantizationAuxiliaryTensorCount": 0,
+      "quantizationAuxiliaryStoredElementsExcludedFromOriginalParameterCount": 0,
+      "ordinaryLearnedTensorCount": 248,
+      "ordinaryLearnedParameters": 62373091,
+      "ordinaryLearnedParameterCountsByNamespace": {
+        "decoder": 27946179,
+        "encoder": 34421696,
+        "post_quant_conv": 1056,
+        "quant_conv": 4160
+      },
+      "learnedParameterCount": 62373091,
+      "bufferTensorCount": 3,
+      "bufferElements": 257,
+      "buffers": [
+        {
+          "name": "bn.num_batches_tracked",
+          "dtype": "I64",
+          "shape": [],
+          "elements": 1
+        },
+        {
+          "name": "bn.running_mean",
+          "dtype": "F32",
+          "shape": [
+            128
+          ],
+          "elements": 128
+        },
+        {
+          "name": "bn.running_var",
+          "dtype": "F32",
+          "shape": [
+            128
+          ],
+          "elements": 128
+        }
+      ],
+      "conservativeLearnedPlusAllBuffers": 62373348,
+      "allSerializedNumericStateElementCountBeforeUnpacking": 62373348,
+      "eachLearnedComponentUnder8B": true,
+      "evenConservativeOriginalParametersPlusBuffersUnder8B": true,
+      "allTensorsClassifiedExactlyOnce": true,
+      "fileStatUnchangedDuringAudit": true,
+      "configReference": {
+        "path": "Apple/.build/Flux2Candidate/Models/VAE/config.json",
+        "SHA256": "88641eb0ebe46877b32822fb91aff828574765ef6b2b4bbc73d379051d006267",
+        "className": "AutoencoderKLFlux2",
+        "latentChannels": 32,
+        "patchSize": [
+          2,
+          2
+        ],
+        "countIncludesWholeSelectedCheckpointEncoderAndDecoder": true,
+        "noUnusedEncoderPruningAssumed": true
+      }
+    }
+  },
+  "observedParameterCounts": {
+    "transformerParameters": 3875544576,
+    "textEncoderParameters": 4022468096,
+    "smallFullVAELearned": 62373091,
+    "smallFullVAEF32StateIncludingFloatBuffers": 62373347,
+    "smallFullVAEConservativeAllBuffers": 62373348
+  },
+  "manifestComparison": {
+    "DiTExactMatch": true,
+    "Qwen3ExactMatch": true,
+    "VAEManifestValue": 62373347,
+    "VAEManifestValueMeaning": "All F32 state elements, including256 BN running-stat buffers but excluding1 I64 scalar counter.",
+    "VAELearnedParameters": 62373091,
+    "VAEBufferElements": 257,
+    "VAEConservativeActualValue": 62373348,
+    "VAEConservativeDeltaFromManifest": 1,
+    "frozenManifestOrResearchReceiptChanged": false
+  },
+  "aggregateSelectedImageCheckpointCounts": {
+    "learnedOnly": 7960385763,
+    "learnedPlusAllBuffersConservative": 7960386020,
+    "manifestImageAggregate": 7960386019,
+    "conservativeDelta": 1,
+    "includesExistingIntentOrShapeOrSystemVision": false,
+    "eachCurrentComponentStrictlyUnder8B": true
+  },
+  "evidenceLimits": [
+    "Counts establish selected checkpoint parameter/state sizes, not semantic image quality.",
+    "No MLX/CoreML model instance, tensor evaluation, GPU or neural inference was performed.",
+    "Storage bytes are file-layout evidence only; no RAM peak, device fit, latency or phone acceptance was inferred from bytes or parameter count.",
+    "Completed whole-file SHA verification is referenced from original downloader states; this header-only audit did not reread4.7GB tensor payloads.",
+    "No claim is made that every neural component of the full image+intent+shape+system-Vision pipeline has an aggregate<=8B."
+  ],
+  "operations": {
+    "tensorPayloadBytesRead": 0,
+    "modelInstancesCreated": 0,
+    "NNCalls": 0,
+    "modelCopies": 0,
+    "phoneOperations": 0,
+    "downloadJobOrStatesModified": false,
+    "resultReportedToRootBeforeWriting": true,
+    "safetensorsBytesPerCompleteFourFileHeaderPass": 176798,
+    "headerReadPasses": [
+      {
+        "purpose": "initial independent count",
+        "bytes": 176798
+      },
+      {
+        "purpose": "main audit offset/shape/classification pass",
+        "bytes": 176798
+      },
+      {
+        "purpose": "exact index-to-shard and DiT bit/group metadata confirmation",
+        "bytes": 148854
+      }
+    ],
+    "totalSafetensorsPrefixAndHeaderBytesReadInThisTask": 502450
+  },
+  "onlyNewFileWritten": "docs/prototypes/2026-11-06-image-model-recheck/header-parameter-audit.json"
+}

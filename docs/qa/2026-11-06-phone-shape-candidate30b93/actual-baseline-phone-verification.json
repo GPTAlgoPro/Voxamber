@@ -1,0 +1,158 @@
+{
+  "scope": "Physical iPhone shape-only frozen baseline; legacy-epsilon cleanup, not latest Core/Flux/whole App",
+  "phoneReport": {
+    "actualNeuralWeightsUsed": true,
+    "appBuild": "7",
+    "automaticCancellation": false,
+    "candidateSHA256": "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7",
+    "existingProjectsChanged": false,
+    "formatVersion": 1,
+    "fullPipelineAccepted": false,
+    "inputPNG_SHA256": "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae",
+    "lastAvailableProcessBytes": 6046397784,
+    "lastPhysicalBytes": 396053160,
+    "latents": 4096,
+    "moeTokenChunkSize": 512,
+    "observedPhysicalPeakBytes": 4129394208,
+    "octreeResolution": 192,
+    "OS": "Version 27.2 (Build 24B119)",
+    "physicalMemoryBytes": 12263407616,
+    "physicalSampleCount": 1004,
+    "platform": "physical-iPhone-stage-gate",
+    "runID": "6F3D1710-73E9-4F67-ABBC-EFFB551EB9B6",
+    "samplerIntervalSeconds": 0.25,
+    "seconds": 262.32380402088165,
+    "seed": 24301,
+    "stages": [
+      {
+        "availableProcessBytes": 6427425024,
+        "fraction": 0.009999999776482582,
+        "physicalBytes": 15025920,
+        "seconds": 0.0054509639739990234,
+        "stage": "Verifying shape model"
+      },
+      {
+        "availableProcessBytes": 6423918728,
+        "fraction": 0.029999999329447746,
+        "physicalBytes": 18532216,
+        "seconds": 1.470744013786316,
+        "stage": "Loading shape model"
+      },
+      {
+        "availableProcessBytes": 6409730112,
+        "fraction": 0.09100000560283661,
+        "physicalBytes": 32720832,
+        "seconds": 1.5043439865112305,
+        "stage": "Conditioning 1 view(s)"
+      },
+      {
+        "availableProcessBytes": 4065227232,
+        "fraction": 0.18119999766349792,
+        "physicalBytes": 2377223712,
+        "seconds": 26.87389302253723,
+        "stage": "Denoising (1/10)"
+      },
+      {
+        "availableProcessBytes": 4059869664,
+        "fraction": 0.2303999960422516,
+        "physicalBytes": 2382581280,
+        "seconds": 46.787272930145264,
+        "stage": "Denoising (2/10)"
+      },
+      {
+        "availableProcessBytes": 4063490528,
+        "fraction": 0.27959999442100525,
+        "physicalBytes": 2383154720,
+        "seconds": 68.24925291538239,
+        "stage": "Denoising (3/10)"
+      },
+      {
+        "availableProcessBytes": 4059296224,
+        "fraction": 0.3288000226020813,
+        "physicalBytes": 2383154720,
+        "seconds": 90.08284091949463,
+        "stage": "Denoising (4/10)"
+      },
+      {
+        "availableProcessBytes": 4063965664,
+        "fraction": 0.37800002098083496,
+        "physicalBytes": 2378485280,
+        "seconds": 113.48337996006012,
+        "stage": "Denoising (5/10)"
+      },
+      {
+        "availableProcessBytes": 4059197920,
+        "fraction": 0.4272000193595886,
+        "physicalBytes": 2383253024,
+        "seconds": 137.29936695098877,
+        "stage": "Denoising (6/10)"
+      },
+      {
+        "availableProcessBytes": 4063900128,
+        "fraction": 0.4764000475406647,
+        "physicalBytes": 2378550816,
+        "seconds": 161.43140995502472,
+        "stage": "Denoising (7/10)"
+      },
+      {
+        "availableProcessBytes": 4068045280,
+        "fraction": 0.525600016117096,
+        "physicalBytes": 2374405664,
+        "seconds": 185.81036901474,
+        "stage": "Denoising (8/10)"
+      },
+      {
+        "availableProcessBytes": 4055445984,
+        "fraction": 0.5748000741004944,
+        "physicalBytes": 2387004960,
+        "seconds": 210.75334298610687,
+        "stage": "Denoising (9/10)"
+      },
+      {
+        "availableProcessBytes": 4089000416,
+        "fraction": 0.6404000520706177,
+        "physicalBytes": 2353450528,
+        "seconds": 210.7545269727707,
+        "stage": "Decoding shape"
+      },
+      {
+        "availableProcessBytes": 3553177504,
+        "fraction": 0.7879999876022339,
+        "physicalBytes": 2889273440,
+        "seconds": 261.3443509340286,
+        "stage": "Building mesh"
+      },
+      {
+        "availableProcessBytes": 3745787808,
+        "fraction": 0.8700000047683716,
+        "physicalBytes": 2696663136,
+        "seconds": 261.5055739879608,
+        "stage": "Done"
+      },
+      {
+        "availableProcessBytes": 6251132296,
+        "fraction": 0.8999999761581421,
+        "physicalBytes": 191318648,
+        "seconds": 261.6278120279312,
+        "stage": "Encoding shape artifacts"
+      },
+      {
+        "availableProcessBytes": 6034535768,
+        "fraction": 1,
+        "physicalBytes": 407915176,
+        "seconds": 262.2977229356766,
+        "stage": "Shape artifacts complete"
+      }
+    ],
+    "status": "shape-exported-pending-visual-review",
+    "steps": 10,
+    "thermalState": 1,
+    "triangles": 392928,
+    "vertices": 196735
+  },
+  "baselineProtocol": "protocol-before-run.json",
+  "normalAppDataChanged": false,
+  "newTestFlightUploaded": false,
+  "geometryVisualAcceptancePending": true,
+  "currentF64AndCancellableSDKNotClaimedTestedByThisRun": true
+}

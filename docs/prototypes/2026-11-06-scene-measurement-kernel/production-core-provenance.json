@@ -1,0 +1,26 @@
+{
+  "recordedAtUTC": "2026-11-05T18:25:26.689752+00:00",
+  "dependencyPath": "../../../Apple/Packages/CreationCore",
+  "repoPath": "Apple/Packages/CreationCore",
+  "filesSHA256": {
+    "Package.swift": "76483ca757b61255388105d2c914058e59606e7437f0dfd0230cb8faeecfd4c3",
+    "Sources/CreationCore/AttachmentResolver.swift": "3d156c1644fb84b6030728ba60ea3027592a7eca91e254daaf9bf91714e10f94",
+    "Sources/CreationCore/BuildingGenerator.swift": "8a72052f967164f71d289826a6647deb540bb845df3c9314463b5fe4dc7e5180",
+    "Sources/CreationCore/BuildingSpec.swift": "d6dcad6fb5cedcd3de441751692517ac5a08585d2cc8eca67f7b9991f6d021f9",
+    "Sources/CreationCore/FreeformGeometry.swift": "aabb0be5dd83d1e248ee2bf8f9899d6200b3659bc5474c8b8b15984c018f0206",
+    "Sources/CreationCore/SceneGenerationSchema.swift": "c7207a9c83a345370c80a51e0d608be3c1ebdfc58ee195de339bab744cc26d52",
+    "Sources/CreationCore/SceneGenerator.swift": "1798cd672b99fad741e1c2325f0176a20a912e1e9e1549eb00a848e874516f19",
+    "Sources/CreationCore/ScenePlan.swift": "b2b31ccd0bce71dd6d0d3a6c30c15b713323b58314301a5030a7e324c45b3137",
+    "Sources/CreationCore/SceneSpec.swift": "3163e0b570843aead62b72df949721f26529cb19691c2fa96b39785a41a81ca4",
+    "Sources/CreationCore/StrictJSONObject.swift": "27b46fcfc3c1e6bbad423103b2d568e7c3840b124e5e3848990bed5ff59dcf24",
+    "Tests/CreationCoreTests/AttachmentResolverTests.swift": "6a81507bc9dfe7d6185fbef3a045e588729e1a977ae8c3467aa7cf72700b24fb",
+    "Tests/CreationCoreTests/CreationCoreTests.swift": "aa4d7157692f17db8d637931e367af06a675e16141cce8c3ac2a97bb3f352f26",
+    "Tests/CreationCoreTests/FreeformGeometryTests.swift": "48815518bfaee5439544cef328968f09dcb06f9f510db3e72c99acfc949cf013",
+    "Tests/CreationCoreTests/SceneCoreTests.swift": "ea7d7172e9e700fb413ba77be45e78b1f3d5d8ea7add0c58872185cf4d23803d",
+    "Tests/CreationCoreTests/SceneGenerationSchemaTests.swift": "2aadc19717699728986efcc458d9b4052a540e34a0c001bb72f6b370c8a03442",
+    "Tests/CreationCoreTests/ScenePlanTests.swift": "301ec1781524364ea0b86561335e0162f976e16fc115808d7f5e8fbbea697f29",
+    "Tests/CreationCoreTests/StrictJSONObjectTests.swift": "9e067e272c550f89f1d32d434c6325ea2ded8faa0ac7e7b48548f9b8aa6339d8"
+  },
+  "productionCoreEdited": false,
+  "scope": "Current tracked production Core, used without changing its geometry, numeric, or resource contracts."
+}

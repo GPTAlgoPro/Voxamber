@@ -1,0 +1,36 @@
+{
+  "allPerTensorHashesEqual" : true,
+  "device" : "CPU only",
+  "files" : [
+    {
+      "byteCount" : 154352,
+      "file" : "tiny-0.safetensors",
+      "headerBytes" : 10216,
+      "sha256" : "cc4cde37592e9e468eb7e3d390f0a9d385071305816bf96d438e2033029761cc",
+      "tensorCount" : 129
+    },
+    {
+      "byteCount" : 154352,
+      "file" : "tiny-1.safetensors",
+      "headerBytes" : 10216,
+      "sha256" : "07404caa6d75501f20a9239fa418536b957ab68ca4b022f4ffb295795131b96b",
+      "tensorCount" : 129
+    },
+    {
+      "byteCount" : 154352,
+      "file" : "tiny-2.safetensors",
+      "headerBytes" : 10216,
+      "sha256" : "ce733d50b283592bc6ecd901a8f6fde5142008ce42996d87009dabf9e0112def",
+      "tensorCount" : 129
+    },
+    {
+      "byteCount" : 154352,
+      "file" : "tiny-3.safetensors",
+      "headerBytes" : 10216,
+      "sha256" : "07404caa6d75501f20a9239fa418536b957ab68ca4b022f4ffb295795131b96b",
+      "tensorCount" : 129
+    }
+  ],
+  "MLX" : "0.31.4",
+  "sameValuesShapesAndMetadata" : true
+}

@@ -1,0 +1,83 @@
+{
+  "sealedAtUTC": "2026-11-06T00:57:32.131419+00:00",
+  "scope": "One image-only public ImageEngine condition, not fullpipeline/phone/general quality acceptance",
+  "processExitCode": 0,
+  "imageRequests": 1,
+  "QwenVisionShapeRequests": 0,
+  "retries": 0,
+  "fallbacks": 0,
+  "positiveExactPrior210CharsJSON_SHA256": "b90098e80c8fc2b07e2a617a00197f63317d20273109fc79e702da138fd390c4",
+  "seed": 24301,
+  "all42SourceToolLicenseHashesUnchanged": true,
+  "all27ResourceWholeSHAUnchanged": true,
+  "watchdogTriggered": false,
+  "telemetryIOFailure": false,
+  "seconds": 161.5270940065384,
+  "observedPhysicalPeakBytes": 2187461880,
+  "physicalSamples": 779,
+  "physicalBytesAfterPublicReturn": 1640678552,
+  "publicPhaseTiming": {
+    "preparingResourcesSeconds": 0.08453905582427979,
+    "firstDenoiseSeconds": 145.84658002853394,
+    "lastDenoiseSeconds": 160.93076300621033,
+    "encodingPNGSeconds": 161.49674105644226,
+    "preparingThroughFirstDenoiseSeconds": 145.76204097270966,
+    "lastDenoiseThroughEncodingSeconds": 0.5659780502319336,
+    "pureLoadOrPrewarmTimeMeasured": false,
+    "hostPrewarmRequested": false
+  },
+  "baseline": {
+    "entry": "publicNativeCreationEngine full pipeline",
+    "image": "../public-native-pipeline-lamp/reference-original-768.png",
+    "finding": "white helmet/bust, wrong subject"
+  },
+  "newVisualReview": {
+    "reviewer": "model_research",
+    "actualImageSeen": true,
+    "image": "reference-canonical-768.png",
+    "finding": "Recognizable desk lamp with thin metal stem and gray round disk/pedestal base; a large gray hemispherical/dome shade with red only on small top cap and stem collar.",
+    "requestedSubjectImproved": true,
+    "redConicalShadeSatisfied": false,
+    "grayBaseAndThinStemPresent": true,
+    "fullLPRequestAccepted": false,
+    "metric0_8mOrY0Established": false
+  },
+  "attributionBoundary": "Within Image SDK source only tokenizer changed, and full actual token IDs match official reference. Process/entry differs image-only vs fullpipeline with priorQwen, so do not claim unqualified sole-cause or generalized image-quality fix.",
+  "productionGuardrails": [
+    "No driver/CFG/scheduler/options/model/lifecycle/prewarm change was included.",
+    "No prompt, seed, model swap, second image or output repair performed.",
+    "No additionalQwen/Vision/Shape, 3D generation, color projection, phone or App distribution action performed."
+  ],
+  "artifacts": [
+    {
+      "path": "Apple/.build/CanonicalImageLampGate/LampCanonical01/current-stage.json",
+      "byteCount": 95,
+      "sha256": "9546b65b726de4671fb63fa0a2cc112c2948ac4065f8228bac381952720b3405"
+    },
+    {
+      "path": "Apple/.build/CanonicalImageLampGate/LampCanonical01/events.ndjson",
+      "byteCount": 2418,
+      "sha256": "e676a60d77b760c2ab37b7ad6bc135d341e0789230bcfefd64cfebc781f2f4e5"
+    },
+    {
+      "path": "Apple/.build/CanonicalImageLampGate/LampCanonical01/fixed-prior-intent.json",
+      "byteCount": 398,
+      "sha256": "b90098e80c8fc2b07e2a617a00197f63317d20273109fc79e702da138fd390c4"
+    },
+    {
+      "path": "Apple/.build/CanonicalImageLampGate/LampCanonical01/image-report.json",
+      "byteCount": 5648,
+      "sha256": "290a5c2f9427363cfbf770910e58d0a2a367bb6e3db9638424369d78826cac04"
+    },
+    {
+      "path": "Apple/.build/CanonicalImageLampGate/LampCanonical01/physical-memory.ndjson",
+      "byteCount": 66179,
+      "sha256": "90e29399e7a9dc98e366f46918dc87c3810fc35a5eb630d38957501bad733643"
+    },
+    {
+      "path": "Apple/.build/CanonicalImageLampGate/LampCanonical01/reference-canonical-768.png",
+      "byteCount": 554108,
+      "sha256": "965c97f57fe9677b16606c3228c86abf246aa11f84fe1e5a43afaa1034917ec3"
+    }
+  ]
+}

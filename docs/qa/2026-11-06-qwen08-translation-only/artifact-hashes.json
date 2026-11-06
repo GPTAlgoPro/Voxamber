@@ -1,0 +1,33 @@
+{
+  "frozenAtUTC": "2026-11-05T21:01:28.868514+00:00",
+  "condition": "Root exact translation-only one-field wire",
+  "modelLoads": 1,
+  "modelCalls": 3,
+  "decoderAccepted": 3,
+  "completePositiveSemanticAccepted": 2,
+  "nativeTitleAndEmptyNegativeNotModelCredit": true,
+  "previous41FrozenArtifactsUnchanged": true,
+  "extraModelCallsOrResponseRepairs": false,
+  "imagesShapesProjectsOrPhone": false,
+  "files": {
+    "README.md": "5b61a97d35c92e6a74dcc07f2ca68fe060ea210f570cf5cd8ca7fca05a34e2de",
+    "batch-started.txt": "9ec6676274ac780320ed76ca5bdb91d07256015e40b59dc279512f5a890404b1",
+    "condition-decoder.diff": "836a2561a9ee1323760d63175e689538d1fd005e9abc4e1bf2190c579735ceda",
+    "expected-local-files.json": "2268e58b7922742dd276fd4aa19f65f82934b04e65aa2ddf10178a4b2e9aa805",
+    "fixed-requests.json": "ef0213b73113871748ef400fd4973ae60e2c4f37f79a306f324946453a118ffa",
+    "lamp/intent.json": "b6a72317527fbe68573526bd1b511f0f0947aa4f2b66204c5260b685ed9c16a0",
+    "lamp/response.raw.txt": "58070d8a32e6f17005edb92acde29fa0062a69e25d73280b680a60b3d9abeb59",
+    "lamp/result.json": "9e3cd49c9f8caafcc2e9950d618e7b7ec7b79fcab3b0e63b2c97dfecc7b34ed0",
+    "protocol-before-run.md": "3c7976cc31c4368d35becf469c8525721a14f40646166800add9c099c4e09512",
+    "provenance-before-run.json": "39e3f1dd74419b4175cfabd2ecbf076b06391c34921c77d8137fe4ca19ce1ff1",
+    "results.json": "2e15b59f6199ff9e324002bffa7b16fa90f14c316a5566d1fae78a1ca4de1d1c",
+    "semantic-review.json": "db799f86b3b00399bdf689b339386ed25a4157ec021bed863e6b01543ea4482a",
+    "spiral_shell_vase/intent.json": "1983acb56afccd375bfb395841d250cac181e51dfcbcfe8dc531e24fe4edba7d",
+    "spiral_shell_vase/response.raw.txt": "59349e52748be8a144d92a15092ee3e9a682501af07cf32282c884892d2df122",
+    "spiral_shell_vase/result.json": "37f696e07cb3ecf8a99bf070ea49dbd516a5a012dda0200f8c9c443e6f1ae8e5",
+    "verification-after-run.json": "795d7afe400b94ab69056cc4c2a867ff0ccd0e88e8ef52ab4b34fa14c2b0d979",
+    "violin_and_bow/intent.json": "a3c6c0341bf7915bac80e3310c2f20240d7af0c6c870b13fe43c64649c5047e2",
+    "violin_and_bow/response.raw.txt": "678ccf00fb5f195aebccc33607bd296f2aa06ee60d44a38bdddef5ffcbe767f0",
+    "violin_and_bow/result.json": "8b707c89237e6a373fc35dd5d0becf1f73f86e0b0d5f15735bffa11da45d1d01"
+  }
+}

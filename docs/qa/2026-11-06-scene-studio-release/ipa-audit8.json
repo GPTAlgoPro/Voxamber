@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "appID": "6831042755",
+  "bundleID": "com.kaisun.voxamber",
+  "marketingVersion": "0.2.0",
+  "buildNumber": "8",
+  "ipaPath": "/Users/kaisun/Three-Live/Apple/.build/ThreeLiveReturn/Export-0.2.0-8/VoxamberSceneStudio.ipa",
+  "ipaByteCount": 8965335,
+  "ipaSHA256": "4f4c43ede2c6417f211a97c1a77ce002aaa6c3b71dcd22bbb71200769bcd7d2a",
+  "sourceCommit": "0ff9649dcc106c25bb0ae9314e11304d7ff46e6b",
+  "checkedAtUTC": "2026-11-06T06:34:45.393353+00:00",
+  "bundles": [
+    {
+      "bundleID": "com.kaisun.voxamber",
+      "version": "0.2.0",
+      "build": "8",
+      "codesignStrict": true,
+      "getTaskAllowFalse": true,
+      "appGroupAndProfileMatch": true,
+      "noProfileDeviceList": true,
+      "executableSHA256": "b50635883ba555d427bec5f56807b5895d340e6e09b19e771fde1ce92860b17e"
+    },
+    {
+      "bundleID": "com.kaisun.voxamber.scene-import",
+      "version": "0.2.0",
+      "build": "8",
+      "codesignStrict": true,
+      "getTaskAllowFalse": true,
+      "appGroupAndProfileMatch": true,
+      "noProfileDeviceList": true,
+      "executableSHA256": "fa46e8cccde7094f609f5c54293ed6f4e896fc2d156520b4385efbe77364a3ff"
+    }
+  ],
+  "appBinaryUUID": "07E85DC3-C86A-3246-930F-398FD6DDC13A",
+  "checks": {
+    "signaturesAndAppGroupProfiles": true,
+    "actualGoogleNativeCompilerInMatchedDSYM": true,
+    "noLocalLLMOrDiffusionOrQAEngine": true,
+    "noTestBundlesOrWeightsOrPythonPrivateKeys": true,
+    "instructionsLicensePrivacyBundled": true,
+    "cameraSpeechMicrophonePurposeStringsPresent": true,
+    "shareExtensionPointCorrect": true
+  },
+  "scope": "Actual exported IPA local audit only; Apple ingestion/processing/readiness remain separate",
+  "replacesRejectedBuild": "7",
+  "rejectionFixed": "90683 NSSpeechRecognitionUsageDescription; both SDK-declared voice purpose strings supplied, no new voice API invocation"
+}

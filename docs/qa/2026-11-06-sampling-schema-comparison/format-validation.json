@@ -1,0 +1,27 @@
+{
+  "tool": "Khronos glTF Validator",
+  "version": "2.0.0-dev.3.10",
+  "scope": "File validation only; not model instruction or visual acceptance",
+  "cases": [
+    {
+      "id": "robot",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": "lamp",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": "whale",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": "chair",
+      "errors": 0,
+      "warnings": 0
+    }
+  ]
+}

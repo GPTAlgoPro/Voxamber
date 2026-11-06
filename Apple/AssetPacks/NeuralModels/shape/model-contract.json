@@ -1,0 +1,109 @@
+{
+  "apple": {
+    "assetPackID": "Voxamber-Hunyuan21-Shape-Q4-30B93",
+    "available": false,
+    "contractRelativePath": "contracts/hunyuan-shape-2.1-q4-30b93.json",
+    "modelRootRelativePath": "models/hunyuan-shape-2.1-q4-30b93"
+  },
+  "displayName": "三维形体 · Hunyuan2.1重建候选",
+  "files": [
+    {
+      "byteCount": 2490378518,
+      "path": "model.q4.safetensors",
+      "sha256": "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7"
+    },
+    {
+      "byteCount": 2078,
+      "path": "config.yaml",
+      "sha256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e"
+    }
+  ],
+  "formatVersion": 1,
+  "group": "shape",
+  "id": "hunyuan-shape-2.1-q4-30b93",
+  "identityStatus": "source-recipe-tensor-verified-candidate-device-unverified",
+  "packaging": {
+    "dataOnly": true,
+    "legalFiles": [
+      {
+        "byteCount": 7575,
+        "relativePath": "Licenses/hunyuan-shape-2.1-q4-30b93/Snap3D-ThirdPartyNotices.txt",
+        "sha256": "679ddc10a7dbe0c3170c55dfd00dd2c6b40bab320c7927c6fe6ea22754023b8c",
+        "source": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Snap3D-ThirdPartyNotices.txt"
+      },
+      {
+        "byteCount": 16644,
+        "relativePath": "Licenses/hunyuan-shape-2.1-q4-30b93/Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt",
+        "sha256": "ffccf6b539a82e6084d14ff064dadd22d33384d6164b07c0c5a3141810df0350",
+        "source": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt"
+      },
+      {
+        "byteCount": 17915,
+        "relativePath": "Licenses/hunyuan-shape-2.1-q4-30b93/Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt",
+        "sha256": "5bd08f93b2d280bb26ff3eed5d3996fe47a9698b5f7785163928668d7fd578c6",
+        "source": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt"
+      },
+      {
+        "byteCount": 1069,
+        "relativePath": "Licenses/hunyuan-shape-2.1-q4-30b93/Hunyuan3D-Swift-MIT.txt",
+        "sha256": "e0485dc21868a42682cf1255af42d1bf038cf5e80608b2006b5c69d65d426d7f",
+        "source": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Hunyuan3D-Swift-MIT.txt"
+      },
+      {
+        "byteCount": 1426,
+        "relativePath": "Licenses/hunyuan-shape-2.1-q4-30b93/Hunyuan3D-Swift-ThirdParty.md",
+        "sha256": "abd4d61f1c0bf3dcfc6a399457f26254be74518dc53de8b69e2606e3a3a1d241",
+        "source": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Hunyuan3D-Swift-ThirdParty.md"
+      },
+      {
+        "byteCount": 17911,
+        "relativePath": "Licenses/hunyuan-shape-2.1-q4-30b93/Tencent-Hunyuan-3D-2.1-License.txt",
+        "sha256": "f60f9fdf0c40cdd3983123eb8181caac027a6f86d4ea3c827618e5e1e5adc6db",
+        "source": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/Legal/Tencent-Hunyuan-3D-2.1-License.txt"
+      },
+      {
+        "byteCount": 1067,
+        "relativePath": "Licenses/hunyuan-shape-2.1-q4-30b93/MLX-Swift.txt",
+        "sha256": "44326a4ea062241ae6fc26ee2ec90bdc81af7eb7b9d3966181b733fa69d42057",
+        "source": "Apple/ThreeLiveStudio/Resources/Licenses/MLX-Swift.txt"
+      },
+      {
+        "byteCount": 11388,
+        "relativePath": "Licenses/hunyuan-shape-2.1-q4-30b93/DLPack.txt",
+        "sha256": "6bbee1883f24c06770474e1d8c44cd8e021693798548eab83747a4c6e63cc579",
+        "source": "Apple/ThreeLiveStudio/Resources/Licenses/DLPack.txt"
+      }
+    ],
+    "modelPinIdentitySHA256": "5e6c214c00030e401beaff077aa1082f3307e846b89fae8bf8ef0f1a2837d0e0",
+    "neuralOrDeviceAcceptanceClaimed": false,
+    "publicationEnabled": false,
+    "schemaVersion": 1,
+    "sourceManifestSHA256": "7939b77b44905451f506c75b7f3bf71876258711d4f0ebd28d79b4fb7332d0eb"
+  },
+  "source": {
+    "deviceProfileValidated": false,
+    "legacyPackIdentity": {
+      "bytes": 2490378616,
+      "sha256": "69cd908e83bbf51200c63a2a163e2dfd34d2be0571c33b92f4a922489c564842",
+      "tensorEquivalenceToCandidateProven": false
+    },
+    "license": "Tencent Hunyuan3D2.1 Community",
+    "packNote": "Distinct rebuilt candidate: all2357 tensors byte-exact against fixed FP16 sources/original MLX0.31.4 GPU recipe. Legacy69 header absent; equivalence not claimed. Current MLX0.32.3 NN/device acceptance pending.",
+    "packRevision": "voxamber-rebuild-20261106-q4-30b93ce8",
+    "parameterCountDeployed": 3569340225,
+    "repository": "tencent/Hunyuan3D-2.1",
+    "revision": "0b94677654c57bb9a6b6845cd7b704ccf551d327",
+    "runtime0323NNParityVerified": false,
+    "sdkWeightProfile": "native-rebuild-20261106-q4-30b93ce8",
+    "sourceRecipeTensorParityVerified": true,
+    "sourceTensorRepository": "dgrauet/hunyuan3d-2.1-mlx",
+    "sourceTensorRevision": "6bb9063eda419c4024a63f72507122339f69c2a1",
+    "tensorVerificationReceiptSHA256": "d0c2b4b1dc0af19d670f8638c6d59549a05e0ba662be7b0cfe6177fa768371a8",
+    "territoryExcludes": [
+      "European Union",
+      "United Kingdom",
+      "South Korea"
+    ]
+  },
+  "sourceReferenceURL": "https://huggingface.co/tencent/Hunyuan3D-2.1/tree/0b94677654c57bb9a6b6845cd7b704ccf551d327"
+}

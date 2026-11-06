@@ -1,0 +1,321 @@
+{
+  "recordedAtUTC": "2026-11-05T20:10:01.827066+00:00",
+  "status": "downloaded_whole_sha_verified_safely_extracted_admitted_no_inference",
+  "storageRoot": "Apple/.build/NeuralModels",
+  "allWeightsAndPartialFilesIgnoredByGit": true,
+  "SDKFreezeSourceEdited": false,
+  "physicalPhoneOperated": false,
+  "inferenceRun": false,
+  "SDXL": {
+    "repository": "apple/coreml-stable-diffusion-xl-base-ios",
+    "revision": "ef92c54fe816c826f5328709b545338518d08db7",
+    "archivePath": "Apple/.build/NeuralModels/downloads/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled.zip",
+    "archiveBytes": 3052964832,
+    "archiveSHA256": "0e6b8d0ae7a1990f0cd31b5bbc8de600c096e54369add395ef21042832424faa",
+    "wholeSHA256VerifiedBytes": 3052964832,
+    "wholeArchiveRehashedIndependentlyBeforeExtraction": true,
+    "resourcesDirectory": "Apple/.build/NeuralModels/SDXL/Extracted/coreml-stable-diffusion-xl-base-ios_split_einsum_compiled",
+    "extractionEntries": 43,
+    "extractedFiles": {
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder.mlmodelc/weights/weight.bin": {
+        "bytes": 246145536,
+        "sha256": "72a0d48befc2a65462b0c320927d31b4b0c8bdcae383d357f4209de9bbc4d6d5"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder.mlmodelc/metadata.json": {
+        "bytes": 2804,
+        "sha256": "19ecdd8f6afc15bf9c04b070125991a4c7c4959e5943a8c103517f1eab1756f2"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder.mlmodelc/model.mil": {
+        "bytes": 187532,
+        "sha256": "6b4c14a5bbddc902dba92a31d1775caf74a6f51f9cb63e0a180335fc9ffd2d10"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder.mlmodelc/coremldata.bin": {
+        "bytes": 860,
+        "sha256": "dce008301b82a1598022040d02303a414be207b0b12cd4510432281b6678a5f5"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder.mlmodelc/analytics/coremldata.bin": {
+        "bytes": 243,
+        "sha256": "ba0cd4cdb851a15a59e0610f198aeb8dbe24cc758d99922e65955a44f79dfc9f"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk2.mlmodelc/weights/weight.bin": {
+        "bytes": 651783424,
+        "sha256": "3187aa81e7258dae2d80e0cb1060416f25265ea920e9be72642c24970caf9c52"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk2.mlmodelc/metadata.json": {
+        "bytes": 6092,
+        "sha256": "7bd5d2375cdfd14095ecc23976af46d36ca3066be141bed5ead493b49e5d995e"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk2.mlmodelc/model.mil": {
+        "bytes": 4107584,
+        "sha256": "9b206cbd3eb0145eeb985728f21fe91c89c728f82e23666b49290d6cf6196d89"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk2.mlmodelc/coremldata.bin": {
+        "bytes": 672,
+        "sha256": "1301537bd8ad0f89575f8c2b1398664df2d05032d38113bc3e85288b645ab466"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk2.mlmodelc/analytics/coremldata.bin": {
+        "bytes": 243,
+        "sha256": "338113769e38ebc471eb63a83b2a3a2497b8f0cc059a08c10cb3e6852896c75f"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder2.mlmodelc/weights/weight.bin": {
+        "bytes": 1389367424,
+        "sha256": "73ade7c979ddd33a1af71ecc581bdf4c5a5695f4c6adf6450ad0a914930d1459"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder2.mlmodelc/metadata.json": {
+        "bytes": 2809,
+        "sha256": "df3dc15d7f12f891e38fb23f71a0ab4391cad50250afa16f6c6251ec59973121"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder2.mlmodelc/model.mil": {
+        "bytes": 490294,
+        "sha256": "0661f53966ea164e08564165edf3a6aca41b87029df92eb31bb2c2b341734f5e"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder2.mlmodelc/coremldata.bin": {
+        "bytes": 860,
+        "sha256": "70b1249456151731abd5a48006cd0d08a424172fdeb104e59099e182882d13d0"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/TextEncoder2.mlmodelc/analytics/coremldata.bin": {
+        "bytes": 243,
+        "sha256": "a6c5f66dbbbb69b15ab440424185a2775026f6661723158140531d0a8caf11a2"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/merges.txt": {
+        "bytes": 524657,
+        "sha256": "f526393189112391ce6f9795d4695f704121ce452c3aad1f5335cc41337eba85"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/VAEDecoder.mlmodelc/weights/weight.bin": {
+        "bytes": 98993280,
+        "sha256": "9de777d8a5be28417a49a2a284749105d97d2a1eb56d2bdb448d511c82061b3e"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/VAEDecoder.mlmodelc/metadata.json": {
+        "bytes": 2591,
+        "sha256": "921bc8c0bc25db5a9a84a3fb0e3a987b3a267499e2ed457abdc03866945131a2"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/VAEDecoder.mlmodelc/model.mil": {
+        "bytes": 179220,
+        "sha256": "88d929e7c115c69dfa6411107ad332ac1179a1b86b15552dfd578101fc586b58"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/VAEDecoder.mlmodelc/coremldata.bin": {
+        "bytes": 809,
+        "sha256": "4492ee202d19fc3ed370a137f408e887fcf7ccf1fe957da9ed97bb7c9f9cab22"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/VAEDecoder.mlmodelc/analytics/coremldata.bin": {
+        "bytes": 243,
+        "sha256": "055c412933973d54894c58716cd08be44f50057a7f37e17be97b2e93b64b6321"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/vocab.json": {
+        "bytes": 862328,
+        "sha256": "5047b556ce86ccaf6aa22b3ffccfc52d391ea4accdab9c2f2407da5b742d4363"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk1.mlmodelc/weights/weight.bin": {
+        "bytes": 653930048,
+        "sha256": "c3157612374be1fdf8e5e61dbf6b8c2138fdc81dd70c8ed08e785e62657d85fa"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk1.mlmodelc/metadata.json": {
+        "bytes": 6996,
+        "sha256": "d99765739d63a3e257d6402b329f8e4d974cbe09c5e6b3bf1bc838a583c3bd22"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk1.mlmodelc/model.mil": {
+        "bytes": 6353892,
+        "sha256": "0cfe5ccf4f905b14b08fecde4d8d9184ad0c0205d3d3bcc4869e8702d8ab3b83"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk1.mlmodelc/coremldata.bin": {
+        "bytes": 743,
+        "sha256": "4544dad1a05973f5c9298509782061ae5a6ccedf1cfce1dbf18e46735906863e"
+      },
+      "coreml-stable-diffusion-xl-base-ios_split_einsum_compiled/UnetChunk1.mlmodelc/analytics/coremldata.bin": {
+        "bytes": 243,
+        "sha256": "b6911510036e3a9f3df8544d6f451625e8faa8dc9f9f4c024ae5e88cf9b170c5"
+      }
+    },
+    "allExpectedSevenResourcesPresentWithCorrectKinds": true,
+    "nativeSDKAdmission": {
+      "allTokenIDsInRange": true,
+      "CoreMLModelInstantiated": false,
+      "inferenceRun": false,
+      "nativeBPELoaded": true,
+      "paddedTokenCount": 77,
+      "SDKLayoutAdmission": true,
+      "SDKTokenizerAdmission": true,
+      "vocabularyEntries": 49408
+    }
+  },
+  "Qwen08": {
+    "repository": "mlx-community/Qwen3.5-0.8B-4bit",
+    "revision": "da28692b5f139cb0ec58a356b437486b7dac7462",
+    "directory": "Apple/.build/NeuralModels/Qwen3.5-0.8B-4bit",
+    "files": [
+      {
+        "name": "chat_template.jinja",
+        "bytes": 7755,
+        "sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+        "verified": true
+      },
+      {
+        "name": "config.json",
+        "bytes": 3112,
+        "sha256": "ba7770da23eae5ebd6827571f086e331956b33f4442a9e876fb4aa10969a6772",
+        "verified": true
+      },
+      {
+        "name": "model.safetensors.index.json",
+        "bytes": 71473,
+        "sha256": "6e48f2fa5d6f033a6d77bf833abfa9698ca24d1715ecea4c67447bcfaee44650",
+        "verified": true
+      },
+      {
+        "name": "preprocessor_config.json",
+        "bytes": 390,
+        "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+        "verified": true
+      },
+      {
+        "name": "processor_config.json",
+        "bytes": 1300,
+        "sha256": "14932921ca485d458a04dafd8069fbb0a4505622a48208d19ed247115801385b",
+        "verified": true
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 1139,
+        "sha256": "e98f1901ac6f0adff67b1d540bfa0c36ac1a0cf59eb72ed78146ef89aafa1182",
+        "verified": true
+      },
+      {
+        "name": "video_preprocessor_config.json",
+        "bytes": 385,
+        "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+        "verified": true
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 625229487,
+        "sha256": "f5a0d9dd3efa73510542a8023d610ff26be2b4b020d181cfc4bedaa1fcc5dd9e",
+        "verified": true
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 19989343,
+        "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+        "verified": true
+      },
+      {
+        "name": "LICENSE",
+        "bytes": 11544,
+        "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+        "verified": true
+      }
+    ],
+    "wholeSHA256VerifiedBytes": 645315928,
+    "allTenFilesVerified": true,
+    "quantization": {
+      "bits": 4,
+      "group_size": 64,
+      "mode": "affine"
+    },
+    "headerTensorEntries": 847,
+    "headerDtypes": {
+      "BF16": 642,
+      "U32": 187,
+      "F32": 18
+    },
+    "verifiedTokenizerCacheReuse": [
+      {
+        "name": "tokenizer.json",
+        "bytes": 19989343,
+        "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+        "source": "Apple/.build/Models/qwen3.5-4b-mlx-int4/tokenizer.json"
+      }
+    ],
+    "licenseSource": "Official Qwen original revision 2fc06364715b967f1860aea9cf38778875588b17, Apache-2.0; exact LICENSE SHA in files.",
+    "instructionTuningLineageNotEstablished": "Pinned quantized card frontmatter says Qwen3.5-0.8B-Base but prose says Qwen3.5-0.8B. This conflict was sent to model research/Root; byte integrity is verified, semantic/instruct identity and actual JSON translation remain untested."
+  },
+  "totalPinnedDownloadBytesVerified": 3698280760,
+  "transport": {
+    "HTTP206Required": true,
+    "ContentRangeOffsetEndTotalChecked": true,
+    "strongETagConsistencyCheckedPerSource": true,
+    "wholeFileSHA256AgainstPinnedManifestRequired": true,
+    "credentialsSignedRedirectURLsAndRawHTTPPublished": false,
+    "sourceAliasesAreIdenticalByPinnedWholeHash": true,
+    "logicalHFRevisionsUnchanged": true,
+    "controlledTransitions": [
+      {
+        "reason": "Parallel disjoint ranges after measuring a slow single connection",
+        "preservedSDXLPrefixBytes": 308281344,
+        "preservedQwenPrefixBytes": 54525952,
+        "partsRetained": true
+      },
+      {
+        "reason": "ModelScope exact same SHA/size metadata plus four-MiB byte match and materially faster measured source",
+        "preservedSDXLReceivedBytesAtSwitch": 1156579328,
+        "preservedQwenReceivedBytesAtSwitch": 479199232,
+        "allPrefixesAndRangePartsRetained": true
+      }
+    ],
+    "mirrorProof": {
+      "SDXL": {
+        "repository": "apple/coreml-stable-diffusion-xl-base-ios",
+        "revision": "aa1e2dc4f1f54874648149249b4b38941e33695a",
+        "bytes": 3052964832,
+        "sha256": "0e6b8d0ae7a1990f0cd31b5bbc8de600c096e54369add395ef21042832424faa",
+        "matchingFourMiBHFPrefix": true,
+        "probeSeconds": 2.94,
+        "range206": true,
+        "strongETag": true
+      },
+      "QwenWeight": {
+        "repository": "mlx-community/Qwen3.5-0.8B-4bit",
+        "revision": "f607c492a6aeeb50ca73cca0b924c006331a02af",
+        "bytes": 625229487,
+        "sha256": "f5a0d9dd3efa73510542a8023d610ff26be2b4b020d181cfc4bedaa1fcc5dd9e",
+        "matchingFourMiBHFPrefix": true,
+        "probeSeconds": 2.94,
+        "range206": true,
+        "strongETag": true
+      }
+    },
+    "liveHandlesCompleted": {
+      "SDXL": 67589,
+      "Qwen08": 97045
+    },
+    "earlierLiveHandlesSupersededForMeasuredOptimizations": [
+      94594,
+      5181,
+      69003,
+      90869
+    ],
+    "noProgressDiscardedOrModelUserFilesDeleted": true
+  },
+  "safeExtraction": {
+    "checks": [
+      "absolute",
+      "parent/current traversal",
+      "backslash/drive/NUL",
+      "symlink/special",
+      "duplicate including case/NFC collisions",
+      "encrypted",
+      "count/size budget"
+    ],
+    "hostGuardTests": "9 malicious-entry rejection cases and a normal nested entry case; no inference",
+    "outputExistingPathsRefusedRatherThanOverwritten": true,
+    "ZIPSymlinksOrSpecialFilesAllowed": false,
+    "duplicateEntriesIncludingCaseAndNFCAllowed": false
+  },
+  "helperEvidenceSHA256": {
+    "download_pinned.py": "26d904b8db02e4f3b0daa42f41542edbdf4142ff5ab5daf4ead46ed389424d54",
+    "download_parallel.py": "1cc916e84782f5b801d7eaab6106e2dd060ccfcd475092690a3a47f94cf95b2f",
+    "safe_extract_sdxl.py": "2f6ec6a771017bf79f08c0cd5052e0314ac4192b9c4c7d92b993356cb0a8646a",
+    "main.swift": "67b753424a8ff2bc5ff657f785fec0d150a74a5c6fd5b543c74883cc7d246fa8"
+  },
+  "sourceManifestSHA256": {
+    "SDKResourceManifest": "641905e6b8c2777b66080824fcf7ef9c59bc5bf8158257b16af3a96dfc77e020",
+    "QwenOriginalPinnedManifest": "bbc6248923105b339064a8d785328329bd91a955324a485305a286c61c90a927"
+  },
+  "notEstablished": [
+    "Actual SDXL inference/quality/runtime memory/cancellation",
+    "Actual Qwen0.8 translator behavior and ambiguous card lineage",
+    "Actual Vision segmentation or Shape inference",
+    "Offline complete pipeline/App acceptance",
+    "Apple-hosted asset upload/processing/distribution"
+  ],
+  "AppASCReleaseActions": false
+}

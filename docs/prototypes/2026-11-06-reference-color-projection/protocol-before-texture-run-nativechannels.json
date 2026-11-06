@@ -1,0 +1,86 @@
+{
+  "condition": "One synthetic asymmetric RGB texture triangle embedded in GLB BIN and USDZ archive; no large-mesh UV system",
+  "preparedAtUTC": "2026-11-06T00:49:59.595236+00:00",
+  "sourceSHA256": {
+    "Package.swift": "18eda22936f404f1ebbc9d0c8c56c8d9f401a0b286ca544ccbd68567100a4e77",
+    "Sources/ReferenceColorProjection/ColorProjection.swift": "7628b31964c6607975d6b0c5c62430bf652a61458a359407f834cd3bc73c7f85",
+    "Sources/ReferenceColorProjection/GLBMesh.swift": "138a474dcb9b9af231770e5f295a75e467b3cd9f6914c9a6e1d5b1f7acf49641",
+    "Sources/ReferenceColorProjection/NativeReadback.swift": "021dea332df7ed3781f2eaa8fda6e88b2b771a727e18d6a85345a98c6b2ddb86",
+    "Sources/ReferenceColorProjection/ProjectionCLI.swift": "5d7dafc13d1b245f4c813e211150cf58053a73d2e2c5b9350df0e504de864514",
+    "Sources/ReferenceColorProjection/QuickLookColorProbe.swift": "09ed797ad86e3807557ef16c6ad92c5fb5beba375ec90643dfaf8e4310a757a1",
+    "Sources/ReferenceColorProjection/TextureCompatibilityProbe.swift": "751e92d87a75383cada8bc06ee7b7e6e105a304b1da6be48b77e57a87676ac79",
+    "Sources/ReferenceColorProjection/USDZArchiveWriter.swift": "cc9de8b29060927390c8989cdf33afd08c74ad1259be5dd43798bc825d68bb1a",
+    "Sources/ReferenceColorProjection/VertexColorUSDZ.swift": "6fab8e9105633617656289dea002970728748c689d7aa71aaba04abc0ad2f53d",
+    "Tests/ReferenceColorProjectionTests/ProjectionTests.swift": "a3162671aef6c57085f58bcbc092c7c9df1a2bf131afca881403c04cf25e17b1"
+  },
+  "binarySHA256": "6e0d5ed853721abf7ac46fddeacfc4de67d78a12c16a27ff720e6bc6aa11189a",
+  "fixture": {
+    "positions": [
+      0,
+      0,
+      0,
+      1.2,
+      0,
+      0,
+      0.15,
+      0.9,
+      0
+    ],
+    "indices": [
+      0,
+      1,
+      2
+    ],
+    "sourceVertexMap": [
+      0,
+      1,
+      2
+    ],
+    "USDZFaceVaryingUV": [
+      0.1,
+      0.1,
+      0.9,
+      0.2,
+      0.2,
+      0.9
+    ],
+    "GLBUV": "u,1-v since glTF origin is upper-left and canonical USD ST is bottom-left",
+    "PNG": "64x64 sRGB opaque, rows0..23red; other rows x0..37green,x38..63blue",
+    "material": "UsdUVTexture PNG -> UsdPreviewSurface diffuse, fixed metallic0 roughness0.7; no renderer overrides"
+  },
+  "plannedOutput": "Apple/.build/ReferenceColorProjection/TexturedTiny03",
+  "QuickLookRequestsPlanned": 1,
+  "nativeWorldGeometryAndOrderMustBeUnchanged": true,
+  "nativeTextureReadbackWillBeRecorded": true,
+  "colorAcceptanceRequiresActualQuickLookChromaticPixelsAndVisualReview": true,
+  "genericUVSeamsOrLargeMeshNotImplemented": true,
+  "priorConditionsUnmodified": true,
+  "NNCalls": 0,
+  "productionEdits": false,
+  "phoneOperations": 0,
+  "testsBeforeRun": {
+    "passed": 8,
+    "failed": 0,
+    "log": "Apple/.build/ReferenceColorProjection-texture-compile-tests.log",
+    "buildSeconds": 3.53,
+    "testSeconds": 0.094
+  },
+  "primarySpecs": [
+    "https://openusd.org/dev/spec_usdpreviewsurface.html",
+    "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#images"
+  ],
+  "priorAttempt": {
+    "output": "Apple/.build/ReferenceColorProjection/TexturedTiny01",
+    "exitCode": 133,
+    "error": "Host thrown Cocoa514 before archive creation: unchanged writer rejects archivePath slash.",
+    "QuickLookRequests": 0,
+    "repair": "Keep writer guard unchanged; archive PNG as root fixture.png and update USDA asset URI, same pixels/geometry/UVs."
+  },
+  "readbackRepair": {
+    "previousOutput": "Apple/.build/ReferenceColorProjection/TexturedTiny02",
+    "exitCode": 133,
+    "QuickLookRequests": 0,
+    "cause": "Validator read a multi-index-channel SCN faceVarying mesh as a single-channel stream. Native API inspection proved geometrySourceChannels [0,0,1], indicesChannelCount2 interleaved.",
+    "change": "Read native position index channel according to public API, retain strict original world-coordinate/index/winding equality; shader, PNG, geometry, UV and archive bytes unchanged."
+  }
+}

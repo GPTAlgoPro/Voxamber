@@ -1,0 +1,36 @@
+{
+  "attempts" : 1,
+  "completion" : {
+    "generatedTokenCount" : 66,
+    "grammar" : {
+      "compiledSchemaSHA256" : "2b264ad93e92517d83d46bd5d7ece6a352904cc25fbb794d90f1d10ccac2807d",
+      "floatBoundsRequireNativeValidation" : false,
+      "originalSchemaSHA256" : "b0cca3da1b258a501d529f28f29000eda4d54b3c8847082e2883ef27804bd3ea"
+    },
+    "grammarEnabled" : true,
+    "grammarTerminated" : false,
+    "inputTokenCount" : 182,
+    "reason" : "jsonComplete",
+    "tokenLimit" : 512
+  },
+  "error" : "The operation couldn’t be completed. (Qwen08PositiveOnlyIntentProbe.CreationError error 2.)",
+  "errorType" : "Qwen08PositiveOnlyIntentProbe.CreationError",
+  "firstTokenSeconds" : 2.6822160410000002,
+  "id" : "lamp",
+  "imagesOrGeometryGenerated" : false,
+  "intentAccepted" : false,
+  "maxTokens" : 512,
+  "prefillStepSize" : 128,
+  "rawObservability" : "same-call raw saved",
+  "rawReturned" : true,
+  "rawSHA256" : "bb68c4e33465b0968d2b80c1c865ef50be9c41c5e643f6e87a0ca8854ca0830b",
+  "rawUTF8Bytes" : 289,
+  "repair" : false,
+  "retry" : false,
+  "seconds" : 3.3281720876693726,
+  "semanticReview" : "pending manual synthetic-case review",
+  "status" : "rejected_or_failed",
+  "temperature" : 0,
+  "thinking" : false,
+  "user" : "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地Y=0，整体高约0.8米。"
+}

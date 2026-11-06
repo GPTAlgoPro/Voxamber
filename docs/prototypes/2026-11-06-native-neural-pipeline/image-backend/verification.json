@@ -1,0 +1,127 @@
+{
+  "recordedAtUTC": "2026-11-05T19:08:24.588421+00:00",
+  "state": "native_sdk_compiles_weightless_tests_pass_real_inference_not_tested",
+  "package": "Apple/Packages/VoxamberImageNative",
+  "sourceAndTestSHA256": {
+    "Package.swift": "3dff1bdbd5ef1e7ca5115cae4c7cc89d85dc914fd642f68aedfbdb90ffbc2f94",
+    "Sources/AppleSDXL/pipeline/CGImage+vImage.swift": "1a705171079dc8f71909804f38c2f47d3240f5d5a5b4c4b771f48ec26b4fc18d",
+    "Sources/AppleSDXL/pipeline/DPMSolverMultistepScheduler.swift": "935b57f0b632a9e166b7c46f8dfa18b5b24f1d3e70c261e87ffde9b89a24cdc3",
+    "Sources/AppleSDXL/pipeline/Decoder.swift": "6ace6ca382998b486ed7de37ee720e81217eea957ef6a057efd4e80b05a666b7",
+    "Sources/AppleSDXL/pipeline/DiscreteFlowScheduler.swift": "24a07120cb033a080100045b4d4efb9a73151b941c812be455d3ac83db64bae0",
+    "Sources/AppleSDXL/pipeline/Encoder.swift": "50f34834d4122dcdbec8f87f5c8ec8df38df9dd760e458359622e435b3eeca01",
+    "Sources/AppleSDXL/pipeline/ManagedMLModel.swift": "50294be55b4bec01796d9a8a4f61c45092482567f708c509de242ee3b45bd3dd",
+    "Sources/AppleSDXL/pipeline/NumPyRandomSource.swift": "72d94364c28b66ddfc2b82e61591286eeddc9b505004ac009aff8f4e99b678d6",
+    "Sources/AppleSDXL/pipeline/NvRandomSource.swift": "509ee5424533408f0a3bb2af6fcfcec248d44e042bbdd84a345c35ea00efdc3a",
+    "Sources/AppleSDXL/pipeline/RandomSource.swift": "ddbc5f36a51986473d7b90183ddaae130f9e67de8896977f4d9cfee85d52c1d8",
+    "Sources/AppleSDXL/pipeline/ResourceManaging.swift": "d534f14e4d7a9660a2efacf3220f74fdb9698b08247c9c57ed902d733793dccb",
+    "Sources/AppleSDXL/pipeline/Scheduler.swift": "8a0fe6568bc89aa04def364dcddaef479875b8cb95628a94a1420dddf7e01b70",
+    "Sources/AppleSDXL/pipeline/StableDiffusionPipeline.Configuration.swift": "97156ca93fbfdd7555b0fe9b53ef9472706bc79869624dc3a09afc64ecb2d61e",
+    "Sources/AppleSDXL/pipeline/StableDiffusionPipeline.swift": "79b86817aa8b8c37727e4dd1f1097c7be690317df0dcbbdcd7924c9a40e6bb84",
+    "Sources/AppleSDXL/pipeline/StableDiffusionXL+Resources.swift": "c547460a6e3c09852e65570e3d9579623a2f93b3a374627a88321b98b44cde39",
+    "Sources/AppleSDXL/pipeline/StableDiffusionXLPipeline.swift": "1dec109f5b54987e196500e6f2539449957394e06d6779b2c320cd968c140884",
+    "Sources/AppleSDXL/pipeline/TextEncoderXL.swift": "7af760be14516e4f3f68d1cf9bf80f05893e05d9f435c2514431e92b538baa78",
+    "Sources/AppleSDXL/pipeline/TorchRandomSource.swift": "e45eddd61857793176c1f0accfd41537a6bac012d6ee1d3abce2db1a7e0f3b51",
+    "Sources/AppleSDXL/pipeline/Unet.swift": "2f22d726c1f6aa942ebffab8e26ceffa443def8970b6e99602795cce815c7962",
+    "Sources/AppleSDXL/tokenizer/BPETokenizer+Reading.swift": "0a27e1ade18f20ab0d61c439deb0c383210e5994e6d792c588a5dbf1aededf96",
+    "Sources/AppleSDXL/tokenizer/BPETokenizer.swift": "64b8f4bbbfa6bfba1c6d4789b65d868cf0c0e1fe3ccc8c8f2b4aa19475c6fe3c",
+    "Sources/VoxamberImageNative/ImageEngine.swift": "47cc59a3d2727e229ca52c0aaa6947962060c0c60ab60ddfa8032d62ab004809",
+    "Sources/VoxamberImageNative/ImageRequest.swift": "5b59f9f95543f911ce02e56ed3fe7d3eae9b2cb516de0b9a66336f7ac6d7c6df",
+    "Sources/VoxamberImageNative/SDXLResources.swift": "522b0c8f705494dc3786bb70eb703700f68119f22a91ceff7c2fece450ad6cd1",
+    "Tests/VoxamberImageNativeTests/ImageBackendTests.swift": "000318519c42d9a83f3290a75b78cda9f627468c9f2946ed27ce0618da6736ab"
+  },
+  "upstreamProvenanceSHA256": "6d92d3b8012506cb5f9c7e2d9b290b6a0311d202e1c38e290636daba40344c1d",
+  "resourceMetadataSHA256": "641905e6b8c2777b66080824fcf7ef9c59bc5bf8158257b16af3a96dfc77e020",
+  "retainedUpstreamSwiftFiles": 20,
+  "originalSmallSourceDownloads": 27,
+  "originalSwiftBytesDownloaded": 163058,
+  "upstreamCommit": "ea2805dc1945be20561c77e5f6d1d9a5a637cda2",
+  "externalSwiftPackageDependencies": [],
+  "publicInterface": "ImageEngine.generate(positivePrompt: String, negativePrompt: String, seed: UInt32, resourcesURL: URL, options: SDXLGenerationOptions, onProgress: @Sendable (ImageGenerationProgress)->Void) async throws -> Data",
+  "interfaceSemantics": {
+    "inputPrompts": "Already-English user intent; no parser or translator in this SDK",
+    "output": "One actual 768x768 PNG Data",
+    "realBackend": "Apple StableDiffusionXLPipeline, dual CLIP + UNet + VAE",
+    "defaultSteps": 20,
+    "defaultReduceMemory": true,
+    "defaultTEAndUNetCompute": "cpuAndNeuralEngine",
+    "upstreamVAECompute": "cpuAndGPU",
+    "VAEScale": 0.13025,
+    "outputResizeInsideSDK": false,
+    "promptTruncation": false,
+    "modelIdentityAndChecksumResponsibility": "Caller asset manager; structural admission is not identity verification."
+  },
+  "cancellation": {
+    "callingTaskFlagChecked": true,
+    "nativePerStepBooleanBridge": true,
+    "checkpointsBetweenModelLoadsAndBeforeDecoder": true,
+    "deferUnloadsBeforeAnyReturnAfterDriverCreation": true,
+    "waitsForCurrentSynchronousCoreMLCall": true,
+    "hardwarePredictionPreemptionClaimed": false,
+    "realDeviceStopLatencyTested": false,
+    "mustAwaitCompletionBeforeShape": true
+  },
+  "actualVerification": {
+    "Mac": {
+      "command": "swift test --package-path Apple/Packages/VoxamberImageNative --scratch-path Apple/.build/VoxamberImageNative-MacBuild -c debug",
+      "passed": 11,
+      "failed": 0,
+      "finalBuildSeconds": 1.63,
+      "suiteSeconds": 0.006,
+      "target": "arm64e-apple-macos14.0",
+      "Swift": "6.4.2"
+    },
+    "iOS": {
+      "command": "xcodebuild -scheme VoxamberImageNative -destination generic/platform=iOS -configuration Debug IPHONEOS_DEPLOYMENT_TARGET=26.0 CODE_SIGNING_ALLOWED=NO build",
+      "result": "BUILD SUCCEEDED",
+      "architecture": "arm64",
+      "deploymentTarget": "26.0",
+      "SDK": "iPhoneOS27.2",
+      "installedOrLaunched": false
+    },
+    "warning": "Pinned Apple Scheduler cblas_saxpy deprecated warning on both platforms; not hidden or changed.",
+    "logSHA256": {
+      "VoxamberImageNative-Mac-test.log": "5c737695d78ad371d0e720b17117872f8ff05ec3d915e248fb812e387749a216",
+      "VoxamberImageNative-Mac-final-test.log": "7c0e7a1b63f067871be22bcf392771834185eaba5ae294928d5250a1e194d344",
+      "VoxamberImageNative-iOS-build.log": "68c3dd263d5d798ec41d60ae888e7b8693cb7e512a1cd9bdfa03477cde9d043e",
+      "VoxamberImageNative-iOS-final-build.log": "4295ae3dc3dddd5ebe68ad1293906a566f9518ced725726b8601cf132cdc13b4"
+    }
+  },
+  "weightlessTestScope": [
+    "Actual native BPE merges and both XL padding conventions",
+    "Malformed vocab decoding throws instead of force-try trap",
+    "Missing/single/chunk resource layout and unsupported auxiliary-model admission",
+    "No hidden prompt truncation; SDXL config seed/scale/dimensions preserved",
+    "Missing assets and invalid inputs do not create model driver",
+    "Injected load failure unloads without an image",
+    "Precancelled task exits before assets",
+    "Injected in-flight cancellation reaches step Bool and waits for unload; driver never returns an image",
+    "2x2 synthetic ImageIO format roundtrip only, separate from public inference success",
+    "PNDM one-step input is rejected before pinned upstream empty-array force unwrap; PNDM2 and DPM1 native schedules validated without model weights."
+  ],
+  "testDoublesReturnGeneratedImages": false,
+  "syntheticPNGCountedAsInference": false,
+  "setupNotes": [
+    "An initial swift build was invoked before the test directory was written and reported source overlap; explicit target paths and complete layout were established before the passing Mac and iOS builds."
+  ],
+  "notEstablished": [
+    "Any real SDXL image generation",
+    "Image/3D quality or Chinese intent adherence",
+    "iPhone peak memory <=6GiB",
+    "Actual phone cancellation latency or thermal behavior",
+    "Asset download/verification/offline readiness",
+    "Whole neural-chain parameter count including opaque Apple Vision model",
+    "Production App integration or release readiness"
+  ],
+  "protectedScope": {
+    "productionAppEdited": false,
+    "oldQwenOrCoreEdited": false,
+    "frozenScaleOrMeasurementPrototypeEdited": false,
+    "weightsDownloaded": false,
+    "GPUInferenceRun": false,
+    "phoneOrSimulatorOperated": false,
+    "ASCOrReleaseOperation": false,
+    "commitOrPush": false
+  },
+  "rawLogsAndBuildOutputsCommitted": false,
+  "remainingUpstreamPreconditions": "The retained Apple Core ML wrappers still expect the exact compiled feature schemas of the pinned asset. Structural admission is not a substitute for upstream model-schema compatibility or weight checksum verification."
+}

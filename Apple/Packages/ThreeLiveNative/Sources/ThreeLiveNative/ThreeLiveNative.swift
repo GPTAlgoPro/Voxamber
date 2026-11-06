@@ -217,7 +217,7 @@ public enum ThreeLiveNative {
     }
 
     /// USDZ is a stored ZIP whose file payloads begin at a multiple of 64 bytes.
-    private static func storedUSDZ(name: String, payload: Data) -> Data {
+    static func storedUSDZ(name: String, payload: Data) -> Data {
         let filename = Data(name.utf8)
         var extraLength = (64 - ((30 + filename.count) % 64)) % 64
         if extraLength > 0 && extraLength < 4 { extraLength += 64 }
@@ -281,7 +281,7 @@ public enum ThreeLiveNative {
         return value
     }
 
-    private static func crc32(_ data: Data) -> UInt32 {
+    static func crc32(_ data: Data) -> UInt32 {
         var crc: UInt32 = 0xffffffff
         for byte in data { crc = crcTable[Int((crc ^ UInt32(byte)) & 0xff)] ^ (crc >> 8) }
         return crc ^ 0xffffffff

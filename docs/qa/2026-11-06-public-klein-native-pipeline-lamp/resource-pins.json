@@ -1,0 +1,152 @@
+[
+  {
+    "group": "intent",
+    "relativePath": "chat_template.jinja",
+    "byteCount": 7755,
+    "sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80"
+  },
+  {
+    "group": "intent",
+    "relativePath": "config.json",
+    "byteCount": 3112,
+    "sha256": "ba7770da23eae5ebd6827571f086e331956b33f4442a9e876fb4aa10969a6772"
+  },
+  {
+    "group": "intent",
+    "relativePath": "model.safetensors.index.json",
+    "byteCount": 71473,
+    "sha256": "6e48f2fa5d6f033a6d77bf833abfa9698ca24d1715ecea4c67447bcfaee44650"
+  },
+  {
+    "group": "intent",
+    "relativePath": "preprocessor_config.json",
+    "byteCount": 390,
+    "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516"
+  },
+  {
+    "group": "intent",
+    "relativePath": "processor_config.json",
+    "byteCount": 1300,
+    "sha256": "14932921ca485d458a04dafd8069fbb0a4505622a48208d19ed247115801385b"
+  },
+  {
+    "group": "intent",
+    "relativePath": "tokenizer_config.json",
+    "byteCount": 1139,
+    "sha256": "e98f1901ac6f0adff67b1d540bfa0c36ac1a0cf59eb72ed78146ef89aafa1182"
+  },
+  {
+    "group": "intent",
+    "relativePath": "video_preprocessor_config.json",
+    "byteCount": 385,
+    "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13"
+  },
+  {
+    "group": "intent",
+    "relativePath": "model.safetensors",
+    "byteCount": 625229487,
+    "sha256": "f5a0d9dd3efa73510542a8023d610ff26be2b4b020d181cfc4bedaa1fcc5dd9e"
+  },
+  {
+    "group": "intent",
+    "relativePath": "tokenizer.json",
+    "byteCount": 19989343,
+    "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4"
+  },
+  {
+    "group": "intent",
+    "relativePath": "LICENSE",
+    "byteCount": 11544,
+    "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a"
+  },
+  {
+    "group": "image",
+    "relativePath": "Transformer/transformer/0.safetensors",
+    "byteCount": 2145323732,
+    "sha256": "3a75fc123a9ceb583b0d0202cc37166da3e1fc0ac8cd4a430987ceaf8e845b27"
+  },
+  {
+    "group": "image",
+    "relativePath": "Transformer/transformer/1.safetensors",
+    "byteCount": 34727761,
+    "sha256": "06998c075c1d9543f17f1cc7ae7170c365cdb3c09a1f78056804a252bb168fd5"
+  },
+  {
+    "group": "image",
+    "relativePath": "Transformer/transformer/model.safetensors.index.json",
+    "byteCount": 26945,
+    "sha256": "dc46409ae5d1a10ad3c5b87c615efd1d23e4b9f1c5caf46b8d92e459dadc48b9"
+  },
+  {
+    "group": "image",
+    "relativePath": "Qwen3/README.md",
+    "byteCount": 892,
+    "sha256": "cd7f49cdff1de73c2d006e15deb10b0e4b4a15af06686e06f9219c4bd0271b22"
+  },
+  {
+    "group": "image",
+    "relativePath": "Qwen3/added_tokens.json",
+    "byteCount": 707,
+    "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680"
+  },
+  {
+    "group": "image",
+    "relativePath": "Qwen3/config.json",
+    "byteCount": 937,
+    "sha256": "b5efdcf3b0035a3638e7228dad4d85f5c4a23f156eb7cdb0b44c8366a5d34d9b"
+  },
+  {
+    "group": "image",
+    "relativePath": "Qwen3/model.safetensors",
+    "byteCount": 2263022417,
+    "sha256": "365a6fff57490ca4e89e354c3295b7f2f60ac3fcb0a8a3fa06e21b80bb4d19ca"
+  },
+  {
+    "group": "image",
+    "relativePath": "Qwen3/model.safetensors.index.json",
+    "byteCount": 63924,
+    "sha256": "f7825defe5865d179c3b593173d37056be5f202dcb7153985cf74e75ecf1628b"
+  },
+  {
+    "group": "image",
+    "relativePath": "Qwen3/special_tokens_map.json",
+    "byteCount": 613,
+    "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+  },
+  {
+    "group": "image",
+    "relativePath": "Qwen3/tokenizer.json",
+    "byteCount": 11422654,
+    "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+  },
+  {
+    "group": "image",
+    "relativePath": "Qwen3/tokenizer_config.json",
+    "byteCount": 10219,
+    "sha256": "8e7dd4250db58b2a29792562d727b2715dc0fe79a94b446caa4c07db39eceba6"
+  },
+  {
+    "group": "image",
+    "relativePath": "VAE/README.md",
+    "byteCount": 3862,
+    "sha256": "b8e19f407064ea4dbeaa2354d99a2bc0ccf0631fe427a4ad217663684c989b91"
+  },
+  {
+    "group": "image",
+    "relativePath": "VAE/config.json",
+    "byteCount": 842,
+    "sha256": "88641eb0ebe46877b32822fb91aff828574765ef6b2b4bbc73d379051d006267"
+  },
+  {
+    "group": "image",
+    "relativePath": "VAE/diffusion_pytorch_model.safetensors",
+    "byteCount": 249521340,
+    "sha256": "d8d52ba036475f5fb07c8b435e176d3d97ebfa82f0d1a1c317f9cc1e25bd013b"
+  },
+  {
+    "group": "shape",
+    "relativePath": "model.q4.safetensors",
+    "byteCount": 2490378518,
+    "sha256": "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7"
+  }
+]

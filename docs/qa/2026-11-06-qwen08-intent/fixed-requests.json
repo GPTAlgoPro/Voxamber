@@ -1,0 +1,25 @@
+{
+  "api" : "formal-equivalent same-call raw Direct + exact production QwenJSONObject + exact CreationIntentDecoder",
+  "cases" : [
+    {
+      "id" : "lamp",
+      "user" : "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地Y=0，整体高约0.8米。"
+    },
+    {
+      "id" : "spiral_shell_vase",
+      "user" : "一个螺旋贝壳造型的蓝色花瓶，瓶口带金色细边。"
+    },
+    {
+      "id" : "violin_and_bow",
+      "user" : "一把小提琴和一根琴弓，作为两个独立物体完整入镜。"
+    }
+  ],
+  "maxTokens" : 512,
+  "prefillStepSize" : 128,
+  "schema" : "{\"type\":\"object\",\"properties\":{\"title\":{\"type\":\"string\",\"minLength\":1,\"maxLength\":40},\"positivePrompt\":{\"type\":\"string\",\"minLength\":1,\"maxLength\":180},\"negativePrompt\":{\"type\":\"string\",\"maxLength\":120}},\"required\":[\"title\",\"positivePrompt\",\"negativePrompt\"],\"additionalProperties\":false}",
+  "schemaSHA256" : "875513c3b3ff54d4af9d3f74dbb12bebc825cc4eed4cc80903b52db91f1e2088",
+  "system" : "Convert the user's idea into a concise English visual brief for an on-device 3D asset image generator.\nPreserve the requested subject, component counts, relationships, colors and materials. Do not substitute a template or add an unrequested pedestal. Include the complete subject in frame, with a clean neutral background unless the requested scene needs its surroundings.\nReturn only JSON with exactly title, positivePrompt, negativePrompt. title uses the user's language, 1-40 characters. positivePrompt is compact English, at most 180 characters. negativePrompt is a short English list, at most 120 characters, that never contradicts the request. Do not produce geometry, code, coordinates, explanations or Markdown.",
+  "systemSHA256" : "3a000385e68dc2c55c78039579ea9059398b4afbcf4fec3430e1572e28e4adda",
+  "temperature" : 0,
+  "thinking" : false
+}

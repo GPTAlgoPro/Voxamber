@@ -1,0 +1,145 @@
+{
+  "cacheMiB" : 64,
+  "entryPoint" : "direct host ShapeGenerator.generateGLB with raw hook; not public ShapeEngine.generate",
+  "fallbacks" : 0,
+  "guidance" : 5,
+  "inputSHA256" : "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae",
+  "latents" : 4096,
+  "legacyCPUEqualsDefaultNNExport" : true,
+  "MLXPeakBytes" : 4205861544,
+  "mobileAdmissionBytesUnchanged" : 5905580032,
+  "moeTokenChunkSize" : 512,
+  "observations" : {
+    "nominalSampleIntervalSeconds" : 0.10000000000000001,
+    "physicalPeakObservedBytes" : 4429842928,
+    "physicalSampleCount" : 949,
+    "stages" : [
+      {
+        "fraction" : 0.05000000074505806,
+        "seconds" : 1.1503980159759521,
+        "stage" : "Conditioning 1 view(s)"
+      },
+      {
+        "fraction" : 0.15999999642372131,
+        "seconds" : 12.987828969955444,
+        "stage" : "Denoising (1\/10)"
+      },
+      {
+        "fraction" : 0.2199999988079071,
+        "seconds" : 21.626612067222595,
+        "stage" : "Denoising (2\/10)"
+      },
+      {
+        "fraction" : 0.2800000011920929,
+        "seconds" : 30.464266061782837,
+        "stage" : "Denoising (3\/10)"
+      },
+      {
+        "fraction" : 0.34000000357627869,
+        "seconds" : 39.541871070861816,
+        "stage" : "Denoising (4\/10)"
+      },
+      {
+        "fraction" : 0.40000000596046448,
+        "seconds" : 48.907652974128723,
+        "stage" : "Denoising (5\/10)"
+      },
+      {
+        "fraction" : 0.46000000834465027,
+        "seconds" : 58.375158071517944,
+        "stage" : "Denoising (6\/10)"
+      },
+      {
+        "fraction" : 0.52000004053115845,
+        "seconds" : 67.614443063735962,
+        "stage" : "Denoising (7\/10)"
+      },
+      {
+        "fraction" : 0.58000004291534424,
+        "seconds" : 76.555889964103699,
+        "stage" : "Denoising (8\/10)"
+      },
+      {
+        "fraction" : 0.64000004529953003,
+        "seconds" : 85.414757013320923,
+        "stage" : "Denoising (9\/10)"
+      },
+      {
+        "fraction" : 0.72000002861022949,
+        "seconds" : 85.414775967597961,
+        "stage" : "Decoding shape"
+      },
+      {
+        "fraction" : 0.89999997615814209,
+        "seconds" : 98.606981039047241,
+        "stage" : "Building mesh"
+      },
+      {
+        "fraction" : 1,
+        "seconds" : 98.785191059112549,
+        "stage" : "Done"
+      }
+    ],
+    "watchdogTriggered" : false
+  },
+  "octreeResolution" : 192,
+  "physicalBytesAtEnd" : 426772112,
+  "profile" : "native-rebuild-20261106-q4-30b93ce8",
+  "rawFacePredicateClassification" : {
+    "keptBoth" : 400211,
+    "strictRestoresPositiveFloat32AreaBelowThreshold" : 561
+  },
+  "rawFaces" : 400772,
+  "rawSnapshotReloadExact" : true,
+  "rawVertices" : 200370,
+  "retries" : 0,
+  "seconds" : 100.890909075737,
+  "seed" : 24301,
+  "singleNNRequests" : 1,
+  "status" : "single_raw_and_two_CPU_exports_complete_pending_topology_and_visual_review",
+  "steps" : 10,
+  "variants" : [
+    {
+      "faces" : 400211,
+      "glbSHA256" : "8153667ca874a56aac9a2eef95fb28f470d5a9b68166fb7bcf35a728db9c18e4",
+      "kind" : "CPU cleanup of the same single neural raw mesh, not another NN call",
+      "maximum" : [
+        0.80257010459899902,
+        0.99366331100463867,
+        0.79029381275177002
+      ],
+      "minimum" : [
+        -0.81815707683563232,
+        -1.000112771987915,
+        -0.8083462119102478
+      ],
+      "name" : "legacy",
+      "nativeUSDZLines" : 0,
+      "nativeUSDZOtherPrimitives" : 0,
+      "nativeUSDZTriangles" : 400211,
+      "usdzSHA256" : "ddec6c21fdf74219effd5b8646f7b7ac8b70d5923d545dc9a8c9e9a515fab881",
+      "vertices" : 200370
+    },
+    {
+      "faces" : 400772,
+      "glbSHA256" : "42ea594bf5247fda74848ef2e958b27e09cee3d2d45529a61e0b0636ddcc2251",
+      "kind" : "CPU cleanup of the same single neural raw mesh, not another NN call",
+      "maximum" : [
+        0.80257010459899902,
+        0.99366331100463867,
+        0.79029381275177002
+      ],
+      "minimum" : [
+        -0.81815707683563232,
+        -1.000112771987915,
+        -0.8083462119102478
+      ],
+      "name" : "strict",
+      "nativeUSDZLines" : 0,
+      "nativeUSDZOtherPrimitives" : 0,
+      "nativeUSDZTriangles" : 400772,
+      "usdzSHA256" : "e455afc91ff3baa79f57d5ae0037a2fe702f638cd479ed3dacbb683502549f7f",
+      "vertices" : 200370
+    }
+  ]
+}

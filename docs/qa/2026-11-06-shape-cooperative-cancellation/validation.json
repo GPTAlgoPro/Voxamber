@@ -1,0 +1,170 @@
+{
+  "actualNNOrDeviceLatencyClaimed": false,
+  "beforeSource": {
+    "files": [
+      {
+        "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeDenoiser.swift",
+        "sha256": "c3629b746530f4fd2f200ceb5c08f761699aa7d6d8ab452a563ac247e662a73c"
+      },
+      {
+        "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/DiTPlain.swift",
+        "sha256": "9a634d2eb36cf7f6981281b959f87e737fd7ee434befd917fb262d76e0fd3a43"
+      },
+      {
+        "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Pipeline.swift",
+        "sha256": "3774aa0c216c870cf626d89eb6d8dec1398904732e5a8bafb127b7c134f1c7ba"
+      },
+      {
+        "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeGenerator.swift",
+        "sha256": "5a6ccff98eb7c6cc26346da5121dac5d755520634fa193e5fdf1fea83d0be0c7"
+      }
+    ],
+    "schemaVersion": 1
+  },
+  "cancellableProtocolRequirementDynamicDispatchTestPassed": true,
+  "frozenAtUTC": "2026-11-06T00:56:21.839560+00:00",
+  "iosCompile": {
+    "SDK": "iPhoneOS27.2",
+    "configuration": "Release",
+    "knownBuildMessages": "Initial APFS-cloned XCBuild graph reports old absolute stale outputs outside allowed roots; dependency shaders may emit existing C++17-extension warnings. No source/model numerical edits were made to suppress these.",
+    "passed": true,
+    "platform": "arm64-apple-ios26.0",
+    "seconds": 42.58,
+    "swiftSourceWarnings": 0
+  },
+  "limitations": [
+    "No real learned-model cancellation run authorized/performed in this task.",
+    "No iPhone or TestFlight download/inference evidence.",
+    "A current MLX evaluation cannot be preempted. Its lazy graph can include earlier dense/attention dependencies, so 512-token chunk checkpoints are not a 512-FFN or millisecond latency bound.",
+    "The existing owned worker await, autorelease, GPU synchronization/cache cleanup and runtime lease settlement remain unchanged."
+  ],
+  "noNewEvalOrClearCacheCalls": true,
+  "oldNonthrowingInterfacesRetained": true,
+  "preChangeCompiledObjectsStillMatchAfterIsolatedBuilds": true,
+  "preChangeGolden": {
+    "beforeProductionCancellationChanges": true,
+    "cases": [
+      {
+        "byteCount": 56,
+        "case": "denseUnchunked",
+        "sha256": "f5557c6db9d984ba8ac8afca9437a806999b6e3813181dac701ef9e69748ff4f"
+      },
+      {
+        "byteCount": 56,
+        "case": "denseChunked",
+        "sha256": "34677db8312bebfc29f1a0c4ca949ad76b23a00b57eb0c69fb594398efefbdd4"
+      },
+      {
+        "byteCount": 56,
+        "case": "sparseChunked",
+        "sha256": "34677db8312bebfc29f1a0c4ca949ad76b23a00b57eb0c69fb594398efefbdd4"
+      },
+      {
+        "byteCount": 56,
+        "case": "batchedCFG",
+        "sha256": "e6262fa821ec61eb6e9d05170abcdb8acf8feb942e42b057c1b011eb61c4ff47"
+      },
+      {
+        "byteCount": 56,
+        "case": "serializedCFG",
+        "sha256": "992e3bf8396433f0253b9a8ebce0aba4de0fce301d2f757decaf70c8394ebea6"
+      }
+    ],
+    "device": "CPU",
+    "schemaVersion": 1,
+    "trainedWeightsUsed": false
+  },
+  "promptWeightsPackSchedulerCFGUnchangedByThisPatch": true,
+  "schemaVersion": 1,
+  "scope": "Shape cooperative cancellation source + synthetic CPU tensors + native iOS compile; no new learned-model inference or phone validation",
+  "sourceSHA256": {
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/DiTPlain.swift": "c40ed01df0f80a706c84fd7c505ad6cc14e9154bc253da32d03830d73ffa6e6a",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Pipeline.swift": "8d49ee9efb0fe2f6c088b97e48e79e4a230795923b795b95a54ffa23da1e2e87",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeDenoiser.swift": "91d8e50eb07c5e3182038da3162d835423439136d8ee319d3812989bb741ee25",
+    "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeGenerator.swift": "b2fa07014ca73993d112feed035e9671e15206eec313fe2926a3c45760f946ba",
+    "Apple/Packages/VoxamberShapeNative/Tests/VoxamberShapeNativeTests/DenoiserCancellationTests.swift": "3f69fc1b8a0814792bec3cc2416e7c043256cfafad40db9d1f3019e27eef8502",
+    "Apple/Packages/VoxamberShapeNative/Tests/VoxamberShapeNativeTests/Fixtures/TinyDenoiserBeforeCancellation.json": "1f6e8fdbc8aa6e6f6a0698927520aaff6165a1fcb5be8402e6cf58ae108ae949",
+    "Apple/Packages/VoxamberShapeNative/Tests/VoxamberShapeNativeTests/TinyDenoiserFixture.swift": "e86b4033efa949cb7f54ce0189b1076ab5e246d5e673e9095a2c308ca87caf04"
+  },
+  "staticCallsiteComparison": [
+    {
+      "afterClearCacheCallCount": 3,
+      "afterEvalCallsites": [
+        "output)",
+        "term)",
+        "accumulated)",
+        "hostChoices)",
+        "values)",
+        "accumulated)"
+      ],
+      "beforeClearCacheCallCount": 3,
+      "beforeEvalCallsites": [
+        "output)",
+        "term)",
+        "accumulated)",
+        "hostChoices)",
+        "values)",
+        "accumulated)"
+      ],
+      "file": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/DiTPlain.swift",
+      "sameClearCacheCallCount": true,
+      "sameLexicalEvalCallsites": true,
+      "scope": "Static source-callsite check, not a weighted runtime execution trace"
+    },
+    {
+      "afterClearCacheCallCount": 2,
+      "afterEvalCallsites": [
+        "conditional)",
+        "unconditional)",
+        "lat)",
+        "kv)",
+        "sdf)",
+        "sdf)",
+        "kv)"
+      ],
+      "beforeClearCacheCallCount": 2,
+      "beforeEvalCallsites": [
+        "conditional)",
+        "unconditional)",
+        "lat)",
+        "kv)",
+        "sdf)",
+        "sdf)",
+        "kv)"
+      ],
+      "file": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Pipeline.swift",
+      "sameClearCacheCallCount": true,
+      "sameLexicalEvalCallsites": true,
+      "scope": "Static source-callsite check, not a weighted runtime execution trace"
+    },
+    {
+      "afterClearCacheCallCount": 4,
+      "afterEvalCallsites": [
+        "Array(dw.values));eval(Array(nw.values))//materializethepacked4-bit,dropfp16",
+        "cond)",
+        "lat);MLX.Memory.clearCache()//releasethe30-stepdenoisebuffersbeforedecode",
+        "grid);MLX.Memory.clearCache()//releasedecodebuffersbeforemarchingcubes"
+      ],
+      "beforeClearCacheCallCount": 4,
+      "beforeEvalCallsites": [
+        "Array(dw.values));eval(Array(nw.values))//materializethepacked4-bit,dropfp16",
+        "cond)",
+        "lat);MLX.Memory.clearCache()//releasethe30-stepdenoisebuffersbeforedecode",
+        "grid);MLX.Memory.clearCache()//releasedecodebuffersbeforemarchingcubes"
+      ],
+      "file": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeGenerator.swift",
+      "sameClearCacheCallCount": true,
+      "sameLexicalEvalCallsites": true,
+      "scope": "Static source-callsite check, not a weighted runtime execution trace"
+    }
+  ],
+  "tests": {
+    "allSDKFailed": 0,
+    "allSDKPassed": 35,
+    "allSDKTestSeconds": 5.074,
+    "focusedCancellationFailed": 0,
+    "focusedCancellationPassed": 11,
+    "learnedWeightsUsed": false,
+    "tensorDevice": "CPU"
+  }
+}

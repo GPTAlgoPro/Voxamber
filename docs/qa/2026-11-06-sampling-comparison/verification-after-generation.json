@@ -1,0 +1,145 @@
+{
+  "checkedAfterGenerationUTC": "2026-11-05T18:04:54.704641+00:00",
+  "sourceGroups": {
+    "productionSourceSHA256": {
+      "Apple/Packages/CreationCore/Package.swift": true,
+      "Apple/Packages/CreationCore/Sources/CreationCore/AttachmentResolver.swift": true,
+      "Apple/Packages/CreationCore/Sources/CreationCore/BuildingGenerator.swift": true,
+      "Apple/Packages/CreationCore/Sources/CreationCore/BuildingSpec.swift": true,
+      "Apple/Packages/CreationCore/Sources/CreationCore/FreeformGeometry.swift": true,
+      "Apple/Packages/CreationCore/Sources/CreationCore/SceneGenerationSchema.swift": true,
+      "Apple/Packages/CreationCore/Sources/CreationCore/SceneGenerator.swift": true,
+      "Apple/Packages/CreationCore/Sources/CreationCore/ScenePlan.swift": true,
+      "Apple/Packages/CreationCore/Sources/CreationCore/SceneSpec.swift": true,
+      "Apple/Packages/CreationCore/Sources/CreationCore/StrictJSONObject.swift": true,
+      "Apple/Packages/CreationCore/Tests/CreationCoreTests/AttachmentResolverTests.swift": true,
+      "Apple/Packages/CreationCore/Tests/CreationCoreTests/CreationCoreTests.swift": true,
+      "Apple/Packages/CreationCore/Tests/CreationCoreTests/FreeformGeometryTests.swift": true,
+      "Apple/Packages/CreationCore/Tests/CreationCoreTests/SceneCoreTests.swift": true,
+      "Apple/Packages/CreationCore/Tests/CreationCoreTests/SceneGenerationSchemaTests.swift": true,
+      "Apple/Packages/CreationCore/Tests/CreationCoreTests/ScenePlanTests.swift": true,
+      "Apple/Packages/CreationCore/Tests/CreationCoreTests/StrictJSONObjectTests.swift": true,
+      "Apple/Packages/QwenNative/Package.resolved": true,
+      "Apple/Packages/QwenNative/Package.swift": true,
+      "Apple/Packages/QwenNative/Sources/QwenBench/AttachmentBenchmark.swift": true,
+      "Apple/Packages/QwenNative/Sources/QwenBench/CancellationProbe.swift": true,
+      "Apple/Packages/QwenNative/Sources/QwenBench/GuidedModel.swift": true,
+      "Apple/Packages/QwenNative/Sources/QwenBench/ModelPreview.swift": true,
+      "Apple/Packages/QwenNative/Sources/QwenBench/SampledModel.swift": true,
+      "Apple/Packages/QwenNative/Sources/QwenBench/main.swift": true,
+      "Apple/Packages/QwenNative/Sources/QwenBench/plan-schema.json": true,
+      "Apple/Packages/QwenNative/Sources/QwenNative/LocalTokenizer.swift": true,
+      "Apple/Packages/QwenNative/Sources/QwenNative/NativeJSONGrammar.swift": true,
+      "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift": true,
+      "Apple/Packages/QwenNative/Sources/QwenNative/QwenGenerationCompletion.swift": true,
+      "Apple/Packages/QwenNative/Sources/QwenNative/QwenTokenStream.swift": true,
+      "Apple/Packages/QwenNative/Tests/QwenNativeTests/JSONCompletionTests.swift": true,
+      "Apple/Packages/QwenNative/Tests/QwenNativeTests/NativeJSONGrammarTests.swift": true,
+      "Apple/Packages/QwenNative/Tests/QwenNativeTests/SceneGrammarContractTests.swift": true,
+      "Apple/Packages/ThreeLiveNative/Package.swift": true,
+      "Apple/Packages/ThreeLiveNative/Sources/ThreeLiveNative/ThreeLiveNative.swift": true,
+      "Apple/Packages/ThreeLiveNative/Tests/ThreeLiveNativeTests/FreeformExportTests.swift": true,
+      "Apple/Packages/ThreeLiveNative/Tests/ThreeLiveNativeTests/ThreeLiveNativeTests.swift": true,
+      "Apple/Packages/ThreeLiveNative/freeform-validation-receipt.json": true,
+      "Apple/Packages/ThreeLiveNative/validation-receipt.json": true,
+      "Apple/Resources/ModelCatalog.json": true,
+      "Apple/ThreeLiveStudio/App/StudioModel.swift": true
+    },
+    "candidatePackageSHA256": {
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Package.resolved": true,
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Package.swift": true,
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenBench/AttachmentBenchmark.swift": true,
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenBench/CancellationProbe.swift": true,
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenBench/GuidedModel.swift": true,
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenBench/ModelPreview.swift": true,
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenBench/SampledModel.swift": true,
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenBench/main.swift": true,
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenNative/CandidateSampling.swift": true,
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenNative/LocalTokenizer.swift": true,
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenNative/NativeJSONGrammar.swift": true,
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenNative/QwenEngine.swift": true,
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenNative/QwenGenerationCompletion.swift": true,
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenNative/QwenTokenStream.swift": true,
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Tests/QwenNativeTests/CandidateSamplingTests.swift": true,
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Tests/QwenNativeTests/JSONCompletionTests.swift": true,
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Tests/QwenNativeTests/NativeJSONGrammarTests.swift": true,
+      "Apple/.build/SamplingCandidatePackages/QwenNative/Tests/QwenNativeTests/SceneGrammarContractTests.swift": true
+    },
+    "runnerSHA256": {
+      "Apple/.build/sampling-fresh-five-runner/Package.resolved": true,
+      "Apple/.build/sampling-fresh-five-runner/Package.swift": true,
+      "Apple/.build/sampling-fresh-five-runner/Sources/SamplingFreshFive/FormalJSONObject.swift": true,
+      "Apple/.build/sampling-fresh-five-runner/Sources/SamplingFreshFive/MeshSummary.swift": true,
+      "Apple/.build/sampling-fresh-five-runner/Sources/SamplingFreshFive/ModelPreview.swift": true,
+      "Apple/.build/sampling-fresh-five-runner/Sources/SamplingFreshFive/main.swift": true
+    }
+  },
+  "allSourcesUnchanged": true,
+  "all10WeightsFullSHAPassed": true,
+  "weights": [
+    {
+      "file": "chat_template.jinja",
+      "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+      "bytes": 7756,
+      "unchanged": true
+    },
+    {
+      "file": "config.json",
+      "sha256": "f3efc81b2ea8d96a45301037d3ccccbcccdef44a961845c87f286aaddbc6eaaa",
+      "bytes": 3366,
+      "unchanged": true
+    },
+    {
+      "file": "model.safetensors",
+      "sha256": "5fb9acd0246866381cf8c5c354c6db1019f6498eec4ccb4f5edcc71ffeacb2db",
+      "bytes": 3034300695,
+      "unchanged": true
+    },
+    {
+      "file": "model.safetensors.index.json",
+      "sha256": "52e534c41f7b97708329c85f762e5882bf48bd5955a422c6ae74eba321e6048a",
+      "bytes": 101944,
+      "unchanged": true
+    },
+    {
+      "file": "preprocessor_config.json",
+      "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+      "bytes": 390,
+      "unchanged": true
+    },
+    {
+      "file": "processor_config.json",
+      "sha256": "14932921ca485d458a04dafd8069fbb0a4505622a48208d19ed247115801385b",
+      "bytes": 1300,
+      "unchanged": true
+    },
+    {
+      "file": "tokenizer.json",
+      "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+      "bytes": 19989343,
+      "unchanged": true
+    },
+    {
+      "file": "tokenizer_config.json",
+      "sha256": "e98f1901ac6f0adff67b1d540bfa0c36ac1a0cf59eb72ed78146ef89aafa1182",
+      "bytes": 1139,
+      "unchanged": true
+    },
+    {
+      "file": "video_preprocessor_config.json",
+      "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+      "bytes": 385,
+      "unchanged": true
+    },
+    {
+      "file": "vocab.json",
+      "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003",
+      "bytes": 6722759,
+      "unchanged": true
+    }
+  ],
+  "binarySHAUnchanged": true,
+  "protocolSHAUnchanged": true,
+  "fixedPromptsSHAUnchanged": true,
+  "noProductionPipelineOrPhoneChange": true
+}

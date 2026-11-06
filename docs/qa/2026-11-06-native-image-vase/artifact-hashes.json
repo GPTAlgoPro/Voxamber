@@ -1,0 +1,11 @@
+{
+  "README.md": "a593a838fa2bf2198626ee42eb5703af4f0101b3c2ad7288728a78c77adc649b",
+  "execution-start.json": "ddb813987d28b2d813d1b01965a67dc9cc71d20a68a297951dc7693610822faf",
+  "protocol-before-run.md": "51ef75b880ec4d943024c577b71527fb4eab31c8bdcaa7a722154db5174cac20",
+  "provenance-before-run.json": "29f571f8f1645895c3d44b39065fd55e9b80b0362247658316c352c231e55d60",
+  "reference-original-768.png": "3f9df13ed358adb0329d84d874b54b36356c23e0b7a3a3bc5d84b7eb6c4589ba",
+  "reference-prepared-512-rgba.png": "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae",
+  "result.json": "bc8e423537610ad0273fe05f3061378cd3949ee83ec462485ff8d40bde5486f3",
+  "reused-intent-native.json": "1983acb56afccd375bfb395841d250cac181e51dfcbcfe8dc531e24fe4edba7d",
+  "verification-after-run.json": "8f7f4c2d7d02a8fa7ee9b214b49cb4f2836e127b7121a00b987408190d20e44c"
+}

@@ -1,0 +1,40 @@
+{
+  "frozenAtUTC": "2026-11-05T20:57:03.626233+00:00",
+  "sourceSHA256": {
+    "Apple/Packages/QwenNative/Sources/QwenNative/LocalTokenizer.swift": "82988617a11bed0234181f904e214c2bdc0fc29c995b0b233f78ddf00ccc7937",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenTokenStream.swift": "074714e201c3fec4ec97307428d95f9a3b8ae3ddc207398e114d6a60c1fa234f",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift": "1e1a33f77a8f052d26ebbbd211b35942d0c6a8cb2469e5872ecf992ffd7d7fa3",
+    "Apple/Packages/QwenNative/Sources/QwenNative/NativeJSONGrammar.swift": "7dbc4cf98e9c6d414cc3d9e6230c20955997efb682b11c8476173bd74eeeb016",
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenGenerationCompletion.swift": "f2a762906ec689b55a5687703e040e3bb11df5891b1267af515204c337ba3896",
+    "Apple/.build/qwen08-translation-intent-runner/Sources/Qwen08TranslationIntentProbe/CreationIntentDecoder.swift": "14ab334319a0914c3113932ddddf4d004b2bcc1f846a4b7a2983e4fe286e9608",
+    "Apple/.build/qwen08-translation-intent-runner/Sources/Qwen08TranslationIntentProbe/IntentTypes.swift": "6000718d5a8f489d40d99c4b9c9904054c9ff07b9f72211c8776b60fdeccea44",
+    "Apple/.build/qwen08-translation-intent-runner/Sources/Qwen08TranslationIntentProbe/FormalJSONObject.swift": "619e7b62d6acd050ada64a704f6d8837fd9d19b986ec222deacbd43afe970a35",
+    "Apple/.build/qwen08-translation-intent-runner/Sources/Qwen08TranslationIntentProbe/main.swift": "36576c2f8f7717433d2058f65be299f341507c7c264acf6fe0042fac7154a94d",
+    "Apple/Packages/VoxamberCreationNative/Sources/VoxamberCreationNative/CreationIntentDecoder.swift": "14ab334319a0914c3113932ddddf4d004b2bcc1f846a4b7a2983e4fe286e9608",
+    "Apple/Packages/VoxamberCreationNative/Sources/VoxamberCreationNative/CreationTypes.swift": "8afec7386de63309b88e4b409210a203576a8cba9ffb77c0584f8afa975756ab",
+    "Apple/Packages/VoxamberCreationNative/Tests/VoxamberCreationNativeTests/CreationIntentTests.swift": "16b5aef4f41089fd921ab2837ee5c6c1225a4ccc4201690e4d0f6a1f92704914",
+    "Apple/Packages/QwenNative/Package.swift": "ff2e120cdf828d7031db77207770caf3ac2933d4e62297d0b67cf0c94315caef",
+    "Apple/Packages/QwenNative/Package.resolved": "f786e22cb3052d8b2089ba0302de4c894708a5b44ebe30ec6a6592c1b1a5f6af",
+    "Apple/.build/qwen08-translation-intent-runner/Package.swift": "4649debc2fc6fd78d1efab913fadaecccfc3fbf05190c2853be10291605bc5e2",
+    "Apple/.build/qwen08-translation-intent-runner/Package.resolved": "bb4efc2ca38880a391960419704f9e3321e7d7ce594ffeac86215c6172dfe638"
+  },
+  "exactDecoderBytesMatch": true,
+  "systemSHA256": "c6322597b8c0b41eef9da903f33f76d6c888a4af67ee1f265abae3351d568444",
+  "schemaSHA256": "fc9662e1df994bba609f747289a4bf945462216578472386fcecfd8d527781aa",
+  "requestsSameThreeCasesAsEarlierConditions": true,
+  "requestsSHA256": "ef0213b73113871748ef400fd4973ae60e2c4f37f79a306f324946453a118ffa",
+  "protocolSHA256": "3c7976cc31c4368d35becf469c8525721a14f40646166800add9c099c4e09512",
+  "binarySHA256": "6f38afa8ac0ae23ad6b331908f7f9aa70a0bdf2bf063a21e28f67940c0fd3e0e",
+  "modelCallsBeforeRun": 0,
+  "modelLoadsBeforeRun": 0,
+  "plannedModelLoads": 1,
+  "plannedModelCalls": 3,
+  "LLMOutputFields": [
+    "positivePrompt"
+  ],
+  "nativeTitleAndNegativeNotModelCredit": true,
+  "newWireNotOldRawRepair": true,
+  "imageOrShapeCalls": 0,
+  "sourceChangedByThisTask": false,
+  "modelOrResourcePinsChanged": false
+}

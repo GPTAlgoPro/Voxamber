@@ -1,0 +1,45 @@
+{
+  "IOFailure": false,
+  "actualOutputDirectoryHasGLBorUSDZ": false,
+  "allOwnedTasksAwaitedByRunner": true,
+  "completedAtUTC": "2026-11-06T01:22:00.859435+00:00",
+  "firstAfterUnloadMLX": {
+    "activeBytes": 0,
+    "cacheBytes": 0,
+    "processPeakBytes": 4204812968
+  },
+  "firstDenoiseStepToRequestSeconds": 0.526182292,
+  "firstObservedPhysicalPeakBytes": 4214557144,
+  "firstPhysicalBytesAfterUnload": 323568936,
+  "frozenFileChanges": [],
+  "frozenFilesCheckedAfter": 57,
+  "inputAndWeightPinsStableAfter": true,
+  "latencyTargetPassed": true,
+  "limitations": [
+    "Host Mac only, not iPhone/UI/TestFlight acceptance.",
+    "One partial learned-model request; no full-generation peak memory or quality result.",
+    "Public progress defines the trigger; the private cancellation checkpoint is not identified.",
+    "This observation below5s is not a universal/phone/millisecond bound."
+  ],
+  "modelArtifactsPublished": 0,
+  "noNNLeaseProbePassed": true,
+  "privateChunkCheckpointObserved": false,
+  "probeAfterUnloadMLX": {
+    "activeBytes": 0,
+    "cacheBytes": 0,
+    "processPeakBytes": 4204812968
+  },
+  "probeObservedOnlyVerifyingStage": true,
+  "probeRequestToUnloadIdleSeconds": 0.0004105,
+  "processExitCode": 0,
+  "publicCalls": 2,
+  "reportSHA256": "304366a26a1b1f2cccf110277253e32f2bcf46c83dd686703536b5a638b9bad3",
+  "requestToPublicCancellationErrorSeconds": 1.016057791,
+  "requestToUnloadIdleSeconds": 1.016071333,
+  "retries": 0,
+  "schemaVersion": 1,
+  "singleAuthorizedPartialLearnedModelRequest": true,
+  "status": "PASS_FOR_THIS_HOST_CASE_ONLY",
+  "strictPredeclaredObservationTargetSeconds": 5,
+  "watchdogTriggered": false
+}

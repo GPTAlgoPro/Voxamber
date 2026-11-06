@@ -1,0 +1,3 @@
+公开ImageEngine先调用SDXLResources.validateTokenizer，使用真实BPE统计正/负两段，包含BOS/EOS，超过77即抛promptTooLong，发生在makeDriver与loadResources之前；此固定双CLIP77路径不静默截断。两CLIP使用相同vocab/merges，只有padding约定不同，未pad token数量相同。
+
+vendored Apple TextEncoderXL.encode仍有dropLast并打印truncate分支；绕过公开入口或替换不同输入长度模型时可能触发，不能把该内部代码概括为永不裁词。当前512字符只改变翻译容量，不保证77token。此次实际lamp/vase/violin为58/18/20token，negative空均2，native SDK准入全过，不等于图像/3D/真实米制成功。未修改Image SDK，也未实例化CoreML。

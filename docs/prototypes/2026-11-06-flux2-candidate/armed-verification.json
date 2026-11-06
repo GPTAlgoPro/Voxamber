@@ -1,0 +1,145 @@
+{
+  "recordedAtUTC": "2026-11-06T02:13:09.770611+00:00",
+  "state": "source_and_CPU_prepared_not_neurally_run",
+  "SDKSourceFreeze": {
+    "path": "Apple/.build/Flux2Candidate/source-freeze.json",
+    "bytes": 23901,
+    "sha256": "a3638fe76d1335312435ef07f946a8fb4349a8786f8ed05e3ffa280d3ffc83aa"
+  },
+  "SDKFrozenFileCount": 128,
+  "sourceFilesUnchangedAfterHostAndIOSBuilds": true,
+  "hostTests": {
+    "count": 26,
+    "failures": 0,
+    "log": {
+      "path": "Apple/.build/Flux2Candidate/build-host-r6.log",
+      "bytes": 7434,
+      "sha256": "86a672ea70faddae8abbbacb99b0b94dfd660ff498c20c60e917d3ba9d005ba7"
+    },
+    "scope": "CPU/mock lifecycle, exact resource admission and tiny2x2 Module parameter metadata; no model forward/eval or foundation weights"
+  },
+  "iOSCompile": {
+    "exitCode": 0,
+    "triple": "arm64-apple-ios26.0",
+    "sdk": "iPhoneOS27.2",
+    "target": "VoxamberFluxCandidate",
+    "configuration": "release",
+    "seconds": 69.24,
+    "log": {
+      "path": "Apple/.build/Flux2Candidate/build-ios.log",
+      "bytes": 11864,
+      "sha256": "7766bb5e2bd3cd5178e3f2eb77efc1debdda1bb6ed47c3d82db4380fa22a0d90"
+    }
+  },
+  "hostGateBuild": {
+    "exitCode": 0,
+    "seconds": 80.28,
+    "log": {
+      "path": "Apple/.build/Flux2Candidate/build-lamp-host.log",
+      "bytes": 47140,
+      "sha256": "7ee9388db1b0003941ce3d40da52c10732920d15a33e5400edc5fa00e583f424"
+    }
+  },
+  "HostSource": [
+    {
+      "path": "Package.resolved",
+      "bytes": 2838,
+      "sha256": "0f35d7291875df715b74782ddc091ccbd4fae40491815938a320a4b660e7f45f"
+    },
+    {
+      "path": "Package.swift",
+      "bytes": 450,
+      "sha256": "f535dd040515f9ef15647f9d0362b6badb48a91b8e3c99a736c57570c1083c0e"
+    },
+    {
+      "path": "Sources/FluxCandidateLampGate/main.swift",
+      "bytes": 10051,
+      "sha256": "621b65844778cae6df832fe125be3291cba024056b100a43ce957f1761d0b687"
+    }
+  ],
+  "binary": {
+    "path": "Apple/.build/Flux2Candidate/HostBuild/out/Products/Release/FluxCandidateLampGate",
+    "bytes": 38056296,
+    "sha256": "6ec540ec787ff593cfec64239d5073a584ffd325d5c1e606688e834e2d50f45b"
+  },
+  "bundles": [
+    {
+      "path": "swift-transformers_Hub.bundle/Contents/Info.plist",
+      "bytes": 1138,
+      "sha256": "8edcb3d28842b1e1b3e85a0e5b8e91e2aa16ce782e941f915be6317ffedbe638"
+    },
+    {
+      "path": "swift-transformers_Hub.bundle/Contents/Resources/gpt2_tokenizer_config.json",
+      "bytes": 234,
+      "sha256": "551e26ec611d8d0c8edc3ef72e518a38418cb71f40de1347dd486a595e1557d7"
+    },
+    {
+      "path": "swift-transformers_Hub.bundle/Contents/Resources/t5_tokenizer_config.json",
+      "bytes": 20746,
+      "sha256": "e0aff0b1de9071e30d9a60a199303b6abe916a64a19932bd1c46992279b41a1f"
+    },
+    {
+      "path": "swift-crypto_Crypto.bundle/Contents/Info.plist",
+      "bytes": 1132,
+      "sha256": "55af3485b25e4553fc10db6dc7bc7c86d31c6c56c11940f1835fdaedafa84be8"
+    },
+    {
+      "path": "swift-crypto_Crypto.bundle/Contents/Resources/PrivacyInfo.xcprivacy",
+      "bytes": 398,
+      "sha256": "42fb8a30dd8d7ba0900e1bf17fe64ed8c12cfdb8a9c791ab6b4e1eceb0f299c0"
+    },
+    {
+      "path": "VoxamberFluxCandidate_FluxCandidateResources.bundle/Contents/Info.plist",
+      "bytes": 1164,
+      "sha256": "f72eb9362c5b115697e64918fe0a5ef123b59c9d058c5d371ca05792c10f65d4"
+    },
+    {
+      "path": "VoxamberFluxCandidate_FluxCandidateResources.bundle/Contents/Resources/flux2-manifest.json",
+      "bytes": 9261,
+      "sha256": "314c5105a019dcd1aca7d1c95d374fa36b01c1d28b0f346fc40bf87b1e1c1b4e"
+    },
+    {
+      "path": "mlx-swift_Cmlx.bundle/Contents/Info.plist",
+      "bytes": 1122,
+      "sha256": "386c5221c42d4d1988d04227dffa3ae58c18cf8c9a05850c082e847b79b75e35"
+    },
+    {
+      "path": "mlx-swift_Cmlx.bundle/Contents/Resources/default.metallib",
+      "bytes": 2401016,
+      "sha256": "cc3fc4850eb72caa36e9db2640b421f1ac2bfda2174dd58f8c15b52233ec154c"
+    }
+  ],
+  "bundleFileCount": 9,
+  "armedCondition": {
+    "barePromptSHA256": "9e9508b19e9118c56f739ea9dcb0a80f516ce24e3ef1420a26a00f44a78afe02",
+    "binarySHA256": "6ec540ec787ff593cfec64239d5073a584ffd325d5c1e606688e834e2d50f45b",
+    "guidance": 1,
+    "height": 512,
+    "intentJSONSHA256": "b90098e80c8fc2b07e2a617a00197f63317d20273109fc79e702da138fd390c4",
+    "mode": "Klein4B direct affine4bit/group64 +Qwen3-4B affine4bit/group64 +small VAE; no negative CFG",
+    "promptCharacters": 210,
+    "resourcePreflightFile": "Apple/.build/Flux2Candidate/swift-resource-preflight.json",
+    "resourcePreflightSHA256": "0722934903bd1afa1ba46ae0c24682dbaa240dc790f939695fe961d8ae4b41d1",
+    "scope": "image-only public FluxImageEngine; zero Qwen0.8/Vision/Shape calls; no NN until explicit --run authorization",
+    "SDKFreezeSHA256": "a3638fe76d1335312435ef07f946a8fb4349a8786f8ed05e3ffa280d3ffc83aa",
+    "seed": 24301,
+    "status": "prepared_not_neurally_run",
+    "steps": 4,
+    "width": 512
+  },
+  "activities": {
+    "neuralGenerations": 0,
+    "phoneOperations": 0,
+    "AppPipelineChanges": 0,
+    "ApplePackChanges": 0
+  },
+  "independentSDKSourceReview": "Product final read-only128-SHA match; no remaining specified local-path/Q4/full-coverage/thread/lifecycle blocker. This is not numerical parity or NN proof.",
+  "independentEncoderAudit": "Root assigned Product; pending explicit review before NN GO.",
+  "parameterAudit": {
+    "path": "docs/prototypes/2026-11-06-image-model-recheck/header-parameter-audit.json",
+    "bytes": 14090,
+    "sha256": "2278173c2a3c36c4ebeb0a9bcb6674f7f692419fb2b3a5752b734334992e5501"
+  },
+  "sourceCompatibilityLimit": "Compilation and contract tests do not prove official checkpoint numerical parity, image quality, actual cancellation latency or12GB phone6GiB-process safety.",
+  "profile": "TE independently unloaded; DiT+small VAE coexist through denoise; DiT released before VAE decode; no3-component mutual-exclusion claim."
+}

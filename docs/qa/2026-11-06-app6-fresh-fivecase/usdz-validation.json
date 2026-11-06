@@ -1,0 +1,29 @@
+{
+  "scope": "ZIP CRC/storage/alignment plus actual SceneKit import already performed by runner, not visual acceptance",
+  "cases": [
+    {
+      "id": "robot",
+      "CRCValid": true,
+      "entries": [
+        {
+          "entry": "scene.usda",
+          "uncompressed": true,
+          "payloadAlignment64": true
+        }
+      ],
+      "allPassed": true
+    },
+    {
+      "id": "lamp",
+      "CRCValid": true,
+      "entries": [
+        {
+          "entry": "scene.usda",
+          "uncompressed": true,
+          "payloadAlignment64": true
+        }
+      ],
+      "allPassed": true
+    }
+  ]
+}

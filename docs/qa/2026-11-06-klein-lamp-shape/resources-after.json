@@ -1,0 +1,73 @@
+{
+  "recordedAtUTC": "2026-11-06T02:55:15.270806+00:00",
+  "verification": "external CPU wholeSHA after process terminal0, not performed by main",
+  "resources": [
+    {
+      "path": "docs/qa/2026-11-06-flux2-image-lamp/reference-512.png",
+      "bytes": 156364,
+      "SHA256": "d47d9561a0a08cfc64fad51ecefd531f571e9894cb7a5d09ea5225a5eef9a69d",
+      "wholeSHAVerifiedByPrepare": true,
+      "identity": {
+        "inode": 269672707,
+        "device": 16777230,
+        "size": 156364,
+        "mtimeNS": 1793931833913045232,
+        "ctimeNS": 1793931833913052732
+      },
+      "afterWholeSHA256": "d47d9561a0a08cfc64fad51ecefd531f571e9894cb7a5d09ea5225a5eef9a69d",
+      "identityUnchanged": true,
+      "afterIdentity": {
+        "inode": 269672707,
+        "device": 16777230,
+        "size": 156364,
+        "mtimeNS": 1793931833913045232,
+        "ctimeNS": 1793931833913052732
+      }
+    },
+    {
+      "path": "Apple/.build/NeuralModels/Shape21Q4/model.q4.safetensors",
+      "bytes": 2490378518,
+      "SHA256": "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7",
+      "wholeSHAVerifiedByPrepare": true,
+      "identity": {
+        "inode": 269472122,
+        "device": 16777230,
+        "size": 2490378518,
+        "mtimeNS": 1793915528309506246,
+        "ctimeNS": 1793917052572826341
+      },
+      "afterWholeSHA256": "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7",
+      "identityUnchanged": true,
+      "afterIdentity": {
+        "inode": 269472122,
+        "device": 16777230,
+        "size": 2490378518,
+        "mtimeNS": 1793915528309506246,
+        "ctimeNS": 1793917052572826341
+      }
+    },
+    {
+      "path": "Apple/.build/KleinLampShapeGate/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/hunyuan-shape-2.1.yaml",
+      "bytes": 2078,
+      "SHA256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e",
+      "wholeSHAVerifiedByPrepare": true,
+      "identity": {
+        "inode": 269684401,
+        "device": 16777230,
+        "size": 2078,
+        "mtimeNS": 1788245716656411463,
+        "ctimeNS": 1793932231125075015
+      },
+      "afterWholeSHA256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e",
+      "identityUnchanged": true,
+      "afterIdentity": {
+        "inode": 269684401,
+        "device": 16777230,
+        "size": 2078,
+        "mtimeNS": 1788245716656411463,
+        "ctimeNS": 1793932231125075015
+      }
+    }
+  ],
+  "allWholeSHAUnchanged": true
+}

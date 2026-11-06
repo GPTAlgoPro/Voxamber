@@ -1,0 +1,74 @@
+{
+  "scope": "Synthetic high-density CPU edit artifact only, no neural inference",
+  "USDZCRC": "passed",
+  "entries": [
+    {
+      "entry": "Model.usda",
+      "bytes": 19068015,
+      "payloadAligned64": true,
+      "stored": true
+    }
+  ],
+  "baseSHA256": "58c3c024b419d15a60183a70a43d9a1004c31aca4442d4540e186ed792102d7b",
+  "editReceipt": {
+    "actualNeuralWeightsUsed": false,
+    "baseMeshFormatID": "org.khronos.gltf.binary",
+    "baseMeshFormatVersion": 2,
+    "baseMeshSHA256": "58c3c024b419d15a60183a70a43d9a1004c31aca4442d4540e186ed792102d7b",
+    "baseUnchanged": true,
+    "boundsMaximum": [
+      1.2765572,
+      1.0698669,
+      0.5305407
+    ],
+    "boundsMinimum": [
+      -0.05277569,
+      -0.2,
+      -0.010424172
+    ],
+    "glbByteCount": 7395720,
+    "glbSHA256": "62f80959aae6acad4ed729178cc9a0562ead8d5597199e21c0fd126b3c8b7acc",
+    "indexCount": 921984,
+    "method": "cpu-mesh-transform-material",
+    "normalsInverseTransposeNormalized": true,
+    "recipeSHA256": "87fd01c2cdb636eb678bd08259d4ff347baa02494871d6cc554b620b718e2870",
+    "renderGeometryLayoutVersion": 2,
+    "topologyPreserved": true,
+    "triangleCount": 307328,
+    "usdzByteCount": 19068181,
+    "usdzSHA256": "78d0b050ad813d957f4a68a06fbd1c1ef366227393adfec4d079c6eef60efb88",
+    "version": 1,
+    "vertexCount": 154449,
+    "wholeMaterialApplied": true
+  },
+  "recipe": {
+    "formatVersion": 1,
+    "positiveScaleXYZ": [
+      1.2,
+      0.8,
+      1.5
+    ],
+    "rotationXYZdegrees": [
+      10,
+      20,
+      30
+    ],
+    "translationXYZ": [
+      0.3,
+      -0.2,
+      0.4
+    ],
+    "wholeMaterial": {
+      "metallic": 0.27,
+      "rgba": [
+        0.12,
+        0.34,
+        0.56,
+        0.7
+      ],
+      "roughness": 0.63
+    }
+  },
+  "nativeReadback": "Test passed actual USD importer material binding/PBR/opacity/color-to-Rec709; actual GLB/USDA full position/normal arrays equal exportedbuffers",
+  "colorspace": "GLB linearRec709; USDZ converted linearP3D65 declared lin_p3d65_scene; same material color after conversion"
+}

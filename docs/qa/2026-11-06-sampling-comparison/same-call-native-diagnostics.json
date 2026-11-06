@@ -1,0 +1,266 @@
+{
+  "scope": "Actual same-call complete JSON and first native rejection evidence; no repair, replay or substituted model",
+  "cases": [
+    {
+      "id": "robot",
+      "sameInvocationRawSHA256": "5557caa1d7e00d1034677d05e073697d76665dfd704fad9f2a82eda828b63948",
+      "rawUTF8Bytes": 5891,
+      "completion": {
+        "generatedTokenCount": 2305,
+        "grammarEnabled": false,
+        "grammarTerminated": false,
+        "inputTokenCount": 1061,
+        "reason": "jsonComplete",
+        "tokenLimit": 3072
+      },
+      "entireJSONParse": "passed",
+      "decodedNodeCount": 17,
+      "nativeStatus": "exported_for_visual_review",
+      "nativeReportedError": null,
+      "contractObservations": [],
+      "diagnosticOnlyNoFieldsAddedOrRepaired": true
+    },
+    {
+      "id": "lamp",
+      "sameInvocationRawSHA256": "5617e794ceb4b5636ce531703a256d4de9a51b9dbd0f724990f0e6512fd6fa4e",
+      "rawUTF8Bytes": 1060,
+      "completion": {
+        "generatedTokenCount": 445,
+        "grammarEnabled": false,
+        "grammarTerminated": false,
+        "inputTokenCount": 1065,
+        "reason": "jsonComplete",
+        "tokenLimit": 3072
+      },
+      "entireJSONParse": "passed",
+      "decodedNodeCount": 5,
+      "nativeStatus": "rejected_or_failed",
+      "nativeReportedError": "计划必须使用命名宽高深，不得混用渲染坐标或未知字段。",
+      "contractObservations": [
+        {
+          "nodeIndex": 0,
+          "actualArbitraryID": "basePlate",
+          "field": "nodes[0]",
+          "issue": "missing required named-plan fields",
+          "fields": [
+            "color"
+          ]
+        },
+        {
+          "nodeIndex": 1,
+          "actualArbitraryID": "pole",
+          "field": "nodes[1]",
+          "issue": "missing required named-plan fields",
+          "fields": [
+            "color"
+          ]
+        },
+        {
+          "nodeIndex": 2,
+          "actualArbitraryID": "bulb",
+          "field": "nodes[2]",
+          "issue": "missing required named-plan fields",
+          "fields": [
+            "color"
+          ]
+        },
+        {
+          "nodeIndex": 3,
+          "actualArbitraryID": "lampshade",
+          "field": "nodes[3]",
+          "issue": "missing required named-plan fields",
+          "fields": [
+            "color"
+          ]
+        },
+        {
+          "nodeIndex": 4,
+          "actualArbitraryID": "shadeTopRing",
+          "field": "nodes[4]",
+          "issue": "missing required named-plan fields",
+          "fields": [
+            "color"
+          ]
+        }
+      ],
+      "diagnosticOnlyNoFieldsAddedOrRepaired": true
+    },
+    {
+      "id": "whale",
+      "sameInvocationRawSHA256": "a5cdafc49e10ee04c022655227a09e011893c1ce26821e581c40a45b3c4dbaf1",
+      "rawUTF8Bytes": 4430,
+      "completion": {
+        "generatedTokenCount": 1955,
+        "grammarEnabled": false,
+        "grammarTerminated": false,
+        "inputTokenCount": 1074,
+        "reason": "jsonComplete",
+        "tokenLimit": 3072
+      },
+      "entireJSONParse": "passed",
+      "decodedNodeCount": 11,
+      "nativeStatus": "rejected_or_failed",
+      "nativeReportedError": "rotation 必须为包含 x、y、z 的命名坐标。",
+      "contractObservations": [
+        {
+          "nodeIndex": 0,
+          "actualArbitraryID": "body_main",
+          "field": "nodes[0].profile",
+          "issue": "required shape-specific profile absent; native geometry would still need validation"
+        },
+        {
+          "nodeIndex": 1,
+          "actualArbitraryID": "dorsal_fin",
+          "field": "nodes[1].rotation",
+          "issue": "must contain exactly named x/y/z axes",
+          "actual": {
+            "x": -90
+          }
+        }
+      ],
+      "diagnosticOnlyNoFieldsAddedOrRepaired": true
+    },
+    {
+      "id": "aircraft",
+      "sameInvocationRawSHA256": "32b3fed23708bcd8f833e757fe25e2e1fa58addc4cd108e7b242fe55b4cbfce0",
+      "rawUTF8Bytes": 4402,
+      "completion": {
+        "generatedTokenCount": 1780,
+        "grammarEnabled": false,
+        "grammarTerminated": false,
+        "inputTokenCount": 1070,
+        "reason": "jsonComplete",
+        "tokenLimit": 3072
+      },
+      "entireJSONParse": "passed",
+      "decodedNodeCount": 10,
+      "nativeStatus": "rejected_or_failed",
+      "nativeReportedError": "计划必须使用命名宽高深，不得混用渲染坐标或未知字段。",
+      "contractObservations": [
+        {
+          "nodeIndex": 0,
+          "actualArbitraryID": "fuselage_root",
+          "field": "nodes[0]",
+          "issue": "unknown node fields",
+          "fields": [
+            "extra"
+          ]
+        },
+        {
+          "nodeIndex": 0,
+          "actualArbitraryID": "fuselage_root",
+          "field": "nodes[0].dimensions.height",
+          "issue": "outside current native Float size bounds",
+          "actual": 3.5,
+          "minimum": 0.019999999552965164,
+          "maximum": 2.5
+        },
+        {
+          "nodeIndex": 0,
+          "actualArbitraryID": "fuselage_root",
+          "field": "nodes[0].profile",
+          "issue": "required shape-specific profile absent; native geometry would still need validation"
+        },
+        {
+          "nodeIndex": 3,
+          "actualArbitraryID": "wing_left_ure",
+          "field": "nodes[3]",
+          "issue": "unknown node fields",
+          "fields": [
+            "extra"
+          ]
+        },
+        {
+          "nodeIndex": 3,
+          "actualArbitraryID": "wing_left_ure",
+          "field": "nodes[3].profile",
+          "issue": "required shape-specific profile absent; native geometry would still need validation"
+        },
+        {
+          "nodeIndex": 4,
+          "actualArbitraryID": "wing_right_ure",
+          "field": "nodes[4]",
+          "issue": "unknown node fields",
+          "fields": [
+            "extra"
+          ]
+        },
+        {
+          "nodeIndex": 4,
+          "actualArbitraryID": "wing_right_ure",
+          "field": "nodes[4].profile",
+          "issue": "required shape-specific profile absent; native geometry would still need validation"
+        },
+        {
+          "nodeIndex": 8,
+          "actualArbitraryID": "fin_left",
+          "field": "nodes[8]",
+          "issue": "unknown node fields",
+          "fields": [
+            "extra"
+          ]
+        },
+        {
+          "nodeIndex": 8,
+          "actualArbitraryID": "fin_left",
+          "field": "nodes[8].profile",
+          "issue": "required shape-specific profile absent; native geometry would still need validation"
+        },
+        {
+          "nodeIndex": 9,
+          "actualArbitraryID": "fin_right",
+          "field": "nodes[9]",
+          "issue": "unknown node fields",
+          "fields": [
+            "extra"
+          ]
+        },
+        {
+          "nodeIndex": 9,
+          "actualArbitraryID": "fin_right",
+          "field": "nodes[9].profile",
+          "issue": "required shape-specific profile absent; native geometry would still need validation"
+        }
+      ],
+      "diagnosticOnlyNoFieldsAddedOrRepaired": true
+    },
+    {
+      "id": "chair",
+      "sameInvocationRawSHA256": "114134911970bdad949c886e63e788823aa5b508465520cef0809ffae5a8ebe7",
+      "rawUTF8Bytes": 4262,
+      "completion": {
+        "generatedTokenCount": 1785,
+        "grammarEnabled": false,
+        "grammarTerminated": false,
+        "inputTokenCount": 1065,
+        "reason": "jsonComplete",
+        "tokenLimit": 3072
+      },
+      "entireJSONParse": "passed",
+      "decodedNodeCount": 13,
+      "nativeStatus": "rejected_or_failed",
+      "nativeReportedError": "计划必须使用命名宽高深，不得混用渲染坐标或未知字段。",
+      "contractObservations": [
+        {
+          "nodeIndex": 7,
+          "actualArbitraryID": "backrest_left",
+          "field": "nodes[7]",
+          "issue": "missing required named-plan fields",
+          "fields": [
+            "dimensions"
+          ]
+        },
+        {
+          "nodeIndex": 8,
+          "actualArbitraryID": "backrest_right",
+          "field": "nodes[8]",
+          "issue": "missing required named-plan fields",
+          "fields": [
+            "dimensions"
+          ]
+        }
+      ],
+      "diagnosticOnlyNoFieldsAddedOrRepaired": true
+    }
+  ]
+}

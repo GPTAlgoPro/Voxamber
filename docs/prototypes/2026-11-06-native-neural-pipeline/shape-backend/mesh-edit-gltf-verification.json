@@ -1,0 +1,12 @@
+{
+  "scope": "Synthetic154449vertex307328triangle CPU edit/export only, not NN",
+  "validatorVersion": "2.0.0-dev.3.10",
+  "issues": {
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 0,
+    "numHints": 0,
+    "messages": [],
+    "truncated": false
+  }
+}

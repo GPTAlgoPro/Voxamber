@@ -1,0 +1,21 @@
+{
+  "foregroundBoundsCI" : [
+    0,
+    30,
+    372,
+    451
+  ],
+  "method" : "apple-vision-all-foreground-alpha-512",
+  "preparedPNG" : {
+    "bytes" : 60614,
+    "diagnosticOnlyNoPixelModification" : true,
+    "height" : 512,
+    "opaqueAlphaPixels" : 24467,
+    "partialAlphaPixels" : 7320,
+    "sha256" : "f4149ab0da251287cc4a91674b62fc704450bde309f5c86c8dde838519c4c387",
+    "width" : 512,
+    "zeroAlphaPixels" : 230357
+  },
+  "sourceHeight" : 512,
+  "sourceWidth" : 512
+}

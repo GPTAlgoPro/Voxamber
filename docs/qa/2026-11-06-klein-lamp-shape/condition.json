@@ -1,0 +1,18 @@
+{
+  "binarySHA256" : "a8e73c9e93f8fa479f48db2ab6b87db01f70e52af2cc88006213d1f9a9b23a39",
+  "configurationSHA256" : "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e",
+  "geometryPostprocessID" : "finite-positive-f64-v1",
+  "guidance" : 5,
+  "inputPNG_SHA256" : "d47d9561a0a08cfc64fad51ecefd531f571e9894cb7a5d09ea5225a5eef9a69d",
+  "inputPNGBytes" : 156364,
+  "latentCount" : 4096,
+  "moeTokenChunkSize" : 512,
+  "octreeResolution" : 192,
+  "scope" : "two public stages reusing actual frozen Klein image; not NativeCreationEngine whole-chain one-call; zero new image or translation calls",
+  "SDKSnapshotSHA256" : "7498d8d65d1084216739ceb19b03b5d6abe018d71cb5e17f7ccbdd16cab28d8e",
+  "seed" : 24301,
+  "shapePackBytes" : 2490378518,
+  "shapePackSHA256" : "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7",
+  "steps" : 10,
+  "weightProfile" : "native-rebuild-20261106-q4-30b93ce8"
+}

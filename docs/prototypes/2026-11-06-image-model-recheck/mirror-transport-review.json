@@ -1,0 +1,41 @@
+{
+  "scope": "Duo metadata-only same-payload transport review; no retarget",
+  "requiredFilesMatched": 14,
+  "repositories": [
+    {
+      "repository": "mlx-community/flux2-klein-4b-4bit",
+      "HFRevision": "860e87183ceb29e39627c0612ebd66d8ea66e68c",
+      "MSRevision": "cd4cb3a87efb6bd7d877804364babdd87518bf3a",
+      "matchedFiles": 3
+    },
+    {
+      "repository": "lmstudio-community/Qwen3-4B-MLX-4bit",
+      "HFRevision": "480ec45ecf06ae3c061e4ef11345d05c7fdb02f1",
+      "MSRevision": "187665b26e2af66244d21403e11aa384bfad076d",
+      "matchedFiles": 8
+    },
+    {
+      "repository": "black-forest-labs/FLUX.2-small-decoder",
+      "HFRevision": "a3efc24f613ef42d9428af62fdbd6f5fd8856c4a",
+      "MSRevision": "5245ddc67d65482dda9ad0dd7229651422e1a9d8",
+      "matchedFiles": 3
+    }
+  ],
+  "metadataAllSHA256AndBytesMatch": true,
+  "rangeProbe": {
+    "file": "transformer/0.safetensors",
+    "attempts": 1,
+    "HTTPStatus": 206,
+    "ContentRange": "bytes0-1048575/2145323732",
+    "bytesRead": 1048576,
+    "remoteAndLocalPrefixSHA256": "65bcb252ab2ff163b13e1fbdff0339416d46ce4046c12680be37c05533b11efb",
+    "byteIdentical": true,
+    "seconds": 1.5073015420348383,
+    "MiBPerSecondIncludingConnection": 0.6634372566553687,
+    "ETagEqualsWholeSHA": false
+  },
+  "wholeTensorRedownloaded": false,
+  "job74366OrPartsOrStateModified": false,
+  "sustainedSpeedAdvantageEstablished": false,
+  "decision": "Keep original HF job; it completed terminal0. No retarget/restart."
+}

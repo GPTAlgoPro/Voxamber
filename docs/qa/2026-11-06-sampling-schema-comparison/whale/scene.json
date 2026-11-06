@@ -1,0 +1,317 @@
+{
+  "name" : "蓝色流线小鲸鱼",
+  "nodes" : [
+    {
+      "color" : "#1E90FF",
+      "id" : "body_main",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        1.9940001,
+        0
+      ],
+      "primitive" : "lathe",
+      "profile" : [
+        [
+          0.3,
+          0
+        ],
+        [
+          0.45,
+          0.5
+        ],
+        [
+          0.6,
+          1.2
+        ],
+        [
+          0.7,
+          1.8
+        ],
+        [
+          0.65,
+          2.2
+        ],
+        [
+          0.5,
+          2.3
+        ]
+      ],
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.6,
+        2.5,
+        0.6
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "head_top",
+      "metallic" : 0.1,
+      "position" : [
+        -0.08,
+        1.894,
+        0.42200002
+      ],
+      "primitive" : "sphere",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    {
+      "color" : "#FFFFFF",
+      "id" : "eye_l",
+      "metallic" : 0.1,
+      "position" : [
+        -0.07,
+        1.8740001,
+        0.57400006
+      ],
+      "primitive" : "sphere",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.06,
+        0.06,
+        0.06
+      ]
+    },
+    {
+      "color" : "#FFFFFF",
+      "id" : "eye_r",
+      "metallic" : 0.1,
+      "position" : [
+        -0.089999996,
+        1.8740001,
+        0.57400006
+      ],
+      "primitive" : "sphere",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.06,
+        0.06,
+        0.06
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "fin_left",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        1.9940001,
+        0
+      ],
+      "primitive" : "extrusion",
+      "profile" : [
+        [
+          -0.15,
+          0
+        ],
+        [
+          -0.1,
+          0.05
+        ],
+        [
+          -0.15,
+          0.12
+        ],
+        [
+          -0.2,
+          0.1
+        ],
+        [
+          -0.15,
+          0.08
+        ]
+      ],
+      "rotation" : [
+        90,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.3,
+        0.15,
+        0.02
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "fin_right",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        1.9940001,
+        0
+      ],
+      "primitive" : "extrusion",
+      "profile" : [
+        [
+          0.15,
+          0
+        ],
+        [
+          0.1,
+          0.05
+        ],
+        [
+          0.15,
+          0.12
+        ],
+        [
+          0.2,
+          0.1
+        ],
+        [
+          0.15,
+          0.08
+        ]
+      ],
+      "rotation" : [
+        90,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.3,
+        0.15,
+        0.02
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "tail_base",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        0.54700005,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.15,
+        0.4,
+        0.15
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "tail_split_1",
+      "metallic" : 0.1,
+      "position" : [
+        -0.05,
+        0.17499995,
+        0
+      ],
+      "primitive" : "cone",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.1,
+        0.35,
+        0.1
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "tail_split_2",
+      "metallic" : 0.1,
+      "position" : [
+        0.05,
+        0.17499995,
+        0
+      ],
+      "primitive" : "cone",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.1,
+        0.35,
+        0.1
+      ]
+    },
+    {
+      "color" : "#00BFFF",
+      "id" : "body_curve_sides",
+      "metallic" : 0.1,
+      "position" : [
+        -0.622,
+        1.9940001,
+        0.1
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.65,
+        0.3,
+        0.04
+      ]
+    },
+    {
+      "color" : "#00BFFF",
+      "id" : "body_curve_back",
+      "metallic" : 0.1,
+      "position" : [
+        0,
+        1.9940001,
+        -0.317
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "roughness" : 0.45,
+      "size" : [
+        0.5,
+        0.25,
+        0.04
+      ]
+    }
+  ]
+}

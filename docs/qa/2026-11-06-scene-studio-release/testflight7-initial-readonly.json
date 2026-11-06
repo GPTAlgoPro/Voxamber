@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "appID": "6831042755",
+  "bundleID": "com.kaisun.voxamber",
+  "marketingVersion": "0.2.0",
+  "buildNumber": "7",
+  "selectedInternalGroupID": "7d4c4aba-14b9-423e-b1ae-d50ce983d527",
+  "appIdentityVerified": true,
+  "groupOwnershipVerified": true,
+  "internalOnly": true,
+  "existingGroupMemberCount": 1,
+  "contactDetailsRead": false,
+  "buildFound": false,
+  "builds": [],
+  "remoteMutations": 0,
+  "uploads": 0,
+  "reviewOrPublicReleaseChanges": 0,
+  "status": "WAITING_FOR_BUILD7"
+}

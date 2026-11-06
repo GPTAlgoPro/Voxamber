@@ -1,0 +1,66 @@
+{
+  "sealedAtUTC": "2026-11-05T22:30:48.336359+00:00",
+  "scope": "Single fixed-vase actual host NN evidence; no retries or phone claims",
+  "files": [
+    {
+      "path": "docs/qa/2026-11-06-native-shape-vase-candidate30b93/gate-report.json",
+      "byteCount": 3476,
+      "sha256": "d1f207912a925d0bff5f23719813ffbd232967c3910415370c89f98a91ba05d4"
+    },
+    {
+      "path": "docs/qa/2026-11-06-native-shape-vase-candidate30b93/protocol-before-generation.md",
+      "byteCount": 2824,
+      "sha256": "c426ebd36ba5664077453c8624eabcddc0907e0f335ecc17e4b9848adc275fb1"
+    },
+    {
+      "path": "docs/qa/2026-11-06-native-shape-vase-candidate30b93/provenance.json",
+      "byteCount": 892,
+      "sha256": "e44d5dcffc50ebc02232b701dcc589fdf344213212e1ddeb67260d60fb6011b5"
+    },
+    {
+      "path": "docs/qa/2026-11-06-native-shape-vase-candidate30b93/render-bounds.json",
+      "byteCount": 313,
+      "sha256": "b0de4c32d504d80df48c24f51253bf825d8deb86c65681f4901e98669d3e3f7e"
+    },
+    {
+      "path": "docs/qa/2026-11-06-native-shape-vase-candidate30b93/source-after.json",
+      "byteCount": 13818,
+      "sha256": "ad7522ea27787d7a3f9eb7a64e6bd054058b3ad52acd34d2bb6d5c08541607b0"
+    },
+    {
+      "path": "docs/qa/2026-11-06-native-shape-vase-candidate30b93/source-before.json",
+      "byteCount": 12616,
+      "sha256": "fc19da6efcae923fbcabeab086fbc9847542efc55c9f8e92c4a957fdf25624a8"
+    },
+    {
+      "path": "docs/qa/2026-11-06-native-shape-vase-candidate30b93/statistics.json",
+      "byteCount": 161,
+      "sha256": "e62f329245097f1c0427be59edee14a8b78fd7407f928cdd9508b60057bc63f0"
+    },
+    {
+      "path": "docs/qa/2026-11-06-native-shape-vase-candidate30b93/validation-receipt.json",
+      "byteCount": 583,
+      "sha256": "542855f4ff3cceeb1bb9b7fc465f1fb88362d92f10a86375b6461d9c79fe7b41"
+    },
+    {
+      "path": "docs/qa/2026-11-06-native-shape-vase-candidate30b93/vase-front.png",
+      "byteCount": 134939,
+      "sha256": "13a00f4f3cabfc3857d71697603e7fcf3a714c198d3352e69b81d0899d753f90"
+    },
+    {
+      "path": "docs/qa/2026-11-06-native-shape-vase-candidate30b93/vase-threequarter.png",
+      "byteCount": 132464,
+      "sha256": "0a7fb7e67e13e934996168948cd12a2b4a71648c60351184dfc18c9bb80eddde"
+    },
+    {
+      "path": "docs/qa/2026-11-06-native-shape-vase-candidate30b93/verification.json",
+      "byteCount": 4708,
+      "sha256": "f07e1243bb649ef082ec557468a4e26cc0efe31af0e50899e1aaf06aed31aa19"
+    },
+    {
+      "path": "docs/qa/2026-11-06-native-shape-vase-candidate30b93/weights-after.json",
+      "byteCount": 517,
+      "sha256": "7b9dca989c45aaf914567bb09c18bc1c95fff2b8c6d6f31b38dc0dbd6b928615"
+    }
+  ]
+}

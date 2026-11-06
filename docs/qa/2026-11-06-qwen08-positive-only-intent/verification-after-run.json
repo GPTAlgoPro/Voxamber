@@ -1,0 +1,40 @@
+{
+  "verifiedAtUTC": "2026-11-05T20:43:40.759598+00:00",
+  "sourceFiles": 16,
+  "allSourceHashesUnchanged": true,
+  "sourceReadback": {
+    "Apple/Packages/QwenNative/Sources/QwenNative/LocalTokenizer.swift": true,
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenTokenStream.swift": true,
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenEngine.swift": true,
+    "Apple/Packages/QwenNative/Sources/QwenNative/NativeJSONGrammar.swift": true,
+    "Apple/Packages/QwenNative/Sources/QwenNative/QwenGenerationCompletion.swift": true,
+    "Apple/.build/qwen08-positive-intent-runner/Sources/Qwen08PositiveOnlyIntentProbe/CreationIntentDecoder.swift": true,
+    "Apple/.build/qwen08-positive-intent-runner/Sources/Qwen08PositiveOnlyIntentProbe/IntentTypes.swift": true,
+    "Apple/.build/qwen08-positive-intent-runner/Sources/Qwen08PositiveOnlyIntentProbe/FormalJSONObject.swift": true,
+    "Apple/.build/qwen08-positive-intent-runner/Sources/Qwen08PositiveOnlyIntentProbe/main.swift": true,
+    "Apple/Packages/VoxamberCreationNative/Sources/VoxamberCreationNative/CreationIntentDecoder.swift": true,
+    "Apple/Packages/VoxamberCreationNative/Sources/VoxamberCreationNative/CreationTypes.swift": true,
+    "Apple/Packages/VoxamberCreationNative/Tests/VoxamberCreationNativeTests/CreationIntentTests.swift": true,
+    "Apple/Packages/QwenNative/Package.swift": true,
+    "Apple/Packages/QwenNative/Package.resolved": true,
+    "Apple/.build/qwen08-positive-intent-runner/Package.swift": true,
+    "Apple/.build/qwen08-positive-intent-runner/Package.resolved": true
+  },
+  "binaryUnchanged": true,
+  "exactRootDecoderStillMatches": true,
+  "oldFrozen22ArtifactsUnchanged": true,
+  "oldArtifactManifestSHA256": "6b159641cb0f75d4bb4951ea23a16479599073a6456476da0354f7f843bd782d",
+  "wholeTenFileSHAReverifiedBeforeAndAfter": true,
+  "modelLoads": 1,
+  "modelCalls": 3,
+  "afterUnload": {
+    "activeBytes": 3008,
+    "cacheBytes": 0
+  },
+  "sourceChangedToPass": false,
+  "oldRawRepaired": false,
+  "retryOrExtraModelCall": false,
+  "imageOrMeshGenerated": false,
+  "phoneOperated": false,
+  "modelOrResourcePinsChanged": false
+}

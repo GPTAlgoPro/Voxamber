@@ -1,0 +1,20 @@
+{
+  "configurationSHA256" : "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e",
+  "deviceProfileValidated" : false,
+  "geometryPostprocessID" : "finite-positive-f64-v1",
+  "inputPNG_SHA256" : "f4149ab0da251287cc4a91674b62fc704450bde309f5c86c8dde838519c4c387",
+  "latentCount" : 4096,
+  "modelID" : "tencent/Hunyuan3D-2.1/hunyuan3d-dit-v2-1",
+  "modelPackProfileID" : "native-rebuild-20261106-q4-30b93ce8",
+  "modelPackRevision" : "voxamber-rebuild-20261106-q4-30b93ce8",
+  "modelPackSHA256" : "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7",
+  "modelSourceRevision" : "0b94677654c57bb9a6b6845cd7b704ccf551d327",
+  "octreeResolution" : 192,
+  "physicalScaleKnown" : false,
+  "runtimeMLXVersion" : "0.32.3",
+  "seed" : 24301,
+  "sourceRecipeTensorParityVerified" : true,
+  "sourceTensorRevision" : "6bb9063eda419c4024a63f72507122339f69c2a1",
+  "steps" : 10,
+  "weightParityWithOriginalRuntimeVerified" : false
+}

@@ -1,0 +1,237 @@
+{
+  "approximateAABBConnectedComponents" : 1,
+  "boundsMaximum" : [
+    0.20000000298023224,
+    0.69999998807907104,
+    0.125
+  ],
+  "boundsMinimum" : [
+    -0.20000000298023224,
+    0,
+    -0.125
+  ],
+  "connectionMetricLimit" : "AABB proximity within 15mm is diagnostic only; not proof of actual surface attachment or visual quality",
+  "finiteBuffers" : true,
+  "parts" : [
+    {
+      "color" : "#2A2A2A",
+      "id" : "base_plate",
+      "position" : [
+        0,
+        0.34999999403953552,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.40000000596046448,
+        0.05000000074505806,
+        0.15000000596046448
+      ]
+    },
+    {
+      "color" : "#3A3A3A",
+      "id" : "leg_left",
+      "position" : [
+        0,
+        0.34999999403953552,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.059999998658895493,
+        0.69999998807907104,
+        0.059999998658895493
+      ]
+    },
+    {
+      "color" : "#3A3A3A",
+      "id" : "leg_right",
+      "position" : [
+        0,
+        0.34999999403953552,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.059999998658895493,
+        0.69999998807907104,
+        0.059999998658895493
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "torso",
+      "position" : [
+        0,
+        0.34999999403953552,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.34999999403953552,
+        0.60000002384185791,
+        0.25
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "arm_left_upper",
+      "position" : [
+        0,
+        0.34999999403953552,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.05000000074505806,
+        0.34999999403953552,
+        0.05000000074505806
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "arm_left_lower",
+      "position" : [
+        0,
+        0.34999999403953552,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.05000000074505806,
+        0.25,
+        0.05000000074505806
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "arm_right_upper",
+      "position" : [
+        0,
+        0.34999999403953552,
+        0
+      ],
+      "primitive" : "cylinder",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.05000000074505806,
+        0.34999999403953552,
+        0.05000000074505806
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "arm_right_lower",
+      "position" : [
+        0,
+        0.34999999403953552,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.05000000074505806,
+        0.25,
+        0.05000000074505806
+      ]
+    },
+    {
+      "color" : "#1E90FF",
+      "id" : "head_box",
+      "position" : [
+        0,
+        0.34999999403953552,
+        0
+      ],
+      "primitive" : "box",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.2800000011920929,
+        0.25,
+        0.2199999988079071
+      ]
+    },
+    {
+      "color" : "#FFFF00",
+      "id" : "eye_left",
+      "position" : [
+        0,
+        0.34999999403953552,
+        0
+      ],
+      "primitive" : "sphere",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.039999999105930328,
+        0.039999999105930328,
+        0.039999999105930328
+      ]
+    },
+    {
+      "color" : "#FFFF00",
+      "id" : "eye_right",
+      "position" : [
+        0,
+        0.34999999403953552,
+        0
+      ],
+      "primitive" : "sphere",
+      "rotation" : [
+        0,
+        0,
+        0
+      ],
+      "size" : [
+        0.039999999105930328,
+        0.039999999105930328,
+        0.039999999105930328
+      ]
+    }
+  ]
+}

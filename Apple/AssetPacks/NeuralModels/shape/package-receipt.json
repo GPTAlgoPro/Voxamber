@@ -1,0 +1,31 @@
+{
+  "appID": "6831042755",
+  "appleArchiveRoundtripVerified": true,
+  "archiveByteCount": 2359487920,
+  "archiveSHA256": "9f55af42c4189ce5b4868307a642e691b4e8484c30fa4571b42dadb95bcf82ed",
+  "assetPackID": "Voxamber-Hunyuan21-Shape-Q4-30B93",
+  "builtAtUTC": "2026-11-05T22:21:15+00:00",
+  "bundleID": "com.kaisun.voxamber",
+  "contractSHA256": "794edd95115c48b1591908da802b3c220dfe931ea3c654394dbde4c5ba982eb5",
+  "dataOnlyPayloadVerified": true,
+  "downloadPolicy": "onDemand",
+  "everySourceSHA256Verified": true,
+  "group": "shape",
+  "legalFileCount": 8,
+  "manifestByteCount": 1255,
+  "manifestSHA256": "6465b86bd7683e1ce3b3adb8d52a57ce822bf1356e36f0d7ac68b2d9545fe71b",
+  "modelByteCount": 2490380596,
+  "modelFileCount": 2,
+  "modelID": "hunyuan-shape-2.1-q4-30b93",
+  "modelPinIdentitySHA256": "5e6c214c00030e401beaff077aa1082f3307e846b89fae8bf8ef0f1a2837d0e0",
+  "neuralOrDeviceAcceptanceClaimed": false,
+  "packagingTool": "2.0",
+  "payloadFileCount": 11,
+  "platforms": [
+    "iOS"
+  ],
+  "publicationEnabled": false,
+  "schemaVersion": 1,
+  "sourceManifestSHA256": "7939b77b44905451f506c75b7f3bf71876258711d4f0ebd28d79b4fb7332d0eb",
+  "uploaded": false
+}

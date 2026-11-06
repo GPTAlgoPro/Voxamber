@@ -1,0 +1,15 @@
+{
+  "originHash" : "93e5374e16f7796c603929f6a55f655aa0458f98131c959855aa615ed279e64f",
+  "pins" : [
+    {
+      "identity" : "three-live",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/google/three-live",
+      "state" : {
+        "revision" : "c0ff24b628795286a175f1a71611673df5dbc05d",
+        "version" : "1.2.3"
+      }
+    }
+  ],
+  "version" : 3
+}

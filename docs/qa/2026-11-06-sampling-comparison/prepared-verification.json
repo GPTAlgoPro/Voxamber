@@ -1,0 +1,113 @@
+{
+  "preparedAtUTC": "2026-11-05T17:57:08.802178+00:00",
+  "status": "prepared, not authorized to run weights yet",
+  "modelLoads": 0,
+  "modelCalls": 0,
+  "pureNativeUnitTests": {
+    "passed": 5,
+    "failed": 0,
+    "tests": [
+      {
+        "name": "testFactoryAndValueCopyKeepRequestHistoryIndependent",
+        "seconds": 0.69,
+        "result": "passed"
+      },
+      {
+        "name": "testParametersUseFixedPerSamplerSeedAndNoDuplicateBuiltInPenalty",
+        "seconds": 0.0,
+        "result": "passed"
+      },
+      {
+        "name": "testPresenceIgnoresPromptAndPenalizesEachGeneratedIDOnlyOnce",
+        "seconds": 0.001,
+        "result": "passed"
+      },
+      {
+        "name": "testSamePerRequestSeedReproducesNativeSamplingSequence",
+        "seconds": 1.435,
+        "result": "passed"
+      },
+      {
+        "name": "testWindowRetainsGeneratedHistoryBeyondDefaultTwentyTokens",
+        "seconds": 0.001,
+        "result": "passed"
+      }
+    ],
+    "scope": "Native sampler/processor arrays only; no model weights, no TokenIterator model generation"
+  },
+  "candidatePackageSHA256": {
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Package.resolved": "f786e22cb3052d8b2089ba0302de4c894708a5b44ebe30ec6a6592c1b1a5f6af",
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Package.swift": "446d810d535eacc53568834dc2d46296c46edf2b85d3b887af8737f24d8ef3dd",
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenBench/AttachmentBenchmark.swift": "dc52a0e6dda7743c0f570467478699756f3697a6ff1895fb07b1d2911f9b9abf",
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenBench/CancellationProbe.swift": "3f616e81c5086d0e490bb2a266f78e92aefbf8ce6a8e1727a2928010d6ac4ad7",
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenBench/GuidedModel.swift": "ca8cba73fc63a85756e0745a45d8f68e5df9adc6b3bd19595e29adb7a384bb18",
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenBench/ModelPreview.swift": "1656a0e2a9e597a9ed1b7ac6c5719fd7e5567aa5f56e941914d0651c0e83da0a",
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenBench/SampledModel.swift": "978ea3857bf6fed693e9b538b826dffadc3dda01df1f145338cc6bf70e0bf025",
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenBench/main.swift": "d1e27f7227805380308e221fe80987d122c8bc1954dc2c990d58ffc3b91e2986",
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenNative/CandidateSampling.swift": "3e511756d6b657da8af6188d336465f453f3bf9f2b3cf0752e62d29d61c050ec",
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenNative/LocalTokenizer.swift": "82988617a11bed0234181f904e214c2bdc0fc29c995b0b233f78ddf00ccc7937",
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenNative/NativeJSONGrammar.swift": "7dbc4cf98e9c6d414cc3d9e6230c20955997efb682b11c8476173bd74eeeb016",
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenNative/QwenEngine.swift": "3fa13de90888f9395b8b9339330c74ebbcede9d74da251c4bbc4dbed8e01238a",
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenNative/QwenGenerationCompletion.swift": "f2a762906ec689b55a5687703e040e3bb11df5891b1267af515204c337ba3896",
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Sources/QwenNative/QwenTokenStream.swift": "074714e201c3fec4ec97307428d95f9a3b8ae3ddc207398e114d6a60c1fa234f",
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Tests/QwenNativeTests/CandidateSamplingTests.swift": "d0c40204253ac04fdfb5bbc32e638bfa8fc46f6d6d7417df5fe9413d9ff51dfe",
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Tests/QwenNativeTests/JSONCompletionTests.swift": "284ced52b4791959d89c9012f54995d307233e240658380aa972d644ad7edaa3",
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Tests/QwenNativeTests/NativeJSONGrammarTests.swift": "5f6bbf1b89f03e60683f3adc523c2d45bd30da64b2b65dd5a7f72ad95ed9ac66",
+    "Apple/.build/SamplingCandidatePackages/QwenNative/Tests/QwenNativeTests/SceneGrammarContractTests.swift": "35a3463a70a1f43779e7602f14975d2af0bccf71183941e3897dd6d38a31ff3f"
+  },
+  "runnerSHA256": {
+    "Apple/.build/sampling-fresh-five-runner/Package.resolved": "f786e22cb3052d8b2089ba0302de4c894708a5b44ebe30ec6a6592c1b1a5f6af",
+    "Apple/.build/sampling-fresh-five-runner/Package.swift": "d7493363b6d608d8085c10b6641ad9e1c481bb827a8048d11baba901fffa9b04",
+    "Apple/.build/sampling-fresh-five-runner/Sources/SamplingFreshFive/FormalJSONObject.swift": "619e7b62d6acd050ada64a704f6d8837fd9d19b986ec222deacbd43afe970a35",
+    "Apple/.build/sampling-fresh-five-runner/Sources/SamplingFreshFive/MeshSummary.swift": "ddadf4e58a386988c9e42ad54fb3a3789fa57c1d3299428562544666106cf19e",
+    "Apple/.build/sampling-fresh-five-runner/Sources/SamplingFreshFive/ModelPreview.swift": "41833cedafddfc579a0c30522934ac9faae629289e2b3aa6de8394b588148048",
+    "Apple/.build/sampling-fresh-five-runner/Sources/SamplingFreshFive/main.swift": "c24e56944e9e056ecd22e11bdfe25556446afca6deee7bf04ab33b0da2af8408"
+  },
+  "control": {
+    "artifactManifestSHA256": "10a0b626eeb6fc282dbfeb0434db59b9f011a65218a9a864ebf917c8c6b8d3ee",
+    "resultsSHA256": "b1a41bd9e2cce8a37b6acbe628131e5084c1db742abbdf7a9800e8b245600881",
+    "rubricAndPromptProtocolSHA256": "53bb3f679fbbe4e65cdf57e70050543d1e864bc7e98fe21740c1f78dbcf5cba1"
+  },
+  "sampling": {
+    "temperature": 0.7,
+    "topP": 0.8,
+    "topK": 20,
+    "minP": 0,
+    "presencePenalty": 1.5,
+    "presenceContextSize": 3072,
+    "presenceIncludesPrompt": false,
+    "freshPresenceFactoryPerRequest": true,
+    "repetitionIdentity": 1.0,
+    "repetitionProcessor": null,
+    "seed": 24301,
+    "seedScope": "SDK per-sampler RandomState newly constructed per request"
+  },
+  "backendLimits": "Not claimed numerically equivalent to vLLM or any other backend; one fixed seed and sequential nonrandom control insufficient reliability estimate",
+  "protocolSHA256": "60ed9e1245aac83835c0a753ef65c9a3d8837c4f61d957775923880d91247aa5",
+  "productionSourcesEdited": false,
+  "weightsCopiedOrDownloaded": false,
+  "phoneOperated": false,
+  "finalPreparedAtUTC": "2026-11-05T17:59:01.434090+00:00",
+  "build": {
+    "candidateNativeMacRelease": "passed 73.29s (includes test-target compile)",
+    "comparisonRunnerMacRelease": "passed 70.32s",
+    "iOSCandidateCompile": "not run",
+    "AppBuild": "not changed or built by candidate preparation"
+  },
+  "binary": {
+    "path": "Apple/.build/production-quality-runner/.build/out/Products/Release/SamplingFreshFive",
+    "bytes": 45871248,
+    "sha256": "287595f475ac3ff89cd25c1e5a32068cd2224a3857f4a03d340894d30f7cf625"
+  },
+  "prepareMode": "passed; no model initialized or generated",
+  "sameFiveCasesAndWrappedRequestsVerbatim": true,
+  "currentSpecNil": true,
+  "jsonSchemaNil": true,
+  "all42ProductionSourcesStillUnchanged": true,
+  "candidateAndRunnerSourcesMatchPins": true,
+  "fixedPromptsSHA256": "d9f9b8b24b58ba768545110f559507aa57f6a59dab3a2113fd7285ec367ccf28",
+  "independentReadOnlyReview": "GO; no blocking issue. Only entire sampling configuration attribution; not presence-only causality.",
+  "actualWeightsModelLoads": 0,
+  "actualWeightsModelCalls": 0,
+  "noBatchStarted": true
+}

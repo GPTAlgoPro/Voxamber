@@ -1,0 +1,341 @@
+{
+  "checkedAtUTC": "2026-11-05T20:19:29.670403+00:00",
+  "scope": "Small HTTP206 official weight headers and five unchanged floating norm tensors, compared to pinned local quantized file. No whole official weights downloaded.",
+  "officialMetadataReference": "official-metadata.json",
+  "localQuantRepository": "mlx-community/Qwen3.5-0.8B-4bit",
+  "localQuantRevision": "da28692b5f139cb0ec58a356b437486b7dac7462",
+  "officialHeaders": [
+    {
+      "source": "instruct",
+      "status": "HTTP206_header_available",
+      "headerBytes": 59840,
+      "headerSHA256": "178ccd76a678d518b49da2bd61a15690898626a6b337fbca24333fe22641adfb",
+      "tensorCount": 488
+    },
+    {
+      "source": "base",
+      "status": "HTTP206_header_available",
+      "headerBytes": 59840,
+      "headerSHA256": "178ccd76a678d518b49da2bd61a15690898626a6b337fbca24333fe22641adfb",
+      "tensorCount": 488
+    }
+  ],
+  "tensorComparisons": [
+    {
+      "source": "instruct",
+      "canonicalKey": "language_model.model.layers.0.input_layernorm.weight",
+      "officialKey": "model.language_model.layers.0.input_layernorm.weight",
+      "shape": [
+        1024
+      ],
+      "officialDtype": "BF16",
+      "localDtype": "BF16",
+      "bytes": 2048,
+      "officialSHA256": "032420ad60956b0e62b5f4afbfc3a51a7148c79946f746ea4eb6b0ceb6c67e37",
+      "localSHA256": "693531b9937f09ae967e334d8d571ccf91eb56adf58460d1338a126e17c4df9d",
+      "exactRawEqual": false,
+      "exactNumericEqual": false,
+      "maxAbsoluteDifference": 1.00390625,
+      "localEqualsOfficialPlusOne": false,
+      "status": "compared"
+    },
+    {
+      "source": "instruct",
+      "canonicalKey": "language_model.model.layers.12.post_attention_layernorm.weight",
+      "officialKey": "model.language_model.layers.12.post_attention_layernorm.weight",
+      "shape": [
+        1024
+      ],
+      "officialDtype": "BF16",
+      "localDtype": "BF16",
+      "bytes": 2048,
+      "officialSHA256": "4e5a5d9cc2c020223e36c0045ddeffbbfc7f311a9ef59c90b015c38cb9ee1492",
+      "localSHA256": "0fe0abfcd9a15216edf2c713657f909cb1aefc148a0d84507bf60de66a087384",
+      "exactRawEqual": false,
+      "exactNumericEqual": false,
+      "maxAbsoluteDifference": 1.00390625,
+      "localEqualsOfficialPlusOne": false,
+      "status": "compared"
+    },
+    {
+      "source": "instruct",
+      "canonicalKey": "language_model.model.layers.23.input_layernorm.weight",
+      "officialKey": "model.language_model.layers.23.input_layernorm.weight",
+      "shape": [
+        1024
+      ],
+      "officialDtype": "BF16",
+      "localDtype": "BF16",
+      "bytes": 2048,
+      "officialSHA256": "6f359e536fa150538dd0c5a7fc1c2dd233e5ef144e2f4801bc67ec2ca5c519bd",
+      "localSHA256": "cbb4bb8b500f00b7b2bcf9a216fde5c7b764e170779f999bcf2a74aef81d1217",
+      "exactRawEqual": false,
+      "exactNumericEqual": false,
+      "maxAbsoluteDifference": 1.00390625,
+      "localEqualsOfficialPlusOne": false,
+      "status": "compared"
+    },
+    {
+      "source": "instruct",
+      "canonicalKey": "language_model.model.layers.23.self_attn.q_norm.weight",
+      "officialKey": "model.language_model.layers.23.self_attn.q_norm.weight",
+      "shape": [
+        256
+      ],
+      "officialDtype": "BF16",
+      "localDtype": "BF16",
+      "bytes": 512,
+      "officialSHA256": "71bc9c83aa8271131910e8bf00a21bc8f7a98630fbe99125d3cf4a0f2596b911",
+      "localSHA256": "dd6096893384d217256ac80936588a06d78ecd269ec2277ebf32e1259570d0ae",
+      "exactRawEqual": false,
+      "exactNumericEqual": false,
+      "maxAbsoluteDifference": 1.0078125,
+      "localEqualsOfficialPlusOne": false,
+      "status": "compared"
+    },
+    {
+      "source": "instruct",
+      "canonicalKey": "language_model.model.norm.weight",
+      "officialKey": "model.language_model.norm.weight",
+      "shape": [
+        1024
+      ],
+      "officialDtype": "BF16",
+      "localDtype": "BF16",
+      "bytes": 2048,
+      "officialSHA256": "30832e6642a9c1555485d5c9553a35e539278c33ce3b7a9665e06cd2c5598381",
+      "localSHA256": "4de6bf13ee4cbf3a74f571cf9c5be396b08e9462580245a9b6e28d086dfee74c",
+      "exactRawEqual": false,
+      "exactNumericEqual": false,
+      "maxAbsoluteDifference": 1.015625,
+      "localEqualsOfficialPlusOne": false,
+      "status": "compared"
+    },
+    {
+      "source": "base",
+      "canonicalKey": "language_model.model.layers.0.input_layernorm.weight",
+      "officialKey": "model.language_model.layers.0.input_layernorm.weight",
+      "shape": [
+        1024
+      ],
+      "officialDtype": "BF16",
+      "localDtype": "BF16",
+      "bytes": 2048,
+      "officialSHA256": "dde8e463503e73622ccde21b96cdc22d6bdb82597453194e9b141c8ca9fc77f5",
+      "localSHA256": "693531b9937f09ae967e334d8d571ccf91eb56adf58460d1338a126e17c4df9d",
+      "exactRawEqual": false,
+      "exactNumericEqual": false,
+      "maxAbsoluteDifference": 1.00439453125,
+      "localEqualsOfficialPlusOne": false,
+      "status": "compared"
+    },
+    {
+      "source": "base",
+      "canonicalKey": "language_model.model.layers.12.post_attention_layernorm.weight",
+      "officialKey": "model.language_model.layers.12.post_attention_layernorm.weight",
+      "shape": [
+        1024
+      ],
+      "officialDtype": "BF16",
+      "localDtype": "BF16",
+      "bytes": 2048,
+      "officialSHA256": "ddac750482910467f88f127152a39299f88f4d19be889649bf22fe51d4407169",
+      "localSHA256": "0fe0abfcd9a15216edf2c713657f909cb1aefc148a0d84507bf60de66a087384",
+      "exactRawEqual": false,
+      "exactNumericEqual": false,
+      "maxAbsoluteDifference": 1.0048828125,
+      "localEqualsOfficialPlusOne": false,
+      "status": "compared"
+    },
+    {
+      "source": "base",
+      "canonicalKey": "language_model.model.layers.23.input_layernorm.weight",
+      "officialKey": "model.language_model.layers.23.input_layernorm.weight",
+      "shape": [
+        1024
+      ],
+      "officialDtype": "BF16",
+      "localDtype": "BF16",
+      "bytes": 2048,
+      "officialSHA256": "8a58b8a47d0b7e4811476eb13b2d730b2b80548327d4aeb6547c3c6f2d42139f",
+      "localSHA256": "cbb4bb8b500f00b7b2bcf9a216fde5c7b764e170779f999bcf2a74aef81d1217",
+      "exactRawEqual": false,
+      "exactNumericEqual": false,
+      "maxAbsoluteDifference": 1.005859375,
+      "localEqualsOfficialPlusOne": false,
+      "status": "compared"
+    },
+    {
+      "source": "base",
+      "canonicalKey": "language_model.model.layers.23.self_attn.q_norm.weight",
+      "officialKey": "model.language_model.layers.23.self_attn.q_norm.weight",
+      "shape": [
+        256
+      ],
+      "officialDtype": "BF16",
+      "localDtype": "BF16",
+      "bytes": 512,
+      "officialSHA256": "43e66060893a749da0de3fb67644f89aa4835f012a8a45252b1cc65617b67718",
+      "localSHA256": "dd6096893384d217256ac80936588a06d78ecd269ec2277ebf32e1259570d0ae",
+      "exactRawEqual": false,
+      "exactNumericEqual": false,
+      "maxAbsoluteDifference": 1.0078125,
+      "localEqualsOfficialPlusOne": false,
+      "status": "compared"
+    },
+    {
+      "source": "base",
+      "canonicalKey": "language_model.model.norm.weight",
+      "officialKey": "model.language_model.norm.weight",
+      "shape": [
+        1024
+      ],
+      "officialDtype": "BF16",
+      "localDtype": "BF16",
+      "bytes": 2048,
+      "officialSHA256": "1ef597bf7b98b2de492b6f2159c954a070eb4db13d6a835909f9b35838fe19e2",
+      "localSHA256": "4de6bf13ee4cbf3a74f571cf9c5be396b08e9462580245a9b6e28d086dfee74c",
+      "exactRawEqual": false,
+      "exactNumericEqual": false,
+      "maxAbsoluteDifference": 1.015625,
+      "localEqualsOfficialPlusOne": false,
+      "status": "compared"
+    }
+  ],
+  "instructBaseDifferences": [
+    {
+      "canonicalKey": "language_model.model.layers.0.input_layernorm.weight",
+      "instructBaseRawEqual": false,
+      "instructBaseNumericEqual": false,
+      "maxAbsoluteDifference": 0.00390625
+    },
+    {
+      "canonicalKey": "language_model.model.layers.12.post_attention_layernorm.weight",
+      "instructBaseRawEqual": false,
+      "instructBaseNumericEqual": false,
+      "maxAbsoluteDifference": 0.0029296875
+    },
+    {
+      "canonicalKey": "language_model.model.layers.23.input_layernorm.weight",
+      "instructBaseRawEqual": false,
+      "instructBaseNumericEqual": false,
+      "maxAbsoluteDifference": 0.00390625
+    },
+    {
+      "canonicalKey": "language_model.model.layers.23.self_attn.q_norm.weight",
+      "instructBaseRawEqual": false,
+      "instructBaseNumericEqual": false,
+      "maxAbsoluteDifference": 0.009765625
+    },
+    {
+      "canonicalKey": "language_model.model.norm.weight",
+      "instructBaseRawEqual": false,
+      "instructBaseNumericEqual": false,
+      "maxAbsoluteDifference": 0.00390625
+    }
+  ],
+  "rangeRequests": [
+    {
+      "source": "instruct",
+      "start": 0,
+      "end": 7,
+      "status": 206,
+      "bytes": 8
+    },
+    {
+      "source": "base",
+      "start": 0,
+      "end": 7,
+      "status": 206,
+      "bytes": 8
+    },
+    {
+      "source": "base",
+      "start": 8,
+      "end": 59847,
+      "status": 206,
+      "bytes": 59840
+    },
+    {
+      "source": "instruct",
+      "start": 8,
+      "end": 59847,
+      "status": 206,
+      "bytes": 59840
+    },
+    {
+      "source": "instruct",
+      "start": 508629576,
+      "end": 508631623,
+      "status": 206,
+      "bytes": 2048
+    },
+    {
+      "source": "instruct",
+      "start": 717774536,
+      "end": 717776583,
+      "status": 206,
+      "bytes": 2048
+    },
+    {
+      "source": "instruct",
+      "start": 1179181032,
+      "end": 1179183079,
+      "status": 206,
+      "bytes": 2048
+    },
+    {
+      "source": "instruct",
+      "start": 1206448616,
+      "end": 1206449127,
+      "status": 206,
+      "bytes": 512
+    },
+    {
+      "source": "instruct",
+      "start": 1504849032,
+      "end": 1504851079,
+      "status": 206,
+      "bytes": 2048
+    },
+    {
+      "source": "base",
+      "start": 508629576,
+      "end": 508631623,
+      "status": 206,
+      "bytes": 2048
+    },
+    {
+      "source": "base",
+      "start": 717774536,
+      "end": 717776583,
+      "status": 206,
+      "bytes": 2048
+    },
+    {
+      "source": "base",
+      "start": 1179181032,
+      "end": 1179183079,
+      "status": 206,
+      "bytes": 2048
+    },
+    {
+      "source": "base",
+      "start": 1206448616,
+      "end": 1206449127,
+      "status": 206,
+      "bytes": 512
+    },
+    {
+      "source": "base",
+      "start": 1504849032,
+      "end": 1504851079,
+      "status": 206,
+      "bytes": 2048
+    }
+  ],
+  "totalOfficialRangeBytes": 137104,
+  "wholeOfficialWeightsDownloaded": false,
+  "sourceLineageConclusion": "Small tensor fingerprints only. Even exclusive agreement with one checkpoint would not prove the origin of every packed quantized matrix; README inconsistency remains distinct from measured helper behavior.",
+  "noModelChanged": true
+}

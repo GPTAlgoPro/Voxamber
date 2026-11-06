@@ -1,0 +1,226 @@
+{
+  "scope": "Same single invocation raw analysis, not a replay or repaired scene; no visual acceptance",
+  "cases": [
+    {
+      "id": "robot",
+      "sameInvocationRaw": true,
+      "rawSHA256": "95651594ef216f77997040733f10c184b2208a3ba55ea5aac54b2920e3398b30",
+      "rawUTF8Bytes": 2947,
+      "completion": {
+        "generatedTokenCount": 1154,
+        "grammarEnabled": false,
+        "grammarTerminated": false,
+        "inputTokenCount": 1061,
+        "reason": "jsonComplete",
+        "tokenLimit": 3072
+      },
+      "nativeFormatStatus": "exported_for_visual_review",
+      "jsonParse": "passed",
+      "decodedNodeCount": 9
+    },
+    {
+      "id": "lamp",
+      "sameInvocationRaw": true,
+      "rawSHA256": "ae1642015590d1fa99abd0cba915b18d9fbc2d805449976c7a829dc072c26691",
+      "rawUTF8Bytes": 701,
+      "completion": {
+        "generatedTokenCount": 266,
+        "grammarEnabled": false,
+        "grammarTerminated": false,
+        "inputTokenCount": 1065,
+        "reason": "jsonComplete",
+        "tokenLimit": 3072
+      },
+      "nativeFormatStatus": "exported_for_visual_review",
+      "jsonParse": "passed",
+      "decodedNodeCount": 4
+    },
+    {
+      "id": "whale",
+      "sameInvocationRaw": true,
+      "rawSHA256": "e9af516e0391e64f0a0d038e9cb3d348ea90602919959b1519655671c2f99869",
+      "rawUTF8Bytes": 2860,
+      "completion": {
+        "generatedTokenCount": 1217,
+        "grammarEnabled": false,
+        "grammarTerminated": false,
+        "inputTokenCount": 1074,
+        "reason": "stop",
+        "tokenLimit": 3072
+      },
+      "nativeFormatStatus": "rejected_or_failed",
+      "jsonParse": "failed",
+      "jsonError": {
+        "message": "Expecting ',' delimiter",
+        "line": 1,
+        "column": 304,
+        "characterOffset": 303,
+        "UTF8byteOffset": 303,
+        "context": "[0.4,1.5],[0.3,1.55],[0.2,1.55],[0.1,1.5],[0.05,1.45],[0.02,1.4],[0.0,1.35]]},{\"id\":\"head\",\"primitive\":\"box\",\"dimensions\":{\"width\":0.35,\"height\":0.6,\"depth\":0.3"
+      },
+      "last256Characters": "\"face\":\"left\",\"xOffset\":-0.15,\"yOffset\":0.05,\"zOffset\":0.0}},{\"id\":\"paddleR\",\"primitive\":\"box\",\"dimensions\":{\"width\":0.12,\"height\":0.15,\"depth\":0.05},\"color\":\"#1E90FF\",\"attach\":{\"parent\":\"body\",\"face\":\"right\",\"xOffset\":0.15,\"yOffset\":0.05,\"zOffset\":0.0}}]}",
+      "lexicallyObservedIDFields": [
+        "body",
+        "head",
+        "eyeL",
+        "eyeR",
+        "snout",
+        "finL",
+        "finR",
+        "tailBase",
+        "tailFin",
+        "tailSplitL",
+        "tailSplitR",
+        "paddleL",
+        "paddleR"
+      ],
+      "lexicallyObservedPrimitiveFields": {
+        "lathe": 1,
+        "box": 4,
+        "sphere": 2,
+        "cone": 3,
+        "extrusion": 3
+      },
+      "lexicalCountsAreNotARepairedDecodedScene": true,
+      "firstMalformedProfileQuoteCharacterOffset": 163,
+      "cause": "The second body.profile entry starts with a quote before [, making the remaining numeric profile text a malformed string. Entire same-call raw is saved; no repair or retry."
+    },
+    {
+      "id": "aircraft",
+      "sameInvocationRaw": true,
+      "rawSHA256": "74ac6945019bcf61be6de9dfd3ea28b5c8df52cab2db77a87ab32de78e6a3bb3",
+      "rawUTF8Bytes": 5005,
+      "completion": {
+        "generatedTokenCount": 3072,
+        "grammarEnabled": false,
+        "grammarTerminated": false,
+        "inputTokenCount": 1070,
+        "reason": "outputLimit",
+        "tokenLimit": 3072
+      },
+      "nativeFormatStatus": "rejected_or_failed",
+      "jsonParse": "failed",
+      "jsonError": {
+        "message": "Expecting value",
+        "line": 235,
+        "column": 10,
+        "characterOffset": 4991,
+        "UTF8byteOffset": 5005,
+        "context": "13],\n        [22.7, 3.14],\n        [22.8, 3.15],\n        [22.9, 3.16],\n        ["
+      },
+      "last256Characters": ".05],\n        [21.9, 3.06],\n        [22.0, 3.07],\n        [22.1, 3.08],\n        [22.2, 3.09],\n        [22.3, 3.1],\n        [22.4, 3.11],\n        [22.5, 3.12],\n        [22.6, 3.13],\n        [22.7, 3.14],\n        [22.8, 3.15],\n        [22.9, 3.16],\n        [",
+      "lexicallyObservedIDFields": [
+        "fuselage_main"
+      ],
+      "lexicallyObservedPrimitiveFields": {
+        "lathe": 1
+      },
+      "lexicalCountsAreNotARepairedDecodedScene": true,
+      "profileCutoff": {
+        "observedPrimitive": "lathe",
+        "observedNodeID": "fuselage_main",
+        "completeNumericPairsInUnclosedProfile": 221,
+        "firstCompletePair": [
+          "0.4",
+          "0.2"
+        ],
+        "lastCompletePair": [
+          "22.9",
+          "3.16"
+        ],
+        "currentNativeMaximumProfilePoints": 64,
+        "exceedsProfileBudgetAlready": true,
+        "lastIncompleteToken": "[",
+        "method": "Lexically count complete numeric pairs after profile key in same raw; entire JSON remains incomplete. No repaired parse."
+      },
+      "declaredDimensionEvidence": {
+        "field": "nodes[0] (fuselage_main).dimensions.height",
+        "rawValue": 4.5,
+        "nativeMaximumMetres": 2.5,
+        "method": "Literal complete field in otherwise incomplete raw, not a repaired decoded scene"
+      }
+    },
+    {
+      "id": "chair",
+      "sameInvocationRaw": true,
+      "rawSHA256": "15f418d9e54a960b4528095249ebe9140b4d8adb0b96fbc4f3e4d4e92a8d948f",
+      "rawUTF8Bytes": 8352,
+      "completion": {
+        "generatedTokenCount": 3072,
+        "grammarEnabled": false,
+        "grammarTerminated": false,
+        "inputTokenCount": 1065,
+        "reason": "outputLimit",
+        "tokenLimit": 3072
+      },
+      "nativeFormatStatus": "rejected_or_failed",
+      "jsonParse": "failed",
+      "jsonError": {
+        "message": "Expecting value",
+        "line": 1,
+        "column": 8345,
+        "characterOffset": 8344,
+        "UTF8byteOffset": 8352,
+        "context": "left_bottom\",\"primitive\":\"box\",\"dimensions\":{\"width\":0.02,\"height\":0.02,\"depth\":"
+      },
+      "last256Characters": ",\"dimensions\":{\"width\":0.02,\"height\":0.02,\"depth\":0.45},\"color\":\"#8B4513\",\"attach\":{\"parent\":\"seat_right\",\"face\":\"top\",\"xOffset\":0,\"yOffset\":0.02,\"zOffset\":0}},{\"id\":\"backrest_left_bottom\",\"primitive\":\"box\",\"dimensions\":{\"width\":0.02,\"height\":0.02,\"depth\":",
+      "lexicallyObservedIDFields": [
+        "leg1",
+        "leg2",
+        "leg3",
+        "leg4",
+        "seat",
+        "backrest",
+        "backrest_left",
+        "backrest_right",
+        "leg1_top",
+        "leg2_top",
+        "leg3_top",
+        "leg4_top",
+        "seat_left",
+        "seat_right",
+        "backrest_bottom",
+        "backrest_top",
+        "leg1_mid",
+        "leg2_mid",
+        "leg3_mid",
+        "leg4_mid",
+        "seat_bottom",
+        "backrest_left_top",
+        "backrest_right_top",
+        "leg1_bottom",
+        "leg2_bottom",
+        "leg3_bottom",
+        "leg4_bottom",
+        "seat_left_bottom",
+        "seat_right_bottom",
+        "backrest_bottom_left",
+        "backrest_bottom_right",
+        "backrest_top_left",
+        "backrest_top_right",
+        "leg1_left",
+        "leg1_right",
+        "leg2_left",
+        "leg2_right",
+        "leg3_left",
+        "leg3_right",
+        "leg4_left",
+        "leg4_right",
+        "seat_left_top",
+        "seat_right_top",
+        "backrest_left_bottom"
+      ],
+      "lexicallyObservedPrimitiveFields": {
+        "cylinder": 4,
+        "box": 40
+      },
+      "lexicalCountsAreNotARepairedDecodedScene": true,
+      "nodeBudgetEvidence": {
+        "lexicalIDFieldCount": 44,
+        "currentNativeMaximumNodes": 32,
+        "exceedsNodeBudgetAlready": true,
+        "method": "Count literal id fields in the syntactically incomplete raw; no scene was reconstructed or accepted."
+      }
+    }
+  ]
+}

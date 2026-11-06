@@ -1,0 +1,74 @@
+{
+  "files": [
+    {
+      "path": "docs/qa/2026-11-06-klein-lamp-shape/condition.json",
+      "bytes": 913,
+      "sha256": "b86434e21994b7e4ee199272ad8f70246649925e184fe0e7fb3fcc243dec4f64"
+    },
+    {
+      "path": "docs/qa/2026-11-06-klein-lamp-shape/front.png",
+      "bytes": 48966,
+      "sha256": "9c03f0646492a4b779b27ce69518d14dc20196bc8f8c4bc05bbc816c144d8cba"
+    },
+    {
+      "path": "docs/qa/2026-11-06-klein-lamp-shape/model-artifacts.json",
+      "bytes": 706,
+      "sha256": "5f58952226dd302ebf0951de6e03ff3b36b9603282de2a508f7230ffc96323c3"
+    },
+    {
+      "path": "docs/qa/2026-11-06-klein-lamp-shape/preparation.json",
+      "bytes": 644,
+      "sha256": "a06562e662ed42c15ea2eb0ed401f73daa5dcd204418bcf87dbc4a27a65c0bd1"
+    },
+    {
+      "path": "docs/qa/2026-11-06-klein-lamp-shape/prepared-512-rgba.png",
+      "bytes": 60614,
+      "sha256": "f4149ab0da251287cc4a91674b62fc704450bde309f5c86c8dde838519c4c387"
+    },
+    {
+      "path": "docs/qa/2026-11-06-klein-lamp-shape/reference-512.png",
+      "bytes": 156364,
+      "sha256": "d47d9561a0a08cfc64fad51ecefd531f571e9894cb7a5d09ea5225a5eef9a69d"
+    },
+    {
+      "path": "docs/qa/2026-11-06-klein-lamp-shape/report.json",
+      "bytes": 119061,
+      "sha256": "577de651dbaebd21efedcbb30d806a9c45ea159df8f9d181f7c2fa8354758982"
+    },
+    {
+      "path": "docs/qa/2026-11-06-klein-lamp-shape/resources-after.json",
+      "bytes": 2495,
+      "sha256": "c242c129b27483a8662a64cc9bf1c5d8d38be768f5364822b855e4d16a1a10e1"
+    },
+    {
+      "path": "docs/qa/2026-11-06-klein-lamp-shape/shape-provenance.json",
+      "bytes": 946,
+      "sha256": "acc86fb6f9ebebfe82a03f2f2764523884a702ff459f6f2bd8ed5f01bc19f990"
+    },
+    {
+      "path": "docs/qa/2026-11-06-klein-lamp-shape/shape-statistics.json",
+      "bytes": 160,
+      "sha256": "950569117b4ef257267cdcd5dd22c46fc389225246160885b2ff35a43c81c408"
+    },
+    {
+      "path": "docs/qa/2026-11-06-klein-lamp-shape/shape-validation-receipt.json",
+      "bytes": 579,
+      "sha256": "f0d9cc022e4b98e60766e57de53e0d5e174e5b9f44cf1c67b7e9e6e7611cd558"
+    },
+    {
+      "path": "docs/qa/2026-11-06-klein-lamp-shape/source-after.json",
+      "bytes": 32562,
+      "sha256": "83a6128bd4709a94492e698fb8b07f107f914c9513061c9f968d2ccd521ebb88"
+    },
+    {
+      "path": "docs/qa/2026-11-06-klein-lamp-shape/three-quarter.png",
+      "bytes": 53020,
+      "sha256": "2d7b0dd189aa5187bcb49977493fb0595d7110c2d10497f664c8926325936585"
+    },
+    {
+      "path": "docs/qa/2026-11-06-klein-lamp-shape/verification.json",
+      "bytes": 1262,
+      "sha256": "aa1167c43659a7025011b2ee6a8c26a0e4e3d13a22bd5f66f4fbf873fbc8ec56"
+    }
+  ]
+}

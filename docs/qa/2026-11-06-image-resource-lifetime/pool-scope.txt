@@ -1,0 +1,2 @@
+Includes request/layout/tokenizer validation, driver factory/load/generate/PNG encode, and defer unload. Returned Swift Data exits the pool before ImageEngine returns.
+Only this source file changed from the frozen first image gate. All other 24 Image SDK Swift/Package files and Subject source are unchanged.

@@ -1,0 +1,26 @@
+{
+  "scope": "Isolated source preparation only; no real model inference",
+  "modifiedCopiedFiles": [
+    "Package.swift",
+    "Sources/QwenNative/QwenEngine.swift"
+  ],
+  "newCandidateFiles": [
+    "Sources/QwenNative/CandidateSampling.swift",
+    "Tests/QwenNativeTests/CandidateSamplingTests.swift"
+  ],
+  "modelFilesCopied": 0,
+  "productionChangedByPreparation": false,
+  "candidateInferenceDifference": "Sampling parameters + generated-only presence native processor + fresh per-request fixed seed",
+  "unchangedSourceSHA256": {
+    "Sources/QwenNative/LocalTokenizer.swift": "82988617a11bed0234181f904e214c2bdc0fc29c995b0b233f78ddf00ccc7937",
+    "Sources/QwenNative/QwenTokenStream.swift": "074714e201c3fec4ec97307428d95f9a3b8ae3ddc207398e114d6a60c1fa234f",
+    "Sources/QwenNative/NativeJSONGrammar.swift": "7dbc4cf98e9c6d414cc3d9e6230c20955997efb682b11c8476173bd74eeeb016",
+    "Sources/QwenNative/QwenGenerationCompletion.swift": "f2a762906ec689b55a5687703e040e3bb11df5891b1267af515204c337ba3896",
+    "Sources/QwenBench/ModelPreview.swift": "1656a0e2a9e597a9ed1b7ac6c5719fd7e5567aa5f56e941914d0651c0e83da0a",
+    "Sources/QwenBench/CancellationProbe.swift": "3f616e81c5086d0e490bb2a266f78e92aefbf8ce6a8e1727a2928010d6ac4ad7",
+    "Sources/QwenBench/SampledModel.swift": "978ea3857bf6fed693e9b538b826dffadc3dda01df1f145338cc6bf70e0bf025",
+    "Sources/QwenBench/GuidedModel.swift": "ca8cba73fc63a85756e0745a45d8f68e5df9adc6b3bd19595e29adb7a384bb18",
+    "Sources/QwenBench/main.swift": "d1e27f7227805380308e221fe80987d122c8bc1954dc2c990d58ffc3b91e2986",
+    "Sources/QwenBench/AttachmentBenchmark.swift": "dc52a0e6dda7743c0f570467478699756f3697a6ff1895fb07b1d2911f9b9abf"
+  }
+}

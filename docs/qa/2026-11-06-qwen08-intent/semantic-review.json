@@ -1,0 +1,65 @@
+{
+  "reviewedAtUTC": "2026-11-05T20:28:59.015702+00:00",
+  "method": "Read the exact same-call raw JSON and decoded intent against the rubric fixed before execution; no translation, repair, retry or downstream image/mesh run.",
+  "exactDecoderPassed": 3,
+  "fullHelperAccepted": 0,
+  "cases": [
+    {
+      "id": "lamp",
+      "titleUsesUserChinese": true,
+      "positiveIsEnglish": false,
+      "negativeIsEnglish": false,
+      "positiveSubjectColorsAndComponents": {
+        "redConicalShade": true,
+        "grayCylindricalBase": true,
+        "thinCylindricalStem": true,
+        "optionalSphericalBulbAllowed": true,
+        "groundAndApprox08mPreserved": true
+      },
+      "coordinateTextDespiteSystemProhibition": "Y=0",
+      "negativePromptObserved": "无",
+      "negativeRequiredSubjectConflict": false,
+      "decision": "FAIL: Chinese positive/negative instead of English; coordinates echoed. Component preservation alone is not a valid SDXL brief."
+    },
+    {
+      "id": "spiral_shell_vase",
+      "titleUsesUserChinese": true,
+      "positiveIsEnglish": false,
+      "negativeIsEnglish": false,
+      "positiveSubjectColorsAndComponents": {
+        "oneVase": true,
+        "blue": true,
+        "spiral": true,
+        "shellForm": true,
+        "goldDetailPresent": true,
+        "goldSpecificallyAtRim": "ambiguous; gold edge mentioned, separate mouth/shell clause"
+      },
+      "negativePromptObserved": "没有金色细边，没有螺旋形状，没有贝壳造型，没有花瓶。",
+      "negativeRequiredSubjectConflict": "Required gold/spiral/shell/vase concepts occur in negative-conditioning text with Chinese absence wording. This is not the required short English unwanted-concept list; no image was run to assert a visual effect.",
+      "decision": "FAIL: not English and negative-conditioning content is unsafe/ambiguous for the requested subject."
+    },
+    {
+      "id": "violin_and_bow",
+      "titleUsesUserChinese": true,
+      "positiveIsEnglish": false,
+      "negativeIsEnglish": false,
+      "positiveSubjectColorsAndComponents": {
+        "violin": true,
+        "oneMusicalBow": true,
+        "twoIndependentObjects": true,
+        "completeInFrame": true
+      },
+      "negativePromptObserved": "小提琴与琴弓，作为两个独立物体完整入镜。",
+      "negativeRequiredSubjectConflict": true,
+      "decision": "FAIL: positive copies Chinese request and negative text repeats the desired two-subject composition."
+    }
+  ],
+  "notClaimed": [
+    "Image or shape model quality",
+    "Current App/phone acceptance",
+    "General model reliability",
+    "INT4 causal degradation",
+    "All packed matrix origin proved",
+    "Automatic model replacement"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "appID": "6831042755",
+  "assetPackID": "Voxamber-Qwen35-08B-INT4",
+  "assetRecordID": "b35f8558-4a12-4f46-abbf-a1ca6df2f65a",
+  "availabilityEnabledByThisTask": false,
+  "bundleID": "com.kaisun.voxamber",
+  "contractSHA256": "cd3dc0d4a2fc4ea1aa8c0a85758c8bd5be93b5d19585d09f56d0b55f52e1b5ea",
+  "downloadOrNeuralDeviceAcceptanceClaimed": false,
+  "errorCodes": [],
+  "files": [
+    {
+      "appleDeliveryChecksumMatched": true,
+      "approvedSHA256": "36f268016783d28ff1c7375021d3e4ab3f82da2d78ca329467874b21212ef249",
+      "assetType": "ASSET",
+      "byteCount": 562436331,
+      "id": "8886c813-5db5-49ba-9dfb-2f5d1f07629a",
+      "serverFileChecksum": {
+        "algorithm": "MD5",
+        "hash": "24460bb90b17401e318a64b82f90b978"
+      },
+      "state": "COMPLETE"
+    },
+    {
+      "appleDeliveryChecksumMatched": true,
+      "approvedSHA256": "951df1c45b55a0ff21c0d199bbaf8297a9a0c2abca1c8ff967894534505539ac",
+      "assetType": "MANIFEST",
+      "byteCount": 1651,
+      "id": "29330924-50c1-4a11-91d6-32a4bdeb7de7",
+      "serverFileChecksum": {
+        "algorithm": "MD5",
+        "hash": "7eb408208ac2ad310243e0f3b7740128"
+      },
+      "state": "COMPLETE"
+    }
+  ],
+  "group": "intent",
+  "legalFileCount": 7,
+  "modelFileCount": 10,
+  "modelID": "qwen3.5-0.8b-mlx-int4",
+  "modelPinIdentitySHA256": "9604fc2e77a9fb1bbcdaded050bcc67977635bbf83a525f8591fb7378269c2df",
+  "platform": "IOS",
+  "schemaVersion": 1,
+  "scope": "Only new asset upload/processing; no client activation, TestFlight, review or release changes",
+  "serverState": "COMPLETE",
+  "version": "1",
+  "versionID": "697d8ffc-b12c-49e2-b454-294470b19abd",
+  "warningCodes": []
+}

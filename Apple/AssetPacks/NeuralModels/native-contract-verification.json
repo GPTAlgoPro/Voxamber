@@ -1,0 +1,25 @@
+{
+  "modelRuntimeInitialized" : false,
+  "nativeFoundationCheck" : true,
+  "packs" : [
+    {
+      "group" : "intent",
+      "modelID" : "qwen3.5-0.8b-mlx-int4",
+      "nativeCodablePinIdentitySHA256" : "9604fc2e77a9fb1bbcdaded050bcc67977635bbf83a525f8591fb7378269c2df",
+      "sourceAndPayloadContractMatch" : true
+    },
+    {
+      "group" : "image",
+      "modelID" : "sdxl-base-ios-coreml",
+      "nativeCodablePinIdentitySHA256" : "f54e19ee3497a13fc3a3eba4ae9cc680be2e899e6e1a1960b2c0231e854afcbd",
+      "sourceAndPayloadContractMatch" : true
+    },
+    {
+      "group" : "shape",
+      "modelID" : "hunyuan-shape-2.1-q4-30b93",
+      "nativeCodablePinIdentitySHA256" : "5e6c214c00030e401beaff077aa1082f3307e846b89fae8bf8ef0f1a2837d0e0",
+      "sourceAndPayloadContractMatch" : true
+    }
+  ],
+  "schemaVersion" : 1
+}

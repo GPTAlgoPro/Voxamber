@@ -1,0 +1,49 @@
+{
+  "cancelTested" : false,
+  "foregroundBoundsCIBottomLeftXYWH" : [
+    106,
+    4,
+    553,
+    711
+  ],
+  "gate" : "completed English intent to one actual image, optional one Vision preparation",
+  "guidance" : 7.5,
+  "imageEngineCalls" : 1,
+  "imageSeconds" : 154.43168306350708,
+  "imageSucceeded" : true,
+  "memory" : {
+    "firstBytes" : 4047448,
+    "lastBytes" : 1889879360,
+    "method" : "TASK_VM_INFO.phys_footprint, own Mac process, sampled every250ms",
+    "notCrossProcessPeak" : true,
+    "notIPhoneBudgetEvidence" : true,
+    "peakBytes" : 1889879360,
+    "samples" : 620
+  },
+  "originalPixels" : [
+    768,
+    768
+  ],
+  "originalPNGBytes" : 824376,
+  "originalPNGSHA256" : "3f9df13ed358adb0329d84d874b54b36356c23e0b7a3a3bc5d84b7eb6c4589ba",
+  "phoneAcceptance" : false,
+  "preparationMethod" : "apple-vision-all-foreground-alpha-512",
+  "preparationSourcePixels" : [
+    768,
+    768
+  ],
+  "preparedPNGBytes" : 249722,
+  "preparedPNGSHA256" : "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae",
+  "rawSHA256" : "59349e52748be8a144d92a15092ee3e9a682501af07cf32282c884892d2df122",
+  "reduceMemory" : true,
+  "scheduler" : "DPM-Solver++",
+  "seed" : 93,
+  "steps" : 20,
+  "TEAndUNetCompute" : "cpuAndNeuralEngine",
+  "textTo3DSuccess" : false,
+  "totalSeconds" : 154.73983597755432,
+  "VAECompute" : "cpuAndGPU upstream",
+  "VisionPreparationCalls" : 1,
+  "visionSeconds" : 0.30523300170898438,
+  "visionSucceeded" : true
+}

@@ -1,0 +1,37 @@
+{
+  "frozenAtUTC": "2026-11-05T22:54:22.801237+00:00",
+  "files": {
+    "README.md": "bdd7e6fa87ac3f1888a83f5633b56646ecac521e1645f76ee89881be345df55e",
+    "batch-started.txt": "9ec6676274ac780320ed76ca5bdb91d07256015e40b59dc279512f5a890404b1",
+    "clip77-admission.json": "64540c093df9e4cf5b71f13eb143a630c037cc308737ee7916f05babf08a8fa8",
+    "decoder-before.swift.txt": "14ab334319a0914c3113932ddddf4d004b2bcc1f846a4b7a2983e4fe286e9608",
+    "decoder-capacity.diff": "e2ffd4e7da85b1efeb4cc342a3001f118d9d84a91d5bd17e6efbde8191b01811",
+    "expected-local-files.json": "2268e58b7922742dd276fd4aa19f65f82934b04e65aa2ddf10178a4b2e9aa805",
+    "fixed-requests.json": "e0bbf26b90131aa5cd52a2c6dfef2a287db304b44b4cf1dd71a7790b31be74d7",
+    "image-admission-readonly.md": "4728d39c83c1aeca39d53917786bb5a6ddb6ab035bcd75c42a16b562c2ffe158",
+    "lamp/intent.json": "b90098e80c8fc2b07e2a617a00197f63317d20273109fc79e702da138fd390c4",
+    "lamp/response.raw.txt": "86839f8ef5e7b92eb3ce55cc8371063321c518ba1a0fa391258128501d9a2b17",
+    "lamp/result.json": "56c69baee5068b32a8dff4e7f9b20b4154cf0b9213f3d074dc1f6c5ef9aa26e5",
+    "protocol-before-run.md": "a6e438ba7c4ba034eaacb35629bb960ef0b940b25c338a0af1105f21ff8cf99c",
+    "provenance-before-run.json": "cadbbd268a0c7de5ba3848b2b5ca4a6ba01ab6ad6b8e2ca059f523fd268e08ac",
+    "results.json": "d7e6f2c98934dba7e6219091e43823c0bad26677854e62c647dd897219a71ba2",
+    "scope-before.json": "5b228a166d851d57a3dece9fa2d2f37f8debd7487f5193a01fe0c112bf51856b",
+    "semantic-review.json": "4e4df30b05e0ee1282079aed7bfd053a3067d2da312283da83bb1bde0f391d5e",
+    "spiral_shell_vase/intent.json": "1983acb56afccd375bfb395841d250cac181e51dfcbcfe8dc531e24fe4edba7d",
+    "spiral_shell_vase/response.raw.txt": "59349e52748be8a144d92a15092ee3e9a682501af07cf32282c884892d2df122",
+    "spiral_shell_vase/result.json": "12ffd201363b504d22c1184d438e63a03af458ffff107d21a8d4fc8f4fb5c6eb",
+    "verification-after-run.json": "536eec251a0559403e02afc399309ffabd235aa093d5bac6f99bfa0d9eb5c856",
+    "violin_and_bow/intent.json": "a3c6c0341bf7915bac80e3310c2f20240d7af0c6c870b13fe43c64649c5047e2",
+    "violin_and_bow/response.raw.txt": "678ccf00fb5f195aebccc33607bd296f2aa06ee60d44a38bdddef5ffcbe767f0",
+    "violin_and_bow/result.json": "4ea6f4274f6bf2d440ddca06ee4a5b226c85eabb9216886faa8b83d1507f96eb"
+  },
+  "loads": 1,
+  "calls": 3,
+  "declaredRubricSemanticAccepted": 3,
+  "independentUnambiguousAccepted": 2,
+  "groundingBindingAmbiguityCases": [
+    "lamp"
+  ],
+  "CLIPAdmissionAccepted": 3,
+  "noImagesShapesPhone": true
+}

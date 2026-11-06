@@ -1,0 +1,13 @@
+{
+  "recordedAtUTC": "2026-11-05T22:20:53.547537+00:00",
+  "byteCount": 2490378518,
+  "sha256": "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7",
+  "matchesSDKPreflightFixedPin": true,
+  "configurationSHA256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e",
+  "parentReportedHardlinkDuringNN": {
+    "path": "Apple/.build/PhoneNeuralShapeQA/model.q4.safetensors",
+    "bytesWritten": false,
+    "nlinkCtimeMayChange": true
+  },
+  "allFilesystemMetadataUnchangedClaimed": false
+}
