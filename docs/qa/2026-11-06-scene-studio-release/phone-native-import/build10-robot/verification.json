@@ -1,0 +1,21 @@
+{
+  "checkedAtUTC": "2026-11-06T08:12:58.182967+00:00",
+  "build": "10",
+  "version": "0.2.0",
+  "installedSeparateQABundle": "com.kaisun.voxamber.scene-qa",
+  "qaExecutableSHA256": "d370eb63b30840e2bd5aa6205eb1c6731688f9e07c2ecd9b5b9693970d7cfdbc",
+  "controllerImportCompileSaveAndHashesVerified": true,
+  "productionViewportReadyAndAttached": true,
+  "thumbnailVisuallyInspected": true,
+  "thumbnailResult": "Normal silver/gold robot, no purple stripes",
+  "onDeviceLLM": false,
+  "sourceAuthor": "Explicit Codex-authored bundled robot; genuine official native compiler execution on physical 12GB iPhone",
+  "normalAppContainerTouchedByInstallOrProbe": false,
+  "sourcePins": {
+    "Apple/SceneStudio/App/SceneStudioModel.swift": "f059852f49dd0df46618d10f9724efbcb6e076b19f15c223dc49cefa1f372249",
+    "Apple/SceneStudio/App/SceneStudioApp.swift": "f09c91e7ce5a91cb0af5b0bc884a28a0f8fc2a4d039c4b51b4fde724fe02bbe1",
+    "Apple/SceneStudio/Import/SceneImportMonitor.swift": "e3217b411e4e91edc913f57d26902e44d21da8eeb7f1f264f2f9f07b61f2cf91"
+  },
+  "systemShareProviderUIOnThisPhone": false,
+  "separateShareUIEvidence": "../../system-share10-acceptance.json"
+}

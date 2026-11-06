@@ -108,8 +108,8 @@ class GuardTests(unittest.TestCase):
         return transport, api, summary, evidence, journal
 
     def test_default_is_get_only_and_summary_contains_no_tester_identifiers(self):
-        self.assertEqual(helper.BUILD, "8")
-        self.assertIn("scene-testflight8", str(helper.STATE))
+        self.assertEqual(helper.BUILD, "10")
+        self.assertIn("scene-testflight10", str(helper.STATE))
         self.assertIn("scene-testflight7/auth-config.private.json", str(helper.AUTH))
         fake = FakeASC()
         summary, _ = helper.preflight(helper.ScopedAPI(fake))
@@ -168,7 +168,8 @@ class GuardTests(unittest.TestCase):
                ("POST", f"/v1/betaGroups/{helper.GROUP_ID}/relationships/builds",
                 {"data": [{"type": "builds", "id": "wrong-build"}]}),
                ("POST", "/v1/betaBuildLocalizations", {"data": {"attributes": {"locale": "fr-FR"}}})]
-        bad.append(("GET", "/v1/builds?" + urllib.parse.urlencode({"filter[app]": helper.APP_ID, "filter[version]": "7", "include": "app,preReleaseVersion", "limit": "200"}), None))
+        for old_build in ("7", "8", "9"):
+            bad.append(("GET", "/v1/builds?" + urllib.parse.urlencode({"filter[app]": helper.APP_ID, "filter[version]": old_build, "include": "app,preReleaseVersion", "limit": "200"}), None))
         count = len(fake.calls)
         for method, path, payload in bad:
             with self.subTest(path=path), self.assertRaises(helper.GuardError):
@@ -264,7 +265,8 @@ class GuardTests(unittest.TestCase):
         ipa, audit, approval, audit_path, approval_path = self.evidence_fixture()
         result = helper.validate_distribution_evidence(audit_path, approval_path, BUILD_ID)
         self.assertEqual(result["ipaSHA256"], audit["ipaSHA256"])
-        for key, value in [("approved", False), ("buildID", "wrong"), ("groupID", "wrong"), ("ipaSHA256", "c" * 64)]:
+        for key, value in [("approved", False), ("buildID", "wrong"), ("groupID", "wrong"), ("ipaSHA256", "c" * 64),
+                           ("buildNumber", "7"), ("buildNumber", "8"), ("buildNumber", "9")]:
             approval_path.write_text(json.dumps({**approval, key: value}))
             with self.assertRaises(helper.GuardError):
                 helper.validate_distribution_evidence(audit_path, approval_path, BUILD_ID)
@@ -272,6 +274,10 @@ class GuardTests(unittest.TestCase):
         audit_path.write_text(json.dumps({**audit, "status": "FAIL"}))
         with self.assertRaises(helper.GuardError):
             helper.validate_distribution_evidence(audit_path, approval_path, BUILD_ID)
+        for old_build in ("7", "8", "9"):
+            audit_path.write_text(json.dumps({**audit, "buildNumber": old_build}))
+            with self.assertRaises(helper.GuardError):
+                helper.validate_distribution_evidence(audit_path, approval_path, BUILD_ID)
         audit_path.write_text(json.dumps(audit))
         ipa.write_bytes(ipa.read_bytes() + b"changed")
         with self.assertRaises(helper.GuardError):

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Scoped TestFlight 0.2.0 (8) preflight; remote mutations are opt-in and journaled.
+"""Scoped TestFlight 0.2.0 (10) preflight; remote mutations are opt-in and journaled.
 
 No upload, invitation, beta review, App Store submission, or public release API exists
 in this helper. The JWT implementation is imported only after its source hash matches.
@@ -22,11 +22,11 @@ ROOT = Path(__file__).resolve().parents[2]
 APP_ID = "6831042755"
 BUNDLE_ID = "com.kaisun.voxamber"
 VERSION = "0.2.0"
-BUILD = "8"
+BUILD = "10"
 GROUP_ID = "7d4c4aba-14b9-423e-b1ae-d50ce983d527"
 TRUSTED_BASE_SHA = "f04e87d475c043551a6b395dda1001ce3716852c7ec2e7ebc8067a1d1f4f8089"
 AUTH = ROOT / "Apple/.build/scene-testflight7/auth-config.private.json"
-STATE = ROOT / "Apple/.build/scene-testflight8/distribution-journal.private.json"
+STATE = ROOT / "Apple/.build/scene-testflight10/distribution-journal.private.json"
 NOTES = {
     "zh-Hans": "本版改为场景源码导入优先：从你自己的 AI 应用复制源码，或导入 .js、.txt、.html 文件，在 iPhone 本机生成、预览、保存和导出三维模型；无需下载本地 AI 模型。保留历史作品的只读预览和导出入口。不远程读取聊天会话链接。复杂场景的 SDK 覆盖范围仍需实测，请反馈生成失败或显示异常的源码。",
     "en-US": "Import scene source from your own AI app by pasting code or opening .js, .txt, or .html files. Generate, preview, save, and export 3D models locally on iPhone, without downloading an AI model. Existing works remain available for read-only preview and export. Conversation URLs are not fetched remotely. SDK coverage for complex scenes still needs testing; please report source that fails to generate or display correctly.",
