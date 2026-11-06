@@ -1,0 +1,205 @@
+{
+  "scope": "Current small source/protocol/receipt/exact-PNG files; excludes this manifest itself and all ignored build/model products",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 28,
+      "sha256": "0127b47d29f25aa72765aeae42b027a0ef39344d8917cebcc56ffcc8494076b3"
+    },
+    {
+      "path": "Package.swift",
+      "bytes": 419,
+      "sha256": "18eda22936f404f1ebbc9d0c8c56c8d9f401a0b286ca544ccbd68567100a4e77"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6046,
+      "sha256": "205c27511f4e427b3eaf3e41691167d58cd2b2c3135fad05e83e2ee2e3b0fa09"
+    },
+    {
+      "path": "Sources/ReferenceColorProjection/ColorProjection.swift",
+      "bytes": 8790,
+      "sha256": "f2befbc083d3663a645f4c993e246f7415d0c6fd5db98032bcbdb8567512294e"
+    },
+    {
+      "path": "Sources/ReferenceColorProjection/DualMaterialNativeProbe.swift",
+      "bytes": 11351,
+      "sha256": "9551995c415ad0ca165ffffe0d9c1ee664d624b48d06c643adff9a9c579cbc89"
+    },
+    {
+      "path": "Sources/ReferenceColorProjection/DualMaterialTextureExporter.swift",
+      "bytes": 14629,
+      "sha256": "f6c239fd876479ed6705b2821e33091b1868cb6253133b9c142259b8a4c43e49"
+    },
+    {
+      "path": "Sources/ReferenceColorProjection/FaceTextureSelection.swift",
+      "bytes": 7316,
+      "sha256": "394d42b47ba5489c5072ea99819f898d5a242d49475db8942769a6a6737b0503"
+    },
+    {
+      "path": "Sources/ReferenceColorProjection/GLBMesh.swift",
+      "bytes": 7361,
+      "sha256": "138a474dcb9b9af231770e5f295a75e467b3cd9f6914c9a6e1d5b1f7acf49641"
+    },
+    {
+      "path": "Sources/ReferenceColorProjection/NativeReadback.swift",
+      "bytes": 9092,
+      "sha256": "021dea332df7ed3781f2eaa8fda6e88b2b771a727e18d6a85345a98c6b2ddb86"
+    },
+    {
+      "path": "Sources/ReferenceColorProjection/ProjectionCLI.swift",
+      "bytes": 5933,
+      "sha256": "49f48d1562d1aa9f1dd076b11d3885a53534aceb966e907030841faa88c3ae63"
+    },
+    {
+      "path": "Sources/ReferenceColorProjection/QuickLookColorProbe.swift",
+      "bytes": 4575,
+      "sha256": "39d9312f2d8d03a0658814b396c9daa0a6f081de785ba9a303a05f722adf8aa8"
+    },
+    {
+      "path": "Sources/ReferenceColorProjection/TextureCompatibilityProbe.swift",
+      "bytes": 13473,
+      "sha256": "67eb5a6dd53f566a5daf653c193413930a91de7039f673b8ef396857a90f8ab4"
+    },
+    {
+      "path": "Sources/ReferenceColorProjection/USDZArchiveWriter.swift",
+      "bytes": 14414,
+      "sha256": "cc9de8b29060927390c8989cdf33afd08c74ad1259be5dd43798bc825d68bb1a"
+    },
+    {
+      "path": "Sources/ReferenceColorProjection/VertexColorUSDZ.swift",
+      "bytes": 5321,
+      "sha256": "6fab8e9105633617656289dea002970728748c689d7aa71aaba04abc0ad2f53d"
+    },
+    {
+      "path": "Tests/ReferenceColorProjectionTests/DualMaterialTextureTests.swift",
+      "bytes": 6122,
+      "sha256": "13708ac3e0693f34149f9d14baf39397643aa432bf4e624265909f9a13775649"
+    },
+    {
+      "path": "Tests/ReferenceColorProjectionTests/FaceTextureSelectionTests.swift",
+      "bytes": 3164,
+      "sha256": "f7d67c1f2fb302106c7dc61c3f279d65b444e0732903a5bab5489e26f259f9ed"
+    },
+    {
+      "path": "Tests/ReferenceColorProjectionTests/ProjectionTests.swift",
+      "bytes": 10269,
+      "sha256": "a3162671aef6c57085f58bcbc092c7c9df1a2bf131afca881403c04cf25e17b1"
+    },
+    {
+      "path": "constant-white-condition.patch",
+      "bytes": 963,
+      "sha256": "8a71d2b4c122d034dcad26bc5a5c64e35cd824d1517ea9cb12670fc29ce77600"
+    },
+    {
+      "path": "design.md",
+      "bytes": 2509,
+      "sha256": "1accd1092cdfe942cb0f5e8bde005e313ce1bb657d0952c75628ff1eeba6b3d7"
+    },
+    {
+      "path": "dual-material-condition.md",
+      "bytes": 4327,
+      "sha256": "47e1c8a35d5f8f70a0d6aacab7bb2949f7618d761fd600da6277eca7a20ac135"
+    },
+    {
+      "path": "dual-material-preparation.json",
+      "bytes": 3606,
+      "sha256": "b6ca1b597c898c2886c0e2d8c32d1b9850c88542eda7e6dabde83227a1134022"
+    },
+    {
+      "path": "dual-material-verification.json",
+      "bytes": 20875,
+      "sha256": "4e7592a2681aa5b774d618932ddffe3c2b98edd37643b9dfc390a05c526e6cf1"
+    },
+    {
+      "path": "evidence/01-vertex-color-large-front-gray.png",
+      "bytes": 131796,
+      "sha256": "3e89531218d37f65a63329f4a680d3ecd9fdc7fdd004c7ae83aaef45be15ce61"
+    },
+    {
+      "path": "evidence/02-white-base-vertex-quicklook-gray.png",
+      "bytes": 7211,
+      "sha256": "33d9b3e7b2bbd41ea30e5cc7a32291c49eabd5426fc02620cb5483c8657a5dc9"
+    },
+    {
+      "path": "evidence/03-small-uv-quicklook-rgb.png",
+      "bytes": 10800,
+      "sha256": "96a1a3b9fe5d139513455a64b287e862b2d3c7052c7cfc7f14122fe396ff53d9"
+    },
+    {
+      "path": "evidence/04-small-dual-quicklook-rgb-neutral.png",
+      "bytes": 18818,
+      "sha256": "5924436c6724f1840ae4349dc2f9e7b56898d0ff3fd003150ccbc5f25c305090"
+    },
+    {
+      "path": "evidence/05-large-dual-front.png",
+      "bytes": 377861,
+      "sha256": "6f5e5123cf0418917c222e5bc08d1221eec7c447ea60476d2bfa4e6de4f6025a"
+    },
+    {
+      "path": "evidence/05-large-dual-quicklook.png",
+      "bytes": 46699,
+      "sha256": "c787fb96cc816b8ef4c9d0e81b9a17b211fa9f059b67e8110944309af42bec8d"
+    },
+    {
+      "path": "evidence/05-large-dual-threequarter.png",
+      "bytes": 309263,
+      "sha256": "43f9afeabb85b7746f4d5f0c3c27ef7227af514e453ca6fe8ff3ea78e7629cee"
+    },
+    {
+      "path": "protocol-before-dual-material-corrected-run.json",
+      "bytes": 3737,
+      "sha256": "b111e720e608e75d658d706d0766d28c82eaa6861893dfa29a10f9cc634c0ecd"
+    },
+    {
+      "path": "protocol-before-dual-material-run.json",
+      "bytes": 3766,
+      "sha256": "7d177fe8715c2680a7eed4b6056bd6204454744276dba42cd6f5cd0cb61101cf"
+    },
+    {
+      "path": "protocol-before-run.json",
+      "bytes": 3620,
+      "sha256": "84bc57b181dadf44456f01ef0649fd91c2b07007b25c341bdbbac8a9f9b65f7d"
+    },
+    {
+      "path": "protocol-before-texture-run-flatpack.json",
+      "bytes": 3360,
+      "sha256": "365630bc2fc120b6cd7db116eb65d6c83761ba33def796f62cfe3f4a2167d508"
+    },
+    {
+      "path": "protocol-before-texture-run-nativechannels.json",
+      "bytes": 3906,
+      "sha256": "f2fbe149fa41e050ccf7a7c77c54ef261ab70e3a849af30a836e90c922617324"
+    },
+    {
+      "path": "protocol-before-texture-run.json",
+      "bytes": 2980,
+      "sha256": "9fa5619bede4974d0dce6d5b8d95f4f160c2ca47265bd8a002bfca3f23aad2a4"
+    },
+    {
+      "path": "protocol-raster-preparation.json",
+      "bytes": 3036,
+      "sha256": "4aca9830efc6c0738288a220e0a01e2a61f192b3ae74007aa041d38f486f809d"
+    },
+    {
+      "path": "source-provenance.json",
+      "bytes": 773,
+      "sha256": "e92f808be616dfeee0121282ca8cebdedec7a20b59a123ba9743be967d182a38"
+    },
+    {
+      "path": "texture-condition.md",
+      "bytes": 4053,
+      "sha256": "d9a65d929403511f88af6fe0ca4324beca90c594dd009e630950662e8b892545"
+    },
+    {
+      "path": "texture-verification.json",
+      "bytes": 10876,
+      "sha256": "4c323e36ac2211a75a8be298ae3074b18edde549ab0146825d97832bd4ec0d0b"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 9168,
+      "sha256": "bc2934958cadb652d7efd7550cf5a3e13f952371702636f2ddc628146de92bc3"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "condition": "Single-view CPU reference-color projection; no NN, PBR, geometry editing or new model",
+  "preparedAtUTC": "2026-11-06T00:26:22.401021+00:00",
+  "sourceFiles": {
+    ".gitignore": "0127b47d29f25aa72765aeae42b027a0ef39344d8917cebcc56ffcc8494076b3",
+    "Package.swift": "18eda22936f404f1ebbc9d0c8c56c8d9f401a0b286ca544ccbd68567100a4e77",
+    "Sources/ReferenceColorProjection/ColorProjection.swift": "7628b31964c6607975d6b0c5c62430bf652a61458a359407f834cd3bc73c7f85",
+    "Sources/ReferenceColorProjection/GLBMesh.swift": "138a474dcb9b9af231770e5f295a75e467b3cd9f6914c9a6e1d5b1f7acf49641",
+    "Sources/ReferenceColorProjection/NativeReadback.swift": "021dea332df7ed3781f2eaa8fda6e88b2b771a727e18d6a85345a98c6b2ddb86",
+    "Sources/ReferenceColorProjection/ProjectionCLI.swift": "3673462d95d2943ace15eaaff4e7ea7362035cd7bb578c9843120d03d2e4b627",
+    "Sources/ReferenceColorProjection/USDZArchiveWriter.swift": "cc9de8b29060927390c8989cdf33afd08c74ad1259be5dd43798bc825d68bb1a",
+    "Sources/ReferenceColorProjection/VertexColorUSDZ.swift": "ee50f884aee88ffb9362005783759cce0d840a9a7cec75779a2dced12a28be1b",
+    "Tests/ReferenceColorProjectionTests/ProjectionTests.swift": "7a8355866da8d8730335a51b32ee8f38d42d45550d07b2e383a75b0ca160cae6",
+    "design.md": "1accd1092cdfe942cb0f5e8bde005e313ce1bb657d0952c75628ff1eeba6b3d7",
+    "source-provenance.json": "e92f808be616dfeee0121282ca8cebdedec7a20b59a123ba9743be967d182a38"
+  },
+  "binary": {
+    "path": "Apple/.build/ReferenceColorProjectionBuild/out/Products/Debug/reference-color-projection",
+    "bytes": 497712,
+    "sha256": "2c39bb7b333d209db0a75a6cae3f63225a09a3bf26c6dde5e522fbc9aaf83df6"
+  },
+  "inputs": [
+    {
+      "path": "Apple/.build/NativeShapeCleanupGate/VaseSingleRaw01/strict/model.glb",
+      "bytes": 7214300,
+      "sha256": "42ea594bf5247fda74848ef2e958b27e09cee3d2d45529a61e0b0636ddcc2251"
+    },
+    {
+      "path": "docs/qa/2026-11-06-native-image-vase/reference-prepared-512-rgba.png",
+      "bytes": 249722,
+      "sha256": "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae"
+    }
+  ],
+  "expectedGeometry": {
+    "vertices": 200370,
+    "triangles": 400772,
+    "preservePositionAndIndexBytes": true
+  },
+  "fixedConfiguration": {
+    "cameraDirection": "+Z",
+    "up": "Y",
+    "perspectiveFOVDegrees": 42,
+    "cameraDistanceMaxExtentFactor": 2.1,
+    "referenceFrame": "512RGBA, alpha bbox uniform fit, inset 1 pixel",
+    "visibility": "Continuous projected ray/triangle closest depth; 128x128 acceleration bins; barycentric epsilon1e-9 and numericalDepthTolerance max(distance*Double.ulpOfOne*128,maxExtent*1e-12), no physical-thickness tolerance",
+    "unknownLinearRec709RGBA": [
+      0.18,
+      0.18,
+      0.18,
+      1
+    ],
+    "newMaterial": {
+      "metallic": 0,
+      "roughness": 0.7
+    },
+    "USDZColorSpace": "lin_p3d65_scene, converted from linear Rec709"
+  },
+  "tests": {
+    "passed": 8,
+    "failed": 0,
+    "smallNativeUSDZVertexColorsRoundtripPassed": true,
+    "modelCalls": 0,
+    "log": "Apple/.build/ReferenceColorProjection-pure-tests.log",
+    "occlusionRedLog": "Apple/.build/ReferenceColorProjection-occlusion-red.log",
+    "occlusionRedActualColoredVertices": 8,
+    "occlusionGreenExpectedColoredVertices": 4
+  },
+  "actualLargeMeshProjectionRun": false,
+  "actualLargeNativeColorReadback": false,
+  "actualNativeViewsRendered": false,
+  "NNCalls": 0,
+  "phoneOperations": 0,
+  "productionFilesChangedByThisPrototype": false,
+  "executionCoordination": "Root confirmed lamp NN73086 terminal; native CPU export and SceneKit rendering authorized after tests pass."
+}

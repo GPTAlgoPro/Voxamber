@@ -1,0 +1,19 @@
+--- VaseStrict01/VertexColorUSDZ.swift
++++ WhiteBaseCondition/VertexColorUSDZ.swift
+@@ -76,15 +76,9 @@
+           def Scope "Looks" {
+             def Material "Projected" {
+               token outputs:surface.connect = </Model/Looks/Projected/Surface.outputs:surface>
+-              def Shader "VertexColor" {
+-                uniform token info:id = "UsdPrimvarReader_float3"
+-                string inputs:varname = "displayColor"
+-                float3 inputs:fallback = (1,1,1)
+-                float3 outputs:result
+-              }
+               def Shader "Surface" {
+                 uniform token info:id = "UsdPreviewSurface"
+-                color3f inputs:diffuseColor.connect = </Model/Looks/Projected/VertexColor.outputs:result>
++                color3f inputs:diffuseColor = (1,1,1) (colorSpace = "lin_p3d65_scene")
+                 float inputs:metallic = 0
+                 float inputs:roughness = 0.7
+                 token outputs:surface

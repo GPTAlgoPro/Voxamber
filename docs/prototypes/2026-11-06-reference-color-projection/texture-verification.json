@@ -1,0 +1,236 @@
+{
+  "createdAtUTC": "2026-11-06T00:52:21.323526+00:00",
+  "status": "small_native_uv_texture_format_gate_passed_only",
+  "condition": "One synthetic asymmetric RGB texture triangle; real self-contained GLB/faceVarying-UV USDZ, no NN or renderer recoloring",
+  "sourceFreeze": "protocol-before-texture-run-nativechannels.json",
+  "sourceSHA256": {
+    "Package.swift": "18eda22936f404f1ebbc9d0c8c56c8d9f401a0b286ca544ccbd68567100a4e77",
+    "Sources/ReferenceColorProjection/ColorProjection.swift": "7628b31964c6607975d6b0c5c62430bf652a61458a359407f834cd3bc73c7f85",
+    "Sources/ReferenceColorProjection/GLBMesh.swift": "138a474dcb9b9af231770e5f295a75e467b3cd9f6914c9a6e1d5b1f7acf49641",
+    "Sources/ReferenceColorProjection/NativeReadback.swift": "021dea332df7ed3781f2eaa8fda6e88b2b771a727e18d6a85345a98c6b2ddb86",
+    "Sources/ReferenceColorProjection/ProjectionCLI.swift": "5d7dafc13d1b245f4c813e211150cf58053a73d2e2c5b9350df0e504de864514",
+    "Sources/ReferenceColorProjection/QuickLookColorProbe.swift": "09ed797ad86e3807557ef16c6ad92c5fb5beba375ec90643dfaf8e4310a757a1",
+    "Sources/ReferenceColorProjection/TextureCompatibilityProbe.swift": "751e92d87a75383cada8bc06ee7b7e6e105a304b1da6be48b77e57a87676ac79",
+    "Sources/ReferenceColorProjection/USDZArchiveWriter.swift": "cc9de8b29060927390c8989cdf33afd08c74ad1259be5dd43798bc825d68bb1a",
+    "Sources/ReferenceColorProjection/VertexColorUSDZ.swift": "6fab8e9105633617656289dea002970728748c689d7aa71aaba04abc0ad2f53d",
+    "Tests/ReferenceColorProjectionTests/ProjectionTests.swift": "a3162671aef6c57085f58bcbc092c7c9df1a2bf131afca881403c04cf25e17b1"
+  },
+  "tests": {
+    "passed": 8,
+    "failed": 0,
+    "seconds": 0.089,
+    "log": "Apple/.build/ReferenceColorProjection-texture-compile-tests.log"
+  },
+  "actualResult": {
+    "baseGLBSHA256": "e39149b72cdd4e0536d771ba186c92d178a5864dca7ba6f6c57811fa82d5c27c",
+    "condition": "Synthetic asymmetric RGB image embedded as a real native UV texture, not a viewport overlay",
+    "eachOriginalTriangleWorldCoordinatesOrderAndWindingExactlyPreserved": true,
+    "embeddedGLBPNGExactSHA256": "323ae239e3eb14ebc6647acec2347a1c59a363b06ee6841543b68105c38e7534",
+    "GLBPositionAndIndexBytesUnchangedForThisSmallFixtureOnly": true,
+    "GLBSHA256": "2010147ce9ffed46eb39676b6acecd40b8284e3421917aff199b3a97eee30730",
+    "GLBTopLeftUVVEqualsOneMinusUSDV": true,
+    "limits": [
+      "Only one synthetic triangle; no general atlas, unwrapping, seam handling or large-mesh texture quality is implemented.",
+      "General GLB UV seams can require vertex expansion. Future validation must compare per-original-triangle world coordinates/order/winding using a sourceVertexMap, rather than promise unchanged buffers.",
+      "A standard texture material is used; this synthetic RGB fixture is not learned PBR or a neural result."
+    ],
+    "nativeMDLBaseColorTextureLoaded": false,
+    "nativeSCNGeometrySourceChannels": [
+      0,
+      0,
+      1
+    ],
+    "nativeSCNPositionIndexChannel": 0,
+    "nativeSCNReadbackUV": [
+      0.10000000149011612,
+      0.8999999761581421,
+      0.8999999761581421,
+      0.800000011920929,
+      0.20000000298023224,
+      0.10000002384185791
+    ],
+    "nativeSCNTextureContentPresent": true,
+    "nativeSCNTextureContentType": "NSURL",
+    "nativeViews": [
+      "projected-front.png",
+      "projected-threequarter.png"
+    ],
+    "newFoundationModels": 0,
+    "NNCalls": 0,
+    "productionRealityKitOrPhoneTested": false,
+    "referenceMeshOrVaseReprocessed": false,
+    "sourcePNGSHA256": "323ae239e3eb14ebc6647acec2347a1c59a363b06ee6841543b68105c38e7534",
+    "sourceVertexMap": [
+      0,
+      1,
+      2
+    ],
+    "triangles": 1,
+    "USDZCanonicalBottomLeftUV": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.8999999761581421,
+      0.20000000298023224,
+      0.20000000298023224,
+      0.8999999761581421
+    ],
+    "USDZOriginalPointsAndFaceIndicesUnchanged": true,
+    "USDZSHA256": "58c0bde271f5496a26e334d7013c9451bf8005e133f66b57b25acd2fc580fc64",
+    "USDZUsesFaceVaryingUV": true,
+    "vertexExpansionNeededForThisSingleTriangle": false,
+    "vertices": 3
+  },
+  "actualMacQuickLook": {
+    "actualRepresentationType": "thumbnail",
+    "attemptCount": 1,
+    "chromaticColorObserved": true,
+    "chromaticPixels": 8893,
+    "inputUSDZSHA256": "58c0bde271f5496a26e334d7013c9451bf8005e133f66b57b25acd2fc580fc64",
+    "phoneTest": false,
+    "PNGHeight": 256,
+    "PNGSHA256": "96a1a3b9fe5d139513455a64b287e862b2d3c7052c7cfc7f14122fe396ff53d9",
+    "PNGWidth": 256,
+    "productRealityKitCompatibilityEstablished": false,
+    "seconds": 0.3366590738296509,
+    "sourceIsSyntheticThreePrimaryVertexTriangle": true,
+    "thumbnailReturned": true,
+    "usesSystemFileIconAsSuccess": false
+  },
+  "visualReview": {
+    "reviewedNativeFrontPNG": true,
+    "reviewedQuickLookPNG": true,
+    "actualRedGreenBlueRegionsVisible": true,
+    "isGenericFileIcon": false,
+    "nativeImageTextureBelongsToActualTriangleMesh": true
+  },
+  "embeddedUSDZPNGExactSHA256": "323ae239e3eb14ebc6647acec2347a1c59a363b06ee6841543b68105c38e7534",
+  "USDZRootArchiveEntries": [
+    "Textured.usda",
+    "fixture.png"
+  ],
+  "archiveAlignment": [
+    {
+      "name": "Textured.usda",
+      "dataOffset": 64,
+      "aligned64": true,
+      "stored": true
+    },
+    {
+      "name": "fixture.png",
+      "dataOffset": 1728,
+      "aligned64": true,
+      "stored": true
+    }
+  ],
+  "sceneShaderUsesEmbeddedImageURI": "@fixture.png@ via UsdUVTexture/sourceColorSpace sRGB",
+  "sameAssetBytesAsPreviousPreQLAttempt": {
+    "synthetic-base.glb": true,
+    "synthetic-textured-triangle.glb": true,
+    "synthetic-textured-triangle.usdz": true,
+    "textures/fixture.png": true,
+    "Textured.usda": true
+  },
+  "nativeChannelReaderCorrection": "FaceVarying creates interleaved position/UV indices; geometrySourceChannels [0,0,1]. The verifier now selects position channel0 according to native API, without changing serialized geometry/texture.",
+  "nativeUVObservation": "SCN exposes texture coordinates with V flipped relative to authored USD canonical bottom-left ST. Actual raw values are in texture-result.json. GLB likewise uses authored u,1-v for its top-left convention.",
+  "nativeMDLTextureSamplerNote": "No MDLAsset.loadTextures was invoked: textureSamplerValue.texture is false in the observation. Direct SCN URL native diffuse texture URL and actual QuickLook colored output are separately proven; do not relabel that MDL unloaded-property observation.",
+  "attemptAccounting": {
+    "firstPackagingAttempt": {
+      "path": "Apple/.build/ReferenceColorProjection/TexturedTiny01",
+      "outcome": "writer rejects slash in archivePath; no USDZ/no QL",
+      "QuickLookCalls": 0
+    },
+    "secondAttempt": {
+      "path": "Apple/.build/ReferenceColorProjection/TexturedTiny02",
+      "outcome": "valid package, validator misread multi-channel index stream; no QL",
+      "QuickLookCalls": 0
+    },
+    "thirdAttempt": {
+      "path": "Apple/.build/ReferenceColorProjection/TexturedTiny03",
+      "outcome": "strict world geometry validation and actual colored QuickLook passed",
+      "QuickLookCalls": 1
+    }
+  },
+  "artifactManifest": [
+    {
+      "path": "Apple/.build/ReferenceColorProjection/TexturedTiny03/Textured.usda",
+      "bytes": 1563,
+      "sha256": "78cf2ac52ac35d115faa97ada3150ecc9c6c2ddd0a616a690d81d38072fdfb58"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/TexturedTiny03/projected-front.png",
+      "bytes": 43742,
+      "sha256": "11503c6acfaf48389fa2f217110e2b36daf1e88ed38605a3fe7c77d0046e735a"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/TexturedTiny03/projected-threequarter.png",
+      "bytes": 30484,
+      "sha256": "c9b6d4263c80c941cf0daa587c959254174d69e26889609ebc45b1a8908f4615"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/TexturedTiny03/quicklook/quicklook-result.json",
+      "bytes": 586,
+      "sha256": "ce29107aaa499c59b5609c3b6c213be4e3da88237d414ba937a3b625919b67a3"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/TexturedTiny03/quicklook/quicklook.png",
+      "bytes": 10800,
+      "sha256": "96a1a3b9fe5d139513455a64b287e862b2d3c7052c7cfc7f14122fe396ff53d9"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/TexturedTiny03/synthetic-base.glb",
+      "bytes": 984,
+      "sha256": "e39149b72cdd4e0536d771ba186c92d178a5864dca7ba6f6c57811fa82d5c27c"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/TexturedTiny03/synthetic-textured-triangle.glb",
+      "bytes": 1728,
+      "sha256": "2010147ce9ffed46eb39676b6acecd40b8284e3421917aff199b3a97eee30730"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/TexturedTiny03/synthetic-textured-triangle.usdz",
+      "bytes": 2251,
+      "sha256": "58c0bde271f5496a26e334d7013c9451bf8005e133f66b57b25acd2fc580fc64"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/TexturedTiny03/texture-result.json",
+      "bytes": 2274,
+      "sha256": "41a619adb726882e1633e013b6fa752754665fa724e8cfce24be9cedc8495bd7"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/TexturedTiny03/textures/fixture.png",
+      "bytes": 304,
+      "sha256": "323ae239e3eb14ebc6647acec2347a1c59a363b06ee6841543b68105c38e7534"
+    }
+  ],
+  "priorTwoConditionsArtifactSHAsStillMatch": true,
+  "baseVaseAndPreparedPNGStillMatch": [
+    {
+      "path": "Apple/.build/NativeShapeCleanupGate/VaseSingleRaw01/strict/model.glb",
+      "bytes": 7214300,
+      "sha256": "42ea594bf5247fda74848ef2e958b27e09cee3d2d45529a61e0b0636ddcc2251"
+    },
+    {
+      "path": "docs/qa/2026-11-06-native-image-vase/reference-prepared-512-rgba.png",
+      "bytes": 249722,
+      "sha256": "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae"
+    }
+  ],
+  "productionFilesChangedByThisAgent": false,
+  "phoneOperations": 0,
+  "NNCalls": 0,
+  "newFoundationModels": 0,
+  "bigVaseUVTextureRun": false,
+  "genericAtlasOrSeamHandlingImplemented": false,
+  "RealityKitEntityContentsOfOrIPhoneAccepted": false,
+  "requiredForAnyFutureGeneralMesh": [
+    "USDZ may preserve original mesh points/indices with faceVarying UV.",
+    "GLB can require sourceVertexMap-driven vertex expansion at UV seams. Do not promise unchanged POSITION/index buffers after expansion.",
+    "Validate each original triangle world coordinates/order/winding exactly, and preserve the original immutable base.",
+    "Neutral unknown backs, projection alignment, baked illumination and non-PBR limits still apply.",
+    "Verify native image/UV/asset and QuickLook/RealityKit independently on actual mesh and phone; this synthetic format result is not AI appearance acceptance."
+  ],
+  "primarySpecs": [
+    "https://openusd.org/dev/spec_usdpreviewsurface.html",
+    "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#images"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "createdAtUTC": "2026-11-05T23:58:36.696943+00:00",
+  "copiedSingleSDKFile": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/USDZArchiveWriter.swift",
+  "copiedSHA256": "cc9de8b29060927390c8989cdf33afd08c74ad1259be5dd43798bc825d68bb1a",
+  "localPath": "Sources/ReferenceColorProjection/USDZArchiveWriter.swift",
+  "productionModified": false,
+  "modelOrInferenceDependency": false,
+  "baseStrictGLB": "Apple/.build/NativeShapeCleanupGate/VaseSingleRaw01/strict/model.glb",
+  "baseExpectedSHA256": "42ea594bf5247fda74848ef2e958b27e09cee3d2d45529a61e0b0636ddcc2251",
+  "referencePNG": "docs/qa/2026-11-06-native-image-vase/reference-prepared-512-rgba.png",
+  "referenceExpectedSHA256": "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae"
+}

@@ -1,0 +1,174 @@
+{
+  "createdAtUTC": "2026-11-06T00:38:12.606720+00:00",
+  "status": "prototype_partially_proven_quicklook_vertex_color_incompatible",
+  "scope": "CPU single-view reference-color projection. Not AI multiview, PBR, App integration, phone acceptance or appearance acceptance.",
+  "fixedBaseInput": {
+    "path": "Apple/.build/NativeShapeCleanupGate/VaseSingleRaw01/strict/model.glb",
+    "bytes": 7214300,
+    "sha256": "42ea594bf5247fda74848ef2e958b27e09cee3d2d45529a61e0b0636ddcc2251"
+  },
+  "fixedReferenceInput": {
+    "path": "docs/qa/2026-11-06-native-image-vase/reference-prepared-512-rgba.png",
+    "bytes": 249722,
+    "sha256": "1bcadef55c9795d68cbce576cf57eabd7d6b7b87a22ba048c6fba8f7ca6521ae"
+  },
+  "actualLargeMeshCondition": {
+    "sourceFreeze": "protocol-before-run.json",
+    "runCount": 1,
+    "output": "Apple/.build/ReferenceColorProjection/VaseStrict01",
+    "vertexCount": 200370,
+    "triangleCount": 400772,
+    "coloredVertices": 54349,
+    "neutralUnknownVertices": 146021,
+    "coloredVertexFraction": 0.27124320007985225,
+    "geometryBufferBytesAndIndicesUnchanged": true,
+    "nativeColorDataReadbackPassed": true,
+    "nativeColorMaxAbsoluteP3Error": 0,
+    "nativeRenderedViewsColorAccepted": false,
+    "actualViewedScreenshots": "Both native SCN/ModelIO screenshots are grayscale. A .color source alone did not make the connected USD shader display the colors.",
+    "specificNativeObservation": "SCN bridge material diffuse.contents was NSNumber(0), after UsdPrimvarReader_float3-to-diffuse connection import.",
+    "seconds": 10.53519606590271,
+    "noInputFilesModified": true
+  },
+  "smallSerializedWhiteDiffuseCondition": {
+    "change": "Only serialized USD material connection replaced by constant white diffuse baseline; existing displayColor attribute preserved. No renderer recoloring.",
+    "sourcePatch": "constant-white-condition.patch",
+    "fullMeshRerunCount": 0,
+    "nativeSyntheticTriangle": {
+      "chromaticPixels": 4754,
+      "nativeUSDZReadback": {
+        "directSCNURLColorSourcePresent": false,
+        "indicesAndWindingExactlySame": true,
+        "nativeColorMaxAbsoluteP3Error": 0,
+        "nativeColorReadbackImporter": "MDLAsset(url: USDZ), MDLVertexAttributeColor float4",
+        "nativeTriangles": 1,
+        "nativeVertexColorReadbackPassed": true,
+        "nativeVertices": 3,
+        "positionsExactlySame": true,
+        "renderSceneImporter": "SCNScene(mdlAsset: MDLAsset(url: USDZ)); standard native bridge",
+        "SCNViaMDLColorMaxAbsoluteP3Error": 0
+      },
+      "NNCalls": 0,
+      "syntheticDiagnosticOnly": true,
+      "USDZSHA256": "ad1d346bcd49c4dce0888ec6a1d212db690c1f9b20742d1dde3082b1dd00e259"
+    },
+    "QuickLookSingleAttempt": {
+      "actualRepresentationType": "thumbnail",
+      "attemptCount": 1,
+      "chromaticColorObserved": false,
+      "chromaticPixels": 0,
+      "inputUSDZSHA256": "ad1d346bcd49c4dce0888ec6a1d212db690c1f9b20742d1dde3082b1dd00e259",
+      "phoneTest": false,
+      "PNGHeight": 256,
+      "PNGSHA256": "33d9b3e7b2bbd41ea30e5cc7a32291c49eabd5426fc02620cb5483c8657a5dc9",
+      "PNGWidth": 256,
+      "productRealityKitCompatibilityEstablished": false,
+      "seconds": 1.0465689897537231,
+      "sourceIsSyntheticThreePrimaryVertexTriangle": true,
+      "thumbnailReturned": true,
+      "usesSystemFileIconAsSuccess": false
+    },
+    "nativeSceneKitColoredPixels4754": true,
+    "QuickLookActualColorAccepted": false,
+    "QuickLookVisualObservation": "Actual thumbnail representation returned a white/gray triangle, not RGB. This was not a file-type icon.",
+    "RealityKitEntityContentsOfTested": false
+  },
+  "tests": {
+    "suite": "ProjectionTests.swift",
+    "passed": 8,
+    "failed": 0,
+    "log": "Apple/.build/ReferenceColorProjection-whitebase-tests.log",
+    "CPUOcclusionRedWitnessLog": "Apple/.build/ReferenceColorProjection-occlusion-red.log",
+    "nativeDisplayRedWitnessLog": "Apple/.build/ReferenceColorProjection-native-display-red.log",
+    "nativeDisplayRedActualChromaticPixels": 0,
+    "whiteDiffuseGreenActualChromaticPixels": 4754,
+    "syntheticTestsAreNotNNResults": true
+  },
+  "currentSourceSHA256": {
+    "Package.swift": "18eda22936f404f1ebbc9d0c8c56c8d9f401a0b286ca544ccbd68567100a4e77",
+    "Sources/ReferenceColorProjection/ColorProjection.swift": "7628b31964c6607975d6b0c5c62430bf652a61458a359407f834cd3bc73c7f85",
+    "Sources/ReferenceColorProjection/GLBMesh.swift": "138a474dcb9b9af231770e5f295a75e467b3cd9f6914c9a6e1d5b1f7acf49641",
+    "Sources/ReferenceColorProjection/NativeReadback.swift": "021dea332df7ed3781f2eaa8fda6e88b2b771a727e18d6a85345a98c6b2ddb86",
+    "Sources/ReferenceColorProjection/ProjectionCLI.swift": "0a5da7272a247e9fab2ec313afc6270be5914b45924fe45a8d8b8e0cc1d20030",
+    "Sources/ReferenceColorProjection/QuickLookColorProbe.swift": "09ed797ad86e3807557ef16c6ad92c5fb5beba375ec90643dfaf8e4310a757a1",
+    "Sources/ReferenceColorProjection/USDZArchiveWriter.swift": "cc9de8b29060927390c8989cdf33afd08c74ad1259be5dd43798bc825d68bb1a",
+    "Sources/ReferenceColorProjection/VertexColorUSDZ.swift": "6fab8e9105633617656289dea002970728748c689d7aa71aaba04abc0ad2f53d",
+    "Tests/ReferenceColorProjectionTests/ProjectionTests.swift": "a3162671aef6c57085f58bcbc092c7c9df1a2bf131afca881403c04cf25e17b1"
+  },
+  "artifactManifest": [
+    {
+      "path": "Apple/.build/ReferenceColorProjection/VaseStrict01/Model.usda",
+      "bytes": 27332994,
+      "sha256": "6b535c0dbaec76ab134f0ebb51580738830bd752f9eb8c3c04fdaf8e8df1b4b4"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/VaseStrict01/projected-front.png",
+      "bytes": 131796,
+      "sha256": "3e89531218d37f65a63329f4a680d3ecd9fdc7fdd004c7ae83aaef45be15ce61"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/VaseStrict01/projected-threequarter.png",
+      "bytes": 109765,
+      "sha256": "c552d7598f86b116baf93c41b6cbcfbbddeab4c7dc6e108ddaeb983614971d45"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/VaseStrict01/projected.glb",
+      "bytes": 10420660,
+      "sha256": "f988631be7952e47f6146547b6fe41dbe6f2ccbd8a3e9ef02c1b747a072391aa"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/VaseStrict01/projected.usdz",
+      "bytes": 27333160,
+      "sha256": "6a4d45fcdd4b1b0bb8bad796b151a2cb86652914bf7584db1b1a6b6d78e734ae"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/VaseStrict01/report.json",
+      "bytes": 2713,
+      "sha256": "cbabec467e1b304f8d55620d29c52b9b572ef0c32bf8b807d9a3bc0693ce9b05"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/WhiteBaseTiny01/native-triangle-result.json",
+      "bytes": 693,
+      "sha256": "39922fd2e8131857f4230d87c21b6d2931a9944cb1cd59fa53b4fec77bb4b79d"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/WhiteBaseTiny01/native-triangle.png",
+      "bytes": 6154,
+      "sha256": "6f377a7fe6e6f6e2e4e7a73c42c1484c9e46673bc6d40ab125347b6de0654574"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/WhiteBaseTiny01/quicklook/quicklook-result.json",
+      "bytes": 583,
+      "sha256": "f94a7ed5c4ae66262515ceee0a60fc32a22a7632877436d1e5d8751da8a7ea56"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/WhiteBaseTiny01/quicklook/quicklook.png",
+      "bytes": 7211,
+      "sha256": "33d9b3e7b2bbd41ea30e5cc7a32291c49eabd5426fc02620cb5483c8657a5dc9"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/WhiteBaseTiny01/synthetic-primary-triangle.usda",
+      "bytes": 1205,
+      "sha256": "7e00b01fc938e7718a0b0a6984c417c7f00d9645284b6f03fee806c228a7d868"
+    },
+    {
+      "path": "Apple/.build/ReferenceColorProjection/WhiteBaseTiny01/synthetic-primary-triangle.usdz",
+      "bytes": 1371,
+      "sha256": "ad1d346bcd49c4dce0888ec6a1d212db690c1f9b20742d1dde3082b1dd00e259"
+    }
+  ],
+  "productionFilesChangedByThisAgent": false,
+  "phoneOperations": 0,
+  "NNCalls": 0,
+  "newFoundationModels": 0,
+  "knownLimits": [
+    "Projection +Z camera and uniform alpha-box fit are approximate, without image/shape/DINO correspondence calibration.",
+    "Back/occluded/uncovered vertices remain declared neutral. Reference RGB bakes image lighting; it is not recovered albedo, metallic or roughness.",
+    "54,349 of 200,370 vertices received image RGB; 146,021 vertices remain neutral, not reconstructed.",
+    "The strict input still has 108 open edges, 18 boundary loops and 6 components; projection does not repair topology.",
+    "Native USDZ data and native SceneKit bridge rendering are separate from QuickLook and RealityKit compatibility. QuickLook color failed on the small real file.",
+    "No second full-mesh white-diffuse rerun was performed after the QuickLook failure.",
+    "Current source uses white diffuse; the first large-mesh artifacts were generated using the original primvar-connected shader, as pinned by protocol-before-run.json."
+  ],
+  "nextMinimumRoute": "A persisted UV + PNG texture material baked on CPU could use the native texture path. That requires a separately reviewed prototype and native QuickLook/RealityKit verification; no production implementation or compatibility is claimed here."
+}
