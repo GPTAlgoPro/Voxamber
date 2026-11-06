@@ -1,0 +1,38 @@
+{
+  "recordedAtUTC": "2026-11-06T03:04:16.847901+00:00",
+  "scope": "Non-default explicit Klein backend integration, seed/config receipt bridge and optional unselected resource catalog",
+  "AppSimulatorTests": {
+    "result": "Passed",
+    "totalTestCount": 117,
+    "passedTests": 116,
+    "failedTests": 0,
+    "skippedTests": 1
+  },
+  "CorePackageMacTests": {
+    "XCTestPassed": 12,
+    "SwiftTestingPassed": 7,
+    "failures": 0,
+    "requiresEnableTestabilityForReleaseXcodeTests": true
+  },
+  "seedEvidence": "Receipt tests and inspected calls retain high UInt64 for Klein; fixed24301 NN does not independently distinguish high-bit truncation. SDXL keeps its true UInt32 seed.",
+  "actualAppDefault": "SDXL",
+  "candidateSelectedByApp": false,
+  "originalSDXLManifestAndContractsChanged": false,
+  "candidateApplePackUploaded": false,
+  "phoneOrTestFlightChanged": false,
+  "sourceSHA256": {
+    "Packages/VoxamberCreationNative/Package.swift": "e7888638bc02cab6fd59898908b8b36e3786eaf5787e701be0f8f922d05d8233",
+    "Packages/VoxamberCreationNative/Sources/VoxamberCreationNative/CreationTypes.swift": "c9a5c252f2a2faac14a0ab0cd567c6e6003be0a3f0e080db4cb8c626d47cc7b8",
+    "Packages/VoxamberCreationNative/Sources/VoxamberCreationNative/CreationImageStageReceipt.swift": "564a982f3989b71faa5f0d2a31c1f2bfea437d7b83b9509dc9ad5ccb3955afad",
+    "Packages/VoxamberCreationNative/Sources/VoxamberCreationNative/NativeCreationEngine.swift": "12f30477a4189530ae5a0188c25cd8e6c510f6a89084014be9da93da1bd9d6bb",
+    "Packages/VoxamberCreationNative/Tests/VoxamberCreationNativeTests/CreationImageReceiptTests.swift": "6def85033cb19ef1f2d2193dbdc913e2afcf65249bce098fcd2715fd043d5152",
+    "ThreeLiveStudio/App/StudioModel.swift": "341a7797cc75040b6351c1646236bb8e46dd3df701c2e9e32b28e90f94242f2c",
+    "ThreeLiveStudio/Resources/NeuralModels/ImageFluxKlein.json": "ec3239230bf19059a7343024e9039cf7b7a05502d5599757cfd4dfc2e47891d3",
+    "ThreeLiveStudioTests/NeuralAssetStoreTests.swift": "b6f49475a64292ed53a69d3963a2f401f4d63438f48055b068641289810e5bb9"
+  },
+  "limitations": [
+    "Current full public Klein diagnostic is separately armed; no new quality claim follows from tests",
+    "Actual three-dimensional output retains cable fragments, gray material and unknown physical scale",
+    "Physical device input/unlock and possible changes after recovery backup02:32 are still pending user replies"
+  ]
+}

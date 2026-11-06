@@ -23,11 +23,14 @@ public struct CreationResources: Sendable {
     public let intentModelDirectory: URL
     public let imageModelDirectory: URL
     public let shapeModelFile: URL
+    public let imageBackend: CreationImageBackend
 
-    public init(intentModelDirectory: URL, imageModelDirectory: URL, shapeModelFile: URL) {
+    public init(intentModelDirectory: URL, imageModelDirectory: URL, shapeModelFile: URL,
+                imageBackend: CreationImageBackend = .sdxl) {
         self.intentModelDirectory = intentModelDirectory
         self.imageModelDirectory = imageModelDirectory
         self.shapeModelFile = shapeModelFile
+        self.imageBackend = imageBackend
     }
 }
 
@@ -65,6 +68,8 @@ public struct NativeCreationResult: Sendable {
     public let shape: ShapeResult
     public let seed: UInt64
     public let stageSeconds: [String: Double]
+    /// Emitted only after that selected public image engine actually returns.
+    public let imageStage: CreationImageStageReceipt
 }
 
 public enum CreationError: Error, Sendable, Equatable {

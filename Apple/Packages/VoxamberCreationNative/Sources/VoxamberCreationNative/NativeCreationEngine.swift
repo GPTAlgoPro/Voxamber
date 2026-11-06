@@ -2,6 +2,7 @@ import Foundation
 import QwenNative
 import VoxamberImageNative
 import VoxamberShapeNative
+import VoxamberFluxCandidate
 
 /// A single owned operation runs the three actual model backends sequentially.
 /// Resource download/checksum installation is a separate caller-owned boundary.
@@ -9,6 +10,7 @@ public actor NativeCreationEngine {
     private struct Job { let id: UUID; let task: Task<NativeCreationResult, Error> }
     private let intentEngine = QwenEngine()
     private let imageEngine = ImageEngine()
+    private let fluxImageEngine = FluxImageEngine()
     private let shapeEngine = ShapeEngine(weightProfile: .rebuiltQ4Candidate)
     private var job: Job?
     private var cleanupCount = 0
@@ -51,6 +53,7 @@ public actor NativeCreationEngine {
             if job?.id == current.id { job = nil }
         }
         await intentEngine.unload()
+        await fluxImageEngine.unload()
         await shapeEngine.unload()
     }
 
@@ -72,17 +75,32 @@ public actor NativeCreationEngine {
 
             let imageStart = Date()
             onProgress(.init(phase: .drawingReference))
-            let reference = try await imageEngine.generate(
-                positivePrompt: intent.positivePrompt, negativePrompt: intent.negativePrompt,
-                seed: UInt32(truncatingIfNeeded: seed), resourcesURL: resources.imageModelDirectory,
-                onProgress: { value in
-                    switch value {
-                    case .denoising(let completed, let total):
-                        onProgress(.init(phase: .drawingReference, completedSteps: completed, totalSteps: total))
-                    default: break
-                    }
-                })
-            // The Image SDK has already unloaded its model resources on return.
+            let imageStage = resources.imageBackend.receipt(requestedSeed: seed)
+            let reference: Data
+            switch resources.imageBackend {
+            case .sdxl:
+                reference = try await imageEngine.generate(
+                    positivePrompt: intent.positivePrompt, negativePrompt: intent.negativePrompt,
+                    seed: UInt32(imageStage.seed), resourcesURL: resources.imageModelDirectory,
+                    onProgress: { value in
+                        if case .denoising(let completed, let total) = value {
+                            onProgress(.init(phase: .drawingReference, completedSteps: completed, totalSteps: total))
+                        }
+                    })
+            case .klein4B:
+                // Distilled guidance1 has no negative CFG input. The current
+                // intent contract emits an empty negative prompt only.
+                guard intent.negativePrompt.isEmpty else { throw CreationError.invalidIntent }
+                reference = try await fluxImageEngine.generate(positivePrompt: intent.positivePrompt,
+                    seed: imageStage.seed, modelRoot: resources.imageModelDirectory,
+                    onProgress: { value in
+                        if value.stage == "denoising" {
+                            onProgress(.init(phase: .drawingReference, completedSteps: value.step, totalSteps: value.totalSteps))
+                        }
+                    })
+                await fluxImageEngine.unload()
+            }
+            // Each public image engine has joined resource cleanup on return.
             try Task.checkCancellation()
             timings[CreationPhase.drawingReference.rawValue] = Date().timeIntervalSince(imageStart)
             onReferenceImage(reference)
@@ -105,11 +123,13 @@ public actor NativeCreationEngine {
             timings["total"] = Date().timeIntervalSince(start)
             onProgress(.init(phase: .complete, fraction: 1))
             return NativeCreationResult(intent: intent, referencePNG: reference,
-                preparedReference: prepared, shape: shape, seed: seed, stageSeconds: timings)
+                preparedReference: prepared, shape: shape, seed: seed, stageSeconds: timings,
+                imageStage: imageStage)
         } catch {
             // Await cleanup even for a canceled caller. No phase runs on after
             // this method returns, and no partial result is published here.
             await intentEngine.unload()
+            await fluxImageEngine.unload()
             await shapeEngine.unload()
             throw error
         }
@@ -142,7 +162,13 @@ public actor NativeCreationEngine {
         guard resources.shapeModelFile.isFileURL, shape.isRegularFile == true, shape.isSymbolicLink != true else {
             throw CreationError.resourcesUnavailable
         }
-        try SDXLResources.validateLayout(at: resources.imageModelDirectory)
+        switch resources.imageBackend {
+        case .sdxl: try SDXLResources.validateLayout(at: resources.imageModelDirectory)
+        case .klein4B:
+            // The selected public Flux engine performs mandatory whole-SHA,
+            // exact-file and Q4 admission before touching its model runtime.
+            break
+        }
     }
 }
 

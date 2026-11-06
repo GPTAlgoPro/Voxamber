@@ -158,7 +158,7 @@
     }
   },
   "backupCreationsAndMeasurementsTimeLocal": "2026-11-06 02:32",
-  "laterUserChangesUnknown": true,
+  "laterUserChangesUnknown": false,
   "earlierUserDeletedProjectsRestored": false,
   "normalAppProcessRunningBeforeRestore": false,
   "newCompanionResourcesPreserved": true,
@@ -179,7 +179,11 @@
     "all37FilesByteCountAndSHA256Match": true,
     "priorDeletedProjectsIncluded": false,
     "normalPhoneAppBuildUnchanged": "6",
-    "laterUserChangesAfter0232PendingAnswer": true,
+    "laterUserChangesAfter0232PendingAnswer": false,
     "LibraryPreferencesNotClaimedRestored": true
+  },
+  "userConfirmation": {
+    "receivedAtUTC": "2026-11-06T03:13:39.502000+00:00",
+    "answer": "User explicitly confirmed no creation/save/edit/delete after 2026-11-06 02:32 backup."
   }
 }

@@ -1,0 +1,20 @@
+{
+  "scope": "CPU diagnostics added after initial rawtrial seal; initialartifactmanifest andoriginalgeometry preserved",
+  "files": [
+    {
+      "path": "docs/qa/2026-11-06-klein-lamp-shape/component-area-diagnostic.json",
+      "bytes": 5323,
+      "sha256": "84787d5d4182b92dd8719d0e5f74baab9437de06edfa62902a73e13c72b04128"
+    },
+    {
+      "path": "docs/qa/2026-11-06-klein-lamp-shape/visual-review.json",
+      "bytes": 1800,
+      "sha256": "ccc4c1a41dc6226b462cac29ca1ee60b13a88e75622487e8a83bc941ba938bfc"
+    },
+    {
+      "path": "Apple/.build/KleinLampShapeGate/Diagnostics/mesh_components.py",
+      "bytes": 4776,
+      "sha256": "27041774b33198afaea63f036f9415fc0096b128e26fbeee3d1abf805c74257a"
+    }
+  ]
+}

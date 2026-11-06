@@ -1,0 +1,25 @@
+{
+  "backend" : "flux2-klein4b-q4",
+  "componentRevisions" : {
+    "smallVAE" : "a3efc24f613ef42d9428af62fdbd6f5fd8856c4a",
+    "textEncoder" : "480ec45ecf06ae3c061e4ef11345d05c7fdb02f1",
+    "transformer" : "860e87183ceb29e39627c0612ebd66d8ea66e68c"
+  },
+  "guidance" : 1,
+  "height" : 512,
+  "modelContractID" : "flux2-klein4b-int4",
+  "modelRevision" : "860e87183ceb29e39627c0612ebd66d8ea66e68c",
+  "parameters" : {
+    "cacheTrimSteps" : "1",
+    "memoryProfile" : "conservative",
+    "promptUpsampling" : "false",
+    "residency" : "TE-unload-DiT+VAE-unloadDiT-decode",
+    "textEncoder" : "Qwen3-4B-affineQ4-group64",
+    "transformerVariant" : "klein4B_4bit",
+    "vae" : "smallDecoder-fullF32"
+  },
+  "runtimeVersion" : "Flux2Core-57ad4818-local-v1-MLX0.32.3",
+  "seed" : 24301,
+  "steps" : 4,
+  "width" : 512
+}

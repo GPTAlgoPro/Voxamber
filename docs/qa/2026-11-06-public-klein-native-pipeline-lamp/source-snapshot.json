@@ -1,0 +1,1512 @@
+{
+  "recordedAtUTC": "2026-11-06T02:54:26.151205+00:00",
+  "scope": "Byte-identical current repository public SDK; includes explicitly nondefault Klein backend; no adaptations",
+  "files": [
+    {
+      "package": "CreationCore",
+      "path": "Package.swift",
+      "bytes": 363,
+      "sha256": "76483ca757b61255388105d2c914058e59606e7437f0dfd0230cb8faeecfd4c3"
+    },
+    {
+      "package": "CreationCore",
+      "path": "Sources/CreationCore/AttachmentResolver.swift",
+      "bytes": 4853,
+      "sha256": "3d156c1644fb84b6030728ba60ea3027592a7eca91e254daaf9bf91714e10f94"
+    },
+    {
+      "package": "CreationCore",
+      "path": "Sources/CreationCore/BuildingGenerator.swift",
+      "bytes": 19339,
+      "sha256": "8a72052f967164f71d289826a6647deb540bb845df3c9314463b5fe4dc7e5180"
+    },
+    {
+      "package": "CreationCore",
+      "path": "Sources/CreationCore/BuildingSpec.swift",
+      "bytes": 8181,
+      "sha256": "d6dcad6fb5cedcd3de441751692517ac5a08585d2cc8eca67f7b9991f6d021f9"
+    },
+    {
+      "package": "CreationCore",
+      "path": "Sources/CreationCore/FreeformGeometry.swift",
+      "bytes": 15040,
+      "sha256": "aabb0be5dd83d1e248ee2bf8f9899d6200b3659bc5474c8b8b15984c018f0206"
+    },
+    {
+      "package": "CreationCore",
+      "path": "Sources/CreationCore/SceneGenerationSchema.swift",
+      "bytes": 7138,
+      "sha256": "c7207a9c83a345370c80a51e0d608be3c1ebdfc58ee195de339bab744cc26d52"
+    },
+    {
+      "package": "CreationCore",
+      "path": "Sources/CreationCore/SceneGenerator.swift",
+      "bytes": 10165,
+      "sha256": "1798cd672b99fad741e1c2325f0176a20a912e1e9e1549eb00a848e874516f19"
+    },
+    {
+      "package": "CreationCore",
+      "path": "Sources/CreationCore/ScenePlan.swift",
+      "bytes": 6896,
+      "sha256": "b2b31ccd0bce71dd6d0d3a6c30c15b713323b58314301a5030a7e324c45b3137"
+    },
+    {
+      "package": "CreationCore",
+      "path": "Sources/CreationCore/SceneSpec.swift",
+      "bytes": 16798,
+      "sha256": "3163e0b570843aead62b72df949721f26529cb19691c2fa96b39785a41a81ca4"
+    },
+    {
+      "package": "CreationCore",
+      "path": "Sources/CreationCore/StrictJSONObject.swift",
+      "bytes": 3404,
+      "sha256": "27b46fcfc3c1e6bbad423103b2d568e7c3840b124e5e3848990bed5ff59dcf24"
+    },
+    {
+      "package": "CreationCore",
+      "path": "Tests/CreationCoreTests/AttachmentResolverTests.swift",
+      "bytes": 5202,
+      "sha256": "6a81507bc9dfe7d6185fbef3a045e588729e1a977ae8c3467aa7cf72700b24fb"
+    },
+    {
+      "package": "CreationCore",
+      "path": "Tests/CreationCoreTests/CreationCoreTests.swift",
+      "bytes": 7307,
+      "sha256": "aa4d7157692f17db8d637931e367af06a675e16141cce8c3ac2a97bb3f352f26"
+    },
+    {
+      "package": "CreationCore",
+      "path": "Tests/CreationCoreTests/FreeformGeometryTests.swift",
+      "bytes": 10252,
+      "sha256": "48815518bfaee5439544cef328968f09dcb06f9f510db3e72c99acfc949cf013"
+    },
+    {
+      "package": "CreationCore",
+      "path": "Tests/CreationCoreTests/SceneCoreTests.swift",
+      "bytes": 8491,
+      "sha256": "ea7d7172e9e700fb413ba77be45e78b1f3d5d8ea7add0c58872185cf4d23803d"
+    },
+    {
+      "package": "CreationCore",
+      "path": "Tests/CreationCoreTests/SceneGenerationSchemaTests.swift",
+      "bytes": 13364,
+      "sha256": "2aadc19717699728986efcc458d9b4052a540e34a0c001bb72f6b370c8a03442"
+    },
+    {
+      "package": "CreationCore",
+      "path": "Tests/CreationCoreTests/ScenePlanTests.swift",
+      "bytes": 6836,
+      "sha256": "301ec1781524364ea0b86561335e0162f976e16fc115808d7f5e8fbbea697f29"
+    },
+    {
+      "package": "CreationCore",
+      "path": "Tests/CreationCoreTests/StrictJSONObjectTests.swift",
+      "bytes": 1034,
+      "sha256": "9e067e272c550f89f1d32d434c6325ea2ded8faa0ac7e7b48548f9b8aa6339d8"
+    },
+    {
+      "package": "QwenNative",
+      "path": "Package.resolved",
+      "bytes": 3384,
+      "sha256": "f786e22cb3052d8b2089ba0302de4c894708a5b44ebe30ec6a6592c1b1a5f6af"
+    },
+    {
+      "package": "QwenNative",
+      "path": "Package.swift",
+      "bytes": 1687,
+      "sha256": "ff2e120cdf828d7031db77207770caf3ac2933d4e62297d0b67cf0c94315caef"
+    },
+    {
+      "package": "QwenNative",
+      "path": "Sources/QwenBench/AttachmentBenchmark.swift",
+      "bytes": 12615,
+      "sha256": "dc52a0e6dda7743c0f570467478699756f3697a6ff1895fb07b1d2911f9b9abf"
+    },
+    {
+      "package": "QwenNative",
+      "path": "Sources/QwenBench/CancellationProbe.swift",
+      "bytes": 4548,
+      "sha256": "3f616e81c5086d0e490bb2a266f78e92aefbf8ce6a8e1727a2928010d6ac4ad7"
+    },
+    {
+      "package": "QwenNative",
+      "path": "Sources/QwenBench/GuidedModel.swift",
+      "bytes": 3446,
+      "sha256": "ca8cba73fc63a85756e0745a45d8f68e5df9adc6b3bd19595e29adb7a384bb18"
+    },
+    {
+      "package": "QwenNative",
+      "path": "Sources/QwenBench/ModelPreview.swift",
+      "bytes": 2686,
+      "sha256": "1656a0e2a9e597a9ed1b7ac6c5719fd7e5567aa5f56e941914d0651c0e83da0a"
+    },
+    {
+      "package": "QwenNative",
+      "path": "Sources/QwenBench/SampledModel.swift",
+      "bytes": 5318,
+      "sha256": "978ea3857bf6fed693e9b538b826dffadc3dda01df1f145338cc6bf70e0bf025"
+    },
+    {
+      "package": "QwenNative",
+      "path": "Sources/QwenBench/main.swift",
+      "bytes": 23137,
+      "sha256": "d1e27f7227805380308e221fe80987d122c8bc1954dc2c990d58ffc3b91e2986"
+    },
+    {
+      "package": "QwenNative",
+      "path": "Sources/QwenBench/plan-schema.json",
+      "bytes": 54379,
+      "sha256": "85eb8cd387506e9718f44d26caf3303c863bc2035585c3bcaa1902962f91483f"
+    },
+    {
+      "package": "QwenNative",
+      "path": "Sources/QwenNative/LocalTokenizer.swift",
+      "bytes": 1709,
+      "sha256": "82988617a11bed0234181f904e214c2bdc0fc29c995b0b233f78ddf00ccc7937"
+    },
+    {
+      "package": "QwenNative",
+      "path": "Sources/QwenNative/NativeJSONGrammar.swift",
+      "bytes": 16499,
+      "sha256": "7dbc4cf98e9c6d414cc3d9e6230c20955997efb682b11c8476173bd74eeeb016"
+    },
+    {
+      "package": "QwenNative",
+      "path": "Sources/QwenNative/QwenEngine.swift",
+      "bytes": 13787,
+      "sha256": "1e1a33f77a8f052d26ebbbd211b35942d0c6a8cb2469e5872ecf992ffd7d7fa3"
+    },
+    {
+      "package": "QwenNative",
+      "path": "Sources/QwenNative/QwenGenerationCompletion.swift",
+      "bytes": 2333,
+      "sha256": "f2a762906ec689b55a5687703e040e3bb11df5891b1267af515204c337ba3896"
+    },
+    {
+      "package": "QwenNative",
+      "path": "Sources/QwenNative/QwenTokenStream.swift",
+      "bytes": 5159,
+      "sha256": "074714e201c3fec4ec97307428d95f9a3b8ae3ddc207398e114d6a60c1fa234f"
+    },
+    {
+      "package": "QwenNative",
+      "path": "Tests/QwenNativeTests/JSONCompletionTests.swift",
+      "bytes": 10261,
+      "sha256": "284ced52b4791959d89c9012f54995d307233e240658380aa972d644ad7edaa3"
+    },
+    {
+      "package": "QwenNative",
+      "path": "Tests/QwenNativeTests/NativeJSONGrammarTests.swift",
+      "bytes": 17322,
+      "sha256": "5f6bbf1b89f03e60683f3adc523c2d45bd30da64b2b65dd5a7f72ad95ed9ac66"
+    },
+    {
+      "package": "QwenNative",
+      "path": "Tests/QwenNativeTests/SceneGrammarContractTests.swift",
+      "bytes": 12002,
+      "sha256": "35a3463a70a1f43779e7602f14975d2af0bccf71183941e3897dd6d38a31ff3f"
+    },
+    {
+      "package": "ThreeLiveNative",
+      "path": "Package.swift",
+      "bytes": 468,
+      "sha256": "2ea8b23e81a6d83e74fa949b99725b74b1371859e6c797a8d32c8e0b91a0b8e1"
+    },
+    {
+      "package": "ThreeLiveNative",
+      "path": "Sources/ThreeLiveNative/ThreeLiveNative.swift",
+      "bytes": 12995,
+      "sha256": "1b9e3efc4471f8c5bbc2a3bb0332ab54595b3273fc18d4e645a48f56ede5f6c1"
+    },
+    {
+      "package": "ThreeLiveNative",
+      "path": "Tests/ThreeLiveNativeTests/FreeformExportTests.swift",
+      "bytes": 1899,
+      "sha256": "153624485b8edd0f9b6b56b1015edad0c08af7801395decea2a8ba379b93a032"
+    },
+    {
+      "package": "ThreeLiveNative",
+      "path": "Tests/ThreeLiveNativeTests/ThreeLiveNativeTests.swift",
+      "bytes": 6215,
+      "sha256": "82eca58633eee209b43075f8105d20185d387c992f198886e04fcbce98cdc67c"
+    },
+    {
+      "package": "VoxamberCreationNative",
+      "path": "Package.resolved",
+      "bytes": 3384,
+      "sha256": "59867d9f6dfcc164ecc0f4509f42516caf504279bb9909d0091b7e5d8d30766b"
+    },
+    {
+      "package": "VoxamberCreationNative",
+      "path": "Package.swift",
+      "bytes": 880,
+      "sha256": "e7888638bc02cab6fd59898908b8b36e3786eaf5787e701be0f8f922d05d8233"
+    },
+    {
+      "package": "VoxamberCreationNative",
+      "path": "Sources/VoxamberCreationNative/CreationImageStageReceipt.swift",
+      "bytes": 3764,
+      "sha256": "564a982f3989b71faa5f0d2a31c1f2bfea437d7b83b9509dc9ad5ccb3955afad"
+    },
+    {
+      "package": "VoxamberCreationNative",
+      "path": "Sources/VoxamberCreationNative/CreationIntentDecoder.swift",
+      "bytes": 2060,
+      "sha256": "4b07b444d08e6a3c43091ec413e5af455a064354ba9c2e901f549e8a21b8e794"
+    },
+    {
+      "package": "VoxamberCreationNative",
+      "path": "Sources/VoxamberCreationNative/CreationTypes.swift",
+      "bytes": 3090,
+      "sha256": "c9a5c252f2a2faac14a0ab0cd567c6e6003be0a3f0e080db4cb8c626d47cc7b8"
+    },
+    {
+      "package": "VoxamberCreationNative",
+      "path": "Sources/VoxamberCreationNative/NativeCreationEngine.swift",
+      "bytes": 9650,
+      "sha256": "12f30477a4189530ae5a0188c25cd8e6c510f6a89084014be9da93da1bd9d6bb"
+    },
+    {
+      "package": "VoxamberCreationNative",
+      "path": "Sources/VoxamberCreationNative/SubjectImagePreparer.swift",
+      "bytes": 9455,
+      "sha256": "b2a3632364a4cd6d425323b0715b418b434fae3105cb2fdf92c6b7c7318d1691"
+    },
+    {
+      "package": "VoxamberCreationNative",
+      "path": "Tests/VoxamberCreationNativeTests/CreationImageReceiptTests.swift",
+      "bytes": 2090,
+      "sha256": "6def85033cb19ef1f2d2193dbdc913e2afcf65249bce098fcd2715fd043d5152"
+    },
+    {
+      "package": "VoxamberCreationNative",
+      "path": "Tests/VoxamberCreationNativeTests/CreationIntentCapacityTests.swift",
+      "bytes": 3354,
+      "sha256": "8f1d9a426e1740bbcbe733b0b5bd765da26f5f69bbbd16f517496933906c5718"
+    },
+    {
+      "package": "VoxamberCreationNative",
+      "path": "Tests/VoxamberCreationNativeTests/CreationIntentTests.swift",
+      "bytes": 2343,
+      "sha256": "1df215b84d9c5115c8812a9641ce594f833883efb07cb88d2b4d6fd080657aca"
+    },
+    {
+      "package": "VoxamberCreationNative",
+      "path": "Tests/VoxamberCreationNativeTests/SubjectImagePreparerTests.swift",
+      "bytes": 9838,
+      "sha256": "99f0e5cbcbfb1e028e5bc3daa4fa6b3b17595810f4f696057f2b8ab867fbab15"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Package.swift",
+      "bytes": 761,
+      "sha256": "e54226bcc98ad1539d40e12e4f3aeed6c3965896ab3f0df8f6f090be6c1b065c"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/CGImage+vImage.swift",
+      "bytes": 9085,
+      "sha256": "1a705171079dc8f71909804f38c2f47d3240f5d5a5b4c4b771f48ec26b4fc18d"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/DPMSolverMultistepScheduler.swift",
+      "bytes": 11877,
+      "sha256": "935b57f0b632a9e166b7c46f8dfa18b5b24f1d3e70c261e87ffde9b89a24cdc3"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/Decoder.swift",
+      "bytes": 2772,
+      "sha256": "6ace6ca382998b486ed7de37ee720e81217eea957ef6a057efd4e80b05a666b7"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/DiscreteFlowScheduler.swift",
+      "bytes": 4894,
+      "sha256": "24a07120cb033a080100045b4d4efb9a73151b941c812be455d3ac83db64bae0"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/Encoder.swift",
+      "bytes": 3851,
+      "sha256": "50f34834d4122dcdbec8f87f5c8ec8df38df9dd760e458359622e435b3eeca01"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/ManagedMLModel.swift",
+      "bytes": 4447,
+      "sha256": "50294be55b4bec01796d9a8a4f61c45092482567f708c509de242ee3b45bd3dd"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/NumPyRandomSource.swift",
+      "bytes": 4172,
+      "sha256": "72d94364c28b66ddfc2b82e61591286eeddc9b505004ac009aff8f4e99b678d6"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/NvRandomSource.swift",
+      "bytes": 3392,
+      "sha256": "509ee5424533408f0a3bb2af6fcfcec248d44e042bbdd84a345c35ea00efdc3a"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/RandomSource.swift",
+      "bytes": 263,
+      "sha256": "ddbc5f36a51986473d7b90183ddaae130f9e67de8896977f4d9cfee85d52c1d8"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/ResourceManaging.swift",
+      "bytes": 577,
+      "sha256": "d534f14e4d7a9660a2efacf3220f74fdb9698b08247c9c57ed902d733793dccb"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/Scheduler.swift",
+      "bytes": 13506,
+      "sha256": "8a0fe6568bc89aa04def364dcddaef479875b8cb95628a94a1420dddf7e01b70"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/StableDiffusionPipeline.Configuration.swift",
+      "bytes": 4204,
+      "sha256": "97156ca93fbfdd7555b0fe9b53ef9472706bc79869624dc3a09afc64ecb2d61e"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/StableDiffusionPipeline.swift",
+      "bytes": 4382,
+      "sha256": "79b86817aa8b8c37727e4dd1f1097c7be690317df0dcbbdcd7924c9a40e6bb84"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/StableDiffusionXL+Resources.swift",
+      "bytes": 4974,
+      "sha256": "c547460a6e3c09852e65570e3d9579623a2f93b3a374627a88321b98b44cde39"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/StableDiffusionXLPipeline.swift",
+      "bytes": 15954,
+      "sha256": "1dec109f5b54987e196500e6f2539449957394e06d6779b2c320cd968c140884"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/TextEncoderXL.swift",
+      "bytes": 3587,
+      "sha256": "7af760be14516e4f3f68d1cf9bf80f05893e05d9f435c2514431e92b538baa78"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/TorchRandomSource.swift",
+      "bytes": 5530,
+      "sha256": "e45eddd61857793176c1f0accfd41537a6bac012d6ee1d3abce2db1a7e0f3b51"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/pipeline/Unet.swift",
+      "bytes": 7514,
+      "sha256": "2f22d726c1f6aa942ebffab8e26ceffa443def8970b6e99602795cce815c7962"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/tokenizer/BPETokenizer+Reading.swift",
+      "bytes": 2250,
+      "sha256": "8f96f356f2ac5b3a316dbd18b2c1f38ac6a1de57f7b11a5f7d000310e6504f5c"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/AppleSDXL/tokenizer/BPETokenizer.swift",
+      "bytes": 8379,
+      "sha256": "48c02b2951262c0af74d6017a301ca07d42e900c52d0dacf22ea8b0065926408"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/VoxamberImageNative/ImageEngine.swift",
+      "bytes": 5559,
+      "sha256": "cf43f6a599ce38aff0c368a7fc0f4dac1b1867c01b2e728ac44af8a78170aa88"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/VoxamberImageNative/ImageRequest.swift",
+      "bytes": 2245,
+      "sha256": "5b59f9f95543f911ce02e56ed3fe7d3eae9b2cb516de0b9a66336f7ac6d7c6df"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Sources/VoxamberImageNative/SDXLResources.swift",
+      "bytes": 3996,
+      "sha256": "522b0c8f705494dc3786bb70eb703700f68119f22a91ceff7c2fece450ad6cd1"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Tests/VoxamberImageNativeTests/CLIPCanonicalTokenizerTests.swift",
+      "bytes": 4095,
+      "sha256": "daf0ad13e75bd70828031f11ab5496dac43118d7081bb8d8e2610260108ec086"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Tests/VoxamberImageNativeTests/Fixtures/CLIPCanonical/README.txt",
+      "bytes": 672,
+      "sha256": "f639f9ff008244a60861645f2646edf617215df7ce541ddf631a734689e528e9"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Tests/VoxamberImageNativeTests/Fixtures/CLIPCanonical/merges.txt",
+      "bytes": 1644,
+      "sha256": "973d4468e6e9ad83450dc5aee17789c20b4cc29abdea96f4503b74db6644505e"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Tests/VoxamberImageNativeTests/Fixtures/CLIPCanonical/vectors.json",
+      "bytes": 27440,
+      "sha256": "4b75a451fde9cead85ae7e6c4191b7e4b9ce52b7f32b272b1345b1f30d839007"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Tests/VoxamberImageNativeTests/Fixtures/CLIPCanonical/vocab.json",
+      "bytes": 8402,
+      "sha256": "1c9ca2fd48da1e11e9e98db5aed52bee7d0311eaeaa5684461c25193f6dda63b"
+    },
+    {
+      "package": "VoxamberImageNative",
+      "path": "Tests/VoxamberImageNativeTests/ImageBackendTests.swift",
+      "bytes": 11941,
+      "sha256": "000318519c42d9a83f3290a75b78cda9f627468c9f2946ed27ce0618da6736ab"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Package.resolved",
+      "bytes": 656,
+      "sha256": "54d80c781855d6667f33fb896994e01e800dcf7e33e2ff167925e522fda8c16e"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Package.swift",
+      "bytes": 898,
+      "sha256": "4d1b0d618424c203aadbe445f2f7e059f822956388582cddac78493ca1f3b21c"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberHy3D/DINOv2.swift",
+      "bytes": 8530,
+      "sha256": "041d410c5c07e1f154c4ca0f9650f0a47e1452df87b5c595974a4f75f9995af9"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberHy3D/DiT.swift",
+      "bytes": 6296,
+      "sha256": "d81076464f85a571f85e2bc69a7944f7fffd41415e6dd7e6cc6fdba67f8333f8"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberHy3D/DiTPlain.swift",
+      "bytes": 15111,
+      "sha256": "c40ed01df0f80a706c84fd7c505ad6cc14e9154bc253da32d03830d73ffa6e6a"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberHy3D/GLB.swift",
+      "bytes": 10831,
+      "sha256": "352c0b582215bf647a5eb9819466386ebab9aaef9a6a5c796243f69a61b8c183"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberHy3D/Layers.swift",
+      "bytes": 3414,
+      "sha256": "947d09a19e49b04ea2710ecc0f132fe0143e184e0881cede8c77a493319c2a5d"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberHy3D/MCTables.swift",
+      "bytes": 8848,
+      "sha256": "73cf18dee2e30d5e8703db7792db6856d792345cee9bac349f9764ac70d9b0b9"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberHy3D/MarchingCubes.swift",
+      "bytes": 7428,
+      "sha256": "f4d9e1fc138ed798ef2c740e6b4d00b94ab323a917196e1d8032c55735071b39"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberHy3D/MeshCleanupPolicy.swift",
+      "bytes": 2995,
+      "sha256": "377446656b523f80fd3eade1ddb06d4d7ad2d070643f03d48ca1da3d4116373b"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberHy3D/Pipeline.swift",
+      "bytes": 16852,
+      "sha256": "8d49ee9efb0fe2f6c088b97e48e79e4a230795923b795b95a54ffa23da1e2e87"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberHy3D/Preprocess.swift",
+      "bytes": 5834,
+      "sha256": "a97ce60087d1aafc70f47007a0f22e0d0fdb9481314a7a131e7c7787aa9b0568"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberHy3D/Sampler.swift",
+      "bytes": 2661,
+      "sha256": "72e5272fd603a164718fc500462d2a3904dfd351c173683d46fa9e573f088ad2"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberHy3D/ShapeDenoiser.swift",
+      "bytes": 3249,
+      "sha256": "91d8e50eb07c5e3182038da3162d835423439136d8ee319d3812989bb741ee25"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberHy3D/ShapeExecutionStrategy.swift",
+      "bytes": 2444,
+      "sha256": "529364d722588ffc202a027c9b332147c17d5a36e249166875fc223cc2535c32"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberHy3D/ShapeGenerator.swift",
+      "bytes": 38132,
+      "sha256": "b2fa07014ca73993d112feed035e9671e15206eec313fe2926a3c45760f946ba"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberHy3D/ShapePackLayout.swift",
+      "bytes": 4161,
+      "sha256": "95b6d54ba50efaa3624a7b83098b4b007cdcc035b3a27931c791e61acd178c5e"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberHy3D/VAE.swift",
+      "bytes": 4187,
+      "sha256": "df06b82b5c75f558dcadca8b317c21294973cbcf14d74fccaadbc1f49ef8e557"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberHy3D/Version.swift",
+      "bytes": 36,
+      "sha256": "961a7675dde1ae6c859411dff3a8b86114cf87d0538cc0a085da07a34ac532ef"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberShapeNative/Module.swift",
+      "bytes": 234,
+      "sha256": "b63ae8318b66a3a70d511a401d3ff95d2d36a767f6471631e2ee7fb5b968d426"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberShapeNative/Resources/Legal/Hunyuan3D-Swift-MIT.txt",
+      "bytes": 1069,
+      "sha256": "e0485dc21868a42682cf1255af42d1bf038cf5e80608b2006b5c69d65d426d7f"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberShapeNative/Resources/Legal/Hunyuan3D-Swift-ThirdParty.md",
+      "bytes": 1426,
+      "sha256": "abd4d61f1c0bf3dcfc6a399457f26254be74518dc53de8b69e2606e3a3a1d241"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberShapeNative/Resources/Legal/Snap3D-ThirdPartyNotices.txt",
+      "bytes": 7575,
+      "sha256": "679ddc10a7dbe0c3170c55dfd00dd2c6b40bab320c7927c6fe6ea22754023b8c"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberShapeNative/Resources/Legal/Tencent-Hunyuan-3D-2.1-License.txt",
+      "bytes": 17911,
+      "sha256": "f60f9fdf0c40cdd3983123eb8181caac027a6f86d4ea3c827618e5e1e5adc6db"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberShapeNative/Resources/Legal/Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt",
+      "bytes": 17915,
+      "sha256": "5bd08f93b2d280bb26ff3eed5d3996fe47a9698b5f7785163928668d7fd578c6"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberShapeNative/Resources/Legal/Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt",
+      "bytes": 16644,
+      "sha256": "ffccf6b539a82e6084d14ff064dadd22d33384d6164b07c0c5a3141810df0350"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberShapeNative/Resources/hunyuan-shape-2.1.yaml",
+      "bytes": 2078,
+      "sha256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberShapeNative/ShapeAssetExporter.swift",
+      "bytes": 12576,
+      "sha256": "fab1e5f6988d8fd5ba252e5c47e5cc5cb367d815d8bd2980532b115cfe716c64"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberShapeNative/ShapeEditRecipe.swift",
+      "bytes": 4553,
+      "sha256": "f287437575160178103fdd6783cfd7a0234f13b2226d247beb44c2ae8f683d0a"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberShapeNative/ShapeEngine.swift",
+      "bytes": 8534,
+      "sha256": "19717d8a53140f11bc6c100185edd826799a0cb2223c1ab91a0297dd2ab2d5c9"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberShapeNative/ShapeMeshArchive.swift",
+      "bytes": 3422,
+      "sha256": "6a17380137da51ea6f9e0f9f83eeab8d2f0887e6511f658eb3a27dcbbf5a7a04"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberShapeNative/ShapeMeshEditor.swift",
+      "bytes": 8366,
+      "sha256": "b2d6c58fa7a85b0c3fd0c8ba05db289d2f20298e7bc37d5480bcba475d984795"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberShapeNative/ShapeRuntimeSupport.swift",
+      "bytes": 3899,
+      "sha256": "266edfcf781f82306546ef865fe19a3776da8c75b128f56026de9f83e2150853"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberShapeNative/ShapeTypes.swift",
+      "bytes": 6141,
+      "sha256": "23a33c5277e2db1f9c13e481a8c6683bd3b66678251cb4a361dfe1b16b9fb486"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberShapeNative/ShapeWeightProfile.swift",
+      "bytes": 2018,
+      "sha256": "aef56e2241b6c1689ad5bb7f19a9c8ac07a592e1ea9bcba5ace1890a86f9482d"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Sources/VoxamberShapeNative/USDZArchiveWriter.swift",
+      "bytes": 14414,
+      "sha256": "cc9de8b29060927390c8989cdf33afd08c74ad1259be5dd43798bc825d68bb1a"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Tests/VoxamberShapeNativeTests/DenoiserCancellationTests.swift",
+      "bytes": 10842,
+      "sha256": "3f69fc1b8a0814792bec3cc2416e7c043256cfafad40db9d1f3019e27eef8502"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Tests/VoxamberShapeNativeTests/Fixtures/CandidateBoundaryTriangles.json",
+      "bytes": 194784,
+      "sha256": "4c285f06746a1a47bcd45bed058bdb5bba2ef4eac951405664a0b179b4f1109e"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Tests/VoxamberShapeNativeTests/Fixtures/TinyDenoiserBeforeCancellation.json",
+      "bytes": 906,
+      "sha256": "1f6e8fdbc8aa6e6f6a0698927520aaff6165a1fcb5be8402e6cf58ae108ae949"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Tests/VoxamberShapeNativeTests/MeshCleanupPolicyTests.swift",
+      "bytes": 4892,
+      "sha256": "f61fc09c2619f3780c93bb45d65c3a849b4c0e99d7a393bdd9caeaa5164d6772"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Tests/VoxamberShapeNativeTests/ShapeMeshEditTests.swift",
+      "bytes": 11919,
+      "sha256": "2340b56a2d2d60b33c4a3a83a0f9a830bdcc3ac08373efcb09bb6baa35f4d3de"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Tests/VoxamberShapeNativeTests/ShapeSDKTests.swift",
+      "bytes": 9531,
+      "sha256": "5d1c182726da88c7cec153f87d6cd505c3d9e1f32f49b6bdecb18798e6abfdc9"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Tests/VoxamberShapeNativeTests/ShapeWeightProfileTests.swift",
+      "bytes": 4879,
+      "sha256": "411de4d8b46b37ed934e3ab821aa40f92fa00c0b3268fddcedd36121e1c29ee9"
+    },
+    {
+      "package": "VoxamberShapeNative",
+      "path": "Tests/VoxamberShapeNativeTests/TinyDenoiserFixture.swift",
+      "bytes": 3757,
+      "sha256": "e86b4033efa949cb7f54ce0189b1076ab5e246d5e673e9095a2c308ca87caf04"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Legal/FLUX2-Apache-2.0.txt",
+      "bytes": 9584,
+      "sha256": "ca02bc51900ab07789d1b70283329e7137f5af98f5161c23a1c81fc38a4af1fe"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Legal/Flux2Core-MIT.txt",
+      "bytes": 1072,
+      "sha256": "82d2c537c449843bc00af7467d8fb1628151fa263c246aa5d769deb946b52773"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Legal/Flux2Upstream-MIT.txt",
+      "bytes": 1072,
+      "sha256": "82d2c537c449843bc00af7467d8fb1628151fa263c246aa5d769deb946b52773"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Legal/MLXProfiler-MIT.txt",
+      "bytes": 1071,
+      "sha256": "f31869a869df77c7f5f79e004c64d489337aa2a20489c540d8573aaf87ff2206"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Legal/Qwen3-Apache-2.0.txt",
+      "bytes": 11343,
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Package.resolved",
+      "bytes": 2838,
+      "sha256": "aa764dc15052054e52177b92734c42c00b2342c5bb9e66e47bf1ba8308ccbc8e"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Package.swift",
+      "bytes": 1955,
+      "sha256": "38c2de430466301ee19e9d192c783d4159e178e4329a5a55531594fa34d255e5"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Configuration/Flux2Config.swift",
+      "bytes": 13278,
+      "sha256": "5880838e489b58371b5cad8e2c81257d753f001e1e1ff59f938a4273c5074d67"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Configuration/MemoryConfig.swift",
+      "bytes": 10855,
+      "sha256": "4232c483b6ff740cc32b7bd010f901c78e93c7f0ccc40bbf2f6e2496ad435fa7"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Configuration/MemoryOptimizationConfig.swift",
+      "bytes": 5294,
+      "sha256": "8c11c5f9b29adbece46629aed0195108bba5e79124a02bff208bb37eafac3631"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Configuration/ModelRegistry.swift",
+      "bytes": 22272,
+      "sha256": "1654d32e77c01b6abaf224b5d3cb92d4c9ca22cc5ba370b26569479d1c39c2a3"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Configuration/QuantizationConfig.swift",
+      "bytes": 4260,
+      "sha256": "4921559381ef5fb560a928e2c6b838a335110c30cdf25c485f405db8d0a0a112"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Configuration/VAEConfig.swift",
+      "bytes": 6511,
+      "sha256": "881fdb83e339d4b16a379fe81f3e048b34024670a92c66c45efbed005c6e23ee"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Flux2Core.swift",
+      "bytes": 1493,
+      "sha256": "cb168927e1a9b290b21fd9606b803effc4e91c31013e3e4bf05b6e27b4e58740"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/LoRA/LoRAAdapter.swift",
+      "bytes": 7588,
+      "sha256": "974712dc9b85a5cb010c25cb7d0915618cee96fe2084967d5e5075301b881d55"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/LoRA/LoRAConfig.swift",
+      "bytes": 4499,
+      "sha256": "0109813133fd471d7522c620eb7744fb084959231f633f741aed9ac424150d6f"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/LoRA/LoRALoader.swift",
+      "bytes": 20811,
+      "sha256": "c31c87925d3a21e8e035676773d11ed04e603bb1f680f7a320fd5a3d88f596f4"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Loading/DevTextEncoder.swift",
+      "bytes": 4807,
+      "sha256": "3bbf7cdcf0e6b51f5e9491e258bceef9783dff3d0cf454e5a202f91c2bde34b2"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Loading/KleinTextEncoder.swift",
+      "bytes": 7842,
+      "sha256": "1586f852629030d70ec9842765477ae3a805ee88d8f477e22d60a74724ebdda0"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Loading/LocalResourcePaths.swift",
+      "bytes": 1881,
+      "sha256": "1e68fe20eaeb40654aab538b6762eec9e45e478585bba6f3faac433e4cadea5d"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Loading/MistralEncoder.swift",
+      "bytes": 18572,
+      "sha256": "e8dbe38dc64567b591ac204e78c44f781ba0cdec5e6388f7d42b82d358e36449"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Loading/ModelDownloader.swift",
+      "bytes": 31589,
+      "sha256": "f6f26d6fd361b7bc79e225ce974444fd7bce836a7367cfcc83e49cc9e1384c95"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Loading/TrainingTextEncoder.swift",
+      "bytes": 1818,
+      "sha256": "6d3cde2b51b769f4aa12f7a36c71fffea7c6ec8fd750ee4ed2e45da16f2703f4"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Loading/WeightLoader.swift",
+      "bytes": 55576,
+      "sha256": "18663605b67ebf5fd01f47871556af286987152e48f9572f83115b004089f719"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Pipeline/Flux2Pipeline.swift",
+      "bytes": 80530,
+      "sha256": "8b677120fe9a7b947749931a45d1105b89adab78bf8b805bc63ef4c9ed798754"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Pipeline/Flux2StreamingSupport.swift",
+      "bytes": 6089,
+      "sha256": "c609054bb561652038d071374cef0e0c64e812aad4d5fc46dc9977ca5961884b"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Pipeline/LatentUtils.swift",
+      "bytes": 19769,
+      "sha256": "ec0cd89d347a97e38f34976ec22bc4a5b8e98d77413c442f732276a61f6bff56"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Scheduler/FlowMatchEulerScheduler.swift",
+      "bytes": 10266,
+      "sha256": "22c97590642b86cbe567f59c0a13bfa51da9334436ed43f40580bdfa4b8be5b1"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Training/Configuration/LoRATrainingConfig.swift",
+      "bytes": 36869,
+      "sha256": "212ac0d6659371bbec47efe1c3813f29fca5be85f42b78533f1af349887d023a"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Training/Control/TrainingController.swift",
+      "bytes": 12771,
+      "sha256": "77e49c0562ba0c1ed5d3ccd95e4495dd35f458fb16045f6e7160f8708b655f4f"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Training/Control/TrainingSession.swift",
+      "bytes": 10453,
+      "sha256": "081cedbf4b269d106dc45beaf9af31ad77eb799f09af63aef2a2ce7c6cf0f20d"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Training/Control/TrainingState.swift",
+      "bytes": 11342,
+      "sha256": "b873724cf2103df9d60d051d3a8bd5e7f61bb9bdc6037aa81c2c71f9e64cf6a4"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Training/Data/AspectRatioBucket.swift",
+      "bytes": 7025,
+      "sha256": "d859aed808b7397fa34415b47e60f14bb6c7ce96fd793b1fca8e6e1e053a86d1"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Training/Data/CaptionParser.swift",
+      "bytes": 12367,
+      "sha256": "aa35a76706ee50a1ab34248e5caf56e47da5e698fe6b9e957d3c0a44a6d42f8d"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Training/Data/LatentCache.swift",
+      "bytes": 25818,
+      "sha256": "5056e558cdfaec0aa86492dc240a132bf2c3a0bca2dbbd28dad8385034732665"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Training/Data/TrainingDataset.swift",
+      "bytes": 18278,
+      "sha256": "40a5de000030bf5438156895a86e144e90632501d0b1dd24ea5bd7a90403a8be"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Training/LoRAEvaluator.swift",
+      "bytes": 16187,
+      "sha256": "2de74a897fbe629f3f73fbe5f241989ae340843ed74bb302832eb811db33f6ee"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Training/LoRATrainingHelper.swift",
+      "bytes": 29136,
+      "sha256": "91cc60f24afae4f68fe5ccb7ba290e95f386dfa7c02c6946b4c83f6a336e5104"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Training/LoRATrainingSetup.swift",
+      "bytes": 7100,
+      "sha256": "d808848b799fe8956f57dc392df49b8908814e4a16cc7409f4ac64ef017c8c77"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Training/Loop/SimpleLoRATrainer.swift",
+      "bytes": 115777,
+      "sha256": "e723e070f1d70d843011e56337820f316bec9a692399a81af62280f95840ed4c"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Training/Model/LoRALinear.swift",
+      "bytes": 22314,
+      "sha256": "20682bf2ff10518b7688497288878a2fac0abf9dd5f77bea1191b5cad85c0dce"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Training/Optimizer/ResumableAdamW.swift",
+      "bytes": 4142,
+      "sha256": "163da3396f35b07d459dcd3bec7ca53b96a5cb3f011c1b4636c77a11a9bac6c1"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Training/Optimizer/ResumableLion.swift",
+      "bytes": 3733,
+      "sha256": "7c8b4138221ca8ce9db316322903fccc9f90c163dad01005a61d47706ffefa30"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Training/Optimizer/ResumableOptimizer.swift",
+      "bytes": 920,
+      "sha256": "9267c3cfa51b59f4e9073a648ab7764fe68a682cfe490f4e19ec66f0efebfddf"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Training/Training.swift",
+      "bytes": 3397,
+      "sha256": "ed8daf69abf23c719cb64abbb128256b7bfcf164d032ceb5149ecff59cd89f22"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Transformer/Flux2Attention.swift",
+      "bytes": 20039,
+      "sha256": "e2d068f8241bf033556cb27797336f2f84dc78f4aeb1219185864f2006471869"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Transformer/Flux2Embeddings.swift",
+      "bytes": 5173,
+      "sha256": "03537e3b033319b3467bcfe183c5f021634fbe066f1976e59629a50ac2707502"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Transformer/Flux2FeedForward.swift",
+      "bytes": 5274,
+      "sha256": "ac8c2baea87b3754da76fcd47274cf6b410aa78dc7ed697fdbc8f64a5fc5aa29"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Transformer/Flux2FusedKernels.swift",
+      "bytes": 7606,
+      "sha256": "9cd41be5e6e197b244f72533ee086f6c4e1fb48e0da18f79debc4e0049d7782a"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Transformer/Flux2Modulation.swift",
+      "bytes": 7334,
+      "sha256": "1f9f5fb2de58864926ef358ed1e7ce6f38ffb5d28be372649705cfd2caabebab"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Transformer/Flux2ParallelAttention.swift",
+      "bytes": 17053,
+      "sha256": "a18f78e880edc1accb55f7e150754b5182a82e6ba13f3f441b01c3d86ddb19d7"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Transformer/Flux2RoPE.swift",
+      "bytes": 12257,
+      "sha256": "e80a0050a8ede0ac2b2faf1305ef1f0ceb5c0a6284a9c3e6de24357071439546"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Transformer/Flux2SingleBlock.swift",
+      "bytes": 9078,
+      "sha256": "b85d96448ba0f4a13b0b0f6e8e2cdbd0fdbcc91dc0a41eae946911a9e03973f7"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Transformer/Flux2Transformer.swift",
+      "bytes": 30651,
+      "sha256": "6f8ce3d058e89d8f91ee7af20e77d2b8ec6141e7795a4db15b9759ec30808ee3"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Transformer/Flux2TransformerBlock.swift",
+      "bytes": 12981,
+      "sha256": "3af6e9da8b81a7537020414f1692a01fc6b2a261f7772e50963d34378b0b062a"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Transformer/TransformerKVCache.swift",
+      "bytes": 2835,
+      "sha256": "2947f6cc5502780fa46be52dd9899b78bc256cbdf5c627e3dd89ef5528090540"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Utils/Flux2Debug.swift",
+      "bytes": 2742,
+      "sha256": "3f5dd57eb13d997ed170b3a1b7873f88a499936b873f603dff85c426be882dee"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Utils/Flux2Profiler.swift",
+      "bytes": 5377,
+      "sha256": "ddec88e5a7b30290c41fa7221fcd5a69773311ed6adf3c0ad38acdead54196c8"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Utils/MLXCheckpoint.swift",
+      "bytes": 4075,
+      "sha256": "d67bb270242c9293a4b57b8ed554b7ed5d623db272c8a7cc985a50231ea1932d"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/Utils/MemoryManager.swift",
+      "bytes": 6508,
+      "sha256": "cd941ca0352b7c0e310500f2bb6caade279af5ee5d4503533621443a144b6b7a"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/VAE/AutoencoderKL.swift",
+      "bytes": 17308,
+      "sha256": "71e0f52b766ab51d70c1bd5063ea146074878da97dbd21a7018c86f7c83a6932"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/VAE/ResnetBlock.swift",
+      "bytes": 11457,
+      "sha256": "96cd645820f86a240789e6596e55ef72959c975fa6c4bb0d717a313a4054358f"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/VAE/VAEDecoder.swift",
+      "bytes": 8558,
+      "sha256": "267e9140d0e39a71d9c4c56c1631763886bb0b5213c94a18b2292034772f643d"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/Flux2Core/VAE/VAEEncoder.swift",
+      "bytes": 4595,
+      "sha256": "6ea6fddf87464463c8a933a82f5da6df8393a4c14bc999ffdc307507f9570a96"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxCandidatePreflight/main.swift",
+      "bytes": 970,
+      "sha256": "01b3ecc7e20aac7ca3848b51735c35fea34b0dc11649746934186f1856257735"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxCandidateResources/FluxResources.swift",
+      "bytes": 8012,
+      "sha256": "e8c68539f595a8f3d16ff6aa7e59189bd7ccd4b3e225b975c38588030eacc4f5"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxCandidateResources/flux2-manifest.json",
+      "bytes": 9261,
+      "sha256": "314c5105a019dcd1aca7d1c95d374fa36b01c1d28b0f346fc40bf87b1e1c1b4e"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Configuration/EncoderConfiguration.swift",
+      "bytes": 11397,
+      "sha256": "7177c4d08b62a253bb4518ed11f0e77a8a495f2055032dacbbe23be19060e4dc"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Configuration/Qwen35Configuration.swift",
+      "bytes": 8531,
+      "sha256": "5f28e9dc64621061a4e1319ec7efcb5dcf9e96b80cbd5d04799623ceca3467bc"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Configuration/Qwen3Configuration.swift",
+      "bytes": 7110,
+      "sha256": "f4ab51a160962ae554a019b1c57350e9f204ff4e7bfbdf397ff9ed9feb60a387"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Configuration/Qwen3VLConfiguration.swift",
+      "bytes": 7519,
+      "sha256": "c5cb2423f1618dc19e72f69f4e64890fa6a15ba155a5bfb804f2ebae225cc5ef"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Configuration/TextEncoderMemoryConfig.swift",
+      "bytes": 2200,
+      "sha256": "df69014a8dfbd1652ca7f7443c1b8b72007ae0990783ce5980633527678f1823"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Configuration/TextEncoderModelRegistry.swift",
+      "bytes": 23223,
+      "sha256": "de0f8e0a7be7585be5a3e39cea09e5171a7db4572c11f62f1d870ee27f05ada9"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Embeddings/EmbeddingExtractor.swift",
+      "bytes": 15437,
+      "sha256": "c87e02c88918169fd427fc38b4e583c79a7fe277b59ee148a17d9b6a6919807a"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Embeddings/HiddenStatesConfig.swift",
+      "bytes": 2831,
+      "sha256": "8134b336f8143b8f4522ecbc3786aa8f31000936979a577e6e1043137cb0addb"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Embeddings/KleinConfig.swift",
+      "bytes": 6453,
+      "sha256": "7d198cb1a41b2a8d5cf80ab3e228066523d6309ac41b4625b328d955a34f8fbc"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Embeddings/KleinEmbeddingExtractor.swift",
+      "bytes": 8782,
+      "sha256": "5b2d6fa501bff041ed33cfefc0c05cf3a2fe836891a843d49f7ae6176c13fd3b"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Embeddings/KleinVLEmbeddingExtractor.swift",
+      "bytes": 5190,
+      "sha256": "b4d32ffd9cbf599e23b8da6758c89c5d6c74a62b7b7d0ef6104dbd877807f857"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/FluxTextEncoders.swift",
+      "bytes": 59330,
+      "sha256": "2a000e723a0b4c7174faa55d4c526de0b694c4d43d39d9e1db3893a9604e39f5"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Generation/MistralGenerator.swift",
+      "bytes": 16378,
+      "sha256": "628d4f54cd4038f1841331c3a63dac9cd0abe3580ca370373445fcca9a6cc1dc"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Generation/Qwen3Generator.swift",
+      "bytes": 16543,
+      "sha256": "07842c441f024b2cadc9284ed8e9cc790ca0ebc98a06dd74b25b4f67f350eb48"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Generation/Qwen3VLGenerator.swift",
+      "bytes": 5521,
+      "sha256": "4941b54837417c1eabc612c3a071c59a42f113c7b859db84463846994990fbb7"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Loading/FixedWeightAdmission.swift",
+      "bytes": 3028,
+      "sha256": "1d37b70d704be654bd3c114c0937da94233c93a26a3d4e9fa50328afaeb6f737"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Loading/TextEncoderModelDownloader.swift",
+      "bytes": 39364,
+      "sha256": "7d964c1ac84b41e6f98aaad41f43444aa7ac1aca06c810a1ea3e6032d0c6c65e"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Loading/TextEncoderWeightLoader.swift",
+      "bytes": 2684,
+      "sha256": "41a4cefded48f332f28f8eaa5441c156bf18d71a6e0337762c93d9cd24a47f31"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/MistralAttention.swift",
+      "bytes": 17500,
+      "sha256": "6f074a9b6ab6998343898c5f37e3d8bd6f1a5f1cdb2694a2ecd7cb79c0e660bf"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/MistralMLP.swift",
+      "bytes": 1579,
+      "sha256": "cf6907ffa2c521584f41c51590ab0db60d480ed802ed055dfc39fb55c4c41202"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/MistralModel.swift",
+      "bytes": 12962,
+      "sha256": "b1552450ec9dd9de1e4923b3904879d3bf01ecbe4a41ff036e30408cd80a6e3f"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/Qwen3/Qwen3Attention.swift",
+      "bytes": 6303,
+      "sha256": "3c71ce28631806d97c2c8d4bff58ad67603ab400e992fe42ab9e434e38c77c19"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/Qwen3/Qwen3DecoderLayer.swift",
+      "bytes": 1482,
+      "sha256": "7bd2e38012daca6e9e24a3fc533566ca5f1c382dbd4968d863421073f9f7e19c"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/Qwen3/Qwen3MLP.swift",
+      "bytes": 1657,
+      "sha256": "6f28bf87f0c4f5a475c8612205eca290294f780115e0754e5a8ea9daae3d05e4"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/Qwen3/Qwen3Model.swift",
+      "bytes": 16016,
+      "sha256": "2a5778234842e788bd23e33a561d7dd8b2f2982970679ba1bb5e9f4e988fff7f"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/Qwen35/Qwen35Attention.swift",
+      "bytes": 5283,
+      "sha256": "535d9b2fb5dd787c92f34b9c59faa5c5c5ba8e676ed398fcc1ec68a3fa632e3d"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/Qwen35/Qwen35DecoderLayer.swift",
+      "bytes": 1800,
+      "sha256": "85e57678051d61e8067f998535c1b225eedb8219d7becb5f88736ccf7e33bbea"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/Qwen35/Qwen35GatedDeltaNet.swift",
+      "bytes": 11504,
+      "sha256": "94411324465404219817e85814fc4bca329d5b299bc1eeca38564393594fc402"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/Qwen35/Qwen35MLP.swift",
+      "bytes": 968,
+      "sha256": "9b9d7a56ca4df1e6b96978559bd476e62e2e058247e0a942012811f08bbb8b57"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/Qwen35/Qwen35MRoPE.swift",
+      "bytes": 6553,
+      "sha256": "347a709bd4cdaf90b7bcf82bdb22fc6838a23a3f12af59c86892be73e99eff89"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/Qwen35/Qwen35Model.swift",
+      "bytes": 10589,
+      "sha256": "793264b9a1dbf1986a068f4e519b97c1e9c277f1e8f61f9be4f05fe312fb0ea9"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/Qwen35/Qwen35VLM.swift",
+      "bytes": 15224,
+      "sha256": "69d1b51eef8e4b956814a308f5331fc6b7e4b940d383bee9a23dece5effe3af7"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/Qwen35/Qwen35VisionEncoder.swift",
+      "bytes": 16829,
+      "sha256": "c3c257ae2a32f9a4f735daac4247788e6dae9dcaddcaa710df74128278d08daf"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/Qwen3VL/Qwen3VLAttention.swift",
+      "bytes": 5003,
+      "sha256": "749314635df56db73c55efcf2fb4585f5897257904e54d3119ae42360909e692"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/Qwen3VL/Qwen3VLDecoderLayer.swift",
+      "bytes": 1803,
+      "sha256": "70e4497f5677d14e5dd7e2e6cd2b493415fdfa9826dcc9f2b875113e2ea139a4"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/Qwen3VL/Qwen3VLMLP.swift",
+      "bytes": 1405,
+      "sha256": "cfa8640e1acf7e670e88aeee4ca87f40359d3a85afe70b69c1a323975e3d21eb"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/Qwen3VL/Qwen3VLMRoPE.swift",
+      "bytes": 5104,
+      "sha256": "2fa71efed6c5994193cb16a72f035c8779a73d8d04c87ad8b0a6c906c5e497c3"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/Qwen3VL/Qwen3VLModel.swift",
+      "bytes": 14081,
+      "sha256": "e12f4b1fef781e1ca00e9668c87960942514b84858d3d4d21b21513e09396353"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Model/RMSNorm.swift",
+      "bytes": 1039,
+      "sha256": "4f4dfacf108772e83a69dce327d883fcb763da250cdd8da72dbb253773c98e72"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Tokenizer/TekkenTokenizer.swift",
+      "bytes": 19285,
+      "sha256": "6d933d742d78f748ca6d9d346c87bf6a599918e8c2c0331208079c5e8cd17fd2"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Utils/FluxDebug.swift",
+      "bytes": 872,
+      "sha256": "9d2f37f3c4fe5597b408285815b1639afb262f08ce1478c95b92f1ba8fc51264"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Utils/FluxProfiler.swift",
+      "bytes": 9759,
+      "sha256": "c82fb966ca45614c2c522342633b87779438fe4732bb425dea62071a3f164a57"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Vision/ImageProcessor.swift",
+      "bytes": 10721,
+      "sha256": "c12e786102d93fbb0088dac19e1aa2278e60c622b4a7f6ddb02e8b6ea061e990"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Vision/MistralVLM.swift",
+      "bytes": 40600,
+      "sha256": "62720680410fb5322c0d8cb6e0c7fd19da1ea8264691d3490446685b0d90afc5"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Vision/MultiModalProjector.swift",
+      "bytes": 9339,
+      "sha256": "c13547997c1e615c3764daae018fe4f837b57c4c3ad12a9ca8152f43a9276dab"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Vision/Qwen35ImageProcessor.swift",
+      "bytes": 5095,
+      "sha256": "214326000a6af3c1c04202ecac7e367bb96e1b24edaae8dc75493a06eaf16bd9"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/FluxTextEncoders/Vision/VisionEncoder.swift",
+      "bytes": 18955,
+      "sha256": "bf1c3a4ea522c6ed68e2318c784a03e1215a3ae12cbec7692167be5df0373d30"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/MLXProfiler/BenchmarkRunner.swift",
+      "bytes": 7781,
+      "sha256": "f81cdca52f7ba10bbab1fe98519e951638753831ba6e42b209d3c7be120bd106"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/MLXProfiler/ChromeTraceExporter.swift",
+      "bytes": 6995,
+      "sha256": "e735f4bf97ad06ca4e93a087958d37fac70978945080991eaf37e240a9d98a77"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/MLXProfiler/LLMProfiling.swift",
+      "bytes": 6866,
+      "sha256": "6b4e8f4b3d5e3e5c15eef3cb8def8f66e4a87295669d0c370c3869531ff1b9b1"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/MLXProfiler/MLXProfiler.swift",
+      "bytes": 5178,
+      "sha256": "cf43f4541e4d37ab38d25c8965707987d57e2713f2c008df1a9873ef2f68dc2d"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/MLXProfiler/ProfilingConfig.swift",
+      "bytes": 1649,
+      "sha256": "4c7044b3859705d46060a44e8e833e316468b6e91dc61dac6c83d52fe98b7ebf"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/MLXProfiler/ProfilingEvent.swift",
+      "bytes": 7571,
+      "sha256": "9243ad41c73fb802eaf1f2a627e339dfcd3232f8174353adbe81aea4e58e03a1"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/MLXProfiler/ProfilingSession.swift",
+      "bytes": 18312,
+      "sha256": "85e63d7cd055e94b9c68e9df945301daf50bc891f54add3e69694c093ff9150b"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/MLXProfiler/SystemMetrics.swift",
+      "bytes": 3639,
+      "sha256": "a13649fa8216226281deca04abb3aec4857a12420de09c3b6d1fb3d2d7b21e16"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/MLXProfiler/TTSProfiling.swift",
+      "bytes": 8092,
+      "sha256": "bfd577be5cb3f101da91b05bf5e97381509ff7774e6095d4d324ebb1532c3ae5"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/MLXProfiler/TrainingProfiling.swift",
+      "bytes": 5483,
+      "sha256": "b79a83fadc5efebb01b3cdc92920f1accf7514a79c73efd8831430a87c373f0f"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Sources/VoxamberFluxCandidate/FluxImageEngine.swift",
+      "bytes": 7678,
+      "sha256": "8ae3df4903d0ed5517a01b3f079ad110a33c92adf21c509ebbf6050172b09a21"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Tests/FluxCandidateTests/LifecycleTests.swift",
+      "bytes": 6180,
+      "sha256": "77459df8a51dfb5aaafe48d9b9ce1c6e0c6b8a31286a56c85236ebc6eca392b3"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Tests/FluxCandidateTests/ResourcesTests.swift",
+      "bytes": 7421,
+      "sha256": "a5c35f7f5ab6042487acd897d9bfc60ceab5c8a57bca752b8c30b362b7e73f36"
+    },
+    {
+      "package": "VoxamberFluxNative",
+      "path": "Tests/FluxCandidateTests/WeightContractTests.swift",
+      "bytes": 4320,
+      "sha256": "47287c87ba982d5ec67e191e3d5eaf6bd0db3c93cfb490dcc45b7fce4badedd8"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "recordedAtUTC": "2026-11-06T02:59:33.695924+00:00",
+  "reviewers": "model_research viewed actualprepared/front/three-quarter PNG; Root independently viewed same3artifacts",
+  "assessment": "main_lamp_recognizable_full_quality_partial_fail",
+  "observed": [
+    "Conical/frustum shade with visible underside opening, cylindrical base,thin upright stem andbulb are recognizable.",
+    "Main body connections look continuous in the two rendered views; indexed component analysis is separately reported, not inferred from the image alone.",
+    "Unrequested cable-like floating fragments are clearly visible near thebase in three-quarter view.",
+    "Vision prepared image retains left-side cable andmain lamp is shifted right within the square. No manualmask orpixelrepair was performed.",
+    "Shape material is untextured gray; red/gray input colors were not transferred into3D.",
+    "physicalScaleKnown remainsfalse; nativebounds are normalizedmodel units andnot0.8m/Y0 proof."
+  ],
+  "componentEvidence": {
+    "indexedComponents": 7,
+    "largestTriangles": 76040,
+    "largestVertices": 38018,
+    "largestAreaShare": 0.9657973946319164,
+    "largestBoundaryEdges": 0,
+    "otherComponents": 6,
+    "otherTriangles": 2772,
+    "otherAreaShare": 0.03420260536808362,
+    "allBoundaryEdges": 6,
+    "nonManifoldEdges": 0,
+    "zeroAreaFaces": 0
+  },
+  "interpretationLimits": [
+    "No component was automatically removed orlabeled bysemantic role.",
+    "Disconnected components can be legitimate in generalmulti-object scenes.",
+    "Largest-component selection would not establish prompt compliance,watertightCADgeometry,physical scale orcolor quality.",
+    "No diagnosis attributes the defects toquantization/runtime without a controlled comparison."
+  ],
+  "noFurtherNNOrRepair": true
+}

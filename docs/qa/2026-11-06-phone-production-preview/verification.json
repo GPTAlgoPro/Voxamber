@@ -1,0 +1,28 @@
+{
+  "status": "physical-thumbnail-rendered-but-material-appearance-FAIL",
+  "phoneGeneratedModel": true,
+  "physicalProductionThumbnailReturned": true,
+  "productionModelViewportPhase": "ready",
+  "entityAttachedToScene": true,
+  "directPhoneViewportVisualAcceptance": "pending-user-observation",
+  "rootViewedActualPhoneThumbnail": true,
+  "thumbnailAppearance": "magenta striped diagnostic material over recognizable generated lamp geometry",
+  "hypothesis": "Generation USDZ exports no material binding when material=nil; compare same geometry with explicit neutral UsdPreviewSurface before claiming fix.",
+  "normalAppDataChanged": false,
+  "neuralInferenceRepeated": false,
+  "newTestFlight": false,
+  "files": {
+    "phone-production-preview-receipt.json": {
+      "byteCount": 537,
+      "sha256": "3e9533dbe281a37f8ba42abae66f1f48bd020a6c32217bfc2137d343d6ded881"
+    },
+    "phone-actual-quicklook-thumbnail.png": {
+      "byteCount": 8424,
+      "sha256": "fc24804a3a0f1825453caee7b2275f92eec664401948c47f5a0930f032e6ba18"
+    }
+  },
+  "productionSourceSHA256": {
+    "Apple/ThreeLiveStudio/Preview/ModelViewport.swift": "aac3239f1a3db95a444ebb4bb367364f117c413ceec2bc60d7b14dc5b399012b",
+    "Apple/ThreeLiveStudio/Library/ProjectThumbnailService.swift": "8f326fdea943d0ef6d432eab057090f82d18678349c71e1266d00e3213368e64"
+  }
+}

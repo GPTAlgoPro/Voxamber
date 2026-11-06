@@ -1,0 +1,18 @@
+{
+  "mainStructure": "PASS",
+  "overallRequested3DQuality": "FAIL",
+  "observations": [
+    "Phone-generated reference retains red conical shade, gray cylindrical base, thin stem and spherical bulb.",
+    "Actual Vision preparation retains the main lamp and left electrical-cable strands; it is not manually repaired.",
+    "Both Mac camera views of the exact phone USDZ show a coherent conical open shade, bulb, slender stem and cylindrical base.",
+    "Three-quarter view shows cable-like dangling/floating fragments to the right; original GLB has two disconnected smaller components.",
+    "Exported model is gray, so requested red shade color is absent in 3D."
+  ],
+  "metricScale": "UNVERIFIED; physicalScaleKnown=false; no claim of measured0.8m orgroundY0",
+  "shapeGeometryUntouched": true,
+  "noExtraAestheticOrTextureThresholdAdded": true,
+  "phonePreviewRenderingAccepted": false,
+  "normalAppAccepted": false,
+  "arbitrarySubjectCapabilityAccepted": false,
+  "cancellationLatencyMeasured": false
+}

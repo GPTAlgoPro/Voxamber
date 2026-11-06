@@ -1,0 +1,21 @@
+{
+  "immutableIgnoredOriginals": [
+    {
+      "path": "Apple/.build/KleinLampShapeGate/Run/LampShape01/model.glb",
+      "bytes": 1419332,
+      "sha256": "367177cd30ace1f3192aedd9026e9accd5ef554dbed7df64fd2224199a81119b"
+    },
+    {
+      "path": "Apple/.build/KleinLampShapeGate/Run/LampShape01/model.usdz",
+      "bytes": 4830318,
+      "sha256": "4eb3bc4f112edcfabe2d791552a8d9bd7c2171409c9132350292783b6a94f834"
+    },
+    {
+      "path": "Apple/.build/KleinLampShapeGate/Run/LampShape01/base.glb",
+      "bytes": 1419332,
+      "sha256": "367177cd30ace1f3192aedd9026e9accd5ef554dbed7df64fd2224199a81119b"
+    }
+  ],
+  "baseGLBEqualsGeneratedGLB": true,
+  "notCommittedAsRawLargeModelFiles": true
+}

@@ -1,0 +1,203 @@
+{
+  "recordedAtUTC": "2026-11-06T02:44:45.030684+00:00",
+  "state": "armed_NoVision_NoShapeNN",
+  "HostBuild": {
+    "actualSession": 71173,
+    "exitCode": 0,
+    "seconds": 8.84,
+    "log": {
+      "path": "Apple/.build/KleinLampShapeGate/build-host-r3.log",
+      "bytes": 262,
+      "sha256": "6c4c9986bb4924c617216775ff0ed45ef360fdfa0ba8669e58e90693cd2730ea"
+    }
+  },
+  "prepare": {
+    "actualSession": 18944,
+    "exitCode": 0,
+    "VisionCalls": 0,
+    "ShapeCalls": 0,
+    "wholeSHAInputPackConfigurationAnd140Sources": true
+  },
+  "SDKSnapshot": {
+    "path": "Apple/.build/KleinLampShapeGate/source-snapshot.json",
+    "bytes": 30362,
+    "sha256": "7498d8d65d1084216739ceb19b03b5d6abe018d71cb5e17f7ccbdd16cab28d8e"
+  },
+  "SDKSnapshotFileCount": 140,
+  "SDKSnapshotUnchanged": true,
+  "snapshotScope": "Byte-identical public SDK snapshot captured before Root new Core integration; do not follow mutable repository Core.",
+  "HostSourceFiles": [
+    {
+      "path": "Package.resolved",
+      "bytes": 3384,
+      "sha256": "622479b395dae917b5946648faa738199acfe7f0bbd1b280442c48b418f138c2"
+    },
+    {
+      "path": "Package.swift",
+      "bytes": 497,
+      "sha256": "0a76dd2e11f4b9b1a3ddc2c0f2b6ab9f1b73a318df92f740c5032303401c26a6"
+    },
+    {
+      "path": "Sources/KleinLampShapeGate/ModelPreview.swift",
+      "bytes": 2754,
+      "sha256": "17e8df63e906f0758ec29d980e3331614a17e0bfbab93a4f54598d986fa51ca0"
+    },
+    {
+      "path": "Sources/KleinLampShapeGate/main.swift",
+      "bytes": 17435,
+      "sha256": "b7e695fc544f9955d0e5dbff77d1a574cc46e3564b1a01dd21e711b73bb77025"
+    }
+  ],
+  "binary": {
+    "path": "Apple/.build/KleinLampShapeGate/Build/out/Products/Release/KleinLampShapeGate",
+    "bytes": 47424176,
+    "sha256": "a8e73c9e93f8fa479f48db2ab6b87db01f70e52af2cc88006213d1f9a9b23a39"
+  },
+  "bundles": [
+    {
+      "path": "swift-transformers_Hub.bundle/Contents/Info.plist",
+      "bytes": 1138,
+      "sha256": "8edcb3d28842b1e1b3e85a0e5b8e91e2aa16ce782e941f915be6317ffedbe638"
+    },
+    {
+      "path": "swift-transformers_Hub.bundle/Contents/Resources/gpt2_tokenizer_config.json",
+      "bytes": 234,
+      "sha256": "551e26ec611d8d0c8edc3ef72e518a38418cb71f40de1347dd486a595e1557d7"
+    },
+    {
+      "path": "swift-transformers_Hub.bundle/Contents/Resources/t5_tokenizer_config.json",
+      "bytes": 20746,
+      "sha256": "e0aff0b1de9071e30d9a60a199303b6abe916a64a19932bd1c46992279b41a1f"
+    },
+    {
+      "path": "swift-crypto_Crypto.bundle/Contents/Info.plist",
+      "bytes": 1132,
+      "sha256": "55af3485b25e4553fc10db6dc7bc7c86d31c6c56c11940f1835fdaedafa84be8"
+    },
+    {
+      "path": "swift-crypto_Crypto.bundle/Contents/Resources/PrivacyInfo.xcprivacy",
+      "bytes": 398,
+      "sha256": "42fb8a30dd8d7ba0900e1bf17fe64ed8c12cfdb8a9c791ab6b4e1eceb0f299c0"
+    },
+    {
+      "path": "VoxamberShapeNative_VoxamberShapeNative.bundle/Contents/Info.plist",
+      "bytes": 1172,
+      "sha256": "f408b474a3c32ae6bbc8bceef2e4695e6c635452d043715b4ddb6c8224a6b82d"
+    },
+    {
+      "path": "VoxamberShapeNative_VoxamberShapeNative.bundle/Contents/Resources/Legal/Hunyuan3D-Swift-MIT.txt",
+      "bytes": 1069,
+      "sha256": "e0485dc21868a42682cf1255af42d1bf038cf5e80608b2006b5c69d65d426d7f"
+    },
+    {
+      "path": "VoxamberShapeNative_VoxamberShapeNative.bundle/Contents/Resources/Legal/Hunyuan3D-Swift-ThirdParty.md",
+      "bytes": 1426,
+      "sha256": "abd4d61f1c0bf3dcfc6a399457f26254be74518dc53de8b69e2606e3a3a1d241"
+    },
+    {
+      "path": "VoxamberShapeNative_VoxamberShapeNative.bundle/Contents/Resources/Legal/Snap3D-ThirdPartyNotices.txt",
+      "bytes": 7575,
+      "sha256": "679ddc10a7dbe0c3170c55dfd00dd2c6b40bab320c7927c6fe6ea22754023b8c"
+    },
+    {
+      "path": "VoxamberShapeNative_VoxamberShapeNative.bundle/Contents/Resources/Legal/Tencent-Hunyuan-3D-2.1-License.txt",
+      "bytes": 17911,
+      "sha256": "f60f9fdf0c40cdd3983123eb8181caac027a6f86d4ea3c827618e5e1e5adc6db"
+    },
+    {
+      "path": "VoxamberShapeNative_VoxamberShapeNative.bundle/Contents/Resources/Legal/Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt",
+      "bytes": 17915,
+      "sha256": "5bd08f93b2d280bb26ff3eed5d3996fe47a9698b5f7785163928668d7fd578c6"
+    },
+    {
+      "path": "VoxamberShapeNative_VoxamberShapeNative.bundle/Contents/Resources/Legal/Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt",
+      "bytes": 16644,
+      "sha256": "ffccf6b539a82e6084d14ff064dadd22d33384d6164b07c0c5a3141810df0350"
+    },
+    {
+      "path": "VoxamberShapeNative_VoxamberShapeNative.bundle/Contents/Resources/hunyuan-shape-2.1.yaml",
+      "bytes": 2078,
+      "sha256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e"
+    },
+    {
+      "path": "mlx-swift_Cmlx.bundle/Contents/Info.plist",
+      "bytes": 1122,
+      "sha256": "386c5221c42d4d1988d04227dffa3ae58c18cf8c9a05850c082e847b79b75e35"
+    },
+    {
+      "path": "mlx-swift_Cmlx.bundle/Contents/Resources/default.metallib",
+      "bytes": 2401016,
+      "sha256": "cc3fc4850eb72caa36e9db2640b421f1ac2bfda2174dd58f8c15b52233ec154c"
+    }
+  ],
+  "bundleFileCount": 15,
+  "condition": {
+    "binarySHA256": "a8e73c9e93f8fa479f48db2ab6b87db01f70e52af2cc88006213d1f9a9b23a39",
+    "configurationSHA256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e",
+    "geometryPostprocessID": "finite-positive-f64-v1",
+    "guidance": 5,
+    "inputPNG_SHA256": "d47d9561a0a08cfc64fad51ecefd531f571e9894cb7a5d09ea5225a5eef9a69d",
+    "inputPNGBytes": 156364,
+    "latentCount": 4096,
+    "moeTokenChunkSize": 512,
+    "octreeResolution": 192,
+    "scope": "two public stages reusing actual frozen Klein image; not NativeCreationEngine whole-chain one-call; zero new image or translation calls",
+    "SDKSnapshotSHA256": "7498d8d65d1084216739ceb19b03b5d6abe018d71cb5e17f7ccbdd16cab28d8e",
+    "seed": 24301,
+    "shapePackBytes": 2490378518,
+    "shapePackSHA256": "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7",
+    "state": "armed_without_Vision_or_Shape_inference",
+    "steps": 10,
+    "weightProfile": "native-rebuild-20261106-q4-30b93ce8"
+  },
+  "resources": [
+    {
+      "path": "docs/qa/2026-11-06-flux2-image-lamp/reference-512.png",
+      "bytes": 156364,
+      "SHA256": "d47d9561a0a08cfc64fad51ecefd531f571e9894cb7a5d09ea5225a5eef9a69d",
+      "wholeSHAVerifiedByPrepare": true,
+      "identity": {
+        "inode": 269672707,
+        "device": 16777230,
+        "size": 156364,
+        "mtimeNS": 1793931833913045232,
+        "ctimeNS": 1793931833913052732
+      }
+    },
+    {
+      "path": "Apple/.build/NeuralModels/Shape21Q4/model.q4.safetensors",
+      "bytes": 2490378518,
+      "SHA256": "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7",
+      "wholeSHAVerifiedByPrepare": true,
+      "identity": {
+        "inode": 269472122,
+        "device": 16777230,
+        "size": 2490378518,
+        "mtimeNS": 1793915528309506246,
+        "ctimeNS": 1793917052572826341
+      }
+    },
+    {
+      "path": "Apple/.build/KleinLampShapeGate/Packages/VoxamberShapeNative/Sources/VoxamberShapeNative/Resources/hunyuan-shape-2.1.yaml",
+      "bytes": 2078,
+      "SHA256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e",
+      "wholeSHAVerifiedByPrepare": true,
+      "identity": {
+        "inode": 269684401,
+        "device": 16777230,
+        "size": 2078,
+        "mtimeNS": 1788245716656411463,
+        "ctimeNS": 1793932231125075015
+      }
+    }
+  ],
+  "noCallOutputExists": true,
+  "limitations": [
+    "No Vision mask or Shape result exists yet.",
+    "Partial overall pipeline composition reuses frozen actual Klein image; the Shape NN itself will be one complete run.",
+    "No image/translation NN in this gate.",
+    "Physical scale unknown and gray shape material is not red/gray texture transfer.",
+    "Mac host result is not phone acceptance.",
+    "900s cooperative Vision+Shape watchdog excludes later native rendering; no hard preemption claim."
+  ]
+}

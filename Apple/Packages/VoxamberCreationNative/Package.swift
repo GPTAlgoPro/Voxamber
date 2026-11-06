@@ -9,11 +9,13 @@ let package = Package(
         .package(path: "../QwenNative"),
         .package(path: "../CreationCore"),
         .package(path: "../VoxamberImageNative"),
+        .package(path: "../VoxamberFluxNative"),
         .package(path: "../VoxamberShapeNative")
     ],
     targets: [
         .target(name: "VoxamberCreationNative", dependencies: [
-            "QwenNative", "CreationCore", "VoxamberImageNative", "VoxamberShapeNative"
+            "QwenNative", "CreationCore", "VoxamberImageNative", "VoxamberShapeNative",
+            .product(name: "VoxamberFluxCandidate", package: "VoxamberFluxNative")
         ]),
         .testTarget(name: "VoxamberCreationNativeTests", dependencies: ["VoxamberCreationNative"])
     ]

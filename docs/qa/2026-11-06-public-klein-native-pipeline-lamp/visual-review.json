@@ -1,0 +1,48 @@
+{
+  "scope": "Independent direct inspection of first actual reference/prepared/native-USDZ front and three-quarter PNGs; no repair, re-generation or scoring threshold changes",
+  "translation": {
+    "result": "requested_subject_shapes_colors_ground_and_0.8m_intent_retained",
+    "positiveEnglish": "A desk lamp with a red cone-shaped shade, a gray cylindrical base, a thin cylindrical stem, and a spherical bulb, all resting on a flat surface at height Y=0, with an overall height of approximately 0.8 meters.",
+    "nativeTitleAndEmptyNegativeNotCreditedToLLM": true
+  },
+  "reference": {
+    "requestedMainStructureAndColors": true,
+    "observations": [
+      "One red conical shade, gray cylindrical base, thin stem and spherical bulb are visible.",
+      "Black electrical cables run left/right; this does not by itself create a new cable-exclusion requirement."
+    ]
+  },
+  "preparation": {
+    "mainLampRetained": true,
+    "actualVisionNoMaskRepair": true,
+    "observations": [
+      "Main shade, bulb, stem and cylindrical base remain.",
+      "Left cable strands are retained by real all-foreground mask; right original cable mostly removed."
+    ]
+  },
+  "geometry": {
+    "mainStructure": "PASS",
+    "strictOverallQuality": "FAIL",
+    "observations": [
+      "Actual front view shows conical shade with underside opening, spherical bulb, connected slender upright stem and cylindrical base.",
+      "Actual three-quarter view shows several disconnected cable-like floating fragments to the right; front shows protruding fragments on both sides.",
+      "All exported geometry is default gray: requested red shade color has not transferred to 3D."
+    ]
+  },
+  "metricScale": {
+    "result": "UNVERIFIED",
+    "physicalScaleKnown": false,
+    "reason": "0.8m language is retained; generated neural units are not proven meters or independently constrained to that height."
+  },
+  "acceptance": {
+    "publicPipelineContract": true,
+    "lifecycle": true,
+    "mainLampStructure": true,
+    "fullOriginalRequestQuality": false,
+    "arbitrarySubjects": false,
+    "iPhone12GB": false,
+    "AppPreviewThumbnailEdit": false,
+    "TestFlight": false
+  },
+  "noFurtherNNCalls": true
+}

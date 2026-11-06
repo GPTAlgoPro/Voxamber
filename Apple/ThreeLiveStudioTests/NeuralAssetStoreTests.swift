@@ -52,6 +52,24 @@ import XCTest
         }
     }
 
+    func testKleinCandidateManifestIsPinnedButNotSelectedOrPublished() throws {
+        #if canImport(ThreeLiveStudio)
+        let bundle = Bundle.main
+        let url = try XCTUnwrap(bundle.url(forResource: "ImageFluxKlein", withExtension: "json", subdirectory: "NeuralModels")
+            ?? bundle.url(forResource: "ImageFluxKlein", withExtension: "json"))
+        let candidate = try JSONDecoder().decode(NeuralModelManifest.self, from: Data(contentsOf: url))
+        try candidate.validate()
+        XCTAssertEqual(candidate.group, .image)
+        XCTAssertEqual(candidate.id, "flux2-klein4b-int4")
+        XCTAssertEqual(candidate.files.count, 14)
+        XCTAssertEqual(candidate.byteCount, 4_704_126_845)
+        XCTAssertFalse(candidate.apple.available)
+        let active = try NeuralModelManifest.loadAll(bundle: bundle)
+        XCTAssertEqual(active.first { $0.group == .image }?.id, "sdxl-base-ios-coreml")
+        XCTAssertFalse(active.contains { $0.id == candidate.id })
+        #endif
+    }
+
     func testPublicationRejectsWrongPinAndDuplicateOrMissingGroups() throws {
         let fixture = try Fixture(); defer { fixture.remove() }
         let rows = try fixture.manifests.map { model in

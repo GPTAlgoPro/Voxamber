@@ -1,0 +1,157 @@
+{
+  "recordedAtUTC": "2026-11-06T03:10:09.708623+00:00",
+  "state": "unique-full-public-run-finished",
+  "execSession": 79990,
+  "exitCode": 0,
+  "binarySHA256": "7b287c420a6aa852fcd2725a53f5186d8aede5a6dd49c00f7095f31e90a3adb6",
+  "hostMainSHA256": "81b83d2266490af98e66cadd3815eb8c9defb0f02a242cad97b9b46e8dc5e689",
+  "sdkSnapshotSHA256": "397d984bf76b69a451c34f068ca2941496a8c4b321f0e56c3e788b253bc399dc",
+  "sdkSnapshotFiles": 251,
+  "compiledProductsChecked": 90,
+  "productionSDKMatchesSnapshotAfterRun": true,
+  "productionDriftPaths": [],
+  "contractChecks": {
+    "singlePublicAPIRequest": true,
+    "noRetryOrFallback": true,
+    "actualImageStageMatchesExpected": true,
+    "referenceCallbackSameBytes": true,
+    "exactlyOneReferenceCallback": true,
+    "preparedImageInputSameSHA": true,
+    "actualFirstArtifactsRetained": true,
+    "neuralShapeReceiptActualWeightsUsed": true,
+    "notCancelled": true,
+    "watchdogNotTriggered": true,
+    "engineIdleAfterUnload": true,
+    "sourceAndAll25ResourcesAfterVerified": true,
+    "all251SnapshotFilesStillMatch": true,
+    "all90CompiledProductsUnchanged": true,
+    "baseGLBMatchesOriginalGeometry": true,
+    "noTelemetryIOFailure": true
+  },
+  "contractChecksPassed": 16,
+  "stageSeconds": {
+    "drawingReference": 11.648847937583923,
+    "generatingShape": 91.61280703544617,
+    "interpreting": 4.675088047981262,
+    "preparingSubject": 0.7128000259399414,
+    "total": 108.67317199707031
+  },
+  "hostSeconds": 108.93789866665611,
+  "vertices": 39416,
+  "triangles": 78812,
+  "sampledPeakPhysicalBytes": 4695034832,
+  "maximumObservedMLXPeakCounterBytes": 4205870360,
+  "afterUnloadBeforeNativeRenderPhysicalBytes": 328599400,
+  "afterRenderLastSample": {
+    "elapsed": 108.93757383333286,
+    "mlxActiveBytes": 8816,
+    "mlxCacheBytes": 0,
+    "mlxPeakCounterBytes": 4205870360,
+    "phase": "complete",
+    "physFootprintBytes": 612992896
+  },
+  "memoryBoundary": "Individual SDKs reset MLX peak counters; observed maximum is sampled, no hard platform bound. Native-render overhead is separate from post-unload pre-render footprint.",
+  "visualQuality": "FAIL: cable floaters and missing requested red 3D color; main structure PASS; metric scale unverified",
+  "artifactManifest": [
+    {
+      "path": "actual/intent.json",
+      "byteCount": 398,
+      "sha256": "b90098e80c8fc2b07e2a617a00197f63317d20273109fc79e702da138fd390c4"
+    },
+    {
+      "path": "actual/actual-image-stage.json",
+      "byteCount": 819,
+      "sha256": "8a1c7b9ba989c06c2ca23867204befe4a5db0909e91fa66b7618a61276d03644"
+    },
+    {
+      "path": "actual/shape-provenance.json",
+      "byteCount": 944,
+      "sha256": "ac7a8ee737e80c9fdd8897542966c2b724df24459b805488af4797c13c342bb9"
+    },
+    {
+      "path": "actual/shape-statistics.json",
+      "byteCount": 160,
+      "sha256": "b22dc68d38a4ac58ba33fe49de0f95ce23b52ee16047020fd797847cda145cd3"
+    },
+    {
+      "path": "actual/shape-validation-receipt.json",
+      "byteCount": 579,
+      "sha256": "f0d9cc022e4b98e60766e57de53e0d5e174e5b9f44cf1c67b7e9e6e7611cd558"
+    },
+    {
+      "path": "actual/pipeline-report.json",
+      "byteCount": 12212,
+      "sha256": "60e168acf0dfd86c6187c9e468a82abdeaa3cb78adb92ae82f5bfe53e72cac36"
+    },
+    {
+      "path": "actual/preparation.json",
+      "byteCount": 480,
+      "sha256": "17fddccc161e05d895fdff77df09ea4f5ec9e13a7211ac0b2328cdc6a1f75662"
+    },
+    {
+      "path": "actual/condition.json",
+      "byteCount": 1282,
+      "sha256": "bb5682ce02e7e10995cbf07e7333f9cd9c6de40aee932e439c898678e6a59933"
+    },
+    {
+      "path": "actual/reference.json",
+      "byteCount": 138,
+      "sha256": "305d47cf6a333f7813bc583e4ce414efbaed112e69acd8eafdbce0f75ae9ba46"
+    },
+    {
+      "path": "actual/reference-callback.json",
+      "byteCount": 138,
+      "sha256": "305d47cf6a333f7813bc583e4ce414efbaed112e69acd8eafdbce0f75ae9ba46"
+    },
+    {
+      "path": "actual/fixed-request.txt",
+      "byteCount": 147,
+      "sha256": "5efee41d264758fcbb370cb89b31cd1e3be9f8b668ada1375e69d6079cbe0013"
+    },
+    {
+      "path": "actual/reference-returned-512.png",
+      "byteCount": 156364,
+      "sha256": "d47d9561a0a08cfc64fad51ecefd531f571e9894cb7a5d09ea5225a5eef9a69d"
+    },
+    {
+      "path": "actual/prepared-512-rgba.png",
+      "byteCount": 60614,
+      "sha256": "f4149ab0da251287cc4a91674b62fc704450bde309f5c86c8dde838519c4c387"
+    },
+    {
+      "path": "actual/model.glb",
+      "byteCount": 1419332,
+      "sha256": "367177cd30ace1f3192aedd9026e9accd5ef554dbed7df64fd2224199a81119b"
+    },
+    {
+      "path": "actual/model.usdz",
+      "byteCount": 4830318,
+      "sha256": "4eb3bc4f112edcfabe2d791552a8d9bd7c2171409c9132350292783b6a94f834"
+    },
+    {
+      "path": "actual/front.png",
+      "byteCount": 48966,
+      "sha256": "9c03f0646492a4b779b27ce69518d14dc20196bc8f8c4bc05bbc816c144d8cba"
+    },
+    {
+      "path": "actual/three-quarter.png",
+      "byteCount": 53020,
+      "sha256": "2d7b0dd189aa5187bcb49977493fb0595d7110c2d10497f664c8926325936585"
+    },
+    {
+      "path": "actual/events.ndjson",
+      "byteCount": 6478,
+      "sha256": "f5269964dcc5f08e6dbf194f9523ea4851b7cb853e36ce528818ee355c982d88"
+    },
+    {
+      "path": "actual/memory.ndjson",
+      "byteCount": 90117,
+      "sha256": "b92cd43957bc558baefc036975839f00fa28ddc9a5f993e1e7ec1afb98bbfb7d"
+    }
+  ],
+  "rawIgnoredOutput": "Apple/.build/NativeKleinCreationGate/Run/FullKleinLP01",
+  "AppDefaultManifestPackPhoneAccountChanged": false,
+  "NNCallCount": 1,
+  "retries": 0,
+  "noAdditionalStageCalls": true
+}

@@ -1,0 +1,83 @@
+{
+  "recordedAtUTC": "2026-11-06T03:04:52.282314+00:00",
+  "state": "armed-no-inference-root-GO-authorized-next-only-run",
+  "build": {
+    "configuration": "SwiftPM Release",
+    "exitCode": 0,
+    "reportedSeconds": 11.0,
+    "change": "Host persists first actual returned artifacts before contract checks; no SDK/parameter changes"
+  },
+  "prepare": {
+    "exitCode": 0,
+    "verifiedResourceFiles": 25,
+    "verifiedSDKSnapshotFiles": 251,
+    "productionMatchesSnapshot": true,
+    "NNCalls": 0,
+    "VisionCalls": 0,
+    "fullRunOutputExists": false
+  },
+  "binary": {
+    "sha256": "7b287c420a6aa852fcd2725a53f5186d8aede5a6dd49c00f7095f31e90a3adb6",
+    "byteCount": 51935992
+  },
+  "sourceSnapshotSHA256": "397d984bf76b69a451c34f068ca2941496a8c4b321f0e56c3e788b253bc399dc",
+  "hostMainSHA256": "81b83d2266490af98e66cadd3815eb8c9defb0f02a242cad97b9b46e8dc5e689",
+  "hostPreviewSHA256": "17e8df63e906f0758ec29d980e3331614a17e0bfbab93a4f54598d986fa51ca0",
+  "hostPackageSHA256": "a3cbafee7ba8446d775504782a942bcda9d68566783131821c32bdffffa7df8f",
+  "compiledProductsFreeze": {
+    "path": "Apple/.build/NativeKleinCreationGate/build-products-freeze.json",
+    "count": 90,
+    "sha256": "c6fb58a0da3613d102ef6a7f36121e6bdf26e3b2036e6837405d8adb63572b5c"
+  },
+  "protocolSHA256": "0a6439921780151296c94395ee4abfe46e922379d6626d0528103f3f872cba46",
+  "armed": {
+    "APIRequests": 0,
+    "binarySHA256": "7b287c420a6aa852fcd2725a53f5186d8aede5a6dd49c00f7095f31e90a3adb6",
+    "caseID": "LP_original_public_klein",
+    "entryPoint": "public NativeCreationEngine.generate",
+    "fallbacks": 0,
+    "imageBackend": "flux2-klein4b-q4",
+    "imageConfigurationSHA256": "c12e0f5e820ac8b0cd014a1aed71bb6b904d2a0beea5d61ba0a41614a768f083",
+    "inferencePerformedByPrepare": false,
+    "observationBoundary": "Fresh actual helper/image/Vision/Shape in one public call. Failed result exposes only public progress/reference callbacks, not hidden intent/prepared data.",
+    "platform": "host Mac; not phone",
+    "requestedSeed": 24301,
+    "requestSHA256": "5efee41d264758fcbb370cb89b31cd1e3be9f8b668ada1375e69d6079cbe0013",
+    "resourcePinsSHA256": "b45fbf77b515a5d0db86da7f43cc313ff836089b65e318a86dc9687e3a6ba022",
+    "retries": 0,
+    "shapeConfigurationSHA256": "a9e9b66f0163a9b827d730633ac88f47fcc8e3071dcbb9ee12d88ef7537c5c6e",
+    "shapeGeometryPostprocess": "finite-positive-f64-v1",
+    "shapePackSHA256": "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7",
+    "snapshotFileCount": 251,
+    "snapshotSHA256": "397d984bf76b69a451c34f068ca2941496a8c4b321f0e56c3e788b253bc399dc",
+    "state": "armed_without_inference",
+    "verifiedResourceFiles": 25,
+    "watchdogSeconds": 900
+  },
+  "expectedImageStage": {
+    "backend": "flux2-klein4b-q4",
+    "componentRevisions": {
+      "smallVAE": "a3efc24f613ef42d9428af62fdbd6f5fd8856c4a",
+      "textEncoder": "480ec45ecf06ae3c061e4ef11345d05c7fdb02f1",
+      "transformer": "860e87183ceb29e39627c0612ebd66d8ea66e68c"
+    },
+    "guidance": 1,
+    "height": 512,
+    "modelContractID": "flux2-klein4b-int4",
+    "modelRevision": "860e87183ceb29e39627c0612ebd66d8ea66e68c",
+    "parameters": {
+      "cacheTrimSteps": "1",
+      "memoryProfile": "conservative",
+      "promptUpsampling": "false",
+      "residency": "TE-unload-DiT+VAE-unloadDiT-decode",
+      "textEncoder": "Qwen3-4B-affineQ4-group64",
+      "transformerVariant": "klein4B_4bit",
+      "vae": "smallDecoder-fullF32"
+    },
+    "runtimeVersion": "Flux2Core-57ad4818-local-v1-MLX0.32.3",
+    "seed": 24301,
+    "steps": 4,
+    "width": 512
+  },
+  "scope": "One fresh full public NativeCreationEngine.generate explicit Klein authorized next only; no App default/manifest/pack/phone/TestFlight changes; no NN performed at armed time"
+}

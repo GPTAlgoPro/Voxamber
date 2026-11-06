@@ -48,6 +48,8 @@ targets:
     sources:
       - path: ShapeDeviceQA
       - path: ThreeLiveStudio/Diagnostics/NeuralShapeDeviceProbe.swift
+      - path: ThreeLiveStudio/Preview/ModelViewport.swift
+      - path: ThreeLiveStudio/Library/ProjectThumbnailService.swift
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.kaisun.voxamber.shape-qa

@@ -1,0 +1,247 @@
+{
+  "recordedAtUTC": "2026-11-06T03:48:07.260141+00:00",
+  "scope": "Independent local readback audit; physical-iPhone generation controlled/read back by Root, Mac camera rendering controlled by reviewer; no new NN/phone operation",
+  "originBoundary": "Local metadata, frozen probe source, exact fixed model identities and cross-file bytes agree. This reviewer did not independently operate the phone or repeat retrieval/NN.",
+  "bundleID": "com.kaisun.voxamber.shape-qa",
+  "appBuild": "7",
+  "OS": "Version 27.2 (Build 24B119)",
+  "physicalMemoryBytes": 12263407616,
+  "probeSourceSHA256": "dcab620d64aa28a87cc0133c35f1be2a76a5534cd2fe1632f88fd40643abe1fa",
+  "requestSHA256": "5efee41d264758fcbb370cb89b31cd1e3be9f8b668ada1375e69d6079cbe0013",
+  "seed": 24301,
+  "APIRequests": 1,
+  "retries": 0,
+  "fallbacks": 0,
+  "returnedContractPassed": true,
+  "engineRunningAfterUnload": false,
+  "watchdogTriggered": false,
+  "reportedSeconds": 284.2414284166589,
+  "stageSeconds": {
+    "drawingReference": 22.231774926185608,
+    "generatingShape": 255.17636501789093,
+    "interpreting": 6.0979390144348145,
+    "preparingSubject": 0.3209620714187622,
+    "total": 283.8289420604706
+  },
+  "sampledPeakPhysicalBytes": 4162719600,
+  "lastPhysicalBytesAfterCleanup": 172755768,
+  "minimumAvailableProcessBytes": 2279731344,
+  "availableProcessBytesAtShapeAdmission": 6270039432,
+  "sampling": {
+    "nominalSeconds": 0.25,
+    "maximumActualGapSeconds": 0.4263939583324827,
+    "sampleCount": 1069,
+    "MLXCountersReadByProbe": false
+  },
+  "geometry": {
+    "vertexCount": 34766,
+    "triangleCount": 69526,
+    "indexCount": 208578,
+    "GLBByteCount": 1252096,
+    "USDZByteCount": 4247544,
+    "baseSHA256": "a0be829c8e9f7ff201c80ad78a12d9ec5f03e00ee028ab5df29bdb739eb25c07",
+    "GLBSHA256": "a0be829c8e9f7ff201c80ad78a12d9ec5f03e00ee028ab5df29bdb739eb25c07",
+    "USDZSHA256": "7cbdf94ec9cd93f871f6eb8ca4c3eaf5bbc6ac3c3fb384be3e577754c279cd0a",
+    "USDZPositionsAndIndicesSameAsGLB": true,
+    "topology": {
+      "connectedComponentsBySharedVertex": 3,
+      "components": [
+        {
+          "vertexCount": 33952,
+          "triangleCount": 67906,
+          "boundsMinimum": [
+            -0.4195389747619629,
+            -0.8227528929710388,
+            -0.9909741282463074
+          ],
+          "boundsMaximum": [
+            0.42023420333862305,
+            0.8286858797073364,
+            1.0002925395965576
+          ]
+        },
+        {
+          "vertexCount": 716,
+          "triangleCount": 1428,
+          "boundsMinimum": [
+            0.03688478469848633,
+            -0.7327088117599487,
+            -0.12561315298080444
+          ],
+          "boundsMaximum": [
+            0.33923542499542236,
+            -0.6958516836166382,
+            0.22359812259674072
+          ]
+        },
+        {
+          "vertexCount": 98,
+          "triangleCount": 192,
+          "boundsMinimum": [
+            -0.07449311017990112,
+            -0.7353479266166687,
+            -0.40997225046157837
+          ],
+          "boundsMaximum": [
+            0.00462949275970459,
+            -0.7066761255264282,
+            -0.33155882358551025
+          ]
+        }
+      ],
+      "boundaryEdges": 4,
+      "nonManifoldEdgesOverTwoFaces": 0,
+      "nonFiniteOrZeroAreaTrianglesDoubleFromFloat": 0,
+      "unusedVertices": 0
+    }
+  },
+  "checks": {
+    "reportBundle": true,
+    "intentTenPinsEqualCurrentBundledContract": true,
+    "intentContractHash": true,
+    "actualImageReceiptEqualFixedKlein": true,
+    "seed": true,
+    "requestHash": true,
+    "referenceCallbackHash": true,
+    "returnedReferenceSameSHA": true,
+    "preparedHash": true,
+    "GLBHash": true,
+    "USDZHash": true,
+    "baseUnchanged": true,
+    "shapePack": true,
+    "shapeConfig": true,
+    "shapeF64": true,
+    "oneCallNoRetry": true,
+    "reportedContractPassed": true,
+    "reportedIdle": true,
+    "watchdogNotTriggered": true,
+    "noReportedCancellation": true,
+    "noTelemetryError": true,
+    "actualWeightsUsed": true,
+    "GLBCountsAndIndices": true,
+    "USDZPointsCount": true,
+    "USDZTriangleCounts": true,
+    "USDZIndicesEqualGLB": true,
+    "USDZPositionsSameFloat32": true,
+    "peakMatchesSamples": true,
+    "sampleCountMatches": true,
+    "probeSourceMatchesFrozenVersion": true,
+    "readbackFilesUnchangedAfterMacRender": true,
+    "minimumAvailableMatchesSamples": true
+  },
+  "checksPassed": 32,
+  "render": {
+    "execution": "Mac local SceneKit renderer only; exact physical-iPhone-generated USDZ imported",
+    "geometryChanged": false,
+    "materialsChanged": false,
+    "cameraLightBackgroundOnly": true,
+    "renderedModelSHA256": "7cbdf94ec9cd93f871f6eb8ca4c3eaf5bbc6ac3c3fb384be3e577754c279cd0a",
+    "imageDimensions": [
+      900,
+      900
+    ],
+    "frontSHA256": "4bb8480160bca922cdd0196a3e739d8c7852fb23db420294bec02c4fecd034d8",
+    "threeQuarterSHA256": "8c148ea9b5479fec157d830544cbed0b5417fe80059e8dbdf0bac9b950e460f3",
+    "rendererSourceSHA256": "2cd65a26587e2e510a0f91b1f628f4128a56e96810739d9dd5e2c654157bd158",
+    "sharedModelPreviewSourceSHA256": "17e8df63e906f0758ec29d980e3331614a17e0bfbab93a4f54598d986fa51ca0",
+    "rendererBinarySHA256": "6415bc07cec5fc43a29308bc67a565ad66d9c2a542635b7a2d0028bbc5ea9533",
+    "rendererExitCode": 0,
+    "NNCalls": 0,
+    "phoneOperationsByThisAudit": 0
+  },
+  "visual": {
+    "mainStructure": "PASS",
+    "overallRequested3DQuality": "FAIL",
+    "observations": [
+      "Phone-generated reference retains red conical shade, gray cylindrical base, thin stem and spherical bulb.",
+      "Actual Vision preparation retains the main lamp and left electrical-cable strands; it is not manually repaired.",
+      "Both Mac camera views of the exact phone USDZ show a coherent conical open shade, bulb, slender stem and cylindrical base.",
+      "Three-quarter view shows cable-like dangling/floating fragments to the right; original GLB has two disconnected smaller components.",
+      "Exported model is gray, so requested red shade color is absent in 3D."
+    ],
+    "metricScale": "UNVERIFIED; physicalScaleKnown=false; no claim of measured0.8m orgroundY0",
+    "shapeGeometryUntouched": true,
+    "noExtraAestheticOrTextureThresholdAdded": true,
+    "phonePreviewRenderingAccepted": false,
+    "normalAppAccepted": false,
+    "arbitrarySubjectCapabilityAccepted": false,
+    "cancellationLatencyMeasured": false
+  },
+  "readbackFileHashes": [
+    {
+      "path": "actual-image-stage.json",
+      "bytes": 819,
+      "sha256": "8a1c7b9ba989c06c2ca23867204befe4a5db0909e91fa66b7618a61276d03644"
+    },
+    {
+      "path": "base.glb",
+      "bytes": 1252096,
+      "sha256": "a0be829c8e9f7ff201c80ad78a12d9ec5f03e00ee028ab5df29bdb739eb25c07"
+    },
+    {
+      "path": "fixed-request.txt",
+      "bytes": 147,
+      "sha256": "5efee41d264758fcbb370cb89b31cd1e3be9f8b668ada1375e69d6079cbe0013"
+    },
+    {
+      "path": "intent.json",
+      "bytes": 398,
+      "sha256": "b90098e80c8fc2b07e2a617a00197f63317d20273109fc79e702da138fd390c4"
+    },
+    {
+      "path": "memory.ndjson",
+      "bytes": 145246,
+      "sha256": "c9d4e99a07f18b4ceb1c7faf8db12c8daa6e36f8f4cfcd8f0ea5f62c18237c46"
+    },
+    {
+      "path": "model.glb",
+      "bytes": 1252096,
+      "sha256": "a0be829c8e9f7ff201c80ad78a12d9ec5f03e00ee028ab5df29bdb739eb25c07"
+    },
+    {
+      "path": "model.usdz",
+      "bytes": 4247544,
+      "sha256": "7cbdf94ec9cd93f871f6eb8ca4c3eaf5bbc6ac3c3fb384be3e577754c279cd0a"
+    },
+    {
+      "path": "prepared-512-rgba.png",
+      "bytes": 60894,
+      "sha256": "476088d58d56597a2ed4e998faf5f70c585e0e9206865b4e0625cbd33823df43"
+    },
+    {
+      "path": "reference-callback-512.png",
+      "bytes": 158084,
+      "sha256": "cd2da6b8aa9fe09f5a25edacf5f7031f062ccd40a1787c57848562a4bd6f1e28"
+    },
+    {
+      "path": "reference-returned-512.png",
+      "bytes": 158084,
+      "sha256": "cd2da6b8aa9fe09f5a25edacf5f7031f062ccd40a1787c57848562a4bd6f1e28"
+    },
+    {
+      "path": "report.json",
+      "bytes": 7704,
+      "sha256": "aefa06c60c0b15e74281c9d77001c6eb87accdb6b6026ea2f262beac3fd3931b"
+    },
+    {
+      "path": "shape-provenance.json",
+      "bytes": 944,
+      "sha256": "617a2c1e6b69a805b02f1e5213326815122455c9b7bfe560c35d5cde861dc9fe"
+    },
+    {
+      "path": "shape-statistics.json",
+      "bytes": 214,
+      "sha256": "30b9c10c07c6f6bb3eefc926c8233bf91c8cb2a055bd2f02a123a9d0aba331c3"
+    },
+    {
+      "path": "shape-validation-receipt.json",
+      "bytes": 579,
+      "sha256": "d3f76700913769f5accac1a8e5dd452c57a8b615253255d085091e016fc0a9e4"
+    }
+  ],
+  "largeArtifactLocation": "Apple/.build/PhoneFullKleinLive02; original GLB/USDZ/base remain ignored",
+  "normalAppDataChangedByThisAudit": false,
+  "assetPacksChanged": false,
+  "AppDefaultChanged": false,
+  "TestFlightChanged": false
+}

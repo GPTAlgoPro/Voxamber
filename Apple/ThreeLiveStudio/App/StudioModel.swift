@@ -418,18 +418,14 @@ final class StudioModel {
         }
         let intent = try manifest(.intent), image = try manifest(.image), shape = try manifest(.shape)
         let shapeProvenance = result.shape.provenance
-        let imageConfiguration: [String: Any] = ["steps": 20, "size": 768, "guidanceScale": 7.5,
-            "reduceMemory": true, "scheduler": "dpmSolverMultistep", "textAndUNetCompute": "cpuAndNeuralEngine",
-            "vaeCompute": "cpuAndGPU", "vaeScale": 0.13025,
-            "tokenizerPolicy": "openai-clip-3bee281-native-v1"]
-        let imageSHA = SHA256.hash(data: try JSONSerialization.data(withJSONObject: imageConfiguration, options: [.sortedKeys]))
-            .map { String(format: "%02x", $0) }.joined()
+        let imageStage = result.imageStage
+        guard image.id == imageStage.modelContractID else { throw NeuralModelError.invalidCatalog }
         let evidence = try JSONDecoder().decode(NeuralGenerationEvidence.self,
             from: JSONEncoder().encode(result.shape.validationReceipt))
         let provenance = NeuralPipelineProvenance(pipelineID: "voxamber-native-neural-v1", method: .textToImageToShape,
-            imageStage: .init(modelID: image.id, modelRevision: SDXLResources.modelRevision,
-                modelManifestSHA256: try image.pinIdentity, configurationSHA256: imageSHA,
-                runtimeVersion: "AppleSDXL-ea2805dc+CLIP-3bee281", seed: UInt64(UInt32(truncatingIfNeeded: result.seed))),
+            imageStage: .init(modelID: image.id, modelRevision: imageStage.modelRevision,
+                modelManifestSHA256: try image.pinIdentity, configurationSHA256: try imageStage.configurationSHA256,
+                runtimeVersion: imageStage.runtimeVersion, seed: imageStage.seed),
             shapeStage: .init(modelID: shapeProvenance.modelID, modelRevision: shapeProvenance.modelSourceRevision,
                 modelManifestSHA256: try shape.pinIdentity, configurationSHA256: shapeProvenance.configurationSHA256,
                 runtimeVersion: shapeProvenance.runtimeMLXVersion, seed: shapeProvenance.seed,

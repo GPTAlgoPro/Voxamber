@@ -44,6 +44,7 @@
 		64DEB54A599505F19683FCD0 /* CreationJourneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01A6C0FE9282C7BEFC3EF2A /* CreationJourneyTests.swift */; };
 		656A035BEC45EA66D9C43C73 /* NeuralManagedImportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C33D655F3789DE141117537 /* NeuralManagedImportTests.swift */; };
 		65EEF26D5C36D93A91F3DE0B /* ModelLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4BBC0DC51B93B06AE03D6 /* ModelLibrary.swift */; };
+		677AA77C99AC26D4B4534E0E /* PhoneNativePreviewPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92BE41AED8B4F44175F77B6 /* PhoneNativePreviewPanel.swift */; };
 		688786B6F00F5A495BC64FAA /* NeuralShapeDeviceProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707F8459A70D091F4780AFF0 /* NeuralShapeDeviceProbe.swift */; };
 		7124EF2022D63EA61E777215 /* Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 250104355F0B46AB7921DA5B /* Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt */; };
 		730719E60645971640BC88DD /* WorkspaceDraftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73FC96D36544E8ED391D00B /* WorkspaceDraftTests.swift */; };
@@ -53,6 +54,7 @@
 		7BA91410DC7D238B6643ADE8 /* VoxamberCreationNative in Frameworks */ = {isa = PBXBuildFile; productRef = F7708368FFF192F251EE2EE1 /* VoxamberCreationNative */; };
 		7C98C4BC2CB6CBCE3DF4DED6 /* AIContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE8C7197DFA072A45BE55A2 /* AIContextTests.swift */; };
 		7CFD82240F806784ECFFD389 /* NeuralEditRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E9B0EBE49D58F96207B8A9 /* NeuralEditRecordTests.swift */; };
+		7FA4E45DE6F3199E77FE581E /* ProjectThumbnailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4203EAD386C2C9D72522CF0 /* ProjectThumbnailService.swift */; };
 		7FAF09644149AB3C7ECB1E13 /* StudioCancellationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B56DE5197A148ECE286CEC /* StudioCancellationTests.swift */; };
 		81025439F11E499D01F19501 /* StudioStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68390729A630CD89992EA17 /* StudioStyle.swift */; };
 		8573C733BAEC41B8991F3499 /* NeuralManagedImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0B5C6A0A5C1A7D6312167B /* NeuralManagedImport.swift */; };
@@ -60,6 +62,7 @@
 		8B89494EC3FBD60136E5CA18 /* VoxamberCreationNative in Frameworks */ = {isa = PBXBuildFile; productRef = DFF203BDFB70E002BA21C23E /* VoxamberCreationNative */; };
 		8C0C7091D4FE41D5DC749778 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 975B09C8D199A3944E174C24 /* PrivacyInfo.xcprivacy */; };
 		8C154C2B0E7B23AA39C1B829 /* MemoryPressureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54942D64E68D3C8B05A2B16F /* MemoryPressureTests.swift */; };
+		8DFA42B4B9F7F2F215FC6063 /* IntentQwen08.json in Resources */ = {isa = PBXBuildFile; fileRef = 527ECF28CBF6B9C65A94E0D7 /* IntentQwen08.json */; };
 		8EC7FF49F040C0FAE5B6380F /* NeuralEditRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C66C6B02FB9F50D614008A /* NeuralEditRecord.swift */; };
 		914CACA573F3E0A5E722B772 /* PicoJSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6EC515AFC8DB6C3CEA578FF3 /* PicoJSON.txt */; };
 		94E62342437321B659976D08 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C871680D9158E22213C02D9F /* ModelManager.swift */; };
@@ -77,12 +80,15 @@
 		B765183968903F1CB5CE5542 /* VoxamberModelDownloader.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 0EAD657921267AD8370227EE /* VoxamberModelDownloader.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B76F37E8F10F2DC84512C81C /* Tencent-Hunyuan-3D-2.1-License.txt in Resources */ = {isa = PBXBuildFile; fileRef = B24D197ED9BAD976C905854F /* Tencent-Hunyuan-3D-2.1-License.txt */; };
 		B897C1F7DC37593836D6BFF7 /* NeuralEditPreparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F755D1A17B7ECAB1B37D678A /* NeuralEditPreparation.swift */; };
+		B8F4F7FFE00316CFA52A687B /* ImageFluxKlein.json in Resources */ = {isa = PBXBuildFile; fileRef = 744C471C4A232867A9BCCA1A /* ImageFluxKlein.json */; };
 		CB4B92B1D96C5E2C6E84A460 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 415912223D05F8300A862C2F /* InfoPlist.strings */; };
 		CC8AE34ADBA051E6B33E4BED /* NeuralAppleHostedModelSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F9CE922BABB7730D08B10 /* NeuralAppleHostedModelSource.swift */; };
+		CDCC7A9412A7B0451ECFEBFF /* NativePipelineDeviceProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225353CAE4FA7567E8191C89 /* NativePipelineDeviceProbe.swift */; };
 		CE1927D0FECD6406261835DE /* ThreeLiveStudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D8F9C3D35EA6D90EB4F36B /* ThreeLiveStudioApp.swift */; };
 		CE4BED8D13AE522EFDBB6349 /* LanguageModel.json in Resources */ = {isa = PBXBuildFile; fileRef = 901D7D08CA2F20683A8A2FFB /* LanguageModel.json */; };
 		D4FA5505C16336020D71A882 /* ProjectStoreNeuralOriginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA30D72294D9D6C01B8AC5 /* ProjectStoreNeuralOriginTests.swift */; };
 		D7234CADC39EEFE68675A427 /* ModelViewportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF83FC98660B58DFE692E98 /* ModelViewportTests.swift */; };
+		DDE939E03A01575388319E92 /* ModelViewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B69F79EBFC5147A7BF5DAF /* ModelViewport.swift */; };
 		DE0D1BCDEF545A1669D3EE66 /* SDXL-Model.txt in Resources */ = {isa = PBXBuildFile; fileRef = 400ED8933775CE8971BC2B53 /* SDXL-Model.txt */; };
 		E4255E75F77FF533A67C4010 /* OpenAI-CLIP.txt in Resources */ = {isa = PBXBuildFile; fileRef = B82665F54895D405C582C40A /* OpenAI-CLIP.txt */; };
 		E5ACF66F999518EAE76ECC67 /* NeuralProjectDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E13FD86B9D338927D458CF6 /* NeuralProjectDescriptor.swift */; };
@@ -141,6 +147,7 @@
 		1C33D655F3789DE141117537 /* NeuralManagedImportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralManagedImportTests.swift; sourceTree = "<group>"; };
 		1E0B5C6A0A5C1A7D6312167B /* NeuralManagedImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralManagedImport.swift; sourceTree = "<group>"; };
 		201E3B61AC694BEFC803EA43 /* DLPack.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DLPack.txt; sourceTree = "<group>"; };
+		225353CAE4FA7567E8191C89 /* NativePipelineDeviceProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativePipelineDeviceProbe.swift; sourceTree = "<group>"; };
 		2280D56379EA5205075F096F /* ProjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStore.swift; sourceTree = "<group>"; };
 		23672F2F8A59ABA1F5082B65 /* ShapeHunyuan21.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ShapeHunyuan21.json; sourceTree = "<group>"; };
 		2446471427102B8E94EF51A2 /* ThreeLiveNative */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ThreeLiveNative; path = Packages/ThreeLiveNative; sourceTree = SOURCE_ROOT; };
@@ -162,6 +169,7 @@
 		4D8D198FFAF4F324434D941E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4DD2AB436EBBE0E8E5A1FD23 /* Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt"; sourceTree = "<group>"; };
 		503BB8675A553EB2AA32D2B7 /* QwenNative */ = {isa = PBXFileReference; lastKnownFileType = folder; name = QwenNative; path = Packages/QwenNative; sourceTree = SOURCE_ROOT; };
+		527ECF28CBF6B9C65A94E0D7 /* IntentQwen08.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IntentQwen08.json; sourceTree = "<group>"; };
 		535E82838875B5059A45166E /* NeuralAssetStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralAssetStoreTests.swift; sourceTree = "<group>"; };
 		54942D64E68D3C8B05A2B16F /* MemoryPressureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryPressureTests.swift; sourceTree = "<group>"; };
 		54CE96C85AFCA7B2690EF271 /* Qwen-Model.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Qwen-Model.txt"; sourceTree = "<group>"; };
@@ -176,6 +184,7 @@
 		707F8459A70D091F4780AFF0 /* NeuralShapeDeviceProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralShapeDeviceProbe.swift; sourceTree = "<group>"; };
 		70B6E574C3FDD00A59F91E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		724E3D7A71C52E0E682A3487 /* NeuralModelCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralModelCatalog.swift; sourceTree = "<group>"; };
+		744C471C4A232867A9BCCA1A /* ImageFluxKlein.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ImageFluxKlein.json; sourceTree = "<group>"; };
 		75A5D1AB964D6FBA3C9E2A64 /* Hunyuan3D-Swift-MIT.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Hunyuan3D-Swift-MIT.txt"; sourceTree = "<group>"; };
 		889DF29060A43FC9531BF594 /* NeuralProjectValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralProjectValidation.swift; sourceTree = "<group>"; };
 		8953600C7788269776BC6095 /* NeuralMeshControlsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralMeshControlsTests.swift; sourceTree = "<group>"; };
@@ -192,6 +201,7 @@
 		B24D197ED9BAD976C905854F /* Tencent-Hunyuan-3D-2.1-License.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Tencent-Hunyuan-3D-2.1-License.txt"; sourceTree = "<group>"; };
 		B32A9A18EB6AE211BFC62B0F /* VerifiedModelStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedModelStoreTests.swift; sourceTree = "<group>"; };
 		B82665F54895D405C582C40A /* OpenAI-CLIP.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OpenAI-CLIP.txt"; sourceTree = "<group>"; };
+		B92BE41AED8B4F44175F77B6 /* PhoneNativePreviewPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNativePreviewPanel.swift; sourceTree = "<group>"; };
 		BB6C4F92FE7BBCFA6004DB72 /* Apple-SDXL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Apple-SDXL.txt"; sourceTree = "<group>"; };
 		BDE8C7197DFA072A45BE55A2 /* AIContextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIContextTests.swift; sourceTree = "<group>"; };
 		C04C8B33AF3D96C0D4535C00 /* ProjectStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStoreTests.swift; sourceTree = "<group>"; };
@@ -273,11 +283,22 @@
 			path = ThreeLiveStudioUITests;
 			sourceTree = "<group>";
 		};
+		0D31027626324E4264CADEC8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				527ECF28CBF6B9C65A94E0D7 /* IntentQwen08.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		0E0C998D9B39B7148042AFDA /* ShapeDeviceQA */ = {
 			isa = PBXGroup;
 			children = (
+				225353CAE4FA7567E8191C89 /* NativePipelineDeviceProbe.swift */,
+				B92BE41AED8B4F44175F77B6 /* PhoneNativePreviewPanel.swift */,
 				E087FAFB12796517E1B2A943 /* ShapeDeviceQA.entitlements */,
 				3199A8B5FA09FBC81FE43C95 /* ShapeDeviceQAApp.swift */,
+				0D31027626324E4264CADEC8 /* Resources */,
 			);
 			path = ShapeDeviceQA;
 			sourceTree = "<group>";
@@ -305,6 +326,7 @@
 		3463D9F69738FA58508C1278 /* NeuralModels */ = {
 			isa = PBXGroup;
 			children = (
+				744C471C4A232867A9BCCA1A /* ImageFluxKlein.json */,
 				3CC0329B84603F17C4F5F969 /* ImageSDXL.json */,
 				F219C87A8357666AA46CF84D /* IntentQwen08.json */,
 				23672F2F8A59ABA1F5082B65 /* ShapeHunyuan21.json */,
@@ -506,6 +528,7 @@
 			buildConfigurationList = 47E731FB3C21B66A7FBD9AEE /* Build configuration list for PBXNativeTarget "VoxamberShapeQA" */;
 			buildPhases = (
 				8132BF125265F0D27BBC9A78 /* Sources */,
+				2DF0D834BC6CBC88824111D8 /* Resources */,
 				EFFD17BD0A82F39546F7A44C /* Frameworks */,
 			);
 			buildRules = (
@@ -662,6 +685,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2DF0D834BC6CBC88824111D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DFA42B4B9F7F2F215FC6063 /* IntentQwen08.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3C66241DDD817738312A18C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -671,6 +702,7 @@
 				2B7B505AB4E87064276FD02D /* DLPack.txt in Resources */,
 				F13B5A9D1E28C623B812F953 /* Hunyuan3D-Swift-MIT.txt in Resources */,
 				AE99C0F06F102784EA48FFD6 /* Hunyuan3D-Swift-ThirdParty.txt in Resources */,
+				B8F4F7FFE00316CFA52A687B /* ImageFluxKlein.json in Resources */,
 				24BF5563B1FDC863A31BD4F8 /* ImageSDXL.json in Resources */,
 				CB4B92B1D96C5E2C6E84A460 /* InfoPlist.strings in Resources */,
 				5B616543FD43C3D4338CA444 /* IntentQwen08.json in Resources */,
@@ -744,7 +776,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE939E03A01575388319E92 /* ModelViewport.swift in Sources */,
+				CDCC7A9412A7B0451ECFEBFF /* NativePipelineDeviceProbe.swift in Sources */,
 				688786B6F00F5A495BC64FAA /* NeuralShapeDeviceProbe.swift in Sources */,
+				677AA77C99AC26D4B4534E0E /* PhoneNativePreviewPanel.swift in Sources */,
+				7FA4E45DE6F3199E77FE581E /* ProjectThumbnailService.swift in Sources */,
 				E6A95F3C49E158D9B2AC2F3C /* ShapeDeviceQAApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

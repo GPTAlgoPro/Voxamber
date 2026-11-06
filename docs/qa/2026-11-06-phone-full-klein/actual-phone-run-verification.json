@@ -1,0 +1,315 @@
+{
+  "recordedAtUTC": "2026-11-06T03:40:39.620254+00:00",
+  "scope": "Real iPhone full public NativeCreationEngine LP run in separate QA App; no normal project publication",
+  "rawPhoneReport": {
+    "actualNeuralWeightsUsed": true,
+    "actualReturnedArtifactsRetainedBeforeContractValidation": true,
+    "actualReturnedSeed": 24301,
+    "APIRequests": 1,
+    "appBuild": "7",
+    "bundleID": "com.kaisun.voxamber.shape-qa",
+    "cancellationObservedBeforeArtifactRetention": false,
+    "engineRunningAfterUnload": false,
+    "entryPoint": "NativeCreationEngine.generate",
+    "existingProjectsChanged": false,
+    "failedCallObservability": "Public progress/reference only; intent/prepared unavailable without returned result.",
+    "fallbacks": 0,
+    "foregroundBoundsCI": [
+      0,
+      30,
+      372,
+      451
+    ],
+    "formatVersion": 1,
+    "fullQualityAccepted": false,
+    "glbSHA256": "a0be829c8e9f7ff201c80ad78a12d9ec5f03e00ee028ab5df29bdb739eb25c07",
+    "imageBackend": "flux2-klein4b-q4",
+    "intentContractSHA256": "53ee064ef37769876fc5c0bfd71d5c29f365562cf421c2425a4124d49b82aa09",
+    "intentFullSHAVerified": true,
+    "lastAvailableProcessBytes": 6269695176,
+    "lastPhysicalBytes": 172755768,
+    "maximumActualSampleGapSeconds": 0.4263939583324827,
+    "minimumAvailableProcessBytes": 2279731344,
+    "MLXCountersReadByProbe": false,
+    "normalProjectsPublished": 0,
+    "observedPhysicalPeakBytes": 4162719600,
+    "OS": "Version 27.2 (Build 24B119)",
+    "phonePerformanceAccepted": false,
+    "physicalMemoryBytes": 12263407616,
+    "physicalSampleCount": 1069,
+    "physicalSampleIntervalSeconds": 0.25,
+    "physicalScaleKnown": false,
+    "platform": "physical-iPhone-full-public-pipeline-diagnostic",
+    "preparationMethod": "apple-vision-all-foreground-alpha-512",
+    "preparedSHA256": "476088d58d56597a2ed4e998faf5f70c585e0e9206865b4e0625cbd33823df43",
+    "preparedSize": [
+      512,
+      512
+    ],
+    "referenceCallbackBytes": 158084,
+    "referenceCallbackCount": 1,
+    "referenceCallbackMatchesReturnedBytes": true,
+    "referenceCallbackSHA256": "cd2da6b8aa9fe09f5a25edacf5f7031f062ccd40a1787c57848562a4bd6f1e28",
+    "referenceSize": [
+      512,
+      512
+    ],
+    "reportPersistenceIntervalSeconds": 1,
+    "requestSHA256": "5efee41d264758fcbb370cb89b31cd1e3be9f8b668ada1375e69d6079cbe0013",
+    "retries": 0,
+    "returnedReferenceSHA256": "cd2da6b8aa9fe09f5a25edacf5f7031f062ccd40a1787c57848562a4bd6f1e28",
+    "returnedResultContractPassed": true,
+    "runID": "full-native-8E1C4EDD-3E6F-40C4-B33E-61A8732C2D94",
+    "seconds": 284.2414284166589,
+    "seed": 24301,
+    "sourceHeight": 512,
+    "sourceWidth": 512,
+    "stages": [
+      {
+        "phase": "interpreting",
+        "seconds": 0.392147083330201
+      },
+      {
+        "phase": "drawingReference",
+        "seconds": 6.490136666659964
+      },
+      {
+        "completedSteps": 1,
+        "phase": "drawingReference",
+        "seconds": 16.8260779583361,
+        "totalSteps": 4
+      },
+      {
+        "completedSteps": 2,
+        "phase": "drawingReference",
+        "seconds": 19.754825999989407,
+        "totalSteps": 4
+      },
+      {
+        "completedSteps": 3,
+        "phase": "drawingReference",
+        "seconds": 22.721815166674787,
+        "totalSteps": 4
+      },
+      {
+        "completedSteps": 4,
+        "phase": "drawingReference",
+        "seconds": 25.743796499999007,
+        "totalSteps": 4
+      },
+      {
+        "phase": "preparingSubject",
+        "seconds": 28.72382812498836
+      },
+      {
+        "phase": "generatingShape",
+        "seconds": 29.04479654165334
+      },
+      {
+        "fraction": 0.009999999776482582,
+        "phase": "generatingShape",
+        "seconds": 29.047301291662734
+      },
+      {
+        "fraction": 0.029999999329447746,
+        "phase": "generatingShape",
+        "seconds": 30.504667333327234
+      },
+      {
+        "fraction": 0.09100000560283661,
+        "phase": "generatingShape",
+        "seconds": 30.514349416655023
+      },
+      {
+        "fraction": 0.18119999766349792,
+        "phase": "generatingShape",
+        "seconds": 52.255060750001576
+      },
+      {
+        "fraction": 0.2303999960422516,
+        "phase": "generatingShape",
+        "seconds": 74.93800125000416
+      },
+      {
+        "fraction": 0.27959999442100525,
+        "phase": "generatingShape",
+        "seconds": 99.74166900001
+      },
+      {
+        "fraction": 0.3288000226020813,
+        "phase": "generatingShape",
+        "seconds": 125.41549866666901
+      },
+      {
+        "fraction": 0.37800002098083496,
+        "phase": "generatingShape",
+        "seconds": 151.1484031250002
+      },
+      {
+        "fraction": 0.4272000193595886,
+        "phase": "generatingShape",
+        "seconds": 176.92559541665833
+      },
+      {
+        "fraction": 0.4764000475406647,
+        "phase": "generatingShape",
+        "seconds": 202.98140466667246
+      },
+      {
+        "fraction": 0.525600016117096,
+        "phase": "generatingShape",
+        "seconds": 229.15067254166934
+      },
+      {
+        "fraction": 0.5748000741004944,
+        "phase": "generatingShape",
+        "seconds": 255.35197070834693
+      },
+      {
+        "fraction": 0.6404000520706177,
+        "phase": "generatingShape",
+        "seconds": 255.353279666655
+      },
+      {
+        "fraction": 0.7879999876022339,
+        "phase": "generatingShape",
+        "seconds": 283.8264976250066
+      },
+      {
+        "fraction": 0.8700000047683716,
+        "phase": "generatingShape",
+        "seconds": 283.93339520832524
+      },
+      {
+        "fraction": 0.8999999761581421,
+        "phase": "generatingShape",
+        "seconds": 284.03756387499743
+      },
+      {
+        "fraction": 1,
+        "phase": "generatingShape",
+        "seconds": 284.22011154165375
+      },
+      {
+        "fraction": 1,
+        "phase": "complete",
+        "seconds": 284.2217866250139
+      }
+    ],
+    "stageSeconds": {
+      "drawingReference": 22.231774926185608,
+      "generatingShape": 255.17636501789093,
+      "interpreting": 6.0979390144348145,
+      "preparingSubject": 0.3209620714187622,
+      "total": 283.8289420604706
+    },
+    "status": "exported-pending-independent-review",
+    "triangles": 69526,
+    "usdzSHA256": "7cbdf94ec9cd93f871f6eb8ca4c3eaf5bbc6ac3c3fb384be3e577754c279cd0a",
+    "verifiedIntentFiles": [
+      {
+        "byteCount": 7755,
+        "path": "chat_template.jinja",
+        "sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80"
+      },
+      {
+        "byteCount": 3112,
+        "path": "config.json",
+        "sha256": "ba7770da23eae5ebd6827571f086e331956b33f4442a9e876fb4aa10969a6772"
+      },
+      {
+        "byteCount": 71473,
+        "path": "model.safetensors.index.json",
+        "sha256": "6e48f2fa5d6f033a6d77bf833abfa9698ca24d1715ecea4c67447bcfaee44650"
+      },
+      {
+        "byteCount": 390,
+        "path": "preprocessor_config.json",
+        "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516"
+      },
+      {
+        "byteCount": 1300,
+        "path": "processor_config.json",
+        "sha256": "14932921ca485d458a04dafd8069fbb0a4505622a48208d19ed247115801385b"
+      },
+      {
+        "byteCount": 1139,
+        "path": "tokenizer_config.json",
+        "sha256": "e98f1901ac6f0adff67b1d540bfa0c36ac1a0cf59eb72ed78146ef89aafa1182"
+      },
+      {
+        "byteCount": 385,
+        "path": "video_preprocessor_config.json",
+        "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13"
+      },
+      {
+        "byteCount": 625229487,
+        "path": "model.safetensors",
+        "sha256": "f5a0d9dd3efa73510542a8023d610ff26be2b4b020d181cfc4bedaa1fcc5dd9e"
+      },
+      {
+        "byteCount": 19989343,
+        "path": "tokenizer.json",
+        "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4"
+      },
+      {
+        "byteCount": 11544,
+        "path": "LICENSE",
+        "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a"
+      }
+    ],
+    "vertices": 34766,
+    "watchdogIsCooperativeNotHardDeadline": true,
+    "watchdogSeconds": 900,
+    "watchdogTriggered": false
+  },
+  "artifactReadbackSHA256Matched": true,
+  "artifacts": {
+    "reference-returned-512.png": {
+      "byteCount": 158084,
+      "sha256": "cd2da6b8aa9fe09f5a25edacf5f7031f062ccd40a1787c57848562a4bd6f1e28"
+    },
+    "prepared-512-rgba.png": {
+      "byteCount": 60894,
+      "sha256": "476088d58d56597a2ed4e998faf5f70c585e0e9206865b4e0625cbd33823df43"
+    },
+    "model.glb": {
+      "byteCount": 1252096,
+      "sha256": "a0be829c8e9f7ff201c80ad78a12d9ec5f03e00ee028ab5df29bdb739eb25c07"
+    },
+    "model.usdz": {
+      "byteCount": 4247544,
+      "sha256": "7cbdf94ec9cd93f871f6eb8ca4c3eaf5bbc6ac3c3fb384be3e577754c279cd0a"
+    }
+  },
+  "actualImageStage": {
+    "backend": "flux2-klein4b-q4",
+    "componentRevisions": {
+      "smallVAE": "a3efc24f613ef42d9428af62fdbd6f5fd8856c4a",
+      "textEncoder": "480ec45ecf06ae3c061e4ef11345d05c7fdb02f1",
+      "transformer": "860e87183ceb29e39627c0612ebd66d8ea66e68c"
+    },
+    "guidance": 1,
+    "height": 512,
+    "modelContractID": "flux2-klein4b-int4",
+    "modelRevision": "860e87183ceb29e39627c0612ebd66d8ea66e68c",
+    "parameters": {
+      "cacheTrimSteps": "1",
+      "memoryProfile": "conservative",
+      "promptUpsampling": "false",
+      "residency": "TE-unload-DiT+VAE-unloadDiT-decode",
+      "textEncoder": "Qwen3-4B-affineQ4-group64",
+      "transformerVariant": "klein4B_4bit",
+      "vae": "smallDecoder-fullF32"
+    },
+    "runtimeVersion": "Flux2Core-57ad4818-local-v1-MLX0.32.3",
+    "seed": 24301,
+    "steps": 4,
+    "width": 512
+  },
+  "baseUsesUnchangedActualGLB": true,
+  "normalAppDataChanged": false,
+  "newTestFlightUploaded": false,
+  "visualAndThumbnailAcceptanceStillOpen": true,
+  "broadPromptAndRepeatedRunAcceptanceStillOpen": true
+}

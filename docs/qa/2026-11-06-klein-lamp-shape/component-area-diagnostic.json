@@ -1,0 +1,194 @@
+{
+  "sourceGLBSHA256": "367177cd30ace1f3192aedd9026e9accd5ef554dbed7df64fd2224199a81119b",
+  "vertices": 39416,
+  "triangles": 78812,
+  "method": "Pure CPU indexed connectivity/Float64 area diagnostics; no welding, filtering, capping, export or geometry changes.",
+  "physicalUnits": "normalized model units; not metric",
+  "indexedConnectedComponents": 7,
+  "unusedVertices": 0,
+  "boundaryEdges": 6,
+  "nonManifoldEdges": 0,
+  "sameDirectionTwoFaceEdges": 0,
+  "duplicateUnorientedTriangles": 0,
+  "trueZeroAreaFloat64Faces": 0,
+  "nonfiniteAreaFaces": 0,
+  "totalSurfaceAreaModelUnitsSquared": 2.992931642089619,
+  "positiveAreaQuantiles": {
+    "minimum": 1.191616393558691e-13,
+    "median": 4.0141809066688666e-05,
+    "p95": 7.317846163506108e-05,
+    "maximum": 9.331696093287622e-05
+  },
+  "componentsByDescendingArea": [
+    {
+      "vertexCount": 38018,
+      "triangleCount": 76040,
+      "surfaceAreaModelUnitsSquared": 2.8905655822415772,
+      "bboxMinimum": [
+        -0.4507262110710144,
+        -0.9364069700241089,
+        -0.43354910612106323
+      ],
+      "bboxMaximum": [
+        0.4477379322052002,
+        0.9345358610153198,
+        0.9949896335601807
+      ],
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "rankByArea": 1,
+      "surfaceAreaShare": 0.9657973946319164,
+      "bboxExtent": [
+        0.8984641432762146,
+        1.8709428310394287,
+        1.428538739681244
+      ]
+    },
+    {
+      "vertexCount": 512,
+      "triangleCount": 1020,
+      "surfaceAreaModelUnitsSquared": 0.03875290171397557,
+      "bboxMinimum": [
+        -0.22075200080871582,
+        -0.928115725517273,
+        -0.9967008829116821
+      ],
+      "bboxMaximum": [
+        0.08564889430999756,
+        -0.882238507270813,
+        -0.4145037531852722
+      ],
+      "boundaryEdges": 6,
+      "nonManifoldEdges": 0,
+      "rankByArea": 2,
+      "surfaceAreaShare": 0.012948141270249292,
+      "bboxExtent": [
+        0.3064008951187134,
+        0.04587721824645996,
+        0.5821971297264099
+      ]
+    },
+    {
+      "vertexCount": 242,
+      "triangleCount": 480,
+      "surfaceAreaModelUnitsSquared": 0.01756481900455202,
+      "bboxMinimum": [
+        0.019124865531921387,
+        -0.9236951470375061,
+        -0.4388729929924011
+      ],
+      "bboxMaximum": [
+        0.2829707860946655,
+        -0.8729581832885742,
+        -0.30591249465942383
+      ],
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "rankByArea": 3,
+      "surfaceAreaShare": 0.005868767183833352,
+      "bboxExtent": [
+        0.26384592056274414,
+        0.050736963748931885,
+        0.1329604983329773
+      ]
+    },
+    {
+      "vertexCount": 254,
+      "triangleCount": 504,
+      "surfaceAreaModelUnitsSquared": 0.017118220179824523,
+      "bboxMinimum": [
+        -0.4060515761375427,
+        -0.9256051182746887,
+        -0.7190954089164734
+      ],
+      "bboxMaximum": [
+        -0.17923057079315186,
+        -0.9006075859069824,
+        -0.5084743499755859
+      ],
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "rankByArea": 4,
+      "surfaceAreaShare": 0.005719549333867461,
+      "bboxExtent": [
+        0.22682100534439087,
+        0.0249975323677063,
+        0.21062105894088745
+      ]
+    },
+    {
+      "vertexCount": 172,
+      "triangleCount": 340,
+      "surfaceAreaModelUnitsSquared": 0.013025117986726448,
+      "bboxMinimum": [
+        0.24092066287994385,
+        -0.9272404909133911,
+        -0.3477954864501953
+      ],
+      "bboxMaximum": [
+        0.44785428047180176,
+        -0.9040195345878601,
+        -0.2803727984428406
+      ],
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "rankByArea": 5,
+      "surfaceAreaShare": 0.004351959731907713,
+      "bboxExtent": [
+        0.2069336175918579,
+        0.023220956325531006,
+        0.06742268800735474
+      ]
+    },
+    {
+      "vertexCount": 116,
+      "triangleCount": 228,
+      "surfaceAreaModelUnitsSquared": 0.00848002419376719,
+      "bboxMinimum": [
+        -0.3242705464363098,
+        -0.9244365096092224,
+        -0.4827083945274353
+      ],
+      "bboxMaximum": [
+        -0.19192707538604736,
+        -0.8991227149963379,
+        -0.3982692360877991
+      ],
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "rankByArea": 6,
+      "surfaceAreaShare": 0.0028333504429277805,
+      "bboxExtent": [
+        0.13234347105026245,
+        0.02531379461288452,
+        0.08443915843963623
+      ]
+    },
+    {
+      "vertexCount": 102,
+      "triangleCount": 200,
+      "surfaceAreaModelUnitsSquared": 0.007424976769195967,
+      "bboxMinimum": [
+        0.11090207099914551,
+        -0.9240856170654297,
+        -0.4671710133552551
+      ],
+      "bboxMaximum": [
+        0.24346387386322021,
+        -0.8982783555984497,
+        -0.4390321969985962
+      ],
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "rankByArea": 7,
+      "surfaceAreaShare": 0.002480837405298025,
+      "bboxExtent": [
+        0.1325618028640747,
+        0.02580726146697998,
+        0.028138816356658936
+      ]
+    }
+  ],
+  "noLargestComponentOnlyOutput": true,
+  "interpretation": "Components/area do not identify semantics. Legitimate multi-object scenes may contain disconnected pieces. Floaters are assessed independently from actual views; no auto-cleanup criterion applied."
+}

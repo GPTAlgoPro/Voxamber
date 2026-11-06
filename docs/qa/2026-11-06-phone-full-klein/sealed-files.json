@@ -1,0 +1,70 @@
+{
+  "scope": "One physical-iPhone generated LP; independent local audit and Mac camera rendering; no phone operation/NN/geometry repair by reviewer",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3263,
+      "sha256": "39bd4f79dd48468f313b8bf486c437fb5dd73b1347c3525b178793e01b394cf6"
+    },
+    {
+      "path": "actual-image-stage.json",
+      "bytes": 819,
+      "sha256": "8a1c7b9ba989c06c2ca23867204befe4a5db0909e91fa66b7618a61276d03644"
+    },
+    {
+      "path": "actual-phone-run-verification.json",
+      "bytes": 9935,
+      "sha256": "12ae0e8377fa8658432e3360d9a7fca662f89cb1e70e05acb809f18131d3957d"
+    },
+    {
+      "path": "intent.json",
+      "bytes": 398,
+      "sha256": "b90098e80c8fc2b07e2a617a00197f63317d20273109fc79e702da138fd390c4"
+    },
+    {
+      "path": "phone-model-mac-front.png",
+      "bytes": 45939,
+      "sha256": "4bb8480160bca922cdd0196a3e739d8c7852fb23db420294bec02c4fecd034d8"
+    },
+    {
+      "path": "phone-model-mac-three-quarter.png",
+      "bytes": 51946,
+      "sha256": "8c148ea9b5479fec157d830544cbed0b5417fe80059e8dbdf0bac9b950e460f3"
+    },
+    {
+      "path": "phone-prepared-512-rgba.png",
+      "bytes": 60894,
+      "sha256": "476088d58d56597a2ed4e998faf5f70c585e0e9206865b4e0625cbd33823df43"
+    },
+    {
+      "path": "phone-reference-512.png",
+      "bytes": 158084,
+      "sha256": "cd2da6b8aa9fe09f5a25edacf5f7031f062ccd40a1787c57848562a4bd6f1e28"
+    },
+    {
+      "path": "protocol-before-run.json",
+      "bytes": 29047,
+      "sha256": "d93b6617678628ec76928bbc92af43ce3efcd3829e78b03200f5bc664b65116d"
+    },
+    {
+      "path": "readback-audit.json",
+      "bytes": 8808,
+      "sha256": "6066ae1d6d5df650ba07309a6c48ddfaf4464a8e25eeff4cabf456dcad112ee7"
+    },
+    {
+      "path": "shape-provenance.json",
+      "bytes": 944,
+      "sha256": "617a2c1e6b69a805b02f1e5213326815122455c9b7bfe560c35d5cde861dc9fe"
+    },
+    {
+      "path": "shape-validation-receipt.json",
+      "bytes": 579,
+      "sha256": "d3f76700913769f5accac1a8e5dd452c57a8b615253255d085091e016fc0a9e4"
+    },
+    {
+      "path": "visual-review.json",
+      "bytes": 1009,
+      "sha256": "b9dc628c9cc4da216c4da162e4eaa7baa49db3af63455d36c93bdb4b25ebfa1f"
+    }
+  ]
+}
