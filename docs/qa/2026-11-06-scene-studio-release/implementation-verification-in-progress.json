@@ -1,6 +1,6 @@
 {
   "checkedAtUTC": "2026-11-06T05:47:59.407543+00:00",
-  "releaseCandidate": "0.2.0 (7)",
+  "releaseCandidate": "0.2.0 (8)",
   "flow": "User-owned LLM scene import; official local native compiler; preview/save/export. No mandatory local model.",
   "evidence": {
     "CreationCoreTests": {
@@ -55,5 +55,14 @@
     "Apple/SceneShareExtension/SceneShareViewController.swift": "2fe2a356a578ddc7d83a396e4bb2f7bef0c7f7bf945ad561f6e54d44518d079c"
   },
   "newTestFlightUploaded": false,
-  "normalPhoneDataMutated": false
+  "normalPhoneDataMutated": false,
+  "rejectedBuild7": "Apple ingestion90683 required NSSpeechRecognitionUsageDescription; fixed both SDK voice purpose strings for build8",
+  "physicalPhoneControllerCases": {
+    "robotImportCompileSaveSeconds": 0.195749998,
+    "palaceImportCompileSaveSeconds": 0.788332105,
+    "palaceGLBMatchesOriginalMacPoC": true,
+    "realQuickLookThumbnailsReviewedNormal": true,
+    "productionSharedAppGroupInboxToControllerPassed": true,
+    "systemShareSheetProviderUIExercised": false
+  }
 }

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "readOnly": true,
+  "remoteMutations": 0,
+  "credentialSource": "existing external p8; issuer from private config; no credential values retained",
+  "providedIssuerMatchesChosen": true,
+  "checks": {
+    "app": {
+      "HTTPStatus": 200,
+      "targetMatches": true
+    },
+    "com.kaisun.voxamber.scene-qa": {
+      "HTTPStatus": 200,
+      "matchingCount": 0,
+      "records": []
+    },
+    "com.kaisun.voxamber.scene-qa.scene-import": {
+      "HTTPStatus": 200,
+      "matchingCount": 0,
+      "records": []
+    }
+  }
+}

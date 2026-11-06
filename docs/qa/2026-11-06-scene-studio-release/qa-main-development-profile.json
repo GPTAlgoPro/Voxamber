@@ -1,0 +1,24 @@
+{
+  "bundleID": "com.kaisun.voxamber.scene-qa",
+  "bundleRecordID": "3QX448UFS5",
+  "profileID": "CP9H5W65X9",
+  "profileName": "Voxamber Scene QA Dev 20261106",
+  "profileUUID": "5cd8ae8b-2532-4725-b554-529ad1c8959a",
+  "profileType": "IOS_APP_DEVELOPMENT",
+  "profileState": "ACTIVE",
+  "expiry": "2027-11-06T05:48:39.000+00:00",
+  "profileSHA256": "078a233fd0be6df188583ff5a79306de801e80feebe69d84352c98196a39a6fe",
+  "profileFile": "/Users/kaisun/Library/Application Support/Voxamber/Signing/Profiles/5cd8ae8b-2532-4725-b554-529ad1c8959a.mobileprovision",
+  "installedFiles": [
+    "/Users/kaisun/Library/MobileDevice/Provisioning Profiles/5cd8ae8b-2532-4725-b554-529ad1c8959a.mobileprovision",
+    "/Users/kaisun/Library/Developer/Xcode/UserData/Provisioning Profiles/5cd8ae8b-2532-4725-b554-529ad1c8959a.mobileprovision"
+  ],
+  "appGroupContentVerified": true,
+  "appGroupIdentifier": "group.com.kaisun.voxamber.background-assets",
+  "exactPhoneMatches": true,
+  "deviceCount": 1,
+  "existingLocalDevelopmentCertificateMatched": true,
+  "getTaskAllow": true,
+  "newCertificateCreated": false,
+  "normalBundleCapabilitiesModified": false
+}

@@ -8,11 +8,11 @@
       runPostActionsOnFailure = "NO">
       <BuildActionEntries>
          <BuildActionEntry
-            buildForTesting = "NO"
+            buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B88CF4F55DF72E3DD3A0DB60"
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BAA626B5AE375299081F7800"
-            BuildableName = "VoxamberSceneStudioTests.xctest"
-            BlueprintName = "VoxamberSceneStudioTests"
+            BlueprintIdentifier = "B88CF4F55DF72E3DD3A0DB60"
+            BuildableName = "VoxamberSceneStudio.app"
+            BlueprintName = "VoxamberSceneStudio"
             ReferencedContainer = "container:ThreeLiveStudio.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

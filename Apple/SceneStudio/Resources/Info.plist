@@ -12,6 +12,8 @@
 <key>LSRequiresIPhoneOS</key><true/>
 <key>ITSAppUsesNonExemptEncryption</key><false/>
 <key>NSCameraUsageDescription</key><string>使用相机，将你导入并创建的三维模型放入真实空间中预览。</string>
+<key>NSSpeechRecognitionUsageDescription</key><string>仅在你主动选择语音功能时识别你提供的内容；导入场景代码和生成模型不需要语音识别。</string>
+<key>NSMicrophoneUsageDescription</key><string>仅在你主动使用语音输入时采集声音；场景导入、模型生成和导出不会主动访问麦克风。</string>
 <key>UIApplicationSceneManifest</key><dict><key>UIApplicationSupportsMultipleScenes</key><false/></dict>
 <key>UILaunchScreen</key><dict/>
 <key>UISupportedInterfaceOrientations</key><array><string>UIInterfaceOrientationPortrait</string><string>UIInterfaceOrientationLandscapeLeft</string><string>UIInterfaceOrientationLandscapeRight</string></array>

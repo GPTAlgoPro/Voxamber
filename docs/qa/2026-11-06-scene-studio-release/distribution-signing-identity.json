@@ -1,0 +1,22 @@
+{
+  "certificateID": "52UN8XYSVW",
+  "certificateType": "DISTRIBUTION",
+  "certificateSHA256": "61a072c5918cbad6fd10ef9882e3c93b3ca5e9874f3878136af7e8de853c2101",
+  "identitySHA1": "AA9FC479DEC2CCF16894C53229CAFF48380583F5",
+  "expiry": "2027-11-06T05:40:47.000+00:00",
+  "CSR_SHA256": "e5edef5519b2e88639c2dea65d8bcddea65f54ce91ed726d9bd425eb843fc74c",
+  "publicKeySHA256": "cf1ce21baf9f364990fc677138f7a458d57b3ae0e364026ae1cc268ed074d130",
+  "newCertificatesCreatedByScope": 1,
+  "privateKeyPublicCertificateMatch": true,
+  "keychainIdentityValid": true,
+  "securePersistentDirectory": "/Users/kaisun/Library/Application Support/Voxamber/Signing",
+  "dedicatedKeychain": "/Users/kaisun/Library/Application Support/Voxamber/Signing/Voxamber-SceneStudio-Signing.keychain-db",
+  "oldSearchlistPreserved": true,
+  "defaultKeychainUnchanged": true,
+  "oldCertificatesOrProfilesRevokedOrDeleted": false,
+  "privateMaterialOutput": false,
+  "independentSearchlistExactPreservationVerified": true,
+  "defaultKeychainIndependentlyUnchanged": true,
+  "privateFiles0600Verified": true,
+  "noninteractiveCodesignAndVerifyPassed": true
+}

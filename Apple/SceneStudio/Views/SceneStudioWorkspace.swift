@@ -103,7 +103,7 @@ import UIKit
                 if let project = model.selected {
                     VStack(alignment: .leading, spacing: 12) {
                         Text(project.title).font(.title3.bold())
-                        ModelViewport(url: project.usdzURL).frame(minHeight: 300, idealHeight: 400)
+                        selectedPreview(project).frame(minHeight: 300, idealHeight: 400)
                             .clipShape(.rect(cornerRadius: 20))
                         ViewThatFits(in: .horizontal) {
                             HStack { exports(project) }
@@ -155,6 +155,14 @@ import UIKit
         ShareLink("GLB", item: project.glbURL).buttonStyle(.glass)
         ShareLink("场景代码", item: project.sourceURL).buttonStyle(.glass)
         Button("实景预览", systemImage: "arkit") { arURL = ModelURL(url: project.usdzURL) }.buttonStyle(.glass)
+    }
+
+    @ViewBuilder private func selectedPreview(_ project: ProgramProject) -> some View {
+        #if SCENE_QA
+        ModelViewport(url: project.usdzURL, loadState: SceneStudioDeviceProbe.previewState)
+        #else
+        ModelViewport(url: project.usdzURL)
+        #endif
     }
 
     private var library: some View {

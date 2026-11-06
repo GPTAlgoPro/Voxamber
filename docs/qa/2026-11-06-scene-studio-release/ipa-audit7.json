@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "appID": "6831042755",
+  "bundleID": "com.kaisun.voxamber",
+  "marketingVersion": "0.2.0",
+  "buildNumber": "7",
+  "ipaPath": "/Users/kaisun/Three-Live/Apple/.build/ThreeLiveReturn/Export-0.2.0-7/VoxamberSceneStudio.ipa",
+  "ipaByteCount": 8964865,
+  "ipaSHA256": "4ebd5c37653dcbd8da693eed16aa179e416657408bb0edddd4328b5ae0f2967e",
+  "sourceCommit": "0ff9649dcc106c25bb0ae9314e11304d7ff46e6b",
+  "checkedAtUTC": "2026-11-06T06:05:51.769865+00:00",
+  "checks": {
+    "onlyIntendedMainAndShareExtension": true,
+    "shareExtensionPointMatches": true,
+    "noTestBundles": true,
+    "noModelWeightsPythonOrPrivateKeys": true,
+    "noModelDownloaderExtension": true,
+    "instructionsExampleLicensePrivacyBundled": true,
+    "actualGoogleCompilerInMatchedDSYMAndBinaryMarkers": true,
+    "noLocalModelDiffusionOrQAEngineSymbols": true,
+    "onlyDeclaredSceneDataJSFile": true
+  },
+  "bundles": [
+    {
+      "bundleID": "com.kaisun.voxamber",
+      "version": "0.2.0",
+      "build": "7",
+      "architecture": "arm64",
+      "codesignStrict": true,
+      "getTaskAllowFalse": true,
+      "profileApplicationIdentifierMatches": true,
+      "appGroupMatches": true,
+      "distributionProfileWithoutDeviceList": true,
+      "executableSHA256": "ff0b3ab382244544234b6bfb8d57ebffa5aafe2dc8812011866ca8e0c187e4aa"
+    },
+    {
+      "bundleID": "com.kaisun.voxamber.scene-import",
+      "version": "0.2.0",
+      "build": "7",
+      "architecture": "arm64",
+      "codesignStrict": true,
+      "getTaskAllowFalse": true,
+      "profileApplicationIdentifierMatches": true,
+      "appGroupMatches": true,
+      "distributionProfileWithoutDeviceList": true,
+      "executableSHA256": "dc2da34577a5fa2c0184c7b9a2b764d64b28026c56a98d80bdae0f6fe7b4a830"
+    }
+  ],
+  "appBinaryUUID": "42AF37A1-6412-3CFB-8AA8-76D2740324B4",
+  "scope": "Actual exported App Store IPA signing/payload/native runtime audit, with UUID-matched dSYM because release globals are stripped; not processing/TestFlight availability"
+}

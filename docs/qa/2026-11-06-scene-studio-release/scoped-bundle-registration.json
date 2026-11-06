@@ -1,0 +1,28 @@
+{
+  "scope": "Only3exactBundleIDs+APP_GROUPScapability; noApps/groups/certificates/profiles created ornormalID changed",
+  "bundles": [
+    {
+      "identifier": "com.kaisun.voxamber.scene-qa",
+      "bundleRecordID": "3QX448UFS5",
+      "seedID": "M97RTV2PQG",
+      "appGroupsCapabilityPresent": true,
+      "capabilityRecordID": "3QX448UFS5_APP_GROUPS"
+    },
+    {
+      "identifier": "com.kaisun.voxamber.scene-qa.scene-import",
+      "bundleRecordID": "9V937347A5",
+      "seedID": "M97RTV2PQG",
+      "appGroupsCapabilityPresent": true,
+      "capabilityRecordID": "9V937347A5_APP_GROUPS"
+    },
+    {
+      "identifier": "com.kaisun.voxamber.scene-import",
+      "bundleRecordID": "P6Q247R8RH",
+      "seedID": "M97RTV2PQG",
+      "appGroupsCapabilityPresent": true,
+      "capabilityRecordID": "P6Q247R8RH_APP_GROUPS"
+    }
+  ],
+  "appGroupAssociationVerified": false,
+  "pendingUnknownPOSTCount": 0
+}

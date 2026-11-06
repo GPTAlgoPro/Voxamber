@@ -1,0 +1,24 @@
+{
+  "bundleID": "com.kaisun.voxamber",
+  "bundleRecordID": "TK9NCA3M7W",
+  "profileName": "Voxamber SceneStudio App Store 20261106",
+  "profileID": "PZR5MC268G",
+  "profileUUID": "1cbab839-7905-4848-9d6c-c6532574971e",
+  "profileType": "IOS_APP_STORE",
+  "profileState": "ACTIVE",
+  "expiry": "2027-11-06T05:40:47.000+00:00",
+  "profileFile": "/Users/kaisun/Library/Application Support/Voxamber/Signing/Profiles/1cbab839-7905-4848-9d6c-c6532574971e.mobileprovision",
+  "profileSHA256": "b2249a66a69d37e4d3db1c16a09ef6cd8280ced29eca04cf954dd055a192c1da",
+  "installedFiles": [
+    "/Users/kaisun/Library/MobileDevice/Provisioning Profiles/1cbab839-7905-4848-9d6c-c6532574971e.mobileprovision",
+    "/Users/kaisun/Library/Developer/Xcode/UserData/Provisioning Profiles/1cbab839-7905-4848-9d6c-c6532574971e.mobileprovision"
+  ],
+  "certificateID": "52UN8XYSVW",
+  "identitySHA1": "AA9FC479DEC2CCF16894C53229CAFF48380583F5",
+  "certificateMatched": true,
+  "appGroupContentVerified": true,
+  "appGroupIdentifier": "group.com.kaisun.voxamber.background-assets",
+  "deviceListAbsent": true,
+  "getTaskAllow": false,
+  "normalCapabilitiesModified": false
+}

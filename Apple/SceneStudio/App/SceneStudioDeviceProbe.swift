@@ -7,6 +7,7 @@ import Darwin
 /// sample/import and generate buttons. No weights, model inference or templates
 /// are substituted for a user's scene. The fixture is explicitly Codex-authored.
 @MainActor enum SceneStudioDeviceProbe {
+    static let previewState = ModelPreviewLoadState()
     static func run(model: SceneStudioModel) async {
         let folder = URL.documentsDirectory.appending(path: "SceneStudioQA/" + UUID().uuidString)
         let began = Date()
@@ -18,7 +19,33 @@ import Darwin
                 throw SceneStudioError.message("仅允许在独立验收 App 中运行。")
             }
             try FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
-            model.importExample()
+            model.newProject()
+            if ProcessInfo.processInfo.arguments.contains("--qa-shared-inbox") {
+                guard let resource = Bundle.main.url(forResource: "RobotScene", withExtension: "js") else {
+                    throw SceneStudioError.message("缺少验收场景")
+                }
+                let inbox = try SceneImportInbox.openShared()
+                let bytes = try Data(contentsOf: resource)
+                let item = try await inbox.store(bytes: bytes, originalFilename: "shared-robot.js")
+                let listing = try await inbox.list()
+                guard listing.pending.contains(where: { $0.id == item.id }) else {
+                    throw SceneStudioError.message("系统共享目录未返回新导入项")
+                }
+                model.title = "系统共享目录 · 原生验收"
+                model.acceptShared(item)
+                await model.waitForCurrentOperation()
+                let after = try await inbox.list()
+                guard !after.pending.contains(where: { $0.id == item.id }), Data(model.source.utf8) == bytes else {
+                    throw SceneStudioError.message("共享导入或确认未完成")
+                }
+                report["productionSharedInboxToControllerPassed"] = true
+                report["sourceBytesPreservedAcrossAppGroup"] = true
+                report["systemShareSheetProviderUIExercised"] = false
+            } else if ProcessInfo.processInfo.arguments.contains("--qa-palace") {
+                report["sourceAuthor"] = "Original Codex-session palace PoC with host-precomputed geometry"
+                model.title = "琉金重檐殿 · 官方原生验收"
+                model.importFile(URL.documentsDirectory.appending(path: "QAImports/palace.js"))
+            } else { model.importExample() }
             await model.waitForCurrentOperation()
             try Task.checkCancellation()
             guard model.errorMessage == nil, !model.source.isEmpty else {
@@ -47,6 +74,13 @@ import Darwin
                 "usdzSHA256": project.usdzSHA256, "glbBytes": glb.count, "usdzBytes": usdz.count,
                 "sdkVersion": project.compilerVersion, "sdkRevision": project.compilerRevision,
                 "modelBusyAfterAwait": model.busy, "availableProcessBytesAfter": os_proc_available_memory()], uniquingKeysWith: { _, new in new })
+            let previewLimit = Date().addingTimeInterval(8)
+            while previewState.phase != .ready && previewState.phase != .failed && Date() < previewLimit {
+                try await Task.sleep(for: .milliseconds(100))
+            }
+            report["productionViewportPhase"] = String(describing: previewState.phase)
+            report["productionViewportError"] = previewState.errorMessage ?? ""
+            report["productionViewportEntityAttached"] = previewState.entity?.scene != nil
             do {
                 let png = try await ProjectThumbnailService.shared.thumbnail(for: .init(projectID: project.id,
                     revision: project.revision, fileDigest: project.usdzSHA256, fileURL: project.usdzURL))

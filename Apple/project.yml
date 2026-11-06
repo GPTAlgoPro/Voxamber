@@ -30,12 +30,14 @@ schemes:
   Voxamber-SceneStudio:
     build:
       targets:
-        VoxamberSceneStudio: [run]
+        VoxamberSceneStudio: [run, test, profile, analyze, archive]
     run:
       config: Debug
     test:
       config: Debug
       targets: [VoxamberSceneStudioTests, VoxamberSceneStudioUITests]
+    archive:
+      config: Release
   Voxamber-SceneQA:
     build:
       targets:
@@ -74,7 +76,7 @@ targets:
         PRODUCT_MODULE_NAME: SceneStudio
         APP_DISPLAY_NAME: "维珀"
         MARKETING_VERSION: "0.2.0"
-        CURRENT_PROJECT_VERSION: "7"
+        CURRENT_PROJECT_VERSION: "8"
         TARGETED_DEVICE_FAMILY: "1,2"
         GENERATE_INFOPLIST_FILE: NO
         INFOPLIST_FILE: SceneStudio/Resources/Info.plist
@@ -82,10 +84,17 @@ targets:
         SWIFT_STRICT_CONCURRENCY: complete
         CODE_SIGN_ENTITLEMENTS: SceneStudio/Resources/SceneStudio.entitlements
       configs:
+        Release:
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: Apple Distribution
+          PROVISIONING_PROFILE_SPECIFIER: Voxamber SceneStudio App Store 20261106
         Release-QA:
           PRODUCT_BUNDLE_IDENTIFIER: com.kaisun.voxamber.scene-qa
           APP_DISPLAY_NAME: "维珀·场景验收"
           SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) SCENE_QA"
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: Apple Development
+          PROVISIONING_PROFILE_SPECIFIER: Voxamber Scene QA Dev 20261106
     dependencies:
       - package: CreationCore
       - package: GoogleThreeLiveNative
@@ -101,15 +110,22 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.kaisun.voxamber.scene-import
         MARKETING_VERSION: "0.2.0"
-        CURRENT_PROJECT_VERSION: "7"
+        CURRENT_PROJECT_VERSION: "8"
         GENERATE_INFOPLIST_FILE: NO
         INFOPLIST_FILE: SceneShareExtension/Info.plist
         CODE_SIGN_ENTITLEMENTS: SceneShareExtension/SceneShare.entitlements
         APPLICATION_EXTENSION_API_ONLY: YES
         SKIP_INSTALL: YES
       configs:
+        Release:
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: Apple Distribution
+          PROVISIONING_PROFILE_SPECIFIER: Voxamber Scene Import App Store 20261106
         Release-QA:
           PRODUCT_BUNDLE_IDENTIFIER: com.kaisun.voxamber.scene-qa.scene-import
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: Apple Development
+          PROVISIONING_PROFILE_SPECIFIER: Voxamber Scene QA Import Dev 20261106
   VoxamberSceneStudioTests:
     type: bundle.unit-test
     platform: iOS

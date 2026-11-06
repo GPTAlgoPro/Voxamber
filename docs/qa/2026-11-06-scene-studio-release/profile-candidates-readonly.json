@@ -1,0 +1,18 @@
+{
+  "readOnly": true,
+  "remoteMutations": 0,
+  "exactRegisteredPhoneMatches": 1,
+  "eligibleLocalDevelopmentCertificateCount": 1,
+  "eligibleLocalIOSDistributionCertificateCount": 0,
+  "allServerIOSDistributionCertificateCount": 0,
+  "profileCandidates": {
+    "com.kaisun.voxamber.scene-qa": {
+      "HTTPStatus": 200,
+      "existingDevelopmentProfileCount": 0
+    },
+    "com.kaisun.voxamber.scene-qa.scene-import": {
+      "HTTPStatus": 200,
+      "existingDevelopmentProfileCount": 0
+    }
+  }
+}
