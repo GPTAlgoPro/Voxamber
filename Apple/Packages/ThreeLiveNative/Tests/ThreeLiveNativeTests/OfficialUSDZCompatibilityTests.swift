@@ -71,6 +71,30 @@ final class OfficialUSDZCompatibilityTests: XCTestCase {
         XCTAssertEqual(authoredProperties(fixed), authoredProperties(candidate))
     }
 
+    func testNonNoneSubdivisionWithExtraSpacesOrTabsCannotEvadeRejection() throws {
+        let original = try payload(actualRaw)
+        for property in ["uniform\t token subdivisionScheme = \"catmullClark\"", "uniform  token subdivisionScheme = \"catmullClark\""] {
+            let candidate = original.replacingOccurrences(of: "def Mesh \"native_compiler_smoke\"\n{",
+                with: "def Mesh \"native_compiler_smoke\"\n{\n" + property)
+            XCTAssertNotEqual(candidate, original)
+            XCTAssertThrowsError(try OfficialUSDZCompatibility.repair(pack(candidate))) { error in
+                XCTAssertEqual(error as? OfficialUSDZCompatibilityError, .unsupportedUSDA)
+            }
+        }
+    }
+
+    func testAlternateWhitespaceBindingCannotHideDuplicateDeclaration() throws {
+        let original = try payload(actualRaw)
+        let binding = "rel material:binding = </Root/Materials/Material_0>"
+        for alternate in ["rel\tmaterial:binding = </Root/Materials/Material_0>", "rel  material:binding = </Root/Materials/Material_0>"] {
+            let candidate = original.replacingOccurrences(of: binding, with: binding + "\n" + alternate)
+            XCTAssertNotEqual(candidate, original)
+            XCTAssertThrowsError(try OfficialUSDZCompatibility.repair(pack(candidate))) { error in
+                XCTAssertEqual(error as? OfficialUSDZCompatibilityError, .unsupportedUSDA)
+            }
+        }
+    }
+
     func testCRCAndLocalCentralDisagreementAreRejected() {
         let start = 30 + read(actualRaw, 26, 2) + read(actualRaw, 28, 2)
         var badCRC = actualRaw; badCRC[start + 2] ^= 1

@@ -1,0 +1,9 @@
+{
+  "name": "Google Three-Live",
+  "repository": "https://github.com/google/three-live",
+  "version": "1.2.3",
+  "revision": "c0ff24b628795286a175f1a71611673df5dbc05d",
+  "license": "Apache-2.0",
+  "copyright": "Copyright 2026 Google LLC",
+  "archiveSHA256": "382fd2fbaa3909fe87e90e9f4ceabaec25fcd22faeb09f91e3490e9021280c59"
+}

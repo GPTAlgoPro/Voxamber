@@ -80,6 +80,8 @@ public enum OfficialUSDZCompatibility {
         // own line. Keeping that narrow layout avoids guessing at arbitrary USD.
         var lines = text.components(separatedBy: "\n")
         let header = try NSRegularExpression(pattern: #"^([ \t]*)def Mesh "(?:[^"\\]|\\.)+"[ \t]*(\()?[ \t]*$"#)
+        let bindingProperty = try NSRegularExpression(pattern: #"^rel[\t ]+material:binding\b"#)
+        let subdivisionProperty = try NSRegularExpression(pattern: #"^(?:uniform[\t ]+)?token[\t ]+subdivisionScheme\b"#)
         let binding = try NSRegularExpression(pattern: #"^rel material:binding\s*=\s*</[^<>\r\n]+>\s*$"#)
         let subdivision = try NSRegularExpression(pattern: #"^(?:uniform\s+)?token subdivisionScheme\s*=\s*"none"\s*$"#)
         func matches(_ pattern: NSRegularExpression, _ value: String) -> Bool {
@@ -122,11 +124,11 @@ public enum OfficialUSDZCompatibility {
             while cursor < lines.count, bodyDepth > depth {
                 let bodyLine = trimmed(cursor)
                 if bodyDepth == depth + 1 {
-                    if bodyLine.hasPrefix("rel material:binding") {
+                    if matches(bindingProperty, bodyLine) {
                         guard matches(binding, bodyLine) else { throw OfficialUSDZCompatibilityError.unsupportedUSDA }
                         bindingCount += 1
                     }
-                    if bodyLine.hasPrefix("uniform token subdivisionScheme") || bodyLine.hasPrefix("token subdivisionScheme") {
+                    if matches(subdivisionProperty, bodyLine) {
                         guard matches(subdivision, bodyLine) else { throw OfficialUSDZCompatibilityError.unsupportedUSDA }
                         subdivisionCount += 1
                     }
