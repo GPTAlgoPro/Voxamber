@@ -1,0 +1,35 @@
+{
+  "recordedAtUTC": "2026-11-06T01:09:54.169006+00:00",
+  "scope": "Integrated App Simulator regression after canonical CLIP, cooperative Shape cancellation, pinned Apple-delivery overlay and license navigation",
+  "tests": {
+    "result": "Passed",
+    "totalTestCount": 116,
+    "passedTests": 115,
+    "failedTests": 0,
+    "skippedTests": 1
+  },
+  "sourceSHA256": {
+    "ThreeLiveStudio/App/StudioModel.swift": "0635d07681ac34e4f257610f37f9cb1999d061356f3b9b4fe5b27672364e065d",
+    "ThreeLiveStudio/Models/NeuralModelCatalog.swift": "c662567b1c07db1a4a9f550e2d89fd641a86d8156d2c9b3244370af15478c96b",
+    "ThreeLiveStudio/Models/NeuralModelLibrary.swift": "91d3bfb00385cc843e194e840464006fa72068855aef6206debac626cbf35d12",
+    "ThreeLiveStudio/Models/ModelLibrary.swift": "5c14f99783171f9b23bcd0c7078bfb0d55adb085f21767989afc03ba34aa5082",
+    "ThreeLiveStudio/Resources/NeuralModelDelivery.json": "f37b686f94011b57f83fa992c041a6cdc53ed131361806c132e2b275d2fa55d1",
+    "ThreeLiveStudioTests/NeuralAssetStoreTests.swift": "14113bbff90f794670333bb9d6ba6188819d21fa9cd860d90060aedb59b20d60",
+    "Packages/VoxamberImageNative/Sources/AppleSDXL/tokenizer/BPETokenizer.swift": "48c02b2951262c0af74d6017a301ca07d42e900c52d0dacf22ea8b0065926408",
+    "Packages/VoxamberImageNative/Sources/AppleSDXL/tokenizer/BPETokenizer+Reading.swift": "8f96f356f2ac5b3a316dbd18b2c1f38ac6a1de57f7b11a5f7d000310e6504f5c",
+    "Packages/VoxamberShapeNative/Sources/VoxamberHy3D/DiTPlain.swift": "c40ed01df0f80a706c84fd7c505ad6cc14e9154bc253da32d03830d73ffa6e6a",
+    "Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Pipeline.swift": "8d49ee9efb0fe2f6c088b97e48e79e4a230795923b795b95a54ffa23da1e2e87",
+    "Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeDenoiser.swift": "91d8e50eb07c5e3182038da3162d835423439136d8ee319d3812989bb741ee25",
+    "Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeGenerator.swift": "b2fa07014ca73993d112feed035e9671e15206eec313fe2926a3c45760f946ba"
+  },
+  "allFrozenModelManifestsUnchanged": true,
+  "AppleUploadFreshReadbackReceiptSHA256": "3da3a2baa617c3ec209bec48e26fe36fdc66af7462bb1311411bdceb0bed3559",
+  "downloadEnabledInDevelopmentBundle": true,
+  "actualManagedDownloadVerified": false,
+  "publicFullMacLampBusinessAcceptance": false,
+  "canonicalImageLampFullAttributeAcceptance": false,
+  "physicalIPhoneNeuralPipelineAccepted": false,
+  "newTestFlightUploaded": false,
+  "normalPhoneAppReplaced": false,
+  "releaseMainMerged": false
+}

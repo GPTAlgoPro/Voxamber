@@ -37,3 +37,9 @@ let pngData: Data = try await task.value
 已完成 Mac 编译、**11 项无权重测试**和 arm64 / iOS 26.0 generic 编译。测试涉及 BPE、token 限额、结构资源准入、失败/取消清理及独立 ImageIO 格式转换；测试驱动不返回假生成图。尚未验证真实 SDXL 推理、图像质量、≤6 GiB 峰值、热稳定性、离线资产流程或端到端形体结果。旧 Apple CBLAS `cblas_saxpy` 弃用警告保留，不影响本次编译。
 
 本包源码使用 [Apple MIT 许可](LICENSE.md)，保留 [上游致谢](ACKNOWLEDGEMENTS-APPLE)。模型权重受独立的 [SDXL OpenRAIL++ 许可](MODEL-LICENSE-SDXL.md)约束；FP16-fix VAE 的来源与说明见仓库 `docs/prototypes/2026-11-06-native-neural-pipeline/image-backend/`。Swift 源码许可不代替权重许可。
+
+## Canonical CLIP tokenizer adaptation
+
+The native BPE now uses the official CLIP regex boundaries and reversible UTF-8 byte alphabet, preserving Apple copyright and documenting the OpenAI fixed3bee281 MIT reference in canonical-tokenizer-provenance.json and LICENSE-OPENAI-CLIP. The old Apple whitespace-only segmentation is not exposed as a product option. No model, prompts, seeds, image options, driver, CFG, scheduler, prewarm or resource lifetime behavior changed in this condition.
+
+Pure CPU golden vectors cover the exact returned lamp/vase English strings, numbers, punctuation, hyphens, contractions, abbreviations, empty negatives, special tokens, whitespace and valid NFC Unicode; both SDXL pad conventions must match complete reference IDs. Small test resources are a declared selected merge closure, not a model tokenizer substitute. A separate CPU check uses the actual full49408-vocab/48894-merges files. Production intent is normalized printable ASCII English. Full ftfy repair of malformed Unicode or HTML entities is not implemented or claimed. Neural image improvement remains unverified until the separate one-image controlled gate.

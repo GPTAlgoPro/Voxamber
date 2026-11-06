@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "files": [
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeDenoiser.swift",
+      "sha256": "c3629b746530f4fd2f200ceb5c08f761699aa7d6d8ab452a563ac247e662a73c"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/DiTPlain.swift",
+      "sha256": "9a634d2eb36cf7f6981281b959f87e737fd7ee434befd917fb262d76e0fd3a43"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/Pipeline.swift",
+      "sha256": "3774aa0c216c870cf626d89eb6d8dec1398904732e5a8bafb127b7c134f1c7ba"
+    },
+    {
+      "path": "Apple/Packages/VoxamberShapeNative/Sources/VoxamberHy3D/ShapeGenerator.swift",
+      "sha256": "5a6ccff98eb7c6cc26346da5121dac5d755520634fa193e5fdf1fea83d0be0c7"
+    }
+  ]
+}

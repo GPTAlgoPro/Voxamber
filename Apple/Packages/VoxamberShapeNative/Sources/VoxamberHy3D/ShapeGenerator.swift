@@ -656,12 +656,25 @@ public final class ShapeGenerator {
                          isCancelled: @escaping () -> Bool = { false },
                          onPreview: ((Mesh) -> Void)? = nil,
                          onProgress: ((Progress) -> Void)? = nil) -> Mesh? {
+        try? generateCheckingCancellation(images: images, steps: steps, guidance: guidance,
+            seed: seed, resolution: resolution, octree: octree, isCancelled: isCancelled,
+            onPreview: onPreview, onProgress: onProgress)
+    }
+
+    /// The throwing GLB entry uses this directly. Legacy optional mesh APIs
+    /// retain nil-on-failure compatibility without manufacturing a latent/mesh.
+    private func generateCheckingCancellation(images: [View: CGImage], steps: Int, guidance: Float,
+                          seed: UInt64, resolution: Int, octree: Bool,
+                          isCancelled: @escaping () -> Bool,
+                          onPreview: ((Mesh) -> Void)? = nil,
+                          onProgress: ((Progress) -> Void)? = nil) throws -> Mesh? {
+        try ShapeCheckedLoop.check(isCancelled)
         let ordered = images.sorted { $0.key.rawValue < $1.key.rawValue }
         guard !ordered.isEmpty, ordered.count <= 4 else { return nil }
         guard ordered.count == 1 || supportsMultiView else { return nil }
         let pixels = ordered.compactMap { Preprocess.dinoPixels(cgImage: $0.value) }
         guard pixels.count == ordered.count else { return nil }
-        if isCancelled() { return nil }
+        try ShapeCheckedLoop.check(isCancelled)
         onProgress?(.init(stage: "Conditioning \(ordered.count) view(s)", fraction: 0.05))
         // Turbo/distilled models embed guidance and skip CFG → conditional embedding only.
         let embed: MLXArray
@@ -670,13 +683,13 @@ public final class ShapeGenerator {
                 pixels,
                 viewIndices: ordered.map(\.key.rawValue),
                 isCancelled: isCancelled
-            ) else { return nil }
+            ) else { try ShapeCheckedLoop.check(isCancelled); return nil }
             embed = value
         } else {
             guard let value = dino(
                 pixels[0],
                 isCancelled: isCancelled
-            ) else { return nil }
+            ) else { try ShapeCheckedLoop.check(isCancelled); return nil }
             embed = value
         }
         let cond = denoiser.guidanceEmbed ? embed
@@ -686,7 +699,7 @@ public final class ShapeGenerator {
                 axis: 0
             )
         eval(cond)
-        if isCancelled() { return nil }
+        try ShapeCheckedLoop.check(isCancelled)
 
         let pipe = Pipeline(
             denoiser: denoiser,
@@ -703,7 +716,7 @@ public final class ShapeGenerator {
         // surface emerges partway through denoising; earlier steps are skipped when empty).
         let previewSteps: Set<Int> = onPreview == nil ? []
             : Set([0.4, 0.55, 0.7, 0.85].map { Int((Float(steps) * Float($0)).rounded()) })
-        let lat = pipe.denoise(cond: cond, noise: noise, sigmas: sigmas, guidance: guidance,
+        let lat = try pipe.denoiseCancellable(cond: cond, noise: noise, sigmas: sigmas, guidance: guidance,
                                guidanceEmbed: denoiser.guidanceEmbed, isCancelled: isCancelled) { i, n, curLat in
             onProgress?(.init(stage: "Denoising (\(i)/\(n))", fraction: 0.1 + 0.6 * Float(i) / Float(n)))
             if previewSteps.contains(i), let onPreview, !isCancelled(),
@@ -720,8 +733,9 @@ public final class ShapeGenerator {
                 if !m.vertices.isEmpty && !m.faces.isEmpty { onPreview(m) }
             }
         }
+        try ShapeCheckedLoop.check(isCancelled)
         eval(lat); MLX.Memory.clearCache()        // release the 30-step denoise buffers before decode
-        if isCancelled() { return nil }
+        try ShapeCheckedLoop.check(isCancelled)
 
         onProgress?(.init(stage: "Decoding shape", fraction: 0.72))
         let grid: MLXArray
@@ -737,19 +751,23 @@ public final class ShapeGenerator {
                     resolution: resolution,
                     isCancelled: isCancelled
                 )
+        } catch is CancellationError {
+            throw CancellationError()
         } catch {
             return nil
         }
         eval(grid); MLX.Memory.clearCache()       // release decode buffers before marching cubes
-        if isCancelled() { return nil }
+        try ShapeCheckedLoop.check(isCancelled)
 
         onProgress?(.init(stage: "Building mesh", fraction: 0.9))
-        guard let mesh = try? MarchingCubes.extract(
-            grid: grid,
-            level: 0.0,
-            isCancelled: isCancelled
-        ) else { return nil }
+        let mesh: Mesh
+        do {
+            mesh = try MarchingCubes.extract(grid: grid, level: 0.0, isCancelled: isCancelled)
+        } catch is CancellationError {
+            throw CancellationError()
+        } catch { return nil }
         onProgress?(.init(stage: "Done", fraction: 1.0))
+        try ShapeCheckedLoop.check(isCancelled)
         return mesh
     }
 
@@ -763,14 +781,17 @@ public final class ShapeGenerator {
                             isCancelled: @escaping () -> Bool = { false },
                             onRawMesh: ((Mesh) throws -> Void)? = nil,
                             onProgress: ((Progress) -> Void)? = nil) throws -> (verts: Int, faces: Int) {
-        guard let generated = generate(image: image, steps: steps, guidance: guidance, seed: seed,
+        guard let generated = try generateCheckingCancellation(images: [.front: image], steps: steps, guidance: guidance, seed: seed,
                                        resolution: resolution, octree: octree,
                                        isCancelled: isCancelled, onProgress: onProgress) else {
             throw NSError(domain: "Hy3DMLX", code: 1,
                           userInfo: [NSLocalizedDescriptionKey: "generation cancelled or image preprocessing failed"])
         }
+        try ShapeCheckedLoop.check(isCancelled)
         let mesh = try ShapeMeshFinalizer.cleaned(generated,policy:cleanupPolicy,onRawMesh:onRawMesh)
-        try GLB.write(mesh, to: url)
+        try ShapeCheckedLoop.check(isCancelled)
+        try GLB.write(mesh, to: url, isCancelled: isCancelled)
+        try ShapeCheckedLoop.check(isCancelled)
         return (mesh.vertices.count, mesh.faces.count)
     }
 
@@ -783,14 +804,17 @@ public final class ShapeGenerator {
                             onRawMesh: ((Mesh) throws -> Void)? = nil,
                             onProgress: ((Progress) -> Void)? = nil) throws
         -> (verts: Int, faces: Int) {
-        guard let generated = generate(images: images, steps: steps, guidance: guidance,
+        guard let generated = try generateCheckingCancellation(images: images, steps: steps, guidance: guidance,
                                        seed: seed, resolution: resolution, octree: octree,
                                        isCancelled: isCancelled, onProgress: onProgress) else {
             throw NSError(domain: "Hy3DMLX", code: 2,
                           userInfo: [NSLocalizedDescriptionKey: "multi-view generation cancelled or preprocessing failed"])
         }
+        try ShapeCheckedLoop.check(isCancelled)
         let mesh = try ShapeMeshFinalizer.cleaned(generated,policy:cleanupPolicy,onRawMesh:onRawMesh)
-        try GLB.write(mesh, to: url)
+        try ShapeCheckedLoop.check(isCancelled)
+        try GLB.write(mesh, to: url, isCancelled: isCancelled)
+        try ShapeCheckedLoop.check(isCancelled)
         return (mesh.vertices.count, mesh.faces.count)
     }
 }

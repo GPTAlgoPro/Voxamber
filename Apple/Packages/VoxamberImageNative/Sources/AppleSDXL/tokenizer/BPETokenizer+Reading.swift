@@ -32,12 +32,18 @@ extension BPETokenizer {
                 line.append(byte)
             }
         }
+        if !line.isEmpty, let pair = try parseMergesLine(line, index: index) {
+            merges[pair] = index
+        }
 
         return merges
     }
 
     static func parseMergesLine(_ line: [UInt8], index: Int) throws -> TokenPair? {
-        if line.isEmpty || line.first == UInt8(ascii: "#") {
+        // '#' can itself be a legitimate merge token. Only the version header
+        // is metadata; skipping every hash-prefixed line loses six real rules
+        // from the pinned CLIP merges file.
+        if line.isEmpty || line.starts(with: Array("#version:".utf8)) {
             return nil
         }
         let pair = line.split(separator: UInt8(ascii: " "))

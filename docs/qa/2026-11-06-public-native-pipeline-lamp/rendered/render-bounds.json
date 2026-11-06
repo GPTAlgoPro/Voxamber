@@ -1,0 +1,14 @@
+{
+  "maximum" : [
+    0.74383175373077393,
+    0.99908041954040527,
+    0.66319215297698975
+  ],
+  "minimum" : [
+    -0.74067938327789307,
+    -1.0003468990325928,
+    -0.65456527471542358
+  ],
+  "renderSource" : "actual unmodified generated USDZ; GLB vertex bounds only for camera framing",
+  "vertices" : 100904
+}

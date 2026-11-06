@@ -420,7 +420,8 @@ final class StudioModel {
         let shapeProvenance = result.shape.provenance
         let imageConfiguration: [String: Any] = ["steps": 20, "size": 768, "guidanceScale": 7.5,
             "reduceMemory": true, "scheduler": "dpmSolverMultistep", "textAndUNetCompute": "cpuAndNeuralEngine",
-            "vaeCompute": "cpuAndGPU", "vaeScale": 0.13025]
+            "vaeCompute": "cpuAndGPU", "vaeScale": 0.13025,
+            "tokenizerPolicy": "openai-clip-3bee281-native-v1"]
         let imageSHA = SHA256.hash(data: try JSONSerialization.data(withJSONObject: imageConfiguration, options: [.sortedKeys]))
             .map { String(format: "%02x", $0) }.joined()
         let evidence = try JSONDecoder().decode(NeuralGenerationEvidence.self,
@@ -428,7 +429,7 @@ final class StudioModel {
         let provenance = NeuralPipelineProvenance(pipelineID: "voxamber-native-neural-v1", method: .textToImageToShape,
             imageStage: .init(modelID: image.id, modelRevision: SDXLResources.modelRevision,
                 modelManifestSHA256: try image.pinIdentity, configurationSHA256: imageSHA,
-                runtimeVersion: "AppleSDXL-ea2805dc", seed: UInt64(UInt32(truncatingIfNeeded: result.seed))),
+                runtimeVersion: "AppleSDXL-ea2805dc+CLIP-3bee281", seed: UInt64(UInt32(truncatingIfNeeded: result.seed))),
             shapeStage: .init(modelID: shapeProvenance.modelID, modelRevision: shapeProvenance.modelSourceRevision,
                 modelManifestSHA256: try shape.pinIdentity, configurationSHA256: shapeProvenance.configurationSHA256,
                 runtimeVersion: shapeProvenance.runtimeMLXVersion, seed: shapeProvenance.seed,

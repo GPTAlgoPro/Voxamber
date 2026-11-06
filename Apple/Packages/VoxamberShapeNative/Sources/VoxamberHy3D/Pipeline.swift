@@ -39,47 +39,80 @@ public struct Pipeline {
                         guidance: Float = 5.0, guidanceEmbed: Bool = false,
                         isCancelled: () -> Bool = { false },
                         progress: ((Int, Int, MLXArray) -> Void)? = nil) -> MLXArray {
+        denoiseCore(cond: cond, noise: noise, sigmas: sigmas, guidance: guidance,
+            guidanceEmbed: guidanceEmbed, shouldStop: isCancelled, check: {},
+            forward: { dit($0, $1, $2, guidance: $3) }, progress: progress)
+    }
+
+    /// Throws instead of returning partially denoised latents. No evaluation or
+    /// cache boundary is added: the current lazy dependency graph may therefore
+    /// still have to finish before its checkpoint can observe cancellation.
+    public func denoiseCancellable(cond: MLXArray, noise: MLXArray, sigmas: MLXArray,
+                                  guidance: Float = 5.0, guidanceEmbed: Bool = false,
+                                  isCancelled: () -> Bool,
+                                  progress: ((Int, Int, MLXArray) -> Void)? = nil) throws -> MLXArray {
+        try denoiseCore(cond: cond, noise: noise, sigmas: sigmas, guidance: guidance,
+            guidanceEmbed: guidanceEmbed, shouldStop: { false },
+            check: { try ShapeCheckedLoop.check(isCancelled) },
+            forward: { try dit.forwardCancellable($0, $1, $2, guidance: $3, isCancelled: isCancelled) },
+            progress: progress)
+    }
+
+    private func denoiseCore(cond: MLXArray, noise: MLXArray, sigmas: MLXArray,
+                             guidance: Float, guidanceEmbed: Bool, shouldStop: () -> Bool,
+                             check: () throws -> Void,
+                             forward: (MLXArray, MLXArray, MLXArray, MLXArray?) throws -> MLXArray,
+                             progress: ((Int, Int, MLXArray) -> Void)?) rethrows -> MLXArray {
+        try check()
         let S = sigmas.dim(0)
         let sig = sigmas.asArray(Float.self)               // pull the fixed schedule once (not per step)
         var lat = noise
         let gvec = guidanceEmbed ? MLXArray([guidance]) : nil
         for i in 0 ..< S {
-            if isCancelled() { break }                     // cooperative per-step cancellation
+            if shouldStop() { break }                      // legacy optional-stop API only
+            try check()
             let dt = (i + 1 < S ? sig[i + 1] : 1.0) - sig[i]
             if dt == 0 { continue }
             let si = sig[i]
             let v: MLXArray
             if guidanceEmbed {
-                v = dit(lat, MLXArray([si]), cond, guidance: gvec)   // single forward, guidance token
+                v = try forward(lat, MLXArray([si]), cond, gvec)    // single forward, guidance token
             } else if serializesClassifierFreeGuidance {
                 let conditioning = split(cond, parts: 2, axis: 0)
-                let conditional = dit(
+                let conditional = try forward(
                     lat,
                     MLXArray([si]),
                     conditioning[0],
-                    guidance: nil
+                    nil
                 )
+                try check()
                 eval(conditional)
+                try check()
                 MLX.Memory.clearCache()
-                let unconditional = dit(
+                let unconditional = try forward(
                     lat,
                     MLXArray([si]),
                     conditioning[1],
-                    guidance: nil
+                    nil
                 )
+                try check()
                 eval(unconditional)
+                try check()
                 MLX.Memory.clearCache()
                 v = unconditional
                     + guidance * (conditional - unconditional)
             } else {
-                let vv = dit(concatenated([lat, lat], axis: 0), MLXArray([si, si]), cond, guidance: nil)
+                let vv = try forward(concatenated([lat, lat], axis: 0), MLXArray([si, si]), cond, nil)
                 let vp = split(vv, parts: 2, axis: 0)                // v_cond, v_uncond
                 v = vp[1] + guidance * (vp[0] - vp[1])
             }
             lat = lat + dt * v
             eval(lat)
+            try check()
             progress?(i + 1, S, lat)
+            try check()
         }
+        try check()
         return lat
     }
 

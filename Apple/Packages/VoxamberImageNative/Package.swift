@@ -10,6 +10,6 @@ let package = Package(
         .target(name: "AppleSDXL", path: "Sources/AppleSDXL", swiftSettings: [.swiftLanguageMode(.v5)]),
         .target(name: "VoxamberImageNative", dependencies: ["AppleSDXL"], path: "Sources/VoxamberImageNative"),
         .testTarget(name: "VoxamberImageNativeTests", dependencies: ["VoxamberImageNative", "AppleSDXL"],
-                    path: "Tests/VoxamberImageNativeTests")
+                    path: "Tests/VoxamberImageNativeTests", resources: [.copy("Fixtures")])
     ]
 )

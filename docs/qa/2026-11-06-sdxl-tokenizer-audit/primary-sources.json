@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Apple-BPETokenizer.swift",
+    "sourceURL": "https://raw.githubusercontent.com/apple/ml-stable-diffusion/ea2805dc1945be20561c77e5f6d1d9a5a637cda2/swift/StableDiffusion/tokenizer/BPETokenizer.swift",
+    "bytes": 6360,
+    "sha256": "280cfd0ad51c3668dd3adab28c8e094f5168be8710b5830c393e2f795c752fe9"
+  },
+  {
+    "name": "Apple-TextEncoderXL.swift",
+    "sourceURL": "https://raw.githubusercontent.com/apple/ml-stable-diffusion/ea2805dc1945be20561c77e5f6d1d9a5a637cda2/swift/StableDiffusion/pipeline/TextEncoderXL.swift",
+    "bytes": 3587,
+    "sha256": "7af760be14516e4f3f68d1cf9bf80f05893e05d9f435c2514431e92b538baa78"
+  },
+  {
+    "name": "Apple-StableDiffusionXL-Resources.swift",
+    "sourceURL": "https://raw.githubusercontent.com/apple/ml-stable-diffusion/ea2805dc1945be20561c77e5f6d1d9a5a637cda2/swift/StableDiffusion/pipeline/StableDiffusionXL+Resources.swift",
+    "bytes": 4974,
+    "sha256": "c547460a6e3c09852e65570e3d9579623a2f93b3a374627a88321b98b44cde39"
+  },
+  {
+    "name": "OpenAI-simple_tokenizer.py",
+    "sourceURL": "https://raw.githubusercontent.com/openai/CLIP/main/clip/simple_tokenizer.py",
+    "bytes": 4632,
+    "sha256": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad"
+  },
+  {
+    "name": "Fixed OpenAI CLIP source",
+    "sourceURL": "https://raw.githubusercontent.com/openai/CLIP/3bee28119e6b28e75b82b811b87b56935314e6a5/clip/simple_tokenizer.py",
+    "commit": "3bee28119e6b28e75b82b811b87b56935314e6a5",
+    "sha256": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad"
+  }
+]

@@ -1,0 +1,110 @@
+{
+  "sealedAtUTC": "2026-11-06T00:22:16.563344+00:00",
+  "files": [
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/armed-source-initial.json",
+      "byteCount": 33417,
+      "sha256": "2ce8dc3f5e0e5df59f66d4359430467c1febfe2eaa84743363ece3d580b7db41"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/armed-source.json",
+      "byteCount": 33876,
+      "sha256": "8d40f2ffe1914d7c0a8a0246a37417ebe0c2de7a672a5b84a5252d8e4b020f5b"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/intent.json",
+      "byteCount": 398,
+      "sha256": "b90098e80c8fc2b07e2a617a00197f63317d20273109fc79e702da138fd390c4"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/mesh-topology.json",
+      "byteCount": 10822,
+      "sha256": "e9736a7e09335ccd3d82b1a17dc6919d58470bd6a5b3be151dfc3e38054ac02b"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/native-format.json",
+      "byteCount": 156,
+      "sha256": "78eb85b6248850590619a60e5e1a6b5da497867a180de485092fda5a69d49ee0"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/pipeline-report.json",
+      "byteCount": 10351,
+      "sha256": "278450d5b310226b600867588307a89efd48752d91d13be817614dc65cfc03d8"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/preparation.json",
+      "byteCount": 257,
+      "sha256": "131d4ed22751a5f54562b038c2a74ef52ae59670163653810d5e8a65b66ea393"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/protocol-before-generation.md",
+      "byteCount": 6791,
+      "sha256": "28762e1257eda659db06f47f3d2e275eebaf9fad5978956c64c6bf5631cb6912"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/reference-original-768.png",
+      "byteCount": 505881,
+      "sha256": "cbb035608c2d871b792ef927a19dbfd9b073cb8a416a7abfe638d016b57c1ab4"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/reference-prepared-512-rgba.png",
+      "byteCount": 137576,
+      "sha256": "02b14b231708aabbbeebed243930b16c7055aeebfc07b028a4b7dc9f04a9e242"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/rendered/lamp-result-front.png",
+      "byteCount": 88983,
+      "sha256": "2130194321a3d7701f301fea76dfc178cbab032142f30b53a5ebae2a5891c09c"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/rendered/lamp-result-threequarter.png",
+      "byteCount": 89450,
+      "sha256": "1e9f2422edc36c744274476b1fcd974f8a9e80d4e6292e970d97324bb978b4f9"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/rendered/render-bounds.json",
+      "byteCount": 315,
+      "sha256": "d0d146d82255fa0d25f27af3dcbdb88c0ebcd894236249c6e4cf103df3dd8371"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/resources-after.json",
+      "byteCount": 11987,
+      "sha256": "c79ca3ec28081b4b929d740da93b03e16c3bee4f9c4bf34b123d36530ddb5394"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/resources-before.json",
+      "byteCount": 14339,
+      "sha256": "426382353cdee9019e3bdf304fcf84fa287c0335d220dfb3aaa4c27332ac6224"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/shape-provenance.json",
+      "byteCount": 946,
+      "sha256": "3475e0a1e1b797802ecaf94cc41abe8b052d7eee06b1e21e3a92c492c58c9843"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/shape-statistics.json",
+      "byteCount": 159,
+      "sha256": "b53c7d991b1d83198a3f97428ef6b49fc384f66e44d82d36ff6d824b5d3addae"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/shape-validation-receipt.json",
+      "byteCount": 582,
+      "sha256": "bf239bc86b5792635075b28a9056508c063b2757ab2ff3fd1bd255a3b6cc2665"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/source-after.json",
+      "byteCount": 33944,
+      "sha256": "7d0b0a5c0dc7d365452698eb868c61b59930ca7e58e427071affb651a104b470"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/source-before.json",
+      "byteCount": 33876,
+      "sha256": "8d40f2ffe1914d7c0a8a0246a37417ebe0c2de7a672a5b84a5252d8e4b020f5b"
+    },
+    {
+      "path": "docs/qa/2026-11-06-public-native-pipeline-lamp/verification.json",
+      "byteCount": 7648,
+      "sha256": "e741d83c74bca18a50aeed90caef9090ccf35e1cae33d49a5e884a2b2068d671"
+    }
+  ]
+}

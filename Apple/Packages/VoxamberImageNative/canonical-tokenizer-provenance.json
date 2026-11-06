@@ -1,0 +1,35 @@
+{
+  "adaptedAtUTC": "2026-11-06T00:45:27.723370+00:00",
+  "scope": "Only native tokenizer canonical presegmentation/byte BPE; model/seed/options/driver/CFG/scheduler/lifecycle untouched",
+  "appleBase": {
+    "repository": "apple/ml-stable-diffusion",
+    "commit": "ea2805dc1945be20561c77e5f6d1d9a5a637cda2",
+    "copyright": "Original Apple headers retained; original MIT LICENSE.md retained"
+  },
+  "canonicalReference": {
+    "repository": "openai/CLIP",
+    "commit": "3bee28119e6b28e75b82b811b87b56935314e6a5",
+    "path": "clip/simple_tokenizer.py",
+    "sourceSHA256": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad",
+    "licenseFile": "LICENSE-OPENAI-CLIP",
+    "HFCorroboration": "huggingface/transformers v4.30.2 tokenization_clip.py"
+  },
+  "changes": [
+    "Use official CLIP regex pretokenization instead of whitespace-only word split.",
+    "Encode matched token UTF8 bytes with the official reversible byte alphabet before BPE.",
+    "Process BPE symbols as Unicode scalars and preserve reserved start/end tokens.",
+    "Read valid hash-prefixed merge rules and the final rule when a file has no terminal newline.",
+    "Match the canonical bounds guard in BPE merge update."
+  ],
+  "normalizationBoundary": "Production CreationIntentDecoder emits normalized printable ASCII English. Exact CPU vectors additionally cover valid NFC Unicode with identity ftfy normalization. This is not a full ftfy mojibake/HTML-entity repair implementation and does not claim universal malformed-text parity.",
+  "tests": {
+    "goldenVectors": 11,
+    "bothPads": true,
+    "testCorpus": "Selected merge closure245 rules/759 vocabulary entries, with original full-vocab IDs; full actual assets verified separately",
+    "neuralInferenceUsedForTests": false
+  },
+  "modifiedSourceSHA256": {
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/tokenizer/BPETokenizer.swift": "48c02b2951262c0af74d6017a301ca07d42e900c52d0dacf22ea8b0065926408",
+    "Apple/Packages/VoxamberImageNative/Sources/AppleSDXL/tokenizer/BPETokenizer+Reading.swift": "8f96f356f2ac5b3a316dbd18b2c1f38ac6a1de57f7b11a5f7d000310e6504f5c"
+  }
+}

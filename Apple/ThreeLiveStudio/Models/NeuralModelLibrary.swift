@@ -53,6 +53,19 @@ struct NeuralModelLibrary: View {
                 if let error = manager.errorMessage {
                     Text(error).font(.footnote).foregroundStyle(.secondary)
                 }
+                VStack(alignment: .leading, spacing: 12) {
+                    NavigationLink {
+                        OpenSourceLicensesView()
+                    } label: {
+                        Label(StudioCopy.text("模型与开源许可", "Model and open-source licenses"), systemImage: "doc.text")
+                    }
+                    Link(StudioCopy.text("隐私政策", "Privacy policy"), destination: URL(string: StudioCopy.isEnglish
+                        ? "https://gptalgopro.github.io/Voxamber-Website/en/privacy/"
+                        : "https://gptalgopro.github.io/Voxamber-Website/privacy/")!)
+                    Link(StudioCopy.text("帮助与支持", "Help and support"), destination: URL(string: StudioCopy.isEnglish
+                        ? "https://gptalgopro.github.io/Voxamber-Website/en/support/"
+                        : "https://gptalgopro.github.io/Voxamber-Website/support/")!)
+                }.font(.footnote).studioCard()
             }.padding(20)
         }
         .background { StudioBackground() }

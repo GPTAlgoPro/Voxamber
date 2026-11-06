@@ -1,12 +1,33 @@
 // Voxamber modification: propagate malformed vocabulary errors instead of trapping.
 // For licensing see accompanying LICENSE.md file.
 // Copyright (C) 2022 Apple Inc. All Rights Reserved.
+// Voxamber canonical pretokenization/UTF-8 byte encoding adaptation:
+// OpenAI/CLIP 3bee28119e6b28e75b82b811b87b56935314e6a5,
+// clip/simple_tokenizer.py (MIT); see canonical-tokenizer-provenance.json.
+// Valid normalized text is supported; this is not an ftfy mojibake-repair port.
 
 import Foundation
 
 /// A tokenizer based on byte pair encoding.
 @available(iOS 16.2, macOS 13.1, *)
 public struct BPETokenizer {
+    private static let canonicalPattern = try! NSRegularExpression(
+        pattern: #"<\|startoftext\|>|<\|endoftext\|>|'s|'t|'re|'ve|'m|'ll|'d|[\p{L}]+|[\p{N}]|[^\s\p{L}\p{N}]+"#,
+        options: [.caseInsensitive])
+
+    /// Same reversible byte alphabet as OpenAI CLIP. Regex segmentation occurs
+    /// before byte encoding, so punctuation gets its own word-end marker.
+    private static let byteEncoder: [UInt8: String] = {
+        var bytes = Array(33...126) + Array(161...172) + Array(174...255)
+        var scalars = bytes
+        var extra = 0
+        for byte in 0...255 where !bytes.contains(byte) {
+            bytes.append(byte); scalars.append(256 + extra); extra += 1
+        }
+        return Dictionary(uniqueKeysWithValues: zip(bytes, scalars).map {
+            (UInt8($0.0), String(UnicodeScalar($0.1)!))
+        })
+    }()
     /// A dictionary that maps pairs of tokens to the rank/order of the merge.
     let merges: [TokenPair : Int]
 
@@ -93,14 +114,26 @@ public struct BPETokenizer {
 
     /// Encode an input string to a sequence of tokens
     func encode(input: String) -> [String] {
-        let normalized = input.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-        let words = normalized.split(separator: " ")
-        return words.flatMap({ encode(word: $0) })
+        // Production intent is normalized printable ASCII English. Collapsing
+        // whitespace also matches CLIP for valid NFC Unicode test vectors;
+        // HTML entity/invalid-encoding repair from ftfy is not emulated here.
+        let normalized = input.trimmingCharacters(in: .whitespacesAndNewlines)
+            .replacingOccurrences(of: #"\s+"#, with: " ", options: .regularExpression)
+            .lowercased()
+        let matches = Self.canonicalPattern.matches(in: normalized,
+            range: NSRange(normalized.startIndex..<normalized.endIndex, in: normalized))
+        return matches.flatMap { match -> [String] in
+            guard let range = Range(match.range, in: normalized) else { return [] }
+            let token = String(normalized[range])
+            if token == startToken || token == endToken { return [token] }
+            let encoded = token.utf8.map { Self.byteEncoder[$0]! }.joined()
+            return encode(word: encoded[...])
+        }
     }
 
     /// Encode a single word into a sequence of tokens
     func encode(word: Substring) -> [String] {
-        var tokens = word.map { String($0) }
+        var tokens = word.unicodeScalars.map { String($0) }
         if let last = tokens.indices.last {
             tokens[last] = tokens[last] + "</w>"
         }
@@ -151,7 +184,7 @@ public struct BPETokenizer {
                 // Found a possible match, append everything before it
                 newTokens.append(contentsOf: tokens[index..<startMatchIndex])
 
-                if index < tokens.count - 1 && tokens[startMatchIndex + 1] == bigram.second {
+                if startMatchIndex < tokens.count - 1 && tokens[startMatchIndex + 1] == bigram.second {
                     // Full match, merge
                     newTokens.append(bigram.first + bigram.second)
                     index = startMatchIndex + 2

@@ -1,0 +1,95 @@
+{
+  "bundledLicenseProjectionsVerified": 17,
+  "uniqueTexts": 15,
+  "matchesFrozenHostedLegalPins": true,
+  "licensesReachableInCurrentModelScreen": true,
+  "privacyAndSupportLinksRestoredInCurrentModelScreen": true,
+  "scope": "Build and actual bundled bytes; not live UI navigation or model inference",
+  "checks": [
+    {
+      "group": "intent",
+      "name": "MLX-Swift.txt",
+      "sha256": "44326a4ea062241ae6fc26ee2ec90bdc81af7eb7b9d3966181b733fa69d42057"
+    },
+    {
+      "group": "intent",
+      "name": "MLX-Swift-LM.txt",
+      "sha256": "7b1d86acac816ce8192209d7e01141c129b4d48d474c15cc5fb4af62f497c323"
+    },
+    {
+      "group": "intent",
+      "name": "Swift-Transformers.txt",
+      "sha256": "648b81e6c6f9975c3b6cf6d630229b6c8d6f1ddaef55f5770f576adda19f3495"
+    },
+    {
+      "group": "intent",
+      "name": "Qwen-Model.txt",
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a"
+    },
+    {
+      "group": "intent",
+      "name": "XGrammar.txt",
+      "sha256": "7416fb6978b1064db50b358e161804e0599afc317b7a5df42136edaa713e7bab"
+    },
+    {
+      "group": "intent",
+      "name": "PicoJSON.txt",
+      "sha256": "52a7da16781b4b899382c9ddfcf059235cdee73e2f45cfd7402c2ae9a2e9d28d"
+    },
+    {
+      "group": "intent",
+      "name": "DLPack.txt",
+      "sha256": "6bbee1883f24c06770474e1d8c44cd8e021693798548eab83747a4c6e63cc579"
+    },
+    {
+      "group": "image",
+      "name": "Apple-SDXL.txt",
+      "sha256": "4f7eae00de7a3b4ea1d6b3d26f64c113b999dda4e7d3269f3278caac66575fc3"
+    },
+    {
+      "group": "image",
+      "name": "SDXL-Model.txt",
+      "sha256": "19b6998b569b53ac1fc2158a8a3202c8699a9a4605b47075715d9c96be7fb6d0"
+    },
+    {
+      "group": "shape",
+      "name": "Snap3D-ThirdPartyNotices.txt",
+      "sha256": "679ddc10a7dbe0c3170c55dfd00dd2c6b40bab320c7927c6fe6ea22754023b8c"
+    },
+    {
+      "group": "shape",
+      "name": "Tencent-Hunyuan-3D-2.1-Pinned-NOTICE.txt",
+      "sha256": "ffccf6b539a82e6084d14ff064dadd22d33384d6164b07c0c5a3141810df0350"
+    },
+    {
+      "group": "shape",
+      "name": "Tencent-Hunyuan-3D-2.1-Pinned-LICENSE.txt",
+      "sha256": "5bd08f93b2d280bb26ff3eed5d3996fe47a9698b5f7785163928668d7fd578c6"
+    },
+    {
+      "group": "shape",
+      "name": "Hunyuan3D-Swift-MIT.txt",
+      "sha256": "e0485dc21868a42682cf1255af42d1bf038cf5e80608b2006b5c69d65d426d7f"
+    },
+    {
+      "group": "shape",
+      "name": "Hunyuan3D-Swift-ThirdParty.txt",
+      "sha256": "abd4d61f1c0bf3dcfc6a399457f26254be74518dc53de8b69e2606e3a3a1d241"
+    },
+    {
+      "group": "shape",
+      "name": "Tencent-Hunyuan-3D-2.1-License.txt",
+      "sha256": "f60f9fdf0c40cdd3983123eb8181caac027a6f86d4ea3c827618e5e1e5adc6db"
+    },
+    {
+      "group": "shape",
+      "name": "MLX-Swift.txt",
+      "sha256": "44326a4ea062241ae6fc26ee2ec90bdc81af7eb7b9d3966181b733fa69d42057"
+    },
+    {
+      "group": "shape",
+      "name": "DLPack.txt",
+      "sha256": "6bbee1883f24c06770474e1d8c44cd8e021693798548eab83747a4c6e63cc579"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "allClientAvailabilityFlagsStillFalse": true,
+  "allSixDeliveryChecksumsMatched": true,
+  "allThreeVersionsComplete": true,
+  "appID": "6831042755",
+  "approvalSHA256": "35da7e7803a0a30a4db60e865d10f90d2988db2655f8f2a2de1cd97156760a13",
+  "bundleID": "com.kaisun.voxamber",
+  "catalogSHA256": "649b3d0b18fe208b8c724e68e6d6f030ea8096b068da93653555361f287d5e96",
+  "downloadOrNeuralDeviceAcceptanceClaimed": false,
+  "httpMethodsAllowed": [
+    "GET"
+  ],
+  "packs": [
+    {
+      "appID": "6831042755",
+      "assetPackID": "Voxamber-Qwen35-08B-INT4",
+      "assetRecordID": "b35f8558-4a12-4f46-abbf-a1ca6df2f65a",
+      "availabilityEnabledByThisTask": false,
+      "bundleID": "com.kaisun.voxamber",
+      "contractSHA256": "cd3dc0d4a2fc4ea1aa8c0a85758c8bd5be93b5d19585d09f56d0b55f52e1b5ea",
+      "downloadOrNeuralDeviceAcceptanceClaimed": false,
+      "errorCodes": [],
+      "files": [
+        {
+          "appleDeliveryChecksumMatched": true,
+          "approvedSHA256": "36f268016783d28ff1c7375021d3e4ab3f82da2d78ca329467874b21212ef249",
+          "assetType": "ASSET",
+          "byteCount": 562436331,
+          "id": "8886c813-5db5-49ba-9dfb-2f5d1f07629a",
+          "serverFileChecksum": {
+            "algorithm": "MD5",
+            "hash": "24460bb90b17401e318a64b82f90b978"
+          },
+          "state": "COMPLETE"
+        },
+        {
+          "appleDeliveryChecksumMatched": true,
+          "approvedSHA256": "951df1c45b55a0ff21c0d199bbaf8297a9a0c2abca1c8ff967894534505539ac",
+          "assetType": "MANIFEST",
+          "byteCount": 1651,
+          "id": "29330924-50c1-4a11-91d6-32a4bdeb7de7",
+          "serverFileChecksum": {
+            "algorithm": "MD5",
+            "hash": "7eb408208ac2ad310243e0f3b7740128"
+          },
+          "state": "COMPLETE"
+        }
+      ],
+      "group": "intent",
+      "legalFileCount": 7,
+      "modelFileCount": 10,
+      "modelID": "qwen3.5-0.8b-mlx-int4",
+      "modelPinIdentitySHA256": "9604fc2e77a9fb1bbcdaded050bcc67977635bbf83a525f8591fb7378269c2df",
+      "platform": "IOS",
+      "schemaVersion": 1,
+      "scope": "Only new asset upload/processing; no client activation, TestFlight, review or release changes",
+      "serverState": "COMPLETE",
+      "version": "1",
+      "versionID": "697d8ffc-b12c-49e2-b454-294470b19abd",
+      "warningCodes": []
+    },
+    {
+      "appID": "6831042755",
+      "assetPackID": "Voxamber-SDXL-CoreML",
+      "assetRecordID": "68abdedd-8a3e-41c9-b38c-61e58d5f6387",
+      "availabilityEnabledByThisTask": false,
+      "bundleID": "com.kaisun.voxamber",
+      "contractSHA256": "59727a4d63e758d96a7b910f6b71e95e08d62613583ae74d0a4a7c11b93202be",
+      "downloadOrNeuralDeviceAcceptanceClaimed": false,
+      "errorCodes": [],
+      "files": [
+        {
+          "appleDeliveryChecksumMatched": true,
+          "approvedSHA256": "0dbba7221aad1254f4ac9861bdfaf52b0f4d99cdbffb15188c22ac3c2d07c90b",
+          "assetType": "ASSET",
+          "byteCount": 2903540358,
+          "id": "762d28ad-b522-4e86-919d-afc8ea770243",
+          "serverFileChecksum": {
+            "algorithm": "MD5",
+            "hash": "8271e04496841c8627267a440440cc8d"
+          },
+          "state": "COMPLETE"
+        },
+        {
+          "appleDeliveryChecksumMatched": true,
+          "approvedSHA256": "5279aa84921fc6d8415b9b809d6fd32dfb3e2e4b5c74ac737331635de9810b3e",
+          "assetType": "MANIFEST",
+          "byteCount": 2992,
+          "id": "1e847ebc-c6ab-4c53-b72a-8d2d5c10d83c",
+          "serverFileChecksum": {
+            "algorithm": "MD5",
+            "hash": "fef4e8d2d93800cc6184c8e6d192d4e3"
+          },
+          "state": "COMPLETE"
+        }
+      ],
+      "group": "image",
+      "legalFileCount": 2,
+      "modelFileCount": 27,
+      "modelID": "sdxl-base-ios-coreml",
+      "modelPinIdentitySHA256": "f54e19ee3497a13fc3a3eba4ae9cc680be2e899e6e1a1960b2c0231e854afcbd",
+      "platform": "IOS",
+      "schemaVersion": 1,
+      "scope": "Only new asset upload/processing; no client activation, TestFlight, review or release changes",
+      "serverState": "COMPLETE",
+      "version": "1",
+      "versionID": "7fc6534e-9812-4646-b610-8435fa93ee89",
+      "warningCodes": []
+    },
+    {
+      "appID": "6831042755",
+      "assetPackID": "Voxamber-Hunyuan21-Shape-Q4-30B93",
+      "assetRecordID": "13b232f6-ad33-47e1-8afa-0f2e0bb3b92d",
+      "availabilityEnabledByThisTask": false,
+      "bundleID": "com.kaisun.voxamber",
+      "contractSHA256": "794edd95115c48b1591908da802b3c220dfe931ea3c654394dbde4c5ba982eb5",
+      "downloadOrNeuralDeviceAcceptanceClaimed": false,
+      "errorCodes": [],
+      "files": [
+        {
+          "appleDeliveryChecksumMatched": true,
+          "approvedSHA256": "9f55af42c4189ce5b4868307a642e691b4e8484c30fa4571b42dadb95bcf82ed",
+          "assetType": "ASSET",
+          "byteCount": 2359487920,
+          "id": "236bc4f7-21d4-4eef-8874-a2686f502e4b",
+          "serverFileChecksum": {
+            "algorithm": "MD5",
+            "hash": "2a93efdfd8c17ede0cd6bd7d0a475163"
+          },
+          "state": "COMPLETE"
+        },
+        {
+          "appleDeliveryChecksumMatched": true,
+          "approvedSHA256": "6465b86bd7683e1ce3b3adb8d52a57ce822bf1356e36f0d7ac68b2d9545fe71b",
+          "assetType": "MANIFEST",
+          "byteCount": 1255,
+          "id": "71516684-afcd-4c60-9c90-11bb7e0c16dc",
+          "serverFileChecksum": {
+            "algorithm": "MD5",
+            "hash": "0b4168a006ab02c690cfe7be7f391299"
+          },
+          "state": "COMPLETE"
+        }
+      ],
+      "group": "shape",
+      "legalFileCount": 8,
+      "modelFileCount": 2,
+      "modelID": "hunyuan-shape-2.1-q4-30b93",
+      "modelPinIdentitySHA256": "5e6c214c00030e401beaff077aa1082f3307e846b89fae8bf8ef0f1a2837d0e0",
+      "platform": "IOS",
+      "schemaVersion": 1,
+      "scope": "Only new asset upload/processing; no client activation, TestFlight, review or release changes",
+      "serverState": "COMPLETE",
+      "version": "1",
+      "versionID": "d00ab3d6-f20c-4355-957d-bba3ba9a07e5",
+      "warningCodes": []
+    }
+  ],
+  "platform": "IOS",
+  "schemaVersion": 1,
+  "verifiedAtUTC": "2026-11-06T00:43:29.618139+00:00"
+}

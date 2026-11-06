@@ -80,8 +80,11 @@ struct ModelLibrary: View {
     }
 }
 
-private struct OpenSourceLicensesView: View {
-    private let licenses=["MLX-Swift","MLX-Swift-LM","Swift-Transformers","XGrammar","PicoJSON","DLPack","Qwen-Model"]
+struct OpenSourceLicensesView: View {
+    private let licenses=["MLX-Swift","MLX-Swift-LM","Swift-Transformers","XGrammar","PicoJSON","DLPack","Qwen-Model",
+        "Apple-SDXL","SDXL-Model","OpenAI-CLIP","Hunyuan3D-Swift-MIT","Hunyuan3D-Swift-ThirdParty",
+        "Snap3D-ThirdPartyNotices","Tencent-Hunyuan-3D-2.1-Pinned-LICENSE",
+        "Tencent-Hunyuan-3D-2.1-Pinned-NOTICE","Tencent-Hunyuan-3D-2.1-License"]
     var body: some View {
         List {
             ForEach(licenses,id:\.self) { name in
@@ -90,7 +93,7 @@ private struct OpenSourceLicensesView: View {
         }
         .scrollContentBackground(.hidden)
         .background { StudioBackground() }
-        .navigationTitle(StudioCopy.text("开源许可", "Open-source licenses"))
+        .navigationTitle(StudioCopy.text("模型与开源许可", "Model and open-source licenses"))
     }
 }
 

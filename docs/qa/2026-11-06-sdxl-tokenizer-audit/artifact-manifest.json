@@ -1,0 +1,56 @@
+{
+  "sealedAtUTC": "2026-11-06T00:34:00.490468+00:00",
+  "scope": "CPU/static primary-source audit only; no production or NN change",
+  "files": [
+    {
+      "path": "docs/qa/2026-11-06-sdxl-tokenizer-audit/Apple-BPETokenizer.swift.diff",
+      "byteCount": 697,
+      "sha256": "dafae2c7c320c218e0925c3d9b666d7862232a0f402a86b83c332cc7e48496ea"
+    },
+    {
+      "path": "docs/qa/2026-11-06-sdxl-tokenizer-audit/Apple-StableDiffusionXL-Resources.swift.diff",
+      "byteCount": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qa/2026-11-06-sdxl-tokenizer-audit/Apple-TextEncoderXL.swift.diff",
+      "byteCount": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/qa/2026-11-06-sdxl-tokenizer-audit/canonical-comparison.json",
+      "byteCount": 87384,
+      "sha256": "80eaaccadfc4e267b9dad7963ac456e0ddfc16f169477d343bf2932719a42041"
+    },
+    {
+      "path": "docs/qa/2026-11-06-sdxl-tokenizer-audit/compiled-model-metadata.json",
+      "byteCount": 12726,
+      "sha256": "581b79bf445a0bc5e0a8c6f1985a824e10ad85120914d7c3f33f2f5ffc36df64"
+    },
+    {
+      "path": "docs/qa/2026-11-06-sdxl-tokenizer-audit/hf-clip-code-reference.json",
+      "byteCount": 618,
+      "sha256": "881ad802be8f5abaf30353e9592e06c49f26cf42c6284bcc1ef0b1a5f32ddb97"
+    },
+    {
+      "path": "docs/qa/2026-11-06-sdxl-tokenizer-audit/hf-sdxl-tokenizer-configs.json",
+      "byteCount": 2479,
+      "sha256": "32fd140a058ba99fab87536afeb1fcfbe719b3e5b7f6bcecc6b26b77c098638f"
+    },
+    {
+      "path": "docs/qa/2026-11-06-sdxl-tokenizer-audit/native-tokenization.json",
+      "byteCount": 55627,
+      "sha256": "5ecde50058c90320a3f967026fda08ee8b7534123ab36a626e959a0c910f30b0"
+    },
+    {
+      "path": "docs/qa/2026-11-06-sdxl-tokenizer-audit/primary-sources.json",
+      "byteCount": 1563,
+      "sha256": "f0112a533bcd5d9d81a7212bdbed4d5b2cc938d53b8f2f95a06cba9c1a3dc257"
+    },
+    {
+      "path": "docs/qa/2026-11-06-sdxl-tokenizer-audit/verification.json",
+      "byteCount": 13248,
+      "sha256": "b315b447d5f7989e71f2ca3d909b4ee106b30437d7a7bbce37b6ae91ce8ab111"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+--- upstream
++++ current
+@@ -1,3 +1,4 @@
++// Voxamber modification: propagate malformed vocabulary errors instead of trapping.
+ // For licensing see accompanying LICENSE.md file.
+ // Copyright (C) 2022 Apple Inc. All Rights Reserved.
+ 
+@@ -46,7 +47,7 @@
+     ///   - vocabularyURL: The URL of a JSON file containing the vocabulary.
+     public init(mergesAt mergesURL: URL, vocabularyAt vocabularyURL: URL, padToken: String = "<|endoftext|>") throws {
+         self.merges = try Self.readMerges(url: mergesURL)
+-        self.vocabulary = try! Self.readVocabulary(url: vocabularyURL)
++        self.vocabulary = try Self.readVocabulary(url: vocabularyURL)
+         self.padToken = padToken
+     }
+ 

@@ -81,13 +81,64 @@ struct NeuralModelManifest: Codable, Sendable, Equatable {
         && path.split(separator: "/", omittingEmptySubsequences: false).allSatisfy { !$0.isEmpty && $0 != "." && $0 != ".." }
     }
     static func loadAll(bundle: Bundle = .main) throws -> [NeuralModelManifest] {
-        try NeuralModelGroup.allCases.map { group in
+        let manifests = try NeuralModelGroup.allCases.map { group in
             guard let url = bundle.url(forResource: group.manifestName, withExtension: "json", subdirectory: "NeuralModels")
                 ?? bundle.url(forResource: group.manifestName, withExtension: "json") else { throw NeuralModelError.invalidCatalog }
             let manifest = try JSONDecoder().decode(Self.self, from: Data(contentsOf: url))
             try manifest.validate()
             guard manifest.group == group else { throw NeuralModelError.invalidCatalog }
             return manifest
+        }
+        guard let deliveryURL = bundle.url(forResource: "NeuralModelDelivery", withExtension: "json") else {
+            return manifests
+        }
+        let delivery = try JSONDecoder().decode(NeuralModelDelivery.self, from: Data(contentsOf: deliveryURL))
+        return try delivery.applying(to: manifests)
+    }
+}
+
+/// Publication is separate from frozen model/pack contracts. Turning on a
+/// processed download must not rewrite their approved byte identities.
+struct NeuralModelDelivery: Codable, Sendable {
+    struct Pack: Codable, Sendable {
+        let group: NeuralModelGroup
+        let modelID: String
+        let assetPackID: String
+        let modelPinIdentitySHA256: String
+        let serverState: String
+        let version: String?
+    }
+    let schemaVersion: Int
+    let bundleID: String
+    let platform: String
+    let packs: [Pack]
+
+    func applying(to manifests: [NeuralModelManifest]) throws -> [NeuralModelManifest] {
+        guard schemaVersion == 1, bundleID == "com.kaisun.voxamber", platform == "IOS",
+              manifests.count == NeuralModelGroup.allCases.count,
+              Set(manifests.map(\.group)).count == manifests.count,
+              packs.count == manifests.count, Set(packs.map(\.group)).count == packs.count else {
+            throw NeuralModelError.invalidCatalog
+        }
+        return try manifests.map { manifest in
+            guard let delivery = packs.first(where: { $0.group == manifest.group }),
+                  delivery.modelID == manifest.id, delivery.assetPackID == manifest.apple.assetPackID,
+                  delivery.modelPinIdentitySHA256 == (try manifest.pinIdentity),
+                  ["COMPLETE", "PENDING"].contains(delivery.serverState) else {
+                throw NeuralModelError.invalidCatalog
+            }
+            let published = delivery.serverState == "COMPLETE"
+            if published {
+                guard let version = delivery.version, let number = Int(version), number > 0 else {
+                    throw NeuralModelError.invalidCatalog
+                }
+            }
+            return NeuralModelManifest(formatVersion: manifest.formatVersion, group: manifest.group,
+                id: manifest.id, displayName: manifest.displayName, identityStatus: manifest.identityStatus,
+                sourceReferenceURL: manifest.sourceReferenceURL,
+                apple: .init(assetPackID: manifest.apple.assetPackID,
+                    modelRootRelativePath: manifest.apple.modelRootRelativePath, available: published,
+                    contractRelativePath: manifest.apple.contractRelativePath), files: manifest.files)
         }
     }
 }

@@ -1,0 +1,12 @@
+{
+  "foregroundBoundsCI" : [
+    125,
+    0,
+    510,
+    703
+  ],
+  "method" : "apple-vision-all-foreground-alpha-512",
+  "preparedSHA256" : "02b14b231708aabbbeebed243930b16c7055aeebfc07b028a4b7dc9f04a9e242",
+  "sourceHeight" : 768,
+  "sourceWidth" : 768
+}

@@ -1,0 +1,48 @@
+{
+  "appID": "6831042755",
+  "assetPackID": "Voxamber-SDXL-CoreML",
+  "assetRecordID": "68abdedd-8a3e-41c9-b38c-61e58d5f6387",
+  "availabilityEnabledByThisTask": false,
+  "bundleID": "com.kaisun.voxamber",
+  "contractSHA256": "59727a4d63e758d96a7b910f6b71e95e08d62613583ae74d0a4a7c11b93202be",
+  "downloadOrNeuralDeviceAcceptanceClaimed": false,
+  "errorCodes": [],
+  "files": [
+    {
+      "appleDeliveryChecksumMatched": true,
+      "approvedSHA256": "0dbba7221aad1254f4ac9861bdfaf52b0f4d99cdbffb15188c22ac3c2d07c90b",
+      "assetType": "ASSET",
+      "byteCount": 2903540358,
+      "id": "762d28ad-b522-4e86-919d-afc8ea770243",
+      "serverFileChecksum": {
+        "algorithm": "MD5",
+        "hash": "8271e04496841c8627267a440440cc8d"
+      },
+      "state": "COMPLETE"
+    },
+    {
+      "appleDeliveryChecksumMatched": true,
+      "approvedSHA256": "5279aa84921fc6d8415b9b809d6fd32dfb3e2e4b5c74ac737331635de9810b3e",
+      "assetType": "MANIFEST",
+      "byteCount": 2992,
+      "id": "1e847ebc-c6ab-4c53-b72a-8d2d5c10d83c",
+      "serverFileChecksum": {
+        "algorithm": "MD5",
+        "hash": "fef4e8d2d93800cc6184c8e6d192d4e3"
+      },
+      "state": "COMPLETE"
+    }
+  ],
+  "group": "image",
+  "legalFileCount": 2,
+  "modelFileCount": 27,
+  "modelID": "sdxl-base-ios-coreml",
+  "modelPinIdentitySHA256": "f54e19ee3497a13fc3a3eba4ae9cc680be2e899e6e1a1960b2c0231e854afcbd",
+  "platform": "IOS",
+  "schemaVersion": 1,
+  "scope": "Only new asset upload/processing; no client activation, TestFlight, review or release changes",
+  "serverState": "COMPLETE",
+  "version": "1",
+  "versionID": "7fc6534e-9812-4646-b610-8435fa93ee89",
+  "warningCodes": []
+}

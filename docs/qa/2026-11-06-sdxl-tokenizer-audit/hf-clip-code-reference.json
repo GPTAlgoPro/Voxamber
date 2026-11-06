@@ -1,0 +1,7 @@
+{
+  "sourceURL": "https://raw.githubusercontent.com/huggingface/transformers/v4.30.2/src/transformers/models/clip/tokenization_clip.py",
+  "sha256": "14a24dbea7f6b0e7e1c3918beca422692df67b3b9a98c9e83ddf455becea08ee",
+  "patternLine": "self.pat = re.compile(",
+  "scope": "Primary HF CLIPTokenizer implementation corroborates regex segmentation; not a declaration of exact training library version",
+  "patternCode": "        self.pat = re.compile(\n            r\"\"\"<\\|startoftext\\|>|<\\|endoftext\\|>|'s|'t|'re|'ve|'m|'ll|'d|[\\p{L}]+|[\\p{N}]|[^\\s\\p{L}\\p{N}]+\"\"\",\n            re.IGNORECASE,\n        )"
+}

@@ -1,0 +1,430 @@
+{
+  "recordedAtUTC": "2026-11-06T00:30:30.363245+00:00",
+  "scope": "Read-only source/metadata and pure CPU tokenizer audit; no CLIP/UNet/VAE NN invocation, source/model/seed change or repeat of image failure",
+  "primary": [
+    {
+      "name": "Apple-BPETokenizer.swift",
+      "sourceURL": "https://raw.githubusercontent.com/apple/ml-stable-diffusion/ea2805dc1945be20561c77e5f6d1d9a5a637cda2/swift/StableDiffusion/tokenizer/BPETokenizer.swift",
+      "bytes": 6360,
+      "sha256": "280cfd0ad51c3668dd3adab28c8e094f5168be8710b5830c393e2f795c752fe9"
+    },
+    {
+      "name": "Apple-TextEncoderXL.swift",
+      "sourceURL": "https://raw.githubusercontent.com/apple/ml-stable-diffusion/ea2805dc1945be20561c77e5f6d1d9a5a637cda2/swift/StableDiffusion/pipeline/TextEncoderXL.swift",
+      "bytes": 3587,
+      "sha256": "7af760be14516e4f3f68d1cf9bf80f05893e05d9f435c2514431e92b538baa78"
+    },
+    {
+      "name": "Apple-StableDiffusionXL-Resources.swift",
+      "sourceURL": "https://raw.githubusercontent.com/apple/ml-stable-diffusion/ea2805dc1945be20561c77e5f6d1d9a5a637cda2/swift/StableDiffusion/pipeline/StableDiffusionXL+Resources.swift",
+      "bytes": 4974,
+      "sha256": "c547460a6e3c09852e65570e3d9579623a2f93b3a374627a88321b98b44cde39"
+    },
+    {
+      "name": "OpenAI-simple_tokenizer.py",
+      "sourceURL": "https://raw.githubusercontent.com/openai/CLIP/main/clip/simple_tokenizer.py",
+      "bytes": 4632,
+      "sha256": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad"
+    },
+    {
+      "name": "Fixed OpenAI CLIP source",
+      "sourceURL": "https://raw.githubusercontent.com/openai/CLIP/3bee28119e6b28e75b82b811b87b56935314e6a5/clip/simple_tokenizer.py",
+      "commit": "3bee28119e6b28e75b82b811b87b56935314e6a5",
+      "sha256": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad"
+    }
+  ],
+  "coreFindings": {
+    "sameFrozenOfficialVocabMergesUsed": true,
+    "officialCLIPVocabReconstructionExactlyEqualsActual49408Entries": true,
+    "currentNativeAppleWhitespaceBPEIsDifferentFromCanonicalRegexCLIP": true,
+    "VoxIntroducedAlgorithmDifferenceFromPinnedAppleBPE": false,
+    "TextEncoderXLSourceByteIdenticalToPinnedApple": true,
+    "XLResourceConstructionSourceByteIdenticalToPinnedApple": true,
+    "NativeBPEOnlyVoxDifference": "comment plus throwing vocabulary parse instead of try!; same valid-input token algorithm",
+    "inputFloat32ExactIntegerRepresentation": true,
+    "allNativeUnknownPiecesEmpty": true,
+    "bothCLIPInputsUniqueFloat32_1x77": true,
+    "TE1HiddenFloat16Shape": [
+      1,
+      77,
+      768
+    ],
+    "TE2HiddenFloat16Shape": [
+      1,
+      77,
+      1280
+    ],
+    "TE2PooledFloat16Shape": [
+      1,
+      1280
+    ],
+    "UnetChunk2OnlyOutput": "noise_pred Float16[2,4,96,96]"
+  },
+  "cases": [
+    {
+      "caseID": "lamp",
+      "input": "A desk lamp with a red cone-shaped shade, a gray cylindrical base, a thin cylindrical stem, and a spherical bulb, all resting on a flat surface at height Y=0, with an overall height of approximately 0.8 meters.",
+      "nativeUnpaddedCount": 58,
+      "canonicalUnpaddedCount": 56,
+      "TE1PaddedPositionDifferences": 32,
+      "TE2PaddedPositionDifferences": 33,
+      "negativeEmptyBothPadsMatchCanonical": true,
+      "lexicalDifferences": [
+        {
+          "nativePieces": [
+            "cone",
+            "-",
+            "shaped</w>"
+          ],
+          "nativeIDs": [
+            39279,
+            12,
+            10127
+          ],
+          "samePieces": false,
+          "word": "cone-shaped",
+          "canonicalRegexSegments": [
+            "cone",
+            "-",
+            "shaped"
+          ],
+          "canonicalPieces": [
+            "cone</w>",
+            "-</w>",
+            "shaped</w>"
+          ],
+          "canonicalIDs": [
+            10266,
+            268,
+            10127
+          ]
+        },
+        {
+          "nativePieces": [
+            "shade",
+            ",</w>"
+          ],
+          "nativeIDs": [
+            34554,
+            267
+          ],
+          "samePieces": false,
+          "word": "shade,",
+          "canonicalRegexSegments": [
+            "shade",
+            ","
+          ],
+          "canonicalPieces": [
+            "shade</w>",
+            ",</w>"
+          ],
+          "canonicalIDs": [
+            10097,
+            267
+          ]
+        },
+        {
+          "nativePieces": [
+            "base",
+            ",</w>"
+          ],
+          "nativeIDs": [
+            2776,
+            267
+          ],
+          "samePieces": false,
+          "word": "base,",
+          "canonicalRegexSegments": [
+            "base",
+            ","
+          ],
+          "canonicalPieces": [
+            "base</w>",
+            ",</w>"
+          ],
+          "canonicalIDs": [
+            4579,
+            267
+          ]
+        },
+        {
+          "nativePieces": [
+            "stem",
+            ",</w>"
+          ],
+          "nativeIDs": [
+            24342,
+            267
+          ],
+          "samePieces": false,
+          "word": "stem,",
+          "canonicalRegexSegments": [
+            "stem",
+            ","
+          ],
+          "canonicalPieces": [
+            "stem</w>",
+            ",</w>"
+          ],
+          "canonicalIDs": [
+            6761,
+            267
+          ]
+        },
+        {
+          "nativePieces": [
+            "bul",
+            "b",
+            ",</w>"
+          ],
+          "nativeIDs": [
+            2572,
+            65,
+            267
+          ],
+          "samePieces": false,
+          "word": "bulb,",
+          "canonicalRegexSegments": [
+            "bulb",
+            ","
+          ],
+          "canonicalPieces": [
+            "bulb</w>",
+            ",</w>"
+          ],
+          "canonicalIDs": [
+            22373,
+            267
+          ]
+        },
+        {
+          "nativePieces": [
+            "y",
+            "=",
+            "0",
+            ",</w>"
+          ],
+          "nativeIDs": [
+            88,
+            28,
+            15,
+            267
+          ],
+          "samePieces": false,
+          "word": "y=0,",
+          "canonicalRegexSegments": [
+            "y",
+            "=",
+            "0",
+            ","
+          ],
+          "canonicalPieces": [
+            "y</w>",
+            "=</w>",
+            "0</w>",
+            ",</w>"
+          ],
+          "canonicalIDs": [
+            344,
+            284,
+            271,
+            267
+          ]
+        },
+        {
+          "nativePieces": [
+            "0",
+            ".",
+            "8</w>"
+          ],
+          "nativeIDs": [
+            15,
+            13,
+            279
+          ],
+          "samePieces": false,
+          "word": "0.8",
+          "canonicalRegexSegments": [
+            "0",
+            ".",
+            "8"
+          ],
+          "canonicalPieces": [
+            "0</w>",
+            ".</w>",
+            "8</w>"
+          ],
+          "canonicalIDs": [
+            271,
+            269,
+            279
+          ]
+        },
+        {
+          "nativePieces": [
+            "me",
+            "ters",
+            ".</w>"
+          ],
+          "nativeIDs": [
+            613,
+            24102,
+            269
+          ],
+          "samePieces": false,
+          "word": "meters.",
+          "canonicalRegexSegments": [
+            "meters",
+            "."
+          ],
+          "canonicalPieces": [
+            "meters</w>",
+            ".</w>"
+          ],
+          "canonicalIDs": [
+            13247,
+            269
+          ]
+        }
+      ]
+    },
+    {
+      "caseID": "vase",
+      "input": "A blue vase shaped like a spiral shell with a golden rim on the opening.",
+      "nativeUnpaddedCount": 18,
+      "canonicalUnpaddedCount": 18,
+      "TE1PaddedPositionDifferences": 1,
+      "TE2PaddedPositionDifferences": 1,
+      "negativeEmptyBothPadsMatchCanonical": true,
+      "lexicalDifferences": [
+        {
+          "nativePieces": [
+            "opening",
+            ".</w>"
+          ],
+          "nativeIDs": [
+            33728,
+            269
+          ],
+          "samePieces": false,
+          "word": "opening.",
+          "canonicalRegexSegments": [
+            "opening",
+            "."
+          ],
+          "canonicalPieces": [
+            "opening</w>",
+            ".</w>"
+          ],
+          "canonicalIDs": [
+            2516,
+            269
+          ]
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "These are exact CPU-reproduced token IDs for the actually returned English strings, not newly measured neural embeddings.",
+    "Identity ftfy normalization is used only for these ordinary ASCII strings with no HTML entities/control characters; no arbitrary Unicode equivalence claimed.",
+    "Position difference counts include shifts due sequence lengths; use lexical piece table to assess specific core words.",
+    "Token mismatch is a testable conditioning contract issue, not causal proof that it produced the helmet/bust.",
+    "No claim that quantization, guidance, seed or model quality caused the observed failure.",
+    "No production changes or additional model generation performed."
+  ],
+  "diagnosticToolSHA256": {
+    "Apple/.build/ImagePathAudit/SwiftTokenizer/BPETokenizer.swift": "64b8f4bbbfa6bfba1c6d4789b65d868cf0c0e1fe3ccc8c8f2b4aa19475c6fe3c",
+    "Apple/.build/ImagePathAudit/SwiftTokenizer/BPETokenizer+Reading.swift": "0a27e1ade18f20ab0d61c439deb0c383210e5994e6d792c588a5dbf1aededf96",
+    "Apple/.build/ImagePathAudit/SwiftTokenizer/main.swift": "344004d9a4304b686de0018995e233ace03f36ce5175e9c98c60e1408be4c0b3",
+    "Apple/.build/ImagePathAudit/NativeTokenizer": "c137a4de2086ca9926ed24532c9e97fbfb8f943e549d90311fc6c94b5fcc76ad",
+    "Apple/.build/ImagePathAudit/compare_canonical.py": "70d4db6a519bce9e3791956860994d10c048ccf344e9141e29e3584b80aa1a20"
+  },
+  "HFOriginalSDXLTokenizerConfigs": [
+    {
+      "path": "tokenizer/tokenizer_config.json",
+      "revision": "462165984030d82259a11f4367a4eed129e94a7b",
+      "sourceURL": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/462165984030d82259a11f4367a4eed129e94a7b/tokenizer/tokenizer_config.json",
+      "sha256": "19d7b034cb0cc3ce9766c2231373ab8aa8991fc72e2c8f76558bfaae3de0d563",
+      "config": {
+        "add_prefix_space": false,
+        "bos_token": {
+          "__type": "AddedToken",
+          "content": "<|startoftext|>",
+          "lstrip": false,
+          "normalized": true,
+          "rstrip": false,
+          "single_word": false
+        },
+        "clean_up_tokenization_spaces": true,
+        "do_lower_case": true,
+        "eos_token": {
+          "__type": "AddedToken",
+          "content": "<|endoftext|>",
+          "lstrip": false,
+          "normalized": true,
+          "rstrip": false,
+          "single_word": false
+        },
+        "errors": "replace",
+        "model_max_length": 77,
+        "pad_token": "<|endoftext|>",
+        "tokenizer_class": "CLIPTokenizer",
+        "unk_token": {
+          "__type": "AddedToken",
+          "content": "<|endoftext|>",
+          "lstrip": false,
+          "normalized": true,
+          "rstrip": false,
+          "single_word": false
+        }
+      }
+    },
+    {
+      "path": "tokenizer_2/tokenizer_config.json",
+      "revision": "462165984030d82259a11f4367a4eed129e94a7b",
+      "sourceURL": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/462165984030d82259a11f4367a4eed129e94a7b/tokenizer_2/tokenizer_config.json",
+      "sha256": "c9d23941f76a41cbd50eda9290f57be7828f0a7a677939e9ef181f7e12bd1bdf",
+      "config": {
+        "add_prefix_space": false,
+        "bos_token": {
+          "__type": "AddedToken",
+          "content": "<|startoftext|>",
+          "lstrip": false,
+          "normalized": true,
+          "rstrip": false,
+          "single_word": false
+        },
+        "clean_up_tokenization_spaces": true,
+        "do_lower_case": true,
+        "eos_token": {
+          "__type": "AddedToken",
+          "content": "<|endoftext|>",
+          "lstrip": false,
+          "normalized": true,
+          "rstrip": false,
+          "single_word": false
+        },
+        "errors": "replace",
+        "model_max_length": 77,
+        "pad_token": "!",
+        "tokenizer_class": "CLIPTokenizer",
+        "unk_token": {
+          "__type": "AddedToken",
+          "content": "<|endoftext|>",
+          "lstrip": false,
+          "normalized": true,
+          "rstrip": false,
+          "single_word": false
+        }
+      }
+    }
+  ],
+  "HFCLIPCodeReference": {
+    "sourceURL": "https://raw.githubusercontent.com/huggingface/transformers/v4.30.2/src/transformers/models/clip/tokenization_clip.py",
+    "sha256": "14a24dbea7f6b0e7e1c3918beca422692df67b3b9a98c9e83ddf455becea08ee",
+    "patternLine": "self.pat = re.compile(",
+    "scope": "Primary HF CLIPTokenizer implementation corroborates regex segmentation; not a declaration of exact training library version",
+    "patternCode": "        self.pat = re.compile(\n            r\"\"\"<\\|startoftext\\|>|<\\|endoftext\\|>|'s|'t|'re|'ve|'m|'ll|'d|[\\p{L}]+|[\\p{N}]|[^\\s\\p{L}\\p{N}]+\"\"\",\n            re.IGNORECASE,\n        )"
+  },
+  "finalizedAtUTC": "2026-11-06T00:33:46.590354+00:00"
+}

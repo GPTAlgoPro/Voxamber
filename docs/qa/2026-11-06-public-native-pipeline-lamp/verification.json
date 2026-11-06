@@ -1,0 +1,173 @@
+{
+  "sealedAtUTC": "2026-11-06T00:22:16.562670+00:00",
+  "case": "LP original lamp public full pipeline",
+  "operation": "ONE current public NativeCreationEngine.generate API call; no stage replay/preset/repair",
+  "processExitCode": 0,
+  "APIRequests": 1,
+  "retries": 0,
+  "fallbacks": 0,
+  "technicalSequenceReturned": true,
+  "businessQualityAccepted": false,
+  "businessFailureStage": "drawingReference: image does not depict the requested lamp",
+  "actualEnglishIntent": {
+    "negativePrompt": "",
+    "positivePrompt": "A desk lamp with a red cone-shaped shade, a gray cylindrical base, a thin cylindrical stem, and a spherical bulb, all resting on a flat surface at height Y=0, with an overall height of approximately 0.8 meters.",
+    "title": "做一盏台灯：红色圆锥灯罩，灰色圆柱底座，细圆柱支杆，可以加一个球形灯泡。底座落地"
+  },
+  "stageSeconds": {
+    "drawingReference": 151.9157110452652,
+    "generatingShape": 95.22999310493469,
+    "interpreting": 4.553733944892883,
+    "preparingSubject": 0.21994495391845703,
+    "total": 251.92033195495605
+  },
+  "secondsThroughFinalCleanup": 251.92897808551788,
+  "engineRunningAfterUnload": false,
+  "watchdogTriggered": false,
+  "memory": {
+    "nominalSampleIntervalSeconds": 0.2,
+    "observedPhysicalPeakBytes": 5665524928,
+    "phaseObservedPeaks": {
+      "beforeAPI": 2605608,
+      "complete": 1632339840,
+      "drawingReference": 2137900616,
+      "generatingShape": 5665524928,
+      "interpreting": 971392536,
+      "preparingSubject": 1842873928
+    },
+    "physicalSampleCount": 1216,
+    "watchdogTriggered": false
+  },
+  "physicalBytesAfterUnload": 1632339840,
+  "vertices": 100904,
+  "triangles": 201804,
+  "topology": {
+    "boundaryEdges": 84,
+    "boundaryConnectedComponents": 14,
+    "nonManifoldEdgesMoreThanTwoFaces": 0,
+    "nonManifoldVertexLinks": 0,
+    "faceEdgeConnectedComponentCount": 1
+  },
+  "nativeFormat": {
+    "lineSCNType": 2,
+    "nativeUSDZOpened": true,
+    "primitiveCountsBySCNType": {
+      "0": 201804
+    },
+    "trianglesSCNType": 0,
+    "vertices": 100904
+  },
+  "all141SourceBinaryBundleSHAMatchBefore": true,
+  "all39ResourcesWholeSHAMatchBefore": true,
+  "referenceCallbackMatchesReturnedPNG": true,
+  "visualReview": {
+    "reviewer": "model_research",
+    "seen": [
+      "reference-original-768.png",
+      "reference-prepared-512-rgba.png",
+      "rendered/lamp-result-front.png",
+      "rendered/lamp-result-threequarter.png"
+    ],
+    "intentFinding": "English retains desk lamp/red cone-shaped shade/gray cylindrical base/thin cylindrical stem/bulb/grounded Y0 and0.8m intent. Spherical bulb inclusion is permitted by original optional wording.",
+    "referenceFinding": "Actual768PNG depicts a white helmet/head-and-shoulders sculptural bust, missing the required red conical shade, gray cylindrical base and thin rod.",
+    "preparationFinding": "Actual Vision512alpha preserves that wrong head/bust silhouette; no synthetic mask or second request was used.",
+    "meshFinding": "Actual gray native mesh follows the wrong head/bust reference. It is not a lamp and cannot satisfy the intended object/parts/colors.",
+    "generalOrLampQualityPass": false,
+    "physicalMetricPass": false,
+    "colorTexturePass": false
+  },
+  "attributionBoundary": [
+    "Language translation contains the central required concepts; this run does not support blaming Qwen spatial planning or JSON syntax for the wrong image.",
+    "Failure is observed in image-generation/conditioning behavior; exact cause (tokenization/encoding/inference/backend/model quality) has not been isolated.",
+    "No quantization/seed/model-swap attribution is made and no retry was performed."
+  ],
+  "artifacts": [
+    {
+      "path": "Apple/.build/NativeCreationLampGate/LampPublic01/base.glb",
+      "byteCount": 3633096,
+      "sha256": "e8390f75d0d2b569456d40951a1dc712f1a60e3cacd032ca3f75c400c8a3bfc7"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGate/LampPublic01/current-stage.json",
+      "byteCount": 135,
+      "sha256": "de4e7ff598e072fcb76146b468f7d9df655f7254163da2786f534831c3000e93"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGate/LampPublic01/events.ndjson",
+      "byteCount": 5791,
+      "sha256": "ab0291c824e01d29698c1a7bb578ab1730ae3fe1a3d63425b9cc24c086deb17d"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGate/LampPublic01/fixed-request.txt",
+      "byteCount": 147,
+      "sha256": "5efee41d264758fcbb370cb89b31cd1e3be9f8b668ada1375e69d6079cbe0013"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGate/LampPublic01/intent.json",
+      "byteCount": 398,
+      "sha256": "b90098e80c8fc2b07e2a617a00197f63317d20273109fc79e702da138fd390c4"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGate/LampPublic01/model.glb",
+      "byteCount": 3633096,
+      "sha256": "e8390f75d0d2b569456d40951a1dc712f1a60e3cacd032ca3f75c400c8a3bfc7"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGate/LampPublic01/model.usdz",
+      "byteCount": 12584811,
+      "sha256": "ae24960aebdd22c93fd3517252e862152cfa1c5a80aca32572454f60fe688075"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGate/LampPublic01/physical-memory.ndjson",
+      "byteCount": 101899,
+      "sha256": "1f3f6c2ca5aaa1198afb4b4f3b74abfb50a8be13380f3d25befe5bf482091b79"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGate/LampPublic01/pipeline-report.json",
+      "byteCount": 10351,
+      "sha256": "278450d5b310226b600867588307a89efd48752d91d13be817614dc65cfc03d8"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGate/LampPublic01/preparation.json",
+      "byteCount": 257,
+      "sha256": "131d4ed22751a5f54562b038c2a74ef52ae59670163653810d5e8a65b66ea393"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGate/LampPublic01/reference-original-768.png",
+      "byteCount": 505881,
+      "sha256": "cbb035608c2d871b792ef927a19dbfd9b073cb8a416a7abfe638d016b57c1ab4"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGate/LampPublic01/reference-prepared-512-rgba.png",
+      "byteCount": 137576,
+      "sha256": "02b14b231708aabbbeebed243930b16c7055aeebfc07b028a4b7dc9f04a9e242"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGate/LampPublic01/reference-returned-768.png",
+      "byteCount": 505881,
+      "sha256": "cbb035608c2d871b792ef927a19dbfd9b073cb8a416a7abfe638d016b57c1ab4"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGate/LampPublic01/shape-provenance.json",
+      "byteCount": 946,
+      "sha256": "3475e0a1e1b797802ecaf94cc41abe8b052d7eee06b1e21e3a92c492c58c9843"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGate/LampPublic01/shape-statistics.json",
+      "byteCount": 159,
+      "sha256": "b53c7d991b1d83198a3f97428ef6b49fc384f66e44d82d36ff6d824b5d3addae"
+    },
+    {
+      "path": "Apple/.build/NativeCreationLampGate/LampPublic01/shape-validation-receipt.json",
+      "byteCount": 582,
+      "sha256": "bf239bc86b5792635075b28a9056508c063b2757ab2ff3fd1bd255a3b6cc2665"
+    }
+  ],
+  "limits": [
+    "Mac48GiB sequence is not12GB iPhone/6GiB whole-App admission, memory, speed, cancellation, repeat or thermal acceptance.",
+    "Peak is observed OS footprint with nominal200ms sampling; no guarantee every transient peak was captured.",
+    "Normalized model units and saved0.8m text do not prove metric geometry or Y0 grounding; physicalScaleKnown=false.",
+    "Shape is untextured gray; source-image colors do not constitute output texture generation.",
+    "Root retained no phone actions and no App/production/weights/sampling change was made for this gate."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "sealedAtUTC": "2026-11-06T00:57:32.132203+00:00",
+  "files": [
+    {
+      "path": "docs/qa/2026-11-06-canonical-image-lamp/armed-source.json",
+      "byteCount": 12435,
+      "sha256": "227725f2bfa4e9479234968b6fee25bab0e902eabe89a5f40b1a425b224ac8b7"
+    },
+    {
+      "path": "docs/qa/2026-11-06-canonical-image-lamp/fixed-prior-intent.json",
+      "byteCount": 398,
+      "sha256": "b90098e80c8fc2b07e2a617a00197f63317d20273109fc79e702da138fd390c4"
+    },
+    {
+      "path": "docs/qa/2026-11-06-canonical-image-lamp/full-resource-cpu-exact-ids.json",
+      "byteCount": 32298,
+      "sha256": "b217a1533f72119d86e97627968c850af93cb5f9e7f58ae4c77cf95a2bdfcb5f"
+    },
+    {
+      "path": "docs/qa/2026-11-06-canonical-image-lamp/image-report.json",
+      "byteCount": 5648,
+      "sha256": "290a5c2f9427363cfbf770910e58d0a2a367bb6e3db9638424369d78826cac04"
+    },
+    {
+      "path": "docs/qa/2026-11-06-canonical-image-lamp/protocol-before-generation.md",
+      "byteCount": 3784,
+      "sha256": "acae59929104d4a61cf50ebcfc808fd5b5f540a3c6773c6f3f3b93bf761c419a"
+    },
+    {
+      "path": "docs/qa/2026-11-06-canonical-image-lamp/reference-canonical-768.png",
+      "byteCount": 554108,
+      "sha256": "965c97f57fe9677b16606c3228c86abf246aa11f84fe1e5a43afaa1034917ec3"
+    },
+    {
+      "path": "docs/qa/2026-11-06-canonical-image-lamp/resources-after.json",
+      "byteCount": 8221,
+      "sha256": "f6a563a4105783005e39ec5751bf71f31cc29c33aeb562ef5c9b7cbc4f419bfe"
+    },
+    {
+      "path": "docs/qa/2026-11-06-canonical-image-lamp/resources-before.json",
+      "byteCount": 10692,
+      "sha256": "5abfd35a3e77b877c8849a62756a62fd87440031911cdc594a59891eea1001ab"
+    },
+    {
+      "path": "docs/qa/2026-11-06-canonical-image-lamp/source-after.json",
+      "byteCount": 12551,
+      "sha256": "892064411d2495afb548c52901034d0414d98f1acc572b8d4572417bba04e45d"
+    },
+    {
+      "path": "docs/qa/2026-11-06-canonical-image-lamp/source-before.json",
+      "byteCount": 12490,
+      "sha256": "5bee0b53ef9e51890ba1900c027d2ae5e13a4332e204f10af2da97b16069c0eb"
+    },
+    {
+      "path": "docs/qa/2026-11-06-canonical-image-lamp/verification.json",
+      "byteCount": 3705,
+      "sha256": "c069aaf783ef06407ec679ed99f69293be4807a4d7422055625899df3e4df173"
+    }
+  ]
+}

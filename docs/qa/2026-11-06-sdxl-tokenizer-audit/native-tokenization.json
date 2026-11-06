@@ -1,0 +1,2665 @@
+{
+  "cases" : [
+    {
+      "caseID" : "lamp",
+      "encoders" : [
+        {
+          "idsExactlyRepresentableFloat32" : true,
+          "name" : "TextEncoder",
+          "negativeEmptyPaddedIDs" : [
+            49406,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407
+          ],
+          "negativeEmptyPaddedTokens" : [
+            "<|startoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>"
+          ],
+          "paddedIDs" : [
+            49406,
+            320,
+            6550,
+            10725,
+            593,
+            320,
+            736,
+            39279,
+            12,
+            10127,
+            34554,
+            267,
+            320,
+            7048,
+            1470,
+            6492,
+            18109,
+            2776,
+            267,
+            320,
+            7847,
+            1470,
+            6492,
+            18109,
+            24342,
+            267,
+            537,
+            320,
+            18349,
+            1110,
+            2572,
+            65,
+            267,
+            615,
+            18044,
+            525,
+            320,
+            6313,
+            7744,
+            536,
+            10788,
+            88,
+            28,
+            15,
+            267,
+            593,
+            550,
+            6914,
+            10788,
+            539,
+            16128,
+            15,
+            13,
+            279,
+            613,
+            24102,
+            269,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407
+          ],
+          "paddedTokens" : [
+            "<|startoftext|>",
+            "a<\/w>",
+            "desk<\/w>",
+            "lamp<\/w>",
+            "with<\/w>",
+            "a<\/w>",
+            "red<\/w>",
+            "cone",
+            "-",
+            "shaped<\/w>",
+            "shade",
+            ",<\/w>",
+            "a<\/w>",
+            "gray<\/w>",
+            "cy",
+            "lind",
+            "rical<\/w>",
+            "base",
+            ",<\/w>",
+            "a<\/w>",
+            "thin<\/w>",
+            "cy",
+            "lind",
+            "rical<\/w>",
+            "stem",
+            ",<\/w>",
+            "and<\/w>",
+            "a<\/w>",
+            "spher",
+            "ical<\/w>",
+            "bul",
+            "b",
+            ",<\/w>",
+            "all<\/w>",
+            "resting<\/w>",
+            "on<\/w>",
+            "a<\/w>",
+            "flat<\/w>",
+            "surface<\/w>",
+            "at<\/w>",
+            "height<\/w>",
+            "y",
+            "=",
+            "0",
+            ",<\/w>",
+            "with<\/w>",
+            "an<\/w>",
+            "overall<\/w>",
+            "height<\/w>",
+            "of<\/w>",
+            "approximately<\/w>",
+            "0",
+            ".",
+            "8<\/w>",
+            "me",
+            "ters",
+            ".<\/w>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>"
+          ],
+          "padID" : 49407,
+          "padToken" : "<|endoftext|>",
+          "unknownPieces" : [
+
+          ],
+          "unpaddedCount" : 58,
+          "unpaddedIDs" : [
+            49406,
+            320,
+            6550,
+            10725,
+            593,
+            320,
+            736,
+            39279,
+            12,
+            10127,
+            34554,
+            267,
+            320,
+            7048,
+            1470,
+            6492,
+            18109,
+            2776,
+            267,
+            320,
+            7847,
+            1470,
+            6492,
+            18109,
+            24342,
+            267,
+            537,
+            320,
+            18349,
+            1110,
+            2572,
+            65,
+            267,
+            615,
+            18044,
+            525,
+            320,
+            6313,
+            7744,
+            536,
+            10788,
+            88,
+            28,
+            15,
+            267,
+            593,
+            550,
+            6914,
+            10788,
+            539,
+            16128,
+            15,
+            13,
+            279,
+            613,
+            24102,
+            269,
+            49407
+          ],
+          "unpaddedTokens" : [
+            "<|startoftext|>",
+            "a<\/w>",
+            "desk<\/w>",
+            "lamp<\/w>",
+            "with<\/w>",
+            "a<\/w>",
+            "red<\/w>",
+            "cone",
+            "-",
+            "shaped<\/w>",
+            "shade",
+            ",<\/w>",
+            "a<\/w>",
+            "gray<\/w>",
+            "cy",
+            "lind",
+            "rical<\/w>",
+            "base",
+            ",<\/w>",
+            "a<\/w>",
+            "thin<\/w>",
+            "cy",
+            "lind",
+            "rical<\/w>",
+            "stem",
+            ",<\/w>",
+            "and<\/w>",
+            "a<\/w>",
+            "spher",
+            "ical<\/w>",
+            "bul",
+            "b",
+            ",<\/w>",
+            "all<\/w>",
+            "resting<\/w>",
+            "on<\/w>",
+            "a<\/w>",
+            "flat<\/w>",
+            "surface<\/w>",
+            "at<\/w>",
+            "height<\/w>",
+            "y",
+            "=",
+            "0",
+            ",<\/w>",
+            "with<\/w>",
+            "an<\/w>",
+            "overall<\/w>",
+            "height<\/w>",
+            "of<\/w>",
+            "approximately<\/w>",
+            "0",
+            ".",
+            "8<\/w>",
+            "me",
+            "ters",
+            ".<\/w>",
+            "<|endoftext|>"
+          ],
+          "wordPieces" : [
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                6550
+              ],
+              "pieces" : [
+                "desk<\/w>"
+              ],
+              "word" : "desk"
+            },
+            {
+              "ids" : [
+                10725
+              ],
+              "pieces" : [
+                "lamp<\/w>"
+              ],
+              "word" : "lamp"
+            },
+            {
+              "ids" : [
+                593
+              ],
+              "pieces" : [
+                "with<\/w>"
+              ],
+              "word" : "with"
+            },
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                736
+              ],
+              "pieces" : [
+                "red<\/w>"
+              ],
+              "word" : "red"
+            },
+            {
+              "ids" : [
+                39279,
+                12,
+                10127
+              ],
+              "pieces" : [
+                "cone",
+                "-",
+                "shaped<\/w>"
+              ],
+              "word" : "cone-shaped"
+            },
+            {
+              "ids" : [
+                34554,
+                267
+              ],
+              "pieces" : [
+                "shade",
+                ",<\/w>"
+              ],
+              "word" : "shade,"
+            },
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                7048
+              ],
+              "pieces" : [
+                "gray<\/w>"
+              ],
+              "word" : "gray"
+            },
+            {
+              "ids" : [
+                1470,
+                6492,
+                18109
+              ],
+              "pieces" : [
+                "cy",
+                "lind",
+                "rical<\/w>"
+              ],
+              "word" : "cylindrical"
+            },
+            {
+              "ids" : [
+                2776,
+                267
+              ],
+              "pieces" : [
+                "base",
+                ",<\/w>"
+              ],
+              "word" : "base,"
+            },
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                7847
+              ],
+              "pieces" : [
+                "thin<\/w>"
+              ],
+              "word" : "thin"
+            },
+            {
+              "ids" : [
+                1470,
+                6492,
+                18109
+              ],
+              "pieces" : [
+                "cy",
+                "lind",
+                "rical<\/w>"
+              ],
+              "word" : "cylindrical"
+            },
+            {
+              "ids" : [
+                24342,
+                267
+              ],
+              "pieces" : [
+                "stem",
+                ",<\/w>"
+              ],
+              "word" : "stem,"
+            },
+            {
+              "ids" : [
+                537
+              ],
+              "pieces" : [
+                "and<\/w>"
+              ],
+              "word" : "and"
+            },
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                18349,
+                1110
+              ],
+              "pieces" : [
+                "spher",
+                "ical<\/w>"
+              ],
+              "word" : "spherical"
+            },
+            {
+              "ids" : [
+                2572,
+                65,
+                267
+              ],
+              "pieces" : [
+                "bul",
+                "b",
+                ",<\/w>"
+              ],
+              "word" : "bulb,"
+            },
+            {
+              "ids" : [
+                615
+              ],
+              "pieces" : [
+                "all<\/w>"
+              ],
+              "word" : "all"
+            },
+            {
+              "ids" : [
+                18044
+              ],
+              "pieces" : [
+                "resting<\/w>"
+              ],
+              "word" : "resting"
+            },
+            {
+              "ids" : [
+                525
+              ],
+              "pieces" : [
+                "on<\/w>"
+              ],
+              "word" : "on"
+            },
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                6313
+              ],
+              "pieces" : [
+                "flat<\/w>"
+              ],
+              "word" : "flat"
+            },
+            {
+              "ids" : [
+                7744
+              ],
+              "pieces" : [
+                "surface<\/w>"
+              ],
+              "word" : "surface"
+            },
+            {
+              "ids" : [
+                536
+              ],
+              "pieces" : [
+                "at<\/w>"
+              ],
+              "word" : "at"
+            },
+            {
+              "ids" : [
+                10788
+              ],
+              "pieces" : [
+                "height<\/w>"
+              ],
+              "word" : "height"
+            },
+            {
+              "ids" : [
+                88,
+                28,
+                15,
+                267
+              ],
+              "pieces" : [
+                "y",
+                "=",
+                "0",
+                ",<\/w>"
+              ],
+              "word" : "y=0,"
+            },
+            {
+              "ids" : [
+                593
+              ],
+              "pieces" : [
+                "with<\/w>"
+              ],
+              "word" : "with"
+            },
+            {
+              "ids" : [
+                550
+              ],
+              "pieces" : [
+                "an<\/w>"
+              ],
+              "word" : "an"
+            },
+            {
+              "ids" : [
+                6914
+              ],
+              "pieces" : [
+                "overall<\/w>"
+              ],
+              "word" : "overall"
+            },
+            {
+              "ids" : [
+                10788
+              ],
+              "pieces" : [
+                "height<\/w>"
+              ],
+              "word" : "height"
+            },
+            {
+              "ids" : [
+                539
+              ],
+              "pieces" : [
+                "of<\/w>"
+              ],
+              "word" : "of"
+            },
+            {
+              "ids" : [
+                16128
+              ],
+              "pieces" : [
+                "approximately<\/w>"
+              ],
+              "word" : "approximately"
+            },
+            {
+              "ids" : [
+                15,
+                13,
+                279
+              ],
+              "pieces" : [
+                "0",
+                ".",
+                "8<\/w>"
+              ],
+              "word" : "0.8"
+            },
+            {
+              "ids" : [
+                613,
+                24102,
+                269
+              ],
+              "pieces" : [
+                "me",
+                "ters",
+                ".<\/w>"
+              ],
+              "word" : "meters."
+            }
+          ]
+        },
+        {
+          "idsExactlyRepresentableFloat32" : true,
+          "name" : "TextEncoder2",
+          "negativeEmptyPaddedIDs" : [
+            49406,
+            49407,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "negativeEmptyPaddedTokens" : [
+            "<|startoftext|>",
+            "<|endoftext|>",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!"
+          ],
+          "paddedIDs" : [
+            49406,
+            320,
+            6550,
+            10725,
+            593,
+            320,
+            736,
+            39279,
+            12,
+            10127,
+            34554,
+            267,
+            320,
+            7048,
+            1470,
+            6492,
+            18109,
+            2776,
+            267,
+            320,
+            7847,
+            1470,
+            6492,
+            18109,
+            24342,
+            267,
+            537,
+            320,
+            18349,
+            1110,
+            2572,
+            65,
+            267,
+            615,
+            18044,
+            525,
+            320,
+            6313,
+            7744,
+            536,
+            10788,
+            88,
+            28,
+            15,
+            267,
+            593,
+            550,
+            6914,
+            10788,
+            539,
+            16128,
+            15,
+            13,
+            279,
+            613,
+            24102,
+            269,
+            49407,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "paddedTokens" : [
+            "<|startoftext|>",
+            "a<\/w>",
+            "desk<\/w>",
+            "lamp<\/w>",
+            "with<\/w>",
+            "a<\/w>",
+            "red<\/w>",
+            "cone",
+            "-",
+            "shaped<\/w>",
+            "shade",
+            ",<\/w>",
+            "a<\/w>",
+            "gray<\/w>",
+            "cy",
+            "lind",
+            "rical<\/w>",
+            "base",
+            ",<\/w>",
+            "a<\/w>",
+            "thin<\/w>",
+            "cy",
+            "lind",
+            "rical<\/w>",
+            "stem",
+            ",<\/w>",
+            "and<\/w>",
+            "a<\/w>",
+            "spher",
+            "ical<\/w>",
+            "bul",
+            "b",
+            ",<\/w>",
+            "all<\/w>",
+            "resting<\/w>",
+            "on<\/w>",
+            "a<\/w>",
+            "flat<\/w>",
+            "surface<\/w>",
+            "at<\/w>",
+            "height<\/w>",
+            "y",
+            "=",
+            "0",
+            ",<\/w>",
+            "with<\/w>",
+            "an<\/w>",
+            "overall<\/w>",
+            "height<\/w>",
+            "of<\/w>",
+            "approximately<\/w>",
+            "0",
+            ".",
+            "8<\/w>",
+            "me",
+            "ters",
+            ".<\/w>",
+            "<|endoftext|>",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!"
+          ],
+          "padID" : 0,
+          "padToken" : "!",
+          "unknownPieces" : [
+
+          ],
+          "unpaddedCount" : 58,
+          "unpaddedIDs" : [
+            49406,
+            320,
+            6550,
+            10725,
+            593,
+            320,
+            736,
+            39279,
+            12,
+            10127,
+            34554,
+            267,
+            320,
+            7048,
+            1470,
+            6492,
+            18109,
+            2776,
+            267,
+            320,
+            7847,
+            1470,
+            6492,
+            18109,
+            24342,
+            267,
+            537,
+            320,
+            18349,
+            1110,
+            2572,
+            65,
+            267,
+            615,
+            18044,
+            525,
+            320,
+            6313,
+            7744,
+            536,
+            10788,
+            88,
+            28,
+            15,
+            267,
+            593,
+            550,
+            6914,
+            10788,
+            539,
+            16128,
+            15,
+            13,
+            279,
+            613,
+            24102,
+            269,
+            49407
+          ],
+          "unpaddedTokens" : [
+            "<|startoftext|>",
+            "a<\/w>",
+            "desk<\/w>",
+            "lamp<\/w>",
+            "with<\/w>",
+            "a<\/w>",
+            "red<\/w>",
+            "cone",
+            "-",
+            "shaped<\/w>",
+            "shade",
+            ",<\/w>",
+            "a<\/w>",
+            "gray<\/w>",
+            "cy",
+            "lind",
+            "rical<\/w>",
+            "base",
+            ",<\/w>",
+            "a<\/w>",
+            "thin<\/w>",
+            "cy",
+            "lind",
+            "rical<\/w>",
+            "stem",
+            ",<\/w>",
+            "and<\/w>",
+            "a<\/w>",
+            "spher",
+            "ical<\/w>",
+            "bul",
+            "b",
+            ",<\/w>",
+            "all<\/w>",
+            "resting<\/w>",
+            "on<\/w>",
+            "a<\/w>",
+            "flat<\/w>",
+            "surface<\/w>",
+            "at<\/w>",
+            "height<\/w>",
+            "y",
+            "=",
+            "0",
+            ",<\/w>",
+            "with<\/w>",
+            "an<\/w>",
+            "overall<\/w>",
+            "height<\/w>",
+            "of<\/w>",
+            "approximately<\/w>",
+            "0",
+            ".",
+            "8<\/w>",
+            "me",
+            "ters",
+            ".<\/w>",
+            "<|endoftext|>"
+          ],
+          "wordPieces" : [
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                6550
+              ],
+              "pieces" : [
+                "desk<\/w>"
+              ],
+              "word" : "desk"
+            },
+            {
+              "ids" : [
+                10725
+              ],
+              "pieces" : [
+                "lamp<\/w>"
+              ],
+              "word" : "lamp"
+            },
+            {
+              "ids" : [
+                593
+              ],
+              "pieces" : [
+                "with<\/w>"
+              ],
+              "word" : "with"
+            },
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                736
+              ],
+              "pieces" : [
+                "red<\/w>"
+              ],
+              "word" : "red"
+            },
+            {
+              "ids" : [
+                39279,
+                12,
+                10127
+              ],
+              "pieces" : [
+                "cone",
+                "-",
+                "shaped<\/w>"
+              ],
+              "word" : "cone-shaped"
+            },
+            {
+              "ids" : [
+                34554,
+                267
+              ],
+              "pieces" : [
+                "shade",
+                ",<\/w>"
+              ],
+              "word" : "shade,"
+            },
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                7048
+              ],
+              "pieces" : [
+                "gray<\/w>"
+              ],
+              "word" : "gray"
+            },
+            {
+              "ids" : [
+                1470,
+                6492,
+                18109
+              ],
+              "pieces" : [
+                "cy",
+                "lind",
+                "rical<\/w>"
+              ],
+              "word" : "cylindrical"
+            },
+            {
+              "ids" : [
+                2776,
+                267
+              ],
+              "pieces" : [
+                "base",
+                ",<\/w>"
+              ],
+              "word" : "base,"
+            },
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                7847
+              ],
+              "pieces" : [
+                "thin<\/w>"
+              ],
+              "word" : "thin"
+            },
+            {
+              "ids" : [
+                1470,
+                6492,
+                18109
+              ],
+              "pieces" : [
+                "cy",
+                "lind",
+                "rical<\/w>"
+              ],
+              "word" : "cylindrical"
+            },
+            {
+              "ids" : [
+                24342,
+                267
+              ],
+              "pieces" : [
+                "stem",
+                ",<\/w>"
+              ],
+              "word" : "stem,"
+            },
+            {
+              "ids" : [
+                537
+              ],
+              "pieces" : [
+                "and<\/w>"
+              ],
+              "word" : "and"
+            },
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                18349,
+                1110
+              ],
+              "pieces" : [
+                "spher",
+                "ical<\/w>"
+              ],
+              "word" : "spherical"
+            },
+            {
+              "ids" : [
+                2572,
+                65,
+                267
+              ],
+              "pieces" : [
+                "bul",
+                "b",
+                ",<\/w>"
+              ],
+              "word" : "bulb,"
+            },
+            {
+              "ids" : [
+                615
+              ],
+              "pieces" : [
+                "all<\/w>"
+              ],
+              "word" : "all"
+            },
+            {
+              "ids" : [
+                18044
+              ],
+              "pieces" : [
+                "resting<\/w>"
+              ],
+              "word" : "resting"
+            },
+            {
+              "ids" : [
+                525
+              ],
+              "pieces" : [
+                "on<\/w>"
+              ],
+              "word" : "on"
+            },
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                6313
+              ],
+              "pieces" : [
+                "flat<\/w>"
+              ],
+              "word" : "flat"
+            },
+            {
+              "ids" : [
+                7744
+              ],
+              "pieces" : [
+                "surface<\/w>"
+              ],
+              "word" : "surface"
+            },
+            {
+              "ids" : [
+                536
+              ],
+              "pieces" : [
+                "at<\/w>"
+              ],
+              "word" : "at"
+            },
+            {
+              "ids" : [
+                10788
+              ],
+              "pieces" : [
+                "height<\/w>"
+              ],
+              "word" : "height"
+            },
+            {
+              "ids" : [
+                88,
+                28,
+                15,
+                267
+              ],
+              "pieces" : [
+                "y",
+                "=",
+                "0",
+                ",<\/w>"
+              ],
+              "word" : "y=0,"
+            },
+            {
+              "ids" : [
+                593
+              ],
+              "pieces" : [
+                "with<\/w>"
+              ],
+              "word" : "with"
+            },
+            {
+              "ids" : [
+                550
+              ],
+              "pieces" : [
+                "an<\/w>"
+              ],
+              "word" : "an"
+            },
+            {
+              "ids" : [
+                6914
+              ],
+              "pieces" : [
+                "overall<\/w>"
+              ],
+              "word" : "overall"
+            },
+            {
+              "ids" : [
+                10788
+              ],
+              "pieces" : [
+                "height<\/w>"
+              ],
+              "word" : "height"
+            },
+            {
+              "ids" : [
+                539
+              ],
+              "pieces" : [
+                "of<\/w>"
+              ],
+              "word" : "of"
+            },
+            {
+              "ids" : [
+                16128
+              ],
+              "pieces" : [
+                "approximately<\/w>"
+              ],
+              "word" : "approximately"
+            },
+            {
+              "ids" : [
+                15,
+                13,
+                279
+              ],
+              "pieces" : [
+                "0",
+                ".",
+                "8<\/w>"
+              ],
+              "word" : "0.8"
+            },
+            {
+              "ids" : [
+                613,
+                24102,
+                269
+              ],
+              "pieces" : [
+                "me",
+                "ters",
+                ".<\/w>"
+              ],
+              "word" : "meters."
+            }
+          ]
+        }
+      ],
+      "input" : "A desk lamp with a red cone-shaped shade, a gray cylindrical base, a thin cylindrical stem, and a spherical bulb, all resting on a flat surface at height Y=0, with an overall height of approximately 0.8 meters."
+    },
+    {
+      "caseID" : "vase",
+      "encoders" : [
+        {
+          "idsExactlyRepresentableFloat32" : true,
+          "name" : "TextEncoder",
+          "negativeEmptyPaddedIDs" : [
+            49406,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407
+          ],
+          "negativeEmptyPaddedTokens" : [
+            "<|startoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>"
+          ],
+          "paddedIDs" : [
+            49406,
+            320,
+            1746,
+            20431,
+            10127,
+            789,
+            320,
+            19873,
+            6648,
+            593,
+            320,
+            3878,
+            12199,
+            525,
+            518,
+            33728,
+            269,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407
+          ],
+          "paddedTokens" : [
+            "<|startoftext|>",
+            "a<\/w>",
+            "blue<\/w>",
+            "vase<\/w>",
+            "shaped<\/w>",
+            "like<\/w>",
+            "a<\/w>",
+            "spiral<\/w>",
+            "shell<\/w>",
+            "with<\/w>",
+            "a<\/w>",
+            "golden<\/w>",
+            "rim<\/w>",
+            "on<\/w>",
+            "the<\/w>",
+            "opening",
+            ".<\/w>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>"
+          ],
+          "padID" : 49407,
+          "padToken" : "<|endoftext|>",
+          "unknownPieces" : [
+
+          ],
+          "unpaddedCount" : 18,
+          "unpaddedIDs" : [
+            49406,
+            320,
+            1746,
+            20431,
+            10127,
+            789,
+            320,
+            19873,
+            6648,
+            593,
+            320,
+            3878,
+            12199,
+            525,
+            518,
+            33728,
+            269,
+            49407
+          ],
+          "unpaddedTokens" : [
+            "<|startoftext|>",
+            "a<\/w>",
+            "blue<\/w>",
+            "vase<\/w>",
+            "shaped<\/w>",
+            "like<\/w>",
+            "a<\/w>",
+            "spiral<\/w>",
+            "shell<\/w>",
+            "with<\/w>",
+            "a<\/w>",
+            "golden<\/w>",
+            "rim<\/w>",
+            "on<\/w>",
+            "the<\/w>",
+            "opening",
+            ".<\/w>",
+            "<|endoftext|>"
+          ],
+          "wordPieces" : [
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                1746
+              ],
+              "pieces" : [
+                "blue<\/w>"
+              ],
+              "word" : "blue"
+            },
+            {
+              "ids" : [
+                20431
+              ],
+              "pieces" : [
+                "vase<\/w>"
+              ],
+              "word" : "vase"
+            },
+            {
+              "ids" : [
+                10127
+              ],
+              "pieces" : [
+                "shaped<\/w>"
+              ],
+              "word" : "shaped"
+            },
+            {
+              "ids" : [
+                789
+              ],
+              "pieces" : [
+                "like<\/w>"
+              ],
+              "word" : "like"
+            },
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                19873
+              ],
+              "pieces" : [
+                "spiral<\/w>"
+              ],
+              "word" : "spiral"
+            },
+            {
+              "ids" : [
+                6648
+              ],
+              "pieces" : [
+                "shell<\/w>"
+              ],
+              "word" : "shell"
+            },
+            {
+              "ids" : [
+                593
+              ],
+              "pieces" : [
+                "with<\/w>"
+              ],
+              "word" : "with"
+            },
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                3878
+              ],
+              "pieces" : [
+                "golden<\/w>"
+              ],
+              "word" : "golden"
+            },
+            {
+              "ids" : [
+                12199
+              ],
+              "pieces" : [
+                "rim<\/w>"
+              ],
+              "word" : "rim"
+            },
+            {
+              "ids" : [
+                525
+              ],
+              "pieces" : [
+                "on<\/w>"
+              ],
+              "word" : "on"
+            },
+            {
+              "ids" : [
+                518
+              ],
+              "pieces" : [
+                "the<\/w>"
+              ],
+              "word" : "the"
+            },
+            {
+              "ids" : [
+                33728,
+                269
+              ],
+              "pieces" : [
+                "opening",
+                ".<\/w>"
+              ],
+              "word" : "opening."
+            }
+          ]
+        },
+        {
+          "idsExactlyRepresentableFloat32" : true,
+          "name" : "TextEncoder2",
+          "negativeEmptyPaddedIDs" : [
+            49406,
+            49407,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "negativeEmptyPaddedTokens" : [
+            "<|startoftext|>",
+            "<|endoftext|>",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!"
+          ],
+          "paddedIDs" : [
+            49406,
+            320,
+            1746,
+            20431,
+            10127,
+            789,
+            320,
+            19873,
+            6648,
+            593,
+            320,
+            3878,
+            12199,
+            525,
+            518,
+            33728,
+            269,
+            49407,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "paddedTokens" : [
+            "<|startoftext|>",
+            "a<\/w>",
+            "blue<\/w>",
+            "vase<\/w>",
+            "shaped<\/w>",
+            "like<\/w>",
+            "a<\/w>",
+            "spiral<\/w>",
+            "shell<\/w>",
+            "with<\/w>",
+            "a<\/w>",
+            "golden<\/w>",
+            "rim<\/w>",
+            "on<\/w>",
+            "the<\/w>",
+            "opening",
+            ".<\/w>",
+            "<|endoftext|>",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!"
+          ],
+          "padID" : 0,
+          "padToken" : "!",
+          "unknownPieces" : [
+
+          ],
+          "unpaddedCount" : 18,
+          "unpaddedIDs" : [
+            49406,
+            320,
+            1746,
+            20431,
+            10127,
+            789,
+            320,
+            19873,
+            6648,
+            593,
+            320,
+            3878,
+            12199,
+            525,
+            518,
+            33728,
+            269,
+            49407
+          ],
+          "unpaddedTokens" : [
+            "<|startoftext|>",
+            "a<\/w>",
+            "blue<\/w>",
+            "vase<\/w>",
+            "shaped<\/w>",
+            "like<\/w>",
+            "a<\/w>",
+            "spiral<\/w>",
+            "shell<\/w>",
+            "with<\/w>",
+            "a<\/w>",
+            "golden<\/w>",
+            "rim<\/w>",
+            "on<\/w>",
+            "the<\/w>",
+            "opening",
+            ".<\/w>",
+            "<|endoftext|>"
+          ],
+          "wordPieces" : [
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                1746
+              ],
+              "pieces" : [
+                "blue<\/w>"
+              ],
+              "word" : "blue"
+            },
+            {
+              "ids" : [
+                20431
+              ],
+              "pieces" : [
+                "vase<\/w>"
+              ],
+              "word" : "vase"
+            },
+            {
+              "ids" : [
+                10127
+              ],
+              "pieces" : [
+                "shaped<\/w>"
+              ],
+              "word" : "shaped"
+            },
+            {
+              "ids" : [
+                789
+              ],
+              "pieces" : [
+                "like<\/w>"
+              ],
+              "word" : "like"
+            },
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                19873
+              ],
+              "pieces" : [
+                "spiral<\/w>"
+              ],
+              "word" : "spiral"
+            },
+            {
+              "ids" : [
+                6648
+              ],
+              "pieces" : [
+                "shell<\/w>"
+              ],
+              "word" : "shell"
+            },
+            {
+              "ids" : [
+                593
+              ],
+              "pieces" : [
+                "with<\/w>"
+              ],
+              "word" : "with"
+            },
+            {
+              "ids" : [
+                320
+              ],
+              "pieces" : [
+                "a<\/w>"
+              ],
+              "word" : "a"
+            },
+            {
+              "ids" : [
+                3878
+              ],
+              "pieces" : [
+                "golden<\/w>"
+              ],
+              "word" : "golden"
+            },
+            {
+              "ids" : [
+                12199
+              ],
+              "pieces" : [
+                "rim<\/w>"
+              ],
+              "word" : "rim"
+            },
+            {
+              "ids" : [
+                525
+              ],
+              "pieces" : [
+                "on<\/w>"
+              ],
+              "word" : "on"
+            },
+            {
+              "ids" : [
+                518
+              ],
+              "pieces" : [
+                "the<\/w>"
+              ],
+              "word" : "the"
+            },
+            {
+              "ids" : [
+                33728,
+                269
+              ],
+              "pieces" : [
+                "opening",
+                ".<\/w>"
+              ],
+              "word" : "opening."
+            }
+          ]
+        }
+      ],
+      "input" : "A blue vase shaped like a spiral shell with a golden rim on the opening."
+    }
+  ],
+  "scope" : "CPU execution of unchanged production Swift tokenizer only; no MLModel or CLIP NN invoked"
+}

@@ -147,31 +147,29 @@ public struct DiTPlain: ShapeDenoiser {
 
     /// A diffusers `FeedForward(activation_fn: "gelu")`: `net.0.proj` → GELU →
     /// `net.2`. Used for both the routed experts and the shared expert.
-    private func expertFeedForward(_ x: MLXArray, _ p: String) -> MLXArray {
+    func expertFeedForward(_ x: MLXArray, _ p: String,
+                                   check: () throws -> Void) rethrows -> MLXArray {
+        try check()
         guard let chunkSize = moeTokenChunkSize,
               x.ndim == 2,
               x.dim(0) > chunkSize else {
-            return lin(
+            let output = lin(
                 Layers.geluErf(lin(x, "\(p).net.0.proj")),
                 "\(p).net.2"
             )
+            try check()
+            return output
         }
-        var chunks = [MLXArray]()
-        chunks.reserveCapacity((x.dim(0) + chunkSize - 1) / chunkSize)
-        var start = 0
-        while start < x.dim(0) {
-            let end = Swift.min(start + chunkSize, x.dim(0))
+        let chunks = try ShapeCheckedLoop.chunks(rowCount: x.dim(0), chunkSize: chunkSize, check: check, make: { range in
             let output = lin(
                 Layers.geluErf(
-                    lin(x[start ..< end], "\(p).net.0.proj")
+                    lin(x[range], "\(p).net.0.proj")
                 ),
                 "\(p).net.2"
             )
             eval(output)
-            chunks.append(output)
-            MLX.Memory.clearCache()
-            start = end
-        }
+            return output
+        }, afterAppend: { MLX.Memory.clearCache() })
         return concatenated(chunks, axis: 0)
     }
 
@@ -182,7 +180,8 @@ public struct DiTPlain: ShapeDenoiser {
     /// gated sparse strategy buckets the router's selected tokens on the host
     /// and runs batched expert matrices; production remains on this reference
     /// path until the sparse candidate passes the same geometry fixtures.
-    private func moe(_ x: MLXArray, _ p: String) -> MLXArray {
+    private func moe(_ x: MLXArray, _ p: String, check: () throws -> Void) rethrows -> MLXArray {
+        try check()
         let channels = x.dim(-1)
         let flat = x.reshaped([-1, channels])
         let gateWeight = g("\(p).gate.weight").asType(.float32)
@@ -194,12 +193,13 @@ public struct DiTPlain: ShapeDenoiser {
         let order = argPartition(-scores, kth: moeTopK - 1, axis: -1)
         let chosen = split(order, indices: [moeTopK], axis: -1)[0]
         if usesSparseMoERouting {
-            return sparseMoE(
+            return try sparseMoE(
                 originalShape: x.shape,
                 flat: flat,
                 scores: scores,
                 chosen: chosen,
-                prefix: p
+                prefix: p,
+                check: check
             )
         }
         let threshold = takeAlong(scores, chosen, axis: -1)
@@ -208,14 +208,16 @@ public struct DiTPlain: ShapeDenoiser {
         let perExpert = split(routing, parts: numExperts, axis: -1)
 
         var routed: MLXArray?
-        for expert in 0 ..< numExperts {
-            let term = expertFeedForward(flat, "\(p).experts.\(expert)")
+        try ShapeCheckedLoop.forEach(0 ..< numExperts, check: check) { expert in
+            let term = try expertFeedForward(flat, "\(p).experts.\(expert)", check: check)
                 * perExpert[expert].asType(flat.dtype)
             if moeTokenChunkSize != nil {
                 eval(term)
+                try check()
                 if let current = routed {
                     let accumulated = current + term
                     eval(accumulated)
+                    try check()
                     routed = accumulated
                 } else {
                     routed = term
@@ -225,7 +227,7 @@ public struct DiTPlain: ShapeDenoiser {
                 routed = routed.map { $0 + term } ?? term
             }
         }
-        let shared = expertFeedForward(flat, "\(p).shared_experts")
+        let shared = try expertFeedForward(flat, "\(p).shared_experts", check: check)
         let out = routed.map { $0 + shared } ?? shared
         return out.reshaped(x.shape)
     }
@@ -240,15 +242,19 @@ public struct DiTPlain: ShapeDenoiser {
         flat: MLXArray,
         scores: MLXArray,
         chosen: MLXArray,
-        prefix p: String
-    ) -> MLXArray {
+        prefix p: String,
+        check: () throws -> Void
+    ) rethrows -> MLXArray {
+        try check()
         let tokenCount = flat.dim(0)
         let channels = flat.dim(1)
         let hostChoices = chosen.asType(.int32)
         eval(hostChoices)
+        try check()
         let choices = hostChoices.asArray(Int32.self)
         var buckets = [[Int32]](repeating: [], count: numExperts)
         for token in 0 ..< tokenCount {
+            if token.isMultiple(of: 512) { try check() }
             for rank in 0 ..< moeTopK {
                 let expert = Int(choices[token * moeTopK + rank])
                 if buckets.indices.contains(expert) {
@@ -261,7 +267,7 @@ public struct DiTPlain: ShapeDenoiser {
             [tokenCount, channels],
             dtype: flat.dtype
         )
-        for expert in 0 ..< numExperts where !buckets[expert].isEmpty {
+        try ShapeCheckedLoop.forEach((0 ..< numExperts).filter { !buckets[$0].isEmpty }, check: check) { expert in
             let indices = MLXArray(buckets[expert])
             let selected = flat.take(indices, axis: 0)
             let expertScores = split(
@@ -269,11 +275,13 @@ public struct DiTPlain: ShapeDenoiser {
                 parts: numExperts,
                 axis: -1
             )[expert]
-            let values = expertFeedForward(
+            let values = try expertFeedForward(
                 selected,
-                "\(p).experts.\(expert)"
+                "\(p).experts.\(expert)",
+                check: check
             ) * expertScores.asType(flat.dtype)
             eval(values)
+            try check()
             let rowIndices = broadcast(
                 indices.expandedDimensions(axis: 1),
                 to: [indices.dim(0), channels]
@@ -289,10 +297,11 @@ public struct DiTPlain: ShapeDenoiser {
             )
             let accumulated = routed + dense
             eval(accumulated)
+            try check()
             routed = accumulated
             MLX.Memory.clearCache()
         }
-        let shared = expertFeedForward(flat, "\(p).shared_experts")
+        let shared = try expertFeedForward(flat, "\(p).shared_experts", check: check)
         let output = routed + shared
         return output.reshaped(originalShape)
     }
@@ -303,8 +312,10 @@ public struct DiTPlain: ShapeDenoiser {
         _ input: MLXArray,
         skip: MLXArray?,
         cond: MLXArray,
-        _ i: Int
-    ) -> MLXArray {
+        _ i: Int,
+        check: () throws -> Void
+    ) rethrows -> MLXArray {
+        try check()
         let p = "blocks.\(i)"
         var x = input
         if let skip {
@@ -316,7 +327,9 @@ public struct DiTPlain: ShapeDenoiser {
         x = x + attention(ln(x, "\(p).norm1"), "\(p).attn1")
         x = x + crossAttention(ln(x, "\(p).norm2"), cond, "\(p).attn2")
         let h = ln(x, "\(p).norm3")
-        return x + (usesMoE(i) ? moe(h, "\(p).moe") : mlp(h, "\(p).mlp"))
+        let value = try usesMoE(i) ? moe(h, "\(p).moe", check: check) : mlp(h, "\(p).mlp")
+        try check()
+        return x + value
     }
 
     public func callAsFunction(
@@ -325,6 +338,17 @@ public struct DiTPlain: ShapeDenoiser {
         _ cond: MLXArray,
         guidance: MLXArray? = nil
     ) -> MLXArray {
+        forward(x, t, cond, guidance: guidance, check: {})
+    }
+
+    public func forwardCancellable(_ x: MLXArray, _ t: MLXArray, _ cond: MLXArray,
+                                   guidance: MLXArray?, isCancelled: () -> Bool) throws -> MLXArray {
+        try forward(x, t, cond, guidance: guidance, check: { try ShapeCheckedLoop.check(isCancelled) })
+    }
+
+    private func forward(_ x: MLXArray, _ t: MLXArray, _ cond: MLXArray,
+                         guidance: MLXArray?, check: () throws -> Void) rethrows -> MLXArray {
+        try check()
         // Upstream casts the fp32 frequency embedding to the weight dtype before
         // the MLP. Bias tensors stay unquantized, so they carry the dtype even
         // for a Q4/Q8 pack.
@@ -338,12 +362,15 @@ public struct DiTPlain: ShapeDenoiser {
         skips.reserveCapacity(depth / 2)
         for i in 0 ..< depth {
             let skip = i > depth / 2 ? skips.removeLast() : nil
-            h = block(h, skip: skip, cond: cond, i)
+            h = try block(h, skip: skip, cond: cond, i, check: check)
             if i < depth / 2 { skips.append(h) }
+            try check()
         }
 
         h = ln(h, "final_layer.norm_final")
         h = split(h, indices: [1], axis: 1)[1]                  // drop the time token
-        return lin(h, "final_layer.linear")
+        let result = lin(h, "final_layer.linear")
+        try check()
+        return result
     }
 }

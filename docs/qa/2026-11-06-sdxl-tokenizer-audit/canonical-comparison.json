@@ -1,0 +1,4145 @@
+{
+  "scope": "CPU tokenization, not CLIP neural prediction/inference; production not changed",
+  "officialCode": "OpenAI/CLIP simple_tokenizer.py; exact downloaded SHA in sources.json",
+  "actualAppleSDXLVocabReconstructedExactlyFromOfficialCLIPBPE": true,
+  "ASCIIftfyIdentityCondition": true,
+  "mergesCount": 48894,
+  "vocabCount": 49408,
+  "cases": [
+    {
+      "caseID": "lamp",
+      "input": "A desk lamp with a red cone-shaped shade, a gray cylindrical base, a thin cylindrical stem, and a spherical bulb, all resting on a flat surface at height Y=0, with an overall height of approximately 0.8 meters.",
+      "encoders": [
+        {
+          "name": "TextEncoder",
+          "padID": 49407,
+          "canonicalUnpaddedIDs": [
+            49406,
+            320,
+            6550,
+            10725,
+            593,
+            320,
+            736,
+            10266,
+            268,
+            10127,
+            10097,
+            267,
+            320,
+            7048,
+            1470,
+            6492,
+            18109,
+            4579,
+            267,
+            320,
+            7847,
+            1470,
+            6492,
+            18109,
+            6761,
+            267,
+            537,
+            320,
+            18349,
+            1110,
+            22373,
+            267,
+            615,
+            18044,
+            525,
+            320,
+            6313,
+            7744,
+            536,
+            10788,
+            344,
+            284,
+            271,
+            267,
+            593,
+            550,
+            6914,
+            10788,
+            539,
+            16128,
+            271,
+            269,
+            279,
+            13247,
+            269,
+            49407
+          ],
+          "canonicalUnpaddedTokens": [
+            "<|startoftext|>",
+            "a</w>",
+            "desk</w>",
+            "lamp</w>",
+            "with</w>",
+            "a</w>",
+            "red</w>",
+            "cone</w>",
+            "-</w>",
+            "shaped</w>",
+            "shade</w>",
+            ",</w>",
+            "a</w>",
+            "gray</w>",
+            "cy",
+            "lind",
+            "rical</w>",
+            "base</w>",
+            ",</w>",
+            "a</w>",
+            "thin</w>",
+            "cy",
+            "lind",
+            "rical</w>",
+            "stem</w>",
+            ",</w>",
+            "and</w>",
+            "a</w>",
+            "spher",
+            "ical</w>",
+            "bulb</w>",
+            ",</w>",
+            "all</w>",
+            "resting</w>",
+            "on</w>",
+            "a</w>",
+            "flat</w>",
+            "surface</w>",
+            "at</w>",
+            "height</w>",
+            "y</w>",
+            "=</w>",
+            "0</w>",
+            ",</w>",
+            "with</w>",
+            "an</w>",
+            "overall</w>",
+            "height</w>",
+            "of</w>",
+            "approximately</w>",
+            "0</w>",
+            ".</w>",
+            "8</w>",
+            "meters</w>",
+            ".</w>",
+            "<|endoftext|>"
+          ],
+          "canonicalPaddedIDs": [
+            49406,
+            320,
+            6550,
+            10725,
+            593,
+            320,
+            736,
+            10266,
+            268,
+            10127,
+            10097,
+            267,
+            320,
+            7048,
+            1470,
+            6492,
+            18109,
+            4579,
+            267,
+            320,
+            7847,
+            1470,
+            6492,
+            18109,
+            6761,
+            267,
+            537,
+            320,
+            18349,
+            1110,
+            22373,
+            267,
+            615,
+            18044,
+            525,
+            320,
+            6313,
+            7744,
+            536,
+            10788,
+            344,
+            284,
+            271,
+            267,
+            593,
+            550,
+            6914,
+            10788,
+            539,
+            16128,
+            271,
+            269,
+            279,
+            13247,
+            269,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407
+          ],
+          "canonicalPaddedTokens": [
+            "<|startoftext|>",
+            "a</w>",
+            "desk</w>",
+            "lamp</w>",
+            "with</w>",
+            "a</w>",
+            "red</w>",
+            "cone</w>",
+            "-</w>",
+            "shaped</w>",
+            "shade</w>",
+            ",</w>",
+            "a</w>",
+            "gray</w>",
+            "cy",
+            "lind",
+            "rical</w>",
+            "base</w>",
+            ",</w>",
+            "a</w>",
+            "thin</w>",
+            "cy",
+            "lind",
+            "rical</w>",
+            "stem</w>",
+            ",</w>",
+            "and</w>",
+            "a</w>",
+            "spher",
+            "ical</w>",
+            "bulb</w>",
+            ",</w>",
+            "all</w>",
+            "resting</w>",
+            "on</w>",
+            "a</w>",
+            "flat</w>",
+            "surface</w>",
+            "at</w>",
+            "height</w>",
+            "y</w>",
+            "=</w>",
+            "0</w>",
+            ",</w>",
+            "with</w>",
+            "an</w>",
+            "overall</w>",
+            "height</w>",
+            "of</w>",
+            "approximately</w>",
+            "0</w>",
+            ".</w>",
+            "8</w>",
+            "meters</w>",
+            ".</w>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>"
+          ],
+          "nativeNegativeEmptyPaddedIDs": [
+            49406,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407
+          ],
+          "canonicalNegativeEmptyPaddedIDs": [
+            49406,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407
+          ],
+          "negativeEmptyIDsMatchCanonical": true,
+          "nativeUnpaddedIDs": [
+            49406,
+            320,
+            6550,
+            10725,
+            593,
+            320,
+            736,
+            39279,
+            12,
+            10127,
+            34554,
+            267,
+            320,
+            7048,
+            1470,
+            6492,
+            18109,
+            2776,
+            267,
+            320,
+            7847,
+            1470,
+            6492,
+            18109,
+            24342,
+            267,
+            537,
+            320,
+            18349,
+            1110,
+            2572,
+            65,
+            267,
+            615,
+            18044,
+            525,
+            320,
+            6313,
+            7744,
+            536,
+            10788,
+            88,
+            28,
+            15,
+            267,
+            593,
+            550,
+            6914,
+            10788,
+            539,
+            16128,
+            15,
+            13,
+            279,
+            613,
+            24102,
+            269,
+            49407
+          ],
+          "nativeUnpaddedTokens": [
+            "<|startoftext|>",
+            "a</w>",
+            "desk</w>",
+            "lamp</w>",
+            "with</w>",
+            "a</w>",
+            "red</w>",
+            "cone",
+            "-",
+            "shaped</w>",
+            "shade",
+            ",</w>",
+            "a</w>",
+            "gray</w>",
+            "cy",
+            "lind",
+            "rical</w>",
+            "base",
+            ",</w>",
+            "a</w>",
+            "thin</w>",
+            "cy",
+            "lind",
+            "rical</w>",
+            "stem",
+            ",</w>",
+            "and</w>",
+            "a</w>",
+            "spher",
+            "ical</w>",
+            "bul",
+            "b",
+            ",</w>",
+            "all</w>",
+            "resting</w>",
+            "on</w>",
+            "a</w>",
+            "flat</w>",
+            "surface</w>",
+            "at</w>",
+            "height</w>",
+            "y",
+            "=",
+            "0",
+            ",</w>",
+            "with</w>",
+            "an</w>",
+            "overall</w>",
+            "height</w>",
+            "of</w>",
+            "approximately</w>",
+            "0",
+            ".",
+            "8</w>",
+            "me",
+            "ters",
+            ".</w>",
+            "<|endoftext|>"
+          ],
+          "nativePaddedIDs": [
+            49406,
+            320,
+            6550,
+            10725,
+            593,
+            320,
+            736,
+            39279,
+            12,
+            10127,
+            34554,
+            267,
+            320,
+            7048,
+            1470,
+            6492,
+            18109,
+            2776,
+            267,
+            320,
+            7847,
+            1470,
+            6492,
+            18109,
+            24342,
+            267,
+            537,
+            320,
+            18349,
+            1110,
+            2572,
+            65,
+            267,
+            615,
+            18044,
+            525,
+            320,
+            6313,
+            7744,
+            536,
+            10788,
+            88,
+            28,
+            15,
+            267,
+            593,
+            550,
+            6914,
+            10788,
+            539,
+            16128,
+            15,
+            13,
+            279,
+            613,
+            24102,
+            269,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407
+          ],
+          "nativePaddedTokens": [
+            "<|startoftext|>",
+            "a</w>",
+            "desk</w>",
+            "lamp</w>",
+            "with</w>",
+            "a</w>",
+            "red</w>",
+            "cone",
+            "-",
+            "shaped</w>",
+            "shade",
+            ",</w>",
+            "a</w>",
+            "gray</w>",
+            "cy",
+            "lind",
+            "rical</w>",
+            "base",
+            ",</w>",
+            "a</w>",
+            "thin</w>",
+            "cy",
+            "lind",
+            "rical</w>",
+            "stem",
+            ",</w>",
+            "and</w>",
+            "a</w>",
+            "spher",
+            "ical</w>",
+            "bul",
+            "b",
+            ",</w>",
+            "all</w>",
+            "resting</w>",
+            "on</w>",
+            "a</w>",
+            "flat</w>",
+            "surface</w>",
+            "at</w>",
+            "height</w>",
+            "y",
+            "=",
+            "0",
+            ",</w>",
+            "with</w>",
+            "an</w>",
+            "overall</w>",
+            "height</w>",
+            "of</w>",
+            "approximately</w>",
+            "0",
+            ".",
+            "8</w>",
+            "me",
+            "ters",
+            ".</w>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>"
+          ],
+          "canonicalCount": 56,
+          "nativeCount": 58,
+          "sameIDs": false,
+          "positionDifferences": [
+            {
+              "index": 7,
+              "nativeID": 39279,
+              "canonicalID": 10266,
+              "nativeToken": "cone",
+              "canonicalToken": "cone</w>"
+            },
+            {
+              "index": 8,
+              "nativeID": 12,
+              "canonicalID": 268,
+              "nativeToken": "-",
+              "canonicalToken": "-</w>"
+            },
+            {
+              "index": 10,
+              "nativeID": 34554,
+              "canonicalID": 10097,
+              "nativeToken": "shade",
+              "canonicalToken": "shade</w>"
+            },
+            {
+              "index": 17,
+              "nativeID": 2776,
+              "canonicalID": 4579,
+              "nativeToken": "base",
+              "canonicalToken": "base</w>"
+            },
+            {
+              "index": 24,
+              "nativeID": 24342,
+              "canonicalID": 6761,
+              "nativeToken": "stem",
+              "canonicalToken": "stem</w>"
+            },
+            {
+              "index": 30,
+              "nativeID": 2572,
+              "canonicalID": 22373,
+              "nativeToken": "bul",
+              "canonicalToken": "bulb</w>"
+            },
+            {
+              "index": 31,
+              "nativeID": 65,
+              "canonicalID": 267,
+              "nativeToken": "b",
+              "canonicalToken": ",</w>"
+            },
+            {
+              "index": 32,
+              "nativeID": 267,
+              "canonicalID": 615,
+              "nativeToken": ",</w>",
+              "canonicalToken": "all</w>"
+            },
+            {
+              "index": 33,
+              "nativeID": 615,
+              "canonicalID": 18044,
+              "nativeToken": "all</w>",
+              "canonicalToken": "resting</w>"
+            },
+            {
+              "index": 34,
+              "nativeID": 18044,
+              "canonicalID": 525,
+              "nativeToken": "resting</w>",
+              "canonicalToken": "on</w>"
+            },
+            {
+              "index": 35,
+              "nativeID": 525,
+              "canonicalID": 320,
+              "nativeToken": "on</w>",
+              "canonicalToken": "a</w>"
+            },
+            {
+              "index": 36,
+              "nativeID": 320,
+              "canonicalID": 6313,
+              "nativeToken": "a</w>",
+              "canonicalToken": "flat</w>"
+            },
+            {
+              "index": 37,
+              "nativeID": 6313,
+              "canonicalID": 7744,
+              "nativeToken": "flat</w>",
+              "canonicalToken": "surface</w>"
+            },
+            {
+              "index": 38,
+              "nativeID": 7744,
+              "canonicalID": 536,
+              "nativeToken": "surface</w>",
+              "canonicalToken": "at</w>"
+            },
+            {
+              "index": 39,
+              "nativeID": 536,
+              "canonicalID": 10788,
+              "nativeToken": "at</w>",
+              "canonicalToken": "height</w>"
+            },
+            {
+              "index": 40,
+              "nativeID": 10788,
+              "canonicalID": 344,
+              "nativeToken": "height</w>",
+              "canonicalToken": "y</w>"
+            },
+            {
+              "index": 41,
+              "nativeID": 88,
+              "canonicalID": 284,
+              "nativeToken": "y",
+              "canonicalToken": "=</w>"
+            },
+            {
+              "index": 42,
+              "nativeID": 28,
+              "canonicalID": 271,
+              "nativeToken": "=",
+              "canonicalToken": "0</w>"
+            },
+            {
+              "index": 43,
+              "nativeID": 15,
+              "canonicalID": 267,
+              "nativeToken": "0",
+              "canonicalToken": ",</w>"
+            },
+            {
+              "index": 44,
+              "nativeID": 267,
+              "canonicalID": 593,
+              "nativeToken": ",</w>",
+              "canonicalToken": "with</w>"
+            },
+            {
+              "index": 45,
+              "nativeID": 593,
+              "canonicalID": 550,
+              "nativeToken": "with</w>",
+              "canonicalToken": "an</w>"
+            },
+            {
+              "index": 46,
+              "nativeID": 550,
+              "canonicalID": 6914,
+              "nativeToken": "an</w>",
+              "canonicalToken": "overall</w>"
+            },
+            {
+              "index": 47,
+              "nativeID": 6914,
+              "canonicalID": 10788,
+              "nativeToken": "overall</w>",
+              "canonicalToken": "height</w>"
+            },
+            {
+              "index": 48,
+              "nativeID": 10788,
+              "canonicalID": 539,
+              "nativeToken": "height</w>",
+              "canonicalToken": "of</w>"
+            },
+            {
+              "index": 49,
+              "nativeID": 539,
+              "canonicalID": 16128,
+              "nativeToken": "of</w>",
+              "canonicalToken": "approximately</w>"
+            },
+            {
+              "index": 50,
+              "nativeID": 16128,
+              "canonicalID": 271,
+              "nativeToken": "approximately</w>",
+              "canonicalToken": "0</w>"
+            },
+            {
+              "index": 51,
+              "nativeID": 15,
+              "canonicalID": 269,
+              "nativeToken": "0",
+              "canonicalToken": ".</w>"
+            },
+            {
+              "index": 52,
+              "nativeID": 13,
+              "canonicalID": 279,
+              "nativeToken": ".",
+              "canonicalToken": "8</w>"
+            },
+            {
+              "index": 53,
+              "nativeID": 279,
+              "canonicalID": 13247,
+              "nativeToken": "8</w>",
+              "canonicalToken": "meters</w>"
+            },
+            {
+              "index": 54,
+              "nativeID": 613,
+              "canonicalID": 269,
+              "nativeToken": "me",
+              "canonicalToken": ".</w>"
+            },
+            {
+              "index": 55,
+              "nativeID": 24102,
+              "canonicalID": 49407,
+              "nativeToken": "ters",
+              "canonicalToken": "<|endoftext|>"
+            },
+            {
+              "index": 56,
+              "nativeID": 269,
+              "canonicalID": 49407,
+              "nativeToken": ".</w>",
+              "canonicalToken": "<|endoftext|>"
+            }
+          ]
+        },
+        {
+          "name": "TextEncoder2",
+          "padID": 0,
+          "canonicalUnpaddedIDs": [
+            49406,
+            320,
+            6550,
+            10725,
+            593,
+            320,
+            736,
+            10266,
+            268,
+            10127,
+            10097,
+            267,
+            320,
+            7048,
+            1470,
+            6492,
+            18109,
+            4579,
+            267,
+            320,
+            7847,
+            1470,
+            6492,
+            18109,
+            6761,
+            267,
+            537,
+            320,
+            18349,
+            1110,
+            22373,
+            267,
+            615,
+            18044,
+            525,
+            320,
+            6313,
+            7744,
+            536,
+            10788,
+            344,
+            284,
+            271,
+            267,
+            593,
+            550,
+            6914,
+            10788,
+            539,
+            16128,
+            271,
+            269,
+            279,
+            13247,
+            269,
+            49407
+          ],
+          "canonicalUnpaddedTokens": [
+            "<|startoftext|>",
+            "a</w>",
+            "desk</w>",
+            "lamp</w>",
+            "with</w>",
+            "a</w>",
+            "red</w>",
+            "cone</w>",
+            "-</w>",
+            "shaped</w>",
+            "shade</w>",
+            ",</w>",
+            "a</w>",
+            "gray</w>",
+            "cy",
+            "lind",
+            "rical</w>",
+            "base</w>",
+            ",</w>",
+            "a</w>",
+            "thin</w>",
+            "cy",
+            "lind",
+            "rical</w>",
+            "stem</w>",
+            ",</w>",
+            "and</w>",
+            "a</w>",
+            "spher",
+            "ical</w>",
+            "bulb</w>",
+            ",</w>",
+            "all</w>",
+            "resting</w>",
+            "on</w>",
+            "a</w>",
+            "flat</w>",
+            "surface</w>",
+            "at</w>",
+            "height</w>",
+            "y</w>",
+            "=</w>",
+            "0</w>",
+            ",</w>",
+            "with</w>",
+            "an</w>",
+            "overall</w>",
+            "height</w>",
+            "of</w>",
+            "approximately</w>",
+            "0</w>",
+            ".</w>",
+            "8</w>",
+            "meters</w>",
+            ".</w>",
+            "<|endoftext|>"
+          ],
+          "canonicalPaddedIDs": [
+            49406,
+            320,
+            6550,
+            10725,
+            593,
+            320,
+            736,
+            10266,
+            268,
+            10127,
+            10097,
+            267,
+            320,
+            7048,
+            1470,
+            6492,
+            18109,
+            4579,
+            267,
+            320,
+            7847,
+            1470,
+            6492,
+            18109,
+            6761,
+            267,
+            537,
+            320,
+            18349,
+            1110,
+            22373,
+            267,
+            615,
+            18044,
+            525,
+            320,
+            6313,
+            7744,
+            536,
+            10788,
+            344,
+            284,
+            271,
+            267,
+            593,
+            550,
+            6914,
+            10788,
+            539,
+            16128,
+            271,
+            269,
+            279,
+            13247,
+            269,
+            49407,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "canonicalPaddedTokens": [
+            "<|startoftext|>",
+            "a</w>",
+            "desk</w>",
+            "lamp</w>",
+            "with</w>",
+            "a</w>",
+            "red</w>",
+            "cone</w>",
+            "-</w>",
+            "shaped</w>",
+            "shade</w>",
+            ",</w>",
+            "a</w>",
+            "gray</w>",
+            "cy",
+            "lind",
+            "rical</w>",
+            "base</w>",
+            ",</w>",
+            "a</w>",
+            "thin</w>",
+            "cy",
+            "lind",
+            "rical</w>",
+            "stem</w>",
+            ",</w>",
+            "and</w>",
+            "a</w>",
+            "spher",
+            "ical</w>",
+            "bulb</w>",
+            ",</w>",
+            "all</w>",
+            "resting</w>",
+            "on</w>",
+            "a</w>",
+            "flat</w>",
+            "surface</w>",
+            "at</w>",
+            "height</w>",
+            "y</w>",
+            "=</w>",
+            "0</w>",
+            ",</w>",
+            "with</w>",
+            "an</w>",
+            "overall</w>",
+            "height</w>",
+            "of</w>",
+            "approximately</w>",
+            "0</w>",
+            ".</w>",
+            "8</w>",
+            "meters</w>",
+            ".</w>",
+            "<|endoftext|>",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!"
+          ],
+          "nativeNegativeEmptyPaddedIDs": [
+            49406,
+            49407,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "canonicalNegativeEmptyPaddedIDs": [
+            49406,
+            49407,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "negativeEmptyIDsMatchCanonical": true,
+          "nativeUnpaddedIDs": [
+            49406,
+            320,
+            6550,
+            10725,
+            593,
+            320,
+            736,
+            39279,
+            12,
+            10127,
+            34554,
+            267,
+            320,
+            7048,
+            1470,
+            6492,
+            18109,
+            2776,
+            267,
+            320,
+            7847,
+            1470,
+            6492,
+            18109,
+            24342,
+            267,
+            537,
+            320,
+            18349,
+            1110,
+            2572,
+            65,
+            267,
+            615,
+            18044,
+            525,
+            320,
+            6313,
+            7744,
+            536,
+            10788,
+            88,
+            28,
+            15,
+            267,
+            593,
+            550,
+            6914,
+            10788,
+            539,
+            16128,
+            15,
+            13,
+            279,
+            613,
+            24102,
+            269,
+            49407
+          ],
+          "nativeUnpaddedTokens": [
+            "<|startoftext|>",
+            "a</w>",
+            "desk</w>",
+            "lamp</w>",
+            "with</w>",
+            "a</w>",
+            "red</w>",
+            "cone",
+            "-",
+            "shaped</w>",
+            "shade",
+            ",</w>",
+            "a</w>",
+            "gray</w>",
+            "cy",
+            "lind",
+            "rical</w>",
+            "base",
+            ",</w>",
+            "a</w>",
+            "thin</w>",
+            "cy",
+            "lind",
+            "rical</w>",
+            "stem",
+            ",</w>",
+            "and</w>",
+            "a</w>",
+            "spher",
+            "ical</w>",
+            "bul",
+            "b",
+            ",</w>",
+            "all</w>",
+            "resting</w>",
+            "on</w>",
+            "a</w>",
+            "flat</w>",
+            "surface</w>",
+            "at</w>",
+            "height</w>",
+            "y",
+            "=",
+            "0",
+            ",</w>",
+            "with</w>",
+            "an</w>",
+            "overall</w>",
+            "height</w>",
+            "of</w>",
+            "approximately</w>",
+            "0",
+            ".",
+            "8</w>",
+            "me",
+            "ters",
+            ".</w>",
+            "<|endoftext|>"
+          ],
+          "nativePaddedIDs": [
+            49406,
+            320,
+            6550,
+            10725,
+            593,
+            320,
+            736,
+            39279,
+            12,
+            10127,
+            34554,
+            267,
+            320,
+            7048,
+            1470,
+            6492,
+            18109,
+            2776,
+            267,
+            320,
+            7847,
+            1470,
+            6492,
+            18109,
+            24342,
+            267,
+            537,
+            320,
+            18349,
+            1110,
+            2572,
+            65,
+            267,
+            615,
+            18044,
+            525,
+            320,
+            6313,
+            7744,
+            536,
+            10788,
+            88,
+            28,
+            15,
+            267,
+            593,
+            550,
+            6914,
+            10788,
+            539,
+            16128,
+            15,
+            13,
+            279,
+            613,
+            24102,
+            269,
+            49407,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nativePaddedTokens": [
+            "<|startoftext|>",
+            "a</w>",
+            "desk</w>",
+            "lamp</w>",
+            "with</w>",
+            "a</w>",
+            "red</w>",
+            "cone",
+            "-",
+            "shaped</w>",
+            "shade",
+            ",</w>",
+            "a</w>",
+            "gray</w>",
+            "cy",
+            "lind",
+            "rical</w>",
+            "base",
+            ",</w>",
+            "a</w>",
+            "thin</w>",
+            "cy",
+            "lind",
+            "rical</w>",
+            "stem",
+            ",</w>",
+            "and</w>",
+            "a</w>",
+            "spher",
+            "ical</w>",
+            "bul",
+            "b",
+            ",</w>",
+            "all</w>",
+            "resting</w>",
+            "on</w>",
+            "a</w>",
+            "flat</w>",
+            "surface</w>",
+            "at</w>",
+            "height</w>",
+            "y",
+            "=",
+            "0",
+            ",</w>",
+            "with</w>",
+            "an</w>",
+            "overall</w>",
+            "height</w>",
+            "of</w>",
+            "approximately</w>",
+            "0",
+            ".",
+            "8</w>",
+            "me",
+            "ters",
+            ".</w>",
+            "<|endoftext|>",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!"
+          ],
+          "canonicalCount": 56,
+          "nativeCount": 58,
+          "sameIDs": false,
+          "positionDifferences": [
+            {
+              "index": 7,
+              "nativeID": 39279,
+              "canonicalID": 10266,
+              "nativeToken": "cone",
+              "canonicalToken": "cone</w>"
+            },
+            {
+              "index": 8,
+              "nativeID": 12,
+              "canonicalID": 268,
+              "nativeToken": "-",
+              "canonicalToken": "-</w>"
+            },
+            {
+              "index": 10,
+              "nativeID": 34554,
+              "canonicalID": 10097,
+              "nativeToken": "shade",
+              "canonicalToken": "shade</w>"
+            },
+            {
+              "index": 17,
+              "nativeID": 2776,
+              "canonicalID": 4579,
+              "nativeToken": "base",
+              "canonicalToken": "base</w>"
+            },
+            {
+              "index": 24,
+              "nativeID": 24342,
+              "canonicalID": 6761,
+              "nativeToken": "stem",
+              "canonicalToken": "stem</w>"
+            },
+            {
+              "index": 30,
+              "nativeID": 2572,
+              "canonicalID": 22373,
+              "nativeToken": "bul",
+              "canonicalToken": "bulb</w>"
+            },
+            {
+              "index": 31,
+              "nativeID": 65,
+              "canonicalID": 267,
+              "nativeToken": "b",
+              "canonicalToken": ",</w>"
+            },
+            {
+              "index": 32,
+              "nativeID": 267,
+              "canonicalID": 615,
+              "nativeToken": ",</w>",
+              "canonicalToken": "all</w>"
+            },
+            {
+              "index": 33,
+              "nativeID": 615,
+              "canonicalID": 18044,
+              "nativeToken": "all</w>",
+              "canonicalToken": "resting</w>"
+            },
+            {
+              "index": 34,
+              "nativeID": 18044,
+              "canonicalID": 525,
+              "nativeToken": "resting</w>",
+              "canonicalToken": "on</w>"
+            },
+            {
+              "index": 35,
+              "nativeID": 525,
+              "canonicalID": 320,
+              "nativeToken": "on</w>",
+              "canonicalToken": "a</w>"
+            },
+            {
+              "index": 36,
+              "nativeID": 320,
+              "canonicalID": 6313,
+              "nativeToken": "a</w>",
+              "canonicalToken": "flat</w>"
+            },
+            {
+              "index": 37,
+              "nativeID": 6313,
+              "canonicalID": 7744,
+              "nativeToken": "flat</w>",
+              "canonicalToken": "surface</w>"
+            },
+            {
+              "index": 38,
+              "nativeID": 7744,
+              "canonicalID": 536,
+              "nativeToken": "surface</w>",
+              "canonicalToken": "at</w>"
+            },
+            {
+              "index": 39,
+              "nativeID": 536,
+              "canonicalID": 10788,
+              "nativeToken": "at</w>",
+              "canonicalToken": "height</w>"
+            },
+            {
+              "index": 40,
+              "nativeID": 10788,
+              "canonicalID": 344,
+              "nativeToken": "height</w>",
+              "canonicalToken": "y</w>"
+            },
+            {
+              "index": 41,
+              "nativeID": 88,
+              "canonicalID": 284,
+              "nativeToken": "y",
+              "canonicalToken": "=</w>"
+            },
+            {
+              "index": 42,
+              "nativeID": 28,
+              "canonicalID": 271,
+              "nativeToken": "=",
+              "canonicalToken": "0</w>"
+            },
+            {
+              "index": 43,
+              "nativeID": 15,
+              "canonicalID": 267,
+              "nativeToken": "0",
+              "canonicalToken": ",</w>"
+            },
+            {
+              "index": 44,
+              "nativeID": 267,
+              "canonicalID": 593,
+              "nativeToken": ",</w>",
+              "canonicalToken": "with</w>"
+            },
+            {
+              "index": 45,
+              "nativeID": 593,
+              "canonicalID": 550,
+              "nativeToken": "with</w>",
+              "canonicalToken": "an</w>"
+            },
+            {
+              "index": 46,
+              "nativeID": 550,
+              "canonicalID": 6914,
+              "nativeToken": "an</w>",
+              "canonicalToken": "overall</w>"
+            },
+            {
+              "index": 47,
+              "nativeID": 6914,
+              "canonicalID": 10788,
+              "nativeToken": "overall</w>",
+              "canonicalToken": "height</w>"
+            },
+            {
+              "index": 48,
+              "nativeID": 10788,
+              "canonicalID": 539,
+              "nativeToken": "height</w>",
+              "canonicalToken": "of</w>"
+            },
+            {
+              "index": 49,
+              "nativeID": 539,
+              "canonicalID": 16128,
+              "nativeToken": "of</w>",
+              "canonicalToken": "approximately</w>"
+            },
+            {
+              "index": 50,
+              "nativeID": 16128,
+              "canonicalID": 271,
+              "nativeToken": "approximately</w>",
+              "canonicalToken": "0</w>"
+            },
+            {
+              "index": 51,
+              "nativeID": 15,
+              "canonicalID": 269,
+              "nativeToken": "0",
+              "canonicalToken": ".</w>"
+            },
+            {
+              "index": 52,
+              "nativeID": 13,
+              "canonicalID": 279,
+              "nativeToken": ".",
+              "canonicalToken": "8</w>"
+            },
+            {
+              "index": 53,
+              "nativeID": 279,
+              "canonicalID": 13247,
+              "nativeToken": "8</w>",
+              "canonicalToken": "meters</w>"
+            },
+            {
+              "index": 54,
+              "nativeID": 613,
+              "canonicalID": 269,
+              "nativeToken": "me",
+              "canonicalToken": ".</w>"
+            },
+            {
+              "index": 55,
+              "nativeID": 24102,
+              "canonicalID": 49407,
+              "nativeToken": "ters",
+              "canonicalToken": "<|endoftext|>"
+            },
+            {
+              "index": 56,
+              "nativeID": 269,
+              "canonicalID": 0,
+              "nativeToken": ".</w>",
+              "canonicalToken": "!"
+            },
+            {
+              "index": 57,
+              "nativeID": 49407,
+              "canonicalID": 0,
+              "nativeToken": "<|endoftext|>",
+              "canonicalToken": "!"
+            }
+          ]
+        }
+      ],
+      "canonicalLexicalSegments": [
+        {
+          "nativePieces": [
+            "a</w>"
+          ],
+          "nativeIDs": [
+            320
+          ],
+          "samePieces": true,
+          "word": "a",
+          "canonicalRegexSegments": [
+            "a"
+          ],
+          "canonicalPieces": [
+            "a</w>"
+          ],
+          "canonicalIDs": [
+            320
+          ]
+        },
+        {
+          "nativePieces": [
+            "desk</w>"
+          ],
+          "nativeIDs": [
+            6550
+          ],
+          "samePieces": true,
+          "word": "desk",
+          "canonicalRegexSegments": [
+            "desk"
+          ],
+          "canonicalPieces": [
+            "desk</w>"
+          ],
+          "canonicalIDs": [
+            6550
+          ]
+        },
+        {
+          "nativePieces": [
+            "lamp</w>"
+          ],
+          "nativeIDs": [
+            10725
+          ],
+          "samePieces": true,
+          "word": "lamp",
+          "canonicalRegexSegments": [
+            "lamp"
+          ],
+          "canonicalPieces": [
+            "lamp</w>"
+          ],
+          "canonicalIDs": [
+            10725
+          ]
+        },
+        {
+          "nativePieces": [
+            "with</w>"
+          ],
+          "nativeIDs": [
+            593
+          ],
+          "samePieces": true,
+          "word": "with",
+          "canonicalRegexSegments": [
+            "with"
+          ],
+          "canonicalPieces": [
+            "with</w>"
+          ],
+          "canonicalIDs": [
+            593
+          ]
+        },
+        {
+          "nativePieces": [
+            "a</w>"
+          ],
+          "nativeIDs": [
+            320
+          ],
+          "samePieces": true,
+          "word": "a",
+          "canonicalRegexSegments": [
+            "a"
+          ],
+          "canonicalPieces": [
+            "a</w>"
+          ],
+          "canonicalIDs": [
+            320
+          ]
+        },
+        {
+          "nativePieces": [
+            "red</w>"
+          ],
+          "nativeIDs": [
+            736
+          ],
+          "samePieces": true,
+          "word": "red",
+          "canonicalRegexSegments": [
+            "red"
+          ],
+          "canonicalPieces": [
+            "red</w>"
+          ],
+          "canonicalIDs": [
+            736
+          ]
+        },
+        {
+          "nativePieces": [
+            "cone",
+            "-",
+            "shaped</w>"
+          ],
+          "nativeIDs": [
+            39279,
+            12,
+            10127
+          ],
+          "samePieces": false,
+          "word": "cone-shaped",
+          "canonicalRegexSegments": [
+            "cone",
+            "-",
+            "shaped"
+          ],
+          "canonicalPieces": [
+            "cone</w>",
+            "-</w>",
+            "shaped</w>"
+          ],
+          "canonicalIDs": [
+            10266,
+            268,
+            10127
+          ]
+        },
+        {
+          "nativePieces": [
+            "shade",
+            ",</w>"
+          ],
+          "nativeIDs": [
+            34554,
+            267
+          ],
+          "samePieces": false,
+          "word": "shade,",
+          "canonicalRegexSegments": [
+            "shade",
+            ","
+          ],
+          "canonicalPieces": [
+            "shade</w>",
+            ",</w>"
+          ],
+          "canonicalIDs": [
+            10097,
+            267
+          ]
+        },
+        {
+          "nativePieces": [
+            "a</w>"
+          ],
+          "nativeIDs": [
+            320
+          ],
+          "samePieces": true,
+          "word": "a",
+          "canonicalRegexSegments": [
+            "a"
+          ],
+          "canonicalPieces": [
+            "a</w>"
+          ],
+          "canonicalIDs": [
+            320
+          ]
+        },
+        {
+          "nativePieces": [
+            "gray</w>"
+          ],
+          "nativeIDs": [
+            7048
+          ],
+          "samePieces": true,
+          "word": "gray",
+          "canonicalRegexSegments": [
+            "gray"
+          ],
+          "canonicalPieces": [
+            "gray</w>"
+          ],
+          "canonicalIDs": [
+            7048
+          ]
+        },
+        {
+          "nativePieces": [
+            "cy",
+            "lind",
+            "rical</w>"
+          ],
+          "nativeIDs": [
+            1470,
+            6492,
+            18109
+          ],
+          "samePieces": true,
+          "word": "cylindrical",
+          "canonicalRegexSegments": [
+            "cylindrical"
+          ],
+          "canonicalPieces": [
+            "cy",
+            "lind",
+            "rical</w>"
+          ],
+          "canonicalIDs": [
+            1470,
+            6492,
+            18109
+          ]
+        },
+        {
+          "nativePieces": [
+            "base",
+            ",</w>"
+          ],
+          "nativeIDs": [
+            2776,
+            267
+          ],
+          "samePieces": false,
+          "word": "base,",
+          "canonicalRegexSegments": [
+            "base",
+            ","
+          ],
+          "canonicalPieces": [
+            "base</w>",
+            ",</w>"
+          ],
+          "canonicalIDs": [
+            4579,
+            267
+          ]
+        },
+        {
+          "nativePieces": [
+            "a</w>"
+          ],
+          "nativeIDs": [
+            320
+          ],
+          "samePieces": true,
+          "word": "a",
+          "canonicalRegexSegments": [
+            "a"
+          ],
+          "canonicalPieces": [
+            "a</w>"
+          ],
+          "canonicalIDs": [
+            320
+          ]
+        },
+        {
+          "nativePieces": [
+            "thin</w>"
+          ],
+          "nativeIDs": [
+            7847
+          ],
+          "samePieces": true,
+          "word": "thin",
+          "canonicalRegexSegments": [
+            "thin"
+          ],
+          "canonicalPieces": [
+            "thin</w>"
+          ],
+          "canonicalIDs": [
+            7847
+          ]
+        },
+        {
+          "nativePieces": [
+            "cy",
+            "lind",
+            "rical</w>"
+          ],
+          "nativeIDs": [
+            1470,
+            6492,
+            18109
+          ],
+          "samePieces": true,
+          "word": "cylindrical",
+          "canonicalRegexSegments": [
+            "cylindrical"
+          ],
+          "canonicalPieces": [
+            "cy",
+            "lind",
+            "rical</w>"
+          ],
+          "canonicalIDs": [
+            1470,
+            6492,
+            18109
+          ]
+        },
+        {
+          "nativePieces": [
+            "stem",
+            ",</w>"
+          ],
+          "nativeIDs": [
+            24342,
+            267
+          ],
+          "samePieces": false,
+          "word": "stem,",
+          "canonicalRegexSegments": [
+            "stem",
+            ","
+          ],
+          "canonicalPieces": [
+            "stem</w>",
+            ",</w>"
+          ],
+          "canonicalIDs": [
+            6761,
+            267
+          ]
+        },
+        {
+          "nativePieces": [
+            "and</w>"
+          ],
+          "nativeIDs": [
+            537
+          ],
+          "samePieces": true,
+          "word": "and",
+          "canonicalRegexSegments": [
+            "and"
+          ],
+          "canonicalPieces": [
+            "and</w>"
+          ],
+          "canonicalIDs": [
+            537
+          ]
+        },
+        {
+          "nativePieces": [
+            "a</w>"
+          ],
+          "nativeIDs": [
+            320
+          ],
+          "samePieces": true,
+          "word": "a",
+          "canonicalRegexSegments": [
+            "a"
+          ],
+          "canonicalPieces": [
+            "a</w>"
+          ],
+          "canonicalIDs": [
+            320
+          ]
+        },
+        {
+          "nativePieces": [
+            "spher",
+            "ical</w>"
+          ],
+          "nativeIDs": [
+            18349,
+            1110
+          ],
+          "samePieces": true,
+          "word": "spherical",
+          "canonicalRegexSegments": [
+            "spherical"
+          ],
+          "canonicalPieces": [
+            "spher",
+            "ical</w>"
+          ],
+          "canonicalIDs": [
+            18349,
+            1110
+          ]
+        },
+        {
+          "nativePieces": [
+            "bul",
+            "b",
+            ",</w>"
+          ],
+          "nativeIDs": [
+            2572,
+            65,
+            267
+          ],
+          "samePieces": false,
+          "word": "bulb,",
+          "canonicalRegexSegments": [
+            "bulb",
+            ","
+          ],
+          "canonicalPieces": [
+            "bulb</w>",
+            ",</w>"
+          ],
+          "canonicalIDs": [
+            22373,
+            267
+          ]
+        },
+        {
+          "nativePieces": [
+            "all</w>"
+          ],
+          "nativeIDs": [
+            615
+          ],
+          "samePieces": true,
+          "word": "all",
+          "canonicalRegexSegments": [
+            "all"
+          ],
+          "canonicalPieces": [
+            "all</w>"
+          ],
+          "canonicalIDs": [
+            615
+          ]
+        },
+        {
+          "nativePieces": [
+            "resting</w>"
+          ],
+          "nativeIDs": [
+            18044
+          ],
+          "samePieces": true,
+          "word": "resting",
+          "canonicalRegexSegments": [
+            "resting"
+          ],
+          "canonicalPieces": [
+            "resting</w>"
+          ],
+          "canonicalIDs": [
+            18044
+          ]
+        },
+        {
+          "nativePieces": [
+            "on</w>"
+          ],
+          "nativeIDs": [
+            525
+          ],
+          "samePieces": true,
+          "word": "on",
+          "canonicalRegexSegments": [
+            "on"
+          ],
+          "canonicalPieces": [
+            "on</w>"
+          ],
+          "canonicalIDs": [
+            525
+          ]
+        },
+        {
+          "nativePieces": [
+            "a</w>"
+          ],
+          "nativeIDs": [
+            320
+          ],
+          "samePieces": true,
+          "word": "a",
+          "canonicalRegexSegments": [
+            "a"
+          ],
+          "canonicalPieces": [
+            "a</w>"
+          ],
+          "canonicalIDs": [
+            320
+          ]
+        },
+        {
+          "nativePieces": [
+            "flat</w>"
+          ],
+          "nativeIDs": [
+            6313
+          ],
+          "samePieces": true,
+          "word": "flat",
+          "canonicalRegexSegments": [
+            "flat"
+          ],
+          "canonicalPieces": [
+            "flat</w>"
+          ],
+          "canonicalIDs": [
+            6313
+          ]
+        },
+        {
+          "nativePieces": [
+            "surface</w>"
+          ],
+          "nativeIDs": [
+            7744
+          ],
+          "samePieces": true,
+          "word": "surface",
+          "canonicalRegexSegments": [
+            "surface"
+          ],
+          "canonicalPieces": [
+            "surface</w>"
+          ],
+          "canonicalIDs": [
+            7744
+          ]
+        },
+        {
+          "nativePieces": [
+            "at</w>"
+          ],
+          "nativeIDs": [
+            536
+          ],
+          "samePieces": true,
+          "word": "at",
+          "canonicalRegexSegments": [
+            "at"
+          ],
+          "canonicalPieces": [
+            "at</w>"
+          ],
+          "canonicalIDs": [
+            536
+          ]
+        },
+        {
+          "nativePieces": [
+            "height</w>"
+          ],
+          "nativeIDs": [
+            10788
+          ],
+          "samePieces": true,
+          "word": "height",
+          "canonicalRegexSegments": [
+            "height"
+          ],
+          "canonicalPieces": [
+            "height</w>"
+          ],
+          "canonicalIDs": [
+            10788
+          ]
+        },
+        {
+          "nativePieces": [
+            "y",
+            "=",
+            "0",
+            ",</w>"
+          ],
+          "nativeIDs": [
+            88,
+            28,
+            15,
+            267
+          ],
+          "samePieces": false,
+          "word": "y=0,",
+          "canonicalRegexSegments": [
+            "y",
+            "=",
+            "0",
+            ","
+          ],
+          "canonicalPieces": [
+            "y</w>",
+            "=</w>",
+            "0</w>",
+            ",</w>"
+          ],
+          "canonicalIDs": [
+            344,
+            284,
+            271,
+            267
+          ]
+        },
+        {
+          "nativePieces": [
+            "with</w>"
+          ],
+          "nativeIDs": [
+            593
+          ],
+          "samePieces": true,
+          "word": "with",
+          "canonicalRegexSegments": [
+            "with"
+          ],
+          "canonicalPieces": [
+            "with</w>"
+          ],
+          "canonicalIDs": [
+            593
+          ]
+        },
+        {
+          "nativePieces": [
+            "an</w>"
+          ],
+          "nativeIDs": [
+            550
+          ],
+          "samePieces": true,
+          "word": "an",
+          "canonicalRegexSegments": [
+            "an"
+          ],
+          "canonicalPieces": [
+            "an</w>"
+          ],
+          "canonicalIDs": [
+            550
+          ]
+        },
+        {
+          "nativePieces": [
+            "overall</w>"
+          ],
+          "nativeIDs": [
+            6914
+          ],
+          "samePieces": true,
+          "word": "overall",
+          "canonicalRegexSegments": [
+            "overall"
+          ],
+          "canonicalPieces": [
+            "overall</w>"
+          ],
+          "canonicalIDs": [
+            6914
+          ]
+        },
+        {
+          "nativePieces": [
+            "height</w>"
+          ],
+          "nativeIDs": [
+            10788
+          ],
+          "samePieces": true,
+          "word": "height",
+          "canonicalRegexSegments": [
+            "height"
+          ],
+          "canonicalPieces": [
+            "height</w>"
+          ],
+          "canonicalIDs": [
+            10788
+          ]
+        },
+        {
+          "nativePieces": [
+            "of</w>"
+          ],
+          "nativeIDs": [
+            539
+          ],
+          "samePieces": true,
+          "word": "of",
+          "canonicalRegexSegments": [
+            "of"
+          ],
+          "canonicalPieces": [
+            "of</w>"
+          ],
+          "canonicalIDs": [
+            539
+          ]
+        },
+        {
+          "nativePieces": [
+            "approximately</w>"
+          ],
+          "nativeIDs": [
+            16128
+          ],
+          "samePieces": true,
+          "word": "approximately",
+          "canonicalRegexSegments": [
+            "approximately"
+          ],
+          "canonicalPieces": [
+            "approximately</w>"
+          ],
+          "canonicalIDs": [
+            16128
+          ]
+        },
+        {
+          "nativePieces": [
+            "0",
+            ".",
+            "8</w>"
+          ],
+          "nativeIDs": [
+            15,
+            13,
+            279
+          ],
+          "samePieces": false,
+          "word": "0.8",
+          "canonicalRegexSegments": [
+            "0",
+            ".",
+            "8"
+          ],
+          "canonicalPieces": [
+            "0</w>",
+            ".</w>",
+            "8</w>"
+          ],
+          "canonicalIDs": [
+            271,
+            269,
+            279
+          ]
+        },
+        {
+          "nativePieces": [
+            "me",
+            "ters",
+            ".</w>"
+          ],
+          "nativeIDs": [
+            613,
+            24102,
+            269
+          ],
+          "samePieces": false,
+          "word": "meters.",
+          "canonicalRegexSegments": [
+            "meters",
+            "."
+          ],
+          "canonicalPieces": [
+            "meters</w>",
+            ".</w>"
+          ],
+          "canonicalIDs": [
+            13247,
+            269
+          ]
+        }
+      ]
+    },
+    {
+      "caseID": "vase",
+      "input": "A blue vase shaped like a spiral shell with a golden rim on the opening.",
+      "encoders": [
+        {
+          "name": "TextEncoder",
+          "padID": 49407,
+          "canonicalUnpaddedIDs": [
+            49406,
+            320,
+            1746,
+            20431,
+            10127,
+            789,
+            320,
+            19873,
+            6648,
+            593,
+            320,
+            3878,
+            12199,
+            525,
+            518,
+            2516,
+            269,
+            49407
+          ],
+          "canonicalUnpaddedTokens": [
+            "<|startoftext|>",
+            "a</w>",
+            "blue</w>",
+            "vase</w>",
+            "shaped</w>",
+            "like</w>",
+            "a</w>",
+            "spiral</w>",
+            "shell</w>",
+            "with</w>",
+            "a</w>",
+            "golden</w>",
+            "rim</w>",
+            "on</w>",
+            "the</w>",
+            "opening</w>",
+            ".</w>",
+            "<|endoftext|>"
+          ],
+          "canonicalPaddedIDs": [
+            49406,
+            320,
+            1746,
+            20431,
+            10127,
+            789,
+            320,
+            19873,
+            6648,
+            593,
+            320,
+            3878,
+            12199,
+            525,
+            518,
+            2516,
+            269,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407
+          ],
+          "canonicalPaddedTokens": [
+            "<|startoftext|>",
+            "a</w>",
+            "blue</w>",
+            "vase</w>",
+            "shaped</w>",
+            "like</w>",
+            "a</w>",
+            "spiral</w>",
+            "shell</w>",
+            "with</w>",
+            "a</w>",
+            "golden</w>",
+            "rim</w>",
+            "on</w>",
+            "the</w>",
+            "opening</w>",
+            ".</w>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>"
+          ],
+          "nativeNegativeEmptyPaddedIDs": [
+            49406,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407
+          ],
+          "canonicalNegativeEmptyPaddedIDs": [
+            49406,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407
+          ],
+          "negativeEmptyIDsMatchCanonical": true,
+          "nativeUnpaddedIDs": [
+            49406,
+            320,
+            1746,
+            20431,
+            10127,
+            789,
+            320,
+            19873,
+            6648,
+            593,
+            320,
+            3878,
+            12199,
+            525,
+            518,
+            33728,
+            269,
+            49407
+          ],
+          "nativeUnpaddedTokens": [
+            "<|startoftext|>",
+            "a</w>",
+            "blue</w>",
+            "vase</w>",
+            "shaped</w>",
+            "like</w>",
+            "a</w>",
+            "spiral</w>",
+            "shell</w>",
+            "with</w>",
+            "a</w>",
+            "golden</w>",
+            "rim</w>",
+            "on</w>",
+            "the</w>",
+            "opening",
+            ".</w>",
+            "<|endoftext|>"
+          ],
+          "nativePaddedIDs": [
+            49406,
+            320,
+            1746,
+            20431,
+            10127,
+            789,
+            320,
+            19873,
+            6648,
+            593,
+            320,
+            3878,
+            12199,
+            525,
+            518,
+            33728,
+            269,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407,
+            49407
+          ],
+          "nativePaddedTokens": [
+            "<|startoftext|>",
+            "a</w>",
+            "blue</w>",
+            "vase</w>",
+            "shaped</w>",
+            "like</w>",
+            "a</w>",
+            "spiral</w>",
+            "shell</w>",
+            "with</w>",
+            "a</w>",
+            "golden</w>",
+            "rim</w>",
+            "on</w>",
+            "the</w>",
+            "opening",
+            ".</w>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>",
+            "<|endoftext|>"
+          ],
+          "canonicalCount": 18,
+          "nativeCount": 18,
+          "sameIDs": false,
+          "positionDifferences": [
+            {
+              "index": 15,
+              "nativeID": 33728,
+              "canonicalID": 2516,
+              "nativeToken": "opening",
+              "canonicalToken": "opening</w>"
+            }
+          ]
+        },
+        {
+          "name": "TextEncoder2",
+          "padID": 0,
+          "canonicalUnpaddedIDs": [
+            49406,
+            320,
+            1746,
+            20431,
+            10127,
+            789,
+            320,
+            19873,
+            6648,
+            593,
+            320,
+            3878,
+            12199,
+            525,
+            518,
+            2516,
+            269,
+            49407
+          ],
+          "canonicalUnpaddedTokens": [
+            "<|startoftext|>",
+            "a</w>",
+            "blue</w>",
+            "vase</w>",
+            "shaped</w>",
+            "like</w>",
+            "a</w>",
+            "spiral</w>",
+            "shell</w>",
+            "with</w>",
+            "a</w>",
+            "golden</w>",
+            "rim</w>",
+            "on</w>",
+            "the</w>",
+            "opening</w>",
+            ".</w>",
+            "<|endoftext|>"
+          ],
+          "canonicalPaddedIDs": [
+            49406,
+            320,
+            1746,
+            20431,
+            10127,
+            789,
+            320,
+            19873,
+            6648,
+            593,
+            320,
+            3878,
+            12199,
+            525,
+            518,
+            2516,
+            269,
+            49407,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "canonicalPaddedTokens": [
+            "<|startoftext|>",
+            "a</w>",
+            "blue</w>",
+            "vase</w>",
+            "shaped</w>",
+            "like</w>",
+            "a</w>",
+            "spiral</w>",
+            "shell</w>",
+            "with</w>",
+            "a</w>",
+            "golden</w>",
+            "rim</w>",
+            "on</w>",
+            "the</w>",
+            "opening</w>",
+            ".</w>",
+            "<|endoftext|>",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!"
+          ],
+          "nativeNegativeEmptyPaddedIDs": [
+            49406,
+            49407,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "canonicalNegativeEmptyPaddedIDs": [
+            49406,
+            49407,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "negativeEmptyIDsMatchCanonical": true,
+          "nativeUnpaddedIDs": [
+            49406,
+            320,
+            1746,
+            20431,
+            10127,
+            789,
+            320,
+            19873,
+            6648,
+            593,
+            320,
+            3878,
+            12199,
+            525,
+            518,
+            33728,
+            269,
+            49407
+          ],
+          "nativeUnpaddedTokens": [
+            "<|startoftext|>",
+            "a</w>",
+            "blue</w>",
+            "vase</w>",
+            "shaped</w>",
+            "like</w>",
+            "a</w>",
+            "spiral</w>",
+            "shell</w>",
+            "with</w>",
+            "a</w>",
+            "golden</w>",
+            "rim</w>",
+            "on</w>",
+            "the</w>",
+            "opening",
+            ".</w>",
+            "<|endoftext|>"
+          ],
+          "nativePaddedIDs": [
+            49406,
+            320,
+            1746,
+            20431,
+            10127,
+            789,
+            320,
+            19873,
+            6648,
+            593,
+            320,
+            3878,
+            12199,
+            525,
+            518,
+            33728,
+            269,
+            49407,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nativePaddedTokens": [
+            "<|startoftext|>",
+            "a</w>",
+            "blue</w>",
+            "vase</w>",
+            "shaped</w>",
+            "like</w>",
+            "a</w>",
+            "spiral</w>",
+            "shell</w>",
+            "with</w>",
+            "a</w>",
+            "golden</w>",
+            "rim</w>",
+            "on</w>",
+            "the</w>",
+            "opening",
+            ".</w>",
+            "<|endoftext|>",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!",
+            "!"
+          ],
+          "canonicalCount": 18,
+          "nativeCount": 18,
+          "sameIDs": false,
+          "positionDifferences": [
+            {
+              "index": 15,
+              "nativeID": 33728,
+              "canonicalID": 2516,
+              "nativeToken": "opening",
+              "canonicalToken": "opening</w>"
+            }
+          ]
+        }
+      ],
+      "canonicalLexicalSegments": [
+        {
+          "nativePieces": [
+            "a</w>"
+          ],
+          "nativeIDs": [
+            320
+          ],
+          "samePieces": true,
+          "word": "a",
+          "canonicalRegexSegments": [
+            "a"
+          ],
+          "canonicalPieces": [
+            "a</w>"
+          ],
+          "canonicalIDs": [
+            320
+          ]
+        },
+        {
+          "nativePieces": [
+            "blue</w>"
+          ],
+          "nativeIDs": [
+            1746
+          ],
+          "samePieces": true,
+          "word": "blue",
+          "canonicalRegexSegments": [
+            "blue"
+          ],
+          "canonicalPieces": [
+            "blue</w>"
+          ],
+          "canonicalIDs": [
+            1746
+          ]
+        },
+        {
+          "nativePieces": [
+            "vase</w>"
+          ],
+          "nativeIDs": [
+            20431
+          ],
+          "samePieces": true,
+          "word": "vase",
+          "canonicalRegexSegments": [
+            "vase"
+          ],
+          "canonicalPieces": [
+            "vase</w>"
+          ],
+          "canonicalIDs": [
+            20431
+          ]
+        },
+        {
+          "nativePieces": [
+            "shaped</w>"
+          ],
+          "nativeIDs": [
+            10127
+          ],
+          "samePieces": true,
+          "word": "shaped",
+          "canonicalRegexSegments": [
+            "shaped"
+          ],
+          "canonicalPieces": [
+            "shaped</w>"
+          ],
+          "canonicalIDs": [
+            10127
+          ]
+        },
+        {
+          "nativePieces": [
+            "like</w>"
+          ],
+          "nativeIDs": [
+            789
+          ],
+          "samePieces": true,
+          "word": "like",
+          "canonicalRegexSegments": [
+            "like"
+          ],
+          "canonicalPieces": [
+            "like</w>"
+          ],
+          "canonicalIDs": [
+            789
+          ]
+        },
+        {
+          "nativePieces": [
+            "a</w>"
+          ],
+          "nativeIDs": [
+            320
+          ],
+          "samePieces": true,
+          "word": "a",
+          "canonicalRegexSegments": [
+            "a"
+          ],
+          "canonicalPieces": [
+            "a</w>"
+          ],
+          "canonicalIDs": [
+            320
+          ]
+        },
+        {
+          "nativePieces": [
+            "spiral</w>"
+          ],
+          "nativeIDs": [
+            19873
+          ],
+          "samePieces": true,
+          "word": "spiral",
+          "canonicalRegexSegments": [
+            "spiral"
+          ],
+          "canonicalPieces": [
+            "spiral</w>"
+          ],
+          "canonicalIDs": [
+            19873
+          ]
+        },
+        {
+          "nativePieces": [
+            "shell</w>"
+          ],
+          "nativeIDs": [
+            6648
+          ],
+          "samePieces": true,
+          "word": "shell",
+          "canonicalRegexSegments": [
+            "shell"
+          ],
+          "canonicalPieces": [
+            "shell</w>"
+          ],
+          "canonicalIDs": [
+            6648
+          ]
+        },
+        {
+          "nativePieces": [
+            "with</w>"
+          ],
+          "nativeIDs": [
+            593
+          ],
+          "samePieces": true,
+          "word": "with",
+          "canonicalRegexSegments": [
+            "with"
+          ],
+          "canonicalPieces": [
+            "with</w>"
+          ],
+          "canonicalIDs": [
+            593
+          ]
+        },
+        {
+          "nativePieces": [
+            "a</w>"
+          ],
+          "nativeIDs": [
+            320
+          ],
+          "samePieces": true,
+          "word": "a",
+          "canonicalRegexSegments": [
+            "a"
+          ],
+          "canonicalPieces": [
+            "a</w>"
+          ],
+          "canonicalIDs": [
+            320
+          ]
+        },
+        {
+          "nativePieces": [
+            "golden</w>"
+          ],
+          "nativeIDs": [
+            3878
+          ],
+          "samePieces": true,
+          "word": "golden",
+          "canonicalRegexSegments": [
+            "golden"
+          ],
+          "canonicalPieces": [
+            "golden</w>"
+          ],
+          "canonicalIDs": [
+            3878
+          ]
+        },
+        {
+          "nativePieces": [
+            "rim</w>"
+          ],
+          "nativeIDs": [
+            12199
+          ],
+          "samePieces": true,
+          "word": "rim",
+          "canonicalRegexSegments": [
+            "rim"
+          ],
+          "canonicalPieces": [
+            "rim</w>"
+          ],
+          "canonicalIDs": [
+            12199
+          ]
+        },
+        {
+          "nativePieces": [
+            "on</w>"
+          ],
+          "nativeIDs": [
+            525
+          ],
+          "samePieces": true,
+          "word": "on",
+          "canonicalRegexSegments": [
+            "on"
+          ],
+          "canonicalPieces": [
+            "on</w>"
+          ],
+          "canonicalIDs": [
+            525
+          ]
+        },
+        {
+          "nativePieces": [
+            "the</w>"
+          ],
+          "nativeIDs": [
+            518
+          ],
+          "samePieces": true,
+          "word": "the",
+          "canonicalRegexSegments": [
+            "the"
+          ],
+          "canonicalPieces": [
+            "the</w>"
+          ],
+          "canonicalIDs": [
+            518
+          ]
+        },
+        {
+          "nativePieces": [
+            "opening",
+            ".</w>"
+          ],
+          "nativeIDs": [
+            33728,
+            269
+          ],
+          "samePieces": false,
+          "word": "opening.",
+          "canonicalRegexSegments": [
+            "opening",
+            "."
+          ],
+          "canonicalPieces": [
+            "opening</w>",
+            ".</w>"
+          ],
+          "canonicalIDs": [
+            2516,
+            269
+          ]
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Token ID divergence is a real conditioning-contract difference; no new NN result or causal explanation of the head image is established.",
+    "Both native and canonical versions use the same verified official Apple vocab/merges.",
+    "Native output is executed unchanged production Swift; canonical is official OpenAI code initialized with exact same assets."
+  ]
+}

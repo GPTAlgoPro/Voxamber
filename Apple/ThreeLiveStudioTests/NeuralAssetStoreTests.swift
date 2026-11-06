@@ -9,7 +9,7 @@ import XCTest
 
 /// Small file fixtures exercise admission/copy semantics; no neural inference.
 @MainActor final class NeuralAssetStoreTests: XCTestCase {
-    func testBundledProductionCatalogUsesIndependentExactPinsAndUnpublishedPacks() throws {
+    func testBundledProductionCatalogSeparatesExactPinsFromPublication() throws {
         #if canImport(ThreeLiveStudio)
         let bundle = Bundle.main
         #else
@@ -21,9 +21,53 @@ import XCTest
         XCTAssertEqual(manifests.map(\.byteCount), [645_315_928, 3_052_951_670, 2_490_380_596])
         XCTAssertEqual(Set(manifests.map(\.apple.assetPackID)).count, 3)
         XCTAssertEqual(Set(manifests.map(\.apple.contractRelativePath)).count, 3)
+        #if canImport(ThreeLiveStudio)
+        XCTAssertTrue(manifests.allSatisfy { $0.apple.available })
+        for group in NeuralModelGroup.allCases {
+            let url = try XCTUnwrap(bundle.url(forResource: group.manifestName, withExtension: "json", subdirectory: "NeuralModels")
+                ?? bundle.url(forResource: group.manifestName, withExtension: "json"))
+            let frozen = try JSONDecoder().decode(NeuralModelManifest.self, from: Data(contentsOf: url))
+            XCTAssertFalse(frozen.apple.available, "The approved uploaded contract must remain immutable")
+            XCTAssertEqual(try frozen.pinIdentity, try XCTUnwrap(manifests.first { $0.group == group }).pinIdentity)
+        }
+        #else
         XCTAssertTrue(manifests.allSatisfy { !$0.apple.available })
+        #endif
         XCTAssertFalse(manifests.contains { $0.id == "qwen3.5-4b-mlx-int4" })
         XCTAssertEqual(manifests[2].files.first?.sha256, "30b93ce8a801551b905c35d1203d71d947a6b35b3d271aa5820b11d40faf45c7")
+    }
+
+    func testPublicationBindsExactModelsAndDoesNotChangeContentIdentity() throws {
+        let fixture = try Fixture(); defer { fixture.remove() }
+        let rows = try fixture.manifests.map { model in
+            NeuralModelDelivery.Pack(group: model.group, modelID: model.id, assetPackID: model.apple.assetPackID,
+                modelPinIdentitySHA256: try model.pinIdentity, serverState: model.group == .shape ? "PENDING" : "COMPLETE", version: "1")
+        }
+        let delivery = NeuralModelDelivery(schemaVersion: 1, bundleID: "com.kaisun.voxamber", platform: "IOS", packs: rows)
+        let resolved = try delivery.applying(to: fixture.manifests)
+        for (original, published) in zip(fixture.manifests, resolved) {
+            XCTAssertEqual(try original.pinIdentity, try published.pinIdentity)
+            XCTAssertEqual(original.files, published.files)
+            XCTAssertEqual(published.apple.available, published.group != .shape)
+        }
+    }
+
+    func testPublicationRejectsWrongPinAndDuplicateOrMissingGroups() throws {
+        let fixture = try Fixture(); defer { fixture.remove() }
+        let rows = try fixture.manifests.map { model in
+            NeuralModelDelivery.Pack(group: model.group, modelID: model.id, assetPackID: model.apple.assetPackID,
+                modelPinIdentitySHA256: try model.pinIdentity, serverState: "COMPLETE", version: "1")
+        }
+        var wrongPin = rows
+        let first = rows[0]
+        wrongPin[0] = .init(group: first.group, modelID: first.modelID, assetPackID: first.assetPackID,
+            modelPinIdentitySHA256: String(repeating: "0", count: 64), serverState: "COMPLETE", version: "1")
+        for candidates in [wrongPin, [rows[0], rows[0], rows[2]], Array(rows.dropLast())] {
+            let delivery = NeuralModelDelivery(schemaVersion: 1, bundleID: "com.kaisun.voxamber", platform: "IOS", packs: candidates)
+            XCTAssertThrowsError(try delivery.applying(to: fixture.manifests))
+        }
+        let foreign = NeuralModelDelivery(schemaVersion: 1, bundleID: "com.example.other", platform: "IOS", packs: rows)
+        XCTAssertThrowsError(try foreign.applying(to: fixture.manifests))
     }
 
     func testReadinessRequiresAllThreeExactPrivateGroups() async throws {
