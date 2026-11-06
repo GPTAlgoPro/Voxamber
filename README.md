@@ -1,5 +1,9 @@
 # 维珀 Voxamber · 原生离线 3D 创作
 
+**2026-11-06 路线纠正：**目标是“端侧语言模型创作场景代码 → Google Three-Live 官方原生编译器 → GLB / USDZ → Apple 原生预览、编辑与保存”。图像生成再交给混元生成网格的实验已停止，不作为产品主链路。现有 `ThreeLiveNative` 是自写 Swift 导出器，尚不能称为官方编译器移植。官方 iOS SDK 内部包含受限场景脚本引擎，与此前脚本约束的边界正在确认；尚未将其嵌入 App。
+
+原宫殿 PoC 已用保留的官方 v1.2.3 编译器重新执行，GLB 与原产物字节完全一致。该 PoC 的场景由编码代理及宿主参数程序编写，不能当作端侧小模型自主创作能力的证明。后续必须分别验证模型创作能力、官方编译器和手机端到端流程。下方早期 App 阶段描述及参数生成实验按历史证据理解；最近已核验的内部 TestFlight 是 `0.1.0 (6)`，见[独立回读记录](docs/qa/2026-11-06-native-app/testflight-build6-independent-readback.json)。
+
 iPhone / iPhone Duo 通用建模测试版 App，应用类别为生产力。用户自由描述创作内容，不设建筑、家具等题材白名单；示例只作灵感起点。
 
 - 中文描述 → 本地模型理解 → 原生几何生成 → RealityKit 预览 → 逐部件编辑 → 本地保存 / 恢复 → GLB、USDZ 导出和系统 AR 预览。
@@ -11,7 +15,7 @@ iPhone / iPhone Duo 通用建模测试版 App，应用类别为生产力。用�
 
 官网：[维珀](https://gptalgopro.github.io/Voxamber-Website/) · [支持](https://gptalgopro.github.io/Voxamber-Website/support/) · [隐私政策](https://gptalgopro.github.io/Voxamber-Website/privacy/)。千问素材包版本 1 已上传 Apple 托管并处理完成；TestFlight 实机首次冷下载仍待验证。
 
-原有 Three-Live Mac 几何实验保留在下方，属于研发历史和导出对照，不限定 App 的创作题材。
+原有 Three-Live Mac 几何实验保留在下方，作为官方编译集成的回归基线，不限定 App 的创作题材。
 
 ---
 

@@ -1,0 +1,40 @@
+{
+  "checkedAtUTC": "2026-11-06T04:16:43.217089+00:00",
+  "scope": "Actual preserved Google compiler and palace source; Mac CPU only; no model downloads, no new SDK download, no phone operations",
+  "actualHostCompilation": [
+    {
+      "kind": "glb",
+      "exitCode": 0,
+      "seconds": 0.194755,
+      "bytes": 906532,
+      "sha256": "a06c6de71415c52e268a178e13adfa7bca13bf8372cb7620b9c246ec380402bc",
+      "sameAsPreservedPoC": true
+    },
+    {
+      "kind": "usdz",
+      "exitCode": 0,
+      "seconds": 0.346603,
+      "bytes": 1650759,
+      "sha256": "5940c0688f20d20d112c76b3085bd538dd44df1e17a88e279fde991dd2757cb4"
+    }
+  ],
+  "officialSDK": {
+    "release": "v1.2.3",
+    "commit": "c0ff24b628795286a175f1a71611673df5dbc05d",
+    "archiveBytes": 205943617,
+    "archiveSHA256": "382fd2fbaa3909fe87e90e9f4ceabaec25fcd22faeb09f91e3490e9021280c59",
+    "downloadedThisTurn": false,
+    "embeddedInApp": false,
+    "sourceContainsBoa": true,
+    "runtimeConstraintUserAnswerPending": true
+  },
+  "separateUnprovenRequirements": [
+    "On-device <=8B model independently authors quality scene code",
+    "Official native compiler linked and exercised on iPhone",
+    "Cancellation, independent editing and full source provenance",
+    "General-topic modelling quality beyond an authored palace sample",
+    "Phone performance, adaptive UI and new TestFlight delivery"
+  ],
+  "oldExperimentalPipelineResumed": false,
+  "rawModelWeightsDownloaded": false
+}

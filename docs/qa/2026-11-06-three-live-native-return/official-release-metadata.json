@@ -1,0 +1,19 @@
+{
+  "tag": "v1.2.3",
+  "publishedAt": "2026-11-04T23:11:23Z",
+  "targetCommitish": "main",
+  "assets": [
+    {
+      "name": "three-live-cli-macos-arm64",
+      "size": 8109408,
+      "digest": "sha256:70dbe721a1fc00f6c169b16d2ef4fd8a16d765ff0aaab1f6c9165241e00eac6c",
+      "browser_download_url": "https://github.com/google/three-live/releases/download/v1.2.3/three-live-cli-macos-arm64"
+    },
+    {
+      "name": "ThreeLiveCompiler.xcframework.zip",
+      "size": 205943617,
+      "digest": "sha256:382fd2fbaa3909fe87e90e9f4ceabaec25fcd22faeb09f91e3490e9021280c59",
+      "browser_download_url": "https://github.com/google/three-live/releases/download/v1.2.3/ThreeLiveCompiler.xcframework.zip"
+    }
+  ]
+}

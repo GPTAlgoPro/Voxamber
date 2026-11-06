@@ -1,0 +1,21 @@
+Scene validation successful:
+  Meshes: 17
+    [0] 'courtyard_basalt' - 24 vertices, 36 indices
+    [1] 'paving_sandstone' - 960 vertices, 1440 indices
+    [2] 'terrace_warm_marble' - 1152 vertices, 1728 indices
+    [3] 'rail_carved_marble' - 3232 vertices, 6768 indices
+    [4] 'plinth_shadow' - 592 vertices, 1548 indices
+    [5] 'cinnabar_columns' - 1256 vertices, 2784 indices
+    [6] 'vermilion_joinery' - 1584 vertices, 2376 indices
+    [7] 'shadowed_rosewood' - 176 vertices, 312 indices
+    [8] 'lattice_goldwood' - 5608 vertices, 10512 indices
+    [9] 'bracket_jade' - 1392 vertices, 2088 indices
+    [10] 'bracket_lapis' - 1104 vertices, 1656 indices
+    [11] 'painted_cream' - 528 vertices, 792 indices
+    [12] 'roof_honey_glaze' - 1642 vertices, 2520 indices
+    [13] 'roof_tile_light' - 1944 vertices, 9720 indices
+    [14] 'roof_tile_shadow' - 2264 vertices, 11664 indices
+    [15] 'ridge_imperial_gold' - 2556 vertices, 9792 indices
+    [16] 'lantern_silk' - 136 vertices, 384 indices
+  Materials: 17
+  Lights: 0

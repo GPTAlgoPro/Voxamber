@@ -1,5 +1,18 @@
 # ThreeLiveNative
 
+This package is not Google's ThreeLiveCompiler. The existing geometry serializer
+is retained for existing projects. `OfficialUSDZCompatibility.repair(_:)` is a
+separate, pure-Swift metadata repair for the pinned Google v1.2.3 compiler's
+single-`model.usda`, stored-ZIP USDZ output. It adds explicit
+`MaterialBindingAPI` and `subdivisionScheme = "none"` without changing geometry
+or material values. It validates archive boundaries and CRC, rejects unsupported
+layouts, and returns an already repaired archive byte-for-byte. It does not run
+scene code or stand in for the official compiler.
+
+```swift
+let appleCompatibleUSDZ = try OfficialUSDZCompatibility.repair(rawOfficialUSDZ)
+```
+
 Pure Swift geometry export for the native app. It serializes validated
 CreationCore.GeneratedMesh arrays to glTF 2.0 GLB and Apple USDZ using Foundation.
 The module contains no Python, JavaScript, Rust/Boa interpreter, WebView,
@@ -8,9 +21,9 @@ remote service, or binary dependency.
 ```swift
 import CreationCore
 import ThreeLiveNative
-let building = try BuildingGenerator.generate(for: spec)
-let glb = try ThreeLiveNative.exportGLB(building.meshes)
-let usdz = try ThreeLiveNative.exportUSDZ(building.meshes)
+let meshes = try SceneGenerator.generate(for: spec)
+let glb = try ThreeLiveNative.exportGLB(meshes)
+let usdz = try ThreeLiveNative.exportUSDZ(meshes)
 ```
 
 Call these synchronous CPU operations away from the main actor. Each mesh is a

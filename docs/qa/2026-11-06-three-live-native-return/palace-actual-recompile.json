@@ -1,0 +1,17 @@
+[
+  {
+    "kind": "glb",
+    "exitCode": 0,
+    "seconds": 0.194755,
+    "bytes": 906532,
+    "sha256": "a06c6de71415c52e268a178e13adfa7bca13bf8372cb7620b9c246ec380402bc",
+    "sameAsPreservedPoC": true
+  },
+  {
+    "kind": "usdz",
+    "exitCode": 0,
+    "seconds": 0.346603,
+    "bytes": 1650759,
+    "sha256": "5940c0688f20d20d112c76b3085bd538dd44df1e17a88e279fde991dd2757cb4"
+  }
+]
